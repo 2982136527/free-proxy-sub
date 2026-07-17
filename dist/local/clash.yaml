@@ -5,42 +5,6 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- name: 美国 421
-  port: 2053
-  server: 23.133.52.10
-  type: vless
-- name: 美国 043
-  port: 443
-  server: 162.159.39.47
-  type: vless
-- name: 美国 054
-  port: 8443
-  server: 162.159.38.124
-  type: vless
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_12%7C2.6MB/s'
-  port: 443
-  server: 108.162.198.108
-  type: vless
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_11%7C2.4MB/s'
-  port: 443
-  server: 162.159.39.151
-  type: vless
-- name: '%F0%9F%87%B9%F0%9F%87%BCTW_1%7C2.5MB/s'
-  port: 8443
-  server: 103.118.40.32
-  type: vless
-- name: 美国 049
-  port: 443
-  server: 162.159.38.9
-  type: vless
-- name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
-  port: 8443
-  server: 162.159.38.119
-  type: vless
-- name: 美国 037
-  port: 443
-  server: 108.162.198.67
-  type: vless
 - alterId: 0
   cipher: auto
   host: v33.hdacd.com
@@ -51,10 +15,6 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
-- name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
-  port: 8443
-  server: 172.64.52.134
-  type: vless
 - alterId: 0
   cipher: auto
   host: v29.hdacd.com
@@ -65,15 +25,43 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
-- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
-  password: VPNCUSTOMIZE
+- name: 美国 144
+  port: 2083
+  server: 162.159.39.219
+  type: vless
+- name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
+  port: 8443
+  server: 162.159.38.119
+  type: vless
+- name: 美国 314
+  port: 2083
+  server: 162.159.38.227
+  type: vless
+- name: 美国 207
+  port: 2053
+  server: 162.159.38.42
+  type: vless
+- name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
+  port: 8443
+  server: 172.64.52.134
+  type: vless
+- name: 美国 209
+  port: 8443
+  server: 162.159.38.230
+  type: vless
+- cipher: chacha20-ietf
+  name: '%F0%9F%87%AD%F0%9F%87%B0%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%A6%99%E6%B8%AF%2004'
+  password: asd123456
+  port: 8388
+  server: 103.149.182.79
+  type: ss
+- name: 美国 222
   port: 443
-  server: 162.159.38.183
-  sni: ww.offers.de5.net
-  type: trojan
-- name: 美国 417
-  port: 443
-  server: 172.64.229.110
+  server: 162.159.39.78
+  type: vless
+- name: 美国 392
+  port: 2053
+  server: 162.159.38.133
   type: vless
 - alterId: 0
   cipher: auto
@@ -83,13 +71,45 @@ proxies:
   server: v8.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 美国 021
+- name: 美国 289
   port: 443
-  server: 162.159.45.218
+  server: 162.159.38.42
   type: vless
-- name: 美国 059
-  port: 2087
-  server: 104.18.33.6
+- name: 美国 236
+  port: 8443
+  server: 162.159.45.62
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8US_11%7C2.4MB/s'
+  port: 443
+  server: 162.159.39.151
+  type: vless
+- name: '%F0%9F%87%AF%F0%9F%87%B5%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E6%97%A5%E6%9C%AC%2005'
+  port: 37533
+  server: 172.81.102.142
+  type: vless
+- name: 美国 261
+  port: 8443
+  server: 162.159.39.73
+  type: vless
+- name: 美国 205
+  port: 8443
+  server: 108.162.198.177
+  type: vless
+- name: 美国 341
+  port: 8443
+  server: 173.245.58.173
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2062'
+  port: 2096
+  server: 188.164.248.178
+  type: vless
+- name: 美国 121
+  port: 8443
+  server: 173.245.59.120
+  type: vless
+- name: 美国 230
+  port: 2053
+  server: 198.41.223.30
   type: vless
 - name: '%F0%9F%87%A8%F0%9F%87%B3%20TW%E5%8F%B0%E6%B9%BE%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
   password: a5e355b9-11fc-449a-aa7b-eb707783f25a
@@ -97,57 +117,209 @@ proxies:
   server: cdn2.bpcdn.cc
   sni: kfb9frqf0v.bpis2026.top
   type: trojan
-- name: 荷兰 007
-  port: 2096
-  server: 188.164.248.190
-  type: vless
-- name: 美国 376
-  port: 2096
-  server: 8.35.211.81
-  type: vless
-- name: 美国 020
-  port: 443
-  server: 173.245.58.87
-  type: vless
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_14%7C1.8MB/s'
-  port: 443
-  server: 162.159.24.217
-  type: vless
-- name: '%E7%BE%8E%E5%9B%BD+CloudFlare'
-  port: 443
-  server: 162.159.16.154
-  type: vless
-- name: 美国 230
-  port: 2053
-  server: 198.41.223.30
-  type: vless
-- name: '%E8%8D%B7%E5%85%B0+V2CROSS.COM'
-  port: 2087
-  server: 188.164.248.143
-  type: vless
-- name: 马来西亚 001
-  port: 2053
-  server: 8.39.125.213
-  type: vless
-- name: 美国 046
-  port: 2096
-  server: 198.41.223.119
-  type: vless
-- name: 美国 1292
-  port: 443
-  server: 162.159.6.235
-  type: vless
-- name: 美国 1494
-  port: 2087
-  server: 172.64.146.59
+- name: 美国 280
+  port: 2083
+  server: 198.41.223.60
   type: vless
 - name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_3'
   port: 443
   server: 172.64.145.2
   type: vless
-- name: 美国 019
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2053'
+  port: 8443
+  server: 198.41.223.216
+  type: vless
+- name: 美国 312
+  port: 2087
+  server: 173.245.59.7
+  type: vless
+- name: 美国 184
+  port: 2096
+  server: 173.245.58.230
+  type: vless
+- name: 美国 310
+  port: 2083
+  server: 8.35.211.66
+  type: vless
+- name: 美国 347
+  port: 2087
+  server: 104.18.33.26
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2060'
+  port: 2087
+  server: 173.245.58.162
+  type: vless
+- name: 美国 270
+  port: 2087
+  server: 8.35.211.105
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2043'
+  port: 2087
+  server: 162.159.40.200
+  type: vless
+- name: '%E7%BE%8E%E5%9B%BD+CloudFlare'
   port: 443
-  server: 173.245.59.35
+  server: 162.159.16.154
+  type: vless
+- name: 荷兰 013
+  port: 443
+  server: 188.164.248.67
+  type: vless
+- name: 美国 096
+  port: 2087
+  server: 8.35.211.6
+  type: vless
+- name: 荷兰 014
+  port: 2096
+  server: 188.164.248.92
+  type: vless
+- name: 美国 379
+  port: 2053
+  server: 162.159.35.218
+  type: vless
+- name: 美国 288
+  port: 2087
+  server: 8.35.211.13
+  type: vless
+- name: 美国 389
+  port: 8443
+  server: 198.41.223.58
+  type: vless
+- name: 美国 245
+  port: 2083
+  server: 104.18.33.139
+  type: vless
+- name: 美国 266
+  port: 2053
+  server: 198.41.223.189
+  type: vless
+- name: 荷兰 018
+  port: 8443
+  server: 188.164.248.180
+  type: vless
+- name: 马来西亚 016
+  port: 2096
+  server: 8.39.125.149
+  type: vless
+- name: 美国 395
+  port: 8443
+  server: 173.245.59.213
+  type: vless
+- name: 荷兰 010
+  port: 8443
+  server: 188.164.248.123
+  type: vless
+- name: '%E8%8D%B7%E5%85%B0+V2CROSS.COM'
+  port: 2087
+  server: 188.164.248.143
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2017'
+  port: 8443
+  server: 8.35.211.186
+  type: vless
+- name: 马来西亚 010
+  port: 2096
+  server: 8.39.125.30
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2028'
+  port: 443
+  server: 104.18.33.37
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2034'
+  port: 2087
+  server: 198.41.223.24
+  type: vless
+- name: 荷兰 007
+  port: 2096
+  server: 188.164.248.190
+  type: vless
+- name: 美国 299
+  port: 2096
+  server: 198.41.223.233
+  type: vless
+- name: 荷兰 005
+  port: 2087
+  server: 188.164.248.66
+  type: vless
+- name: 美国 124
+  port: 2053
+  server: 162.159.39.251
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2048'
+  port: 2087
+  server: 8.35.211.169
+  type: vless
+- name: 美国 337
+  port: 2096
+  server: 162.159.38.91
+  type: vless
+- name: 马来西亚 015
+  port: 443
+  server: 8.39.125.111
+  type: vless
+- name: 美国 376
+  port: 2096
+  server: 8.35.211.81
+  type: vless
+- name: 美国 228
+  port: 443
+  server: 173.245.58.147
+  type: vless
+- name: 美国 224
+  port: 2053
+  server: 104.18.33.139
+  type: vless
+- name: 美国 276
+  port: 8443
+  server: 108.162.198.171
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8US_12%7C2.6MB/s'
+  port: 443
+  server: 108.162.198.108
+  type: vless
+- name: 美国 135
+  port: 2096
+  server: 173.245.58.48
+  type: vless
+- name: 马来西亚 014
+  port: 8443
+  server: 8.39.125.142
+  type: vless
+- name: 美国 033
+  port: 8443
+  server: bayan.ns.cloudflare.com
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8US_14%7C1.8MB/s'
+  port: 443
+  server: 162.159.24.217
+  type: vless
+- name: 马来西亚 007
+  port: 2083
+  server: 8.39.125.173
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2025'
+  port: 8443
+  server: 104.18.33.74
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2086'
+  port: 443
+  server: 172.64.52.210
+  type: vless
+- name: 美国 188
+  port: 2096
+  server: 8.35.211.192
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2072'
+  port: 443
+  server: 104.18.41.190
+  type: vless
+- name: 马来西亚 018
+  port: 8443
+  server: 8.39.125.193
+  type: vless
+- name: 美国 165
+  port: 2083
+  server: 8.35.211.62
   type: vless
 - name: 荷兰 002
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
@@ -155,41 +327,17 @@ proxies:
   server: 188.164.248.122
   sni: space.byu.id.yxls.eu.cc
   type: trojan
-- name: 美国 052
+- name: 马来西亚 005
   port: 443
-  server: 104.18.33.70
+  server: 8.39.125.45
   type: vless
-- name: 美国 032
-  port: 443
-  server: 162.159.1.37
-  type: vless
-- name: 美国 012
-  port: 443
-  server: cf3.466688.xyz
-  type: vless
-- name: 马来西亚 002
-  port: 2053
-  server: 8.39.125.46
-  type: vless
-- name: 荷兰 010
-  port: 8443
-  server: 188.164.248.123
-  type: vless
-- name: 美国 050
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2054'
   port: 2096
-  server: 198.41.223.75
+  server: 188.164.248.172
   type: vless
-- name: 美国 017
-  port: 443
-  server: www.leics.police.uk
-  type: vless
-- name: 美国 033
-  port: 8443
-  server: bayan.ns.cloudflare.com
-  type: vless
-- name: 美国 048
+- name: 马来西亚 011
   port: 2083
-  server: 173.245.58.22
+  server: 8.39.125.85
   type: vless
 - name: '%F0%9F%87%B2%F0%9F%87%BE%20%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
   password: a5e355b9-11fc-449a-aa7b-eb707783f25a
@@ -197,320 +345,23 @@ proxies:
   server: mmefi.cloudflare.182682.xyz
   sni: thank.bpmalai2026.top
   type: trojan
-- name: 美国 025
-  port: 443
-  server: 162.159.7.146
-  type: vless
-- name: 美国 013
-  port: 443
-  server: love.ns.cloudflare.com
-  type: vless
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_33%7C4.4MB/s'
-  port: 443
-  server: cdn.204910.best
-  type: vless
-- name: '%F0%9F%87%B9%F0%9F%87%B7%20%E5%9C%9F%E8%80%B3%E5%85%B6%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
-  password: a5e355b9-11fc-449a-aa7b-eb707783f25a
-  port: 443
-  server: tt45y3.cloudflare.182682.xyz
-  sni: tuerqitt.bper2026.top
-  type: trojan
-- name: 美国 031
-  port: 443
-  server: www.udacity.com
-  type: vless
 - name: '%F0%9F%87%A8%F0%9F%87%B3%20TW%E5%8F%B0%E6%B9%BE%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29_2'
   password: a5e355b9-11fc-449a-aa7b-eb707783f25a
   port: 443
   server: tw3011h8r.cloudflare.182682.xyz
   sni: kfb9frqf0v.bpis2026.top
   type: trojan
-- name: 美国 041
-  port: 443
-  server: cfip-cm.stoeaves.us.ci
-  type: vless
 - name: '%F0%9F%87%AF%F0%9F%87%B5%20JP%E6%97%A5%E6%9C%AC%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
   password: a5e355b9-11fc-449a-aa7b-eb707783f25a
   port: 443
   server: jjyeye.cloudflare.182682.xyz
   sni: bjbx8xu6iih7zht5.jptimecsgo.xyz
   type: trojan
-- alterId: 0
-  cipher: auto
-  host: v35.hdacd.com
-  name: 🇨🇳_CN_中国->🇫🇷_FR_法国
-  network: tcp
-  port: 30835
-  server: v35.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_4'
+- name: '%F0%9F%87%B9%F0%9F%87%B7%20%E5%9C%9F%E8%80%B3%E5%85%B6%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  password: a5e355b9-11fc-449a-aa7b-eb707783f25a
   port: 443
-  server: cdn.9889888.xyz
-  type: vless
-- name: '%F0%9F%87%A8%F0%9F%87%A6CA_1%7C2.7MB/s'
-  port: 443
-  server: ct.877774.xyz
-  type: vless
-- name: 美国 065
-  port: 2096
-  server: 104.17.110.140
-  type: vless
-- name: '%F0%9F%87%B8%F0%9F%87%ACSG_12%7C2.5MB/s'
-  port: 2096
-  server: 104.17.70.206
-  type: vless
-- name: 美国 063
-  port: 2096
-  server: 104.19.55.107
-  type: vless
-- name: 荷兰 001
-  password: MiTiVPN
-  port: 443
-  server: 45.131.4.118
-  sni: 95r.ir
-  type: trojan
-  udp: true
-- name: 美国 039
-  port: 443
-  server: 104.17.104.61
-  type: vless
-- name: 日本 003
-  port: 2053
-  server: 91.193.59.193
-  type: vless
-- name: '%F0%9F%87%B8%F0%9F%87%ACSG_2%7C5.4MB/s'
-  password: NQ26071394
-  port: 443
-  server: usable-dogfish.rooster465.autos
-  sni: usable-dogfish.rooster465.autos
-  type: trojan
-- name: 美国 057
-  port: 443
-  server: 104.17.222.30
-  type: vless
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_15%7C2.2MB/s'
-  port: 443
-  server: 104.17.208.223
-  type: vless
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_27%7C3.4MB/s'
-  port: 8443
-  server: 64.186.240.9
-  type: vless
-- name: 美国 040
-  port: 2083
-  server: 104.17.217.144
-  type: vless
-- name: 美国 015
-  port: 443
-  server: 104.16.72.101
-  type: vless
-- name: 美国 034
-  port: 2087
-  server: 104.17.53.87
-  type: vless
-- name: 美国 056
-  port: 2083
-  server: 104.19.145.168
-  type: vless
-- name: 日本 002
-  port: 443
-  server: 91.193.58.163
-  type: vless
-- cipher: chacha20-ietf-poly1305
-  name: SS-88.210.36.106:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 88.210.36.106
-  type: ss
-- name: 美国 060
-  port: 443
-  server: 104.17.218.97
-  type: vless
-- name: 美国 311
-  port: 2083
-  server: 104.19.48.233
-  type: vless
-- name: 美国 053
-  port: 2083
-  server: 198.41.208.167
-  type: vless
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_26%7C1.6MB/s'
-  port: 8880
-  server: www.visa.com.sg
-  type: vless
-- name: 美国 042
-  port: 2083
-  server: 198.41.208.34
-  type: vless
-- name: 法国 001
-  password: MITIVPN
-  port: 443
-  server: 94.140.0.100
-  sni: 95r.ir
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸US_6|1.7MB/s
-  network: tcp
-  port: 16025
-  server: c722s801.portablesubmarines.com
-  type: vmess
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
-- name: 美国 047
-  port: 2087
-  server: 104.17.113.173
-  type: vless
-- name: 美国 064
-  port: 2096
-  server: 104.17.166.222
-  type: vless
-- name: '%E7%BE%8E%E5%9C%8B%E4%BD%90%E6%B2%BB%E4%BA%9E%E5%B7%9E%E4%BA%9E%E7%89%B9%E8%98%AD%E5%A4%A7%E4%B8%A8yoyapai.com%5Cr'
-  password: Mitivpn
-  port: 443
-  server: 151.101.56.6
-  sni: ssl.fastly.com
-  type: trojan
-- name: 美国 036
-  port: 8443
-  server: 104.19.151.42
-  type: vless
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_1%7C5.0MB/s'
-  password: NQ26071394
-  port: 443
-  server: flexible-gannet.rooster465.autos
-  sni: flexible-gannet.rooster465.autos
-  type: trojan
-- name: 美国 058
-  port: 2083
-  server: 104.17.109.183
-  type: vless
-- name: 美国 014
-  port: 443
-  server: 104.16.72.50
-  type: vless
-- name: 英国 002
-  port: 443
-  server: 45.8.211.217
-  type: vless
-- name: 美国 026
-  port: 443
-  server: 104.19.145.11
-  type: vless
-- name: 新加坡 001
-  port: 443
-  server: 185.18.184.2
-  type: vless
-- name: 英国 001
-  password: MITIVPN
-  port: 443
-  server: 164.38.155.135
-  sni: 95r.ir
-  type: trojan
-  udp: true
-- name: 美国 035
-  port: 2087
-  server: 104.19.32.165
-  type: vless
-- name: 美国 045
-  port: 2096
-  server: 104.16.155.198
-  type: vless
-- alterId: 0
-  cipher: auto
-  name: 美国 433
-  network: ws
-  port: 80
-  server: 69.84.182.49
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
-- name: 美国 062
-  port: 2053
-  server: 104.17.124.1
-  type: vless
-- alterId: 0
-  cipher: auto
-  host: 4cdn.njkrpl.com
-  name: 🇺🇸_US_美国
-  network: ws
-  port: 443
-  server: 4cdn.njkrpl.com
-  tls: true
-  type: vmess
-  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
-  ws-path: /
-- name: 美国 024
-  port: 443
-  server: 104.18.206.22
-  type: vless
-- name: 日本 020
-  password: NQ26071394
-  port: 443
-  server: new-eagle.rooster465.autos
-  sni: new-eagle.rooster465.autos
-  type: trojan
-  udp: true
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_16%7C5.4MB/s'
-  password: NQ26071394
-  port: 443
-  server: saving-drake.rooster465.autos
-  sni: saving-drake.rooster465.autos
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: v6.hdacd.com
-  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- name: '%E8%A5%BF%E7%8F%AD%E7%89%99+V2CROSS.COM'
-  password: humanity
-  port: 443
-  server: 185.18.250.245
-  sni: www.calmlunch.com
-  type: trojan
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_20%7C5.0MB/s'
-  password: NQ26071394
-  port: 443
-  server: amusing-grub.rooster465.autos
-  sni: amusing-grub.rooster465.autos
-  type: trojan
-- cipher: aes-256-cfb
-  name: '%F0%9F%87%A9%F0%9F%87%AADE_3%7C1.6MB/s'
-  password: amazonskr05
-  port: 443
-  server: 3.122.115.111
-  type: ss
-- name: 日本 018
-  password: NQ26071394
-  port: 443
-  server: firm-krill.rooster465.autos
-  sni: firm-krill.rooster465.autos
-  type: trojan
-  udp: true
-- name: 美国 027
-  port: 443
-  server: 104.26.15.137
-  type: vless
-- name: 韩国 005
-  password: NQ26071394
-  port: 443
-  server: merry-falcon.rooster465.autos
-  sni: merry-falcon.rooster465.autos
-  type: trojan
-  udp: true
-- name: '%E5%B7%B4%E8%A5%BF%E8%81%96%E4%BF%9D%E7%BE%85%E4%B8%A8yoyapai.com%5Cr'
-  password: mitivpn
-  port: 443
-  server: 188.114.97.6
-  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  server: tt45y3.cloudflare.182682.xyz
+  sni: tuerqitt.bper2026.top
   type: trojan
 - alterId: 0
   cipher: auto
@@ -522,28 +373,182 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_29%7C5.7MB/s'
+- name: 印度 001
+  port: 2053
+  server: 103.106.228.126
+  type: vless
+- name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_4'
+  port: 443
+  server: cdn.9889888.xyz
+  type: vless
+- name: '%F0%9F%87%B8%F0%9F%87%ACSG_5%7C3.8MB/s'
   password: NQ26071394
   port: 443
-  server: capable-baboon.rooster465.autos
-  sni: capable-baboon.rooster465.autos
+  server: eminent-hagfish.rooster465.autos
+  sni: eminent-hagfish.rooster465.autos
   type: trojan
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_4%7C1.5MB/s'
-  port: 443
-  server: eu.oneokgames.com
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2083'
+  port: 2053
+  server: 104.17.152.8
   type: vless
+- name: 美国 417
+  port: 443
+  server: 172.64.229.110
+  type: vless
+- name: '%F0%9F%87%B8%F0%9F%87%ACSG_12%7C2.5MB/s'
+  port: 2096
+  server: 104.17.70.206
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2076'
+  port: 2087
+  server: 104.17.27.10
+  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: SS-88.210.36.106:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 88.210.36.106
+  type: ss
+- name: '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr'
+  password: humanity
+  port: 443
+  server: www.ignitelimit.com
+  type: trojan
+- name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_5'
+  port: 443
+  server: 104.21.227.134
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8US_15%7C2.2MB/s'
+  port: 443
+  server: 104.17.208.223
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2015'
+  port: 443
+  server: 104.19.32.233
+  type: vless
+- name: 美国 311
+  port: 2083
+  server: 104.19.48.233
+  type: vless
+- name: 美国 105
+  port: 2053
+  server: 104.17.23.119
+  type: vless
+- name: 美国 414
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  sni: www.calmlunch.com
+  type: trojan
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2065'
+  port: 8080
+  server: 172.67.197.181
+  type: vless
+- name: 美国 400
+  port: 2087
+  server: 198.41.208.203
+  type: vless
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US_6|1.7MB/s
+  network: tcp
+  port: 16025
+  server: c722s801.portablesubmarines.com
+  type: vmess
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+- name: 美国 062
+  port: 2053
+  server: 104.17.124.1
+  type: vless
+- name: '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2008'
+  port: 2087
+  server: 104.18.19.39
+  type: vless
+- name: 美国 268
+  port: 2096
+  server: 198.41.209.7
+  type: vless
+- name: 美国 1517
+  port: 8443
+  server: kamo1.parsianboton.ir
+  type: vless
+- alterId: 0
+  cipher: auto
+  name: 美国 433
+  network: ws
+  port: 80
+  server: 69.84.182.49
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2002'
+  port: 2083
+  server: us.259470.xyz
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
+  password: VPNCUSTOMIZE
+  port: 443
+  server: 162.159.38.183
+  sni: ww.offers.de5.net
+  type: trojan
+- name: '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2002'
+  port: 443
+  server: 104.17.108.69
+  type: vless
+- name: 美国 366
+  port: 8443
+  server: 104.19.34.251
+  type: vless
+- name: '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2003'
+  port: 443
+  server: 172.67.117.177
+  type: vless
+- name: '%E8%A5%BF%E7%8F%AD%E7%89%99+V2CROSS.COM'
+  password: humanity
+  port: 443
+  server: 185.18.250.245
+  sni: www.calmlunch.com
+  type: trojan
+- name: '%E7%BE%8E%E5%9B%BD+V2CROSS.COM'
+  port: 443
+  server: 199.232.22.39
+  type: vless
+- name: '%F0%9F%87%AF%F0%9F%87%B5JP_5%7C5.5MB/s'
+  password: NQ26071394
+  port: 443
+  server: calm-muskrat.rooster465.autos
+  sni: calm-muskrat.rooster465.autos
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: 4cdn.njkrpl.com
+  name: 🇺🇸_US_美国
+  network: ws
+  port: 443
+  server: 4cdn.njkrpl.com
+  tls: true
+  type: vmess
+  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
+  ws-path: /
+- name: '%E7%BE%8E%E5%9C%8B%E4%BD%90%E6%B2%BB%E4%BA%9E%E5%B7%9E%E4%BA%9E%E7%89%B9%E8%98%AD%E5%A4%A7%E4%B8%A8yoyapai.com%5Cr'
+  password: Mitivpn
+  port: 443
+  server: 151.101.56.6
+  sni: ssl.fastly.com
+  type: trojan
+- name: '%F0%9F%87%A8%F0%9F%87%B3%20TW%E5%8F%B0%E6%B9%BE%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29_3'
+  password: a5e355b9-11fc-449a-aa7b-eb707783f25a
+  port: 443
+  server: 104.19.174.68
+  sni: px8r9i1b4k.bpusfaster2.top
+  type: trojan
 - name: '%F0%9F%87%AF%F0%9F%87%B5JP_15%7C4.8MB/s'
   password: NQ26071394
   port: 443
   server: better-molly.rooster465.autos
   sni: better-molly.rooster465.autos
   type: trojan
-- cipher: aes-256-cfb
-  name: '%F0%9F%87%AC%F0%9F%87%A7GB_1%7C1.9MB/s'
-  password: amazonskr05
-  port: 443
-  server: 18.133.180.164
-  type: ss
 - name: 日本 016
   password: NQ26071394
   port: 443
@@ -551,27 +556,24 @@ proxies:
   sni: hot-tapir.rooster465.autos
   type: trojan
   udp: true
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_11%7C5.4MB/s'
+- name: '%F0%9F%87%AF%F0%9F%87%B5JP_1%7C5.0MB/s'
   password: NQ26071394
   port: 443
-  server: picked-guinea.rooster465.autos
-  sni: picked-guinea.rooster465.autos
+  server: flexible-gannet.rooster465.autos
+  sni: flexible-gannet.rooster465.autos
   type: trojan
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_31%7C4.8MB/s'
-  password: NQ26071394
-  port: 443
-  server: select-ferret.rooster465.autos
-  sni: select-ferret.rooster465.autos
-  type: trojan
-- name: 美国 055
-  port: 8443
-  server: 172.67.68.133
-  type: vless
 - name: 日本 014
   password: NQ26071394
   port: 443
   server: magical-prawn.rooster465.autos
   sni: magical-prawn.rooster465.autos
+  type: trojan
+  udp: true
+- name: 澳大利亚 007
+  password: NQ26071394
+  port: 443
+  server: alert-wren.rooster465.autos
+  sni: alert-wren.rooster465.autos
   type: trojan
   udp: true
 - name: '%F0%9F%87%AF%F0%9F%87%B5JP_6%7C5.7MB/s'
@@ -580,40 +582,6 @@ proxies:
   server: joint-ewe.rooster465.autos
   sni: joint-ewe.rooster465.autos
   type: trojan
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_25%7C5.7MB/s'
-  password: NQ26071394
-  port: 443
-  server: one-dove.rooster465.autos
-  sni: one-dove.rooster465.autos
-  type: trojan
-- name: '%E7%BE%8E%E5%9B%BD+V2CROSS.COM'
-  port: 443
-  server: 199.232.22.39
-  type: vless
-- name: 美国 412
-  password: NQ26071394
-  port: 443
-  server: infinite-killdeer.rooster465.autos
-  sni: infinite-killdeer.rooster465.autos
-  type: trojan
-  udp: true
-- name: 澳大利亚 008
-  password: NQ26071394
-  port: 443
-  server: genuine-cougar.rooster465.autos
-  sni: genuine-cougar.rooster465.autos
-  type: trojan
-  udp: true
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_34%7C2.1MB/s'
-  password: NQ26071394
-  port: 443
-  server: prime-quail.rooster465.autos
-  sni: prime-quail.rooster465.autos
-  type: trojan
-- name: ID_speednode_0009
-  port: 8443
-  server: 45.198.87.168
-  type: vless
 - name: '%F0%9F%87%AF%F0%9F%87%B5JP_13%7C5.3MB/s'
   password: NQ26071394
   port: 443
@@ -626,41 +594,24 @@ proxies:
   server: beloved-crow.rooster465.autos
   sni: beloved-crow.rooster465.autos
   type: trojan
-- name: 澳大利亚 007
+- name: '%F0%9F%87%AF%F0%9F%87%B5JP_34%7C2.1MB/s'
   password: NQ26071394
   port: 443
-  server: alert-wren.rooster465.autos
-  sni: alert-wren.rooster465.autos
+  server: prime-quail.rooster465.autos
+  sni: prime-quail.rooster465.autos
   type: trojan
-  udp: true
-- name: 美国 061
-  port: 2087
-  server: 104.26.13.19
-  type: vless
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_5%7C5.5MB/s'
-  password: NQ26071394
+- cipher: aes-256-cfb
+  name: '%F0%9F%87%AC%F0%9F%87%A7GB_1%7C1.9MB/s'
+  password: amazonskr05
   port: 443
-  server: calm-muskrat.rooster465.autos
-  sni: calm-muskrat.rooster465.autos
-  type: trojan
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_32%7C4.9MB/s'
-  password: NQ26071394
-  port: 443
-  server: warm-bass.rooster465.autos
-  sni: warm-bass.rooster465.autos
-  type: trojan
-- name: '%F0%9F%87%B0%F0%9F%87%B7KR_11%7C3.9MB/s'
-  password: NQ26071394
-  port: 443
-  server: musical-mouse.rooster465.autos
-  sni: musical-mouse.rooster465.autos
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '%E6%B3%95%E5%9B%BD+%E5%9B%BD%E9%99%85%E8%88%AA%E7%A9%BA%E7%94%B5%E8%AE%AF%E9%9B%86%E5%9B%A2%E5%85%AC%E5%8F%B8%28SITA%29'
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-  port: 16688
-  server: ss.041.node-for-bigairport.win
+  server: 18.133.180.164
   type: ss
+- name: '%F0%9F%87%AF%F0%9F%87%B5JP_11%7C5.4MB/s'
+  password: NQ26071394
+  port: 443
+  server: picked-guinea.rooster465.autos
+  sni: picked-guinea.rooster465.autos
+  type: trojan
 - name: 日本 015
   password: NQ26071394
   port: 443
@@ -668,354 +619,27 @@ proxies:
   sni: real-ewe.rooster465.autos
   type: trojan
   udp: true
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_22%7C2.0MB/s'
-  port: 443
-  server: origin.reasonok.com
-  type: vless
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_30%7C5.3MB/s'
-  password: NQ26071394
-  port: 443
-  server: golden-kangaroo.rooster465.autos
-  sni: golden-kangaroo.rooster465.autos
-  type: trojan
-- name: '%F0%9F%87%B0%F0%9F%87%B7KR_1%7C5.0MB/s'
-  password: NQ26071394
-  port: 443
-  server: guided-pelican.rooster465.autos
-  sni: guided-pelican.rooster465.autos
-  type: trojan
-- name: ID_speednode_0012
-  port: 8443
-  server: 45.198.87.102
-  type: vless
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_10%7C5.7MB/s'
-  password: NQ26071394
-  port: 443
-  server: helped-jennet.rooster465.autos
-  sni: helped-jennet.rooster465.autos
-  type: trojan
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_18%7C1.5MB/s'
-  port: 443
-  server: 89.105.220.231
-  type: vless
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_1%7C1.7MB/s'
-  port: 443
-  server: video.reasonok.com
-  type: vless
-- name: '%F0%9F%87%B0%F0%9F%87%B7KR_7%7C4.4MB/s'
-  password: NQ26071394
-  port: 443
-  server: accurate-cat.rooster465.autos
-  sni: accurate-cat.rooster465.autos
-  type: trojan
-- name: 美国 044
-  port: 2053
-  server: 104.26.1.162
-  type: vless
-- name: 澳大利亚 009
-  password: NQ26071394
-  port: 443
-  server: working-tomcat.rooster465.autos
-  sni: working-tomcat.rooster465.autos
-  type: trojan
-  udp: true
-- name: '%E8%8D%B7%E8%98%AD%E7%AF%80%E9%BB%9E%E4%B8%A8yoyapai.com%5Cr'
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 8443
-  server: 152.53.200.89
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: VMess-aaaa.wxx.gay:443
-  network: ws
-  port: 443
-  server: aaaa.wxx.gay
-  tls: tls
-  type: vmess
-  uuid: 8237ec34-143a-11ee-8019-000017022008
-  ws-path: /look
-- name: '%E7%BE%8E%E5%9C%8B%2BCloudFlare%E8%8A%82%E7%82%B9%E4%B8%A8yoyapai.com%5Cr'
-  password: 9c521e24-7326-acd3-acec-d0afac2b465d
-  port: 8080
-  server: 104.25.108.147
-  sni: red-cell-47f9.milaniomilan9.workers.dev
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  port: 443
-  server: tinkered-pennies-puppies.freesocks.work
+  name: '%E6%B3%95%E5%9B%BD+%E5%9B%BD%E9%99%85%E8%88%AA%E7%A9%BA%E7%94%B5%E8%AE%AF%E9%9B%86%E5%9B%A2%E5%85%AC%E5%8F%B8%28SITA%29'
+  password: 792e0bdb-01db-450c-94c4-925151eb396e
+  port: 16688
+  server: ss.041.node-for-bigairport.win
   type: ss
-- name: '%F0%9F%87%B0%F0%9F%87%B7KR_3%7C4.9MB/s'
-  password: NQ26071394
-  port: 443
-  server: inviting-ferret.rooster465.autos
-  sni: inviting-ferret.rooster465.autos
-  type: trojan
-- name: '%F0%9F%87%B8%F0%9F%87%A8SC_1%7C2.5MB/s'
-  port: 443
-  server: nl11.cyphervpn.pro
-  type: vless
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_24%7C1.5MB/s'
-  port: 443
-  server: static.onetimeok.com
-  type: vless
-- name: 美国 003
-  password: BxceQaOe
-  port: 4099
-  server: 18.162.51.224
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_25%7C2.4MB/s'
-  port: 443
-  server: sync.oneokgames.com
-  type: vless
-- name: '%F0%9F%87%B3%F0%9F%87%B1NL_1%7C1.6MB/s'
-  port: 443
-  server: nl.srv.anti-zapret.com
-  type: vless
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_21%7C1.6MB/s'
-  port: 443
-  server: img.reasonok.com
-  type: vless
-- name: 美国 008
-  password: BxceQaOe
-  port: 35966
-  server: 18.163.5.109
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 美国 011
-  port: 443
-  server: 104.25.126.78
-  type: vless
-- name: '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr'
-  password: Mitivpn
-  port: 443
-  server: 167.82.101.251
-  sni: ssl.fastly.com
-  type: trojan
-- name: ID_speednode_0010
-  port: 8443
-  server: 45.198.87.13
-  type: vless
-- name: '%F0%9F%87%B0%F0%9F%87%B7KR_5%7C5.0MB/s'
-  password: NQ26071394
-  port: 443
-  server: capable-jay.rooster465.autos
-  sni: capable-jay.rooster465.autos
-  type: trojan
-- name: ID_speednode_0013
-  port: 8443
-  server: 45.198.87.33
-  type: vless
-- cipher: chacha20-ietf-poly1305
-  name: '%F0%9F%87%B3%F0%9F%87%B1NL_2%7C1.6MB/s'
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.46
-  type: ss
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_20%7C1.5MB/s'
-  port: 443
-  server: images.oneokgames.com
-  type: vless
-- name: ID_speednode_0011
-  port: 8443
-  server: 45.198.87.203
-  type: vless
-- name: '%E6%84%8F%E5%A4%A7%E5%88%A9%E4%B8%A8yoyapai.com%5Cr'
-  password: Mitivpn
-  port: 80
-  server: 151.101.242.172
-  type: trojan
-- name: 英国 003
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.135
-  type: trojan
-  udp: true
-- name: CZ_speednode_0002
-  port: 443
-  server: 95.85.227.25
-  type: vless
-- name: '%E6%84%8F%E5%A4%A7%E5%88%A9%E7%AF%80%E9%BB%9E%F0%9F%87%AE%F0%9F%87%B9IT%E4%B8%A8yoyapai.com%5Cr'
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 151.241.215.148
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- name: '%E4%BA%9E%E5%A4%AA%E5%9C%B0%E5%8D%80%E4%B8%A8yoyapai.com%5Cr'
-  password: rYuChHcwQZskq9E0zdoR
-  port: 2053
-  server: 103.45.245.208
-  sni: vpn5.rnmcnm.com
-  type: trojan
-- name: '%F0%9F%87%A9%F0%9F%87%AADE_2%7C2.2MB/s'
-  port: 443
-  server: jdvymxi.cvewfjg.shop
-  type: vless
-- name: '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.151
-  sni: 185.137.157.151
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 土耳其 001
-  network: tcp
-  port: 2078
-  server: 93.180.134.52
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1c18da66-a912-40af-b90d-787574efe6d3
-- alterId: 0
-  cipher: auto
-  name: VMess-159.223.94.156:80
-  network: ws
-  port: 80
-  server: 159.223.94.156
-  type: vmess
-  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-  ws-path: /anti13.zingfast.vn
-- name: '%E7%91%9E%E5%85%B8%E4%B8%A8yoyapai.com%5Cr'
-  password: Mitivpn
-  port: 80
-  server: 146.75.116.190
-  type: trojan
-- name: '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_2'
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.142
-  type: trojan
-- name: '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM'
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.156
-  type: trojan
-- name: 美国 009
-  password: Mitivpn
-  port: 443
-  server: iranpoems.ir
-  sni: www.gamingdll.ir
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 俄罗斯 020
-  network: ws
-  port: 443
-  server: renderer-stream-1-411.mirra.now
-  skip-cert-verify: true
-  type: vmess
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-- name: '%F0%9F%87%AD%F0%9F%87%B0%20HK'
-  password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-  port: 443
-  server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
-  sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
-  type: hysteria2
-- name: 美国 023
-  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
-  port: 443
-  server: 149.104.104.58
-  sni: 149.104.104.58
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '%F0%9F%87%A8%F0%9F%87%A6%20CA%E5%8A%A0%E6%8B%BF%E5%A4%A7%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
-  password: 7g7IygV+nnM14seRqIXT4lN7wJ+hKcSLdqgEQpcOq4g=
-  port: 30874
-  server: e2.cover20.ir
-  type: ss
-- name: 中国 001
-  port: 443
-  server: 103.228.168.182
-  type: vless
-- name: '%E7%BE%8E%E5%9B%BD+%E5%8D%8E%E7%9B%9B%E9%A1%BFCogent%E9%80%9A%E4%BF%A1%E5%85%AC%E5%8F%B8'
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
-  port: 443
-  server: 38.54.64.247
-  type: trojan
-- name: '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_3'
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.149
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 荷兰 021
-  network: http
-  port: 27272
-  server: 45.158.23.138
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1c7c0c72-6bc1-4e51-ada8-0e5570bb4780
-- name: 美国 414
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  sni: www.calmlunch.com
-  type: trojan
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_28%7C5.4MB/s'
-  password: NQ26071394
-  port: 443
-  server: allowing-ram.rooster465.autos
-  sni: allowing-ram.rooster465.autos
-  type: trojan
-- name: '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr_2'
-  password: humanity
-  port: 443
-  server: www.ignitelimit.com
-  type: trojan
-- name: 日本 047
-  port: 443
-  server: s10032.csgfw.top
-  type: vless
-- name: 美国 051
-  port: 2087
-  server: 104.17.173.215
-  type: vless
-- name: 美国 268
-  port: 2096
-  server: 198.41.209.7
-  type: vless
-- name: '%F0%9F%87%AF%F0%9F%87%B5JP_22%7C3.9MB/s'
-  password: NQ26071394
-  port: 443
-  server: immune-grackle.rooster465.autos
-  sni: immune-grackle.rooster465.autos
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 香港|@ripaojiedian
-  network: tcp
-  port: 30807
-  server: v10.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '%F0%9F%87%A8%F0%9F%87%B3%20TW%E5%8F%B0%E6%B9%BE%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29_3'
-  password: a5e355b9-11fc-449a-aa7b-eb707783f25a
-  port: 443
-  server: 104.19.174.68
-  sni: px8r9i1b4k.bpusfaster2.top
-  type: trojan
 - name: '%F0%9F%87%AF%F0%9F%87%B5JP_3%7C4.6MB/s'
   password: NQ26071394
   port: 443
   server: fit-marten.rooster465.autos
   sni: fit-marten.rooster465.autos
   type: trojan
-- name: 美国 038
-  port: 2053
-  server: 172.67.77.142
-  type: vless
-- name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_5'
+- name: '%F0%9F%87%AF%F0%9F%87%B5JP_16%7C5.4MB/s'
+  password: NQ26071394
   port: 443
-  server: 104.21.227.134
+  server: saving-drake.rooster465.autos
+  sni: saving-drake.rooster465.autos
+  type: trojan
+- name: '%F0%9F%87%AD%F0%9F%87%B0%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%A6%99%E6%B8%AF%2002'
+  port: 2096
+  server: 172.67.75.217
   type: vless
 - alterId: 0
   cipher: auto
@@ -1027,67 +651,146 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_17%7C2.1MB/s'
-  password: CF68213490
-  port: 443
-  server: alert-monster.rooster465.autos
-  sni: alert-monster.rooster465.autos
-  type: trojan
-- name: '%F0%9F%87%BA%F0%9F%87%B8US_23%7C1.5MB/s'
-  port: 443
-  server: router.reasonok.com
-  type: vless
-- name: 美国 022
-  port: 443
-  server: www.speedtest.org
-  type: vless
-- name: '%F0%9F%87%B0%F0%9F%87%B7KR_8%7C2.1MB/s'
+- name: '%F0%9F%87%B0%F0%9F%87%B7KR_7%7C4.4MB/s'
   password: NQ26071394
   port: 443
-  server: mighty-lemming.rooster465.autos
-  sni: mighty-lemming.rooster465.autos
+  server: accurate-cat.rooster465.autos
+  sni: accurate-cat.rooster465.autos
   type: trojan
-- name: 日本 021
-  password: NQ26071394
+- cipher: aes-256-cfb
+  name: '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2011'
+  password: amazonskr05
   port: 443
-  server: upright-caribou.rooster465.autos
-  sni: upright-caribou.rooster465.autos
-  type: trojan
-  udp: true
-- name: '%F0%9F%87%AE%F0%9F%87%AAIE_1%7C2.2MB/s'
-  password: NQ26071394
+  server: 63.183.207.82
+  type: ss
+- name: 美国 1500
   port: 443
-  server: fun-labrador.rooster465.autos
-  sni: fun-labrador.rooster465.autos
-  type: trojan
-- name: US_speednode_0055
-  port: 14005
-  server: vip.bcjdvip.com
+  server: x4g-production-2af8.up.railway.app
   type: vless
+- name: '%F0%9F%87%B0%F0%9F%87%B7KR_5%7C5.0MB/s'
+  password: NQ26071394
+  port: 443
+  server: capable-jay.rooster465.autos
+  sni: capable-jay.rooster465.autos
+  type: trojan
+- name: '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2006'
+  port: 443
+  server: soskeynets-node-production-a5d6.up.railway.app
+  type: vless
+- name: '%E7%BE%8E%E5%9C%8B%2BCloudFlare%E8%8A%82%E7%82%B9%E4%B8%A8yoyapai.com%5Cr'
+  password: 9c521e24-7326-acd3-acec-d0afac2b465d
+  port: 8080
+  server: 104.25.108.147
+  sni: red-cell-47f9.milaniomilan9.workers.dev
+  type: trojan
 - cipher: aes-256-cfb
   name: '%F0%9F%87%BA%F0%9F%87%B8US_3%7C2.3MB/s'
   password: amazonskr05
   port: 443
   server: 18.190.176.112
   type: ss
-- name: '%F0%9F%87%B3%F0%9F%87%B1NL%E8%8D%B7%E8%98%AD%E4%B8%A8yoyapai.com%5Cr'
-  password: 8r%3C%5B9%27l6hAO%238ZQi
+- cipher: chacha20-ietf-poly1305
+  name: '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  password: hbGrpfvNrJsUmKmPbR3iY2
   port: 443
-  server: 91.221.190.80
+  server: tinkered-pennies-puppies.freesocks.work
+  type: ss
+- name: '%F0%9F%87%B0%F0%9F%87%B7KR_6%7C3.5MB/s'
+  password: NQ26071394
+  port: 443
+  server: modest-amoeba.rooster465.autos
+  sni: modest-amoeba.rooster465.autos
+  type: trojan
+- name: '%F0%9F%87%BA%F0%9F%87%B8US_4%7C1.5MB/s'
+  port: 443
+  server: eu.oneokgames.com
+  type: vless
+- alterId: 0
+  cipher: auto
+  name: VMess-aaaa.wxx.gay:443
+  network: ws
+  port: 443
+  server: aaaa.wxx.gay
+  tls: tls
+  type: vmess
+  uuid: 8237ec34-143a-11ee-8019-000017022008
+  ws-path: /look
+- name: '%F0%9F%87%B0%F0%9F%87%B7KR_3%7C4.9MB/s'
+  password: NQ26071394
+  port: 443
+  server: inviting-ferret.rooster465.autos
+  sni: inviting-ferret.rooster465.autos
+  type: trojan
+- name: '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr_2'
+  password: Mitivpn
+  port: 443
+  server: 167.82.101.251
+  sni: ssl.fastly.com
+  type: trojan
+- name: '%E7%91%9E%E5%85%B8%E4%B8%A8yoyapai.com%5Cr'
+  password: Mitivpn
+  port: 80
+  server: 146.75.116.190
+  type: trojan
+- name: '%E6%84%8F%E5%A4%A7%E5%88%A9%E4%B8%A8yoyapai.com%5Cr'
+  password: Mitivpn
+  port: 80
+  server: 151.101.242.172
+  type: trojan
+- name: '%E4%BA%9E%E5%A4%AA%E5%9C%B0%E5%8D%80%E4%B8%A8yoyapai.com%5Cr'
+  password: rYuChHcwQZskq9E0zdoR
+  port: 2053
+  server: 103.45.245.208
+  sni: vpn5.rnmcnm.com
+  type: trojan
+- name: '%E8%8D%B7%E8%98%AD%E7%AF%80%E9%BB%9E%E4%B8%A8yoyapai.com%5Cr'
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 8443
+  server: 152.53.200.89
   sni: Koma-YT.PAGeS.Dev
   type: trojan
-- name: '%F0%9F%87%B8%F0%9F%87%ACSG_6%7C3.7MB/s'
-  password: NQ26071394
+- alterId: 0
+  cipher: auto
+  name: VMess-159.223.94.156:80
+  network: ws
+  port: 80
+  server: 159.223.94.156
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-path: /anti13.zingfast.vn
+- cipher: chacha20-ietf-poly1305
+  name: '%F0%9F%87%A8%F0%9F%87%A6%20CA%E5%8A%A0%E6%8B%BF%E5%A4%A7%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  password: 7g7IygV+nnM14seRqIXT4lN7wJ+hKcSLdqgEQpcOq4g=
+  port: 30874
+  server: e2.cover20.ir
+  type: ss
+- name: '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2001'
   port: 443
-  server: verified-ringtail.rooster465.autos
-  sni: verified-ringtail.rooster465.autos
-  type: trojan
-- name: '%F0%9F%87%B8%F0%9F%87%ACSG_1%7C4.7MB/s'
-  password: NQ26071394
+  server: 77.110.113.188
+  type: vless
+- name: '%F0%9F%87%AD%F0%9F%87%B0%20HK'
+  password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
-  server: proper-marlin.rooster465.autos
-  sni: proper-marlin.rooster465.autos
-  type: trojan
+  server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
+  sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 俄罗斯 020
+  network: ws
+  port: 443
+  server: renderer-stream-1-411.mirra.now
+  skip-cert-verify: true
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+- alterId: 0
+  cipher: auto
+  name: 香港|@ripaojiedian
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 美国 001
   password: BxceQaOe
   port: 7674
@@ -1095,277 +798,445 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: 美国 008
+  password: BxceQaOe
+  port: 35966
+  server: 18.163.5.109
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 土耳其 001
+  network: tcp
+  port: 2078
+  server: 93.180.134.52
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1c18da66-a912-40af-b90d-787574efe6d3
+- name: '%F0%9F%87%AD%F0%9F%87%B0%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%A6%99%E6%B8%AF%2001'
+  port: 444
+  server: hk.vrsvpn.com
+  type: vless
+- name: 美国 003
+  password: BxceQaOe
+  port: 4099
+  server: 18.162.51.224
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: '%E6%84%8F%E5%A4%A7%E5%88%A9%E7%AF%80%E9%BB%9E%F0%9F%87%AE%F0%9F%87%B9IT%E4%B8%A8yoyapai.com%5Cr'
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 151.241.215.148
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 荷兰 021
+  network: http
+  port: 27272
+  server: 45.158.23.138
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1c7c0c72-6bc1-4e51-ada8-0e5570bb4780
+- name: '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.149
+  type: trojan
+- name: '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_2'
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.142
+  type: trojan
+- name: '%E7%BE%8E%E5%9B%BD+%E5%8D%8E%E7%9B%9B%E9%A1%BFCogent%E9%80%9A%E4%BF%A1%E5%85%AC%E5%8F%B8'
+  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+  port: 443
+  server: 38.54.64.247
+  type: trojan
+- name: 美国 359
+  port: 2096
+  server: 104.17.160.233
+  type: vless
+- name: '%F0%9F%87%B8%F0%9F%87%ACSG_2%7C5.4MB/s'
+  password: NQ26071394
+  port: 443
+  server: usable-dogfish.rooster465.autos
+  sni: usable-dogfish.rooster465.autos
+  type: trojan
+- name: '%F0%9F%87%B8%F0%9F%87%ACSG_6%7C3.7MB/s'
+  password: NQ26071394
+  port: 443
+  server: verified-ringtail.rooster465.autos
+  sni: verified-ringtail.rooster465.autos
+  type: trojan
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2080'
+  port: 2053
+  server: 104.17.49.88
+  type: vless
+- name: '%F0%9F%87%A8%F0%9F%87%A6CA_1%7C2.7MB/s'
+  port: 443
+  server: ct.877774.xyz
+  type: vless
+- name: '%E5%B7%B4%E8%A5%BF%E8%81%96%E4%BF%9D%E7%BE%85%E4%B8%A8yoyapai.com%5Cr'
+  password: mitivpn
+  port: 443
+  server: 188.114.97.6
+  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  type: trojan
+- name: 美国 399
+  port: 8443
+  server: 104.17.162.18
+  type: vless
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2084'
+  port: 443
+  server: 104.17.191.115
+  type: vless
+- alterId: 0
+  cipher: auto
+  host: v6.hdacd.com
+  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  network: tcp
+  port: 30806
+  server: v6.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: '%F0%9F%87%B0%F0%9F%87%B7KR_1%7C5.0MB/s'
+  password: NQ26071394
+  port: 443
+  server: guided-pelican.rooster465.autos
+  sni: guided-pelican.rooster465.autos
+  type: trojan
+- name: '%F0%9F%87%BA%F0%9F%87%B8US_1%7C1.7MB/s'
+  port: 443
+  server: video.reasonok.com
+  type: vless
+- name: '%F0%9F%87%AF%F0%9F%87%B5JP_10%7C5.7MB/s'
+  password: NQ26071394
+  port: 443
+  server: helped-jennet.rooster465.autos
+  sni: helped-jennet.rooster465.autos
+  type: trojan
+- name: '%F0%9F%87%B0%F0%9F%87%B7KR_8%7C2.1MB/s'
+  password: NQ26071394
+  port: 443
+  server: mighty-lemming.rooster465.autos
+  sni: mighty-lemming.rooster465.autos
+  type: trojan
+- name: 美国 1505
+  port: 24643
+  server: 18.156.82.90
+  type: vless
+- name: 英国 003
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.135
+  type: trojan
+  udp: true
+- name: '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2008'
+  port: 8443
+  server: secget.ru
+  type: vless
+- name: '%F0%9F%87%B3%F0%9F%87%B1NL%E8%8D%B7%E8%98%AD%E4%B8%A8yoyapai.com%5Cr'
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 91.221.190.80
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- name: '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_3'
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.151
+  sni: 185.137.157.151
+  type: trojan
+- name: 日本 018
+  password: NQ26071394
+  port: 443
+  server: firm-krill.rooster465.autos
+  sni: firm-krill.rooster465.autos
+  type: trojan
+  udp: true
+- name: '%F0%9F%87%B8%F0%9F%87%ACSG_1%7C4.7MB/s'
+  password: NQ26071394
+  port: 443
+  server: proper-marlin.rooster465.autos
+  sni: proper-marlin.rooster465.autos
+  type: trojan
 - name: '%F0%9F%87%B8%F0%9F%87%ACSG_11%7C5.1MB/s'
   password: NQ26071394
   port: 443
   server: helping-newt.rooster465.autos
   sni: helping-newt.rooster465.autos
   type: trojan
+- alterId: 0
+  cipher: auto
+  host: v35.hdacd.com
+  name: 🇨🇳_CN_中国->🇫🇷_FR_法国
+  network: tcp
+  port: 30835
+  server: v35.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: 美国 023
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  port: 443
+  server: 149.104.104.58
+  sni: 149.104.104.58
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
   - 🔰 自动选择
   - ♻️ 自动测速
-  - 美国 421
-  - 美国 043
-  - 美国 054
-  - '%F0%9F%87%BA%F0%9F%87%B8US_12%7C2.6MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_11%7C2.4MB/s'
-  - '%F0%9F%87%B9%F0%9F%87%BCTW_1%7C2.5MB/s'
-  - 美国 049
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
-  - 美国 037
   - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
-  - 美国 417
+  - 美国 144
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
+  - 美国 314
+  - 美国 207
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
+  - 美国 209
+  - '%F0%9F%87%AD%F0%9F%87%B0%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%A6%99%E6%B8%AF%2004'
+  - 美国 222
+  - 美国 392
   - 🇺🇸US_2|2.6MB/s
-  - 美国 021
-  - 美国 059
-  - '%F0%9F%87%A8%F0%9F%87%B3%20TW%E5%8F%B0%E6%B9%BE%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
-  - 荷兰 007
-  - 美国 376
-  - 美国 020
-  - '%F0%9F%87%BA%F0%9F%87%B8US_14%7C1.8MB/s'
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare'
+  - 美国 289
+  - 美国 236
+  - '%F0%9F%87%BA%F0%9F%87%B8US_11%7C2.4MB/s'
+  - '%F0%9F%87%AF%F0%9F%87%B5%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E6%97%A5%E6%9C%AC%2005'
+  - 美国 261
+  - 美国 205
+  - 美国 341
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2062'
+  - 美国 121
   - 美国 230
-  - '%E8%8D%B7%E5%85%B0+V2CROSS.COM'
-  - 马来西亚 001
-  - 美国 046
-  - 美国 1292
-  - 美国 1494
+  - '%F0%9F%87%A8%F0%9F%87%B3%20TW%E5%8F%B0%E6%B9%BE%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  - 美国 280
   - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_3'
-  - 美国 019
-  - 荷兰 002
-  - 美国 052
-  - 美国 032
-  - 美国 012
-  - 马来西亚 002
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2053'
+  - 美国 312
+  - 美国 184
+  - 美国 310
+  - 美国 347
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2060'
+  - 美国 270
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2043'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare'
+  - 荷兰 013
+  - 美国 096
+  - 荷兰 014
+  - 美国 379
+  - 美国 288
+  - 美国 389
+  - 美国 245
+  - 美国 266
+  - 荷兰 018
+  - 马来西亚 016
+  - 美国 395
   - 荷兰 010
-  - 美国 050
-  - 美国 017
+  - '%E8%8D%B7%E5%85%B0+V2CROSS.COM'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2017'
+  - 马来西亚 010
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2028'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2034'
+  - 荷兰 007
+  - 美国 299
+  - 荷兰 005
+  - 美国 124
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2048'
+  - 美国 337
+  - 马来西亚 015
+  - 美国 376
+  - 美国 228
+  - 美国 224
+  - 美国 276
+  - '%F0%9F%87%BA%F0%9F%87%B8US_12%7C2.6MB/s'
+  - 美国 135
+  - 马来西亚 014
   - 美国 033
-  - 美国 048
+  - '%F0%9F%87%BA%F0%9F%87%B8US_14%7C1.8MB/s'
+  - 马来西亚 007
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2025'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2086'
+  - 美国 188
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2072'
+  - 马来西亚 018
+  - 美国 165
+  - 荷兰 002
+  - 马来西亚 005
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2054'
+  - 马来西亚 011
   - '%F0%9F%87%B2%F0%9F%87%BE%20%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
-  - 美国 025
-  - 美国 013
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_33%7C4.4MB/s'
-  - '%F0%9F%87%B9%F0%9F%87%B7%20%E5%9C%9F%E8%80%B3%E5%85%B6%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
-  - 美国 031
   - '%F0%9F%87%A8%F0%9F%87%B3%20TW%E5%8F%B0%E6%B9%BE%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29_2'
-  - 美国 041
   - '%F0%9F%87%AF%F0%9F%87%B5%20JP%E6%97%A5%E6%9C%AC%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
-  - 🇨🇳_CN_中国->🇫🇷_FR_法国
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_4'
-  - '%F0%9F%87%A8%F0%9F%87%A6CA_1%7C2.7MB/s'
-  - 美国 065
-  - '%F0%9F%87%B8%F0%9F%87%ACSG_12%7C2.5MB/s'
-  - 美国 063
-  - 荷兰 001
-  - 美国 039
-  - 日本 003
-  - '%F0%9F%87%B8%F0%9F%87%ACSG_2%7C5.4MB/s'
-  - 美国 057
-  - '%F0%9F%87%BA%F0%9F%87%B8US_15%7C2.2MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_27%7C3.4MB/s'
-  - 美国 040
-  - 美国 015
-  - 美国 034
-  - 美国 056
-  - 日本 002
-  - SS-88.210.36.106:2377
-  - 美国 060
-  - 美国 311
-  - 美国 053
-  - '%F0%9F%87%BA%F0%9F%87%B8US_26%7C1.6MB/s'
-  - 美国 042
-  - 法国 001
-  - 🇺🇸US_6|1.7MB/s
-  - 美国 047
-  - 美国 064
-  - '%E7%BE%8E%E5%9C%8B%E4%BD%90%E6%B2%BB%E4%BA%9E%E5%B7%9E%E4%BA%9E%E7%89%B9%E8%98%AD%E5%A4%A7%E4%B8%A8yoyapai.com%5Cr'
-  - 美国 036
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_1%7C5.0MB/s'
-  - 美国 058
-  - 美国 014
-  - 英国 002
-  - 美国 026
-  - 新加坡 001
-  - 英国 001
-  - 美国 035
-  - 美国 045
-  - 美国 433
-  - 美国 062
-  - 🇺🇸_US_美国
-  - 美国 024
-  - 日本 020
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_16%7C5.4MB/s'
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - '%E8%A5%BF%E7%8F%AD%E7%89%99+V2CROSS.COM'
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_20%7C5.0MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_3%7C1.6MB/s'
-  - 日本 018
-  - 美国 027
-  - 韩国 005
-  - '%E5%B7%B4%E8%A5%BF%E8%81%96%E4%BF%9D%E7%BE%85%E4%B8%A8yoyapai.com%5Cr'
+  - '%F0%9F%87%B9%F0%9F%87%B7%20%E5%9C%9F%E8%80%B3%E5%85%B6%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
   - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_29%7C5.7MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_4%7C1.5MB/s'
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_15%7C4.8MB/s'
-  - '%F0%9F%87%AC%F0%9F%87%A7GB_1%7C1.9MB/s'
-  - 日本 016
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_11%7C5.4MB/s'
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_31%7C4.8MB/s'
-  - 美国 055
-  - 日本 014
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_6%7C5.7MB/s'
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_25%7C5.7MB/s'
+  - 印度 001
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_4'
+  - '%F0%9F%87%B8%F0%9F%87%ACSG_5%7C3.8MB/s'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2083'
+  - 美国 417
+  - '%F0%9F%87%B8%F0%9F%87%ACSG_12%7C2.5MB/s'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2076'
+  - SS-88.210.36.106:2377
+  - '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_5'
+  - '%F0%9F%87%BA%F0%9F%87%B8US_15%7C2.2MB/s'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2015'
+  - 美国 311
+  - 美国 105
+  - 美国 414
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2065'
+  - 美国 400
+  - 🇺🇸US_6|1.7MB/s
+  - 美国 062
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2008'
+  - 美国 268
+  - 美国 1517
+  - 美国 433
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2002'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
+  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2002'
+  - 美国 366
+  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2003'
+  - '%E8%A5%BF%E7%8F%AD%E7%89%99+V2CROSS.COM'
   - '%E7%BE%8E%E5%9B%BD+V2CROSS.COM'
-  - 美国 412
-  - 澳大利亚 008
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_34%7C2.1MB/s'
-  - ID_speednode_0009
+  - '%F0%9F%87%AF%F0%9F%87%B5JP_5%7C5.5MB/s'
+  - 🇺🇸_US_美国
+  - '%E7%BE%8E%E5%9C%8B%E4%BD%90%E6%B2%BB%E4%BA%9E%E5%B7%9E%E4%BA%9E%E7%89%B9%E8%98%AD%E5%A4%A7%E4%B8%A8yoyapai.com%5Cr'
+  - '%F0%9F%87%A8%F0%9F%87%B3%20TW%E5%8F%B0%E6%B9%BE%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29_3'
+  - '%F0%9F%87%AF%F0%9F%87%B5JP_15%7C4.8MB/s'
+  - 日本 016
+  - '%F0%9F%87%AF%F0%9F%87%B5JP_1%7C5.0MB/s'
+  - 日本 014
+  - 澳大利亚 007
+  - '%F0%9F%87%AF%F0%9F%87%B5JP_6%7C5.7MB/s'
   - '%F0%9F%87%AF%F0%9F%87%B5JP_13%7C5.3MB/s'
   - '%F0%9F%87%AF%F0%9F%87%B5JP_21%7C4.8MB/s'
-  - 澳大利亚 007
-  - 美国 061
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_5%7C5.5MB/s'
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_32%7C4.9MB/s'
-  - '%F0%9F%87%B0%F0%9F%87%B7KR_11%7C3.9MB/s'
-  - '%E6%B3%95%E5%9B%BD+%E5%9B%BD%E9%99%85%E8%88%AA%E7%A9%BA%E7%94%B5%E8%AE%AF%E9%9B%86%E5%9B%A2%E5%85%AC%E5%8F%B8%28SITA%29'
+  - '%F0%9F%87%AF%F0%9F%87%B5JP_34%7C2.1MB/s'
+  - '%F0%9F%87%AC%F0%9F%87%A7GB_1%7C1.9MB/s'
+  - '%F0%9F%87%AF%F0%9F%87%B5JP_11%7C5.4MB/s'
   - 日本 015
-  - '%F0%9F%87%BA%F0%9F%87%B8US_22%7C2.0MB/s'
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_30%7C5.3MB/s'
-  - '%F0%9F%87%B0%F0%9F%87%B7KR_1%7C5.0MB/s'
-  - ID_speednode_0012
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_10%7C5.7MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_18%7C1.5MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_1%7C1.7MB/s'
-  - '%F0%9F%87%B0%F0%9F%87%B7KR_7%7C4.4MB/s'
-  - 美国 044
-  - 澳大利亚 009
-  - '%E8%8D%B7%E8%98%AD%E7%AF%80%E9%BB%9E%E4%B8%A8yoyapai.com%5Cr'
-  - VMess-aaaa.wxx.gay:443
-  - '%E7%BE%8E%E5%9C%8B%2BCloudFlare%E8%8A%82%E7%82%B9%E4%B8%A8yoyapai.com%5Cr'
-  - '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
-  - '%F0%9F%87%B0%F0%9F%87%B7KR_3%7C4.9MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%A8SC_1%7C2.5MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_24%7C1.5MB/s'
-  - 美国 003
-  - '%F0%9F%87%BA%F0%9F%87%B8US_25%7C2.4MB/s'
-  - '%F0%9F%87%B3%F0%9F%87%B1NL_1%7C1.6MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_21%7C1.6MB/s'
-  - 美国 008
-  - 美国 011
-  - '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr'
-  - ID_speednode_0010
-  - '%F0%9F%87%B0%F0%9F%87%B7KR_5%7C5.0MB/s'
-  - ID_speednode_0013
-  - '%F0%9F%87%B3%F0%9F%87%B1NL_2%7C1.6MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_20%7C1.5MB/s'
-  - ID_speednode_0011
-  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E4%B8%A8yoyapai.com%5Cr'
-  - 英国 003
-  - CZ_speednode_0002
-  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E7%AF%80%E9%BB%9E%F0%9F%87%AE%F0%9F%87%B9IT%E4%B8%A8yoyapai.com%5Cr'
-  - '%E4%BA%9E%E5%A4%AA%E5%9C%B0%E5%8D%80%E4%B8%A8yoyapai.com%5Cr'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_2%7C2.2MB/s'
-  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
-  - 土耳其 001
-  - VMess-159.223.94.156:80
-  - '%E7%91%9E%E5%85%B8%E4%B8%A8yoyapai.com%5Cr'
-  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_2'
-  - '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM'
-  - 美国 009
-  - 俄罗斯 020
-  - '%F0%9F%87%AD%F0%9F%87%B0%20HK'
-  - 美国 023
-  - '%F0%9F%87%A8%F0%9F%87%A6%20CA%E5%8A%A0%E6%8B%BF%E5%A4%A7%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
-  - 中国 001
-  - '%E7%BE%8E%E5%9B%BD+%E5%8D%8E%E7%9B%9B%E9%A1%BFCogent%E9%80%9A%E4%BF%A1%E5%85%AC%E5%8F%B8'
-  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_3'
-  - 荷兰 021
-  - 美国 414
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_28%7C5.4MB/s'
-  - '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr_2'
-  - 日本 047
-  - 美国 051
-  - 美国 268
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_22%7C3.9MB/s'
-  - 香港|@ripaojiedian
-  - '%F0%9F%87%A8%F0%9F%87%B3%20TW%E5%8F%B0%E6%B9%BE%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29_3'
+  - '%E6%B3%95%E5%9B%BD+%E5%9B%BD%E9%99%85%E8%88%AA%E7%A9%BA%E7%94%B5%E8%AE%AF%E9%9B%86%E5%9B%A2%E5%85%AC%E5%8F%B8%28SITA%29'
   - '%F0%9F%87%AF%F0%9F%87%B5JP_3%7C4.6MB/s'
-  - 美国 038
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_5'
+  - '%F0%9F%87%AF%F0%9F%87%B5JP_16%7C5.4MB/s'
+  - '%F0%9F%87%AD%F0%9F%87%B0%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%A6%99%E6%B8%AF%2002'
   - 🇭🇰_HK_中国香港
-  - '%F0%9F%87%BA%F0%9F%87%B8US_17%7C2.1MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_23%7C1.5MB/s'
-  - 美国 022
-  - '%F0%9F%87%B0%F0%9F%87%B7KR_8%7C2.1MB/s'
-  - 日本 021
-  - '%F0%9F%87%AE%F0%9F%87%AAIE_1%7C2.2MB/s'
-  - US_speednode_0055
+  - '%F0%9F%87%B0%F0%9F%87%B7KR_7%7C4.4MB/s'
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2011'
+  - 美国 1500
+  - '%F0%9F%87%B0%F0%9F%87%B7KR_5%7C5.0MB/s'
+  - '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2006'
+  - '%E7%BE%8E%E5%9C%8B%2BCloudFlare%E8%8A%82%E7%82%B9%E4%B8%A8yoyapai.com%5Cr'
   - '%F0%9F%87%BA%F0%9F%87%B8US_3%7C2.3MB/s'
-  - '%F0%9F%87%B3%F0%9F%87%B1NL%E8%8D%B7%E8%98%AD%E4%B8%A8yoyapai.com%5Cr'
-  - '%F0%9F%87%B8%F0%9F%87%ACSG_6%7C3.7MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%ACSG_1%7C4.7MB/s'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  - '%F0%9F%87%B0%F0%9F%87%B7KR_6%7C3.5MB/s'
+  - '%F0%9F%87%BA%F0%9F%87%B8US_4%7C1.5MB/s'
+  - VMess-aaaa.wxx.gay:443
+  - '%F0%9F%87%B0%F0%9F%87%B7KR_3%7C4.9MB/s'
+  - '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr_2'
+  - '%E7%91%9E%E5%85%B8%E4%B8%A8yoyapai.com%5Cr'
+  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E4%B8%A8yoyapai.com%5Cr'
+  - '%E4%BA%9E%E5%A4%AA%E5%9C%B0%E5%8D%80%E4%B8%A8yoyapai.com%5Cr'
+  - '%E8%8D%B7%E8%98%AD%E7%AF%80%E9%BB%9E%E4%B8%A8yoyapai.com%5Cr'
+  - VMess-159.223.94.156:80
+  - '%F0%9F%87%A8%F0%9F%87%A6%20CA%E5%8A%A0%E6%8B%BF%E5%A4%A7%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2001'
+  - '%F0%9F%87%AD%F0%9F%87%B0%20HK'
+  - 俄罗斯 020
+  - 香港|@ripaojiedian
   - 美国 001
+  - 美国 008
+  - 土耳其 001
+  - '%F0%9F%87%AD%F0%9F%87%B0%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%A6%99%E6%B8%AF%2001'
+  - 美国 003
+  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E7%AF%80%E9%BB%9E%F0%9F%87%AE%F0%9F%87%B9IT%E4%B8%A8yoyapai.com%5Cr'
+  - 荷兰 021
+  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
+  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_2'
+  - '%E7%BE%8E%E5%9B%BD+%E5%8D%8E%E7%9B%9B%E9%A1%BFCogent%E9%80%9A%E4%BF%A1%E5%85%AC%E5%8F%B8'
+  - 美国 359
+  - '%F0%9F%87%B8%F0%9F%87%ACSG_2%7C5.4MB/s'
+  - '%F0%9F%87%B8%F0%9F%87%ACSG_6%7C3.7MB/s'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2080'
+  - '%F0%9F%87%A8%F0%9F%87%A6CA_1%7C2.7MB/s'
+  - '%E5%B7%B4%E8%A5%BF%E8%81%96%E4%BF%9D%E7%BE%85%E4%B8%A8yoyapai.com%5Cr'
+  - 美国 399
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2084'
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - '%F0%9F%87%B0%F0%9F%87%B7KR_1%7C5.0MB/s'
+  - '%F0%9F%87%BA%F0%9F%87%B8US_1%7C1.7MB/s'
+  - '%F0%9F%87%AF%F0%9F%87%B5JP_10%7C5.7MB/s'
+  - '%F0%9F%87%B0%F0%9F%87%B7KR_8%7C2.1MB/s'
+  - 美国 1505
+  - 英国 003
+  - '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2008'
+  - '%F0%9F%87%B3%F0%9F%87%B1NL%E8%8D%B7%E8%98%AD%E4%B8%A8yoyapai.com%5Cr'
+  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_3'
+  - 日本 018
+  - '%F0%9F%87%B8%F0%9F%87%ACSG_1%7C4.7MB/s'
   - '%F0%9F%87%B8%F0%9F%87%ACSG_11%7C5.1MB/s'
+  - 🇨🇳_CN_中国->🇫🇷_FR_法国
+  - 美国 023
   type: select
 - interval: 300
   name: 🔰 自动选择
   proxies: &id001
-  - 美国 421
-  - 美国 043
-  - 美国 054
-  - '%F0%9F%87%BA%F0%9F%87%B8US_12%7C2.6MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_11%7C2.4MB/s'
-  - '%F0%9F%87%B9%F0%9F%87%BCTW_1%7C2.5MB/s'
-  - 美国 049
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
-  - 美国 037
   - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
-  - 美国 417
+  - 美国 144
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
+  - 美国 314
+  - 美国 207
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
+  - 美国 209
+  - '%F0%9F%87%AD%F0%9F%87%B0%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%A6%99%E6%B8%AF%2004'
+  - 美国 222
+  - 美国 392
   - 🇺🇸US_2|2.6MB/s
-  - 美国 021
-  - 美国 059
-  - '%F0%9F%87%A8%F0%9F%87%B3%20TW%E5%8F%B0%E6%B9%BE%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
-  - 荷兰 007
-  - 美国 376
-  - 美国 020
-  - '%F0%9F%87%BA%F0%9F%87%B8US_14%7C1.8MB/s'
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare'
+  - 美国 289
+  - 美国 236
+  - '%F0%9F%87%BA%F0%9F%87%B8US_11%7C2.4MB/s'
+  - '%F0%9F%87%AF%F0%9F%87%B5%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E6%97%A5%E6%9C%AC%2005'
+  - 美国 261
+  - 美国 205
+  - 美国 341
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2062'
+  - 美国 121
   - 美国 230
-  - '%E8%8D%B7%E5%85%B0+V2CROSS.COM'
-  - 马来西亚 001
-  - 美国 046
-  - 美国 1292
-  - 美国 1494
+  - '%F0%9F%87%A8%F0%9F%87%B3%20TW%E5%8F%B0%E6%B9%BE%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  - 美国 280
   - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_3'
-  - 美国 019
-  - 荷兰 002
-  - 美国 052
-  - 美国 032
-  - 美国 012
-  - 马来西亚 002
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2053'
+  - 美国 312
+  - 美国 184
+  - 美国 310
+  - 美国 347
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2060'
+  - 美国 270
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2043'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare'
+  - 荷兰 013
+  - 美国 096
+  - 荷兰 014
+  - 美国 379
+  - 美国 288
+  - 美国 389
+  - 美国 245
+  - 美国 266
+  - 荷兰 018
+  - 马来西亚 016
+  - 美国 395
   - 荷兰 010
-  - 美国 050
-  - 美国 017
-  - 美国 033
-  - 美国 048
-  - '%F0%9F%87%B2%F0%9F%87%BE%20%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
-  - 美国 025
-  - 美国 013
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_33%7C4.4MB/s'
-  - '%F0%9F%87%B9%F0%9F%87%B7%20%E5%9C%9F%E8%80%B3%E5%85%B6%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
-  - 美国 031
-  - '%F0%9F%87%A8%F0%9F%87%B3%20TW%E5%8F%B0%E6%B9%BE%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29_2'
-  - 美国 041
-  - '%F0%9F%87%AF%F0%9F%87%B5%20JP%E6%97%A5%E6%9C%AC%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  - '%E8%8D%B7%E5%85%B0+V2CROSS.COM'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2017'
+  - 马来西亚 010
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2028'
   type: url-test
   url: https://www.gstatic.com/generate_204
 - interval: 300
