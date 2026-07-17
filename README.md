@@ -1,111 +1,117 @@
 # FreeProxyHub
 
-免费代理订阅聚合器。自动从 GitHub 搜索免费代理订阅链接，解析、验证后整合成 Clash / v2ray 可用的订阅链接。
+免费代理订阅聚合器。自动从 GitHub 搜索免费代理订阅链接，解析、验证后整合成多种格式的订阅链接。
+
+## 订阅地址
+
+运行完成后，以下文件会自动部署到 GitHub Pages：
+
+### Clash / Mihomo / Stash
+
+| 类型 | 地址 |
+|------|------|
+| **全量节点** | `https://2982136527.github.io/free-proxy-sub/clash.yaml` |
+| **精选节点** (延迟最低 30 个) | `https://2982136527.github.io/free-proxy-sub/clash-selected.yaml` |
+
+### Shadowrocket (小火箭) / v2rayN / v2rayNG / Quantumult X
+
+| 类型 | 地址 |
+|------|------|
+| **全量 Base64** | `https://2982136527.github.io/free-proxy-sub/sub.b64` |
+| **全量明文** | `https://2982136527.github.io/free-proxy-sub/sub.txt` |
+| **精选 Base64** (延迟最低 30 个) | `https://2982136527.github.io/free-proxy-sub/sub-selected.b64` |
+
+> 小火箭导入 `sub.b64` 或 `sub.txt`，v2rayN/v2rayNG 导入 `sub.b64`。
+
+### Raw 直链（无需 Pages）
+
+```
+https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/clash.yaml
+https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/sub.b64
+```
 
 ## 工作原理
 
 ```
-GitHub 搜索 → 发现订阅源 → 解析节点 → TCP 连通性验证 → 生成 clash.yaml
+GitHub 搜索 → 发现订阅源 → 解析节点 → TCP 连通性验证 → 生成多格式订阅
      ↑                                                         │
-     └────────── 定时循环（每 4 小时）──────────────────────────┘
+     └────────── 定时循环 ──────────────────────────────────────┘
 ```
 
-## 快速使用（一键部署）
+## 工作流定时
 
-### 1. Fork 这个仓库
+| 工作流 | 定时 | 做什么 |
+|--------|------|--------|
+| `update.yml` (全量更新) | **每 6 小时** | 搜 GitHub → 解析 → TCP 验证 → 清理 → 生成全量+精选 → 提交+部署 |
+| `quick-validate.yml` (精选刷新) | **每 1 小时** | 内置源解析 → TCP 快速验证 → 刷新精选节点 → 部署 |
+
+## 快速部署
+
+### 1. Fork 仓库
 
 ### 2. 启用 GitHub Pages
 
-仓库 → Settings → Pages → Source 选 **GitHub Actions**
+仓库 → Settings → Pages → **GitHub Actions**
 
 ### 3. 等待首次运行
 
-Workflows 会在 4 小时内自动触发。也可以手动触发：
-仓库 → Actions → **Update Proxy Subscription** → Run workflow
-
-### 4. 获取订阅链接
-
-运行完成后，你会得到两种订阅地址：
-
-| 类型 | 地址 |
-|------|------|
-| GitHub Pages | `https://<你的用户名>.github.io/<仓库名>/clash.yaml` |
-| Raw 直链 | `https://raw.githubusercontent.com/<你的用户名>/<仓库名>/gh-pages/clash.yaml` |
-
-> 如果启用 GitHub Actions 自动部署时环境变量 `GITHUB_TOKEN` 被正确设置，订阅链接会自动可用。
-
-### 5. 导入 Clash / Clash Meta
-
-将上述订阅链接填入客户端的 **远程配置 / 订阅** 地址即可。
-
----
+首次运行会自动触发。也可以手动触发：Actions → **Full Update** → Run workflow
 
 ## 本地运行
 
 ```bash
-# 安装依赖
 pip install -r requirements.txt
 
-# 一次性运行（爬取→验证→生成文件到 dist/）
+# 一次性运行
 python cli.py
 
-# 本地服务器模式（FastAPI + 后台定时调度）
+# 本地服务器模式
 python run.py
-# 访问 http://localhost:8000/clash.yaml
 ```
 
 ## 配置文件
 
-编辑 `config.yaml` 自定义行为：
+编辑 `config.yaml`：
 
 ```yaml
 github:
   token: "ghp_xxx"          # GitHub Token，提高 API 频率限制
-  search_queries:
-    - "free proxy subscription"
-    - "shadowsocks config"
-    # ...
 
 validator:
-  concurrency: 50            # 并发验证数
-  connect_timeout: 5         # 连接超时（秒）
-  max_dead_count: 3          # 连续 3 次死亡后删除
+  concurrency: 50
+  connect_timeout: 5
+  max_dead_count: 3
 
 subscription:
-  max_proxies: 200           # 订阅最大节点数
+  max_proxies: 200           # 全量订阅最大节点数
+  selected_count: 30         # 精选节点数
 ```
 
 ## 支持的协议
 
-- Shadowsocks (ss://)
-- VMess (vmess://)
-- Trojan (trojan://)
-- VLESS (vless://)
-- Hysteria2 (hysteria2:// / hy2://)
+Shadowsocks (ss://) · VMess (vmess://) · Trojan (trojan://) · VLESS (vless://) · Hysteria2 (hy2://)
 
 ## 支持的订阅格式
 
-- Clash YAML (proxies 字段)
-- Base64 编码（v2rayN / Shadowrocket 格式）
-- SIP008 JSON
-- 纯文本每行一个链接
+Clash YAML · Base64 (v2rayN/Shadowrocket) · SIP008 JSON · 纯文本每行一个链接
 
 ## 项目结构
 
 ```
-├── .github/workflows/update.yml   # GitHub Actions 工作流
-├── config.yaml                     # 配置文件
-├── cli.py                          # CLI 入口（用于 GitHub Actions）
-├── run.py                          # 本地运行器
+├── .github/workflows/
+│   ├── update.yml            # 全量更新（每 6 小时）
+│   └── quick-validate.yml    # 精选刷新（每 1 小时）
+├── config.yaml
+├── cli.py
 ├── proxy_hub/
-│   ├── crawler.py                  # GitHub 爬虫
-│   ├── parser.py                   # 代理格式解析器
-│   ├── validator.py                # TCP 连通性验证
-│   ├── storage.py                  # SQLite 存储
-│   ├── subscription.py            # 订阅文件生成
-│   ├── server.py                   # FastAPI 服务器
-│   └── main.py                     # 核心工作流
-└── dist/                           # 生成的订阅文件（自动生成）
+│   ├── crawler.py            # GitHub 爬虫
+│   ├── parser.py             # 代理格式解析
+│   ├── validator.py          # TCP 连通性验证
+│   ├── uri_gen.py            # 通用 URI 生成 (ss:///vmess://)
+│   ├── subscription.py       # Clash YAML 生成
+│   ├── server.py             # FastAPI 本地服务器
+│   └── main.py               # 工作流编排
+└── dist/                     # 生成的订阅文件
 ```
 
 ## License
