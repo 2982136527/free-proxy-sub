@@ -164,9 +164,13 @@ class Storage:
 
     def get_alive_proxies(self, limit=200) -> List[Dict]:
         c = self._conn()
-        rows = c.execute(
-            "SELECT * FROM proxies WHERE is_alive=1 ORDER BY latency_ms ASC NULLS LAST LIMIT ?",
-            (limit,)).fetchall()
+        if not limit or limit <= 0:
+            rows = c.execute(
+                "SELECT * FROM proxies WHERE is_alive=1 ORDER BY latency_ms ASC NULLS LAST").fetchall()
+        else:
+            rows = c.execute(
+                "SELECT * FROM proxies WHERE is_alive=1 ORDER BY latency_ms ASC NULLS LAST LIMIT ?",
+                (limit,)).fetchall()
         return [dict(r) for r in rows]
 
     def cleanup_dead(self, max_dead=3):
