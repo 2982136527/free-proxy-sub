@@ -119,7 +119,7 @@ def _proxy_to_clash(p: dict) -> dict:
             for k, v in extra.items():
                 base[k] = v
     elif ptype == "vless":
-        base["uuid"] = p.get("uuid", "")
+        base["uuid"] = p.get("uuid", "") or ""
         base["cipher"] = "auto"
         base["alterId"] = 0
         if p.get("extra"):
