@@ -29,13 +29,22 @@
 
 > 镜像使用的是 `gh-proxy.com`。如果失效可尝试 `gh.api.99988866.xyz`、`github.moeyy.xyz` 等同类服务，或将链接中的 `raw.githubusercontent.com` 替换为镜像地址。
 
+### 精选节点（延迟最低 30 个，每小时刷新）
+
+精选节点直接从全量节点中取延迟最低的 30 个，适合日常使用，更新更频繁。
+
+| 客户端 | 源链接 | 镜像加速 |
+|--------|--------|----------|
+| **Clash / Mihomo** | `https://2982136527.github.io/free-proxy-sub/clash-selected.yaml` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/clash-selected.yaml` |
+| **Shadowrocket / v2rayN** | `https://2982136527.github.io/free-proxy-sub/sub-selected.b64` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/sub-selected.b64` |
+
 ### 导入客户端
 
 **Clash / Mihomo**：复制 Clash YAML 链接 → 客户端 → 订阅 → 添加
 
 **Shadowrocket (小火箭)**：复制 `sub.b64` 或 `sub-selected.b64` 链接 → 小火箭 → 添加订阅
 
-**v2rayN / v2rayNG**：复制 `sub.b64` 链接 → 订阅设置 → 导入
+**v2rayN / v2rayNG**：复制 `sub.b64` 或 `sub-selected.b64` 链接 → 订阅设置 → 导入
 
 ---
 
