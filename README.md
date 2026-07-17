@@ -11,23 +11,23 @@
 | | 全量节点 (200) | 精选节点 (30，延迟最低) |
 |------|------|------|
 | **源链接** | `https://2982136527.github.io/free-proxy-sub/clash.yaml` | `https://2982136527.github.io/free-proxy-sub/clash-selected.yaml` |
-| **镜像加速** | `https://ghproxy.com/https://github.com/2982136527/free-proxy-sub/raw/main/dist/clash.yaml` | `https://ghproxy.com/https://github.com/2982136527/free-proxy-sub/raw/main/dist/clash-selected.yaml` |
+| **镜像加速** | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/clash.yaml` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/clash-selected.yaml` |
 
 ### Shadowrocket (小火箭) / v2rayN / v2rayNG / Quantumult X
 
 | | 全量 Base64 (197) | 精选 Base64 (30) |
 |------|------|------|
 | **源链接** | `https://2982136527.github.io/free-proxy-sub/sub.b64` | `https://2982136527.github.io/free-proxy-sub/sub-selected.b64` |
-| **镜像加速** | `https://ghproxy.com/https://github.com/2982136527/free-proxy-sub/raw/main/dist/sub.b64` | `https://ghproxy.com/https://github.com/2982136527/free-proxy-sub/raw/main/dist/sub-selected.b64` |
+| **镜像加速** | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/sub.b64` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/sub-selected.b64` |
 
 ### 纯文本（调试用）
 
 | | 地址 |
 |------|------|
 | **源链接** | `https://2982136527.github.io/free-proxy-sub/sub.txt` |
-| **镜像加速** | `https://ghproxy.com/https://github.com/2982136527/free-proxy-sub/raw/main/dist/sub.txt` |
+| **镜像加速** | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/sub.txt` |
 
-> 镜像使用的是 `ghproxy.com`，如果失效可自行替换为 `gh-proxy.com`、`github.moeyy.xyz` 等同类服务。
+> 镜像使用的是 `gh-proxy.com`。如果失效可尝试 `gh.api.99988866.xyz`、`github.moeyy.xyz` 等同类服务，或将链接中的 `raw.githubusercontent.com` 替换为镜像地址。
 
 ### 导入客户端
 
