@@ -118,6 +118,23 @@ def _proxy_to_clash(p: dict) -> dict:
                 import json; extra = json.loads(extra)
             for k, v in extra.items():
                 base[k] = v
+    elif ptype == "vless":
+        base["uuid"] = p.get("uuid", "")
+        if p.get("extra"):
+            extra = p["extra"]
+            if isinstance(extra, str):
+                import json; extra = json.loads(extra)
+            for k in ("network", "ws-path", "ws-headers", "tls",
+                      "skip-cert-verify", "servername", "host", "flow",
+                      "encryption", "sni", "fp", "type"):
+                if extra.get(k):
+                    base[k] = extra.get(k)
+        if p.get("extra"):
+            extra = p["extra"]
+            if isinstance(extra, str):
+                import json; extra = json.loads(extra)
+            for k, v in extra.items():
+                base[k] = v
 
     return base
 
