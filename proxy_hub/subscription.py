@@ -119,7 +119,10 @@ def _proxy_to_clash(p: dict) -> dict:
             for k, v in extra.items():
                 base[k] = v
     elif ptype == "vless":
-        base["uuid"] = p.get("uuid", "") or ""
+        uuid_val = p.get("uuid", "") or ""
+        if not uuid_val or uuid_val == "None":
+            raise ValueError(f"vless proxy missing valid uuid: {p.get('name', '')}")
+        base["uuid"] = uuid_val
         base["cipher"] = "auto"
         base["alterId"] = 0
         if p.get("extra"):
