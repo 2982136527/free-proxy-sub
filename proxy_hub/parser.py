@@ -325,7 +325,7 @@ async def fetch_and_parse(url: str) -> List[dict]:
     """下载并解析一个订阅源。"""
     try:
         async with aiohttp.ClientSession() as sess:
-            async with sess.get(url, timeout=aiohttp.ClientTimeout(total=30)) as resp:
+            async with sess.get(url, timeout=aiohttp.ClientTimeout(total=15)) as resp:
                 if resp.status != 200:
                     return []
                 content = await resp.read()
