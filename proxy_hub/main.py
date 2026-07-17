@@ -5,27 +5,36 @@ from typing import Optional
 
 from .config import load as load_config
 from .storage import Storage
-from .crawler import crawl_github
+from .crawler import crawl_github, seed_builtin_sources
 from .parser import fetch_and_parse
 from .validator import run_validation
-from .subscription import generate_clash_yaml, generate_json
 
 logger = logging.getLogger("proxy_hub")
 
 
 async def run_cycle(config: Optional[dict] = None,
-                    storage: Optional[Storage] = None) -> dict:
+                    storage: Optional[Storage] = None,
+                    skip_crawl: bool = False) -> dict:
+    """执行一次工作周期。
+
+    skip_crawl=True 时跳过 GitHub 搜索，只从已入库的来源解析+验证。
+    """
     cfg = config or load_config()
     st = storage or Storage()
 
-    # 1) 爬取
-    logger.info("开始爬取 GitHub …")
-    try:
-        crawl_result = await crawl_github(cfg, st)
-        logger.info("爬取完成: %s", crawl_result)
-    except Exception as e:
-        logger.error("爬取失败: %s", e)
-        crawl_result = {"error": str(e), "found": 0, "new": 0}
+    # 1) 爬取（或仅种植内置源）
+    if skip_crawl:
+        seeded = await seed_builtin_sources(st)
+        crawl_result = {"found": len(st.get_sources()), "new": seeded, "skip": True}
+        logger.info("跳过 GitHub 搜索，内置源 %d 个", seeded)
+    else:
+        logger.info("开始爬取 GitHub …")
+        try:
+            crawl_result = await crawl_github(cfg, st)
+            logger.info("爬取完成: %s", crawl_result)
+        except Exception as e:
+            logger.error("爬取失败: %s", e)
+            crawl_result = {"error": str(e), "found": 0, "new": 0}
 
     # 2) 解析所有来源
     sources = st.get_sources()
@@ -73,5 +82,6 @@ async def run_cycle(config: Optional[dict] = None,
 
 
 def run_cycle_sync(config: Optional[dict] = None,
-                   storage: Optional[Storage] = None) -> dict:
-    return asyncio.run(run_cycle(config, storage))
+                   storage: Optional[Storage] = None,
+                   skip_crawl: bool = False) -> dict:
+    return asyncio.run(run_cycle(config, storage, skip_crawl))

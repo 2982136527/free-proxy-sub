@@ -3,7 +3,7 @@ server:
   port: 8000
 
 github:
-  token: ""  # 可选，填 GITHUB_TOKEN 可提高 API 频率限制 (5000次/h vs 60次/h)
+  token: ""
   search_queries:
     - "free proxy subscription"
     - "shadowsocks config"
@@ -16,14 +16,15 @@ github:
     - "机场 订阅"
 
 crawler:
-  interval_minutes: 30
+  interval_minutes: 360
 
 validator:
-  interval_minutes: 5
+  interval_minutes: 30
   concurrency: 50
   connect_timeout: 5
   max_dead_count: 3
 
 subscription:
   max_proxies: 200
+  selected_count: 30
   name: "FreeProxyHub"

@@ -1,14 +1,12 @@
-name: Full Update (Crawl + Validate)
+name: Quick Validate (精选更新)
 
 on:
-  push:
-    branches: [main]
   schedule:
-    - cron: '0 */6 * * *'       # 每 6 小时
+    - cron: '0 * * * *'       # 每 1 小时（精选节点保持最新）
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -17,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,22 +24,18 @@ jobs:
           python-version: '3.12'
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Full crawl + validate + generate
-        run: python cli.py
+
+      - name: Quick validate (no crawl) + generate all files
+        run: python cli.py --validate-only
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
-      - name: Commit subscription files to repo
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/
-          git diff --staged --quiet || (git commit -m "chore: auto-update [skip ci]" && git push)
 
   deploy:
-    needs: build
+    needs: validate
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
