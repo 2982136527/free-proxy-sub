@@ -84,7 +84,7 @@ def _proxy_to_clash(p: dict) -> dict:
             base["plugin"] = p["plugin"]
             base["plugin-opts"] = p.get("plugin_opts", "")
     elif ptype == "vmess":
-        base["uuid"] = p.get("uuid", "")
+        base["uuid"] = p.get("uuid", "") or ""
         base["cipher"] = p.get("cipher", "auto")
         base["alterId"] = 0
         if p.get("extra"):
