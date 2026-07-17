@@ -12,6 +12,13 @@ proxies:
   server: 23.133.52.10
   type: vless
   uuid: ''
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US-02
+  port: 443
+  server: 108.162.198.67
+  type: vless
+  uuid: ''
 - allowInsecure: '1'
   alterId: 0
   cipher: auto
@@ -26,8 +33,34 @@ proxies:
   uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
 - alterId: 0
   cipher: auto
-  host: s5gydl.936.us.ci
+  name: 🇺🇸 US-03
+  port: 443
+  server: 162.159.38.9
+  type: vless
+  uuid: ''
+- allowInsecure: '1'
+  alterId: 0
+  cipher: auto
+  host: 40t1.wxgqlfx.vip
   name: 🌍 Node-02
+  network: ws
+  path: /TG@wxgqlfxsecurity=tls
+  port: 443
+  server: 162.159.39.151
+  sni: 40t1.wxgqlfx.vip
+  type: ws
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US-04
+  port: 8443
+  server: 162.159.38.124
+  type: vless
+  uuid: ''
+- alterId: 0
+  cipher: auto
+  host: s5gydl.936.us.ci
+  name: 🌍 Node-03
   network: ws
   path: /proxyip=tw.william.us.ci?uuid=f4e91fac-25eb-4d26-a14c-c82c3778a0e4fp=chrome
   port: 8443
@@ -38,176 +71,29 @@ proxies:
   uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
 - alterId: 0
   cipher: auto
-  fp: random
-  host: cfh.evan00.dpdns.org
-  name: 🇺🇸 US-02
-  network: ws
-  path: '%2Fproxyip%3Dsjc.o00o.ooo'
-  port: 443
-  security: tls
-  server: 172.64.52.210
-  sni: cfh.evan00.dpdns.org
-  type: ws
-  uuid: d2a4ac9a-2fda-4a65-ab10-ec92d1897012
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-03
-  port: 443
-  server: 162.159.45.218
-  type: vless
-  uuid: ''
-- cipher: chacha20-ietf
-  name: 🇭🇰 HK-01
-  password: asd123456
-  port: 8388
-  server: 103.149.182.79
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-04
-  port: 8443
-  server: 162.159.39.73
-  type: vless
-  uuid: ''
-- alterId: 0
-  cipher: auto
   name: 🇺🇸 US-05
-  port: 2096
-  server: 162.159.38.91
+  port: 443
+  server: 162.159.38.163
   type: vless
   uuid: ''
 - alterId: 0
   cipher: auto
   name: 🇺🇸 US-06
-  port: 8443
-  server: 162.159.45.62
+  port: 443
+  server: 172.64.53.198
   type: vless
   uuid: ''
-- allowInsecure: '1'
-  alterId: 0
-  cipher: auto
-  host: 40t1.wxgqlfx.vip
-  name: 🌍 Node-03
-  network: ws
-  path: /TG@wxgqlfxsecurity=tls
-  port: 443
-  server: 162.159.39.151
-  sni: 40t1.wxgqlfx.vip
-  type: ws
-  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
 - alterId: 0
   cipher: auto
   name: 🇺🇸 US-07
-  port: 8443
-  server: 108.162.198.171
-  type: vless
-  uuid: ''
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-08
   port: 443
-  server: 162.159.39.78
-  type: vless
-  uuid: ''
-- name: 🇳🇱 NL-01
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-- allowInsecure: '1'
-  alterId: 0
-  cipher: auto
-  host: 40t1.wxgqlfx.vip
-  name: 🌍 Node-04
-  network: ws
-  path: /TG@wxgqlfxsecurity=tls
-  port: 443
-  server: 162.159.24.217
-  sni: 40t1.wxgqlfx.vip
-  type: ws
-  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-09
-  port: 2083
-  server: 162.159.38.227
-  type: vless
-  uuid: ''
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-10
-  port: 2083
-  server: 8.35.211.66
-  type: vless
-  uuid: ''
-- alterId: 0
-  cipher: auto
-  name: 🇲🇾 MY-01
-  port: 2096
-  server: 8.39.125.30
-  type: vless
-  uuid: ''
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-11
-  port: 2083
-  server: 162.159.39.219
-  type: vless
-  uuid: ''
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-12
-  port: 2096
-  server: 8.35.211.81
-  type: vless
-  uuid: ''
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-13
-  port: 443
-  server: 173.245.59.35
-  type: vless
-  uuid: ''
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-14
-  port: 8443
-  server: 173.245.58.173
-  type: vless
-  uuid: ''
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-15
-  port: 443
-  server: 162.159.6.235
-  type: vless
-  uuid: ''
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-16
-  port: 2087
-  server: 172.64.146.59
-  type: vless
-  uuid: ''
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-17
-  port: 2096
-  server: 173.245.58.230
-  type: vless
-  uuid: ''
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-18
-  port: 2053
-  server: 198.41.223.30
+  server: 172.64.229.110
   type: vless
   uuid: ''
 - alterId: 0
   cipher: auto
   host: cf11.evan00.dpdns.org
-  name: 🌍 Node-05
+  name: 🌍 Node-04
   network: ws
   path: /proxyip=ProxyIP.US.cmliussss.netfp=random
   port: 443
@@ -218,48 +104,133 @@ proxies:
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: vp31.cc.cd
-  name: 🇺🇸 US-19
-  network: ws
-  path: '%2F'
-  port: 2087
-  security: tls
-  server: 162.159.40.200
-  sni: vp31.cc.cd
-  type: ws
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  name: 🇺🇸 US-08
+  port: 443
+  server: 162.159.39.47
+  type: vless
+  uuid: ''
+- name: 🇺🇸 US-09
+  password: VPNCUSTOMIZE
+  port: 443
+  server: 162.159.38.183
+  sni: ww.offers.de5.net
+  type: trojan
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: vp14.cc.cd
-  name: 🇺🇸 US-20
-  network: ws
-  path: '%2F'
-  port: 2096
-  security: tls
-  server: 188.164.248.172
-  sni: vp14.cc.cd
-  type: ws
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  name: 🇺🇸 US-10
+  port: 443
+  server: 162.159.45.218
+  type: vless
+  uuid: ''
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: vp14.cc.cd
-  name: 🇺🇸 US-21
-  network: ws
-  path: '%2F'
+  name: 🇺🇸 US-11
+  port: 2083
+  server: 108.162.198.52
+  type: vless
+  uuid: ''
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US-12
   port: 8443
-  security: tls
-  server: 104.18.33.74
-  sni: vp14.cc.cd
-  type: ws
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  server: 162.159.38.136
+  type: vless
+  uuid: ''
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US-13
+  port: 2087
+  server: 104.18.33.6
+  type: vless
+  uuid: ''
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US-14
+  port: 2087
+  server: 172.64.146.59
+  type: vless
+  uuid: ''
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US-15
+  port: 2083
+  server: 162.159.46.152
+  type: vless
+  uuid: ''
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US-16
+  port: 443
+  server: 104.18.33.70
+  type: vless
+  uuid: ''
+- alterId: 0
+  cipher: auto
+  name: 🇲🇾 MY-01
+  port: 2087
+  server: 8.39.125.21
+  type: vless
+  uuid: ''
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US-17
+  port: 443
+  server: 162.159.40.1
+  type: vless
+  uuid: ''
+- alterId: 0
+  cipher: auto
+  name: 🇲🇾 MY-02
+  port: 2053
+  server: 8.39.125.213
+  type: vless
+  uuid: ''
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱 NL-01
+  port: 2096
+  server: 188.164.248.190
+  type: vless
+  uuid: ''
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US-18
+  port: 2087
+  server: 8.35.211.6
+  type: vless
+  uuid: ''
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US-19
+  port: 2087
+  server: 104.18.33.179
+  type: vless
+  uuid: ''
+- name: 🇳🇱 NL-02
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US-20
+  port: 443
+  server: 162.159.7.146
+  type: vless
+  uuid: ''
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US-21
+  port: 443
+  server: 162.159.1.37
+  type: vless
+  uuid: ''
 - alterId: 0
   cipher: auto
   name: 🇺🇸 US-22
-  port: 8443
-  server: 173.245.59.120
+  port: 2096
+  server: 198.41.223.75
   type: vless
   uuid: ''
 proxy-groups:
@@ -267,32 +238,32 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🇺🇸 US-01
-  - 🌍 Node-01
-  - 🌍 Node-02
   - 🇺🇸 US-02
+  - 🌍 Node-01
   - 🇺🇸 US-03
-  - 🇭🇰 HK-01
+  - 🌍 Node-02
   - 🇺🇸 US-04
+  - 🌍 Node-03
   - 🇺🇸 US-05
   - 🇺🇸 US-06
-  - 🌍 Node-03
   - 🇺🇸 US-07
-  - 🇺🇸 US-08
-  - 🇳🇱 NL-01
   - 🌍 Node-04
+  - 🇺🇸 US-08
   - 🇺🇸 US-09
   - 🇺🇸 US-10
-  - 🇲🇾 MY-01
   - 🇺🇸 US-11
   - 🇺🇸 US-12
   - 🇺🇸 US-13
   - 🇺🇸 US-14
   - 🇺🇸 US-15
   - 🇺🇸 US-16
+  - 🇲🇾 MY-01
   - 🇺🇸 US-17
+  - 🇲🇾 MY-02
+  - 🇳🇱 NL-01
   - 🇺🇸 US-18
-  - 🌍 Node-05
   - 🇺🇸 US-19
+  - 🇳🇱 NL-02
   - 🇺🇸 US-20
   - 🇺🇸 US-21
   - 🇺🇸 US-22
@@ -301,32 +272,32 @@ proxy-groups:
   name: ♻️ 自动选择
   proxies:
   - 🇺🇸 US-01
-  - 🌍 Node-01
-  - 🌍 Node-02
   - 🇺🇸 US-02
+  - 🌍 Node-01
   - 🇺🇸 US-03
-  - 🇭🇰 HK-01
+  - 🌍 Node-02
   - 🇺🇸 US-04
+  - 🌍 Node-03
   - 🇺🇸 US-05
   - 🇺🇸 US-06
-  - 🌍 Node-03
   - 🇺🇸 US-07
-  - 🇺🇸 US-08
-  - 🇳🇱 NL-01
   - 🌍 Node-04
+  - 🇺🇸 US-08
   - 🇺🇸 US-09
   - 🇺🇸 US-10
-  - 🇲🇾 MY-01
   - 🇺🇸 US-11
   - 🇺🇸 US-12
   - 🇺🇸 US-13
   - 🇺🇸 US-14
   - 🇺🇸 US-15
   - 🇺🇸 US-16
+  - 🇲🇾 MY-01
   - 🇺🇸 US-17
+  - 🇲🇾 MY-02
+  - 🇳🇱 NL-01
   - 🇺🇸 US-18
-  - 🌍 Node-05
   - 🇺🇸 US-19
+  - 🇳🇱 NL-02
   - 🇺🇸 US-20
   - 🇺🇸 US-21
   - 🇺🇸 US-22
