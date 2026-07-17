@@ -15,7 +15,6 @@ logger = logging.getLogger("proxy_hub")
 
 async def run_cycle(config: Optional[dict] = None,
                     storage: Optional[Storage] = None) -> dict:
-    """执行一次完整周期。"""
     cfg = config or load_config()
     st = storage or Storage()
 
@@ -23,12 +22,12 @@ async def run_cycle(config: Optional[dict] = None,
     logger.info("开始爬取 GitHub …")
     try:
         crawl_result = await crawl_github(cfg, st)
-        logger.info("爬取完成: found=%s new=%s", crawl_result["found"], crawl_result["new"])
+        logger.info("爬取完成: %s", crawl_result)
     except Exception as e:
         logger.error("爬取失败: %s", e)
-        crawl_result = {"found": 0, "new": 0, "error": str(e)}
+        crawl_result = {"error": str(e), "found": 0, "new": 0}
 
-    # 2) 解析
+    # 2) 解析所有来源
     sources = st.get_sources()
     parsed_total = 0
     for src in sources:
@@ -61,7 +60,6 @@ async def run_cycle(config: Optional[dict] = None,
     max_dead = cfg.get("validator", {}).get("max_dead_count", 3)
     st.cleanup_dead(max_dead)
 
-    # 5) 输出统计
     stats = st.stats()
     logger.info("当前状态: total=%d alive=%d sources=%d",
                 stats["total"], stats["alive"], stats["sources"])
@@ -76,5 +74,4 @@ async def run_cycle(config: Optional[dict] = None,
 
 def run_cycle_sync(config: Optional[dict] = None,
                    storage: Optional[Storage] = None) -> dict:
-    """同步包装。"""
     return asyncio.run(run_cycle(config, storage))
