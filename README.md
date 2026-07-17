@@ -8,19 +8,19 @@
 
 ### Clash / Mihomo / Stash
 
-| | 全量节点 (200) | 精选节点 (30，延迟最低) |
-|------|------|------|
-| **源链接** | `https://2982136527.github.io/free-proxy-sub/clash.yaml` | `https://2982136527.github.io/free-proxy-sub/clash-selected.yaml` |
-| **镜像加速** | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/clash.yaml` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/clash-selected.yaml` |
+| 类型 | 原始链接 | 镜像加速 |
+|------|---------|----------|
+| 全量节点 (200) | `https://2982136527.github.io/free-proxy-sub/clash.yaml` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/clash.yaml` |
+| 精选节点 (30) | `https://2982136527.github.io/free-proxy-sub/clash-selected.yaml` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/clash-selected.yaml` |
 
-### Shadowrocket (小火箭) / v2rayN / v2rayNG / Quantumult X
+### Shadowrocket / v2rayN / v2rayNG / Quantumult X
 
-| | 全量 Base64 (197) | 精选 Base64 (30) |
-|------|------|------|
-| **源链接** | `https://2982136527.github.io/free-proxy-sub/sub.b64` | `https://2982136527.github.io/free-proxy-sub/sub-selected.b64` |
-| **镜像加速** | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/sub.b64` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/sub-selected.b64` |
+| 类型 | 原始链接 | 镜像加速 |
+|------|---------|----------|
+| 全量节点 (200) | `https://2982136527.github.io/free-proxy-sub/sub.b64` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/sub.b64` |
+| 精选节点 (30) | `https://2982136527.github.io/free-proxy-sub/sub-selected.b64` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/sub-selected.b64` |
 
-### 纯文本（调试用）
+### 纯文本（调试用）### 纯文本（调试用）
 
 | | 地址 |
 |------|------|
@@ -31,11 +31,11 @@
 
 ### 导入客户端
 
-**Clash / Mihomo**：复制 Clash YAML 链接 → 客户端 → 订阅 → 添加
+**Clash / Mihomo**：复制表格中对应原始链接 → 客户端 → 订阅 → 添加
 
-**Shadowrocket (小火箭)**：复制 `sub.b64` 或 `sub-selected.b64` 链接 → 小火箭 → 添加订阅
+**Shadowrocket (小火箭)**：复制 `全量节点` 或 `精选节点` 的原始链接 → 小火箭 → 添加订阅
 
-**v2rayN / v2rayNG**：复制 `sub.b64` 或 `sub-selected.b64` 链接 → 订阅设置 → 导入
+**v2rayN / v2rayNG**：复制 `全量节点` 或 `精选节点` 的原始链接 → 订阅设置 → 导入
 
 ---
 
