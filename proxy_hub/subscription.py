@@ -120,13 +120,19 @@ def _proxy_to_clash(p: dict) -> dict:
                 base[k] = v
     elif ptype == "vless":
         base["uuid"] = p.get("uuid", "")
+        base["cipher"] = "auto"
+        base["alterId"] = 0
         if p.get("extra"):
             extra = p["extra"]
             if isinstance(extra, str):
                 import json; extra = json.loads(extra)
+            # VLESS URI 的 "type" 参数对应 Clash 的 "network" 字段
+            net_type = extra.pop("type", None)
+            if net_type and not extra.get("network"):
+                extra["network"] = net_type
             for k in ("network", "ws-path", "ws-headers", "tls",
-                      "skip-cert-verify", "servername", "host", "flow",
-                      "encryption", "sni", "fp", "type"):
+                      "skip-cert-verify", "servername", "host",
+                      "flow", "encryption", "sni", "fp"):
                 if extra.get(k):
                     base[k] = extra.get(k)
         if p.get("extra"):
