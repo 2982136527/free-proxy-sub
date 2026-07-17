@@ -1,0 +1,206 @@
+allow-lan: false
+external-controller: 127.0.0.1:9090
+ipv6: false
+log-level: warning
+mode: Rule
+port: 7890
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🌍 Node-01
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 88.210.36.109
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🌍 Node-02
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 88.210.36.106
+  type: ss
+- name: 🌍 Node-03
+  port: 443
+  server: 104.19.145.11
+  type: vless
+- name: 🇺🇸 US-01
+  port: 2083
+  server: 104.17.18.167
+  type: vless
+- name: 🌍 Node-04
+  port: 2053
+  server: 173.245.59.14
+  type: vless
+- name: 🌍 Node-05
+  port: 2083
+  server: 8.35.211.165
+  type: vless
+- name: 🇺🇸 US-02
+  port: 2096
+  server: 172.66.3.236
+  type: vless
+- name: 🇹🇼 TW-01
+  password: a5e355b9-11fc-449a-aa7b-eb707783f25a
+  port: 443
+  server: 104.19.174.68
+  sni: px8r9i1b4k.bpusfaster2.top
+  type: trojan
+- name: 🇺🇸 US-03
+  port: 80
+  server: 141.193.27.4
+  type: vless
+- name: 🌍 Node-06
+  port: 443
+  server: 45.8.211.217
+  type: vless
+- name: 🌍 Node-07
+  port: 443
+  server: 104.16.72.101
+  type: vless
+- name: 🇺🇸 US-04
+  port: 2083
+  server: 172.67.73.76
+  type: vless
+- name: 🌍 Node-08
+  port: 2083
+  server: 8.39.125.11
+  type: vless
+- name: 🇺🇸 US-05
+  port: 443
+  server: 104.17.147.51
+  type: vless
+- name: 🌍 Node-09
+  port: 2053
+  server: 8.39.125.171
+  type: vless
+- name: 🇺🇸 US-06
+  port: 8443
+  server: 104.17.148.200
+  type: vless
+- name: 🇺🇸 US-07
+  port: 8443
+  server: 172.64.35.37
+  type: vless
+- name: 🌍 Node-10
+  port: 443
+  server: 172.66.0.20
+  type: vless
+- name: 🌍 Node-11
+  port: 2086
+  server: 172.67.213.2
+  type: vless
+- name: 🌍 Node-12
+  port: 443
+  server: 45.130.125.207
+  type: vless
+- name: 🇺🇸 US-08
+  port: 2087
+  server: 104.17.187.46
+  type: vless
+- name: 🌍 Node-13
+  port: 2096
+  server: 8.39.125.6
+  type: vless
+- name: 🇺🇸 US-09
+  port: 8443
+  server: 104.17.146.100
+  type: vless
+- name: 🌍 Node-14
+  port: 8443
+  server: 92.243.74.4
+  type: vless
+- name: 🇨🇦 CA-01
+  port: 443
+  server: 162.159.1.170
+  type: vless
+- name: 🌍 Node-15
+  port: 8880
+  server: 162.159.46.0
+  type: vless
+- name: 🌍 Node-16
+  port: 2053
+  server: 198.41.223.189
+  type: vless
+- name: 🌍 Node-17
+  port: 443
+  server: 104.25.126.78
+  type: vless
+- name: 🇺🇸 US-10
+  port: 2087
+  server: 104.19.35.249
+  type: vless
+- name: 🌍 Node-18
+  port: 2096
+  server: 162.159.38.91
+  type: vless
+proxy-groups:
+- name: 🇺🇳 精选节点
+  proxies:
+  - ♻️ 自动选择
+  - 🌍 Node-01
+  - 🌍 Node-02
+  - 🌍 Node-03
+  - 🇺🇸 US-01
+  - 🌍 Node-04
+  - 🌍 Node-05
+  - 🇺🇸 US-02
+  - 🇹🇼 TW-01
+  - 🇺🇸 US-03
+  - 🌍 Node-06
+  - 🌍 Node-07
+  - 🇺🇸 US-04
+  - 🌍 Node-08
+  - 🇺🇸 US-05
+  - 🌍 Node-09
+  - 🇺🇸 US-06
+  - 🇺🇸 US-07
+  - 🌍 Node-10
+  - 🌍 Node-11
+  - 🌍 Node-12
+  - 🇺🇸 US-08
+  - 🌍 Node-13
+  - 🇺🇸 US-09
+  - 🌍 Node-14
+  - 🇨🇦 CA-01
+  - 🌍 Node-15
+  - 🌍 Node-16
+  - 🌍 Node-17
+  - 🇺🇸 US-10
+  - 🌍 Node-18
+  type: select
+- interval: 180
+  name: ♻️ 自动选择
+  proxies:
+  - 🌍 Node-01
+  - 🌍 Node-02
+  - 🌍 Node-03
+  - 🇺🇸 US-01
+  - 🌍 Node-04
+  - 🌍 Node-05
+  - 🇺🇸 US-02
+  - 🇹🇼 TW-01
+  - 🇺🇸 US-03
+  - 🌍 Node-06
+  - 🌍 Node-07
+  - 🇺🇸 US-04
+  - 🌍 Node-08
+  - 🇺🇸 US-05
+  - 🌍 Node-09
+  - 🇺🇸 US-06
+  - 🇺🇸 US-07
+  - 🌍 Node-10
+  - 🌍 Node-11
+  - 🌍 Node-12
+  - 🇺🇸 US-08
+  - 🌍 Node-13
+  - 🇺🇸 US-09
+  - 🌍 Node-14
+  - 🇨🇦 CA-01
+  - 🌍 Node-15
+  - 🌍 Node-16
+  - 🌍 Node-17
+  - 🇺🇸 US-10
+  - 🌍 Node-18
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+rules:
+- MATCH,🇺🇳 精选节点
+socks-port: 7891
