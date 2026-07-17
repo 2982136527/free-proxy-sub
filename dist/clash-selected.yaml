@@ -5,201 +5,153 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- name: 🌍 Node-01
-  port: 443
-  server: 108.162.198.125
-  type: vless
-- name: 🌍 Node-02
-  port: 2053
-  server: 8.35.211.177
-  type: vless
-- name: 🌍 Node-03
-  port: 2083
-  server: 8.39.125.11
-  type: vless
-- name: 🌍 Node-04
-  port: 443
-  server: 104.26.15.137
-  type: vless
-- name: 🇺🇸 US-01
-  port: 8443
-  server: 172.67.70.77
-  type: vless
-- name: 🇸🇪 SE-01
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: firefox
+  host: vp14.cc.cd
+  name: 🌍 Node-04
+  network: ws
   port: 2096
-  server: 172.67.79.99
+  server: 172.67.75.217
+  sni: vp14.cc.cd
   type: vless
-- name: 🇺🇸 US-02
-  port: 443
-  server: 104.17.147.51
-  type: vless
-- name: 🌍 Node-05
-  port: 8443
-  server: 104.17.180.15
-  type: vless
-- name: 🇺🇸 US-03
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  host: vp33.cc.cd
+  name: 🌍 Node-05
+  network: ws
   port: 2096
-  server: 172.66.3.236
+  server: 198.41.209.7
+  sni: vp33.cc.cd
   type: vless
-- name: 🇺🇸 US-04
-  port: 2087
-  server: 104.19.35.249
-  type: vless
-- name: 🇺🇸 US-05
-  port: 2096
-  server: 173.245.59.230
-  type: vless
-- name: 🇺🇸 US-06
-  port: 2087
-  server: 173.245.58.209
-  type: vless
-- name: 🌍 Node-06
-  port: 2096
-  server: 188.164.248.178
-  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - name: 🌍 Node-07
+  password: MITIVPN
   port: 443
-  server: 104.18.45.137
-  type: vless
-- name: 🌍 Node-08
-  port: 443
-  server: 104.16.72.50
-  type: vless
-- name: 🌍 Node-09
-  port: 443
-  server: 173.245.59.35
-  type: vless
-- name: 🌍 Node-10
-  port: 443
-  server: 173.245.58.87
-  type: vless
-- name: 🇺🇸 US-07
-  port: 2053
-  server: 104.17.53.104
-  type: vless
-- name: 🌍 Node-11
-  port: 2083
-  server: 8.35.211.165
-  type: vless
-- name: 🇺🇸 US-08
-  port: 8443
-  server: 104.17.146.100
-  type: vless
-- name: 🌍 Node-12
-  password: d0298536-d670-4045-bbb1-ddd5ea68683e
-  port: 443
-  server: 104.19.174.68
-  sni: azadnet-5vk.pages.dev
-  type: trojan
-- name: 🌍 Node-13
-  port: 443
-  server: 162.159.1.37
-  type: vless
-- name: 🇺🇸 US-09
-  port: 2083
-  server: 172.67.73.76
-  type: vless
-- name: 🇺🇸 US-10
-  port: 2087
-  server: 104.17.187.46
-  type: vless
-- name: 🌍 Node-14
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  sni: www.creationlong.org
+  server: 94.140.0.100
+  sni: 95r.ir
   type: trojan
   udp: true
-- name: 🌍 Node-15
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: firefox
+  host: vp39.cc.cd
+  name: 🌍 Node-10
+  network: ws
   port: 443
-  server: 104.16.72.101
+  server: 8.39.125.111
+  sni: vp39.cc.cd
   type: vless
-- name: 🌍 Node-16
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: firefox
+  host: vp11.cc.cd
+  name: 🌍 Node-11
+  network: ws
+  port: 2096
+  server: 198.41.223.233
+  sni: vp11.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: firefox
+  host: vp13.cc.cd
+  name: 🌍 Node-12
+  network: ws
+  port: 2087
+  server: 173.245.59.7
+  sni: vp13.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  host: cfh.evan00.dpdns.org
+  name: 🌍 Node-14
+  network: ws
   port: 443
-  server: 45.130.125.207
+  server: 172.64.52.210
+  sni: cfh.evan00.dpdns.org
   type: vless
-- name: 🌍 Node-17
-  port: 2053
-  server: 173.245.59.14
+  uuid: d2a4ac9a-2fda-4a65-ab10-ec92d1897012
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: firefox
+  host: vp23.cc.cd
+  name: 🇷🇺 RU-01
+  network: ws
+  port: 8443
+  server: 173.245.59.120
+  sni: vp23.cc.cd
   type: vless
-- name: 🌍 Node-18
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- name: 🌍 Node-21
+  password: f18d6149-e214-8554-e737-f7523c8b2eea
   port: 443
-  server: 198.41.223.124
-  type: vless
-- name: 🌍 Node-19
-  password: Mitivpn
-  port: 443
-  server: 151.101.56.6
-  sni: ssl.fastly.com
+  server: 45.131.4.118
+  sni: 0403.infinityconfig4.workers.dev
   type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp11.cc.cd
+  name: 🌍 Node-23
+  network: ws
+  port: 8443
+  server: 8.35.211.186
+  sni: vp11.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: firefox
+  host: vp15.cc.cd
+  name: 🇷🇺 RU-02
+  network: ws
+  port: 8443
+  server: 198.41.223.216
+  sni: vp15.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🌍 Node-01
-  - 🌍 Node-02
-  - 🌍 Node-03
   - 🌍 Node-04
-  - 🇺🇸 US-01
-  - 🇸🇪 SE-01
-  - 🇺🇸 US-02
   - 🌍 Node-05
-  - 🇺🇸 US-03
-  - 🇺🇸 US-04
-  - 🇺🇸 US-05
-  - 🇺🇸 US-06
-  - 🌍 Node-06
   - 🌍 Node-07
-  - 🌍 Node-08
-  - 🌍 Node-09
   - 🌍 Node-10
-  - 🇺🇸 US-07
   - 🌍 Node-11
-  - 🇺🇸 US-08
   - 🌍 Node-12
-  - 🌍 Node-13
-  - 🇺🇸 US-09
-  - 🇺🇸 US-10
   - 🌍 Node-14
-  - 🌍 Node-15
-  - 🌍 Node-16
-  - 🌍 Node-17
-  - 🌍 Node-18
-  - 🌍 Node-19
+  - 🇷🇺 RU-01
+  - 🌍 Node-21
+  - 🌍 Node-23
+  - 🇷🇺 RU-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🌍 Node-01
-  - 🌍 Node-02
-  - 🌍 Node-03
   - 🌍 Node-04
-  - 🇺🇸 US-01
-  - 🇸🇪 SE-01
-  - 🇺🇸 US-02
   - 🌍 Node-05
-  - 🇺🇸 US-03
-  - 🇺🇸 US-04
-  - 🇺🇸 US-05
-  - 🇺🇸 US-06
-  - 🌍 Node-06
   - 🌍 Node-07
-  - 🌍 Node-08
-  - 🌍 Node-09
   - 🌍 Node-10
-  - 🇺🇸 US-07
   - 🌍 Node-11
-  - 🇺🇸 US-08
   - 🌍 Node-12
-  - 🌍 Node-13
-  - 🇺🇸 US-09
-  - 🇺🇸 US-10
   - 🌍 Node-14
-  - 🌍 Node-15
-  - 🌍 Node-16
-  - 🌍 Node-17
-  - 🌍 Node-18
-  - 🌍 Node-19
+  - 🇷🇺 RU-01
+  - 🌍 Node-21
+  - 🌍 Node-23
+  - 🇷🇺 RU-02
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
