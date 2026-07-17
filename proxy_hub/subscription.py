@@ -138,12 +138,6 @@ def _proxy_to_clash(p: dict) -> dict:
                       "flow", "encryption", "sni", "fp"):
                 if extra.get(k):
                     base[k] = extra.get(k)
-        if p.get("extra"):
-            extra = p["extra"]
-            if isinstance(extra, str):
-                import json; extra = json.loads(extra)
-            for k, v in extra.items():
-                base[k] = v
 
     return base
 
