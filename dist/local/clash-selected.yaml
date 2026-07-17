@@ -30,7 +30,7 @@ proxies:
   name: 🌍 Node-02
   network: ws
   port: 443
-  server: 108.162.198.108
+  server: 162.159.39.151
   sni: 40t1.wxgqlfx.vip
   type: vless
   uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
@@ -40,7 +40,7 @@ proxies:
   name: 🌍 Node-03
   network: ws
   port: 443
-  server: 162.159.39.151
+  server: 108.162.198.108
   sni: 40t1.wxgqlfx.vip
   type: vless
   uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
@@ -56,18 +56,6 @@ proxies:
   uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
 - alterId: 0
   cipher: auto
-  encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  name: 🇯🇵 JP-01
-  network: tcp
-  port: 37533
-  server: 172.81.102.142
-  sni: www.amazon.com
-  type: vless
-  uuid: 1416a27c-edba-4822-90d5-728b4333114d
-- alterId: 0
-  cipher: auto
   host: cf11.evan00.dpdns.org
   name: 🌍 Node-05
   network: ws
@@ -76,23 +64,55 @@ proxies:
   sni: cf11.evan00.dpdns.org
   type: vless
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- cipher: chacha20-ietf
+  name: 🇭🇰 HK-01
+  password: asd123456
+  port: 8388
+  server: 103.149.182.79
+  type: ss
 - alterId: 0
   cipher: auto
   fp: chrome
-  host: vp36.cc.cd
-  name: 🇺🇸 US-14
+  host: vp24.cc.cd
+  name: 🇺🇸 US-11
   network: ws
   port: 2087
-  server: 173.245.58.162
-  sni: vp36.cc.cd
+  server: 188.164.248.143
+  sni: vp24.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- name: 🇳🇱 NL-04
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp31.cc.cd
+  name: 🇺🇸 US-13
+  network: ws
+  port: 2087
+  server: 162.159.40.200
+  sni: vp31.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  host: do-tor1.862400.xyz
+  name: 🌍 Node-06
+  network: ws
   port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
+  server: ct.877774.xyz
+  sni: do-tor1.862400.xyz
+  type: vless
+  uuid: 9f23c068-6452-4923-b8e6-f1cd6123ddfc
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp15.cc.cd
+  name: 🇺🇸 US-19
+  network: ws
+  port: 8443
+  server: 198.41.223.216
+  sni: vp15.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
@@ -102,10 +122,12 @@ proxy-groups:
   - 🌍 Node-02
   - 🌍 Node-03
   - 🌍 Node-04
-  - 🇯🇵 JP-01
   - 🌍 Node-05
-  - 🇺🇸 US-14
-  - 🇳🇱 NL-04
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-11
+  - 🇺🇸 US-13
+  - 🌍 Node-06
+  - 🇺🇸 US-19
   type: select
 - interval: 180
   name: ♻️ 自动选择
@@ -115,10 +137,12 @@ proxy-groups:
   - 🌍 Node-02
   - 🌍 Node-03
   - 🌍 Node-04
-  - 🇯🇵 JP-01
   - 🌍 Node-05
-  - 🇺🇸 US-14
-  - 🇳🇱 NL-04
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-11
+  - 🇺🇸 US-13
+  - 🌍 Node-06
+  - 🇺🇸 US-19
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
