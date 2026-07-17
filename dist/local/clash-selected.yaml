@@ -5,200 +5,214 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-01
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🌍 Node-02
+- name: 🇺🇸 US-01
   port: 2053
   server: 23.133.52.10
   type: vless
-- name: 🇺🇸 US-01
+- name: 🇺🇸 US-02
+  port: 443
+  server: 162.159.39.47
+  type: vless
+- name: 🇺🇸 US-03
   port: 8443
-  server: 162.159.38.119
+  server: 162.159.38.124
+  type: vless
+- name: 🌍 Node-01
+  port: 443
+  server: 108.162.198.108
+  type: vless
+- name: 🌍 Node-02
+  port: 443
+  server: 162.159.39.151
   type: vless
 - name: 🌍 Node-03
   port: 8443
   server: 103.118.40.32
   type: vless
-- name: 🇺🇸 US-02
+- name: 🇺🇸 US-04
+  port: 443
+  server: 162.159.38.9
+  type: vless
+- name: 🇺🇸 US-05
+  port: 8443
+  server: 162.159.38.119
+  type: vless
+- name: 🇺🇸 US-06
+  port: 443
+  server: 108.162.198.67
+  type: vless
+- alterId: 0
+  cipher: auto
+  host: v33.hdacd.com
+  name: 🇩🇪 DE-01
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: 🇺🇸 US-07
   port: 8443
   server: 172.64.52.134
   type: vless
-- name: 🇺🇸 US-03
+- alterId: 0
+  cipher: auto
+  host: v29.hdacd.com
+  name: 🇺🇸 US-08
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: 🇺🇸 US-09
+  password: VPNCUSTOMIZE
   port: 443
-  server: 108.162.198.125
-  type: vless
-- name: 🇰🇷 KR-01
-  port: 12016
-  server: 220.72.143.166
-  type: vless
-- name: 🇺🇸 US-04
-  port: 2083
-  server: 162.159.39.6
-  type: vless
-- name: 🌍 Node-04
-  port: 443
-  server: ct.877774.xyz
-  type: vless
-- name: 🌍 Node-05
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
+  server: 162.159.38.183
+  sni: ww.offers.de5.net
   type: trojan
-- name: 🌍 Node-06
+- name: 🇺🇸 US-10
   port: 443
-  server: 162.159.24.217
+  server: 172.64.229.110
   type: vless
-- name: 🌍 Node-07
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-04
+  network: tcp
+  port: 30808
+  server: v8.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇺🇸 US-11
+  port: 443
+  server: 162.159.45.218
+  type: vless
+- name: 🇺🇸 US-12
+  port: 2087
+  server: 104.18.33.6
+  type: vless
+- name: 🇹🇼 TW-01
+  password: a5e355b9-11fc-449a-aa7b-eb707783f25a
+  port: 443
+  server: cdn2.bpcdn.cc
+  sni: kfb9frqf0v.bpis2026.top
+  type: trojan
+- name: 🇳🇱 NL-01
   port: 2096
   server: 188.164.248.190
   type: vless
-- name: 🇳🇱 NL-01
-  port: 8443
-  server: 188.164.248.123
+- name: 🇺🇸 US-13
+  port: 2096
+  server: 8.35.211.81
+  type: vless
+- name: 🇺🇸 US-14
+  port: 443
+  server: 173.245.58.87
+  type: vless
+- name: 🌍 Node-05
+  port: 443
+  server: 162.159.24.217
+  type: vless
+- name: 🇺🇸 US-15
+  port: 443
+  server: 162.159.16.154
+  type: vless
+- name: 🇺🇸 US-16
+  port: 2053
+  server: 198.41.223.30
   type: vless
 - name: 🇳🇱 NL-02
   port: 2087
   server: 188.164.248.143
   type: vless
-- name: 🌍 Node-08
+- name: 🇲🇾 MY-01
+  port: 2053
+  server: 8.39.125.213
+  type: vless
+- name: 🇺🇸 US-17
   port: 2096
-  server: 8.35.211.81
+  server: 198.41.223.119
   type: vless
-- name: 🇺🇸 US-05
-  port: 443
-  server: 172.64.145.2
-  type: vless
-- name: 🌍 Node-09
+- name: 🇺🇸 US-18
   port: 443
   server: 162.159.6.235
   type: vless
-- name: 🌍 Node-10
-  port: 443
-  server: 162.159.39.151
-  type: vless
-- name: 🌍 Node-11
+- name: 🇺🇸 US-19
   port: 2087
   server: 172.64.146.59
   type: vless
-- name: 🇺🇸 US-06
-  port: 2053
-  server: 8.35.211.177
-  type: vless
-- name: 🌍 Node-12
-  port: 8443
-  server: bayan.ns.cloudflare.com
-  type: vless
-- name: 🇺🇸 US-07
+- name: 🇺🇸 US-20
   port: 443
-  server: cdn.9889888.xyz
-  type: vless
-- name: 🌍 Node-13
-  port: 443
-  server: 108.162.198.108
-  type: vless
-- name: 🇺🇸 US-08
-  port: 443
-  server: 162.159.16.154
-  type: vless
-- name: 🌍 Node-14
-  port: 2053
-  server: 198.41.223.30
-  type: vless
-- name: 🇺🇸 US-09
-  port: 2087
-  server: 173.245.58.209
-  type: vless
-- name: 🇺🇸 US-10
-  port: 2096
-  server: 173.245.59.230
-  type: vless
-- name: 🌍 Node-15
-  port: 443
-  server: cdn.204910.best
-  type: vless
-- name: 🇺🇸 US-11
-  port: 2087
-  server: www.shopify.com
-  type: vless
-- name: 🇺🇸 US-12
-  port: 2087
-  server: mfa.gov.ua
+  server: 172.64.145.2
   type: vless
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🌍 Node-01
-  - 🌍 Node-02
   - 🇺🇸 US-01
-  - 🌍 Node-03
   - 🇺🇸 US-02
   - 🇺🇸 US-03
-  - 🇰🇷 KR-01
+  - 🌍 Node-01
+  - 🌍 Node-02
+  - 🌍 Node-03
   - 🇺🇸 US-04
-  - 🌍 Node-04
-  - 🌍 Node-05
-  - 🌍 Node-06
-  - 🌍 Node-07
-  - 🇳🇱 NL-01
-  - 🇳🇱 NL-02
-  - 🌍 Node-08
   - 🇺🇸 US-05
-  - 🌍 Node-09
-  - 🌍 Node-10
-  - 🌍 Node-11
   - 🇺🇸 US-06
-  - 🌍 Node-12
+  - 🇩🇪 DE-01
   - 🇺🇸 US-07
-  - 🌍 Node-13
   - 🇺🇸 US-08
-  - 🌍 Node-14
   - 🇺🇸 US-09
   - 🇺🇸 US-10
-  - 🌍 Node-15
+  - 🌍 Node-04
   - 🇺🇸 US-11
   - 🇺🇸 US-12
+  - 🇹🇼 TW-01
+  - 🇳🇱 NL-01
+  - 🇺🇸 US-13
+  - 🇺🇸 US-14
+  - 🌍 Node-05
+  - 🇺🇸 US-15
+  - 🇺🇸 US-16
+  - 🇳🇱 NL-02
+  - 🇲🇾 MY-01
+  - 🇺🇸 US-17
+  - 🇺🇸 US-18
+  - 🇺🇸 US-19
+  - 🇺🇸 US-20
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🌍 Node-01
-  - 🌍 Node-02
   - 🇺🇸 US-01
-  - 🌍 Node-03
   - 🇺🇸 US-02
   - 🇺🇸 US-03
-  - 🇰🇷 KR-01
+  - 🌍 Node-01
+  - 🌍 Node-02
+  - 🌍 Node-03
   - 🇺🇸 US-04
-  - 🌍 Node-04
-  - 🌍 Node-05
-  - 🌍 Node-06
-  - 🌍 Node-07
-  - 🇳🇱 NL-01
-  - 🇳🇱 NL-02
-  - 🌍 Node-08
   - 🇺🇸 US-05
-  - 🌍 Node-09
-  - 🌍 Node-10
-  - 🌍 Node-11
   - 🇺🇸 US-06
-  - 🌍 Node-12
+  - 🇩🇪 DE-01
   - 🇺🇸 US-07
-  - 🌍 Node-13
   - 🇺🇸 US-08
-  - 🌍 Node-14
   - 🇺🇸 US-09
   - 🇺🇸 US-10
-  - 🌍 Node-15
+  - 🌍 Node-04
   - 🇺🇸 US-11
   - 🇺🇸 US-12
+  - 🇹🇼 TW-01
+  - 🇳🇱 NL-01
+  - 🇺🇸 US-13
+  - 🇺🇸 US-14
+  - 🌍 Node-05
+  - 🇺🇸 US-15
+  - 🇺🇸 US-16
+  - 🇳🇱 NL-02
+  - 🇲🇾 MY-01
+  - 🇺🇸 US-17
+  - 🇺🇸 US-18
+  - 🇺🇸 US-19
+  - 🇺🇸 US-20
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
