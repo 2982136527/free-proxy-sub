@@ -1,10 +1,11 @@
 name: Full Update (Crawl + Validate)
-
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'dist/local/**'
   schedule:
-    - cron: '0 */6 * * *'       # 每 6 小时
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 permissions:
