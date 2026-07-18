@@ -10,7 +10,19 @@ proxies:
   encryption: none
   fp: chrome
   host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-07
+  name: 🇺🇸 US-12
+  network: ws
+  port: 443
+  server: 172.64.53.27
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: t1s1.rittbo.kdns.fr
+  name: 🇺🇸 US-20
   network: ws
   port: 443
   server: 172.64.145.186
@@ -22,62 +34,27 @@ proxies:
   encryption: none
   fp: chrome
   host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-13
-  network: ws
-  port: 443
-  server: 172.64.53.27
-  sni: t1s1.rittbo.kdns.fr
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: tianshu13.pages.dev
-  name: 🇺🇸 US-14
-  network: ws
-  port: 443
-  server: 172.64.147.15
-  sni: tianshu13.pages.dev
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-19
+  name: 🇺🇸 US-26
   network: ws
   port: 443
   server: 172.64.42.44
   sni: t1s1.rittbo.kdns.fr
   type: vless
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-- name: 🇳🇱 NL-01
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  skip-cert-verify: true
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-07
-  - 🇺🇸 US-13
-  - 🇺🇸 US-14
-  - 🇺🇸 US-19
-  - 🇳🇱 NL-01
+  - 🇺🇸 US-12
+  - 🇺🇸 US-20
+  - 🇺🇸 US-26
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-07
-  - 🇺🇸 US-13
-  - 🇺🇸 US-14
-  - 🇺🇸 US-19
-  - 🇳🇱 NL-01
+  - 🇺🇸 US-12
+  - 🇺🇸 US-20
+  - 🇺🇸 US-26
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
