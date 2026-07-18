@@ -25,26 +25,29 @@ proxies:
   sni: 7jceh.02i3.bto.hh.hhyf.kdns.fr
   type: vless
   uuid: 68eee13f-1a7a-4761-b71e-83b997eeccf9
-- name: 🇳🇱 NL-01
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-03
+  network: tcp
+  port: 10049
+  server: family.bucket.x9.kfc-520.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇳🇱 NL-01
+  - 🌍 Node-03
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇳🇱 NL-01
+  - 🌍 Node-03
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
