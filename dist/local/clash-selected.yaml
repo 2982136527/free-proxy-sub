@@ -9,20 +9,70 @@ proxies:
   cipher: auto
   name: 🌍 Node-01
   network: tcp
-  port: 30808
-  server: v8.hdacd.com
+  port: 30845
+  server: v45.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  host: s5gydl.936.us.ci
-  name: 🌍 Node-02
+  fp: chrome
+  host: vp20.cc.cd
+  name: 🇺🇸 US-01
   network: ws
   port: 8443
-  server: 103.118.40.32
-  sni: s5gydl.936.us.ci
+  server: 162.159.45.62
+  sni: vp20.cc.cd
   type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cfh.evan00.dpdns.org
+  name: 🇺🇸 US-02
+  network: ws
+  port: 443
+  server: 172.64.52.210
+  sni: cfh.evan00.dpdns.org
+  type: vless
+  uuid: d2a4ac9a-2fda-4a65-ab10-ec92d1897012
+- alterId: 0
+  cipher: auto
+  host: 9cvs-zyn4r9-6gzdtuo0w.mikuru.ip-ddns.com
+  name: 🌍 Node-02
+  network: ws
+  port: 30001
+  server: 114.204.40.185
+  sni: 9cvs-zyn4r9-6gzdtuo0w.mikuru.ip-ddns.com
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp30.cc.cd
+  name: 🇺🇸 US-03
+  network: ws
+  port: 2083
+  server: 162.159.39.219
+  sni: vp30.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- name: 🇺🇸 US-04
+  password: VPNCUSTOMIZE
+  port: 443
+  server: 162.159.38.183
+  sni: ww.offers.de5.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp14.cc.cd
+  name: 🇺🇸 US-05
+  network: ws
+  port: 8443
+  server: 162.159.39.73
+  sni: vp14.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - cipher: chacha20-ietf
   name: 🇭🇰 HK-01
   password: asd123456
@@ -31,24 +81,102 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  host: 40t1.wxgqlfx.vip
-  name: 🌍 Node-03
+  fp: chrome
+  host: vp21.cc.cd
+  name: 🇺🇸 US-06
   network: ws
-  port: 443
-  server: 108.162.198.108
-  sni: 40t1.wxgqlfx.vip
+  port: 2053
+  server: 162.159.38.42
+  sni: vp21.cc.cd
   type: vless
-  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - alterId: 0
   cipher: auto
-  host: 40t1.wxgqlfx.vip
-  name: 🌍 Node-04
+  fp: chrome
+  host: vp20.cc.cd
+  name: 🇺🇸 US-07
   network: ws
   port: 443
-  server: 162.159.39.151
-  sni: 40t1.wxgqlfx.vip
+  server: 162.159.38.42
+  sni: vp20.cc.cd
   type: vless
-  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp17.cc.cd
+  name: 🇺🇸 US-08
+  network: ws
+  port: 2096
+  server: 162.159.38.91
+  sni: vp17.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp20.cc.cd
+  name: 🇺🇸 US-09
+  network: ws
+  port: 2083
+  server: 162.159.38.227
+  sni: vp20.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  name: 🌍 Node-03
+  network: ws
+  port: 627
+  server: 140.245.75.37
+  sni: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp39.cc.cd
+  name: 🇺🇸 US-10
+  network: ws
+  port: 2053
+  server: 162.159.38.133
+  sni: vp39.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp17.cc.cd
+  name: 🇺🇸 US-11
+  network: ws
+  port: 443
+  server: 162.159.39.78
+  sni: vp17.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp14.cc.cd
+  name: 🇺🇸 US-12
+  network: ws
+  port: 8443
+  server: 162.159.38.230
+  sni: vp14.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp29.cc.cd
+  name: 🇺🇸 US-13
+  network: ws
+  port: 8443
+  server: 108.162.198.171
+  sni: vp29.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - alterId: 0
   cipher: auto
   encryption: none
@@ -63,63 +191,203 @@ proxies:
   uuid: 1416a27c-edba-4822-90d5-728b4333114d
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: vp14.cc.cd
-  name: 🇺🇸 US-13
+  host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  name: 🌍 Node-04
   network: ws
-  port: 8443
-  server: 104.18.33.74
-  sni: vp14.cc.cd
+  port: 56271
+  server: 146.56.106.51
+  sni: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp29.cc.cd
+  name: 🇺🇸 US-14
+  network: ws
+  port: 443
+  server: 173.245.58.147
+  sni: vp29.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - alterId: 0
   cipher: auto
   fp: chrome
-  host: vp11.cc.cd
+  host: vp35.cc.cd
   name: 🇺🇸 US-15
   network: ws
-  port: 2087
-  server: 8.35.211.169
-  sni: vp11.cc.cd
+  port: 8443
+  server: 8.39.125.193
+  sni: vp35.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - alterId: 0
   cipher: auto
-  fp: random
-  host: cfh.evan00.dpdns.org
+  fp: chrome
+  host: vp28.cc.cd
+  name: 🇺🇸 US-16
+  network: ws
+  port: 2053
+  server: 162.159.39.251
+  sni: vp28.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp33.cc.cd
   name: 🇺🇸 US-17
   network: ws
   port: 443
-  server: 172.64.52.210
-  sni: cfh.evan00.dpdns.org
+  server: 104.18.33.37
+  sni: vp33.cc.cd
   type: vless
-  uuid: d2a4ac9a-2fda-4a65-ab10-ec92d1897012
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp35.cc.cd
+  name: 🇺🇸 US-18
+  network: ws
+  port: 2096
+  server: 173.245.58.48
+  sni: vp35.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp12.cc.cd
+  name: 🇺🇸 US-19
+  network: ws
+  port: 2096
+  server: 188.164.248.178
+  sni: vp12.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp24.cc.cd
+  name: 🇺🇸 US-20
+  network: ws
+  port: 2087
+  server: 188.164.248.143
+  sni: vp24.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp30.cc.cd
+  name: 🇺🇸 US-21
+  network: ws
+  port: 2083
+  server: 8.35.211.66
+  sni: vp30.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp34.cc.cd
+  name: 🇺🇸 US-22
+  network: ws
+  port: 2087
+  server: 8.35.211.13
+  sni: vp34.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp21.cc.cd
+  name: 🇺🇸 US-23
+  network: ws
+  port: 443
+  server: 188.164.248.67
+  sni: vp21.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp23.cc.cd
+  name: 🇺🇸 US-24
+  network: ws
+  port: 2087
+  server: 188.164.248.66
+  sni: vp23.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🌍 Node-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
   - 🌍 Node-02
+  - 🇺🇸 US-03
+  - 🇺🇸 US-04
+  - 🇺🇸 US-05
   - 🇭🇰 HK-01
+  - 🇺🇸 US-06
+  - 🇺🇸 US-07
+  - 🇺🇸 US-08
+  - 🇺🇸 US-09
   - 🌍 Node-03
-  - 🌍 Node-04
-  - 🇯🇵 JP-01
+  - 🇺🇸 US-10
+  - 🇺🇸 US-11
+  - 🇺🇸 US-12
   - 🇺🇸 US-13
+  - 🇯🇵 JP-01
+  - 🌍 Node-04
+  - 🇺🇸 US-14
   - 🇺🇸 US-15
+  - 🇺🇸 US-16
   - 🇺🇸 US-17
+  - 🇺🇸 US-18
+  - 🇺🇸 US-19
+  - 🇺🇸 US-20
+  - 🇺🇸 US-21
+  - 🇺🇸 US-22
+  - 🇺🇸 US-23
+  - 🇺🇸 US-24
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🌍 Node-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
   - 🌍 Node-02
+  - 🇺🇸 US-03
+  - 🇺🇸 US-04
+  - 🇺🇸 US-05
   - 🇭🇰 HK-01
+  - 🇺🇸 US-06
+  - 🇺🇸 US-07
+  - 🇺🇸 US-08
+  - 🇺🇸 US-09
   - 🌍 Node-03
-  - 🌍 Node-04
-  - 🇯🇵 JP-01
+  - 🇺🇸 US-10
+  - 🇺🇸 US-11
+  - 🇺🇸 US-12
   - 🇺🇸 US-13
+  - 🇯🇵 JP-01
+  - 🌍 Node-04
+  - 🇺🇸 US-14
   - 🇺🇸 US-15
+  - 🇺🇸 US-16
   - 🇺🇸 US-17
+  - 🇺🇸 US-18
+  - 🇺🇸 US-19
+  - 🇺🇸 US-20
+  - 🇺🇸 US-21
+  - 🇺🇸 US-22
+  - 🇺🇸 US-23
+  - 🇺🇸 US-24
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
