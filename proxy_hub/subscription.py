@@ -139,6 +139,11 @@ def _proxy_to_clash(p: dict) -> dict:
                 if extra.get(k):
                     base[k] = extra.get(k)
 
+    # Convert string bool fields to actual booleans for Clash
+    for key in ('tls', 'skip-cert-verify', 'udp'):
+        if key in base and isinstance(base[key], str):
+            base[key] = base[key].lower() in ('true', '1', 'tls', 'yes')
+
     return base
 
 
