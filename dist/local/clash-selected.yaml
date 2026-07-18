@@ -5,7 +5,7 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- name: 🇺🇸 US-05
+- name: 🇺🇸 US-03
   password: VPNCUSTOMIZE
   port: 443
   server: 162.159.38.183
@@ -13,38 +13,24 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  name: 🇯🇵 JP-01
-  network: tcp
-  port: 37533
-  server: 172.81.102.142
-  sni: www.amazon.com
-  type: vless
-  uuid: 1416a27c-edba-4822-90d5-728b4333114d
-- cipher: chacha20-ietf
-  name: 🇭🇰 HK-01
-  password: asd123456
-  port: 8388
-  server: 103.149.182.79
-  type: ss
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp14.cc.cd
-  name: 🇺🇸 US-14
+  host: late-mountain-6801.355.workers.dev
+  name: 🌍 Node-01
   network: ws
-  port: 2096
-  server: 188.164.248.172
-  sni: vp14.cc.cd
+  port: 8880
+  server: cf5.466688.xyz
   type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
+- name: 🇳🇱 NL-01
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
 - alterId: 0
   cipher: auto
   encryption: none
   host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-15
+  name: 🇺🇸 US-17
   network: ws
   port: 443
   server: 172.64.153.159
@@ -53,48 +39,31 @@ proxies:
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: vp36.cc.cd
-  name: 🇺🇸 US-16
+  host: mute-sunset-0849.40-aeb.workers.dev
+  name: 🌍 Node-02
   network: ws
-  port: 2087
-  server: 173.245.58.162
-  sni: vp36.cc.cd
+  port: 8880
+  server: deepl.com
   type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp15.cc.cd
-  name: 🇺🇸 US-18
-  network: ws
-  port: 8443
-  server: 198.41.223.216
-  sni: vp15.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-05
-  - 🇯🇵 JP-01
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-14
-  - 🇺🇸 US-15
-  - 🇺🇸 US-16
-  - 🇺🇸 US-18
+  - 🇺🇸 US-03
+  - 🌍 Node-01
+  - 🇳🇱 NL-01
+  - 🇺🇸 US-17
+  - 🌍 Node-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-05
-  - 🇯🇵 JP-01
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-14
-  - 🇺🇸 US-15
-  - 🇺🇸 US-16
-  - 🇺🇸 US-18
+  - 🇺🇸 US-03
+  - 🌍 Node-01
+  - 🇳🇱 NL-01
+  - 🇺🇸 US-17
+  - 🌍 Node-02
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
