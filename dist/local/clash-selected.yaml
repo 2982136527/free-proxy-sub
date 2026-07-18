@@ -4,15 +4,141 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-06
+  network: ws
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: 40t1.wxgqlfx.vip
+  name: 🇺🇸 US-09
+  network: ws
+  port: 443
+  server: 172.64.53.253
+  sni: 40t1.wxgqlfx.vip
+  type: vless
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱 NL-01
+  network: raw
+  port: 10049
+  server: family.bucket.x9.kfc-520.com
+  type: vmess
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: 0dsshvzb.cnm.qzz.io
+  name: 🇺🇸 US-13
+  network: ws
+  port: 2082
+  server: xqgs1fjh.cf.3666888.xyz
+  type: vless
+  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-18
+  network: ws
+  port: 443
+  server: 172.64.229.1
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: edge-4cb23bf6.pages.dev
+  name: 🇺🇸 US-19
+  network: ws
+  port: 443
+  server: cfd4.466688.xyz
+  sni: edge-4cb23bf6.pages.dev
+  type: vless
+  uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-01
+  network: tcp
+  port: 10038
+  server: family.bucket.x9.kfc-520.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: edge-4cb23bf6.pages.dev
+  name: 🇺🇸 US-20
+  network: ws
+  port: 443
+  server: cfd3.466688.xyz
+  sni: edge-4cb23bf6.pages.dev
+  type: vless
+  uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-21
+  network: ws
+  port: 443
+  server: 108.162.195.58
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-23
+  network: ws
+  port: 443
+  server: 162.159.38.78
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🇺🇸 US-06
+  - 🇺🇸 US-09
+  - 🇳🇱 NL-01
+  - 🇺🇸 US-13
+  - 🇺🇸 US-18
+  - 🇺🇸 US-19
+  - 🌍 Node-01
+  - 🇺🇸 US-20
+  - 🇺🇸 US-21
+  - 🇺🇸 US-23
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies: []
+  proxies:
+  - 🇺🇸 US-06
+  - 🇺🇸 US-09
+  - 🇳🇱 NL-01
+  - 🇺🇸 US-13
+  - 🇺🇸 US-18
+  - 🇺🇸 US-19
+  - 🌍 Node-01
+  - 🇺🇸 US-20
+  - 🇺🇸 US-21
+  - 🇺🇸 US-23
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
