@@ -7,6 +7,35 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  encryption: none
+  fp: chrome
+  host: t1s1.rittbo.kdns.fr
+  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
+  network: ws
+  port: 443
+  server: 104.18.45.104
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+- name: 荷兰 002
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: edge-267487d0.pages.dev
+  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
+  network: ws
+  port: 443
+  server: 108.162.198.249
+  sni: edge-267487d0.pages.dev
+  type: vless
+  uuid: 07c87117-8472-41f6-bea8-ddcb012b9b41
+- alterId: 0
+  cipher: auto
   host: cf-thfr-p.netnode.cc.cd
   name: '%F0%9F%87%AB%F0%9F%87%B7FR_1%7C2.0MB/s'
   network: ws
@@ -15,50 +44,6 @@ proxies:
   sni: cf-thfr-p.netnode.cc.cd
   type: vless
   uuid: 4710eac8-f188-426a-a7d3-498c59de6503
-- name: '%F0%9F%87%B8%F0%9F%87%ACSG_1%7C3.6MB/s'
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: cf-thfr-p.netnode.cc.cd
-  name: '%F0%9F%87%AB%F0%9F%87%B7FR_2%7C2.1MB/s'
-  network: ws
-  port: 443
-  server: cf3.466688.xyz
-  sni: cf-thfr-p.netnode.cc.cd
-  type: vless
-  uuid: 4710eac8-f188-426a-a7d3-498c59de6503
-- alterId: 0
-  cipher: auto
-  host: t1s1.rittbo.kdns.fr
-  name: '%F0%9F%87%B8%F0%9F%87%ACSG_2%7C2.2MB/s'
-  network: ws
-  port: 443
-  server: 173.245.58.87
-  sni: t1s1.rittbo.kdns.fr
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  name: '%F0%9F%87%A9%F0%9F%87%AADE_4%7C3.7MB/s'
-  port: 8443
-  server: love.ns.cloudflare.com
-  sni: vamosargentina.dpdns.org
-  type: vless
-  uuid: '%40V2ConfigPro'
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  name: '%F0%9F%87%A9%F0%9F%87%AADE_9%7C3.2MB/s'
-  port: 8443
-  server: bayan.ns.cloudflare.com
-  sni: vamosargentina.dpdns.org
-  type: vless
-  uuid: '%40V2ConfigPro'
 - name: '%E6%97%A5%E6%9C%AC%7C%40ripaojiedian'
   password: BxceQaOe
   port: 24397
@@ -77,23 +62,70 @@ proxies:
   uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
 - alterId: 0
   cipher: auto
-  host: 7jceh.02i3.bto.hh.hhyf.kdns.fr
-  name: '%F0%9F%87%AF%F0%9F%87%B5JP_2%7C2.1MB/s'
+  encryption: none
+  host: vl.dalazhi.cloudns.biz
+  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_3'
   network: ws
-  port: 443
-  server: 140.83.50.165
-  sni: 7jceh.02i3.bto.hh.hhyf.kdns.fr
+  port: 80
+  server: 104.16.27.134
   type: vless
-  uuid: 68eee13f-1a7a-4761-b71e-83b997eeccf9
+  uuid: df301b32-1152-4526-9a63-beedd93d3156
 - alterId: 0
   cipher: auto
-  host: shrill-lake-231c.jachhitachi69.workers.dev
-  name: '%F0%9F%87%B3%F0%9F%87%B1NL_2%7C3.0MB/s'
+  name: 美国 433
   network: ws
-  port: 2086
-  server: 172.67.213.2
+  port: 80
+  server: 69.84.182.49
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+- name: '%E7%BE%8E%E5%9C%8B%E4%BD%90%E6%B2%BB%E4%BA%9E%E5%B7%9E%E4%BA%9E%E7%89%B9%E8%98%AD%E5%A4%A7%E4%B8%A8yoyapai.com%5Cr'
+  password: Mitivpn
+  port: 443
+  server: 151.101.56.6
+  sni: ssl.fastly.com
+  type: trojan
+- name: 荷兰 001
+  password: MiTiVPN
+  port: 443
+  server: 45.131.4.118
+  sni: 95r.ir
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: shegeftihaaa.net
+  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_4'
+  network: ws
+  port: 443
+  server: 104.26.14.137
+  sni: shegeftihaaa.net
   type: vless
-  uuid: 335035e6-65f1-4a51-a8a7-10fb0a89b8e7
+  uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  name: '%F0%9F%87%BA%F0%9F%87%B8US_1%7C3.3MB/s'
+  network: grpc
+  port: 443
+  server: api.onetimeok.com
+  sni: api.onetimeok.com
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+- alterId: 0
+  cipher: auto
+  host: 4cdn.njkrpl.com
+  name: 🇺🇸_US_美国->🇫🇷_FR_法国
+  network: ws
+  port: 443
+  server: 4cdn.njkrpl.com
+  tls: true
+  type: vmess
+  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
+  ws-path: /
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -105,6 +137,82 @@ proxies:
   uuid: 93c6a4b8-0902-4af8-9b2e-b6ecb6a55df4
 - alterId: 0
   cipher: auto
+  host: 7jceh.02i3.bto.hh.hhyf.kdns.fr
+  name: '%F0%9F%87%AF%F0%9F%87%B5JP_2%7C2.1MB/s'
+  network: ws
+  port: 443
+  server: 140.83.50.165
+  sni: 7jceh.02i3.bto.hh.hhyf.kdns.fr
+  type: vless
+  uuid: 68eee13f-1a7a-4761-b71e-83b997eeccf9
+- alterId: 0
+  cipher: auto
+  encryption: none
+  flow: xtls-rprx-vision
+  fp: chrome
+  name: '%E4%BC%8A%E6%9C%97+V2CROSS.COM'
+  network: tcp
+  port: 8443
+  server: 31.56.146.93
+  sni: tradingview.com
+  type: vless
+  uuid: d7b8d855-352f-44fd-a20f-7e8ff06d0f66
+- alterId: 0
+  cipher: auto
+  host: flat-fire-40ed.96-042.workers.dev
+  name: '%F0%9F%87%A9%F0%9F%87%AADE_7%7C2.8MB/s'
+  network: ws
+  port: 8880
+  server: icook.tw
+  type: vless
+  uuid: 80cead8e-0d28-4b0a-bacd-8005471a5c39
+- name: '%E7%BE%8E%E5%9C%8B%2BCloudFlare%E8%8A%82%E7%82%B9%E4%B8%A8yoyapai.com%5Cr'
+  password: 9c521e24-7326-acd3-acec-d0afac2b465d
+  port: 8080
+  server: 104.25.108.147
+  sni: red-cell-47f9.milaniomilan9.workers.dev
+  type: trojan
+- name: '%E5%B7%B4%E8%A5%BF%E8%81%96%E4%BF%9D%E7%BE%85%E4%B8%A8yoyapai.com%5Cr'
+  password: mitivpn
+  port: 443
+  server: 188.114.97.6
+  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  type: trojan
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: ID_speednode_0012
+  port: 8443
+  server: 45.198.87.102
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  name: '%F0%9F%87%BA%F0%9F%87%B8US_14%7C1.7MB/s'
+  network: grpc
+  port: 443
+  server: app.he-happ.com
+  sni: app.he-happ.com
+  type: vless
+  uuid: 9e4e5d64-11a3-48bc-8622-1d39bd1c2573
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
+  password: humanity
+  port: 443
+  server: 104.26.6.159
+  sni: www.creationlong.org
+  type: trojan
+- name: 美国 009
+  password: Mitivpn
+  port: 443
+  server: iranpoems.ir
+  sni: www.gamingdll.ir
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
   host: wild-frog-c709.403-6ff.workers.dev
   name: '%F0%9F%87%A9%F0%9F%87%AADE_6%7C2.1MB/s'
   network: ws
@@ -112,6 +220,22 @@ proxies:
   server: 162.159.156.214
   type: vless
   uuid: 8dd8af16-cae0-4431-b04c-a637b4d7645b
+- name: 法国 001
+  password: MITIVPN
+  port: 443
+  server: 94.140.0.100
+  sni: 95r.ir
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  host: shrill-lake-231c.jachhitachi69.workers.dev
+  name: '%F0%9F%87%B3%F0%9F%87%B1NL_2%7C3.0MB/s'
+  network: ws
+  port: 2086
+  server: 172.67.213.2
+  type: vless
+  uuid: 335035e6-65f1-4a51-a8a7-10fb0a89b8e7
 - alterId: 0
   cipher: auto
   host: flat-fire-40ed.96-042.workers.dev
@@ -123,28 +247,47 @@ proxies:
   uuid: 80cead8e-0d28-4b0a-bacd-8005471a5c39
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
+  encryption: none
+  flow: xtls-rprx-vision
   fp: chrome
-  name: ID_speednode_0011
-  port: 8443
-  server: 45.198.87.203
-  sni: storage.yandex.net
+  name: '%E4%BF%84%E7%BD%97%E6%96%AF+V2CROSS.COM'
+  network: tcp
+  port: 35540
+  server: 91.107.182.113
+  sni: yellowpages.amazon.com
   type: vless
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  uuid: 31ad4c74-a799-44a6-a12f-d10a9bf71a35
 - alterId: 0
   cipher: auto
-  host: ancient-glade-34d6.6-07d.workers.dev
-  name: '%F0%9F%87%A9%F0%9F%87%AADE_5%7C1.5MB/s'
-  network: ws
-  port: 8880
-  server: 104.26.13.40
+  fp: firefox
+  name: '%F0%9F%87%BA%F0%9F%87%B8US_2%7C2.5MB/s'
+  network: grpc
+  port: 443
+  server: get.onetimeok.com
+  sni: get.onetimeok.com
   type: vless
-  uuid: 16586b3b-9e26-4fe9-b137-389ea48f088c
-- name: '%F0%9F%87%B8%F0%9F%87%ACSG_6%7C3.5MB/s'
-  password: BxceQaOe
-  port: 32434
-  server: 54.46.125.103
-  sni: t.me%252Fripaojiedian
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+- cipher: chacha20-ietf-poly1305
+  name: '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: VMess-aaaa.wxx.gay:443
+  network: ws
+  port: 443
+  server: aaaa.wxx.gay
+  tls: true
+  type: vmess
+  uuid: 8237ec34-143a-11ee-8019-000017022008
+  ws-path: /look
+- name: '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr'
+  password: Mitivpn
+  port: 443
+  server: 167.82.101.251
+  sni: ssl.fastly.com
   type: trojan
 - alterId: 0
   cipher: auto
@@ -158,65 +301,64 @@ proxies:
   uuid: 7896c501-248f-4068-bc2f-363c91ba5122
 - alterId: 0
   cipher: auto
-  fp: firefox
-  name: '%F0%9F%87%BA%F0%9F%87%B8US_1%7C3.3MB/s'
-  network: grpc
-  port: 443
-  server: api.onetimeok.com
-  sni: api.onetimeok.com
+  encryption: none
+  fp: chrome
+  name: '%E6%B3%A2%E5%85%B0+V2CROSS.COM'
+  network: tcp
+  port: 8526
+  server: 89.167.16.234
+  sni: www.yahoo.com
   type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-- alterId: 0
-  cipher: auto
-  fp: firefox
-  name: '%F0%9F%87%BA%F0%9F%87%B8US_14%7C1.7MB/s'
-  network: grpc
-  port: 443
-  server: app.he-happ.com
-  sni: app.he-happ.com
-  type: vless
-  uuid: 9e4e5d64-11a3-48bc-8622-1d39bd1c2573
-- name: '%F0%9F%87%B8%F0%9F%87%ACSG_5%7C3.5MB/s'
-  password: b490740312aedb5f9f6b84c7aebd08c0
-  port: 48738
-  server: 95.40.52.88
-  sni: www.nintendogames.net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  fp: firefox
-  name: '%F0%9F%87%BA%F0%9F%87%B8US_2%7C2.5MB/s'
-  network: grpc
-  port: 443
-  server: get.onetimeok.com
-  sni: get.onetimeok.com
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  uuid: 9d6104a5-fc6d-4fe6-95b7-80d8f699e09d
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision-udp443
-  fp: firefox
-  name: ID_speednode_0009
+  fp: chrome
+  name: ID_speednode_0011
   port: 8443
-  server: 45.198.87.168
+  server: 45.198.87.203
   sni: storage.yandex.net
   type: vless
   uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- name: '%E8%8D%B7%E8%98%AD%E7%AF%80%E9%BB%9E%E4%B8%A8yoyapai.com%5Cr'
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 8443
+  server: 152.53.200.89
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
 - alterId: 0
   cipher: auto
-  host: flat-fire-40ed.96-042.workers.dev
-  name: '%F0%9F%87%A9%F0%9F%87%AADE_7%7C2.8MB/s'
+  name: 香港|@ripaojiedian
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  host: ancient-glade-34d6.6-07d.workers.dev
+  name: '%F0%9F%87%A9%F0%9F%87%AADE_5%7C1.5MB/s'
   network: ws
   port: 8880
-  server: icook.tw
+  server: 104.26.13.40
   type: vless
-  uuid: 80cead8e-0d28-4b0a-bacd-8005471a5c39
-- name: '%F0%9F%87%AD%F0%9F%87%B0HK_4%7C1.5MB/s'
-  password: BxceQaOe
-  port: 50115
-  server: 54.46.125.103
-  sni: t.me%2Fripaojiedian
-  type: trojan
+  uuid: 16586b3b-9e26-4fe9-b137-389ea48f088c
+- alterId: 0
+  cipher: auto
+  host: v10.zgtfqs.click
+  name: 🇭🇰_HK_中国香港
+  network: tcp
+  port: 30807
+  server: v10.zgtfqs.click
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: '%F0%9F%87%AD%F0%9F%87%B0%20HK'
+  password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
+  port: 443
+  server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
+  sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
+  type: hysteria2
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision-udp443
@@ -229,79 +371,6 @@ proxies:
   uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
 - alterId: 0
   cipher: auto
-  name: 香港|@ripaojiedian
-  network: tcp
-  port: 30807
-  server: v10.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  host: s5gydl.936.us.ci
-  name: '%F0%9F%87%A9%F0%9F%87%AADE_18%7C2.9MB/s'
-  network: ws
-  port: 2053
-  server: 152.228.134.216
-  sni: s5gydl.936.us.ci
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: chrome
-  name: '%F0%9F%87%BA%F0%9F%87%B8US_13%7C3.2MB/s'
-  port: 8443
-  server: media.vipdatacloud.com
-  sni: www.icloud.com
-  type: vless
-  uuid: 786653a8-3ed9-4d55-8cb5-ec310c66ff3e
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  name: '%F0%9F%87%A9%F0%9F%87%AADE_3%7C1.6MB/s'
-  port: 2087
-  server: v2.gafe-rezvan.ir
-  sni: ch-de.sdcards.ir
-  type: vless
-  uuid: 9d6104a5-fc6d-4fe6-95b7-80d8f699e09d
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: random
-  name: '%F0%9F%87%A9%F0%9F%87%AADE_12%7C2.5MB/s'
-  port: 443
-  server: 5.178.101.137
-  sni: test.connect.try-me.store
-  type: vless
-  uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
-- alterId: 0
-  cipher: auto
-  fp: firefox
-  name: '%F0%9F%87%B8%F0%9F%87%AASE_1%7C1.8MB/s'
-  network: grpc
-  port: 443
-  server: stats.oneoker.com
-  sni: stats.oneoker.com
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-- name: US_speednode_0063
-  password: Mitivpn
-  port: 443
-  server: iranpoems.ir
-  sni: www.gamingdll.ir
-  type: trojan
-- alterId: 0
-  cipher: auto
-  fp: qq
-  name: '%F0%9F%87%AC%F0%9F%87%A7GB_1%7C2.1MB/s'
-  network: grpc
-  port: 8443
-  server: uk.riotvpn.eu
-  sni: avatars.mds.yandex.net
-  type: vless
-  uuid: f885cecc-a6ea-4e9b-87da-c7dc4b745348
-- alterId: 0
-  cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: firefox
   name: ID_speednode_0010
@@ -312,13 +381,50 @@ proxies:
   uuid: 7896c501-248f-4068-bc2f-363c91ba5122
 - alterId: 0
   cipher: auto
-  fp: qq
-  name: '%F0%9F%87%AC%F0%9F%87%A7GB_2%7C1.7MB/s'
-  port: 443
-  server: 77.110.113.188
-  sni: www.samsung.com
+  fp: chrome
+  name: '%F0%9F%87%A8%F0%9F%87%ADCH_1%7C2.4MB/s'
+  port: 40084
+  server: 179.237.75.28
+  sni: yahoo.com
   type: vless
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  uuid: bcd7d69f-98d4-4622-8caf-db83b7af81da
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  name: '%F0%9F%87%B8%F0%9F%87%AASE_1%7C1.8MB/s'
+  network: grpc
+  port: 443
+  server: stats.oneoker.com
+  sni: stats.oneoker.com
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+- name: '%E6%84%8F%E5%A4%A7%E5%88%A9%E4%B8%A8yoyapai.com%5Cr'
+  password: Mitivpn
+  port: 80
+  server: 151.101.242.172
+  type: trojan
+- name: '%E4%BA%9E%E5%A4%AA%E5%9C%B0%E5%8D%80%E4%B8%A8yoyapai.com%5Cr'
+  password: rYuChHcwQZskq9E0zdoR
+  port: 2053
+  server: 103.45.245.208
+  sni: vpn5.rnmcnm.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: firefox
+  name: ID_speednode_0009
+  port: 8443
+  server: 45.198.87.168
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- name: '%E6%84%8F%E5%A4%A7%E5%88%A9%E7%AF%80%E9%BB%9E%F0%9F%87%AE%F0%9F%87%B9IT%E4%B8%A8yoyapai.com%5Cr'
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 151.241.215.148
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision-udp443
@@ -331,6 +437,39 @@ proxies:
   uuid: e3e90161-fe65-443a-a3a4-e0e3a73704ca
 - alterId: 0
   cipher: auto
+  name: '%F0%9F%87%AB%F0%9F%87%AEFI_3%7C1.6MB/s'
+  port: 2090
+  server: 46.8.238.180
+  type: vless
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: '%F0%9F%87%A9%F0%9F%87%AADE_3%7C1.6MB/s'
+  port: 2087
+  server: v2.gafe-rezvan.ir
+  sni: ch-de.sdcards.ir
+  type: vless
+  uuid: 9d6104a5-fc6d-4fe6-95b7-80d8f699e09d
+- name: 英国 001
+  password: MITIVPN
+  port: 443
+  server: 164.38.155.135
+  sni: 95r.ir
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: firefox
+  name: '%F0%9F%87%B8%F0%9F%87%AASE_2%7C2.7MB/s'
+  port: 443
+  server: meow-warsaw.nethcloud.top
+  sni: www.wikihow.com
+  type: vless
+  uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
+- alterId: 0
+  cipher: auto
   fp: chrome
   name: '%F0%9F%87%B1%F0%9F%87%B9LT_1%7C2.6MB/s'
   network: grpc
@@ -341,24 +480,27 @@ proxies:
   uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
   fp: firefox
-  name: '%F0%9F%87%A9%F0%9F%87%AADE_13%7C3.5MB/s'
-  port: 443
-  server: de.monkeyvillage.pro
-  sni: de.monkeyvillage.pro
-  type: vless
-  uuid: 528ee6c3-7d3c-410e-b0de-0d5da09aeb14
-- alterId: 0
-  cipher: auto
-  fp: firefox
-  name: '%F0%9F%87%A9%F0%9F%87%AADE_14%7C2.0MB/s'
+  name: '%F0%9F%87%B1%F0%9F%87%B0LK_1%7C2.4MB/s'
   network: grpc
   port: 443
-  server: relay.oneoknews.com
-  sni: relay.oneoknews.com
+  server: 87.120.108.150
+  sni: www.amd.com
   type: vless
-  uuid: 5ae9ec50-5551-4bfa-9e09-bae15ffdd33d
+  uuid: 54d91bc3-a461-4458-a620-36f27f5d6975
+- name: 美国 414
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  sni: www.calmlunch.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '%F0%9F%87%AB%F0%9F%87%AEFI_2%7C1.7MB/s'
+  port: 2090
+  server: 31.57.27.177
+  type: vless
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision-udp443
@@ -371,231 +513,291 @@ proxies:
   uuid: a2738d8d-ed26-4b13-a4a2-b89c7238cd10
 - alterId: 0
   cipher: auto
-  name: '%F0%9F%87%AB%F0%9F%87%AEFI_2%7C1.7MB/s'
-  port: 2090
-  server: 31.57.27.177
+  flow: xtls-rprx-vision-udp443
+  fp: random
+  name: '%F0%9F%87%A9%F0%9F%87%AADE_12%7C2.5MB/s'
+  port: 443
+  server: 5.178.101.137
+  sni: test.connect.try-me.store
   type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
+- name: 英国 003
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.135
+  type: trojan
+  udp: true
+- name: '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM'
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.151
+  sni: 185.137.157.151
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '%E5%8D%B0%E5%BA%A6+V2CROSS.COM'
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  port: 28061
+  server: 103.111.114.71
+  type: ss
+- name: '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM_2'
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.128
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 俄罗斯 020
+  network: ws
+  port: 443
+  server: renderer-stream-1-411.mirra.now
+  skip-cert-verify: true
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+- name: 美国 023
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  port: 443
+  server: 149.104.104.58
+  sni: 149.104.104.58
+  type: trojan
+  udp: true
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29_2'
+  password: humanity
+  port: 443
+  server: 104.16.174.34
+  sni: www.ignitelimit.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: t1s1.rittbo.kdns.fr
+  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_5'
+  network: ws
+  port: 443
+  server: 172.66.46.250
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+- alterId: 0
+  cipher: auto
+  host: vms.lifetime08.workers.dev
+  name: '%E6%91%A9%E5%B0%94%E5%A4%9A%E7%93%A6+V2CROSS.COM'
+  network: ws
+  port: 8880
+  server: 185.193.29.40
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+- name: '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM_3'
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.156
+  type: trojan
+- name: '%F0%9F%87%B8%F0%9F%87%ACSG_5%7C3.5MB/s'
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 48738
+  server: 95.40.52.88
+  sni: www.nintendogames.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: VMess-159.223.94.156:80
+  network: ws
+  port: 80
+  server: 159.223.94.156
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-path: /anti13.zingfast.vn
+- name: '%F0%9F%87%B3%F0%9F%87%B1NL%E8%8D%B7%E8%98%AD%E4%B8%A8yoyapai.com%5Cr'
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 91.221.190.80
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: '%F0%9F%87%BA%F0%9F%87%B8US_13%7C3.2MB/s'
+  port: 8443
+  server: media.vipdatacloud.com
+  sni: www.icloud.com
+  type: vless
+  uuid: 786653a8-3ed9-4d55-8cb5-ec310c66ff3e
 - alterId: 0
   cipher: auto
   fp: firefox
-  name: '%F0%9F%87%B1%F0%9F%87%B0LK_1%7C2.4MB/s'
+  name: '%F0%9F%87%A9%F0%9F%87%AADE_14%7C2.0MB/s'
   network: grpc
   port: 443
-  server: 87.120.108.150
-  sni: www.amd.com
+  server: relay.oneoknews.com
+  sni: relay.oneoknews.com
   type: vless
-  uuid: 54d91bc3-a461-4458-a620-36f27f5d6975
+  uuid: 5ae9ec50-5551-4bfa-9e09-bae15ffdd33d
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: firefox
-  name: '%F0%9F%87%AD%F0%9F%87%B0HK_2%7C2.1MB/s'
+  fp: qq
+  name: '%F0%9F%87%AC%F0%9F%87%A7GB_2%7C1.7MB/s'
   port: 443
-  server: hong1.panel11.ru
-  sni: hong1.panel11.ru
+  server: 77.110.113.188
+  sni: www.samsung.com
   type: vless
-  uuid: aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: firefox
-  name: '%F0%9F%87%B8%F0%9F%87%AASE_2%7C2.7MB/s'
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+- name: '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr_2'
+  password: humanity
   port: 443
-  server: meow-warsaw.nethcloud.top
-  sni: www.wikihow.com
-  type: vless
-  uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
-- name: AE_speednode_0001
-  password: MITIVPN
-  port: 443
-  server: 94.140.0.100
-  sni: 95r.ir
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: 7jceh.02i3.bto.hh.hhyf.kdns.fr
-  name: '%F0%9F%87%AF%F0%9F%87%B5JP_3%7C3.5MB/s'
-  network: ws
-  port: 443
-  server: 45.89.232.34
-  sni: 7jceh.02i3.bto.hh.hhyf.kdns.fr
-  type: vless
-  uuid: 68eee13f-1a7a-4761-b71e-83b997eeccf9
-- alterId: 0
-  cipher: auto
-  host: old-violet-a5ce.29-440.workers.dev
-  name: '%F0%9F%87%B3%F0%9F%87%B1NL_3%7C2.2MB/s'
-  network: ws
-  port: 8880
-  server: log.bpminecraft.com
-  type: vless
-  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
-- alterId: 0
-  cipher: auto
-  host: old-violet-a5ce.29-440.workers.dev
-  name: '%F0%9F%87%A9%F0%9F%87%AADE_17%7C1.9MB/s'
-  network: ws
-  port: 8880
-  server: 104.27.82.154
-  type: vless
-  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  name: '%F0%9F%87%A8%F0%9F%87%ADCH_1%7C2.4MB/s'
-  port: 40084
-  server: 179.237.75.28
-  sni: yahoo.com
-  type: vless
-  uuid: bcd7d69f-98d4-4622-8caf-db83b7af81da
-- alterId: 0
-  cipher: auto
-  name: '%F0%9F%87%AB%F0%9F%87%AEFI_3%7C1.6MB/s'
-  port: 2090
-  server: 46.8.238.180
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-- name: '%F0%9F%87%AD%F0%9F%87%B0%20HK'
-  password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-  port: 443
-  server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
-  sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
-  type: hysteria2
-- name: GB_speednode_0005
-  password: MITIVPN
-  port: 443
-  server: 164.38.155.135
-  sni: 95r.ir
+  server: www.ignitelimit.com
   type: trojan
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision-udp443
-  fp: chrome
-  name: ID_speednode_0012
-  port: 8443
-  server: 45.198.87.102
-  sni: storage.yandex.net
-  type: vless
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-- name: NL_speednode_0016
-  password: MiTiVPN
+  fp: firefox
+  name: '%F0%9F%87%A9%F0%9F%87%AADE_13%7C3.5MB/s'
   port: 443
-  server: 45.131.4.118
-  sni: 95r.ir
+  server: de.monkeyvillage.pro
+  sni: de.monkeyvillage.pro
+  type: vless
+  uuid: 528ee6c3-7d3c-410e-b0de-0d5da09aeb14
+- name: '%E7%91%9E%E5%85%B8%E4%B8%A8yoyapai.com%5Cr'
+  password: Mitivpn
+  port: 80
+  server: 146.75.116.190
   type: trojan
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
   - 🔰 自动选择
   - ♻️ 自动测速
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
+  - 荷兰 002
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
   - '%F0%9F%87%AB%F0%9F%87%B7FR_1%7C2.0MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%ACSG_1%7C3.6MB/s'
-  - '%F0%9F%87%AB%F0%9F%87%B7FR_2%7C2.1MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%ACSG_2%7C2.2MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_4%7C3.7MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_9%7C3.2MB/s'
   - '%E6%97%A5%E6%9C%AC%7C%40ripaojiedian'
   - '%F0%9F%87%A9%F0%9F%87%AADE_8%7C2.6MB/s'
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_2%7C2.1MB/s'
-  - '%F0%9F%87%B3%F0%9F%87%B1NL_2%7C3.0MB/s'
-  - '%F0%9F%87%AB%F0%9F%87%B7FR_3%7C2.8MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_6%7C2.1MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_15%7C2.0MB/s'
-  - ID_speednode_0011
-  - '%F0%9F%87%A9%F0%9F%87%AADE_5%7C1.5MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%ACSG_6%7C3.5MB/s'
-  - ID_speednode_0013
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_3'
+  - 美国 433
+  - '%E7%BE%8E%E5%9C%8B%E4%BD%90%E6%B2%BB%E4%BA%9E%E5%B7%9E%E4%BA%9E%E7%89%B9%E8%98%AD%E5%A4%A7%E4%B8%A8yoyapai.com%5Cr'
+  - 荷兰 001
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_4'
   - '%F0%9F%87%BA%F0%9F%87%B8US_1%7C3.3MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_14%7C1.7MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%ACSG_5%7C3.5MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_2%7C2.5MB/s'
-  - ID_speednode_0009
+  - 🇺🇸_US_美国->🇫🇷_FR_法国
+  - '%F0%9F%87%AB%F0%9F%87%B7FR_3%7C2.8MB/s'
+  - '%F0%9F%87%AF%F0%9F%87%B5JP_2%7C2.1MB/s'
+  - '%E4%BC%8A%E6%9C%97+V2CROSS.COM'
   - '%F0%9F%87%A9%F0%9F%87%AADE_7%7C2.8MB/s'
-  - '%F0%9F%87%AD%F0%9F%87%B0HK_4%7C1.5MB/s'
-  - US_speednode_0055
-  - 香港|@ripaojiedian
-  - '%F0%9F%87%A9%F0%9F%87%AADE_18%7C2.9MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_13%7C3.2MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_3%7C1.6MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_12%7C2.5MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%AASE_1%7C1.8MB/s'
-  - US_speednode_0063
-  - '%F0%9F%87%AC%F0%9F%87%A7GB_1%7C2.1MB/s'
-  - ID_speednode_0010
-  - '%F0%9F%87%AC%F0%9F%87%A7GB_2%7C1.7MB/s'
-  - CZ_speednode_0002
-  - '%F0%9F%87%B1%F0%9F%87%B9LT_1%7C2.6MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_13%7C3.5MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_14%7C2.0MB/s'
-  - '%F0%9F%87%B5%F0%9F%87%B1PL_1%7C1.6MB/s'
-  - '%F0%9F%87%AB%F0%9F%87%AEFI_2%7C1.7MB/s'
-  - '%F0%9F%87%B1%F0%9F%87%B0LK_1%7C2.4MB/s'
-  - '%F0%9F%87%AD%F0%9F%87%B0HK_2%7C2.1MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%AASE_2%7C2.7MB/s'
-  - AE_speednode_0001
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_3%7C3.5MB/s'
-  - '%F0%9F%87%B3%F0%9F%87%B1NL_3%7C2.2MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_17%7C1.9MB/s'
-  - '%F0%9F%87%A8%F0%9F%87%ADCH_1%7C2.4MB/s'
-  - '%F0%9F%87%AB%F0%9F%87%AEFI_3%7C1.6MB/s'
-  - '%F0%9F%87%AD%F0%9F%87%B0%20HK'
-  - GB_speednode_0005
+  - '%E7%BE%8E%E5%9C%8B%2BCloudFlare%E8%8A%82%E7%82%B9%E4%B8%A8yoyapai.com%5Cr'
+  - '%E5%B7%B4%E8%A5%BF%E8%81%96%E4%BF%9D%E7%BE%85%E4%B8%A8yoyapai.com%5Cr'
   - ID_speednode_0012
-  - NL_speednode_0016
+  - '%F0%9F%87%BA%F0%9F%87%B8US_14%7C1.7MB/s'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
+  - 美国 009
+  - '%F0%9F%87%A9%F0%9F%87%AADE_6%7C2.1MB/s'
+  - 法国 001
+  - '%F0%9F%87%B3%F0%9F%87%B1NL_2%7C3.0MB/s'
+  - '%F0%9F%87%A9%F0%9F%87%AADE_15%7C2.0MB/s'
+  - '%E4%BF%84%E7%BD%97%E6%96%AF+V2CROSS.COM'
+  - '%F0%9F%87%BA%F0%9F%87%B8US_2%7C2.5MB/s'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  - VMess-aaaa.wxx.gay:443
+  - '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr'
+  - ID_speednode_0013
+  - '%E6%B3%A2%E5%85%B0+V2CROSS.COM'
+  - ID_speednode_0011
+  - '%E8%8D%B7%E8%98%AD%E7%AF%80%E9%BB%9E%E4%B8%A8yoyapai.com%5Cr'
+  - 香港|@ripaojiedian
+  - '%F0%9F%87%A9%F0%9F%87%AADE_5%7C1.5MB/s'
+  - 🇭🇰_HK_中国香港
+  - '%F0%9F%87%AD%F0%9F%87%B0%20HK'
+  - US_speednode_0055
+  - ID_speednode_0010
+  - '%F0%9F%87%A8%F0%9F%87%ADCH_1%7C2.4MB/s'
+  - '%F0%9F%87%B8%F0%9F%87%AASE_1%7C1.8MB/s'
+  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E4%B8%A8yoyapai.com%5Cr'
+  - '%E4%BA%9E%E5%A4%AA%E5%9C%B0%E5%8D%80%E4%B8%A8yoyapai.com%5Cr'
+  - ID_speednode_0009
+  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E7%AF%80%E9%BB%9E%F0%9F%87%AE%F0%9F%87%B9IT%E4%B8%A8yoyapai.com%5Cr'
+  - CZ_speednode_0002
+  - '%F0%9F%87%AB%F0%9F%87%AEFI_3%7C1.6MB/s'
+  - '%F0%9F%87%A9%F0%9F%87%AADE_3%7C1.6MB/s'
+  - 英国 001
+  - '%F0%9F%87%B8%F0%9F%87%AASE_2%7C2.7MB/s'
+  - '%F0%9F%87%B1%F0%9F%87%B9LT_1%7C2.6MB/s'
+  - '%F0%9F%87%B1%F0%9F%87%B0LK_1%7C2.4MB/s'
+  - 美国 414
+  - '%F0%9F%87%AB%F0%9F%87%AEFI_2%7C1.7MB/s'
+  - '%F0%9F%87%B5%F0%9F%87%B1PL_1%7C1.6MB/s'
+  - '%F0%9F%87%A9%F0%9F%87%AADE_12%7C2.5MB/s'
+  - 英国 003
+  - '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM'
+  - '%E5%8D%B0%E5%BA%A6+V2CROSS.COM'
+  - '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM_2'
+  - 俄罗斯 020
+  - 美国 023
+  - '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29_2'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_5'
+  - '%E6%91%A9%E5%B0%94%E5%A4%9A%E7%93%A6+V2CROSS.COM'
+  - '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM_3'
+  - '%F0%9F%87%B8%F0%9F%87%ACSG_5%7C3.5MB/s'
+  - VMess-159.223.94.156:80
+  - '%F0%9F%87%B3%F0%9F%87%B1NL%E8%8D%B7%E8%98%AD%E4%B8%A8yoyapai.com%5Cr'
+  - '%F0%9F%87%BA%F0%9F%87%B8US_13%7C3.2MB/s'
+  - '%F0%9F%87%A9%F0%9F%87%AADE_14%7C2.0MB/s'
+  - '%F0%9F%87%AC%F0%9F%87%A7GB_2%7C1.7MB/s'
+  - '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr_2'
+  - '%F0%9F%87%A9%F0%9F%87%AADE_13%7C3.5MB/s'
+  - '%E7%91%9E%E5%85%B8%E4%B8%A8yoyapai.com%5Cr'
   type: select
 - interval: 300
   name: 🔰 自动选择
   proxies: &id001
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
+  - 荷兰 002
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
   - '%F0%9F%87%AB%F0%9F%87%B7FR_1%7C2.0MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%ACSG_1%7C3.6MB/s'
-  - '%F0%9F%87%AB%F0%9F%87%B7FR_2%7C2.1MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%ACSG_2%7C2.2MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_4%7C3.7MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_9%7C3.2MB/s'
   - '%E6%97%A5%E6%9C%AC%7C%40ripaojiedian'
   - '%F0%9F%87%A9%F0%9F%87%AADE_8%7C2.6MB/s'
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_2%7C2.1MB/s'
-  - '%F0%9F%87%B3%F0%9F%87%B1NL_2%7C3.0MB/s'
-  - '%F0%9F%87%AB%F0%9F%87%B7FR_3%7C2.8MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_6%7C2.1MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_15%7C2.0MB/s'
-  - ID_speednode_0011
-  - '%F0%9F%87%A9%F0%9F%87%AADE_5%7C1.5MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%ACSG_6%7C3.5MB/s'
-  - ID_speednode_0013
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_3'
+  - 美国 433
+  - '%E7%BE%8E%E5%9C%8B%E4%BD%90%E6%B2%BB%E4%BA%9E%E5%B7%9E%E4%BA%9E%E7%89%B9%E8%98%AD%E5%A4%A7%E4%B8%A8yoyapai.com%5Cr'
+  - 荷兰 001
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_4'
   - '%F0%9F%87%BA%F0%9F%87%B8US_1%7C3.3MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_14%7C1.7MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%ACSG_5%7C3.5MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_2%7C2.5MB/s'
-  - ID_speednode_0009
+  - 🇺🇸_US_美国->🇫🇷_FR_法国
+  - '%F0%9F%87%AB%F0%9F%87%B7FR_3%7C2.8MB/s'
+  - '%F0%9F%87%AF%F0%9F%87%B5JP_2%7C2.1MB/s'
+  - '%E4%BC%8A%E6%9C%97+V2CROSS.COM'
   - '%F0%9F%87%A9%F0%9F%87%AADE_7%7C2.8MB/s'
-  - '%F0%9F%87%AD%F0%9F%87%B0HK_4%7C1.5MB/s'
-  - US_speednode_0055
+  - '%E7%BE%8E%E5%9C%8B%2BCloudFlare%E8%8A%82%E7%82%B9%E4%B8%A8yoyapai.com%5Cr'
+  - '%E5%B7%B4%E8%A5%BF%E8%81%96%E4%BF%9D%E7%BE%85%E4%B8%A8yoyapai.com%5Cr'
+  - ID_speednode_0012
+  - '%F0%9F%87%BA%F0%9F%87%B8US_14%7C1.7MB/s'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
+  - 美国 009
+  - '%F0%9F%87%A9%F0%9F%87%AADE_6%7C2.1MB/s'
+  - 法国 001
+  - '%F0%9F%87%B3%F0%9F%87%B1NL_2%7C3.0MB/s'
+  - '%F0%9F%87%A9%F0%9F%87%AADE_15%7C2.0MB/s'
+  - '%E4%BF%84%E7%BD%97%E6%96%AF+V2CROSS.COM'
+  - '%F0%9F%87%BA%F0%9F%87%B8US_2%7C2.5MB/s'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  - VMess-aaaa.wxx.gay:443
+  - '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr'
+  - ID_speednode_0013
+  - '%E6%B3%A2%E5%85%B0+V2CROSS.COM'
+  - ID_speednode_0011
+  - '%E8%8D%B7%E8%98%AD%E7%AF%80%E9%BB%9E%E4%B8%A8yoyapai.com%5Cr'
   - 香港|@ripaojiedian
-  - '%F0%9F%87%A9%F0%9F%87%AADE_18%7C2.9MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_13%7C3.2MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_3%7C1.6MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_12%7C2.5MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%AASE_1%7C1.8MB/s'
-  - US_speednode_0063
-  - '%F0%9F%87%AC%F0%9F%87%A7GB_1%7C2.1MB/s'
+  - '%F0%9F%87%A9%F0%9F%87%AADE_5%7C1.5MB/s'
+  - 🇭🇰_HK_中国香港
+  - '%F0%9F%87%AD%F0%9F%87%B0%20HK'
+  - US_speednode_0055
   - ID_speednode_0010
-  - '%F0%9F%87%AC%F0%9F%87%A7GB_2%7C1.7MB/s'
-  - CZ_speednode_0002
-  - '%F0%9F%87%B1%F0%9F%87%B9LT_1%7C2.6MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_13%7C3.5MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_14%7C2.0MB/s'
-  - '%F0%9F%87%B5%F0%9F%87%B1PL_1%7C1.6MB/s'
-  - '%F0%9F%87%AB%F0%9F%87%AEFI_2%7C1.7MB/s'
-  - '%F0%9F%87%B1%F0%9F%87%B0LK_1%7C2.4MB/s'
-  - '%F0%9F%87%AD%F0%9F%87%B0HK_2%7C2.1MB/s'
-  - '%F0%9F%87%B8%F0%9F%87%AASE_2%7C2.7MB/s'
-  - AE_speednode_0001
-  - '%F0%9F%87%AF%F0%9F%87%B5JP_3%7C3.5MB/s'
-  - '%F0%9F%87%B3%F0%9F%87%B1NL_3%7C2.2MB/s'
-  - '%F0%9F%87%A9%F0%9F%87%AADE_17%7C1.9MB/s'
   - '%F0%9F%87%A8%F0%9F%87%ADCH_1%7C2.4MB/s'
+  - '%F0%9F%87%B8%F0%9F%87%AASE_1%7C1.8MB/s'
+  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E4%B8%A8yoyapai.com%5Cr'
+  - '%E4%BA%9E%E5%A4%AA%E5%9C%B0%E5%8D%80%E4%B8%A8yoyapai.com%5Cr'
+  - ID_speednode_0009
+  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E7%AF%80%E9%BB%9E%F0%9F%87%AE%F0%9F%87%B9IT%E4%B8%A8yoyapai.com%5Cr'
+  - CZ_speednode_0002
   - '%F0%9F%87%AB%F0%9F%87%AEFI_3%7C1.6MB/s'
   type: url-test
   url: https://www.gstatic.com/generate_204
