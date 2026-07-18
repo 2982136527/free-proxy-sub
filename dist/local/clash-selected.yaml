@@ -5,221 +5,56 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- name: 🌍 Node-01
-  password: Mitivpn
+- name: 🇳🇱 NL-01
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
-  server: 151.101.56.6
-  sni: ssl.fastly.com
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
   type: trojan
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
+  host: silent-cake-fb8d.69-a76.workers.dev
+  name: 🌍 Node-01
+  network: ws
+  port: 8880
+  server: themeforest.net
+  type: vless
+  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
+- alterId: 0
+  cipher: auto
+  host: cf-thfr-p.netnode.cc.cd
   name: 🌍 Node-02
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 88.210.36.106
-  type: ss
-- name: 🇺🇸 US-01
-  password: humanity
-  port: 443
-  server: 104.16.174.34
-  sni: www.ignitelimit.com
-  type: trojan
-- name: 🌍 Node-03
-  password: 9c521e24-7326-acd3-acec-d0afac2b465d
-  port: 8080
-  server: 104.25.108.147
-  sni: red-cell-47f9.milaniomilan9.workers.dev
-  type: trojan
-- name: 🇧🇷 BR-01
-  password: mitivpn
-  port: 443
-  server: 188.114.97.6
-  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-04
   network: ws
   port: 443
-  server: aaaa.wxx.gay
-  tls: true
-  type: vmess
-  uuid: 8237ec34-143a-11ee-8019-000017022008
-  ws-path: /look
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 US-02
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  port: 443
-  server: tinkered-pennies-puppies.freesocks.work
-  type: ss
-- name: 🌍 Node-05
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 91.221.190.80
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
+  server: cf8.466688.xyz
+  sni: cf-thfr-p.netnode.cc.cd
+  type: vless
+  uuid: 4710eac8-f188-426a-a7d3-498c59de6503
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 HK-01
-  network: tcp
-  port: 30807
-  server: v10.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- name: 🌍 Node-06
-  password: Mitivpn
-  port: 443
-  server: 167.82.101.251
-  sni: ssl.fastly.com
-  type: trojan
-- name: 🌍 Node-07
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 8443
-  server: 152.53.200.89
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- name: 🇮🇹 IT-01
-  password: Mitivpn
-  port: 80
-  server: 151.101.242.172
-  type: trojan
-- name: 🇮🇹 IT-02
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 151.241.215.148
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- name: 🌍 Node-08
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.149
-  type: trojan
-- name: 🇸🇪 SE-01
-  password: Mitivpn
-  port: 80
-  server: 146.75.116.190
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: renderer-stream-1-411.mirra.now
-  name: 🌍 Node-09
+  host: mute-sunset-0849.40-aeb.workers.dev
+  name: 🌍 Node-03
   network: ws
-  port: 443
-  server: renderer-stream-1-411.mirra.now
-  tls: true
-  type: vmess
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  ws-path: /api/v1/gpu-stream/socket
-- name: 🇺🇸 US-03
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  sni: www.calmlunch.com
-  type: trojan
-- name: 🌍 Node-10
-  password: humanity
-  port: 443
-  server: www.ignitelimit.com
-  type: trojan
-- name: 🇺🇸 US-04
-  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
-  port: 443
-  server: 149.104.104.58
-  sni: 149.104.104.58
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
-  name: 🌍 Node-11
-  network: ws
-  port: 80
-  server: 69.84.182.49
-  type: vmess
-  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 IN-01
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.80
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-12
-  network: ws
-  port: 80
-  server: 159.223.94.156
-  type: vmess
-  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-  ws-path: /anti13.zingfast.vn
-- name: 🌍 Node-13
-  password: rYuChHcwQZskq9E0zdoR
-  port: 2053
-  server: 103.45.245.208
-  sni: vpn5.rnmcnm.com
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 IN-02
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.71
-  type: ss
+  port: 8880
+  server: deepl.com
+  type: vless
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🇳🇱 NL-01
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇺🇸 US-01
   - 🌍 Node-03
-  - 🇧🇷 BR-01
-  - 🌍 Node-04
-  - 🇺🇸 US-02
-  - 🌍 Node-05
-  - 🇭🇰 HK-01
-  - 🌍 Node-06
-  - 🌍 Node-07
-  - 🇮🇹 IT-01
-  - 🇮🇹 IT-02
-  - 🌍 Node-08
-  - 🇸🇪 SE-01
-  - 🌍 Node-09
-  - 🇺🇸 US-03
-  - 🌍 Node-10
-  - 🇺🇸 US-04
-  - 🌍 Node-11
-  - 🇮🇳 IN-01
-  - 🌍 Node-12
-  - 🌍 Node-13
-  - 🇮🇳 IN-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
+  - 🇳🇱 NL-01
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇺🇸 US-01
   - 🌍 Node-03
-  - 🇧🇷 BR-01
-  - 🌍 Node-04
-  - 🇺🇸 US-02
-  - 🌍 Node-05
-  - 🇭🇰 HK-01
-  - 🌍 Node-06
-  - 🌍 Node-07
-  - 🇮🇹 IT-01
-  - 🇮🇹 IT-02
-  - 🌍 Node-08
-  - 🇸🇪 SE-01
-  - 🌍 Node-09
-  - 🇺🇸 US-03
-  - 🌍 Node-10
-  - 🇺🇸 US-04
-  - 🌍 Node-11
-  - 🇮🇳 IN-01
-  - 🌍 Node-12
-  - 🌍 Node-13
-  - 🇮🇳 IN-02
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
