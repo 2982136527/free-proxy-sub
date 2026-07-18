@@ -4,50 +4,15 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies:
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: edge-267487d0.pages.dev
-  name: 🇺🇸 US-07
-  network: ws
-  port: 443
-  server: 172.64.52.94
-  sni: edge-267487d0.pages.dev
-  type: vless
-  uuid: 07c87117-8472-41f6-bea8-ddcb012b9b41
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp14.cc.cd
-  name: 🇺🇸 US-08
-  network: ws
-  port: 8443
-  server: 162.159.38.230
-  sni: vp14.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- name: 🇳🇱 NL-01
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  skip-cert-verify: true
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
+proxies: []
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-07
-  - 🇺🇸 US-08
-  - 🇳🇱 NL-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies:
-  - 🇺🇸 US-07
-  - 🇺🇸 US-08
-  - 🇳🇱 NL-01
+  proxies: []
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
