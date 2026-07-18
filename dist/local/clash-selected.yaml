@@ -14,24 +14,307 @@ proxies:
   server: cf5.466688.xyz
   type: vless
   uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
-- name: 🇺🇸 US-09
-  password: VPNCUSTOMIZE
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-02
+  port: 8443
+  server: love.ns.cloudflare.com
+  sni: vamosargentina.dpdns.org
+  type: vless
+  uuid: '%40V2ConfigPro'
+- alterId: 0
+  cipher: auto
+  host: silent-cake-fb8d.69-a76.workers.dev
+  name: 🌍 Node-03
+  network: ws
+  port: 8880
+  server: themeforest.net
+  type: vless
+  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
+- alterId: 0
+  cipher: auto
+  host: cf-thfr-p.netnode.cc.cd
+  name: 🌍 Node-04
+  network: ws
   port: 443
-  server: 162.159.38.183
-  sni: ww.offers.de5.net
+  server: cf8.466688.xyz
+  sni: cf-thfr-p.netnode.cc.cd
+  type: vless
+  uuid: 4710eac8-f188-426a-a7d3-498c59de6503
+- alterId: 0
+  cipher: auto
+  host: mute-sunset-0849.40-aeb.workers.dev
+  name: 🌍 Node-05
+  network: ws
+  port: 8880
+  server: deepl.com
+  type: vless
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+- name: 🇯🇵 JP-01
+  password: BxceQaOe
+  port: 24397
+  server: 54.238.245.134
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: pan1.global.ssl.fastly.net
+  name: 🌍 Node-06
+  network: ws
+  port: 443
+  server: 199.232.249.110
+  sni: ssl.fastly.com
+  type: vless
+  uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
+- alterId: 0
+  cipher: auto
+  host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
+  name: 🌍 Node-07
+  network: ws
+  port: 2095
+  server: www.fbi.gov
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-08
+  port: 443
+  server: 151.101.56.7
+  sni: ssl.fastly.com
+  type: vless
+  uuid: 4d2b9de1-8be0-4434-9900-91eccb8422fa
+- cipher: aes-256-cfb
+  name: 🌍 Node-09
+  password: amazonskr05
+  port: 443
+  server: 3.122.115.111
+  type: ss
+- alterId: 0
+  cipher: auto
+  host: old-moon-16d0.156-a25.workers.dev
+  name: 🌍 Node-10
+  network: ws
+  port: 8880
+  server: cf10.466688.xyz
+  type: vless
+  uuid: 6b504c50-8535-44cf-8e4e-f8ee674a922e
+- alterId: 0
+  cipher: auto
+  host: tiny-feather-4c41.227.workers.dev
+  name: 🌍 Node-11
+  network: ws
+  port: 8880
+  server: 162.159.156.214
+  type: vless
+  uuid: 31f345f3-b8eb-4ca6-8b14-bb555ae2c1f9
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: 🌍 Node-12
+  port: 8443
+  server: 45.198.87.102
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-13
+  port: 8380
+  server: 5.252.26.173
+  sni: yahoo.com
+  type: vless
+  uuid: a2292e36-fafb-6634-051d-1d99f45503c7
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-14
+  network: raw
+  port: 16025
+  server: c722s801.portablesubmarines.com
+  type: vmess
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: 🌍 Node-15
+  port: 8443
+  server: 45.198.87.203
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  name: 🌍 Node-16
+  network: grpc
+  port: 443
+  server: app.he-happ.com
+  sni: app.he-happ.com
+  type: vless
+  uuid: 9e4e5d64-11a3-48bc-8622-1d39bd1c2573
+- name: 🇺🇸 US-01
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 49277
+  server: 16.163.108.33
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇺🇸 US-02
+  password: BxceQaOe
+  port: 25651
+  server: 43.199.202.34
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: firefox
+  name: 🌍 Node-17
+  port: 8443
+  server: 45.198.87.168
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: firefox
+  name: 🌍 Node-18
+  port: 8443
+  server: 45.198.87.33
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- name: 🇸🇬 SG-01
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 48738
+  server: 95.40.52.88
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇸🇬 SG-02
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 6357
+  server: 18.166.74.220
+  sni: www.nintendogames.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-19
+  port: 40084
+  server: 179.237.75.28
+  sni: yahoo.com
+  type: vless
+  uuid: bcd7d69f-98d4-4622-8caf-db83b7af81da
+- name: 🇭🇰 HK-01
+  password: BxceQaOe
+  port: 7674
+  server: 16.163.145.248
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 🇭🇰 HK-02
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 47867
+  server: 18.166.74.220
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇸🇬 SG-03
+  password: BxceQaOe
+  port: 32434
+  server: 54.46.125.103
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 🇺🇸 US-03
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 17005
+  server: 16.163.108.33
+  sni: www.nintendogames.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK-03
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇭🇰 HK-04
+  password: BxceQaOe
+  port: 50115
+  server: 54.46.125.103
+  sni: t.me%2Fripaojiedian
   type: trojan
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🌍 Node-01
-  - 🇺🇸 US-09
+  - 🌍 Node-02
+  - 🌍 Node-03
+  - 🌍 Node-04
+  - 🌍 Node-05
+  - 🇯🇵 JP-01
+  - 🌍 Node-06
+  - 🌍 Node-07
+  - 🌍 Node-08
+  - 🌍 Node-09
+  - 🌍 Node-10
+  - 🌍 Node-11
+  - 🌍 Node-12
+  - 🌍 Node-13
+  - 🌍 Node-14
+  - 🌍 Node-15
+  - 🌍 Node-16
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🌍 Node-17
+  - 🌍 Node-18
+  - 🇸🇬 SG-01
+  - 🇸🇬 SG-02
+  - 🌍 Node-19
+  - 🇭🇰 HK-01
+  - 🇭🇰 HK-02
+  - 🇸🇬 SG-03
+  - 🇺🇸 US-03
+  - 🇭🇰 HK-03
+  - 🇭🇰 HK-04
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🌍 Node-01
-  - 🇺🇸 US-09
+  - 🌍 Node-02
+  - 🌍 Node-03
+  - 🌍 Node-04
+  - 🌍 Node-05
+  - 🇯🇵 JP-01
+  - 🌍 Node-06
+  - 🌍 Node-07
+  - 🌍 Node-08
+  - 🌍 Node-09
+  - 🌍 Node-10
+  - 🌍 Node-11
+  - 🌍 Node-12
+  - 🌍 Node-13
+  - 🌍 Node-14
+  - 🌍 Node-15
+  - 🌍 Node-16
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🌍 Node-17
+  - 🌍 Node-18
+  - 🇸🇬 SG-01
+  - 🇸🇬 SG-02
+  - 🌍 Node-19
+  - 🇭🇰 HK-01
+  - 🇭🇰 HK-02
+  - 🇸🇬 SG-03
+  - 🇺🇸 US-03
+  - 🇭🇰 HK-03
+  - 🇭🇰 HK-04
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
