@@ -27,7 +27,7 @@ proxies:
   cipher: auto
   fp: chrome
   host: vp24.cc.cd
-  name: 🇺🇸 US-07
+  name: 🇺🇸 US-01
   network: ws
   port: 2087
   server: 188.164.248.143
@@ -36,29 +36,20 @@ proxies:
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - alterId: 0
   cipher: auto
-  host: v83wyiv0.cnm.qzz.io
-  name: 🌍 Node-01
-  network: ws
-  port: 8080
-  server: 172.64.144.52
-  type: vless
-  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
-- alterId: 0
-  cipher: auto
   fp: chrome
-  host: vp12.cc.cd
-  name: 🇺🇸 US-10
+  host: vp11.cc.cd
+  name: 🇺🇸 US-06
   network: ws
-  port: 2096
-  server: 188.164.248.178
-  sni: vp12.cc.cd
+  port: 2087
+  server: 8.35.211.169
+  sni: vp11.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - alterId: 0
   cipher: auto
   fp: chrome
   host: vp33.cc.cd
-  name: 🇺🇸 US-11
+  name: 🇺🇸 US-09
   network: ws
   port: 443
   server: 104.18.33.37
@@ -68,8 +59,30 @@ proxies:
 - alterId: 0
   cipher: auto
   fp: chrome
+  host: vp11.cc.cd
+  name: 🇺🇸 US-10
+  network: ws
+  port: 8443
+  server: 8.35.211.186
+  sni: vp11.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp12.cc.cd
+  name: 🇺🇸 US-12
+  network: ws
+  port: 2096
+  server: 188.164.248.178
+  sni: vp12.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
   host: vp14.cc.cd
-  name: 🇺🇸 US-16
+  name: 🇺🇸 US-13
   network: ws
   port: 2096
   server: 188.164.248.172
@@ -78,40 +91,67 @@ proxies:
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - alterId: 0
   cipher: auto
-  encryption: none
   fp: chrome
-  host: t1s1.rittbo.kdns.fr
+  host: vp15.cc.cd
+  name: 🇺🇸 US-15
+  network: ws
+  port: 8443
+  server: 198.41.223.216
+  sni: vp15.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp15.cc.cd
   name: 🇺🇸 US-17
   network: ws
-  port: 443
-  server: 104.18.41.190
-  sni: t1s1.rittbo.kdns.fr
+  port: 2087
+  server: 198.41.223.24
+  sni: vp15.cc.cd
   type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp36.cc.cd
+  name: 🇺🇸 US-18
+  network: ws
+  port: 2087
+  server: 173.245.58.162
+  sni: vp36.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🇯🇵 JP-01
   - 🇭🇰 HK-01
-  - 🇺🇸 US-07
-  - 🌍 Node-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-06
+  - 🇺🇸 US-09
   - 🇺🇸 US-10
-  - 🇺🇸 US-11
-  - 🇺🇸 US-16
+  - 🇺🇸 US-12
+  - 🇺🇸 US-13
+  - 🇺🇸 US-15
   - 🇺🇸 US-17
+  - 🇺🇸 US-18
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🇯🇵 JP-01
   - 🇭🇰 HK-01
-  - 🇺🇸 US-07
-  - 🌍 Node-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-06
+  - 🇺🇸 US-09
   - 🇺🇸 US-10
-  - 🇺🇸 US-11
-  - 🇺🇸 US-16
+  - 🇺🇸 US-12
+  - 🇺🇸 US-13
+  - 🇺🇸 US-15
   - 🇺🇸 US-17
+  - 🇺🇸 US-18
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
