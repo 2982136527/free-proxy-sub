@@ -5,22 +5,300 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- name: 🇳🇱 NL-01
+- name: 🇺🇸 US-01
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
   server: 188.164.248.122
   sni: space.byu.id.yxls.eu.cc
   type: trojan
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp40.cc.cd
+  name: 🇺🇸 US-02
+  network: ws
+  port: 2053
+  server: 104.18.33.139
+  sni: vp40.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- name: 🌍 Node-01
+  password: Mitivpn
+  port: 443
+  server: 151.101.56.6
+  sni: ssl.fastly.com
+  type: trojan
+- name: 🌍 Node-02
+  password: humanity
+  port: 443
+  server: www.ignitelimit.com
+  type: trojan
+- name: 🇧🇷 BR-01
+  password: mitivpn
+  port: 443
+  server: 188.114.97.6
+  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+  name: 🌍 Node-03
+  network: ws
+  port: 80
+  server: 69.84.182.49
+  type: vmess
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+  ws-path: /
+- name: 🇺🇸 US-03
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  sni: www.calmlunch.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: 4cdn.njkrpl.com
+  name: 🇺🇸 US-04
+  network: ws
+  port: 443
+  server: 4cdn.njkrpl.com
+  tls: true
+  type: vmess
+  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
+  ws-path: /
+- name: 🌍 Node-04
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 8443
+  server: 152.53.200.89
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- name: 🇺🇸 US-05
+  password: humanity
+  port: 443
+  server: 104.26.6.159
+  sni: www.creationlong.org
+  type: trojan
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  name: 🇺🇸 US-06
+  network: grpc
+  port: 443
+  server: main.reasonok.com
+  sni: main.reasonok.com
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+- name: 🌍 Node-05
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 91.221.190.80
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: renderer-stream-1-411.mirra.now
+  name: 🌍 Node-06
+  network: ws
+  port: 443
+  server: renderer-stream-1-411.mirra.now
+  tls: true
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  ws-path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  host: v10.hdacd.com
+  name: 🇭🇰 HK-01
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-07
+  network: ws
+  port: 443
+  server: aaaa.wxx.gay
+  tls: true
+  type: vmess
+  uuid: 8237ec34-143a-11ee-8019-000017022008
+  ws-path: /look
+- name: 🇸🇪 SE-01
+  password: Mitivpn
+  port: 80
+  server: 146.75.116.190
+  type: trojan
+- alterId: 0
+  cipher: auto
+  fp: qq
+  name: 🇬🇧 GB-01
+  network: tcp
+  port: 443
+  server: 77.110.113.188
+  sni: www.samsung.com
+  type: vless
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+- name: 🌍 Node-08
+  password: rYuChHcwQZskq9E0zdoR
+  port: 2053
+  server: 103.45.245.208
+  sni: vpn5.rnmcnm.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🇬🇧 GB-02
+  network: grpc
+  port: 2087
+  server: 31.76.113.160
+  sni: ads.x5.ru
+  type: vless
+  uuid: b90064cf-3f61-4f37-b549-a72100a8c9db
+- name: 🌍 Node-09
+  password: Mitivpn
+  port: 443
+  server: 167.82.101.251
+  sni: ssl.fastly.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  name: 🇬🇧 GB-03
+  network: grpc
+  port: 2087
+  server: 31.76.113.136
+  sni: ads.x5.ru
+  type: vless
+  uuid: 8d90a1bf-7d6a-4cb7-812a-afd355e73489
+- name: 🇮🇹 IT-01
+  password: Mitivpn
+  port: 80
+  server: 151.101.242.172
+  type: trojan
+- name: 🇮🇹 IT-02
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 151.241.215.148
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- name: 🇩🇪 DE-01
+  obfs: salamander
+  obfs-password: u3do5j2gss7mfri9
+  password: 9204bccb42c743799c6069feccb7832d
+  port: 443
+  server: de1.jamezwin.org
+  sni: de1.jamezwin.org
+  type: hysteria2
+- name: 🌍 Node-10
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.156
+  type: trojan
+- name: 🇺🇸 US-07
+  password: humanity
+  port: 443
+  server: 104.16.174.34
+  sni: www.ignitelimit.com
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 US-08
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
+  type: ss
+- name: 🌍 Node-11
+  password: 9c521e24-7326-acd3-acec-d0afac2b465d
+  port: 8080
+  server: 104.25.108.147
+  sni: red-cell-47f9.milaniomilan9.workers.dev
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: v10.zgtfqs.click
+  name: 🇭🇰 HK-02
+  network: tcp
+  port: 30807
+  server: v10.zgtfqs.click
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: 🌍 Node-12
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.151
+  sni: 185.137.157.151
+  type: trojan
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇳🇱 NL-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🌍 Node-01
+  - 🌍 Node-02
+  - 🇧🇷 BR-01
+  - 🌍 Node-03
+  - 🇺🇸 US-03
+  - 🇺🇸 US-04
+  - 🌍 Node-04
+  - 🇺🇸 US-05
+  - 🇺🇸 US-06
+  - 🌍 Node-05
+  - 🌍 Node-06
+  - 🇭🇰 HK-01
+  - 🌍 Node-07
+  - 🇸🇪 SE-01
+  - 🇬🇧 GB-01
+  - 🌍 Node-08
+  - 🇬🇧 GB-02
+  - 🌍 Node-09
+  - 🇬🇧 GB-03
+  - 🇮🇹 IT-01
+  - 🇮🇹 IT-02
+  - 🇩🇪 DE-01
+  - 🌍 Node-10
+  - 🇺🇸 US-07
+  - 🇺🇸 US-08
+  - 🌍 Node-11
+  - 🇭🇰 HK-02
+  - 🌍 Node-12
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇳🇱 NL-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🌍 Node-01
+  - 🌍 Node-02
+  - 🇧🇷 BR-01
+  - 🌍 Node-03
+  - 🇺🇸 US-03
+  - 🇺🇸 US-04
+  - 🌍 Node-04
+  - 🇺🇸 US-05
+  - 🇺🇸 US-06
+  - 🌍 Node-05
+  - 🌍 Node-06
+  - 🇭🇰 HK-01
+  - 🌍 Node-07
+  - 🇸🇪 SE-01
+  - 🇬🇧 GB-01
+  - 🌍 Node-08
+  - 🇬🇧 GB-02
+  - 🌍 Node-09
+  - 🇬🇧 GB-03
+  - 🇮🇹 IT-01
+  - 🇮🇹 IT-02
+  - 🇩🇪 DE-01
+  - 🌍 Node-10
+  - 🇺🇸 US-07
+  - 🇺🇸 US-08
+  - 🌍 Node-11
+  - 🇭🇰 HK-02
+  - 🌍 Node-12
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
