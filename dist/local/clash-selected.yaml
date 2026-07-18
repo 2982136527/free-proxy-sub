@@ -10,7 +10,7 @@ proxies:
   encryption: none
   fp: chrome
   host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-12
+  name: 🇺🇸 US-01
   network: ws
   port: 443
   server: 172.64.53.27
@@ -22,10 +22,10 @@ proxies:
   encryption: none
   fp: chrome
   host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-20
+  name: 🇺🇸 US-12
   network: ws
   port: 443
-  server: 172.64.145.186
+  server: 172.64.42.44
   sni: t1s1.rittbo.kdns.fr
   type: vless
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
@@ -34,10 +34,29 @@ proxies:
   encryption: none
   fp: chrome
   host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-26
+  name: 🇺🇸 US-15
   network: ws
   port: 443
-  server: 172.64.42.44
+  server: 172.64.145.186
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+- name: 🇳🇱 NL-01
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  skip-cert-verify: true
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: t1s1.rittbo.kdns.fr
+  name: 🇺🇸 US-21
+  network: ws
+  port: 443
+  server: 162.159.34.23
   sni: t1s1.rittbo.kdns.fr
   type: vless
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
@@ -45,16 +64,20 @@ proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🇺🇸 US-01
   - 🇺🇸 US-12
-  - 🇺🇸 US-20
-  - 🇺🇸 US-26
+  - 🇺🇸 US-15
+  - 🇳🇱 NL-01
+  - 🇺🇸 US-21
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
+  - 🇺🇸 US-01
   - 🇺🇸 US-12
-  - 🇺🇸 US-20
-  - 🇺🇸 US-26
+  - 🇺🇸 US-15
+  - 🇳🇱 NL-01
+  - 🇺🇸 US-21
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
