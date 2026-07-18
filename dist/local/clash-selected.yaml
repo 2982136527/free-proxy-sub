@@ -7,17 +7,82 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  fp: chrome
+  host: edge-267487d0.pages.dev
+  name: 🇺🇸 US-01
+  network: ws
+  port: 443
+  server: 108.162.198.249
+  sni: edge-267487d0.pages.dev
+  type: vless
+  uuid: 07c87117-8472-41f6-bea8-ddcb012b9b41
+- alterId: 0
+  cipher: auto
+  host: cf-thfr-p.netnode.cc.cd
+  name: 🌍 Node-01
+  network: ws
+  port: 443
+  server: cf1.466688.xyz
+  sni: cf-thfr-p.netnode.cc.cd
+  type: vless
+  uuid: 4710eac8-f188-426a-a7d3-498c59de6503
+- name: 🇯🇵 JP-01
+  password: BxceQaOe
+  port: 24397
+  server: 54.238.245.134
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: t1s1.rittbo.kdns.fr
+  name: 🌍 Node-02
+  network: ws
+  port: 443
+  server: 173.245.58.87
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-03
+  port: 8443
+  server: love.ns.cloudflare.com
+  sni: vamosargentina.dpdns.org
+  type: vless
+  uuid: '%40V2ConfigPro'
+- alterId: 0
+  cipher: auto
+  host: cf-thfr-p.netnode.cc.cd
+  name: 🌍 Node-04
+  network: ws
+  port: 443
+  server: cf3.466688.xyz
+  sni: cf-thfr-p.netnode.cc.cd
+  type: vless
+  uuid: 4710eac8-f188-426a-a7d3-498c59de6503
+- alterId: 0
+  cipher: auto
   encryption: none
   fp: chrome
   host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-06
+  name: 🇺🇸 US-02
   network: ws
   port: 443
   server: 104.18.45.104
   sni: t1s1.rittbo.kdns.fr
   type: vless
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-- name: 🇳🇱 NL-01
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-05
+  port: 8443
+  server: bayan.ns.cloudflare.com
+  sni: vamosargentina.dpdns.org
+  type: vless
+  uuid: '%40V2ConfigPro'
+- name: 🌍 Node-06
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
   server: 188.164.248.122
@@ -25,29 +90,274 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: edge-267487d0.pages.dev
-  name: 🇺🇸 US-23
+  encryption: none
+  host: vl.dalazhi.cloudns.biz
+  name: 🇺🇸 US-03
+  network: ws
+  port: 80
+  server: 104.16.27.134
+  type: vless
+  uuid: df301b32-1152-4526-9a63-beedd93d3156
+- alterId: 0
+  cipher: auto
+  host: 7jceh.02i3.bto.hh.hhyf.kdns.fr
+  name: 🌍 Node-07
   network: ws
   port: 443
-  server: 108.162.198.249
-  sni: edge-267487d0.pages.dev
+  server: 140.83.50.165
+  sni: 7jceh.02i3.bto.hh.hhyf.kdns.fr
   type: vless
-  uuid: 07c87117-8472-41f6-bea8-ddcb012b9b41
+  uuid: 68eee13f-1a7a-4761-b71e-83b997eeccf9
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-08
+  port: 443
+  server: 172.64.189.180
+  sni: nnnn.arashmokhtari.com
+  type: vless
+  uuid: 93c6a4b8-0902-4af8-9b2e-b6ecb6a55df4
+- alterId: 0
+  cipher: auto
+  host: wild-frog-c709.403-6ff.workers.dev
+  name: 🌍 Node-09
+  network: ws
+  port: 8880
+  server: 162.159.156.214
+  type: vless
+  uuid: 8dd8af16-cae0-4431-b04c-a637b4d7645b
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: shegeftihaaa.net
+  name: 🇺🇸 US-04
+  network: ws
+  port: 443
+  server: 104.26.14.137
+  sni: shegeftihaaa.net
+  type: vless
+  uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  name: 🌍 Node-10
+  network: grpc
+  port: 443
+  server: get.onetimeok.com
+  sni: get.onetimeok.com
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: firefox
+  name: 🌍 Node-11
+  port: 8443
+  server: 45.198.87.13
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- alterId: 0
+  cipher: auto
+  host: old-violet-a5ce.29-440.workers.dev
+  name: 🌍 Node-12
+  network: ws
+  port: 8880
+  server: 104.27.82.154
+  type: vless
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
+- name: 🌍 Node-13
+  password: MITIVPN
+  port: 443
+  server: 164.38.155.135
+  sni: 95r.ir
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: ancient-glade-34d6.6-07d.workers.dev
+  name: 🌍 Node-14
+  network: ws
+  port: 8880
+  server: 104.26.13.40
+  type: vless
+  uuid: 16586b3b-9e26-4fe9-b137-389ea48f088c
+- alterId: 0
+  cipher: auto
+  host: flat-fire-40ed.96-042.workers.dev
+  name: 🌍 Node-15
+  network: ws
+  port: 8880
+  server: icook.tw
+  type: vless
+  uuid: 80cead8e-0d28-4b0a-bacd-8005471a5c39
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  name: 🌍 Node-16
+  network: grpc
+  port: 443
+  server: api.onetimeok.com
+  sni: api.onetimeok.com
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: t1s1.rittbo.kdns.fr
+  name: 🇺🇸 US-05
+  network: ws
+  port: 443
+  server: 172.66.46.250
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+- alterId: 0
+  cipher: auto
+  host: shrill-lake-231c.jachhitachi69.workers.dev
+  name: 🌍 Node-17
+  network: ws
+  port: 2086
+  server: 172.67.213.2
+  type: vless
+  uuid: 335035e6-65f1-4a51-a8a7-10fb0a89b8e7
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-18
+  port: 40084
+  server: 179.237.75.28
+  sni: yahoo.com
+  type: vless
+  uuid: bcd7d69f-98d4-4622-8caf-db83b7af81da
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK-01
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  fp: qq
+  name: 🌍 Node-19
+  port: 443
+  server: 77.110.113.188
+  sni: www.samsung.com
+  type: vless
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: 🌍 Node-20
+  port: 8443
+  server: 45.198.87.203
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: firefox
+  name: 🌍 Node-21
+  port: 8443
+  server: 45.198.87.33
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- alterId: 0
+  cipher: auto
+  encryption: none
+  flow: xtls-rprx-vision
+  fp: chrome
+  name: 🇷🇺 RU-01
+  network: tcp
+  port: 35540
+  server: 91.107.182.113
+  sni: yellowpages.amazon.com
+  type: vless
+  uuid: 31ad4c74-a799-44a6-a12f-d10a9bf71a35
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: 🌍 Node-22
+  port: 8443
+  server: 45.198.87.102
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-06
-  - 🇳🇱 NL-01
-  - 🇺🇸 US-23
+  - 🇺🇸 US-01
+  - 🌍 Node-01
+  - 🇯🇵 JP-01
+  - 🌍 Node-02
+  - 🌍 Node-03
+  - 🌍 Node-04
+  - 🇺🇸 US-02
+  - 🌍 Node-05
+  - 🌍 Node-06
+  - 🇺🇸 US-03
+  - 🌍 Node-07
+  - 🌍 Node-08
+  - 🌍 Node-09
+  - 🇺🇸 US-04
+  - 🌍 Node-10
+  - 🌍 Node-11
+  - 🌍 Node-12
+  - 🌍 Node-13
+  - 🌍 Node-14
+  - 🌍 Node-15
+  - 🌍 Node-16
+  - 🇺🇸 US-05
+  - 🌍 Node-17
+  - 🌍 Node-18
+  - 🇭🇰 HK-01
+  - 🌍 Node-19
+  - 🌍 Node-20
+  - 🌍 Node-21
+  - 🇷🇺 RU-01
+  - 🌍 Node-22
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-06
-  - 🇳🇱 NL-01
-  - 🇺🇸 US-23
+  - 🇺🇸 US-01
+  - 🌍 Node-01
+  - 🇯🇵 JP-01
+  - 🌍 Node-02
+  - 🌍 Node-03
+  - 🌍 Node-04
+  - 🇺🇸 US-02
+  - 🌍 Node-05
+  - 🌍 Node-06
+  - 🇺🇸 US-03
+  - 🌍 Node-07
+  - 🌍 Node-08
+  - 🌍 Node-09
+  - 🇺🇸 US-04
+  - 🌍 Node-10
+  - 🌍 Node-11
+  - 🌍 Node-12
+  - 🌍 Node-13
+  - 🌍 Node-14
+  - 🌍 Node-15
+  - 🌍 Node-16
+  - 🇺🇸 US-05
+  - 🌍 Node-17
+  - 🌍 Node-18
+  - 🇭🇰 HK-01
+  - 🌍 Node-19
+  - 🌍 Node-20
+  - 🌍 Node-21
+  - 🇷🇺 RU-01
+  - 🌍 Node-22
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
