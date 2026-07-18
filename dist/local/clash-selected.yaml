@@ -5,22 +5,113 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- name: 🇯🇵 JP-01
-  password: BxceQaOe
-  port: 24397
-  server: 54.238.245.134
-  sni: t.me%252Fripaojiedian
+- name: 🇺🇸 US-04
+  password: VPNCUSTOMIZE
+  port: 443
+  server: 162.159.38.183
+  sni: ww.offers.de5.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  host: vp12.cc.cd
+  name: 🇳🇱 NL-01
+  network: ws
+  port: 2096
+  server: 188.164.248.178
+  sni: vp12.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- name: 🇳🇱 NL-02
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: silent-cake-fb8d.69-a76.workers.dev
+  name: 🌍 Node-01
+  network: ws
+  port: 8880
+  server: themeforest.net
+  type: vless
+  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: t1s1.rittbo.kdns.fr
+  name: 🇺🇸 US-14
+  network: ws
+  port: 443
+  server: 172.64.153.159
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+- alterId: 0
+  cipher: auto
+  host: mute-sunset-0849.40-aeb.workers.dev
+  name: 🌍 Node-02
+  network: ws
+  port: 8880
+  server: deepl.com
+  type: vless
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+- alterId: 0
+  cipher: auto
+  host: cf-thfr-p.netnode.cc.cd
+  name: 🌍 Node-03
+  network: ws
+  port: 443
+  server: cf8.466688.xyz
+  sni: cf-thfr-p.netnode.cc.cd
+  type: vless
+  uuid: 4710eac8-f188-426a-a7d3-498c59de6503
+- alterId: 0
+  cipher: auto
+  host: late-mountain-6801.355.workers.dev
+  name: 🌍 Node-04
+  network: ws
+  port: 8880
+  server: cf5.466688.xyz
+  type: vless
+  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: t1s1.rittbo.kdns.fr
+  name: 🇺🇸 US-22
+  network: ws
+  port: 443
+  server: cdn.9889888.xyz
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇯🇵 JP-01
+  - 🇺🇸 US-04
+  - 🇳🇱 NL-01
+  - 🇳🇱 NL-02
+  - 🌍 Node-01
+  - 🇺🇸 US-14
+  - 🌍 Node-02
+  - 🌍 Node-03
+  - 🌍 Node-04
+  - 🇺🇸 US-22
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇯🇵 JP-01
+  - 🇺🇸 US-04
+  - 🇳🇱 NL-01
+  - 🇳🇱 NL-02
+  - 🌍 Node-01
+  - 🇺🇸 US-14
+  - 🌍 Node-02
+  - 🌍 Node-03
+  - 🌍 Node-04
+  - 🇺🇸 US-22
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
