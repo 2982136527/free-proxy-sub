@@ -13,27 +13,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  fp: random
-  host: cfh.evan00.dpdns.org
-  name: 🇺🇸 US-04
-  network: ws
-  port: 443
-  server: 172.64.52.210
-  sni: cfh.evan00.dpdns.org
-  type: vless
-  uuid: d2a4ac9a-2fda-4a65-ab10-ec92d1897012
-- alterId: 0
-  cipher: auto
-  host: cf11.evan00.dpdns.org
-  name: 🌍 Node-01
-  network: ws
-  port: 8443
-  server: 162.159.38.2
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- alterId: 0
-  cipher: auto
   encryption: none
   flow: xtls-rprx-vision
   fp: chrome
@@ -46,17 +25,18 @@ proxies:
   uuid: 1416a27c-edba-4822-90d5-728b4333114d
 - alterId: 0
   cipher: auto
-  host: 0dsshvzb.cnm.qzz.io
-  name: 🌍 Node-02
+  host: cf11.evan00.dpdns.org
+  name: 🌍 Node-01
   network: ws
-  port: 2082
-  server: xqgs1fjh.cf.3666888.xyz
+  port: 443
+  server: 172.64.229.1
+  sni: cf11.evan00.dpdns.org
   type: vless
-  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
   host: cf11.evan00.dpdns.org
-  name: 🌍 Node-03
+  name: 🌍 Node-02
   network: ws
   port: 443
   server: cdn.204910.best
@@ -65,13 +45,76 @@ proxies:
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
+  host: 0dsshvzb.cnm.qzz.io
+  name: 🌍 Node-03
+  network: ws
+  port: 2082
+  server: xqgs1fjh.cf.3666888.xyz
+  type: vless
+  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cfh.evan00.dpdns.org
+  name: 🇺🇸 US-09
+  network: ws
+  port: 443
+  server: 172.64.52.210
+  sni: cfh.evan00.dpdns.org
+  type: vless
+  uuid: d2a4ac9a-2fda-4a65-ab10-ec92d1897012
+- alterId: 0
+  cipher: auto
+  host: cf11.evan00.dpdns.org
+  name: 🌍 Node-04
+  network: ws
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
   fp: chrome
-  host: vp15.cc.cd
-  name: 🇺🇸 US-20
+  host: vp33.cc.cd
+  name: 🇺🇸 US-13
+  network: ws
+  port: 443
+  server: 104.18.33.37
+  sni: vp33.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp11.cc.cd
+  name: 🇺🇸 US-15
   network: ws
   port: 2087
-  server: 198.41.223.24
-  sni: vp15.cc.cd
+  server: 8.35.211.169
+  sni: vp11.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp36.cc.cd
+  name: 🇺🇸 US-16
+  network: ws
+  port: 2087
+  server: 173.245.58.162
+  sni: vp36.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp14.cc.cd
+  name: 🇺🇸 US-18
+  network: ws
+  port: 8443
+  server: 104.18.33.74
+  sni: vp14.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 proxy-groups:
@@ -79,23 +122,31 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🇭🇰 HK-01
-  - 🇺🇸 US-04
-  - 🌍 Node-01
   - 🇯🇵 JP-01
+  - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
-  - 🇺🇸 US-20
+  - 🇺🇸 US-09
+  - 🌍 Node-04
+  - 🇺🇸 US-13
+  - 🇺🇸 US-15
+  - 🇺🇸 US-16
+  - 🇺🇸 US-18
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🇭🇰 HK-01
-  - 🇺🇸 US-04
-  - 🌍 Node-01
   - 🇯🇵 JP-01
+  - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
-  - 🇺🇸 US-20
+  - 🇺🇸 US-09
+  - 🌍 Node-04
+  - 🇺🇸 US-13
+  - 🇺🇸 US-15
+  - 🇺🇸 US-16
+  - 🇺🇸 US-18
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
