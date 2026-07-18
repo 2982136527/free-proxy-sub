@@ -14,16 +14,32 @@ proxies:
   server: cf5.466688.xyz
   type: vless
   uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
+- name: 🇺🇸 US-15
+  password: VPNCUSTOMIZE
+  port: 443
+  server: 162.159.38.183
+  sni: ww.offers.de5.net
+  type: trojan
+- name: 🇳🇱 NL-01
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🌍 Node-01
+  - 🇺🇸 US-15
+  - 🇳🇱 NL-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🌍 Node-01
+  - 🇺🇸 US-15
+  - 🇳🇱 NL-01
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
