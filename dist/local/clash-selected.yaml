@@ -4,95 +4,15 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies:
-- name: 🇺🇸 US-01
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp40.cc.cd
-  name: 🇺🇸 US-02
-  network: ws
-  port: 2053
-  server: 104.18.33.139
-  sni: vp40.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
-  fp: firefox
-  name: 🇺🇸 US-03
-  network: grpc
-  port: 443
-  server: main.reasonok.com
-  sni: main.reasonok.com
-  type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  name: 🇬🇧 GB-01
-  network: grpc
-  port: 2087
-  server: 31.76.113.160
-  sni: ads.x5.ru
-  type: vless
-  uuid: b90064cf-3f61-4f37-b549-a72100a8c9db
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  name: 🇬🇧 GB-02
-  network: grpc
-  port: 2087
-  server: 31.76.113.136
-  sni: ads.x5.ru
-  type: vless
-  uuid: 8d90a1bf-7d6a-4cb7-812a-afd355e73489
-- alterId: 0
-  cipher: auto
-  fp: qq
-  name: 🇬🇧 GB-03
-  network: tcp
-  port: 443
-  server: 77.110.113.188
-  sni: www.samsung.com
-  type: vless
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-- name: 🇩🇪 DE-01
-  obfs: salamander
-  obfs-password: u3do5j2gss7mfri9
-  password: 9204bccb42c743799c6069feccb7832d
-  port: 443
-  server: de1.jamezwin.org
-  sni: de1.jamezwin.org
-  type: hysteria2
+proxies: []
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🇬🇧 GB-01
-  - 🇬🇧 GB-02
-  - 🇬🇧 GB-03
-  - 🇩🇪 DE-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies:
-  - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🇬🇧 GB-01
-  - 🇬🇧 GB-02
-  - 🇬🇧 GB-03
-  - 🇩🇪 DE-01
+  proxies: []
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
