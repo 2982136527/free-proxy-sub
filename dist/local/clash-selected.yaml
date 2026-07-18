@@ -4,15 +4,116 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies: []
+proxies:
+- cipher: chacha20-ietf
+  name: 🇭🇰 HK-01
+  password: asd123456
+  port: 8388
+  server: 103.149.182.79
+  type: ss
+- alterId: 0
+  cipher: auto
+  encryption: none
+  flow: xtls-rprx-vision
+  fp: chrome
+  name: 🇯🇵 JP-01
+  network: tcp
+  port: 37533
+  server: 172.81.102.142
+  sni: www.amazon.com
+  type: vless
+  uuid: 1416a27c-edba-4822-90d5-728b4333114d
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: vp4.cc.cd
+  name: 🇲🇾 MY-01
+  network: ws
+  port: 2096
+  server: 8.39.125.81
+  sni: vp4.cc.cd
+  type: vless
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp11.cc.cd
+  name: 🇺🇸 US-06
+  network: ws
+  port: 2087
+  server: 8.35.211.169
+  sni: vp11.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp12.cc.cd
+  name: 🇺🇸 US-07
+  network: ws
+  port: 2096
+  server: 188.164.248.178
+  sni: vp12.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp14.cc.cd
+  name: 🇺🇸 US-10
+  network: ws
+  port: 8443
+  server: 104.18.33.74
+  sni: vp14.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp14.cc.cd
+  name: 🇺🇸 US-19
+  network: ws
+  port: 2096
+  server: 188.164.248.172
+  sni: vp14.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp33.cc.cd
+  name: 🇺🇸 US-20
+  network: ws
+  port: 443
+  server: 104.18.33.37
+  sni: vp33.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🇭🇰 HK-01
+  - 🇯🇵 JP-01
+  - 🇲🇾 MY-01
+  - 🇺🇸 US-06
+  - 🇺🇸 US-07
+  - 🇺🇸 US-10
+  - 🇺🇸 US-19
+  - 🇺🇸 US-20
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies: []
+  proxies:
+  - 🇭🇰 HK-01
+  - 🇯🇵 JP-01
+  - 🇲🇾 MY-01
+  - 🇺🇸 US-06
+  - 🇺🇸 US-07
+  - 🇺🇸 US-10
+  - 🇺🇸 US-19
+  - 🇺🇸 US-20
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
