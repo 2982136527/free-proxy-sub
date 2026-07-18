@@ -4,47 +4,15 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies:
-- name: 🇳🇱 NL-01
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp24.cc.cd
-  name: 🇳🇱 NL-02
-  network: ws
-  port: 2087
-  server: 188.164.248.143
-  sni: vp24.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
-  host: super-feather-91c4.267.workers.dev
-  name: 🇺🇸 US-24
-  network: ws
-  port: 8880
-  server: deepl.com
-  type: vless
-  uuid: 9bf81377-d077-4569-9fc9-5f0a55180651
+proxies: []
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇳🇱 NL-01
-  - 🇳🇱 NL-02
-  - 🇺🇸 US-24
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies:
-  - 🇳🇱 NL-01
-  - 🇳🇱 NL-02
-  - 🇺🇸 US-24
+  proxies: []
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
