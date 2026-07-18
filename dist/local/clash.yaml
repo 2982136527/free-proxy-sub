@@ -5,6 +5,69 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
+- name: 荷兰 002
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
+- name: '%F0%9F%87%AF%F0%9F%87%B5_JP_%E6%97%A5%E6%9C%AC'
+  password: NQ26071394
+  port: 443
+  server: stunning-mastodon.rooster465.autos
+  sni: stunning-mastodon.rooster465.autos
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: SS-88.210.36.106:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 88.210.36.106
+  type: ss
+- name: '%F0%9F%87%AA%F0%9F%87%B8%20%E8%A5%BF%E7%8F%AD%E7%89%99%20V2CROSS.COM'
+  password: humanity
+  port: 443
+  server: 185.18.250.245
+  sni: www.calmlunch.com
+  type: trojan
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
+  password: VPNCUSTOMIZE
+  port: 443
+  server: 162.159.38.183
+  sni: ww.offers.de5.net
+  type: trojan
+- name: 法国 001
+  password: MITIVPN
+  port: 443
+  server: 94.140.0.100
+  sni: 95r.ir
+  type: trojan
+  udp: true
+- name: '%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1'
+  password: NQ26071394
+  port: 443
+  server: helping-newt.rooster465.autos
+  sni: helping-newt.rooster465.autos
+  type: trojan
+- name: 荷兰 001
+  password: MiTiVPN
+  port: 443
+  server: 45.131.4.118
+  sni: 95r.ir
+  type: trojan
+  udp: true
+- name: 美国 009
+  password: Mitivpn
+  port: 443
+  server: iranpoems.ir
+  sni: www.gamingdll.ir
+  type: trojan
+  udp: true
+- name: '%F0%9F%87%AE%F0%9F%87%AA_IE_%E7%88%B1%E5%B0%94%E5%85%B0'
+  password: NQ26071394
+  port: 443
+  server: fun-labrador.rooster465.autos
+  sni: fun-labrador.rooster465.autos
+  type: trojan
 - alterId: 0
   cipher: auto
   name: VMess-aaaa.wxx.gay:443
@@ -15,6 +78,32 @@ proxies:
   type: vmess
   uuid: 8237ec34-143a-11ee-8019-000017022008
   ws-path: /look
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9_2'
+  password: humanity
+  port: 443
+  server: 104.20.6.134
+  sni: www.creationlong.org
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 香港|@ripaojiedian
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.128
+  type: trojan
+- name: '%F0%9F%87%AB%F0%9F%87%B7_FR_%E6%B3%95%E5%9B%BD'
+  password: NQ26071394
+  port: 443
+  server: ready-kangaroo.rooster465.autos
+  sni: ready-kangaroo.rooster465.autos
+  type: trojan
 - alterId: 0
   cipher: auto
   name: VMess-159.223.94.156:80
@@ -24,19 +113,105 @@ proxies:
   type: vmess
   uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
   ws-path: /anti13.zingfast.vn
+- name: '%F0%9F%87%AE%F0%9F%87%AA_IE_%E7%88%B1%E5%B0%94%E5%85%B0_2'
+  password: NQ26071394
+  port: 443
+  server: thankful-piranha.rooster465.autos
+  sni: thankful-piranha.rooster465.autos
+  type: trojan
+- name: '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_2'
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.151
+  sni: 185.137.157.151
+  type: trojan
+- name: 英国 001
+  password: MITIVPN
+  port: 443
+  server: 164.38.155.135
+  sni: 95r.ir
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '%F0%9F%87%AE%F0%9F%87%B3%20%E5%8D%B0%E5%BA%A6%20V2CROSS.COM'
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  port: 28061
+  server: 103.111.114.80
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '%F0%9F%87%AE%F0%9F%87%B3%20%E5%8D%B0%E5%BA%A6%20V2CROSS.COM_2'
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  port: 28061
+  server: 103.111.114.71
+  type: ss
+- name: 英国 003
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.135
+  type: trojan
+  udp: true
+- name: 美国 023
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  port: 443
+  server: 149.104.104.58
+  sni: 149.104.104.58
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
   - 🔰 自动选择
   - ♻️ 自动测速
+  - 荷兰 002
+  - '%F0%9F%87%AF%F0%9F%87%B5_JP_%E6%97%A5%E6%9C%AC'
+  - SS-88.210.36.106:2377
+  - '%F0%9F%87%AA%F0%9F%87%B8%20%E8%A5%BF%E7%8F%AD%E7%89%99%20V2CROSS.COM'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
+  - 法国 001
+  - '%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1'
+  - 荷兰 001
+  - 美国 009
+  - '%F0%9F%87%AE%F0%9F%87%AA_IE_%E7%88%B1%E5%B0%94%E5%85%B0'
   - VMess-aaaa.wxx.gay:443
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9_2'
+  - 香港|@ripaojiedian
+  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
+  - '%F0%9F%87%AB%F0%9F%87%B7_FR_%E6%B3%95%E5%9B%BD'
   - VMess-159.223.94.156:80
+  - '%F0%9F%87%AE%F0%9F%87%AA_IE_%E7%88%B1%E5%B0%94%E5%85%B0_2'
+  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_2'
+  - 英国 001
+  - '%F0%9F%87%AE%F0%9F%87%B3%20%E5%8D%B0%E5%BA%A6%20V2CROSS.COM'
+  - '%F0%9F%87%AE%F0%9F%87%B3%20%E5%8D%B0%E5%BA%A6%20V2CROSS.COM_2'
+  - 英国 003
+  - 美国 023
   type: select
 - interval: 300
   name: 🔰 自动选择
   proxies: &id001
+  - 荷兰 002
+  - '%F0%9F%87%AF%F0%9F%87%B5_JP_%E6%97%A5%E6%9C%AC'
+  - SS-88.210.36.106:2377
+  - '%F0%9F%87%AA%F0%9F%87%B8%20%E8%A5%BF%E7%8F%AD%E7%89%99%20V2CROSS.COM'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
+  - 法国 001
+  - '%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1'
+  - 荷兰 001
+  - 美国 009
+  - '%F0%9F%87%AE%F0%9F%87%AA_IE_%E7%88%B1%E5%B0%94%E5%85%B0'
   - VMess-aaaa.wxx.gay:443
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9_2'
+  - 香港|@ripaojiedian
+  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
+  - '%F0%9F%87%AB%F0%9F%87%B7_FR_%E6%B3%95%E5%9B%BD'
   - VMess-159.223.94.156:80
+  - '%F0%9F%87%AE%F0%9F%87%AA_IE_%E7%88%B1%E5%B0%94%E5%85%B0_2'
+  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_2'
+  - 英国 001
+  - '%F0%9F%87%AE%F0%9F%87%B3%20%E5%8D%B0%E5%BA%A6%20V2CROSS.COM'
+  - '%F0%9F%87%AE%F0%9F%87%B3%20%E5%8D%B0%E5%BA%A6%20V2CROSS.COM_2'
+  - 英国 003
+  - 美国 023
   type: url-test
   url: https://www.gstatic.com/generate_204
 - interval: 300
