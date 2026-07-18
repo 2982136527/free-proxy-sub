@@ -5,26 +5,22 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  host: s5gydl.936.us.ci
-  name: 🌍 Node-01
-  network: ws
+- name: 🇳🇱 NL-02
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
-  server: 91.110.182.6
-  sni: s5gydl.936.us.ci
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🌍 Node-01
+  - 🇳🇱 NL-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🌍 Node-01
+  - 🇳🇱 NL-02
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
