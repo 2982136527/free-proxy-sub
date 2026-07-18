@@ -1,1 +1,32 @@
-proxies: []
+allow-lan: false
+external-controller: 127.0.0.1:9090
+ipv6: false
+log-level: warning
+mode: Rule
+port: 7890
+proxies:
+- alterId: 0
+  cipher: auto
+  host: cf-thfr-p.netnode.cc.cd
+  name: 🌍 Node-01
+  network: ws
+  port: 443
+  server: cf1.466688.xyz
+  sni: cf-thfr-p.netnode.cc.cd
+  type: vless
+  uuid: 4710eac8-f188-426a-a7d3-498c59de6503
+proxy-groups:
+- name: 🇺🇳 精选节点
+  proxies:
+  - ♻️ 自动选择
+  - 🌍 Node-01
+  type: select
+- interval: 180
+  name: ♻️ 自动选择
+  proxies:
+  - 🌍 Node-01
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+rules:
+- MATCH,🇺🇳 精选节点
+socks-port: 7891
