@@ -7,211 +7,149 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  host: s5gydl.936.us.ci
+  fp: chrome
+  host: edge-267487d0.pages.dev
+  name: 🇺🇸 US-05
+  network: ws
+  port: 443
+  server: 172.64.52.94
+  sni: edge-267487d0.pages.dev
+  type: vless
+  uuid: 07c87117-8472-41f6-bea8-ddcb012b9b41
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp14.cc.cd
+  name: 🇺🇸 US-07
+  network: ws
+  port: 8443
+  server: 162.159.38.230
+  sni: vp14.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
   name: 🌍 Node-01
-  network: ws
-  port: 443
-  server: 91.110.182.6
-  sni: s5gydl.936.us.ci
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- name: 🌍 Node-02
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-- name: 🌍 Node-03
-  password: MiTiVPN
-  port: 443
-  server: 45.131.4.118
-  sni: 95r.ir
-  type: trojan
-- name: 🌍 Node-04
-  password: MITIVPN
-  port: 443
-  server: 164.38.155.135
-  sni: 95r.ir
-  type: trojan
-- name: 🌍 Node-05
-  password: Mitivpn
-  port: 443
-  server: iranpoems.ir
-  sni: www.gamingdll.ir
-  type: trojan
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: firefox
-  name: 🌍 Node-06
-  port: 8443
-  server: 45.198.87.13
-  sni: storage.yandex.net
-  type: vless
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: chrome
-  name: 🌍 Node-07
-  port: 8443
-  server: 45.198.87.102
-  sni: storage.yandex.net
-  type: vless
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: chrome
-  name: 🌍 Node-08
-  port: 8443
-  server: 45.198.87.203
-  sni: storage.yandex.net
-  type: vless
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK-01
   network: tcp
-  port: 30807
-  server: v10.hdacd.com
+  port: 10050
+  server: family.bucket.x9.kfc-520.com
+  skip-cert-verify: true
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: firefox
-  name: 🌍 Node-09
-  port: 8443
-  server: 45.198.87.168
-  sni: storage.yandex.net
-  type: vless
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-10
-  network: ws
-  port: 443
-  server: x4g-production-3926.up.railway.app
-  type: vless
-  uuid: 3d8dbbc9-780a-8aa0-55cd-40027d0d8a9c
-- alterId: 0
-  cipher: auto
-  fp: firefox
-  name: 🌍 Node-11
-  network: grpc
-  port: 443
-  server: app.he-happ.com
-  sni: app.he-happ.com
-  type: vless
-  uuid: 9e4e5d64-11a3-48bc-8622-1d39bd1c2573
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-12
-  network: ws
-  port: 443
-  server: aaaa.wxx.gay
-  tls: true
+  name: 🌍 Node-02
+  network: tcp
+  port: 10046
+  server: family.bucket.x9.kfc-520.com
+  skip-cert-verify: true
   type: vmess
-  uuid: 8237ec34-143a-11ee-8019-000017022008
-  ws-path: /look
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: firefox
-  name: 🌍 Node-13
-  port: 8443
-  server: 45.198.87.33
-  sni: storage.yandex.net
-  type: vless
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  name: 🌍 Node-03
+  network: tcp
+  port: 10043
+  server: family.bucket.x9.kfc-520.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
+  encryption: none
   fp: chrome
-  name: 🌍 Node-14
-  port: 443
-  server: 95.85.227.25
-  sni: pol1.hatvpn.org
-  type: vless
-  uuid: e3e90161-fe65-443a-a3a4-e0e3a73704ca
-- name: 🌍 Node-15
-  password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-  port: 443
-  server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
-  sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
-  type: hysteria2
-- name: 🌍 Node-16
-  password: MITIVPN
-  port: 443
-  server: 94.140.0.100
-  sni: 95r.ir
-  type: trojan
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: safari
-  name: 🌍 Node-17
-  port: 14005
-  server: vip.bcjdvip.com
-  sni: apple.com
-  type: vless
-  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-18
+  host: tianshu13.pages.dev
+  name: 🇺🇸 US-14
   network: ws
-  port: 80
-  server: 159.223.94.156
+  port: 443
+  server: 172.64.146.237
+  sni: tianshu13.pages.dev
+  type: vless
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp14.cc.cd
+  name: 🇳🇱 NL-01
+  network: ws
+  port: 2096
+  server: 188.164.248.172
+  sni: vp14.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-16
+  network: ws
+  port: 443
+  server: 108.162.195.58
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: tianshu13.pages.dev
+  name: 🇺🇸 US-20
+  network: ws
+  port: 443
+  server: 172.64.147.15
+  sni: tianshu13.pages.dev
+  type: vless
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-04
+  network: tcp
+  port: 10039
+  server: family.bucket.x9.kfc-520.com
+  skip-cert-verify: true
   type: vmess
-  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-  ws-path: /anti13.zingfast.vn
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: edt2.yfqh08811.ccwu.cc
+  name: 🇺🇸 US-22
+  network: ws
+  port: 443
+  server: 162.159.4.13
+  sni: edt2.yfqh08811.ccwu.cc
+  type: vless
+  uuid: 4a1441b0-7bc8-4906-85cf-6b59c256b480
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🇺🇸 US-05
+  - 🇺🇸 US-07
   - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
+  - 🇺🇸 US-14
+  - 🇳🇱 NL-01
+  - 🇺🇸 US-16
+  - 🇺🇸 US-20
   - 🌍 Node-04
-  - 🌍 Node-05
-  - 🌍 Node-06
-  - 🌍 Node-07
-  - 🌍 Node-08
-  - 🇭🇰 HK-01
-  - 🌍 Node-09
-  - 🌍 Node-10
-  - 🌍 Node-11
-  - 🌍 Node-12
-  - 🌍 Node-13
-  - 🌍 Node-14
-  - 🌍 Node-15
-  - 🌍 Node-16
-  - 🌍 Node-17
-  - 🌍 Node-18
+  - 🇺🇸 US-22
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
+  - 🇺🇸 US-05
+  - 🇺🇸 US-07
   - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
+  - 🇺🇸 US-14
+  - 🇳🇱 NL-01
+  - 🇺🇸 US-16
+  - 🇺🇸 US-20
   - 🌍 Node-04
-  - 🌍 Node-05
-  - 🌍 Node-06
-  - 🌍 Node-07
-  - 🌍 Node-08
-  - 🇭🇰 HK-01
-  - 🌍 Node-09
-  - 🌍 Node-10
-  - 🌍 Node-11
-  - 🌍 Node-12
-  - 🌍 Node-13
-  - 🌍 Node-14
-  - 🌍 Node-15
-  - 🌍 Node-16
-  - 🌍 Node-17
-  - 🌍 Node-18
+  - 🇺🇸 US-22
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
