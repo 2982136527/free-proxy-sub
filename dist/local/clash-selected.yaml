@@ -5,33 +5,17 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- name: 🇺🇸 US-02
+- name: 🇺🇸 US-01
   password: VPNCUSTOMIZE
   port: 443
   server: 162.159.38.183
   sni: ww.offers.de5.net
   type: trojan
-- name: 🇳🇱 NL-01
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: vp12.cc.cd
-  name: 🇳🇱 NL-02
-  network: ws
-  port: 2096
-  server: 188.164.248.178
-  sni: vp12.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - alterId: 0
   cipher: auto
   encryption: none
   host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-11
+  name: 🇺🇸 US-02
   network: ws
   port: 443
   server: 172.64.153.159
@@ -40,26 +24,35 @@ proxies:
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
 - alterId: 0
   cipher: auto
-  host: silent-cake-fb8d.69-a76.workers.dev
-  name: 🌍 Node-01
+  fp: chrome
+  host: vp40.cc.cd
+  name: 🇺🇸 US-03
   network: ws
-  port: 8880
-  server: themeforest.net
+  port: 2053
+  server: 104.18.33.139
+  sni: vp40.cc.cd
   type: vless
-  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - alterId: 0
   cipher: auto
-  host: mute-sunset-0849.40-aeb.workers.dev
-  name: 🌍 Node-02
+  host: vp12.cc.cd
+  name: 🇳🇱 NL-01
   network: ws
-  port: 8880
-  server: deepl.com
+  port: 2096
+  server: 188.164.248.178
+  sni: vp12.cc.cd
   type: vless
-  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- name: 🇺🇸 US-04
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
 - alterId: 0
   cipher: auto
   host: cf-thfr-p.netnode.cc.cd
-  name: 🌍 Node-03
+  name: 🌍 Node-01
   network: ws
   port: 443
   server: cf8.466688.xyz
@@ -68,39 +61,277 @@ proxies:
   uuid: 4710eac8-f188-426a-a7d3-498c59de6503
 - alterId: 0
   cipher: auto
+  fp: chrome
+  name: 🌍 Node-02
+  port: 8443
+  server: love.ns.cloudflare.com
+  sni: vamosargentina.dpdns.org
+  type: vless
+  uuid: '%40V2ConfigPro'
+- alterId: 0
+  cipher: auto
   encryption: none
   host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-24
+  name: 🇺🇸 US-05
   network: ws
   port: 443
   server: cdn.9889888.xyz
   sni: t1s1.rittbo.kdns.fr
   type: vless
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+- alterId: 0
+  cipher: auto
+  host: silent-cake-fb8d.69-a76.workers.dev
+  name: 🌍 Node-03
+  network: ws
+  port: 8880
+  server: themeforest.net
+  type: vless
+  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
+- alterId: 0
+  cipher: auto
+  host: mute-sunset-0849.40-aeb.workers.dev
+  name: 🌍 Node-04
+  network: ws
+  port: 8880
+  server: deepl.com
+  type: vless
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+- alterId: 0
+  cipher: auto
+  host: late-mountain-6801.355.workers.dev
+  name: 🌍 Node-05
+  network: ws
+  port: 8880
+  server: cf5.466688.xyz
+  type: vless
+  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
+- name: 🇯🇵 JP-01
+  password: BxceQaOe
+  port: 24397
+  server: 54.238.245.134
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 🌍 Node-06
+  password: Mitivpn
+  port: 443
+  server: iranpoems.ir
+  sni: www.gamingdll.ir
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: pan1.global.ssl.fastly.net
+  name: 🌍 Node-07
+  network: ws
+  port: 443
+  server: 199.232.249.110
+  sni: ssl.fastly.com
+  type: vless
+  uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
+- name: 🇺🇸 US-06
+  password: humanity
+  port: 443
+  server: 104.16.174.34
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🌍 Node-08
+  password: MiTiVPN
+  port: 443
+  server: 45.131.4.118
+  sni: 95r.ir
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: old-moon-16d0.156-a25.workers.dev
+  name: 🌍 Node-09
+  network: ws
+  port: 8880
+  server: cf10.466688.xyz
+  type: vless
+  uuid: 6b504c50-8535-44cf-8e4e-f8ee674a922e
+- cipher: chacha20-ietf-poly1305
+  name: 🌍 Node-10
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 88.210.36.106
+  type: ss
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  name: 🌍 Node-11
+  network: grpc
+  port: 443
+  server: images.onetimeok.com
+  sni: images.onetimeok.com
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+- name: 🌍 Node-12
+  password: Mitivpn
+  port: 443
+  server: 151.101.56.6
+  sni: ssl.fastly.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: tight-moon-2d50.457.workers.dev
+  name: 🇺🇸 US-07
+  network: ws
+  port: 8880
+  server: 104.17.181.19
+  type: vless
+  uuid: 3bc49320-3dcd-4f30-9215-a4fa964e54c7
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-13
+  network: raw
+  port: 16025
+  server: c722s801.portablesubmarines.com
+  type: vmess
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: pan21.global.ssl.fastly.net
+  name: 🇺🇸 US-08
+  network: ws
+  port: 443
+  server: 167.82.77.173
+  sni: ssl.fastly.com
+  type: vless
+  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-14
+  port: 443
+  server: 151.101.56.7
+  sni: ssl.fastly.com
+  type: vless
+  uuid: 4d2b9de1-8be0-4434-9900-91eccb8422fa
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: 🌍 Node-15
+  port: 8443
+  server: 45.198.87.102
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: firefox
+  name: 🌍 Node-16
+  port: 8443
+  server: 45.198.87.13
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  name: 🇺🇸 US-09
+  network: grpc
+  port: 443
+  server: main.reasonok.com
+  sni: main.reasonok.com
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-17
+  port: 8380
+  server: 5.252.26.173
+  sni: yahoo.com
+  type: vless
+  uuid: a2292e36-fafb-6634-051d-1d99f45503c7
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  name: 🌍 Node-18
+  network: grpc
+  port: 443
+  server: app.he-happ.com
+  sni: app.he-happ.com
+  type: vless
+  uuid: 9e4e5d64-11a3-48bc-8622-1d39bd1c2573
+- name: 🇧🇷 BR-01
+  password: mitivpn
+  port: 443
+  server: 188.114.97.6
+  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  type: trojan
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🇺🇸 US-01
   - 🇺🇸 US-02
+  - 🇺🇸 US-03
   - 🇳🇱 NL-01
-  - 🇳🇱 NL-02
-  - 🇺🇸 US-11
+  - 🇺🇸 US-04
   - 🌍 Node-01
   - 🌍 Node-02
+  - 🇺🇸 US-05
   - 🌍 Node-03
-  - 🇺🇸 US-24
+  - 🌍 Node-04
+  - 🌍 Node-05
+  - 🇯🇵 JP-01
+  - 🌍 Node-06
+  - 🌍 Node-07
+  - 🇺🇸 US-06
+  - 🌍 Node-08
+  - 🌍 Node-09
+  - 🌍 Node-10
+  - 🌍 Node-11
+  - 🌍 Node-12
+  - 🇺🇸 US-07
+  - 🌍 Node-13
+  - 🇺🇸 US-08
+  - 🌍 Node-14
+  - 🌍 Node-15
+  - 🌍 Node-16
+  - 🇺🇸 US-09
+  - 🌍 Node-17
+  - 🌍 Node-18
+  - 🇧🇷 BR-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
+  - 🇺🇸 US-01
   - 🇺🇸 US-02
+  - 🇺🇸 US-03
   - 🇳🇱 NL-01
-  - 🇳🇱 NL-02
-  - 🇺🇸 US-11
+  - 🇺🇸 US-04
   - 🌍 Node-01
   - 🌍 Node-02
+  - 🇺🇸 US-05
   - 🌍 Node-03
-  - 🇺🇸 US-24
+  - 🌍 Node-04
+  - 🌍 Node-05
+  - 🇯🇵 JP-01
+  - 🌍 Node-06
+  - 🌍 Node-07
+  - 🇺🇸 US-06
+  - 🌍 Node-08
+  - 🌍 Node-09
+  - 🌍 Node-10
+  - 🌍 Node-11
+  - 🌍 Node-12
+  - 🇺🇸 US-07
+  - 🌍 Node-13
+  - 🇺🇸 US-08
+  - 🌍 Node-14
+  - 🌍 Node-15
+  - 🌍 Node-16
+  - 🇺🇸 US-09
+  - 🌍 Node-17
+  - 🌍 Node-18
+  - 🇧🇷 BR-01
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
