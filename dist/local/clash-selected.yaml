@@ -15,12 +15,33 @@ proxies:
   sni: cf11.evan00.dpdns.org
   type: vless
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- cipher: chacha20-ietf
-  name: 🇭🇰 HK-01
-  password: asd123456
-  port: 8388
-  server: 103.149.182.79
-  type: ss
+- name: 🇺🇸 US-01
+  password: VPNCUSTOMIZE
+  port: 443
+  server: 162.159.38.183
+  sni: ww.offers.de5.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cfh.evan00.dpdns.org
+  name: 🇺🇸 US-02
+  network: ws
+  port: 443
+  server: 172.64.52.210
+  sni: cfh.evan00.dpdns.org
+  type: vless
+  uuid: d2a4ac9a-2fda-4a65-ab10-ec92d1897012
+- alterId: 0
+  cipher: auto
+  host: cf11.evan00.dpdns.org
+  name: 🌍 Node-02
+  network: ws
+  port: 443
+  server: 172.64.229.1
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
   encryption: none
@@ -33,51 +54,71 @@ proxies:
   sni: www.amazon.com
   type: vless
   uuid: 1416a27c-edba-4822-90d5-728b4333114d
-- alterId: 0
-  cipher: auto
-  fp: random
-  host: cfh.evan00.dpdns.org
-  name: 🇺🇸 US-11
-  network: ws
-  port: 443
-  server: 172.64.52.210
-  sni: cfh.evan00.dpdns.org
-  type: vless
-  uuid: d2a4ac9a-2fda-4a65-ab10-ec92d1897012
-- name: 🇺🇸 US-13
-  password: VPNCUSTOMIZE
-  port: 443
-  server: 162.159.38.183
-  sni: ww.offers.de5.net
-  type: trojan
+- cipher: chacha20-ietf
+  name: 🇭🇰 HK-01
+  password: asd123456
+  port: 8388
+  server: 103.149.182.79
+  type: ss
 - alterId: 0
   cipher: auto
   fp: chrome
-  host: vp33.cc.cd
-  name: 🇺🇸 US-17
+  host: vp14.cc.cd
+  name: 🇺🇸 US-06
   network: ws
-  port: 443
-  server: 104.18.33.37
-  sni: vp33.cc.cd
+  port: 2096
+  server: 188.164.248.172
+  sni: vp14.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - alterId: 0
   cipher: auto
+  host: 40t1.wxgqlfx.vip
+  name: 🌍 Node-03
+  network: ws
+  port: 443
+  server: 172.64.153.90
+  sni: 40t1.wxgqlfx.vip
+  type: vless
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+- alterId: 0
+  cipher: auto
   fp: chrome
-  host: vp31.cc.cd
-  name: 🇺🇸 US-18
+  host: vp11.cc.cd
+  name: 🇺🇸 US-08
   network: ws
   port: 2087
-  server: 162.159.40.200
-  sni: vp31.cc.cd
+  server: 8.35.211.169
+  sni: vp11.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp24.cc.cd
+  name: 🇺🇸 US-10
+  network: ws
+  port: 2087
+  server: 188.164.248.143
+  sni: vp24.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  host: cf11.evan00.dpdns.org
+  name: 🌍 Node-04
+  network: ws
+  port: 443
+  server: cdn.204910.best
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
   encryption: none
   fp: chrome
   host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-20
+  name: 🇺🇸 US-12
   network: ws
   port: 443
   server: 104.18.41.190
@@ -87,40 +128,68 @@ proxies:
 - alterId: 0
   cipher: auto
   fp: chrome
-  host: vp12.cc.cd
-  name: 🇺🇸 US-21
+  host: vp31.cc.cd
+  name: 🇺🇸 US-14
   network: ws
-  port: 2096
-  server: 188.164.248.178
-  sni: vp12.cc.cd
+  port: 2087
+  server: 162.159.40.200
+  sni: vp31.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  host: cf11.evan00.dpdns.org
+  name: 🌍 Node-05
+  network: ws
+  port: 443
+  server: 108.162.195.58
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- name: 🇳🇱 NL-03
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🌍 Node-01
-  - 🇭🇰 HK-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🌍 Node-02
   - 🇯🇵 JP-01
-  - 🇺🇸 US-11
-  - 🇺🇸 US-13
-  - 🇺🇸 US-17
-  - 🇺🇸 US-18
-  - 🇺🇸 US-20
-  - 🇺🇸 US-21
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-06
+  - 🌍 Node-03
+  - 🇺🇸 US-08
+  - 🇺🇸 US-10
+  - 🌍 Node-04
+  - 🇺🇸 US-12
+  - 🇺🇸 US-14
+  - 🌍 Node-05
+  - 🇳🇱 NL-03
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🌍 Node-01
-  - 🇭🇰 HK-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🌍 Node-02
   - 🇯🇵 JP-01
-  - 🇺🇸 US-11
-  - 🇺🇸 US-13
-  - 🇺🇸 US-17
-  - 🇺🇸 US-18
-  - 🇺🇸 US-20
-  - 🇺🇸 US-21
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-06
+  - 🌍 Node-03
+  - 🇺🇸 US-08
+  - 🇺🇸 US-10
+  - 🌍 Node-04
+  - 🇺🇸 US-12
+  - 🇺🇸 US-14
+  - 🌍 Node-05
+  - 🇳🇱 NL-03
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
