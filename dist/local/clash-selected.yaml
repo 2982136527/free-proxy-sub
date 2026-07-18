@@ -5,160 +5,187 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- name: 🇸🇬 SG-01
-  password: NQ26071394
-  port: 443
-  server: helping-newt.rooster465.autos
-  sni: helping-newt.rooster465.autos
-  type: trojan
-- name: 🇯🇵 JP-01
-  password: NQ26071394
-  port: 443
-  server: stunning-mastodon.rooster465.autos
-  sni: stunning-mastodon.rooster465.autos
-  type: trojan
-- name: 🇮🇪 IE-01
-  password: NQ26071394
-  port: 443
-  server: fun-labrador.rooster465.autos
-  sni: fun-labrador.rooster465.autos
-  type: trojan
-- name: 🇺🇸 US-01
-  password: humanity
-  port: 443
-  server: 104.20.6.134
-  sni: www.creationlong.org
-  type: trojan
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   name: 🌍 Node-01
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 88.210.36.106
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-02
-  network: ws
-  port: 443
-  server: aaaa.wxx.gay
-  tls: tls
-  type: vmess
-  uuid: 8237ec34-143a-11ee-8019-000017022008
-  ws-path: /look
-- name: 🇺🇸 US-02
-  password: VPNCUSTOMIZE
-  port: 443
-  server: 162.159.38.183
-  sni: ww.offers.de5.net
-  type: trojan
-- name: 🇮🇪 IE-02
-  password: NQ26071394
-  port: 443
-  server: thankful-piranha.rooster465.autos
-  sni: thankful-piranha.rooster465.autos
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: v10.hdacd.com
-  name: 🇭🇰 HK-01
   network: tcp
-  port: 30807
-  server: v10.hdacd.com
+  port: 30845
+  server: v45.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- name: 🇫🇷 FR-01
-  password: NQ26071394
-  port: 443
-  server: ready-kangaroo.rooster465.autos
-  sni: ready-kangaroo.rooster465.autos
-  type: trojan
 - alterId: 0
   cipher: auto
+  host: 9cvs-zyn4r9-6gzdtuo0w.mikuru.ip-ddns.com
+  name: 🌍 Node-02
+  network: ws
+  port: 30001
+  server: 114.204.40.185
+  sni: 9cvs-zyn4r9-6gzdtuo0w.mikuru.ip-ddns.com
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+- alterId: 0
+  cipher: auto
+  host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
   name: 🌍 Node-03
   network: ws
-  port: 80
-  server: 159.223.94.156
-  type: vmess
-  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-  ws-path: /anti13.zingfast.vn
-- name: 🌍 Node-04
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 15807
+  server: 138.2.112.117
+  sni: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+- alterId: 0
+  cipher: auto
+  host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  name: 🌍 Node-04
+  network: ws
+  port: 627
+  server: 140.245.75.37
+  sni: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+- alterId: 0
+  cipher: auto
+  host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  name: 🌍 Node-05
+  network: ws
+  port: 56271
+  server: 146.56.106.51
+  sni: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+- alterId: 0
+  cipher: auto
+  host: vms.lifetime59.workers.dev
+  name: 🌍 Node-06
+  network: ws
+  port: 8880
+  server: 108.162.196.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp24.cc.cd
+  name: 🇺🇸 US-01
+  network: ws
+  port: 2087
+  server: 188.164.248.143
+  sni: vp24.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp31.cc.cd
+  name: 🇺🇸 US-08
+  network: ws
+  port: 2087
+  server: 162.159.40.200
+  sni: vp31.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp12.cc.cd
+  name: 🇺🇸 US-10
+  network: ws
+  port: 2096
+  server: 188.164.248.178
+  sni: vp12.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp15.cc.cd
+  name: 🇺🇸 US-11
+  network: ws
+  port: 2087
+  server: 198.41.223.24
+  sni: vp15.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp33.cc.cd
+  name: 🇺🇸 US-13
+  network: ws
   port: 443
-  server: 185.137.157.151
-  sni: 185.137.157.151
-  type: trojan
-- name: 🌍 Node-05
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.128
-  type: trojan
-- name: 🇪🇸 ES-01
-  password: humanity
-  port: 443
-  server: 185.18.250.245
-  sni: www.calmlunch.com
-  type: trojan
-- name: 🇺🇸 US-03
-  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
-  port: 443
-  server: 149.104.104.58
-  sni: 149.104.104.58
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 IN-01
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.80
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 IN-02
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.71
-  type: ss
+  server: 104.18.33.37
+  sni: vp33.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp15.cc.cd
+  name: 🇺🇸 US-14
+  network: ws
+  port: 8443
+  server: 198.41.223.216
+  sni: vp15.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp14.cc.cd
+  name: 🇺🇸 US-16
+  network: ws
+  port: 2096
+  server: 188.164.248.172
+  sni: vp14.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp36.cc.cd
+  name: 🇺🇸 US-17
+  network: ws
+  port: 2087
+  server: 173.245.58.162
+  sni: vp36.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇸🇬 SG-01
-  - 🇯🇵 JP-01
-  - 🇮🇪 IE-01
-  - 🇺🇸 US-01
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇺🇸 US-02
-  - 🇮🇪 IE-02
-  - 🇭🇰 HK-01
-  - 🇫🇷 FR-01
   - 🌍 Node-03
   - 🌍 Node-04
   - 🌍 Node-05
-  - 🇪🇸 ES-01
-  - 🇺🇸 US-03
-  - 🇮🇳 IN-01
-  - 🇮🇳 IN-02
+  - 🌍 Node-06
+  - 🇺🇸 US-01
+  - 🇺🇸 US-08
+  - 🇺🇸 US-10
+  - 🇺🇸 US-11
+  - 🇺🇸 US-13
+  - 🇺🇸 US-14
+  - 🇺🇸 US-16
+  - 🇺🇸 US-17
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇸🇬 SG-01
-  - 🇯🇵 JP-01
-  - 🇮🇪 IE-01
-  - 🇺🇸 US-01
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇺🇸 US-02
-  - 🇮🇪 IE-02
-  - 🇭🇰 HK-01
-  - 🇫🇷 FR-01
   - 🌍 Node-03
   - 🌍 Node-04
   - 🌍 Node-05
-  - 🇪🇸 ES-01
-  - 🇺🇸 US-03
-  - 🇮🇳 IN-01
-  - 🇮🇳 IN-02
+  - 🌍 Node-06
+  - 🇺🇸 US-01
+  - 🇺🇸 US-08
+  - 🇺🇸 US-10
+  - 🇺🇸 US-11
+  - 🇺🇸 US-13
+  - 🇺🇸 US-14
+  - 🇺🇸 US-16
+  - 🇺🇸 US-17
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
