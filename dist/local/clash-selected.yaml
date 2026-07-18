@@ -28,32 +28,31 @@ proxies:
   sni: www.amazon.com
   type: vless
   uuid: 1416a27c-edba-4822-90d5-728b4333114d
-- alterId: 0
-  cipher: auto
-  host: cf11.evan00.dpdns.org
-  name: 🌍 Node-01
-  network: ws
-  port: 8443
-  server: 162.159.38.2
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- alterId: 0
-  cipher: auto
-  host: cf11.evan00.dpdns.org
-  name: 🌍 Node-02
-  network: ws
-  port: 443
-  server: cdn.204910.best
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - cipher: chacha20-ietf
   name: 🇭🇰 HK-01
   password: asd123456
   port: 8388
   server: 103.149.182.79
   type: ss
+- alterId: 0
+  cipher: auto
+  host: cf11.evan00.dpdns.org
+  name: 🌍 Node-01
+  network: ws
+  port: 443
+  server: cdn.204910.best
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  host: 0dsshvzb.cnm.qzz.io
+  name: 🌍 Node-02
+  network: ws
+  port: 2082
+  server: xqgs1fjh.cf.3666888.xyz
+  type: vless
+  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
 - alterId: 0
   cipher: auto
   host: t1s1.rittbo.kdns.fr
@@ -67,8 +66,40 @@ proxies:
 - alterId: 0
   cipher: auto
   fp: chrome
+  host: vp15.cc.cd
+  name: 🇺🇸 US-14
+  network: ws
+  port: 2087
+  server: 198.41.223.24
+  sni: vp15.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  host: cf11.evan00.dpdns.org
+  name: 🌍 Node-03
+  network: ws
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: chrome
   host: vp11.cc.cd
-  name: 🇺🇸 US-17
+  name: 🇺🇸 US-15
+  network: ws
+  port: 8443
+  server: 8.35.211.186
+  sni: vp11.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp11.cc.cd
+  name: 🇺🇸 US-16
   network: ws
   port: 2087
   server: 8.35.211.169
@@ -77,49 +108,42 @@ proxies:
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - alterId: 0
   cipher: auto
-  host: vp12.cc.cd
-  name: 🇳🇱 NL-01
-  network: ws
-  port: 2096
-  server: 188.164.248.178
-  sni: vp12.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
   fp: chrome
   host: vp14.cc.cd
-  name: 🇺🇸 US-19
+  name: 🇺🇸 US-20
   network: ws
-  port: 8443
-  server: 104.18.33.74
+  port: 2096
+  server: 188.164.248.172
   sni: vp14.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - alterId: 0
   cipher: auto
+  encryption: none
   fp: chrome
-  host: vp31.cc.cd
+  host: t1s1.rittbo.kdns.fr
   name: 🇺🇸 US-21
   network: ws
-  port: 2087
-  server: 162.159.40.200
-  sni: vp31.cc.cd
+  port: 443
+  server: 104.18.41.190
+  sni: t1s1.rittbo.kdns.fr
   type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🇺🇸 US-02
   - 🇯🇵 JP-01
+  - 🇭🇰 HK-01
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇭🇰 HK-01
   - 🇺🇸 US-06
-  - 🇺🇸 US-17
-  - 🇳🇱 NL-01
-  - 🇺🇸 US-19
+  - 🇺🇸 US-14
+  - 🌍 Node-03
+  - 🇺🇸 US-15
+  - 🇺🇸 US-16
+  - 🇺🇸 US-20
   - 🇺🇸 US-21
   type: select
 - interval: 180
@@ -127,13 +151,15 @@ proxy-groups:
   proxies:
   - 🇺🇸 US-02
   - 🇯🇵 JP-01
+  - 🇭🇰 HK-01
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇭🇰 HK-01
   - 🇺🇸 US-06
-  - 🇺🇸 US-17
-  - 🇳🇱 NL-01
-  - 🇺🇸 US-19
+  - 🇺🇸 US-14
+  - 🌍 Node-03
+  - 🇺🇸 US-15
+  - 🇺🇸 US-16
+  - 🇺🇸 US-20
   - 🇺🇸 US-21
   type: url-test
   url: https://www.gstatic.com/generate_204
