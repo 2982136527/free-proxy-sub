@@ -5,24 +5,6 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-01
-  network: tcp
-  port: 30845
-  server: v45.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  host: 9cvs-zyn4r9-6gzdtuo0w.mikuru.ip-ddns.com
-  name: 🌍 Node-02
-  network: ws
-  port: 30001
-  server: 114.204.40.185
-  sni: 9cvs-zyn4r9-6gzdtuo0w.mikuru.ip-ddns.com
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
 - cipher: chacha20-ietf
   name: 🇭🇰 HK-01
   password: asd123456
@@ -31,121 +13,100 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-  name: 🌍 Node-03
-  network: ws
-  port: 15807
-  server: 138.2.112.117
-  sni: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-- alterId: 0
-  cipher: auto
-  host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-  name: 🌍 Node-04
-  network: ws
-  port: 56271
-  server: 146.56.106.51
-  sni: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-- alterId: 0
-  cipher: auto
-  host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-  name: 🌍 Node-05
-  network: ws
-  port: 627
-  server: 140.245.75.37
-  sni: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: vp4.cc.cd
-  name: 🇲🇾 MY-01
-  network: ws
-  port: 2096
-  server: 8.39.125.81
-  sni: vp4.cc.cd
-  type: vless
-  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-04
-  network: ws
-  port: 443
-  server: 162.159.34.23
-  sni: t1s1.rittbo.kdns.fr
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp12.cc.cd
-  name: 🇺🇸 US-05
-  network: ws
-  port: 2096
-  server: 188.164.248.178
-  sni: vp12.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp15.cc.cd
-  name: 🇺🇸 US-08
-  network: ws
-  port: 2087
-  server: 198.41.223.24
-  sni: vp15.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
   fp: chrome
   host: vp11.cc.cd
-  name: 🇺🇸 US-10
+  name: 🇺🇸 US-05
   network: ws
   port: 2087
   server: 8.35.211.169
   sni: vp11.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  host: vp24.cc.cd
+  name: 🇳🇱 NL-03
+  network: ws
+  port: 2087
+  server: 188.164.248.143
+  sni: vp24.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- name: 🇳🇱 NL-04
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp31.cc.cd
+  name: 🇺🇸 US-15
+  network: ws
+  port: 2087
+  server: 162.159.40.200
+  sni: vp31.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp14.cc.cd
+  name: 🇺🇸 US-16
+  network: ws
+  port: 2096
+  server: 188.164.248.172
+  sni: vp14.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: t1s1.rittbo.kdns.fr
+  name: 🇺🇸 US-17
+  network: ws
+  port: 443
+  server: 104.18.41.190
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp15.cc.cd
+  name: 🇺🇸 US-18
+  network: ws
+  port: 8443
+  server: 198.41.223.216
+  sni: vp15.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🌍 Node-01
-  - 🌍 Node-02
   - 🇭🇰 HK-01
-  - 🌍 Node-03
-  - 🌍 Node-04
-  - 🌍 Node-05
-  - 🇲🇾 MY-01
-  - 🇺🇸 US-04
   - 🇺🇸 US-05
-  - 🇺🇸 US-08
-  - 🇺🇸 US-10
+  - 🇳🇱 NL-03
+  - 🇳🇱 NL-04
+  - 🇺🇸 US-15
+  - 🇺🇸 US-16
+  - 🇺🇸 US-17
+  - 🇺🇸 US-18
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🌍 Node-01
-  - 🌍 Node-02
   - 🇭🇰 HK-01
-  - 🌍 Node-03
-  - 🌍 Node-04
-  - 🌍 Node-05
-  - 🇲🇾 MY-01
-  - 🇺🇸 US-04
   - 🇺🇸 US-05
-  - 🇺🇸 US-08
-  - 🇺🇸 US-10
+  - 🇳🇱 NL-03
+  - 🇳🇱 NL-04
+  - 🇺🇸 US-15
+  - 🇺🇸 US-16
+  - 🇺🇸 US-17
+  - 🇺🇸 US-18
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
