@@ -13,6 +13,16 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  host: cf11.evan00.dpdns.org
+  name: 🌍 Node-01
+  network: ws
+  port: 443
+  server: cdn.204910.best
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
   encryption: none
   flow: xtls-rprx-vision
   fp: chrome
@@ -26,7 +36,34 @@ proxies:
 - alterId: 0
   cipher: auto
   host: cf11.evan00.dpdns.org
-  name: 🌍 Node-01
+  name: 🌍 Node-02
+  network: ws
+  port: 443
+  server: 172.64.229.1
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cfh.evan00.dpdns.org
+  name: 🇺🇸 US-11
+  network: ws
+  port: 443
+  server: 172.64.52.210
+  sni: cfh.evan00.dpdns.org
+  type: vless
+  uuid: d2a4ac9a-2fda-4a65-ab10-ec92d1897012
+- name: 🇺🇸 US-12
+  password: VPNCUSTOMIZE
+  port: 443
+  server: 162.159.38.183
+  sni: ww.offers.de5.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: cf11.evan00.dpdns.org
+  name: 🌍 Node-03
   network: ws
   port: 8443
   server: 162.159.38.2
@@ -35,150 +72,52 @@ proxies:
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
-  host: cf11.evan00.dpdns.org
-  name: 🌍 Node-02
-  network: ws
-  port: 443
-  server: cdn.204910.best
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- alterId: 0
-  cipher: auto
-  host: cf11.evan00.dpdns.org
-  name: 🌍 Node-03
-  network: ws
-  port: 443
-  server: 172.64.229.1
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- name: 🌍 Node-05
-  password: NQ26071394
-  port: 443
-  server: bursting-racer.rooster465.autos
-  sni: bursting-racer.rooster465.autos
-  type: trojan
-- alterId: 0
-  cipher: auto
-  fp: random
-  host: cfh.evan00.dpdns.org
-  name: 🇺🇸 US-03
-  network: ws
-  port: 443
-  server: 172.64.52.210
-  sni: cfh.evan00.dpdns.org
-  type: vless
-  uuid: d2a4ac9a-2fda-4a65-ab10-ec92d1897012
-- alterId: 0
-  cipher: auto
   fp: chrome
-  host: vp14.cc.cd
-  name: 🇺🇸 US-04
+  host: vp15.cc.cd
+  name: 🇺🇸 US-19
   network: ws
-  port: 2096
-  server: 188.164.248.172
-  sni: vp14.cc.cd
+  port: 8443
+  server: 198.41.223.216
+  sni: vp15.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 - alterId: 0
   cipher: auto
   fp: chrome
-  host: vp24.cc.cd
-  name: 🇺🇸 US-09
+  host: vp31.cc.cd
+  name: 🇺🇸 US-22
   network: ws
   port: 2087
-  server: 188.164.248.143
-  sni: vp24.cc.cd
+  server: 162.159.40.200
+  sni: vp31.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp12.cc.cd
-  name: 🇺🇸 US-10
-  network: ws
-  port: 2096
-  server: 188.164.248.178
-  sni: vp12.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
-  host: 0dsshvzb.cnm.qzz.io
-  name: 🌍 Node-06
-  network: ws
-  port: 2082
-  server: xqgs1fjh.cf.3666888.xyz
-  type: vless
-  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp36.cc.cd
-  name: 🇺🇸 US-15
-  network: ws
-  port: 2087
-  server: 173.245.58.162
-  sni: vp36.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
-  host: 40t1.wxgqlfx.vip
-  name: 🌍 Node-07
-  network: ws
-  port: 443
-  server: 172.64.153.90
-  sni: 40t1.wxgqlfx.vip
-  type: vless
-  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
-- alterId: 0
-  cipher: auto
-  host: cf11.evan00.dpdns.org
-  name: 🌍 Node-08
-  network: ws
-  port: 443
-  server: 108.162.195.58
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🇭🇰 HK-01
-  - 🇯🇵 JP-01
   - 🌍 Node-01
+  - 🇯🇵 JP-01
   - 🌍 Node-02
+  - 🇺🇸 US-11
+  - 🇺🇸 US-12
   - 🌍 Node-03
-  - 🌍 Node-05
-  - 🇺🇸 US-03
-  - 🇺🇸 US-04
-  - 🇺🇸 US-09
-  - 🇺🇸 US-10
-  - 🌍 Node-06
-  - 🇺🇸 US-15
-  - 🌍 Node-07
-  - 🌍 Node-08
+  - 🇺🇸 US-19
+  - 🇺🇸 US-22
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🇭🇰 HK-01
-  - 🇯🇵 JP-01
   - 🌍 Node-01
+  - 🇯🇵 JP-01
   - 🌍 Node-02
+  - 🇺🇸 US-11
+  - 🇺🇸 US-12
   - 🌍 Node-03
-  - 🌍 Node-05
-  - 🇺🇸 US-03
-  - 🇺🇸 US-04
-  - 🇺🇸 US-09
-  - 🇺🇸 US-10
-  - 🌍 Node-06
-  - 🇺🇸 US-15
-  - 🌍 Node-07
-  - 🌍 Node-08
+  - 🇺🇸 US-19
+  - 🇺🇸 US-22
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
