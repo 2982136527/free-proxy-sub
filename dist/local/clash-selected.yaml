@@ -4,15 +4,43 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: edge-4cb23bf6.pages.dev
+  name: 🇺🇸 US-09
+  network: ws
+  port: 443
+  server: cfd3.466688.xyz
+  sni: edge-4cb23bf6.pages.dev
+  type: vless
+  uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: edge-4cb23bf6.pages.dev
+  name: 🇺🇸 US-21
+  network: ws
+  port: 443
+  server: cfd4.466688.xyz
+  sni: edge-4cb23bf6.pages.dev
+  type: vless
+  uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🇺🇸 US-09
+  - 🇺🇸 US-21
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies: []
+  proxies:
+  - 🇺🇸 US-09
+  - 🇺🇸 US-21
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
