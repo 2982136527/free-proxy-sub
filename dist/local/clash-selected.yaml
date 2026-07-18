@@ -5,37 +5,57 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-01
-  network: ws
+- cipher: chacha20-ietf
+  name: 🇭🇰 HK-01
+  password: asd123456
+  port: 8388
+  server: 103.149.182.79
+  type: ss
+- name: 🇳🇱 NL-01
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
-  server: aaaa.wxx.gay
-  tls: tls
-  type: vmess
-  uuid: 8237ec34-143a-11ee-8019-000017022008
-  ws-path: /look
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-02
+  encryption: none
+  flow: xtls-rprx-vision
+  fp: chrome
+  name: 🇯🇵 JP-01
+  network: tcp
+  port: 37533
+  server: 172.81.102.142
+  sni: www.amazon.com
+  type: vless
+  uuid: 1416a27c-edba-4822-90d5-728b4333114d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp14.cc.cd
+  name: 🇺🇸 US-23
   network: ws
-  port: 80
-  server: 159.223.94.156
-  type: vmess
-  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-  ws-path: /anti13.zingfast.vn
+  port: 8443
+  server: 104.18.33.74
+  sni: vp14.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🌍 Node-01
-  - 🌍 Node-02
+  - 🇭🇰 HK-01
+  - 🇳🇱 NL-01
+  - 🇯🇵 JP-01
+  - 🇺🇸 US-23
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🌍 Node-01
-  - 🌍 Node-02
+  - 🇭🇰 HK-01
+  - 🇳🇱 NL-01
+  - 🇯🇵 JP-01
+  - 🇺🇸 US-23
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
