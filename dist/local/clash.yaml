@@ -12,18 +12,10 @@ proxies:
   skip-cert-verify: true
   sni: space.byu.id.yxls.eu.cc
   type: trojan
-- name: 荷兰 001
-  password: MiTiVPN
-  port: 443
-  server: 45.131.4.118
-  sni: 95r.ir
-  type: trojan
-  udp: true
-- name: 美国 011
+- name: '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr'
   password: humanity
   port: 443
-  server: 165.215.250.14
-  sni: www.creationlong.org
+  server: www.ignitelimit.com
   type: trojan
 - name: '%E7%BE%8E%E5%9C%8B%E4%BD%90%E6%B2%BB%E4%BA%9E%E5%B7%9E%E4%BA%9E%E7%89%B9%E8%98%AD%E5%A4%A7%E4%B8%A8yoyapai.com%5Cr'
   password: Mitivpn
@@ -31,27 +23,6 @@ proxies:
   server: 151.101.56.6
   sni: ssl.fastly.com
   type: trojan
-- name: '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr'
-  password: humanity
-  port: 443
-  server: www.ignitelimit.com
-  type: trojan
-- name: '%E7%BE%8E%E5%9C%8B%2BCloudFlare%E8%8A%82%E7%82%B9%E4%B8%A8yoyapai.com%5Cr'
-  password: 9c521e24-7326-acd3-acec-d0afac2b465d
-  port: 8080
-  server: 104.25.108.147
-  sni: red-cell-47f9.milaniomilan9.workers.dev
-  type: trojan
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: firefox
-  name: ID_speednode_0010
-  port: 8443
-  server: 45.198.87.13
-  sni: storage.yandex.net
-  type: vless
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
 - alterId: 0
   cipher: auto
   host: 4cdn.njkrpl.com
@@ -65,42 +36,61 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: firefox
-  name: ID_speednode_0009
-  port: 8443
-  server: 45.198.87.168
-  sni: storage.yandex.net
-  type: vless
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-- name: '%F0%9F%87%B3%F0%9F%87%B1NL%E8%8D%B7%E8%98%AD%E4%B8%A8yoyapai.com%5Cr'
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 91.221.190.80
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
+  name: 美国 423
+  network: ws
+  port: 80
+  server: 69.84.182.49
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision-udp443
-  fp: chrome
-  name: ID_speednode_0011
+  fp: firefox
+  name: ID_speednode_0013
   port: 8443
-  server: 45.198.87.203
+  server: 45.198.87.33
   sni: storage.yandex.net
   type: vless
   uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-- cipher: aes-256-cfb
-  name: '%F0%9F%87%A9%F0%9F%87%AADE_2%7C3.1MB/s'
-  password: amazonskr05
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: firefox
+  name: ID_speednode_0010
+  port: 8443
+  server: 45.198.87.13
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- name: '%E5%B7%B4%E8%A5%BF%E8%81%96%E4%BF%9D%E7%BE%85%E4%B8%A8yoyapai.com%5Cr'
+  password: mitivpn
   port: 443
-  server: 54.93.186.149
-  type: ss
+  server: 188.114.97.6
+  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '%F0%9F%87%BA%F0%9F%87%B8US_3%7C1.7MB/s'
+  network: ws
+  port: 443
+  server: x4g-production-3926.up.railway.app
+  type: vless
+  uuid: 3d8dbbc9-780a-8aa0-55cd-40027d0d8a9c
 - name: '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
   password: humanity
   port: 443
   server: 104.26.6.159
   sni: www.creationlong.org
   type: trojan
+- name: 法国 001
+  password: MITIVPN
+  port: 443
+  server: 94.140.0.100
+  sni: 95r.ir
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision-udp443
@@ -111,14 +101,18 @@ proxies:
   sni: apple.com
   type: vless
   uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
-- alterId: 0
-  cipher: auto
-  name: '%F0%9F%87%BA%F0%9F%87%B8US_3%7C1.7MB/s'
-  network: ws
+- cipher: chacha20-ietf-poly1305
+  name: '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  password: hbGrpfvNrJsUmKmPbR3iY2
   port: 443
-  server: x4g-production-3926.up.railway.app
-  type: vless
-  uuid: 3d8dbbc9-780a-8aa0-55cd-40027d0d8a9c
+  server: tinkered-pennies-puppies.freesocks.work
+  type: ss
+- cipher: aes-256-cfb
+  name: '%F0%9F%87%A9%F0%9F%87%AADE_2%7C3.1MB/s'
+  password: amazonskr05
+  port: 443
+  server: 54.93.186.149
+  type: ss
 - alterId: 0
   cipher: auto
   fp: firefox
@@ -131,6 +125,30 @@ proxies:
   uuid: 9e4e5d64-11a3-48bc-8622-1d39bd1c2573
 - alterId: 0
   cipher: auto
+  name: 香港|@ripaojiedian
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: ID_speednode_0011
+  port: 8443
+  server: 45.198.87.203
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- name: '%E7%BE%8E%E5%9C%8B%2BCloudFlare%E8%8A%82%E7%82%B9%E4%B8%A8yoyapai.com%5Cr'
+  password: 9c521e24-7326-acd3-acec-d0afac2b465d
+  port: 8080
+  server: 104.25.108.147
+  sni: red-cell-47f9.milaniomilan9.workers.dev
+  type: trojan
+- alterId: 0
+  cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
   name: ID_speednode_0012
@@ -139,12 +157,119 @@ proxies:
   sni: storage.yandex.net
   type: vless
   uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-- cipher: chacha20-ietf-poly1305
-  name: '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
-  password: hbGrpfvNrJsUmKmPbR3iY2
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: firefox
+  name: ID_speednode_0009
+  port: 8443
+  server: 45.198.87.168
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- name: 英国 001
+  password: MITIVPN
   port: 443
-  server: tinkered-pennies-puppies.freesocks.work
-  type: ss
+  server: 164.38.155.135
+  sni: 95r.ir
+  type: trojan
+  udp: true
+- name: '%E4%BA%9E%E5%A4%AA%E5%9C%B0%E5%8D%80%E4%B8%A8yoyapai.com%5Cr'
+  password: rYuChHcwQZskq9E0zdoR
+  port: 2053
+  server: 103.45.245.208
+  sni: vpn5.rnmcnm.com
+  type: trojan
+- name: '%F0%9F%87%B3%F0%9F%87%B1NL%E8%8D%B7%E8%98%AD%E4%B8%A8yoyapai.com%5Cr'
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 91.221.190.80
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- name: 英国 008
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.151
+  skip-cert-verify: true
+  sni: 185.137.157.151
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  host: v10.zgtfqs.click
+  name: 🇭🇰_HK_中国香港
+  network: tcp
+  port: 30807
+  server: v10.zgtfqs.click
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: '%E6%84%8F%E5%A4%A7%E5%88%A9%E7%AF%80%E9%BB%9E%F0%9F%87%AE%F0%9F%87%B9IT%E4%B8%A8yoyapai.com%5Cr'
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 151.241.215.148
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- name: '%E7%91%9E%E5%85%B8%E4%B8%A8yoyapai.com%5Cr'
+  password: Mitivpn
+  port: 80
+  server: 146.75.116.190
+  type: trojan
+- name: '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr_2'
+  password: Mitivpn
+  port: 443
+  server: 167.82.101.251
+  sni: ssl.fastly.com
+  type: trojan
+- name: '%E8%8D%B7%E8%98%AD%E7%AF%80%E9%BB%9E%E4%B8%A8yoyapai.com%5Cr'
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 8443
+  server: 152.53.200.89
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- name: '%E6%84%8F%E5%A4%A7%E5%88%A9%E4%B8%A8yoyapai.com%5Cr'
+  password: Mitivpn
+  port: 80
+  server: 151.101.242.172
+  type: trojan
+- name: 美国 011
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  sni: www.creationlong.org
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 俄罗斯 021
+  network: ws
+  port: 443
+  server: renderer-stream-1-411.mirra.now
+  skip-cert-verify: true
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+- name: '%F0%9F%87%AD%F0%9F%87%B0%20HK'
+  password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
+  port: 443
+  server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
+  sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: CZ_speednode_0002
+  port: 443
+  server: 95.85.227.25
+  sni: pol1.hatvpn.org
+  type: vless
+  uuid: e3e90161-fe65-443a-a3a4-e0e3a73704ca
+- name: 荷兰 001
+  password: MiTiVPN
+  port: 443
+  server: 45.131.4.118
+  sni: 95r.ir
+  type: trojan
+  udp: true
 - name: '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29_2'
   password: humanity
   port: 443
@@ -158,229 +283,127 @@ proxies:
   sni: www.gamingdll.ir
   type: trojan
   udp: true
-- name: 英国 001
-  password: MITIVPN
-  port: 443
-  server: 164.38.155.135
-  sni: 95r.ir
-  type: trojan
-  udp: true
-- name: 法国 001
-  password: MITIVPN
-  port: 443
-  server: 94.140.0.100
-  sni: 95r.ir
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 香港|@ripaojiedian
-  network: tcp
-  port: 30807
-  server: v10.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '%E4%BA%9E%E5%A4%AA%E5%9C%B0%E5%8D%80%E4%B8%A8yoyapai.com%5Cr'
-  password: rYuChHcwQZskq9E0zdoR
-  port: 2053
-  server: 103.45.245.208
-  sni: vpn5.rnmcnm.com
-  type: trojan
-- name: '%E8%8D%B7%E8%98%AD%E7%AF%80%E9%BB%9E%E4%B8%A8yoyapai.com%5Cr'
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 8443
-  server: 152.53.200.89
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- name: '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr_2'
-  password: Mitivpn
+  name: VMess-aaaa.wxx.gay:443
+  network: ws
   port: 443
-  server: 167.82.101.251
-  sni: ssl.fastly.com
-  type: trojan
+  server: aaaa.wxx.gay
+  tls: true
+  type: vmess
+  uuid: 8237ec34-143a-11ee-8019-000017022008
+  ws-path: /look
 - name: 英国 002
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.138
   type: trojan
   udp: true
-- name: '%E7%91%9E%E5%85%B8%E4%B8%A8yoyapai.com%5Cr'
-  password: Mitivpn
-  port: 80
-  server: 146.75.116.190
-  type: trojan
-- name: '%E6%84%8F%E5%A4%A7%E5%88%A9%E7%AF%80%E9%BB%9E%F0%9F%87%AE%F0%9F%87%B9IT%E4%B8%A8yoyapai.com%5Cr'
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 151.241.215.148
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: firefox
-  name: ID_speednode_0013
-  port: 8443
-  server: 45.198.87.33
-  sni: storage.yandex.net
-  type: vless
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
 - name: '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.156
   type: trojan
-- name: '%F0%9F%87%AD%F0%9F%87%B0%20HK'
-  password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-  port: 443
-  server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
-  sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
-  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 俄罗斯 021
-  network: ws
-  port: 443
-  server: renderer-stream-1-411.mirra.now
-  skip-cert-verify: true
-  type: vmess
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-- alterId: 0
-  cipher: auto
-  name: 美国 423
+  name: VMess-159.223.94.156:80
   network: ws
   port: 80
-  server: 69.84.182.49
-  skip-cert-verify: true
-  tls: true
+  server: 159.223.94.156
   type: vmess
-  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
-- name: '%E5%B7%B4%E8%A5%BF%E8%81%96%E4%BF%9D%E7%BE%85%E4%B8%A8yoyapai.com%5Cr'
-  password: mitivpn
-  port: 443
-  server: 188.114.97.6
-  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: v10.zgtfqs.click
-  name: 🇭🇰_HK_中国香港
-  network: tcp
-  port: 30807
-  server: v10.zgtfqs.click
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- name: 英国 008
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.151
-  skip-cert-verify: true
-  sni: 185.137.157.151
-  type: trojan
-  udp: true
-- name: '%E6%84%8F%E5%A4%A7%E5%88%A9%E4%B8%A8yoyapai.com%5Cr'
-  password: Mitivpn
-  port: 80
-  server: 151.101.242.172
-  type: trojan
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: chrome
-  name: CZ_speednode_0002
-  port: 443
-  server: 95.85.227.25
-  sni: pol1.hatvpn.org
-  type: vless
-  uuid: e3e90161-fe65-443a-a3a4-e0e3a73704ca
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-path: /anti13.zingfast.vn
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
   - 🔰 自动选择
   - ♻️ 自动测速
   - 荷兰 002
-  - 荷兰 001
-  - 美国 011
-  - '%E7%BE%8E%E5%9C%8B%E4%BD%90%E6%B2%BB%E4%BA%9E%E5%B7%9E%E4%BA%9E%E7%89%B9%E8%98%AD%E5%A4%A7%E4%B8%A8yoyapai.com%5Cr'
   - '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr'
-  - '%E7%BE%8E%E5%9C%8B%2BCloudFlare%E8%8A%82%E7%82%B9%E4%B8%A8yoyapai.com%5Cr'
-  - ID_speednode_0010
+  - '%E7%BE%8E%E5%9C%8B%E4%BD%90%E6%B2%BB%E4%BA%9E%E5%B7%9E%E4%BA%9E%E7%89%B9%E8%98%AD%E5%A4%A7%E4%B8%A8yoyapai.com%5Cr'
   - 🇺🇸_US_美国->🇫🇷_FR_法国
-  - ID_speednode_0009
-  - '%F0%9F%87%B3%F0%9F%87%B1NL%E8%8D%B7%E8%98%AD%E4%B8%A8yoyapai.com%5Cr'
-  - ID_speednode_0011
-  - '%F0%9F%87%A9%F0%9F%87%AADE_2%7C3.1MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
-  - US_speednode_0055
+  - 美国 423
+  - ID_speednode_0013
+  - ID_speednode_0010
+  - '%E5%B7%B4%E8%A5%BF%E8%81%96%E4%BF%9D%E7%BE%85%E4%B8%A8yoyapai.com%5Cr'
   - '%F0%9F%87%BA%F0%9F%87%B8US_3%7C1.7MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_1%7C2.5MB/s'
-  - ID_speednode_0012
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
+  - 法国 001
+  - US_speednode_0055
   - '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  - '%F0%9F%87%A9%F0%9F%87%AADE_2%7C3.1MB/s'
+  - '%F0%9F%87%BA%F0%9F%87%B8US_1%7C2.5MB/s'
+  - 香港|@ripaojiedian
+  - ID_speednode_0011
+  - '%E7%BE%8E%E5%9C%8B%2BCloudFlare%E8%8A%82%E7%82%B9%E4%B8%A8yoyapai.com%5Cr'
+  - ID_speednode_0012
+  - ID_speednode_0009
+  - 英国 001
+  - '%E4%BA%9E%E5%A4%AA%E5%9C%B0%E5%8D%80%E4%B8%A8yoyapai.com%5Cr'
+  - '%F0%9F%87%B3%F0%9F%87%B1NL%E8%8D%B7%E8%98%AD%E4%B8%A8yoyapai.com%5Cr'
+  - 英国 008
+  - 🇭🇰_HK_中国香港
+  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E7%AF%80%E9%BB%9E%F0%9F%87%AE%F0%9F%87%B9IT%E4%B8%A8yoyapai.com%5Cr'
+  - '%E7%91%9E%E5%85%B8%E4%B8%A8yoyapai.com%5Cr'
+  - '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr_2'
+  - '%E8%8D%B7%E8%98%AD%E7%AF%80%E9%BB%9E%E4%B8%A8yoyapai.com%5Cr'
+  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E4%B8%A8yoyapai.com%5Cr'
+  - 美国 011
+  - 俄罗斯 021
+  - '%F0%9F%87%AD%F0%9F%87%B0%20HK'
+  - CZ_speednode_0002
+  - 荷兰 001
   - '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29_2'
   - 美国 010
-  - 英国 001
-  - 法国 001
-  - 香港|@ripaojiedian
-  - '%E4%BA%9E%E5%A4%AA%E5%9C%B0%E5%8D%80%E4%B8%A8yoyapai.com%5Cr'
-  - '%E8%8D%B7%E8%98%AD%E7%AF%80%E9%BB%9E%E4%B8%A8yoyapai.com%5Cr'
-  - '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr_2'
+  - VMess-aaaa.wxx.gay:443
   - 英国 002
-  - '%E7%91%9E%E5%85%B8%E4%B8%A8yoyapai.com%5Cr'
-  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E7%AF%80%E9%BB%9E%F0%9F%87%AE%F0%9F%87%B9IT%E4%B8%A8yoyapai.com%5Cr'
-  - ID_speednode_0013
   - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
-  - '%F0%9F%87%AD%F0%9F%87%B0%20HK'
-  - 俄罗斯 021
-  - 美国 423
-  - '%E5%B7%B4%E8%A5%BF%E8%81%96%E4%BF%9D%E7%BE%85%E4%B8%A8yoyapai.com%5Cr'
-  - 🇭🇰_HK_中国香港
-  - 英国 008
-  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E4%B8%A8yoyapai.com%5Cr'
-  - CZ_speednode_0002
+  - VMess-159.223.94.156:80
   type: select
 - interval: 300
   name: 🔰 自动选择
   proxies: &id001
   - 荷兰 002
-  - 荷兰 001
-  - 美国 011
-  - '%E7%BE%8E%E5%9C%8B%E4%BD%90%E6%B2%BB%E4%BA%9E%E5%B7%9E%E4%BA%9E%E7%89%B9%E8%98%AD%E5%A4%A7%E4%B8%A8yoyapai.com%5Cr'
   - '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr'
-  - '%E7%BE%8E%E5%9C%8B%2BCloudFlare%E8%8A%82%E7%82%B9%E4%B8%A8yoyapai.com%5Cr'
-  - ID_speednode_0010
+  - '%E7%BE%8E%E5%9C%8B%E4%BD%90%E6%B2%BB%E4%BA%9E%E5%B7%9E%E4%BA%9E%E7%89%B9%E8%98%AD%E5%A4%A7%E4%B8%A8yoyapai.com%5Cr'
   - 🇺🇸_US_美国->🇫🇷_FR_法国
-  - ID_speednode_0009
-  - '%F0%9F%87%B3%F0%9F%87%B1NL%E8%8D%B7%E8%98%AD%E4%B8%A8yoyapai.com%5Cr'
-  - ID_speednode_0011
-  - '%F0%9F%87%A9%F0%9F%87%AADE_2%7C3.1MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
-  - US_speednode_0055
+  - 美国 423
+  - ID_speednode_0013
+  - ID_speednode_0010
+  - '%E5%B7%B4%E8%A5%BF%E8%81%96%E4%BF%9D%E7%BE%85%E4%B8%A8yoyapai.com%5Cr'
   - '%F0%9F%87%BA%F0%9F%87%B8US_3%7C1.7MB/s'
-  - '%F0%9F%87%BA%F0%9F%87%B8US_1%7C2.5MB/s'
-  - ID_speednode_0012
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9'
+  - 法国 001
+  - US_speednode_0055
   - '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29'
+  - '%F0%9F%87%A9%F0%9F%87%AADE_2%7C3.1MB/s'
+  - '%F0%9F%87%BA%F0%9F%87%B8US_1%7C2.5MB/s'
+  - 香港|@ripaojiedian
+  - ID_speednode_0011
+  - '%E7%BE%8E%E5%9C%8B%2BCloudFlare%E8%8A%82%E7%82%B9%E4%B8%A8yoyapai.com%5Cr'
+  - ID_speednode_0012
+  - ID_speednode_0009
+  - 英国 001
+  - '%E4%BA%9E%E5%A4%AA%E5%9C%B0%E5%8D%80%E4%B8%A8yoyapai.com%5Cr'
+  - '%F0%9F%87%B3%F0%9F%87%B1NL%E8%8D%B7%E8%98%AD%E4%B8%A8yoyapai.com%5Cr'
+  - 英国 008
+  - 🇭🇰_HK_中国香港
+  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E7%AF%80%E9%BB%9E%F0%9F%87%AE%F0%9F%87%B9IT%E4%B8%A8yoyapai.com%5Cr'
+  - '%E7%91%9E%E5%85%B8%E4%B8%A8yoyapai.com%5Cr'
+  - '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr_2'
+  - '%E8%8D%B7%E8%98%AD%E7%AF%80%E9%BB%9E%E4%B8%A8yoyapai.com%5Cr'
+  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E4%B8%A8yoyapai.com%5Cr'
+  - 美国 011
+  - 俄罗斯 021
+  - '%F0%9F%87%AD%F0%9F%87%B0%20HK'
+  - CZ_speednode_0002
+  - 荷兰 001
   - '%F0%9F%87%BA%F0%9F%87%B8%20US%E7%BE%8E%E5%9B%BD%28mibei77.com%20%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29_2'
   - 美国 010
-  - 英国 001
-  - 法国 001
-  - 香港|@ripaojiedian
-  - '%E4%BA%9E%E5%A4%AA%E5%9C%B0%E5%8D%80%E4%B8%A8yoyapai.com%5Cr'
-  - '%E8%8D%B7%E8%98%AD%E7%AF%80%E9%BB%9E%E4%B8%A8yoyapai.com%5Cr'
-  - '%E7%BE%8E%E5%9C%8B%E4%B8%A8yoyapai.com%5Cr_2'
+  - VMess-aaaa.wxx.gay:443
   - 英国 002
-  - '%E7%91%9E%E5%85%B8%E4%B8%A8yoyapai.com%5Cr'
-  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E7%AF%80%E9%BB%9E%F0%9F%87%AE%F0%9F%87%B9IT%E4%B8%A8yoyapai.com%5Cr'
-  - ID_speednode_0013
   - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
-  - '%F0%9F%87%AD%F0%9F%87%B0%20HK'
-  - 俄罗斯 021
-  - 美国 423
-  - '%E5%B7%B4%E8%A5%BF%E8%81%96%E4%BF%9D%E7%BE%85%E4%B8%A8yoyapai.com%5Cr'
-  - 🇭🇰_HK_中国香港
-  - 英国 008
-  - '%E6%84%8F%E5%A4%A7%E5%88%A9%E4%B8%A8yoyapai.com%5Cr'
-  - CZ_speednode_0002
+  - VMess-159.223.94.156:80
   type: url-test
   url: https://www.gstatic.com/generate_204
 - interval: 300
