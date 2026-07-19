@@ -7,165 +7,62 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  encryption: none
-  host: late-mountain-6801.355.workers.dev
-  name: 🇺🇸 US-01
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-10
   network: ws
-  port: 8880
-  server: cf1.466688.xyz
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
   type: vless
-  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
-  encryption: none
-  host: broken-star-c5ae.446.workers.dev
-  name: 🇺🇸 US-02
-  network: ws
-  port: 8880
-  server: cf3.466688.xyz
-  type: vless
-  uuid: 612f78a0-65ca-45af-a3ff-7d0f8e9f8655
-- alterId: 0
-  cipher: auto
-  encryption: none
-  host: pan21.global.ssl.fastly.net
-  name: 🇺🇸 US-03
-  network: ws
-  port: 443
-  server: 167.82.77.173
-  sni: ssl.fastly.com
-  type: vless
-  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
-- alterId: 0
-  cipher: auto
-  encryption: none
-  host: cnmfangbinxing.cnmfangbinxing-1.workers.dev
-  name: 🇺🇸 US-04
-  network: ws
-  port: 2095
-  server: www.fbi.gov
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-- alterId: 0
-  cipher: auto
-  host: restless-boat-ebf2.moha102030.workers.dev
-  name: 🇺🇸 US-05
-  network: ws
-  port: 80
-  server: 172.67.148.26
-  type: vless
-  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
-- alterId: 0
-  cipher: auto
-  encryption: none
+  fp: chrome
   name: 🌍 Node-01
-  network: tcp
-  port: 18244
-  server: 185.128.139.11
+  port: 8443
+  server: love.ns.cloudflare.com
+  sni: vamosargentina.dpdns.org
   type: vless
-  uuid: 0d543aed-4e30-4553-b5ac-211419bb0961
-- name: 🌍 Node-02
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.156
-  type: trojan
+  uuid: '%40V2ConfigPro'
 - alterId: 0
   cipher: auto
-  host: windows64.net
-  name: 🇬🇧 GB-01
-  network: tcp
-  port: 2078
-  server: 93.180.134.52
-  type: vmess
-  uuid: 1c18da66-a912-40af-b90d-787574efe6d3
-  ws-path: /?ed=1024
-- name: 🌍 Node-03
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.151
-  type: trojan
-- name: 🌍 Node-04
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.138
-  type: trojan
-- name: 🌍 Node-05
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.149
-  type: trojan
-- name: 🇺🇸 US-06
-  password: humanity
-  port: 443
-  server: 104.17.131.88
-  sni: www.gossipglove.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  encryption: none
-  flow: xtls-rprx-vision
-  fp: firefox
-  name: 🌍 Node-06
-  network: tcp
-  port: 443
-  server: meow-warsaw.nethcloud.top
-  sni: www.wikihow.com
-  type: vless
-  uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
-- alterId: 0
-  cipher: auto
-  encryption: none
-  host: wandering-bonus-e035.272.workers.dev
-  name: 🇺🇸 US-07
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-20
   network: ws
-  port: 8880
-  server: 104.16.100.66
+  port: 443
+  server: 108.162.195.58
+  sni: cf11.evan00.dpdns.org
   type: vless
-  uuid: 730cbebb-39b2-4a1c-b2f8-f922095d6623
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 IN-01
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.80
-  type: ss
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-23
+  network: ws
+  port: 443
+  server: 162.159.38.78
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🇺🇸 US-04
-  - 🇺🇸 US-05
+  - 🇺🇸 US-10
   - 🌍 Node-01
-  - 🌍 Node-02
-  - 🇬🇧 GB-01
-  - 🌍 Node-03
-  - 🌍 Node-04
-  - 🌍 Node-05
-  - 🇺🇸 US-06
-  - 🌍 Node-06
-  - 🇺🇸 US-07
-  - 🇮🇳 IN-01
+  - 🇺🇸 US-20
+  - 🇺🇸 US-23
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🇺🇸 US-04
-  - 🇺🇸 US-05
+  - 🇺🇸 US-10
   - 🌍 Node-01
-  - 🌍 Node-02
-  - 🇬🇧 GB-01
-  - 🌍 Node-03
-  - 🌍 Node-04
-  - 🌍 Node-05
-  - 🇺🇸 US-06
-  - 🌍 Node-06
-  - 🇺🇸 US-07
-  - 🇮🇳 IN-01
+  - 🇺🇸 US-20
+  - 🇺🇸 US-23
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
