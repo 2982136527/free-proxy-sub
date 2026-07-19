@@ -18,20 +18,19 @@ proxies:
   uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: maoyibai.ccwu.cc
-  name: 🇭🇰 HK-02
-  network: ws
-  port: 2053
-  server: cf7.466688.xyz
-  sni: maoyibai.ccwu.cc
-  type: vless
-  uuid: 68081c3e-77c2-4d22-81d5-cccedb7ca37b
+  host: v33.hdacd.com
+  name: 🇩🇪 DE-01
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - alterId: 0
   cipher: auto
   fp: random
   host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-10
+  name: 🇺🇸 US-16
   network: ws
   port: 8443
   server: 162.159.38.2
@@ -40,53 +39,63 @@ proxies:
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-01
+  host: v6.hdacd.com
+  name: 🇯🇵 JP-02
   network: tcp
-  port: 10050
-  server: family.bucket.x9.kfc-520.com
-  skip-cert-verify: true
+  port: 30806
+  server: v6.hdacd.com
   type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v9.hdacd.com
+  name: 🇭🇰 HK-02
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: 🇳🇱 NL-01
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
 - alterId: 0
   cipher: auto
   fp: chrome
   host: vp40.cc.cd
-  name: 🇺🇸 US-23
+  name: 🇺🇸 US-24
   network: ws
   port: 2053
   server: 104.18.33.139
   sni: vp40.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
-  host: ppp.19bot.ir
-  name: 🌍 Node-02
-  network: ws
-  port: 80
-  server: 108.162.194.226
-  type: vless
-  uuid: 39e4ffce-5027-4138-a93b-4de33bc2a3f1
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🇭🇰 HK-01
+  - 🇩🇪 DE-01
+  - 🇺🇸 US-16
+  - 🇯🇵 JP-02
   - 🇭🇰 HK-02
-  - 🇺🇸 US-10
-  - 🌍 Node-01
-  - 🇺🇸 US-23
-  - 🌍 Node-02
+  - 🇳🇱 NL-01
+  - 🇺🇸 US-24
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🇭🇰 HK-01
+  - 🇩🇪 DE-01
+  - 🇺🇸 US-16
+  - 🇯🇵 JP-02
   - 🇭🇰 HK-02
-  - 🇺🇸 US-10
-  - 🌍 Node-01
-  - 🇺🇸 US-23
-  - 🌍 Node-02
+  - 🇳🇱 NL-01
+  - 🇺🇸 US-24
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
