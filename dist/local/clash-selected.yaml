@@ -7,84 +7,35 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  host: v24.hdacd.com
-  name: 🇺🇸 US-01
-  network: tcp
-  port: 30824
-  server: v24.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
+  host: s5gydl.936.us.ci
+  name: 🌍 Node-01
+  network: ws
+  port: 443
+  server: 91.110.209.104
+  sni: s5gydl.936.us.ci
+  type: vless
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
 - alterId: 0
   cipher: auto
-  host: v33.hdacd.com
-  name: 🇩🇪 DE-01
-  network: tcp
-  port: 30833
-  server: v33.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v6.hdacd.com
-  name: 🇯🇵 JP-01
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v29.hdacd.com
-  name: 🇺🇸 US-05
-  network: tcp
-  port: 30829
-  server: v29.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v9.hdacd.com
-  name: 🇭🇰 HK-01
-  network: tcp
-  port: 30809
-  server: v9.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v4.hdacd.com
-  name: 🇺🇸 US-06
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
+  host: ppp.19bot.ir
+  name: 🌍 Node-02
+  network: ws
+  port: 80
+  server: 108.162.194.226
+  type: vless
+  uuid: 39e4ffce-5027-4138-a93b-4de33bc2a3f1
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-01
-  - 🇩🇪 DE-01
-  - 🇯🇵 JP-01
-  - 🇺🇸 US-05
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-06
+  - 🌍 Node-01
+  - 🌍 Node-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-01
-  - 🇩🇪 DE-01
-  - 🇯🇵 JP-01
-  - 🇺🇸 US-05
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-06
+  - 🌍 Node-01
+  - 🌍 Node-02
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
