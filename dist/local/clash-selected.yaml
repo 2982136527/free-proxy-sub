@@ -7,6 +7,37 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-01
+  network: ws
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  host: v33.hdacd.com
+  name: 🇩🇪 DE-01
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v24.hdacd.com
+  name: 🇺🇸 US-02
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 🌍 Node-01
   network: tcp
   port: 30845
@@ -15,12 +46,42 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
+  host: v6.hdacd.com
+  name: 🇯🇵 JP-01
+  network: tcp
+  port: 30806
+  server: v6.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 🌍 Node-02
   network: tcp
   port: 30829
   server: v29.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  host: v4.hdacd.com
+  name: 🇺🇸 US-03
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v9.hdacd.com
+  name: 🇭🇰 HK-01
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - alterId: 0
   cipher: auto
   host: nl1.cloudbench.app
@@ -38,22 +99,99 @@ proxies:
   skip-cert-verify: true
   sni: space.byu.id.yxls.eu.cc
   type: trojan
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-04
+  port: 8443
+  server: love.ns.cloudflare.com
+  sni: vamosargentina.dpdns.org
+  type: vless
+  uuid: '%40V2ConfigPro'
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: lzwnb.ccwu.cc
+  name: 🇺🇸 US-13
+  network: ws
+  port: 8443
+  server: play.mc.js.cool
+  sni: lzwnb.ccwu.cc
+  type: vless
+  uuid: 4f6aa10d-9332-4933-8dc8-78c9a42f6082
+- name: 🇺🇸 US-16
+  password: humanity
+  port: 443
+  server: 172.64.146.28
+  sni: www.gossipglove.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-05
+  network: grpc
+  port: 36782
+  server: t1.feiyue706.com
+  sni: t1.feiyue706.com
+  type: vless
+  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-06
+  network: grpc
+  port: 36805
+  server: t1.feiyue706.com
+  sni: t1.feiyue706.com
+  type: vless
+  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
+- name: 🇫🇷 FR-01
+  password: MITIVPN
+  port: 443
+  server: 94.140.0.100
+  sni: 95r.ir
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🇺🇸 US-01
+  - 🇩🇪 DE-01
+  - 🇺🇸 US-02
   - 🌍 Node-01
+  - 🇯🇵 JP-01
   - 🌍 Node-02
+  - 🇺🇸 US-03
+  - 🇭🇰 HK-01
   - 🌍 Node-03
   - 🇳🇱 NL-02
+  - 🌍 Node-04
+  - 🇺🇸 US-13
+  - 🇺🇸 US-16
+  - 🌍 Node-05
+  - 🌍 Node-06
+  - 🇫🇷 FR-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
+  - 🇺🇸 US-01
+  - 🇩🇪 DE-01
+  - 🇺🇸 US-02
   - 🌍 Node-01
+  - 🇯🇵 JP-01
   - 🌍 Node-02
+  - 🇺🇸 US-03
+  - 🇭🇰 HK-01
   - 🌍 Node-03
   - 🇳🇱 NL-02
+  - 🌍 Node-04
+  - 🇺🇸 US-13
+  - 🇺🇸 US-16
+  - 🌍 Node-05
+  - 🌍 Node-06
+  - 🇫🇷 FR-01
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
