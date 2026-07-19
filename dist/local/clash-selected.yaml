@@ -7,18 +7,8 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  host: v9.hdacd.com
-  name: 🇭🇰 HK-01
-  network: tcp
-  port: 30809
-  server: v9.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
   host: v4.hdacd.com
-  name: 🇺🇸 US-05
+  name: 🇺🇸 US-03
   network: tcp
   port: 30804
   server: v4.hdacd.com
@@ -27,19 +17,28 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-08
+  fp: chrome
+  host: lzwnb.ccwu.cc
+  name: 🇺🇸 US-16
   network: ws
   port: 8443
-  server: 162.159.38.2
-  sni: cf11.evan00.dpdns.org
+  server: play.mc.js.cool
+  sni: lzwnb.ccwu.cc
   type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  uuid: 4f6aa10d-9332-4933-8dc8-78c9a42f6082
+- alterId: 0
+  cipher: auto
+  host: late-mountain-6801.355.workers.dev
+  name: 🌍 Node-01
+  network: ws
+  port: 8880
+  server: cf3.466688.xyz
+  type: vless
+  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
 - alterId: 0
   cipher: auto
   fp: chrome
-  name: 🌍 Node-01
+  name: 🌍 Node-02
   port: 8443
   server: love.ns.cloudflare.com
   sni: vamosargentina.dpdns.org
@@ -47,31 +46,33 @@ proxies:
   uuid: '%40V2ConfigPro'
 - alterId: 0
   cipher: auto
-  host: late-mountain-6801.355.workers.dev
-  name: 🌍 Node-02
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-21
   network: ws
-  port: 8880
-  server: cf3.466688.xyz
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
   type: vless
-  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-05
-  - 🇺🇸 US-08
+  - 🇺🇸 US-03
+  - 🇺🇸 US-16
   - 🌍 Node-01
   - 🌍 Node-02
+  - 🇺🇸 US-21
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-05
-  - 🇺🇸 US-08
+  - 🇺🇸 US-03
+  - 🇺🇸 US-16
   - 🌍 Node-01
   - 🌍 Node-02
+  - 🇺🇸 US-21
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
