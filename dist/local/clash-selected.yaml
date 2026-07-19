@@ -16,16 +16,29 @@ proxies:
   sni: s5gydl.936.us.ci
   type: vless
   uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp40.cc.cd
+  name: 🇺🇸 US-21
+  network: ws
+  port: 2053
+  server: 104.18.33.139
+  sni: vp40.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🇭🇰 HK-01
+  - 🇺🇸 US-21
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🇭🇰 HK-01
+  - 🇺🇸 US-21
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
