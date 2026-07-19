@@ -25,27 +25,38 @@ proxies:
   cipher: auto
   fp: random
   host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-23
+  name: 🇺🇸 US-20
   network: ws
   port: 8443
   server: 162.159.38.2
   sni: cf11.evan00.dpdns.org
   type: vless
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-03
+  port: 8443
+  server: love.ns.cloudflare.com
+  sni: vamosargentina.dpdns.org
+  type: vless
+  uuid: '%40V2ConfigPro'
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇺🇸 US-23
+  - 🇺🇸 US-20
+  - 🌍 Node-03
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇺🇸 US-23
+  - 🇺🇸 US-20
+  - 🌍 Node-03
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
