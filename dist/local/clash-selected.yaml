@@ -29,7 +29,7 @@ proxies:
   cipher: auto
   fp: random
   host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-08
+  name: 🇺🇸 US-06
   network: ws
   port: 8443
   server: 162.159.38.2
@@ -38,29 +38,29 @@ proxies:
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
-  host: late-mountain-6801.355.workers.dev
-  name: 🌍 Node-01
-  network: ws
-  port: 8880
-  server: cf3.466688.xyz
-  type: vless
-  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
-- alterId: 0
-  cipher: auto
   fp: chrome
-  name: 🌍 Node-02
+  name: 🌍 Node-01
   port: 8443
   server: love.ns.cloudflare.com
   sni: vamosargentina.dpdns.org
   type: vless
   uuid: '%40V2ConfigPro'
+- alterId: 0
+  cipher: auto
+  host: late-mountain-6801.355.workers.dev
+  name: 🌍 Node-02
+  network: ws
+  port: 8880
+  server: cf3.466688.xyz
+  type: vless
+  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🇭🇰 HK-01
   - 🇺🇸 US-01
-  - 🇺🇸 US-08
+  - 🇺🇸 US-06
   - 🌍 Node-01
   - 🌍 Node-02
   type: select
@@ -69,7 +69,7 @@ proxy-groups:
   proxies:
   - 🇭🇰 HK-01
   - 🇺🇸 US-01
-  - 🇺🇸 US-08
+  - 🇺🇸 US-06
   - 🌍 Node-01
   - 🌍 Node-02
   type: url-test
