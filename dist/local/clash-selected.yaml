@@ -7,291 +7,46 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: chrome
+  name: 🇭🇰 HK-01
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 🌍 Node-01
+  network: ws
   port: 443
-  server: z-hkl.h.w.466688.xyz
-  sni: www.apple.com
-  type: vless
-  uuid: 1b6de5d8-3285-422c-b6fe-2989918f528b
-- name: 🌍 Node-02
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
+  server: aaaa.wxx.gay
+  tls: true
+  type: vmess
+  uuid: 8237ec34-143a-11ee-8019-000017022008
+  ws-path: /look
 - alterId: 0
   cipher: auto
-  host: lzwnb.ccwu.cc
-  name: 🌍 Node-03
-  network: ws
-  port: 8443
-  server: play.mc.js.cool
-  sni: lzwnb.ccwu.cc
-  type: vless
-  uuid: 4f6aa10d-9332-4933-8dc8-78c9a42f6082
-- alterId: 0
-  cipher: auto
-  host: s5gydl.936.us.ci
-  name: 🌍 Node-04
-  network: ws
-  port: 8443
-  server: 43.160.246.223
-  sni: s5gydl.936.us.ci
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  name: 🌍 Node-05
-  port: 8443
-  server: love.ns.cloudflare.com
-  sni: vamosargentina.dpdns.org
-  type: vless
-  uuid: '%40V2ConfigPro'
-- alterId: 0
-  cipher: auto
-  host: s5gydl.936.us.ci
-  name: 🌍 Node-06
-  network: ws
-  port: 8443
-  server: 104.202.107.113
-  sni: s5gydl.936.us.ci
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- alterId: 0
-  cipher: auto
-  host: s5gydl.936.us.ci
-  name: 🌍 Node-07
-  network: ws
-  port: 8443
-  server: 38.60.89.234
-  sni: s5gydl.936.us.ci
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- alterId: 0
-  cipher: auto
-  host: s5gydl.936.us.ci
-  name: 🌍 Node-08
-  network: ws
-  port: 8443
-  server: 64.186.225.82
-  sni: s5gydl.936.us.ci
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- name: 🌍 Node-09
-  password: HW85960347
-  port: 443
-  server: excited-alien.rooster465.autos
-  sni: excited-alien.rooster465.autos
-  type: trojan
-- name: 🌍 Node-10
-  password: HW85960347
-  port: 443
-  server: feasible-guppy.rooster465.autos
-  sni: feasible-guppy.rooster465.autos
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: s5gydl.936.us.ci
-  name: 🌍 Node-11
+  name: 🌍 Node-02
   network: ws
   port: 80
-  server: 91.193.59.203
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- name: 🌍 Node-12
-  password: JA96378052
-  port: 443
-  server: willing-eagle.rooster465.autos
-  sni: willing-eagle.rooster465.autos
-  type: trojan
-- name: 🌍 Node-13
-  password: JA96378052
-  port: 443
-  server: normal-cow.rooster465.autos
-  sni: normal-cow.rooster465.autos
-  type: trojan
-- name: 🌍 Node-14
-  password: HW85960347
-  port: 443
-  server: pro-mako.rooster465.autos
-  sni: pro-mako.rooster465.autos
-  type: trojan
-- name: 🌍 Node-15
-  password: PD07395842
-  port: 443
-  server: excited-sole.rooster465.autos
-  sni: excited-sole.rooster465.autos
-  type: trojan
-- name: 🌍 Node-16
-  password: JA96378052
-  port: 443
-  server: inspired-goshawk.rooster465.autos
-  sni: inspired-goshawk.rooster465.autos
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: s5gydl.936.us.ci
-  name: 🌍 Node-17
-  network: ws
-  port: 80
-  server: 91.193.59.83
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- name: 🌍 Node-18
-  password: HW85960347
-  port: 443
-  server: on-airedale.rooster465.autos
-  sni: on-airedale.rooster465.autos
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: s5gydl.936.us.ci
-  name: 🌍 Node-19
-  network: ws
-  port: 80
-  server: 91.193.59.221
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- name: 🌍 Node-20
-  password: JA96378052
-  port: 443
-  server: normal-dory.rooster465.autos
-  sni: normal-dory.rooster465.autos
-  type: trojan
-- name: 🌍 Node-21
-  password: PD07395842
-  port: 443
-  server: on-roughy.rooster465.autos
-  sni: on-roughy.rooster465.autos
-  type: trojan
-- name: 🌍 Node-22
-  password: JA96378052
-  port: 443
-  server: certain-kit.rooster465.autos
-  sni: certain-kit.rooster465.autos
-  type: trojan
-- name: 🌍 Node-23
-  password: HW85960347
-  port: 443
-  server: dashing-possum.rooster465.autos
-  sni: dashing-possum.rooster465.autos
-  type: trojan
-- name: 🌍 Node-24
-  password: HW85960347
-  port: 443
-  server: elegant-arachnid.rooster465.autos
-  sni: elegant-arachnid.rooster465.autos
-  type: trojan
-- name: 🌍 Node-25
-  password: HW85960347
-  port: 443
-  server: lasting-bobcat.rooster465.autos
-  sni: lasting-bobcat.rooster465.autos
-  type: trojan
-- name: 🌍 Node-26
-  password: HW85960347
-  port: 443
-  server: proper-mouse.rooster465.autos
-  sni: proper-mouse.rooster465.autos
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: s5gydl.936.us.ci
-  name: 🌍 Node-27
-  network: ws
-  port: 80
-  server: 91.193.59.15
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- name: 🌍 Node-28
-  password: PD07395842
-  port: 443
-  server: together-amoeba.rooster465.autos
-  sni: together-amoeba.rooster465.autos
-  type: trojan
-- name: 🌍 Node-29
-  password: JA96378052
-  port: 443
-  server: stable-racer.rooster465.autos
-  sni: stable-racer.rooster465.autos
-  type: trojan
-- name: 🌍 Node-30
-  password: HW85960347
-  port: 443
-  server: outgoing-eagle.rooster465.autos
-  sni: outgoing-eagle.rooster465.autos
-  type: trojan
+  server: 159.223.94.156
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-path: /anti13.zingfast.vn
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🇭🇰 HK-01
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🌍 Node-03
-  - 🌍 Node-04
-  - 🌍 Node-05
-  - 🌍 Node-06
-  - 🌍 Node-07
-  - 🌍 Node-08
-  - 🌍 Node-09
-  - 🌍 Node-10
-  - 🌍 Node-11
-  - 🌍 Node-12
-  - 🌍 Node-13
-  - 🌍 Node-14
-  - 🌍 Node-15
-  - 🌍 Node-16
-  - 🌍 Node-17
-  - 🌍 Node-18
-  - 🌍 Node-19
-  - 🌍 Node-20
-  - 🌍 Node-21
-  - 🌍 Node-22
-  - 🌍 Node-23
-  - 🌍 Node-24
-  - 🌍 Node-25
-  - 🌍 Node-26
-  - 🌍 Node-27
-  - 🌍 Node-28
-  - 🌍 Node-29
-  - 🌍 Node-30
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
+  - 🇭🇰 HK-01
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🌍 Node-03
-  - 🌍 Node-04
-  - 🌍 Node-05
-  - 🌍 Node-06
-  - 🌍 Node-07
-  - 🌍 Node-08
-  - 🌍 Node-09
-  - 🌍 Node-10
-  - 🌍 Node-11
-  - 🌍 Node-12
-  - 🌍 Node-13
-  - 🌍 Node-14
-  - 🌍 Node-15
-  - 🌍 Node-16
-  - 🌍 Node-17
-  - 🌍 Node-18
-  - 🌍 Node-19
-  - 🌍 Node-20
-  - 🌍 Node-21
-  - 🌍 Node-22
-  - 🌍 Node-23
-  - 🌍 Node-24
-  - 🌍 Node-25
-  - 🌍 Node-26
-  - 🌍 Node-27
-  - 🌍 Node-28
-  - 🌍 Node-29
-  - 🌍 Node-30
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
