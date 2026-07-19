@@ -18,7 +18,7 @@ proxies:
 - alterId: 0
   cipher: auto
   host: v24.hdacd.com
-  name: 🇺🇸 US-07
+  name: 🇺🇸 US-08
   network: tcp
   port: 30824
   server: v24.hdacd.com
@@ -28,20 +28,10 @@ proxies:
 - alterId: 0
   cipher: auto
   host: v29.hdacd.com
-  name: 🇺🇸 US-08
+  name: 🇺🇸 US-17
   network: tcp
   port: 30829
   server: v29.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v4.hdacd.com
-  name: 🇺🇸 US-15
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
@@ -52,6 +42,16 @@ proxies:
   network: tcp
   port: 30806
   server: v6.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v4.hdacd.com
+  name: 🇺🇸 US-18
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
@@ -70,20 +70,20 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🇩🇪 DE-01
-  - 🇺🇸 US-07
   - 🇺🇸 US-08
-  - 🇺🇸 US-15
+  - 🇺🇸 US-17
   - 🇯🇵 JP-01
+  - 🇺🇸 US-18
   - 🇭🇰 HK-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🇩🇪 DE-01
-  - 🇺🇸 US-07
   - 🇺🇸 US-08
-  - 🇺🇸 US-15
+  - 🇺🇸 US-17
   - 🇯🇵 JP-01
+  - 🇺🇸 US-18
   - 🇭🇰 HK-01
   type: url-test
   url: https://www.gstatic.com/generate_204
