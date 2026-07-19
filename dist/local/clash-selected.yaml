@@ -27,20 +27,9 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-02
-  network: ws
-  port: 8443
-  server: 162.159.38.2
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- alterId: 0
-  cipher: auto
   encryption: none
   host: late-mountain-6801.355.workers.dev
-  name: 🇺🇸 US-03
+  name: 🇺🇸 US-02
   network: ws
   port: 8880
   server: cf1.466688.xyz
@@ -48,79 +37,13 @@ proxies:
   uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
 - alterId: 0
   cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-04
-  network: ws
-  port: 443
-  server: 162.159.38.78
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- alterId: 0
-  cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-05
-  network: ws
-  port: 443
-  server: 172.64.229.1
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- alterId: 0
-  cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-06
-  network: ws
-  port: 443
-  server: 108.162.195.58
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- alterId: 0
-  cipher: auto
   fp: chrome
-  host: 40t1.wxgqlfx.vip
-  name: 🇺🇸 US-07
-  network: ws
-  port: 443
-  server: 172.64.53.253
-  sni: 40t1.wxgqlfx.vip
-  type: vless
-  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: 0dsshvzb.cnm.qzz.io
-  name: 🇺🇸 US-08
-  network: ws
-  port: 2082
-  server: xqgs1fjh.cf.3666888.xyz
-  type: vless
-  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
-- alterId: 0
-  cipher: auto
-  host: late-mountain-6801.355.workers.dev
   name: 🌍 Node-01
-  network: ws
-  port: 8880
-  server: cf3.466688.xyz
+  port: 8443
+  server: bayan.ns.cloudflare.com
+  sni: vamosargentina.dpdns.org
   type: vless
-  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-09
-  network: ws
-  port: 2087
-  server: 172.64.146.59
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  uuid: '%40V2ConfigPro'
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -130,84 +53,204 @@ proxies:
   sni: vamosargentina.dpdns.org
   type: vless
   uuid: '%40V2ConfigPro'
-- name: 🇳🇱 NL-03
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+- alterId: 0
+  cipher: auto
+  host: late-mountain-6801.355.workers.dev
+  name: 🌍 Node-03
+  network: ws
+  port: 8880
+  server: cf3.466688.xyz
+  type: vless
+  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-04
+  network: grpc
+  port: 46783
+  server: t2.feiyue706.com
+  sni: t2.feiyue706.com
+  type: vless
+  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
+- alterId: 0
+  cipher: auto
+  host: morning-cell-adfc.99-c38.workers.dev
+  name: 🌍 Node-05
+  network: ws
+  port: 8880
+  server: 104.18.10.118
+  type: vless
+  uuid: 8b9986f7-889c-4213-bc64-fafe012fabd6
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-06
   port: 443
-  server: 188.164.248.122
-  skip-cert-verify: true
-  sni: space.byu.id.yxls.eu.cc
+  server: 151.101.56.7
+  sni: ssl.fastly.com
+  type: vless
+  uuid: 4d2b9de1-8be0-4434-9900-91eccb8422fa
+- alterId: 0
+  cipher: auto
+  host: vms.lifetime02.workers.dev
+  name: 🌍 Node-07
+  network: ws
+  port: 8880
+  server: 45.131.7.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+- alterId: 0
+  cipher: auto
+  host: late-mountain-6801.355.workers.dev
+  name: 🌍 Node-08
+  network: ws
+  port: 8880
+  server: cf9.466688.xyz
+  type: vless
+  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
+- alterId: 0
+  cipher: auto
+  host: 4cdn.njkrpl.com
+  name: 🇺🇸 US-03
+  network: ws
+  port: 443
+  server: 4cdn.njkrpl.com
+  tls: true
+  type: vmess
+  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: tiny-feather-4c41.227.workers.dev
+  name: 🌍 Node-09
+  network: ws
+  port: 8880
+  server: 172.67.190.141
+  type: vless
+  uuid: 31f345f3-b8eb-4ca6-8b14-bb555ae2c1f9
+- name: 🌍 Node-10
+  password: Mitivpn
+  port: 443
+  server: 151.101.56.6
+  sni: ssl.fastly.com
   type: trojan
 - alterId: 0
   cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-14
+  encryption: none
+  host: pan21.global.ssl.fastly.net
+  name: 🇺🇸 US-04
   network: ws
   port: 443
-  server: cf.tencentapp.cn
-  sni: cf11.evan00.dpdns.org
+  server: 167.82.77.173
+  sni: ssl.fastly.com
   type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
+- name: 🌍 Node-11
+  password: Mitivpn
+  port: 443
+  server: iranpoems.ir
+  sni: www.gamingdll.ir
+  type: trojan
 - alterId: 0
   cipher: auto
-  host: baidu.com
-  name: 🇫🇷 FR-01
-  network: ws
-  port: 12899
-  server: gtm1.ktmwan.net
+  host: guanwang.awsno.com
+  name: 🇺🇸 US-05
+  network: tcp
+  port: 443
+  server: guanwang.awsno.com
+  tls: true
   type: vmess
-  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   ws-path: /
 - alterId: 0
   cipher: auto
-  host: baidu.com
-  name: 🇦🇺 AU-01
+  host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+  name: 🌍 Node-12
   network: ws
-  port: 12889
-  server: gtm1.ktmwan.net
+  port: 80
+  server: 69.84.182.49
   type: vmess
-  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
   ws-path: /
+- cipher: aes-256-cfb
+  name: 🌍 Node-13
+  password: amazonskr05
+  port: 443
+  server: 3.77.54.36
+  type: ss
+- name: 🌍 Node-14
+  password: KV63147582
+  port: 443
+  server: wondrous-dogfish.rooster465.autos
+  sni: wondrous-dogfish.rooster465.autos
+  type: trojan
 - alterId: 0
   cipher: auto
-  host: baidu.com
-  name: 🇨🇦 CA-01
+  encryption: none
+  host: wandering-bonus-e035.272.workers.dev
+  name: 🇺🇸 US-06
   network: ws
-  port: 12897
-  server: gtm1.ktmwan.net
-  type: vmess
-  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
-  ws-path: /
+  port: 8880
+  server: 104.16.100.66
+  type: vless
+  uuid: 730cbebb-39b2-4a1c-b2f8-f922095d6623
+- name: 🌍 Node-15
+  password: 9c521e24-7326-acd3-acec-d0afac2b465d
+  port: 8080
+  server: 104.25.108.147
+  sni: red-cell-47f9.milaniomilan9.workers.dev
+  type: trojan
+- name: 🌍 Node-16
+  password: HW85960347
+  port: 443
+  server: ultimate-cardinal.rooster465.autos
+  sni: ultimate-cardinal.rooster465.autos
+  type: trojan
+- name: 🇫🇷 FR-01
+  password: rYuChHcwQZskq9E0zdoR
+  port: 443
+  server: ip4.vpean2.qzz.io
+  sni: vpn5.rnmcnm.com
+  type: trojan
+- name: 🇫🇮 FI-01
+  password: humanity
+  port: 443
+  server: 104.19.230.21
+  sni: www.multiplydose.com
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🌍 Node-17
+  password: amazonskr05
+  port: 443
+  server: 3.75.172.120
+  type: ss
+- name: 🌍 Node-18
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 91.221.190.80
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
 - alterId: 0
   cipher: auto
-  host: baidu.com
-  name: 🇸🇬 SG-01
-  network: ws
-  port: 12901
-  server: cs.ktmcn.net
-  type: vmess
-  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: baidu.com
-  name: 🇫🇷 FR-02
-  network: ws
-  port: 12886
-  server: gtm1.ktmwan.net
-  type: vmess
-  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: baidu.com
-  name: 🇮🇳 IN-01
-  network: ws
-  port: 12887
-  server: gtm1.ktmwan.net
-  type: vmess
-  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
-  ws-path: /
+  flow: xtls-rprx-vision-udp443
+  fp: firefox
+  name: 🌍 Node-19
+  port: 8443
+  server: 45.198.87.168
+  sni: storage.yandex.net
+  type: vless
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+- name: 🇧🇷 BR-01
+  password: mitivpn
+  port: 443
+  server: 188.114.97.6
+  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  type: trojan
+- name: 🌍 Node-20
+  password: humanity
+  port: 443
+  server: www.ignitelimit.com
+  type: trojan
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
@@ -215,23 +258,33 @@ proxy-groups:
   - 🇭🇰 HK-01
   - 🇺🇸 US-01
   - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🇺🇸 US-04
-  - 🇺🇸 US-05
-  - 🇺🇸 US-06
-  - 🇺🇸 US-07
-  - 🇺🇸 US-08
   - 🌍 Node-01
-  - 🇺🇸 US-09
   - 🌍 Node-02
-  - 🇳🇱 NL-03
-  - 🇺🇸 US-14
+  - 🌍 Node-03
+  - 🌍 Node-04
+  - 🌍 Node-05
+  - 🌍 Node-06
+  - 🌍 Node-07
+  - 🌍 Node-08
+  - 🇺🇸 US-03
+  - 🌍 Node-09
+  - 🌍 Node-10
+  - 🇺🇸 US-04
+  - 🌍 Node-11
+  - 🇺🇸 US-05
+  - 🌍 Node-12
+  - 🌍 Node-13
+  - 🌍 Node-14
+  - 🇺🇸 US-06
+  - 🌍 Node-15
+  - 🌍 Node-16
   - 🇫🇷 FR-01
-  - 🇦🇺 AU-01
-  - 🇨🇦 CA-01
-  - 🇸🇬 SG-01
-  - 🇫🇷 FR-02
-  - 🇮🇳 IN-01
+  - 🇫🇮 FI-01
+  - 🌍 Node-17
+  - 🌍 Node-18
+  - 🌍 Node-19
+  - 🇧🇷 BR-01
+  - 🌍 Node-20
   type: select
 - interval: 180
   name: ♻️ 自动选择
@@ -239,23 +292,33 @@ proxy-groups:
   - 🇭🇰 HK-01
   - 🇺🇸 US-01
   - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🇺🇸 US-04
-  - 🇺🇸 US-05
-  - 🇺🇸 US-06
-  - 🇺🇸 US-07
-  - 🇺🇸 US-08
   - 🌍 Node-01
-  - 🇺🇸 US-09
   - 🌍 Node-02
-  - 🇳🇱 NL-03
-  - 🇺🇸 US-14
+  - 🌍 Node-03
+  - 🌍 Node-04
+  - 🌍 Node-05
+  - 🌍 Node-06
+  - 🌍 Node-07
+  - 🌍 Node-08
+  - 🇺🇸 US-03
+  - 🌍 Node-09
+  - 🌍 Node-10
+  - 🇺🇸 US-04
+  - 🌍 Node-11
+  - 🇺🇸 US-05
+  - 🌍 Node-12
+  - 🌍 Node-13
+  - 🌍 Node-14
+  - 🇺🇸 US-06
+  - 🌍 Node-15
+  - 🌍 Node-16
   - 🇫🇷 FR-01
-  - 🇦🇺 AU-01
-  - 🇨🇦 CA-01
-  - 🇸🇬 SG-01
-  - 🇫🇷 FR-02
-  - 🇮🇳 IN-01
+  - 🇫🇮 FI-01
+  - 🌍 Node-17
+  - 🌍 Node-18
+  - 🌍 Node-19
+  - 🇧🇷 BR-01
+  - 🌍 Node-20
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
