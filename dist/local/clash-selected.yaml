@@ -4,59 +4,15 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies:
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-01
-  network: tcp
-  port: 10043
-  server: family.bucket.x9.kfc-520.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-02
-  network: tcp
-  port: 10050
-  server: family.bucket.x9.kfc-520.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-03
-  network: tcp
-  port: 10039
-  server: family.bucket.x9.kfc-520.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-04
-  network: tcp
-  port: 10046
-  server: family.bucket.x9.kfc-520.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+proxies: []
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🌍 Node-01
-  - 🌍 Node-02
-  - 🌍 Node-03
-  - 🌍 Node-04
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies:
-  - 🌍 Node-01
-  - 🌍 Node-02
-  - 🌍 Node-03
-  - 🌍 Node-04
+  proxies: []
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
