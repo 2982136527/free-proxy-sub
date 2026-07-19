@@ -17,28 +17,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-02
-  network: ws
-  port: 8443
-  server: 162.159.38.2
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- alterId: 0
-  cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-03
-  network: ws
-  port: 443
-  server: 162.159.38.78
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- alterId: 0
-  cipher: auto
   host: v9.hdacd.com
   name: 🇭🇰 HK-01
   network: tcp
@@ -59,16 +37,38 @@ proxies:
   cipher: auto
   name: 🌍 Node-02
   network: tcp
-  port: 10039
+  port: 10050
   server: family.bucket.x9.kfc-520.com
   skip-cert-verify: true
   type: vmess
   uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
 - alterId: 0
   cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-02
+  network: ws
+  port: 443
+  server: 162.159.38.78
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-03
+  network: ws
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
   name: 🌍 Node-03
   network: tcp
-  port: 10050
+  port: 10046
   server: family.bucket.x9.kfc-520.com
   skip-cert-verify: true
   type: vmess
@@ -77,16 +77,7 @@ proxies:
   cipher: auto
   name: 🌍 Node-04
   network: tcp
-  port: 10043
-  server: family.bucket.x9.kfc-520.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-05
-  network: tcp
-  port: 10046
+  port: 10039
   server: family.bucket.x9.kfc-520.com
   skip-cert-verify: true
   type: vmess
@@ -98,27 +89,17 @@ proxies:
   name: 🇺🇸 US-05
   network: ws
   port: 443
-  server: 172.64.229.1
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- alterId: 0
-  cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-07
-  network: ws
-  port: 443
   server: 108.162.195.58
   sni: cf11.evan00.dpdns.org
   type: vless
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-06
+  name: 🌍 Node-05
   network: tcp
-  port: 10037
+  port: 10043
   server: family.bucket.x9.kfc-520.com
+  skip-cert-verify: true
   type: vmess
   uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
 - alterId: 0
@@ -126,7 +107,7 @@ proxies:
   encryption: none
   fp: chrome
   host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-09
+  name: 🇺🇸 US-06
   network: ws
   port: 2087
   server: 172.64.146.59
@@ -145,50 +126,9 @@ proxies:
   uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
 - alterId: 0
   cipher: auto
-  name: 🇳🇱 NL-03
-  network: raw
-  port: 10049
-  server: family.bucket.x9.kfc-520.com
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: 40t1.wxgqlfx.vip
-  name: 🇺🇸 US-12
-  network: ws
-  port: 443
-  server: 172.64.53.253
-  sni: 40t1.wxgqlfx.vip
-  type: vless
-  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: edt2.yfqh08811.ccwu.cc
-  name: 🇺🇸 US-14
-  network: ws
-  port: 443
-  server: cloudflare.182682.xyz
-  sni: edt2.yfqh08811.ccwu.cc
-  type: vless
-  uuid: 4a1441b0-7bc8-4906-85cf-6b59c256b480
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp9.cc.cd
-  name: 🇺🇸 US-15
-  network: ws
-  port: 2087
-  server: 173.245.58.179
-  sni: vp9.cc.cd
-  type: vless
-  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
-- alterId: 0
-  cipher: auto
   fp: random
   host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-16
+  name: 🇺🇸 US-12
   network: ws
   port: 443
   server: cf.tencentapp.cn
@@ -198,97 +138,116 @@ proxies:
 - alterId: 0
   cipher: auto
   fp: chrome
-  name: 🌍 Node-07
-  port: 2087
-  server: cf7.466688.xyz
-  sni: ch-de.sdcards.ir
-  type: vless
-  uuid: 9d6104a5-fc6d-4fe6-95b7-80d8f699e09d
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: cfoo-146.pages.dev
-  name: 🇺🇸 US-17
+  host: 40t1.wxgqlfx.vip
+  name: 🇺🇸 US-13
   network: ws
   port: 443
-  server: cf8.466688.xyz
-  sni: cfoo-146.pages.dev
+  server: 172.64.53.253
+  sni: 40t1.wxgqlfx.vip
   type: vless
-  uuid: b08562b0-dbc0-47d1-860d-9435133b25c9
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
 - alterId: 0
   cipher: auto
-  host: baidu.com
-  name: 🇫🇷 FR-01
-  network: ws
-  port: 12899
-  server: gtm1.ktmwan.net
+  name: 🇳🇱 NL-03
+  network: raw
+  port: 10049
+  server: family.bucket.x9.kfc-520.com
   type: vmess
-  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
-  ws-path: /
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-08
+  name: 🌍 Node-06
   network: tcp
   port: 10038
   server: family.bucket.x9.kfc-520.com
   skip-cert-verify: true
   type: vmess
   uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+- name: 🇳🇱 NL-04
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  skip-cert-verify: true
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: baidu.com
+  name: 🇸🇬 SG-01
+  network: ws
+  port: 12901
+  server: cs.ktmcn.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: baidu.com
+  name: 🇮🇳 IN-01
+  network: ws
+  port: 12887
+  server: gtm1.ktmwan.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: baidu.com
+  name: 🇨🇦 CA-01
+  network: ws
+  port: 12897
+  server: gtm1.ktmwan.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
   - 🇭🇰 HK-01
   - 🌍 Node-01
   - 🌍 Node-02
+  - 🇺🇸 US-02
+  - 🇺🇸 US-03
   - 🌍 Node-03
   - 🌍 Node-04
-  - 🌍 Node-05
   - 🇺🇸 US-05
-  - 🇺🇸 US-07
-  - 🌍 Node-06
-  - 🇺🇸 US-09
+  - 🌍 Node-05
+  - 🇺🇸 US-06
   - 🇺🇸 US-10
-  - 🇳🇱 NL-03
   - 🇺🇸 US-12
-  - 🇺🇸 US-14
-  - 🇺🇸 US-15
-  - 🇺🇸 US-16
-  - 🌍 Node-07
-  - 🇺🇸 US-17
-  - 🇫🇷 FR-01
-  - 🌍 Node-08
+  - 🇺🇸 US-13
+  - 🇳🇱 NL-03
+  - 🌍 Node-06
+  - 🇳🇱 NL-04
+  - 🇸🇬 SG-01
+  - 🇮🇳 IN-01
+  - 🇨🇦 CA-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
   - 🇭🇰 HK-01
   - 🌍 Node-01
   - 🌍 Node-02
+  - 🇺🇸 US-02
+  - 🇺🇸 US-03
   - 🌍 Node-03
   - 🌍 Node-04
-  - 🌍 Node-05
   - 🇺🇸 US-05
-  - 🇺🇸 US-07
-  - 🌍 Node-06
-  - 🇺🇸 US-09
+  - 🌍 Node-05
+  - 🇺🇸 US-06
   - 🇺🇸 US-10
-  - 🇳🇱 NL-03
   - 🇺🇸 US-12
-  - 🇺🇸 US-14
-  - 🇺🇸 US-15
-  - 🇺🇸 US-16
-  - 🌍 Node-07
-  - 🇺🇸 US-17
-  - 🇫🇷 FR-01
-  - 🌍 Node-08
+  - 🇺🇸 US-13
+  - 🇳🇱 NL-03
+  - 🌍 Node-06
+  - 🇳🇱 NL-04
+  - 🇸🇬 SG-01
+  - 🇮🇳 IN-01
+  - 🇨🇦 CA-01
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
