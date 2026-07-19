@@ -9,59 +9,23 @@ proxies:
   cipher: auto
   fp: random
   host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-16
+  name: 🇺🇸 US-18
   network: ws
   port: 8443
   server: 162.159.38.2
   sni: cf11.evan00.dpdns.org
   type: vless
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-23
-  network: ws
-  port: 443
-  server: yx.cloudflare.182682.xyz
-  sni: t1s1.rittbo.kdns.fr
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: lzwnb.ccwu.cc
-  name: 🇺🇸 US-25
-  network: ws
-  port: 8443
-  server: play.mc.js.cool
-  sni: lzwnb.ccwu.cc
-  type: vless
-  uuid: 4f6aa10d-9332-4933-8dc8-78c9a42f6082
-- name: 🇳🇱 NL-01
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  skip-cert-verify: true
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-16
-  - 🇺🇸 US-23
-  - 🇺🇸 US-25
-  - 🇳🇱 NL-01
+  - 🇺🇸 US-18
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-16
-  - 🇺🇸 US-23
-  - 🇺🇸 US-25
-  - 🇳🇱 NL-01
+  - 🇺🇸 US-18
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
