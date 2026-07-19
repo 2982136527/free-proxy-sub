@@ -4,52 +4,15 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies:
-- alterId: 0
-  cipher: auto
-  host: v4.hdacd.com
-  name: 🇺🇸 US-01
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v9.hdacd.com
-  name: 🇭🇰 HK-01
-  network: tcp
-  port: 30809
-  server: v9.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-14
-  network: ws
-  port: 8443
-  server: 162.159.38.2
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+proxies: []
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-01
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-14
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies:
-  - 🇺🇸 US-01
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-14
+  proxies: []
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
