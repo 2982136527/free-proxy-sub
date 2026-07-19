@@ -4,15 +4,62 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-01
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  host: v9.hdacd.com
+  name: 🇭🇰 HK-01
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v4.hdacd.com
+  name: 🇺🇸 US-07
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp9.cc.cd
+  name: 🇺🇸 US-22
+  network: ws
+  port: 2087
+  server: 173.245.58.179
+  sni: vp9.cc.cd
+  type: vless
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🌍 Node-01
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-07
+  - 🇺🇸 US-22
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies: []
+  proxies:
+  - 🌍 Node-01
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-07
+  - 🇺🇸 US-22
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
