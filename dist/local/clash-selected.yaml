@@ -7,6 +7,14 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  name: 🌍 Node-01
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
   host: v4.hdacd.com
   name: 🇺🇸 US-01
   network: tcp
@@ -17,7 +25,19 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-01
+  encryption: none
+  fp: chrome
+  host: edge-4cb23bf6.pages.dev
+  name: 🇺🇸 US-02
+  network: ws
+  port: 443
+  server: 108.162.198.136
+  sni: edge-4cb23bf6.pages.dev
+  type: vless
+  uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-02
   network: tcp
   port: 30845
   server: v45.hdacd.com
@@ -35,17 +55,9 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-02
-  network: tcp
-  port: 30829
-  server: v29.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
   fp: random
   host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-02
+  name: 🇺🇸 US-04
   network: ws
   port: 8443
   server: 162.159.38.2
@@ -62,279 +74,69 @@ proxies:
   sni: nl1.cloudbench.app
   type: vless
   uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+- name: 🇺🇸 US-13
+  password: humanity
+  port: 443
+  server: 172.64.146.28
+  sni: www.gossipglove.com
+  type: trojan
 - alterId: 0
   cipher: auto
   fp: chrome
   name: 🌍 Node-04
   port: 8443
-  server: bayan.ns.cloudflare.com
-  sni: vamosargentina.dpdns.org
-  type: vless
-  uuid: '%40V2ConfigPro'
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  name: 🌍 Node-05
-  port: 8443
   server: love.ns.cloudflare.com
   sni: vamosargentina.dpdns.org
   type: vless
   uuid: '%40V2ConfigPro'
-- name: 🌍 Node-06
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
 - alterId: 0
   cipher: auto
   fp: chrome
   host: lzwnb.ccwu.cc
-  name: 🇺🇸 US-03
+  name: 🇺🇸 US-21
   network: ws
   port: 8443
   server: play.mc.js.cool
   sni: lzwnb.ccwu.cc
   type: vless
   uuid: 4f6aa10d-9332-4933-8dc8-78c9a42f6082
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  name: 🌍 Node-07
-  network: grpc
-  port: 36805
-  server: t1.feiyue706.com
-  sni: t1.feiyue706.com
-  type: vless
-  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
-- name: 🌍 Node-08
-  password: MiTiVPN
+- name: 🇳🇱 NL-01
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
-  server: 45.131.4.118
-  sni: 95r.ir
+  server: 188.164.248.122
+  skip-cert-verify: true
+  sni: space.byu.id.yxls.eu.cc
   type: trojan
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  name: 🌍 Node-09
-  network: grpc
-  port: 36781
-  server: t1.feiyue706.com
-  sni: t1.feiyue706.com
-  type: vless
-  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  name: 🌍 Node-10
-  network: grpc
-  port: 36782
-  server: t1.feiyue706.com
-  sni: t1.feiyue706.com
-  type: vless
-  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
-- name: 🌍 Node-11
-  password: Mitivpn
-  port: 443
-  server: 151.101.56.6
-  sni: ssl.fastly.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: guanwang.awsno.com
-  name: 🇺🇸 US-04
-  network: tcp
-  port: 443
-  server: guanwang.awsno.com
-  tls: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: hamshahriesfahan.com
-  name: 🇩🇪 DE-01
-  network: ws
-  port: 443
-  server: 199.232.9.94
-  sni: speedtest.net
-  type: vless
-  uuid: 86fdb625-1a7f-4784-99a6-a96b3a80fc6d
-- alterId: 0
-  cipher: auto
-  host: node-7620478485-0decb6-production.up.railway.app
-  name: 🌍 Node-12
-  network: ws
-  port: 443
-  server: 69.46.46.237
-  sni: node-7620478485-0decb6-production.up.railway.app
-  type: vless
-  uuid: b890567e-b4dc-4264-9b10-31a2cb32da54
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: chrome
-  name: 🌍 Node-13
-  port: 8443
-  server: 45.198.87.102
-  sni: storage.yandex.net
-  type: vless
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-- name: 🇫🇷 FR-01
-  password: rYuChHcwQZskq9E0zdoR
-  port: 443
-  server: ip4.vpean2.qzz.io
-  sni: vpn5.rnmcnm.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: morning-cell-adfc.99-c38.workers.dev
-  name: 🌍 Node-14
-  network: ws
-  port: 8880
-  server: 104.18.10.118
-  type: vless
-  uuid: 8b9986f7-889c-4213-bc64-fafe012fabd6
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: diyakoteam-production.up.railway.app
-  name: 🇺🇸 US-05
-  network: ws
-  port: 443
-  server: diyakoteam-production.up.railway.app
-  sni: diyakoteam-production.up.railway.app
-  type: vless
-  uuid: 5105eeda-427b-45d9-4ecb-fd617bd55bac
-- name: 🌍 Node-15
-  password: JA96378052
-  port: 443
-  server: careful-cow.rooster465.autos
-  sni: careful-cow.rooster465.autos
-  type: trojan
-- name: 🇧🇷 BR-01
-  password: mitivpn
-  port: 443
-  server: 188.114.97.6
-  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: wild-frog-c709.403-6ff.workers.dev
-  name: 🌍 Node-16
-  network: ws
-  port: 8880
-  server: 162.159.156.214
-  type: vless
-  uuid: 8dd8af16-cae0-4431-b04c-a637b4d7645b
-- cipher: chacha20-ietf-poly1305
-  name: 🌍 Node-17
-  password: Vr06rU_v1vFPYeXq9zbsAA
-  port: 1080
-  server: 156.146.40.84
-  type: ss
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  name: 🌍 Node-18
-  network: grpc
-  port: 2096
-  server: free04.tunnely.ru
-  sni: free04.tunnely.ru
-  type: vless
-  uuid: 6fa54ae4-6ff6-4456-9700-a3593401389f
-- cipher: chacha20-ietf-poly1305
-  name: 🌍 Node-19
-  password: Vr06rU_v1vFPYeXq9zbsAA
-  port: 1080
-  server: 194.54.80.37
-  type: ss
-- alterId: 0
-  cipher: auto
-  host: old-violet-a5ce.29-440.workers.dev
-  name: 🌍 Node-20
-  network: ws
-  port: 8880
-  server: log.bpminecraft.com
-  type: vless
-  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
-- cipher: aes-256-cfb
-  name: 🇩🇪 DE-02
-  password: amazonskr05
-  port: 443
-  server: 63.177.252.44
-  type: ss
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-01
   - 🌍 Node-01
-  - 🇭🇰 HK-01
-  - 🌍 Node-02
+  - 🇺🇸 US-01
   - 🇺🇸 US-02
-  - 🌍 Node-03
-  - 🌍 Node-04
-  - 🌍 Node-05
-  - 🌍 Node-06
-  - 🇺🇸 US-03
-  - 🌍 Node-07
-  - 🌍 Node-08
-  - 🌍 Node-09
-  - 🌍 Node-10
-  - 🌍 Node-11
+  - 🌍 Node-02
+  - 🇭🇰 HK-01
   - 🇺🇸 US-04
-  - 🇩🇪 DE-01
-  - 🌍 Node-12
-  - 🌍 Node-13
-  - 🇫🇷 FR-01
-  - 🌍 Node-14
-  - 🇺🇸 US-05
-  - 🌍 Node-15
-  - 🇧🇷 BR-01
-  - 🌍 Node-16
-  - 🌍 Node-17
-  - 🌍 Node-18
-  - 🌍 Node-19
-  - 🌍 Node-20
-  - 🇩🇪 DE-02
+  - 🌍 Node-03
+  - 🇺🇸 US-13
+  - 🌍 Node-04
+  - 🇺🇸 US-21
+  - 🇳🇱 NL-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-01
   - 🌍 Node-01
-  - 🇭🇰 HK-01
-  - 🌍 Node-02
+  - 🇺🇸 US-01
   - 🇺🇸 US-02
-  - 🌍 Node-03
-  - 🌍 Node-04
-  - 🌍 Node-05
-  - 🌍 Node-06
-  - 🇺🇸 US-03
-  - 🌍 Node-07
-  - 🌍 Node-08
-  - 🌍 Node-09
-  - 🌍 Node-10
-  - 🌍 Node-11
+  - 🌍 Node-02
+  - 🇭🇰 HK-01
   - 🇺🇸 US-04
-  - 🇩🇪 DE-01
-  - 🌍 Node-12
-  - 🌍 Node-13
-  - 🇫🇷 FR-01
-  - 🌍 Node-14
-  - 🇺🇸 US-05
-  - 🌍 Node-15
-  - 🇧🇷 BR-01
-  - 🌍 Node-16
-  - 🌍 Node-17
-  - 🌍 Node-18
-  - 🌍 Node-19
-  - 🌍 Node-20
-  - 🇩🇪 DE-02
+  - 🌍 Node-03
+  - 🇺🇸 US-13
+  - 🌍 Node-04
+  - 🇺🇸 US-21
+  - 🇳🇱 NL-01
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
