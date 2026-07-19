@@ -1,1 +1,20 @@
+allow-lan: false
+external-controller: 127.0.0.1:9090
+ipv6: false
+log-level: warning
+mode: Rule
+port: 7890
 proxies: []
+proxy-groups:
+- name: 🇺🇳 精选节点
+  proxies:
+  - ♻️ 自动选择
+  type: select
+- interval: 180
+  name: ♻️ 自动选择
+  proxies: []
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+rules:
+- MATCH,🇺🇳 精选节点
+socks-port: 7891
