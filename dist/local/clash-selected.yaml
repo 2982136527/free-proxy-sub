@@ -29,7 +29,7 @@ proxies:
   cipher: auto
   fp: random
   host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-07
+  name: 🇺🇸 US-08
   network: ws
   port: 8443
   server: 162.159.38.2
@@ -38,21 +38,9 @@ proxies:
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
-  encryption: none
-  fp: chrome
-  host: nl1.cloudbench.app
-  name: 🇺🇸 US-09
-  network: ws
-  port: 443
-  server: 172.64.151.120
-  sni: nl1.cloudbench.app
-  type: vless
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
-- alterId: 0
-  cipher: auto
   fp: chrome
   host: cf.cfvip.lol
-  name: 🇺🇸 US-11
+  name: 🇺🇸 US-18
   network: ws
   port: 443
   server: 172.64.155.209
@@ -63,8 +51,20 @@ proxies:
   cipher: auto
   encryption: none
   fp: chrome
+  host: nl1.cloudbench.app
+  name: 🇺🇸 US-22
+  network: ws
+  port: 443
+  server: 172.64.151.120
+  sni: nl1.cloudbench.app
+  type: vless
+  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
   host: tianshu13.pages.dev
-  name: 🇺🇸 US-14
+  name: 🇺🇸 US-23
   network: ws
   port: 443
   server: 172.64.147.15
@@ -76,7 +76,7 @@ proxies:
   encryption: none
   fp: chrome
   host: tianshu13.pages.dev
-  name: 🇺🇸 US-16
+  name: 🇺🇸 US-24
   network: ws
   port: 443
   server: 172.64.147.137
@@ -98,11 +98,11 @@ proxy-groups:
   - ♻️ 自动选择
   - 🇺🇸 US-01
   - 🇭🇰 HK-01
-  - 🇺🇸 US-07
-  - 🇺🇸 US-09
-  - 🇺🇸 US-11
-  - 🇺🇸 US-14
-  - 🇺🇸 US-16
+  - 🇺🇸 US-08
+  - 🇺🇸 US-18
+  - 🇺🇸 US-22
+  - 🇺🇸 US-23
+  - 🇺🇸 US-24
   - 🌍 Node-01
   type: select
 - interval: 180
@@ -110,11 +110,11 @@ proxy-groups:
   proxies:
   - 🇺🇸 US-01
   - 🇭🇰 HK-01
-  - 🇺🇸 US-07
-  - 🇺🇸 US-09
-  - 🇺🇸 US-11
-  - 🇺🇸 US-14
-  - 🇺🇸 US-16
+  - 🇺🇸 US-08
+  - 🇺🇸 US-18
+  - 🇺🇸 US-22
+  - 🇺🇸 US-23
+  - 🇺🇸 US-24
   - 🌍 Node-01
   type: url-test
   url: https://www.gstatic.com/generate_204
