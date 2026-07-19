@@ -1,1 +1,46 @@
-proxies: []
+allow-lan: false
+external-controller: 127.0.0.1:9090
+ipv6: false
+log-level: warning
+mode: Rule
+port: 7890
+proxies:
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: s5gydl.936.us.ci
+  name: 🇭🇰 HK-01
+  network: ws
+  port: 2053
+  server: 23.133.52.10
+  sni: s5gydl.936.us.ci
+  type: vless
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp39.cc.cd
+  name: 🇺🇸 US-21
+  network: ws
+  port: 2083
+  server: 8.35.211.62
+  sni: vp39.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+proxy-groups:
+- name: 🇺🇳 精选节点
+  proxies:
+  - ♻️ 自动选择
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-21
+  type: select
+- interval: 180
+  name: ♻️ 自动选择
+  proxies:
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-21
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+rules:
+- MATCH,🇺🇳 精选节点
+socks-port: 7891
