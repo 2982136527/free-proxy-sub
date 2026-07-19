@@ -4,121 +4,15 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies:
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp9.cc.cd
-  name: 🇺🇸 US-01
-  network: ws
-  port: 2087
-  server: 173.245.58.179
-  sni: vp9.cc.cd
-  type: vless
-  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp37.cc.cd
-  name: 🇺🇸 US-02
-  network: ws
-  port: 2096
-  server: 8.35.211.81
-  sni: vp37.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
-  encryption: none
-  host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-03
-  network: ws
-  port: 443
-  server: cf.008500.xyz
-  sni: t1s1.rittbo.kdns.fr
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: cfoo-146.pages.dev
-  name: 🇺🇸 US-04
-  network: ws
-  port: 443
-  server: cf8.466688.xyz
-  sni: cfoo-146.pages.dev
-  type: vless
-  uuid: b08562b0-dbc0-47d1-860d-9435133b25c9
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: shegeftihaaa.net
-  name: 🌍 Node-01
-  network: ws
-  port: 443
-  server: 89.116.250.135
-  sni: shegeftihaaa.net
-  type: vless
-  uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
-- name: 🌍 Node-02
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.135
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: play.google.com
-  name: 🇩🇪 DE-01
-  network: tcp
-  port: 14991
-  server: me.echo-license.gr
-  type: vmess
-  uuid: fbd2b2f1-af4a-4e5f-9556-af37edea9db5
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  encryption: none
-  host: gr1.fifapes.monster
-  name: 🇷🇺 RU-01
-  network: tcp
-  port: 8882
-  server: gr1.fifapes.monster
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 IN-01
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.80
-  type: ss
+proxies: []
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🇺🇸 US-04
-  - 🌍 Node-01
-  - 🌍 Node-02
-  - 🇩🇪 DE-01
-  - 🇷🇺 RU-01
-  - 🇮🇳 IN-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies:
-  - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🇺🇸 US-04
-  - 🌍 Node-01
-  - 🌍 Node-02
-  - 🇩🇪 DE-01
-  - 🇷🇺 RU-01
-  - 🇮🇳 IN-01
+  proxies: []
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
