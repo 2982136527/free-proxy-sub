@@ -7,287 +7,247 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  host: v4.hdacd.com
+  encryption: none
+  fp: chrome
+  host: t1s1.rittbo.kdns.fr
   name: 🇺🇸 US-01
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
+  network: ws
+  port: 8443
+  server: 172.64.52.134
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
 - alterId: 0
   cipher: auto
-  host: v9.hdacd.com
-  name: 🇭🇰 HK-01
-  network: tcp
-  port: 30809
-  server: v9.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- name: 🇺🇸 US-02
-  password: VPNCUSTOMIZE
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: 🌍 Node-01
   port: 443
-  server: 162.159.38.183
-  sni: ww.offers.de5.net
-  type: trojan
-- name: 🌍 Node-01
-  password: Mitivpn
-  port: 443
-  server: 151.101.56.6
-  sni: ssl.fastly.com
-  type: trojan
-- name: 🇺🇸 US-03
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  sni: www.calmlunch.com
-  type: trojan
-- name: 🇺🇸 US-04
-  password: humanity
-  port: 443
-  server: 104.16.174.34
-  sni: www.ignitelimit.com
-  type: trojan
+  server: z-hk.h.w.466688.xyz
+  sni: www.apple.com
+  type: vless
+  uuid: 904183f1-0495-478b-b11f-1fe12e84ad8b
 - alterId: 0
   cipher: auto
-  host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+  fp: chrome
+  host: 40t1.wxgqlfx.vip
+  name: 🇺🇸 US-03
+  network: ws
+  port: 443
+  server: 172.64.53.253
+  sni: 40t1.wxgqlfx.vip
+  type: vless
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+- alterId: 0
+  cipher: auto
+  host: t1s1.rittbo.kdns.fr
   name: 🌍 Node-02
   network: ws
-  port: 80
-  server: 69.84.182.49
-  type: vmess
-  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
-  ws-path: /
-- name: 🇺🇸 US-05
-  password: humanity
   port: 443
-  server: 172.66.47.69
-  sni: www.multiplydose.com
-  type: trojan
-- name: 🌍 Node-03
-  password: humanity
-  port: 443
-  server: www.ignitelimit.com
-  type: trojan
+  server: 162.159.10.87
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
 - alterId: 0
   cipher: auto
-  host: 4cdn.njkrpl.com
+  fp: random
+  host: cf11.evan00.dpdns.org
   name: 🇺🇸 US-06
   network: ws
   port: 443
-  server: 4cdn.njkrpl.com
-  tls: true
-  type: vmess
-  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
-  ws-path: /
-- name: 🌍 Node-04
-  password: 9c521e24-7326-acd3-acec-d0afac2b465d
-  port: 8080
-  server: 104.25.108.147
-  sni: red-cell-47f9.milaniomilan9.workers.dev
-  type: trojan
-- name: 🇧🇷 BR-01
-  password: mitivpn
-  port: 443
-  server: 188.114.97.6
-  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
-  type: trojan
+  server: 108.162.195.58
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
-  host: guanwang.awsno.com
-  name: 🇺🇸 US-07
-  network: tcp
-  port: 443
-  server: guanwang.awsno.com
-  tls: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  ws-path: /
-- name: 🇺🇸 US-08
-  password: humanity
-  port: 443
-  server: 104.20.6.134
-  sni: www.multiplydose.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-05
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-08
   network: ws
-  port: 443
-  server: aaaa.wxx.gay
-  tls: true
-  type: vmess
-  uuid: 8237ec34-143a-11ee-8019-000017022008
-  ws-path: /look
-- cipher: aes-256-cfb
-  name: 🌍 Node-06
-  password: amazonskr05
-  port: 443
-  server: 3.75.172.120
-  type: ss
-- name: 🌍 Node-07
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 91.221.190.80
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: v10.hdacd.com
-  name: 🇭🇰 HK-02
-  network: tcp
-  port: 30807
-  server: v10.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- name: 🇸🇪 SE-01
-  password: Mitivpn
-  port: 80
-  server: 146.75.116.190
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🌍 Node-08
-  password: Vr06rU_v1vFPYeXq9zbsAA
-  port: 1080
-  server: 156.146.40.84
-  type: ss
-- name: 🌍 Node-09
-  password: rYuChHcwQZskq9E0zdoR
-  port: 2053
-  server: 103.45.245.208
-  sni: vpn5.rnmcnm.com
-  type: trojan
-- name: 🌍 Node-10
-  password: Mitivpn
-  port: 443
-  server: 167.82.101.251
-  sni: ssl.fastly.com
-  type: trojan
-- name: 🌍 Node-11
-  password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
-  server: 152.53.200.89
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- name: 🇮🇹 IT-01
-  password: 8r%3C%5B9%27l6hAO%238ZQi
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-09
+  network: ws
   port: 443
-  server: 151.241.215.148
-  sni: Koma-YT.PAGeS.Dev
+  server: 162.159.38.78
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-11
+  network: ws
+  port: 443
+  server: cf.tencentapp.cn
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: t1s1.rittbo.kdns.fr
+  name: 🇺🇸 US-15
+  network: ws
+  port: 2083
+  server: 162.159.21.206
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+- alterId: 0
+  cipher: auto
+  host: baidu.com
+  name: 🇦🇺 AU-01
+  network: ws
+  port: 12889
+  server: gtm1.ktmwan.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: baidu.com
+  name: 🇨🇦 CA-01
+  network: ws
+  port: 12897
+  server: gtm1.ktmwan.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-03
+  port: 2087
+  server: cf7.466688.xyz
+  sni: ch-de.sdcards.ir
+  type: vless
+  uuid: 9d6104a5-fc6d-4fe6-95b7-80d8f699e09d
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-16
+  network: ws
+  port: 443
+  server: 172.64.229.1
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  host: baidu.com
+  name: 🇹🇼 TW-01
+  network: ws
+  port: 12888
+  server: gtm1.ktmwan.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: baidu.com
+  name: 🇯🇵 JP-01
+  network: ws
+  port: 12883
+  server: cs.ktmcn.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
+- name: 🇳🇱 NL-02
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  skip-cert-verify: true
+  sni: space.byu.id.yxls.eu.cc
   type: trojan
 - alterId: 0
   cipher: auto
-  host: renderer-stream-1-411.mirra.now
-  name: 🌍 Node-12
+  encryption: none
+  fp: chrome
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-18
   network: ws
-  port: 443
-  server: renderer-stream-1-411.mirra.now
-  tls: true
-  type: vmess
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  ws-path: /api/v1/gpu-stream/socket
-- name: 🇮🇹 IT-02
-  password: Mitivpn
-  port: 80
-  server: 151.101.242.172
-  type: trojan
-- name: 🌍 Node-13
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.142
-  sni: 185.137.157.142
-  type: trojan
-- cipher: chacha20-ietf-poly1305
+  port: 2087
+  server: 172.64.146.59
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  host: baidu.com
   name: 🇮🇳 IN-01
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.71
-  type: ss
+  network: ws
+  port: 12887
+  server: gtm1.ktmwan.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-14
+  host: baidu.com
+  name: 🇸🇬 SG-01
   network: ws
-  port: 80
-  server: 159.223.94.156
+  port: 12901
+  server: cs.ktmcn.net
   type: vmess
-  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-  ws-path: /anti13.zingfast.vn
-- name: 🇺🇸 US-09
-  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
-  port: 443
-  server: 149.104.104.58
-  sni: 149.104.104.58
-  type: trojan
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🇺🇸 US-01
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-02
   - 🌍 Node-01
   - 🇺🇸 US-03
-  - 🇺🇸 US-04
   - 🌍 Node-02
-  - 🇺🇸 US-05
-  - 🌍 Node-03
   - 🇺🇸 US-06
-  - 🌍 Node-04
-  - 🇧🇷 BR-01
-  - 🇺🇸 US-07
   - 🇺🇸 US-08
-  - 🌍 Node-05
-  - 🌍 Node-06
-  - 🌍 Node-07
-  - 🇭🇰 HK-02
-  - 🇸🇪 SE-01
-  - 🌍 Node-08
-  - 🌍 Node-09
-  - 🌍 Node-10
-  - 🌍 Node-11
-  - 🇮🇹 IT-01
-  - 🌍 Node-12
-  - 🇮🇹 IT-02
-  - 🌍 Node-13
-  - 🇮🇳 IN-01
-  - 🌍 Node-14
   - 🇺🇸 US-09
+  - 🇺🇸 US-11
+  - 🇺🇸 US-15
+  - 🇦🇺 AU-01
+  - 🇨🇦 CA-01
+  - 🌍 Node-03
+  - 🇺🇸 US-16
+  - 🇹🇼 TW-01
+  - 🇯🇵 JP-01
+  - 🇳🇱 NL-02
+  - 🇺🇸 US-18
+  - 🇮🇳 IN-01
+  - 🇸🇬 SG-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🇺🇸 US-01
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-02
   - 🌍 Node-01
   - 🇺🇸 US-03
-  - 🇺🇸 US-04
   - 🌍 Node-02
-  - 🇺🇸 US-05
-  - 🌍 Node-03
   - 🇺🇸 US-06
-  - 🌍 Node-04
-  - 🇧🇷 BR-01
-  - 🇺🇸 US-07
   - 🇺🇸 US-08
-  - 🌍 Node-05
-  - 🌍 Node-06
-  - 🌍 Node-07
-  - 🇭🇰 HK-02
-  - 🇸🇪 SE-01
-  - 🌍 Node-08
-  - 🌍 Node-09
-  - 🌍 Node-10
-  - 🌍 Node-11
-  - 🇮🇹 IT-01
-  - 🌍 Node-12
-  - 🇮🇹 IT-02
-  - 🌍 Node-13
-  - 🇮🇳 IN-01
-  - 🌍 Node-14
   - 🇺🇸 US-09
+  - 🇺🇸 US-11
+  - 🇺🇸 US-15
+  - 🇦🇺 AU-01
+  - 🇨🇦 CA-01
+  - 🌍 Node-03
+  - 🇺🇸 US-16
+  - 🇹🇼 TW-01
+  - 🇯🇵 JP-01
+  - 🇳🇱 NL-02
+  - 🇺🇸 US-18
+  - 🇮🇳 IN-01
+  - 🇸🇬 SG-01
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
