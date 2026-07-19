@@ -25,42 +25,245 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
+- name: 🌍 Node-01
+  password: Mitivpn
+  port: 443
+  server: 151.101.56.6
+  sni: ssl.fastly.com
+  type: trojan
+- name: 🌍 Node-02
+  password: humanity
+  port: 443
+  server: www.ignitelimit.com
+  type: trojan
 - alterId: 0
   cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-06
+  host: guanwang.awsno.com
+  name: 🇺🇸 US-02
+  network: tcp
+  port: 443
+  server: guanwang.awsno.com
+  tls: true
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 🌍 Node-03
+  password: amazonskr05
+  port: 443
+  server: 3.75.172.120
+  type: ss
+- alterId: 0
+  cipher: auto
+  host: 4cdn.njkrpl.com
+  name: 🇺🇸 US-03
   network: ws
+  port: 443
+  server: 4cdn.njkrpl.com
+  tls: true
+  type: vmess
+  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🌍 Node-04
+  password: Vr06rU_v1vFPYeXq9zbsAA
+  port: 1080
+  server: 156.146.40.84
+  type: ss
+- name: 🌍 Node-05
+  password: 9c521e24-7326-acd3-acec-d0afac2b465d
+  port: 8080
+  server: 104.25.108.147
+  sni: red-cell-47f9.milaniomilan9.workers.dev
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 US-04
+  password: ebEfGowZtV1BEFXZOtgAXi
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
+  type: ss
+- name: 🇺🇸 US-05
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  sni: www.calmlunch.com
+  type: trojan
+- name: 🌍 Node-06
+  password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
-  server: 162.159.38.2
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  server: 152.53.200.89
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
 - alterId: 0
   cipher: auto
-  fp: chrome
-  name: 🌍 Node-01
-  port: 8443
-  server: love.ns.cloudflare.com
-  sni: vamosargentina.dpdns.org
-  type: vless
-  uuid: '%40V2ConfigPro'
+  host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+  name: 🌍 Node-07
+  network: ws
+  port: 80
+  server: 69.84.182.49
+  type: vmess
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🌍 Node-08
+  password: Vr06rU_v1vFPYeXq9zbsAA
+  port: 1080
+  server: 194.54.80.37
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-09
+  network: ws
+  port: 443
+  server: aaaa.wxx.gay
+  tls: true
+  type: vmess
+  uuid: 8237ec34-143a-11ee-8019-000017022008
+  ws-path: /look
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK-02
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: 🇫🇮 FI-01
+  password: humanity
+  port: 443
+  server: 104.19.230.21
+  sni: www.multiplydose.com
+  type: trojan
+- name: 🇫🇷 FR-01
+  password: rYuChHcwQZskq9E0zdoR
+  port: 443
+  server: ip4.vpean2.qzz.io
+  sni: vpn5.rnmcnm.com
+  type: trojan
+- name: 🇧🇷 BR-01
+  password: mitivpn
+  port: 443
+  server: 188.114.97.6
+  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  type: trojan
+- name: 🌍 Node-10
+  password: rYuChHcwQZskq9E0zdoR
+  port: 2053
+  server: 103.45.245.208
+  sni: vpn5.rnmcnm.com
+  type: trojan
+- name: 🌍 Node-11
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 91.221.190.80
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- name: 🌍 Node-12
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.151
+  type: trojan
+- name: 🌍 Node-13
+  password: Mitivpn
+  port: 443
+  server: 167.82.101.251
+  sni: ssl.fastly.com
+  type: trojan
+- name: 🇮🇹 IT-01
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 151.241.215.148
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-14
+  network: ws
+  port: 80
+  server: 159.223.94.156
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-path: /anti13.zingfast.vn
+- alterId: 0
+  cipher: auto
+  host: renderer-stream-1-411.mirra.now
+  name: 🌍 Node-15
+  network: ws
+  port: 443
+  server: renderer-stream-1-411.mirra.now
+  tls: true
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  ws-path: /api/v1/gpu-stream/socket
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇳 IN-01
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  port: 28061
+  server: 103.111.114.82
+  type: ss
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🇺🇸 US-01
   - 🇭🇰 HK-01
-  - 🇺🇸 US-06
   - 🌍 Node-01
+  - 🌍 Node-02
+  - 🇺🇸 US-02
+  - 🌍 Node-03
+  - 🇺🇸 US-03
+  - 🌍 Node-04
+  - 🌍 Node-05
+  - 🇺🇸 US-04
+  - 🇺🇸 US-05
+  - 🌍 Node-06
+  - 🌍 Node-07
+  - 🌍 Node-08
+  - 🌍 Node-09
+  - 🇭🇰 HK-02
+  - 🇫🇮 FI-01
+  - 🇫🇷 FR-01
+  - 🇧🇷 BR-01
+  - 🌍 Node-10
+  - 🌍 Node-11
+  - 🌍 Node-12
+  - 🌍 Node-13
+  - 🇮🇹 IT-01
+  - 🌍 Node-14
+  - 🌍 Node-15
+  - 🇮🇳 IN-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🇺🇸 US-01
   - 🇭🇰 HK-01
-  - 🇺🇸 US-06
   - 🌍 Node-01
+  - 🌍 Node-02
+  - 🇺🇸 US-02
+  - 🌍 Node-03
+  - 🇺🇸 US-03
+  - 🌍 Node-04
+  - 🌍 Node-05
+  - 🇺🇸 US-04
+  - 🇺🇸 US-05
+  - 🌍 Node-06
+  - 🌍 Node-07
+  - 🌍 Node-08
+  - 🌍 Node-09
+  - 🇭🇰 HK-02
+  - 🇫🇮 FI-01
+  - 🇫🇷 FR-01
+  - 🇧🇷 BR-01
+  - 🌍 Node-10
+  - 🌍 Node-11
+  - 🌍 Node-12
+  - 🌍 Node-13
+  - 🇮🇹 IT-01
+  - 🌍 Node-14
+  - 🌍 Node-15
+  - 🇮🇳 IN-01
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
