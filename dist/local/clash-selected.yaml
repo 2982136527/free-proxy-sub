@@ -7,6 +7,16 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  host: v4.hdacd.com
+  name: 🇺🇸 US-02
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
   host: v9.hdacd.com
   name: 🇭🇰 HK-01
   network: tcp
@@ -17,32 +27,15 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  host: v4.hdacd.com
-  name: 🇺🇸 US-01
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
   fp: random
   host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-02
+  name: 🇺🇸 US-20
   network: ws
   port: 8443
   server: 162.159.38.2
   sni: cf11.evan00.dpdns.org
   type: vless
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- name: 🇳🇱 NL-01
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  skip-cert-verify: true
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -52,24 +45,33 @@ proxies:
   sni: vamosargentina.dpdns.org
   type: vless
   uuid: '%40V2ConfigPro'
+- alterId: 0
+  cipher: auto
+  host: late-mountain-6801.355.workers.dev
+  name: 🌍 Node-02
+  network: ws
+  port: 8880
+  server: cf3.466688.xyz
+  type: vless
+  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-01
   - 🇺🇸 US-02
-  - 🇳🇱 NL-01
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-20
   - 🌍 Node-01
+  - 🌍 Node-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-01
   - 🇺🇸 US-02
-  - 🇳🇱 NL-01
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-20
   - 🌍 Node-01
+  - 🌍 Node-02
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
