@@ -7,90 +7,35 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: vp39.cc.cd
-  name: 🇺🇸 US-01
+  name: 🌍 Node-01
   network: ws
-  port: 2083
-  server: 8.35.211.62
-  sni: vp39.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: s5gydl.936.us.ci
-  name: 🇺🇸 US-02
-  network: ws
-  port: 2053
-  server: 152.228.134.80
-  sni: s5gydl.936.us.ci
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- alterId: 0
-  cipher: auto
-  host: windows64.net
-  name: 🇬🇧 GB-01
-  network: tcp
-  port: 2078
-  server: 93.180.134.52
+  port: 443
+  server: aaaa.wxx.gay
+  tls: true
   type: vmess
-  uuid: 1c18da66-a912-40af-b90d-787574efe6d3
-  ws-path: /?ed=1024
-- name: 🌍 Node-01
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.142
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 IN-01
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.80
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 IN-02
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.82
-  type: ss
-- name: 🇺🇸 US-03
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
-  port: 443
-  server: 38.54.64.247
-  sni: 38.54.64.247
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 IN-03
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.71
-  type: ss
+  uuid: 8237ec34-143a-11ee-8019-000017022008
+  ws-path: /look
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-02
+  network: ws
+  port: 80
+  server: 159.223.94.156
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-path: /anti13.zingfast.vn
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇬🇧 GB-01
   - 🌍 Node-01
-  - 🇮🇳 IN-01
-  - 🇮🇳 IN-02
-  - 🇺🇸 US-03
-  - 🇮🇳 IN-03
+  - 🌍 Node-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇬🇧 GB-01
   - 🌍 Node-01
-  - 🇮🇳 IN-01
-  - 🇮🇳 IN-02
-  - 🇺🇸 US-03
-  - 🇮🇳 IN-03
+  - 🌍 Node-02
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
