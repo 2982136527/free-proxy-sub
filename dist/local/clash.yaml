@@ -7,6 +7,53 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  host: v33.hdacd.com
+  name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v6.hdacd.com
+  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  network: tcp
+  port: 30806
+  server: v6.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v9.hdacd.com
+  name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: guanwang.awsno.com
+  name: 🇺🇸_US_美国
+  network: tcp
+  port: 443
+  server: guanwang.awsno.com
+  tls: true
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  ws-path: /
+- cipher: aes-256-cfb
+  name: SS-63.177.252.44:443
+  password: amazonskr05
+  port: 443
+  server: 63.177.252.44
+  type: ss
+- alterId: 0
+  cipher: auto
   name: VMess-aaaa.wxx.gay:443
   network: ws
   port: 443
@@ -17,6 +64,16 @@ proxies:
   ws-path: /look
 - alterId: 0
   cipher: auto
+  host: v10.hdacd.com
+  name: 🇭🇰 香港|@ripaojiedian
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: VMess-159.223.94.156:80
   network: ws
   port: 80
@@ -24,19 +81,68 @@ proxies:
   type: vmess
   uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
   ws-path: /anti13.zingfast.vn
+- name: '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.135
+  sni: 185.137.157.135
+  type: trojan
+- name: '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_2'
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.149
+  sni: 185.137.157.149
+  type: trojan
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20V2CROSS.COM'
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  port: 443
+  server: 149.104.104.58
+  sni: 149.104.104.58
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: 4cdn.njkrpl.com
+  name: 🇺🇸_US_美国->🇫🇷_FR_法国
+  network: ws
+  port: 443
+  server: 4cdn.njkrpl.com
+  tls: true
+  type: vmess
+  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
+  ws-path: /
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
   - 🔰 自动选择
   - ♻️ 自动测速
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  - 🇺🇸_US_美国
+  - SS-63.177.252.44:443
   - VMess-aaaa.wxx.gay:443
+  - 🇭🇰 香港|@ripaojiedian
   - VMess-159.223.94.156:80
+  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
+  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_2'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20V2CROSS.COM'
+  - 🇺🇸_US_美国->🇫🇷_FR_法国
   type: select
 - interval: 300
   name: 🔰 自动选择
   proxies: &id001
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  - 🇺🇸_US_美国
+  - SS-63.177.252.44:443
   - VMess-aaaa.wxx.gay:443
+  - 🇭🇰 香港|@ripaojiedian
   - VMess-159.223.94.156:80
+  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
+  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_2'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20V2CROSS.COM'
+  - 🇺🇸_US_美国->🇫🇷_FR_法国
   type: url-test
   url: https://www.gstatic.com/generate_204
 - interval: 300
