@@ -7,217 +7,96 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: s5gydl.936.us.ci
-  name: 🇭🇰 HK-01
-  network: ws
-  port: 2053
-  server: 23.133.52.10
-  sni: s5gydl.936.us.ci
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦 CA-01
-  network: tcp
-  port: 10043
-  server: family.bucket.x9.kfc-520.com
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-- alterId: 0
-  cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
+  host: v24.hdacd.com
   name: 🇺🇸 US-01
-  network: ws
-  port: 8443
-  server: 162.159.38.2
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: maoyibai.ccwu.cc
-  name: 🇭🇰 HK-02
-  network: ws
-  port: 2053
-  server: cf7.466688.xyz
-  sni: maoyibai.ccwu.cc
-  type: vless
-  uuid: 68081c3e-77c2-4d22-81d5-cccedb7ca37b
-- name: 🇺🇸 US-02
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: lzwnb.ccwu.cc
-  name: 🇺🇸 US-03
-  network: ws
-  port: 8443
-  server: play.mc.js.cool
-  sni: lzwnb.ccwu.cc
-  type: vless
-  uuid: 4f6aa10d-9332-4933-8dc8-78c9a42f6082
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-01
   network: tcp
-  port: 10050
-  server: family.bucket.x9.kfc-520.com
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US-04
-  network: tcp
-  port: 1001
-  server: 154.36.128.61
-  type: vmess
-  uuid: 9ae252b6-ec0a-431a-b5da-38f2ece84683
-  ws-path: /x
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: de-107-x.11-12-13-14.us
-  name: 🇩🇪 DE-01
-  network: ws
-  port: 2083
-  server: cf-mci.coixconqwe1.ir
-  sni: de-107-x.11-12-13-14.us
-  type: vless
-  uuid: 04915c84-17d6-423d-a182-24a11dddb468
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK-03
-  network: tcp
-  port: 30807
-  server: v10.hdacd.com
+  port: 30824
+  server: v24.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
 - alterId: 0
   cipher: auto
-  encryption: none
-  fp: chrome
-  name: 🇬🇧 GB-01
-  network: raw
-  port: 443
-  server: 77.110.113.188
-  sni: www.samsung.com
-  type: vless
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-- alterId: 0
-  cipher: auto
-  encryption: mlkem768x25519plus.native.0rtt.sA1qB8b6IwkNTwEubO-TQ53GEyjpAgNchOnSww07e1I
-  flow: xtls-rprx-vision
-  fp: chrome
-  host: www.icloud.com
-  name: 🇫🇮 FI-01
-  network: http
-  port: 24504
-  server: content.vipdatanetwork.com
-  type: vless
-  uuid: 55349a9f-03b4-46ff-a08b-f6b5f40bb9d5
-- alterId: 0
-  cipher: auto
-  encryption: mlkem768x25519plus.native.0rtt.sA1qB8b6IwkNTwEubO-TQ53GEyjpAgNchOnSww07e1I
-  flow: xtls-rprx-vision
-  fp: chrome
-  host: www.icloud.com
-  name: 🇩🇪 DE-02
-  network: http
-  port: 24504
-  server: service.vipdatanetwork.com
-  type: vless
-  uuid: 55349a9f-03b4-46ff-a08b-f6b5f40bb9d5
-- alterId: 0
-  cipher: auto
-  encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  name: 🇩🇪 DE-03
+  host: v33.hdacd.com
+  name: 🇩🇪 DE-01
   network: tcp
-  port: 443
-  server: zaplio-gook.ru
-  sni: zaplio-gook.ru
-  type: vless
-  uuid: 8f0560ec-ba22-4431-a6a7-318dc59d5233
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - alterId: 0
   cipher: auto
-  encryption: none
-  fp: chrome
-  host: hamshahriesfahan.com
-  name: 🇩🇪 DE-04
+  host: s5gydl.936.us.ci
+  name: 🌍 Node-01
   network: ws
   port: 443
-  server: 140.248.180.30
-  sni: speedtest.net
+  server: 91.110.209.104
+  sni: s5gydl.936.us.ci
   type: vless
-  uuid: 86fdb625-1a7f-4784-99a6-a96b3a80fc6d
-- cipher: aes-256-cfb
-  name: 🇩🇪 DE-05
-  password: amazonskr05
-  port: 443
-  server: 63.177.252.44
-  type: ss
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
 - alterId: 0
   cipher: auto
-  fp: qq
-  name: 🇬🇧 GB-02
-  network: grpc
-  port: 8443
-  server: uk.riotvpn.eu
-  sni: avatars.mds.yandex.net
-  type: vless
-  uuid: f885cecc-a6ea-4e9b-87da-c7dc4b745348
+  host: v9.hdacd.com
+  name: 🇭🇰 HK-01
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v29.hdacd.com
+  name: 🇺🇸 US-10
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v6.hdacd.com
+  name: 🇯🇵 JP-01
+  network: tcp
+  port: 30806
+  server: v6.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v4.hdacd.com
+  name: 🇺🇸 US-25
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇭🇰 HK-01
-  - 🇨🇦 CA-01
   - 🇺🇸 US-01
-  - 🇭🇰 HK-02
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🌍 Node-01
-  - 🇺🇸 US-04
   - 🇩🇪 DE-01
-  - 🇭🇰 HK-03
-  - 🇬🇧 GB-01
-  - 🇫🇮 FI-01
-  - 🇩🇪 DE-02
-  - 🇩🇪 DE-03
-  - 🇩🇪 DE-04
-  - 🇩🇪 DE-05
-  - 🇬🇧 GB-02
+  - 🌍 Node-01
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-10
+  - 🇯🇵 JP-01
+  - 🇺🇸 US-25
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇭🇰 HK-01
-  - 🇨🇦 CA-01
   - 🇺🇸 US-01
-  - 🇭🇰 HK-02
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🌍 Node-01
-  - 🇺🇸 US-04
   - 🇩🇪 DE-01
-  - 🇭🇰 HK-03
-  - 🇬🇧 GB-01
-  - 🇫🇮 FI-01
-  - 🇩🇪 DE-02
-  - 🇩🇪 DE-03
-  - 🇩🇪 DE-04
-  - 🇩🇪 DE-05
-  - 🇬🇧 GB-02
+  - 🌍 Node-01
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-10
+  - 🇯🇵 JP-01
+  - 🇺🇸 US-25
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
