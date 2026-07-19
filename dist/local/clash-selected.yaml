@@ -7,9 +7,29 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  host: v9.hdacd.com
+  name: 🇭🇰 HK-01
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v4.hdacd.com
+  name: 🇺🇸 US-05
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
   fp: random
   host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-01
+  name: 🇺🇸 US-08
   network: ws
   port: 8443
   server: 162.159.38.2
@@ -19,201 +39,39 @@ proxies:
 - alterId: 0
   cipher: auto
   fp: chrome
-  host: lzwnb.ccwu.cc
-  name: 🇺🇸 US-02
-  network: ws
-  port: 8443
-  server: play.mc.js.cool
-  sni: lzwnb.ccwu.cc
-  type: vless
-  uuid: 4f6aa10d-9332-4933-8dc8-78c9a42f6082
-- name: 🇺🇸 US-03
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: hamshahriesfahan.com
-  name: 🇩🇪 DE-01
-  network: ws
-  port: 443
-  server: 199.232.9.94
-  sni: speedtest.net
-  type: vless
-  uuid: 86fdb625-1a7f-4784-99a6-a96b3a80fc6d
-- cipher: aes-256-cfb
-  name: 🇩🇪 DE-02
-  password: amazonskr05
-  port: 443
-  server: 63.177.252.44
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪 DE-03
-  password: amazonskr05
-  port: 443
-  server: 3.75.172.120
-  type: ss
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: diyakoteam-production.up.railway.app
-  name: 🇺🇸 US-04
-  network: ws
-  port: 443
-  server: diyakoteam-production.up.railway.app
-  sni: diyakoteam-production.up.railway.app
-  type: vless
-  uuid: 5105eeda-427b-45d9-4ecb-fd617bd55bac
-- alterId: 0
-  cipher: auto
-  encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  name: 🇩🇪 DE-04
-  network: tcp
-  port: 53921
-  server: real4.gogoli.xyz
-  sni: www.yahoo.com
-  type: vless
-  uuid: 6f24fd9a-7dd0-4e01-83e4-13fc3abc7dff
-- alterId: 0
-  cipher: auto
-  encryption: mlkem768x25519plus.native.0rtt.sA1qB8b6IwkNTwEubO-TQ53GEyjpAgNchOnSww07e1I
-  flow: xtls-rprx-vision
-  fp: chrome
-  host: www.icloud.com
-  name: 🇩🇪 DE-05
-  network: http
-  port: 24504
-  server: service.vipdatanetwork.com
-  type: vless
-  uuid: 55349a9f-03b4-46ff-a08b-f6b5f40bb9d5
-- alterId: 0
-  cipher: auto
-  fp: qq
-  name: 🇬🇧 GB-01
-  network: grpc
-  port: 8443
-  server: uk.riotvpn.eu
-  sni: avatars.mds.yandex.net
-  type: vless
-  uuid: f885cecc-a6ea-4e9b-87da-c7dc4b745348
-- alterId: 0
-  cipher: auto
-  encryption: mlkem768x25519plus.native.0rtt.sA1qB8b6IwkNTwEubO-TQ53GEyjpAgNchOnSww07e1I
-  flow: xtls-rprx-vision
-  fp: chrome
-  host: www.icloud.com
-  name: 🇫🇮 FI-01
-  network: http
-  port: 24504
-  server: content.vipdatanetwork.com
-  type: vless
-  uuid: 55349a9f-03b4-46ff-a08b-f6b5f40bb9d5
-- alterId: 0
-  cipher: auto
-  fp: firefox
   name: 🌍 Node-01
-  network: grpc
-  port: 443
-  server: 31.56.188.123
-  sni: www.amd.com
+  port: 8443
+  server: love.ns.cloudflare.com
+  sni: vamosargentina.dpdns.org
   type: vless
-  uuid: 54d91bc3-a461-4458-a620-36f27f5d6975
-- insecure: '1'
+  uuid: '%40V2ConfigPro'
+- alterId: 0
+  cipher: auto
+  host: late-mountain-6801.355.workers.dev
   name: 🌍 Node-02
-  password: f422e914-ba20-4855-9441-c044d3f2f6e1
-  port: 443
-  server: nl.air-vpn.lol
-  sni: nl.air-vpn.lol
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  fp: firefox
-  name: 🇸🇪 SE-01
-  network: grpc
-  port: 443
-  server: api.oneoker.com
-  sni: api.oneoker.com
+  network: ws
+  port: 8880
+  server: cf3.466688.xyz
   type: vless
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-- alterId: 0
-  cipher: auto
-  encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  name: 🇩🇪 DE-06
-  network: tcp
-  port: 53921
-  server: real1.gogoli.xyz
-  sni: www.yahoo.com
-  type: vless
-  uuid: e115d01c-1869-4d21-879c-cbbe953d6e76
-- cipher: aes-256-cfb
-  name: 🇩🇪 DE-07
-  password: amazonskr05
-  port: 443
-  server: 54.93.83.254
-  type: ss
-- alterId: 0
-  cipher: auto
-  encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  name: 🇩🇪 DE-08
-  network: tcp
-  port: 53921
-  server: real2.gogoli.xyz
-  sni: www.yahoo.com
-  type: vless
-  uuid: e115d01c-1869-4d21-879c-cbbe953d6e76
+  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🇩🇪 DE-01
-  - 🇩🇪 DE-02
-  - 🇩🇪 DE-03
-  - 🇺🇸 US-04
-  - 🇩🇪 DE-04
-  - 🇩🇪 DE-05
-  - 🇬🇧 GB-01
-  - 🇫🇮 FI-01
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-05
+  - 🇺🇸 US-08
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇸🇪 SE-01
-  - 🇩🇪 DE-06
-  - 🇩🇪 DE-07
-  - 🇩🇪 DE-08
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🇩🇪 DE-01
-  - 🇩🇪 DE-02
-  - 🇩🇪 DE-03
-  - 🇺🇸 US-04
-  - 🇩🇪 DE-04
-  - 🇩🇪 DE-05
-  - 🇬🇧 GB-01
-  - 🇫🇮 FI-01
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-05
+  - 🇺🇸 US-08
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇸🇪 SE-01
-  - 🇩🇪 DE-06
-  - 🇩🇪 DE-07
-  - 🇩🇪 DE-08
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
