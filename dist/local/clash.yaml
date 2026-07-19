@@ -5,6 +5,75 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: tianshu13.pages.dev
+  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
+  network: ws
+  port: 443
+  server: 172.64.147.15
+  sni: tianshu13.pages.dev
+  type: vless
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2007'
+  network: ws
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: t1s1.rittbo.kdns.fr
+  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
+  network: ws
+  port: 443
+  server: cdn.9889888.xyz
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: cf.cfvip.lol
+  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_3'
+  network: ws
+  port: 443
+  server: 172.64.155.209
+  sni: cf.cfvip.lol
+  type: vless
+  uuid: 93f0761d-4393-4b43-a523-e812fa0b7e83
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: nl1.cloudbench.app
+  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_4'
+  network: ws
+  port: 443
+  server: 172.64.151.120
+  sni: nl1.cloudbench.app
+  type: vless
+  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: tianshu13.pages.dev
+  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_5'
+  network: ws
+  port: 443
+  server: 172.64.147.137
+  sni: tianshu13.pages.dev
+  type: vless
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
 - name: 荷兰 002
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
@@ -12,6 +81,28 @@ proxies:
   skip-cert-verify: true
   sni: space.byu.id.yxls.eu.cc
   type: trojan
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: lzwnb.ccwu.cc
+  name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2004'
+  network: ws
+  port: 8443
+  server: play.mc.js.cool
+  sni: lzwnb.ccwu.cc
+  type: vless
+  uuid: 4f6aa10d-9332-4933-8dc8-78c9a42f6082
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: pan21.global.ssl.fastly.net
+  name: '%E7%BE%8E%E5%9B%BD+V2CROSS.COM'
+  network: ws
+  port: 443
+  server: 199.232.249.110
+  sni: ssl.fastly.com
+  type: vless
+  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
 - name: 荷兰 001
   password: MiTiVPN
   port: 443
@@ -19,11 +110,76 @@ proxies:
   sni: 95r.ir
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: hamshahriesfahan.com
+  name: '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2006'
+  network: ws
+  port: 443
+  server: 199.232.9.94
+  sni: speedtest.net
+  type: vless
+  uuid: 86fdb625-1a7f-4784-99a6-a96b3a80fc6d
 - name: 英国 001
   password: MITIVPN
   port: 443
   server: 164.38.155.135
   sni: 95r.ir
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 香港|@ripaojiedian
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: 法国 001
+  password: MITIVPN
+  port: 443
+  server: 94.140.0.100
+  sni: 95r.ir
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2007'
+  password: amazonskr05
+  port: 443
+  server: 54.93.83.254
+  type: ss
+- cipher: aes-256-cfb
+  name: '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2008'
+  password: amazonskr05
+  port: 443
+  server: 3.75.172.120
+  type: ss
+- cipher: aes-256-cfb
+  name: '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2009'
+  password: amazonskr05
+  port: 443
+  server: 63.177.252.44
+  type: ss
+- alterId: 0
+  cipher: auto
+  encryption: none
+  flow: xtls-rprx-vision
+  fp: chrome
+  name: '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2017'
+  network: tcp
+  port: 53921
+  server: real4.gogoli.xyz
+  sni: www.yahoo.com
+  type: vless
+  uuid: 6f24fd9a-7dd0-4e01-83e4-13fc3abc7dff
+- name: 美国 010
+  password: Mitivpn
+  port: 443
+  server: iranpoems.ir
+  sni: www.gamingdll.ir
   type: trojan
   udp: true
 - alterId: 0
@@ -36,19 +192,79 @@ proxies:
   type: vmess
   uuid: 8237ec34-143a-11ee-8019-000017022008
   ws-path: /look
-- name: 美国 010
-  password: Mitivpn
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: diyakoteam-production.up.railway.app
+  name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2012'
+  network: ws
   port: 443
-  server: iranpoems.ir
-  sni: www.gamingdll.ir
+  server: diyakoteam-production.up.railway.app
+  sni: diyakoteam-production.up.railway.app
+  type: vless
+  uuid: 5105eeda-427b-45d9-4ecb-fd617bd55bac
+- name: '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM'
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.145
+  type: trojan
+- name: '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM_2'
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.156
+  sni: 185.137.157.156
+  type: trojan
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  name: '%F0%9F%87%B8%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%91%9E%E5%85%B8%2001'
+  network: grpc
+  port: 443
+  server: api.oneoker.com
+  sni: api.oneoker.com
+  type: vless
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+- alterId: 0
+  cipher: auto
+  encryption: mlkem768x25519plus.native.0rtt.sA1qB8b6IwkNTwEubO-TQ53GEyjpAgNchOnSww07e1I
+  flow: xtls-rprx-vision
+  fp: chrome
+  host: www.icloud.com
+  name: '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2014'
+  network: http
+  port: 24504
+  server: service.vipdatanetwork.com
+  type: vless
+  uuid: 55349a9f-03b4-46ff-a08b-f6b5f40bb9d5
+- name: 英国 002
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.138
   type: trojan
   udp: true
-- name: 美国 011
-  password: humanity
+- alterId: 0
+  cipher: auto
+  encryption: mlkem768x25519plus.native.0rtt.sA1qB8b6IwkNTwEubO-TQ53GEyjpAgNchOnSww07e1I
+  flow: xtls-rprx-vision
+  fp: chrome
+  host: www.icloud.com
+  name: '%F0%9F%87%AB%F0%9F%87%AE%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8A%AC%E5%85%B0%2002'
+  network: http
+  port: 24504
+  server: content.vipdatanetwork.com
+  type: vless
+  uuid: 55349a9f-03b4-46ff-a08b-f6b5f40bb9d5
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  name: '%F0%9F%87%A6%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%98%BF%E8%81%94%E9%85%8B%2003'
+  network: grpc
   port: 443
-  server: 165.215.250.14
-  sni: www.creationlong.org
-  type: trojan
+  server: 31.56.188.123
+  sni: www.amd.com
+  type: vless
+  uuid: 54d91bc3-a461-4458-a620-36f27f5d6975
 - alterId: 0
   cipher: auto
   name: VMess-159.223.94.156:80
@@ -58,46 +274,150 @@ proxies:
   type: vmess
   uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
   ws-path: /anti13.zingfast.vn
-- name: 英国 002
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+- insecure: '1'
+  name: '%F0%9F%87%A6%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%98%BF%E8%81%94%E9%85%8B%2001'
+  password: f422e914-ba20-4855-9441-c044d3f2f6e1
   port: 443
-  server: 185.137.157.138
-  type: trojan
-  udp: true
-- name: 法国 001
-  password: MITIVPN
+  server: nl.air-vpn.lol
+  sni: nl.air-vpn.lol
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  encryption: none
+  flow: xtls-rprx-vision
+  fp: chrome
+  name: '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2019'
+  network: tcp
+  port: 53921
+  server: real2.gogoli.xyz
+  sni: www.yahoo.com
+  type: vless
+  uuid: e115d01c-1869-4d21-879c-cbbe953d6e76
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: snapp.io
+  name: '%E7%BE%8E%E5%9B%BD+V2CROSS.COM_2'
+  network: tcp
+  port: 48711
+  server: 155.103.69.195
+  type: vless
+  uuid: 23a9b46e-9443-4268-81c5-399929919ab0
+- alterId: 0
+  cipher: auto
+  encryption: none
+  flow: xtls-rprx-vision
+  fp: chrome
+  name: '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2018'
+  network: tcp
+  port: 53921
+  server: real1.gogoli.xyz
+  sni: www.yahoo.com
+  type: vless
+  uuid: e115d01c-1869-4d21-879c-cbbe953d6e76
+- name: 美国 011
+  password: humanity
   port: 443
-  server: 94.140.0.100
-  sni: 95r.ir
+  server: 165.215.250.14
+  sni: www.creationlong.org
   type: trojan
-  udp: true
+- name: '%E7%BE%8E%E5%9B%BD+V2CROSS.COM_3'
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  port: 443
+  server: 149.104.104.58
+  sni: 149.104.104.58
+  type: trojan
+- alterId: 0
+  cipher: auto
+  fp: qq
+  name: '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2002'
+  network: grpc
+  port: 8443
+  server: uk.riotvpn.eu
+  sni: avatars.mds.yandex.net
+  type: vless
+  uuid: f885cecc-a6ea-4e9b-87da-c7dc4b745348
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
   - 🔰 自动选择
   - ♻️ 自动测速
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2007'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_3'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_4'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_5'
   - 荷兰 002
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2004'
+  - '%E7%BE%8E%E5%9B%BD+V2CROSS.COM'
   - 荷兰 001
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2006'
   - 英国 001
-  - VMess-aaaa.wxx.gay:443
-  - 美国 010
-  - 美国 011
-  - VMess-159.223.94.156:80
-  - 英国 002
+  - 香港|@ripaojiedian
   - 法国 001
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2007'
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2008'
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2009'
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2017'
+  - 美国 010
+  - VMess-aaaa.wxx.gay:443
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2012'
+  - '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM'
+  - '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM_2'
+  - '%F0%9F%87%B8%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%91%9E%E5%85%B8%2001'
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2014'
+  - 英国 002
+  - '%F0%9F%87%AB%F0%9F%87%AE%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8A%AC%E5%85%B0%2002'
+  - '%F0%9F%87%A6%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%98%BF%E8%81%94%E9%85%8B%2003'
+  - VMess-159.223.94.156:80
+  - '%F0%9F%87%A6%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%98%BF%E8%81%94%E9%85%8B%2001'
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2019'
+  - '%E7%BE%8E%E5%9B%BD+V2CROSS.COM_2'
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2018'
+  - 美国 011
+  - '%E7%BE%8E%E5%9B%BD+V2CROSS.COM_3'
+  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2002'
   type: select
 - interval: 300
   name: 🔰 自动选择
   proxies: &id001
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2007'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_3'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_4'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_5'
   - 荷兰 002
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2004'
+  - '%E7%BE%8E%E5%9B%BD+V2CROSS.COM'
   - 荷兰 001
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2006'
   - 英国 001
-  - VMess-aaaa.wxx.gay:443
-  - 美国 010
-  - 美国 011
-  - VMess-159.223.94.156:80
-  - 英国 002
+  - 香港|@ripaojiedian
   - 法国 001
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2007'
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2008'
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2009'
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2017'
+  - 美国 010
+  - VMess-aaaa.wxx.gay:443
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2012'
+  - '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM'
+  - '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM_2'
+  - '%F0%9F%87%B8%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%91%9E%E5%85%B8%2001'
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2014'
+  - 英国 002
+  - '%F0%9F%87%AB%F0%9F%87%AE%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8A%AC%E5%85%B0%2002'
+  - '%F0%9F%87%A6%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%98%BF%E8%81%94%E9%85%8B%2003'
+  - VMess-159.223.94.156:80
+  - '%F0%9F%87%A6%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%98%BF%E8%81%94%E9%85%8B%2001'
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2019'
+  - '%E7%BE%8E%E5%9B%BD+V2CROSS.COM_2'
+  - '%F0%9F%87%A9%F0%9F%87%AA%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E5%BE%B7%E5%9B%BD%2018'
+  - 美国 011
+  - '%E7%BE%8E%E5%9B%BD+V2CROSS.COM_3'
+  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2002'
   type: url-test
   url: https://www.gstatic.com/generate_204
 - interval: 300
