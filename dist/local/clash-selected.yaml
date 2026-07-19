@@ -15,16 +15,28 @@ proxies:
   sni: www.apple.com
   type: vless
   uuid: 904183f1-0495-478b-b11f-1fe12e84ad8b
+- alterId: 0
+  cipher: auto
+  host: t1s1.rittbo.kdns.fr
+  name: 🌍 Node-02
+  network: ws
+  port: 443
+  server: 162.159.10.87
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🌍 Node-01
+  - 🌍 Node-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🌍 Node-01
+  - 🌍 Node-02
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
