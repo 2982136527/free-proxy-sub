@@ -7,21 +7,29 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  host: v24.hdacd.com
-  name: 🇺🇸 US-01
+  name: 🌍 Node-01
   network: tcp
-  port: 30824
-  server: v24.hdacd.com
+  port: 30845
+  server: v45.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  host: v9.hdacd.com
+  name: 🇭🇰 HK-01
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
 - alterId: 0
   cipher: auto
-  host: v33.hdacd.com
-  name: 🇩🇪 DE-01
+  host: v4.hdacd.com
+  name: 🇺🇸 US-06
   network: tcp
-  port: 30833
-  server: v33.hdacd.com
+  port: 30804
+  server: v4.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
@@ -37,312 +45,63 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  host: v29.hdacd.com
-  name: 🇺🇸 US-02
+  host: v33.hdacd.com
+  name: 🇩🇪 DE-01
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-02
   network: tcp
   port: 30829
   server: v29.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
 - alterId: 0
   cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-03
-  network: ws
-  port: 8443
-  server: 162.159.38.2
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
-- alterId: 0
-  cipher: auto
-  host: v4.hdacd.com
-  name: 🇺🇸 US-04
+  host: v24.hdacd.com
+  name: 🇺🇸 US-16
   network: tcp
-  port: 30804
-  server: v4.hdacd.com
+  port: 30824
+  server: v24.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v9.hdacd.com
-  name: 🇭🇰 HK-01
-  network: tcp
-  port: 30809
-  server: v9.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: vp24.cc.cd
-  name: 🇳🇱 NL-01
-  network: ws
-  port: 2087
-  server: 188.164.248.143
-  sni: vp24.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: nl1.cloudbench.app
-  name: 🇺🇸 US-05
-  network: ws
-  port: 443
-  server: 172.64.151.120
-  sni: nl1.cloudbench.app
-  type: vless
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: lzwnb.ccwu.cc
-  name: 🇺🇸 US-06
-  network: ws
-  port: 8443
-  server: play.mc.js.cool
-  sni: lzwnb.ccwu.cc
-  type: vless
-  uuid: 4f6aa10d-9332-4933-8dc8-78c9a42f6082
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: edt2.yfqh08811.ccwu.cc
-  name: 🇺🇸 US-07
-  network: ws
-  port: 443
-  server: cloudflare.182682.xyz
-  sni: edt2.yfqh08811.ccwu.cc
-  type: vless
-  uuid: 4a1441b0-7bc8-4906-85cf-6b59c256b480
-- name: 🇺🇸 US-08
-  password: humanity
-  port: 443
-  server: 172.64.146.28
-  sni: www.gossipglove.com
-  type: trojan
-- name: 🇺🇸 US-09
+- name: 🇳🇱 NL-03
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
   server: 188.164.248.122
+  skip-cert-verify: true
   sni: space.byu.id.yxls.eu.cc
   type: trojan
-- alterId: 0
-  cipher: auto
-  encryption: none
-  host: pan21.global.ssl.fastly.net
-  name: 🇺🇸 US-10
-  network: ws
-  port: 443
-  server: 199.232.22.39
-  sni: ssl.fastly.com
-  type: vless
-  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
-- name: 🌍 Node-01
-  password: Mitivpn
-  port: 443
-  server: 151.101.56.6
-  sni: ssl.fastly.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp42.cc.cd
-  name: 🇺🇸 US-11
-  network: ws
-  port: 2087
-  server: 104.26.10.51
-  sni: vp42.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- name: 🇧🇷 BR-01
-  password: mitivpn
-  port: 443
-  server: 188.114.97.6
-  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
-  type: trojan
-- name: 🇫🇷 FR-01
-  password: rYuChHcwQZskq9E0zdoR
-  port: 443
-  server: ip4.vpean2.qzz.io
-  sni: vpn5.rnmcnm.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: diyakoteam-production.up.railway.app
-  name: 🇺🇸 US-12
-  network: ws
-  port: 443
-  server: diyakoteam-production.up.railway.app
-  sni: diyakoteam-production.up.railway.app
-  type: vless
-  uuid: 5105eeda-427b-45d9-4ecb-fd617bd55bac
-- name: 🇺🇸 US-13
-  password: humanity
-  port: 443
-  server: www.host-tracker.com
-  sni: www.gossipglove.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: v10.zgtfqs.click
-  name: 🇭🇰 HK-02
-  network: tcp
-  port: 30807
-  server: v10.zgtfqs.click
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- name: 🌍 Node-02
-  password: 9c521e24-7326-acd3-acec-d0afac2b465d
-  port: 8080
-  server: 104.25.108.147
-  sni: red-cell-47f9.milaniomilan9.workers.dev
-  type: trojan
-- name: 🌍 Node-03
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 91.221.190.80
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- alterId: 0
-  cipher: auto
-  host: windows64.net
-  name: 🇬🇧 GB-01
-  network: tcp
-  port: 2078
-  server: 93.180.134.52
-  type: vmess
-  uuid: 1c18da66-a912-40af-b90d-787574efe6d3
-  ws-path: /?ed=1024
-- alterId: 0
-  cipher: auto
-  encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  name: 🇩🇪 DE-02
-  network: tcp
-  port: 53921
-  server: real4.gogoli.xyz
-  sni: www.yahoo.com
-  type: vless
-  uuid: 6f24fd9a-7dd0-4e01-83e4-13fc3abc7dff
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 US-14
-  password: ebEfGowZtV1BEFXZOtgAXi
-  port: 443
-  server: tinkered-pennies-puppies.freesocks.work
-  type: ss
-- alterId: 0
-  cipher: auto
-  encryption: mlkem768x25519plus.native.0rtt.sA1qB8b6IwkNTwEubO-TQ53GEyjpAgNchOnSww07e1I
-  flow: xtls-rprx-vision
-  fp: chrome
-  host: www.icloud.com
-  name: 🇩🇪 DE-03
-  network: http
-  port: 24504
-  server: service.vipdatanetwork.com
-  type: vless
-  uuid: 55349a9f-03b4-46ff-a08b-f6b5f40bb9d5
-- cipher: aes-256-cfb
-  name: 🇩🇪 DE-04
-  password: amazonskr05
-  port: 443
-  server: 63.177.252.44
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🌍 Node-04
-  password: Vr06rU_v1vFPYeXq9zbsAA
-  port: 1080
-  server: 194.54.80.37
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK-03
-  network: tcp
-  port: 30807
-  server: v10.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-01
-  - 🇩🇪 DE-01
-  - 🇯🇵 JP-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🇺🇸 US-04
-  - 🇭🇰 HK-01
-  - 🇳🇱 NL-01
-  - 🇺🇸 US-05
-  - 🇺🇸 US-06
-  - 🇺🇸 US-07
-  - 🇺🇸 US-08
-  - 🇺🇸 US-09
-  - 🇺🇸 US-10
   - 🌍 Node-01
-  - 🇺🇸 US-11
-  - 🇧🇷 BR-01
-  - 🇫🇷 FR-01
-  - 🇺🇸 US-12
-  - 🇺🇸 US-13
-  - 🇭🇰 HK-02
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-06
+  - 🇯🇵 JP-01
+  - 🇩🇪 DE-01
   - 🌍 Node-02
-  - 🌍 Node-03
-  - 🇬🇧 GB-01
-  - 🇩🇪 DE-02
-  - 🇺🇸 US-14
-  - 🇩🇪 DE-03
-  - 🇩🇪 DE-04
-  - 🌍 Node-04
-  - 🇭🇰 HK-03
+  - 🇺🇸 US-16
+  - 🇳🇱 NL-03
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-01
-  - 🇩🇪 DE-01
-  - 🇯🇵 JP-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
-  - 🇺🇸 US-04
-  - 🇭🇰 HK-01
-  - 🇳🇱 NL-01
-  - 🇺🇸 US-05
-  - 🇺🇸 US-06
-  - 🇺🇸 US-07
-  - 🇺🇸 US-08
-  - 🇺🇸 US-09
-  - 🇺🇸 US-10
   - 🌍 Node-01
-  - 🇺🇸 US-11
-  - 🇧🇷 BR-01
-  - 🇫🇷 FR-01
-  - 🇺🇸 US-12
-  - 🇺🇸 US-13
-  - 🇭🇰 HK-02
+  - 🇭🇰 HK-01
+  - 🇺🇸 US-06
+  - 🇯🇵 JP-01
+  - 🇩🇪 DE-01
   - 🌍 Node-02
-  - 🌍 Node-03
-  - 🇬🇧 GB-01
-  - 🇩🇪 DE-02
-  - 🇺🇸 US-14
-  - 🇩🇪 DE-03
-  - 🇩🇪 DE-04
-  - 🌍 Node-04
-  - 🇭🇰 HK-03
+  - 🇺🇸 US-16
+  - 🇳🇱 NL-03
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
