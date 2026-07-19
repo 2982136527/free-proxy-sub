@@ -4,35 +4,15 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies:
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-01
-  network: tcp
-  port: 30845
-  server: v45.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-02
-  network: tcp
-  port: 30829
-  server: v29.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+proxies: []
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🌍 Node-01
-  - 🌍 Node-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies:
-  - 🌍 Node-01
-  - 🌍 Node-02
+  proxies: []
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
