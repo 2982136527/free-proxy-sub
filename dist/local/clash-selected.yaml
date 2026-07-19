@@ -29,7 +29,7 @@ proxies:
   cipher: auto
   fp: random
   host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-05
+  name: 🇺🇸 US-08
   network: ws
   port: 8443
   server: 162.159.38.2
@@ -38,17 +38,8 @@ proxies:
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
-  host: late-mountain-6801.355.workers.dev
-  name: 🌍 Node-01
-  network: ws
-  port: 8880
-  server: cf3.466688.xyz
-  type: vless
-  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
-- alterId: 0
-  cipher: auto
   fp: chrome
-  name: 🌍 Node-02
+  name: 🌍 Node-01
   port: 8443
   server: love.ns.cloudflare.com
   sni: vamosargentina.dpdns.org
@@ -56,16 +47,23 @@ proxies:
   uuid: '%40V2ConfigPro'
 - alterId: 0
   cipher: auto
-  encryption: none
-  fp: chrome
-  host: cfoo-146.pages.dev
-  name: 🇺🇸 US-21
+  host: late-mountain-6801.355.workers.dev
+  name: 🌍 Node-02
   network: ws
-  port: 443
+  port: 8880
   server: cf3.466688.xyz
-  sni: cfoo-146.pages.dev
   type: vless
-  uuid: b08562b0-dbc0-47d1-860d-9435133b25c9
+  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: shrill-fog-67af.235-e6a.workers.dev
+  name: 🇺🇸 US-24
+  network: ws
+  port: 8880
+  server: cf7.466688.xyz
+  type: vless
+  uuid: 7111212b-6bc3-459a-85b4-3b13038a19f8
 - name: 🇳🇱 NL-01
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
@@ -73,40 +71,28 @@ proxies:
   skip-cert-verify: true
   sni: space.byu.id.yxls.eu.cc
   type: trojan
-- alterId: 0
-  cipher: auto
-  encryption: none
-  host: shrill-fog-67af.235-e6a.workers.dev
-  name: 🇺🇸 US-23
-  network: ws
-  port: 8880
-  server: cf7.466688.xyz
-  type: vless
-  uuid: 7111212b-6bc3-459a-85b4-3b13038a19f8
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🇺🇸 US-01
   - 🇭🇰 HK-01
-  - 🇺🇸 US-05
+  - 🇺🇸 US-08
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇺🇸 US-21
+  - 🇺🇸 US-24
   - 🇳🇱 NL-01
-  - 🇺🇸 US-23
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🇺🇸 US-01
   - 🇭🇰 HK-01
-  - 🇺🇸 US-05
+  - 🇺🇸 US-08
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇺🇸 US-21
+  - 🇺🇸 US-24
   - 🇳🇱 NL-01
-  - 🇺🇸 US-23
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
