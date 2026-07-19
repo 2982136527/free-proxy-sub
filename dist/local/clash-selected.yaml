@@ -7,46 +7,206 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  host: v9.hdacd.com
   name: 🇭🇰 HK-01
   network: tcp
-  port: 30807
-  server: v10.hdacd.com
+  port: 30809
+  server: v9.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-01
-  network: ws
-  port: 443
-  server: aaaa.wxx.gay
-  tls: true
+  host: v4.hdacd.com
+  name: 🇺🇸 US-01
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
   type: vmess
-  uuid: 8237ec34-143a-11ee-8019-000017022008
-  ws-path: /look
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-02
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-02
   network: ws
-  port: 80
-  server: 159.223.94.156
+  port: 443
+  server: 162.159.38.78
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-05
+  network: ws
+  port: 443
+  server: 108.162.195.58
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-11
+  network: ws
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-13
+  network: ws
+  port: 2087
+  server: 172.64.146.59
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-14
+  network: ws
+  port: 443
+  server: cf.tencentapp.cn
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: 40t1.wxgqlfx.vip
+  name: 🇺🇸 US-17
+  network: ws
+  port: 443
+  server: 172.64.53.253
+  sni: 40t1.wxgqlfx.vip
+  type: vless
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+- alterId: 0
+  cipher: auto
+  host: late-mountain-6801.355.workers.dev
+  name: 🌍 Node-01
+  network: ws
+  port: 8880
+  server: cf3.466688.xyz
+  type: vless
+  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-02
+  port: 8443
+  server: love.ns.cloudflare.com
+  sni: vamosargentina.dpdns.org
+  type: vless
+  uuid: '%40V2ConfigPro'
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: 0dsshvzb.cnm.qzz.io
+  name: 🇺🇸 US-19
+  network: ws
+  port: 2082
+  server: xqgs1fjh.cf.3666888.xyz
+  type: vless
+  uuid: 4a805850-a2c4-42b3-898a-798f0c19c609
+- alterId: 0
+  cipher: auto
+  host: baidu.com
+  name: 🇸🇬 SG-01
+  network: ws
+  port: 12901
+  server: cs.ktmcn.net
   type: vmess
-  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-  ws-path: /anti13.zingfast.vn
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: baidu.com
+  name: 🇨🇦 CA-01
+  network: ws
+  port: 12897
+  server: gtm1.ktmwan.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: baidu.com
+  name: 🇹🇼 TW-01
+  network: ws
+  port: 12888
+  server: gtm1.ktmwan.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
+- name: 🇳🇱 NL-03
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  skip-cert-verify: true
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: baidu.com
+  name: 🇫🇷 FR-01
+  network: ws
+  port: 12898
+  server: gtm1.ktmwan.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🇭🇰 HK-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🇺🇸 US-05
+  - 🇺🇸 US-11
+  - 🇺🇸 US-13
+  - 🇺🇸 US-14
+  - 🇺🇸 US-17
   - 🌍 Node-01
   - 🌍 Node-02
+  - 🇺🇸 US-19
+  - 🇸🇬 SG-01
+  - 🇨🇦 CA-01
+  - 🇹🇼 TW-01
+  - 🇳🇱 NL-03
+  - 🇫🇷 FR-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🇭🇰 HK-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🇺🇸 US-05
+  - 🇺🇸 US-11
+  - 🇺🇸 US-13
+  - 🇺🇸 US-14
+  - 🇺🇸 US-17
   - 🌍 Node-01
   - 🌍 Node-02
+  - 🇺🇸 US-19
+  - 🇸🇬 SG-01
+  - 🇨🇦 CA-01
+  - 🇹🇼 TW-01
+  - 🇳🇱 NL-03
+  - 🇫🇷 FR-01
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
