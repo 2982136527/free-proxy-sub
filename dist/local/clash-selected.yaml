@@ -4,26 +4,15 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies:
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  name: 🌍 Node-01
-  port: 8443
-  server: love.ns.cloudflare.com
-  sni: vamosargentina.dpdns.org
-  type: vless
-  uuid: '%40V2ConfigPro'
+proxies: []
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🌍 Node-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies:
-  - 🌍 Node-01
+  proxies: []
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
