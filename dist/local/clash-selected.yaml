@@ -4,15 +4,60 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-01
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  host: v4.hdacd.com
+  name: 🇺🇸 US-04
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v9.hdacd.com
+  name: 🇭🇰 HK-01
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-02
+  port: 2087
+  server: cf7.466688.xyz
+  sni: ch-de.sdcards.ir
+  type: vless
+  uuid: 9d6104a5-fc6d-4fe6-95b7-80d8f699e09d
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🌍 Node-01
+  - 🇺🇸 US-04
+  - 🇭🇰 HK-01
+  - 🌍 Node-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies: []
+  proxies:
+  - 🌍 Node-01
+  - 🇺🇸 US-04
+  - 🇭🇰 HK-01
+  - 🌍 Node-02
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
