@@ -7,16 +7,6 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  host: v4.hdacd.com
-  name: 🇺🇸 US-01
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
   host: v9.hdacd.com
   name: 🇭🇰 HK-01
   network: tcp
@@ -27,15 +17,14 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-04
-  network: ws
-  port: 8443
-  server: 162.159.38.2
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  host: v4.hdacd.com
+  name: 🇺🇸 US-01
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 🌍 Node-01
@@ -54,27 +43,15 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: cf.cfvip.lol
-  name: 🇺🇸 US-09
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-07
   network: ws
-  port: 443
-  server: 172.64.155.209
-  sni: cf.cfvip.lol
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
   type: vless
-  uuid: 93f0761d-4393-4b43-a523-e812fa0b7e83
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: tianshu13.pages.dev
-  name: 🇺🇸 US-12
-  network: ws
-  port: 443
-  server: 172.64.147.15
-  sni: tianshu13.pages.dev
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
   host: nl1.cloudbench.app
@@ -85,29 +62,6 @@ proxies:
   sni: nl1.cloudbench.app
   type: vless
   uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
-- alterId: 0
-  cipher: auto
-  encryption: none
-  host: t1s1.rittbo.kdns.fr
-  name: 🇺🇸 US-17
-  network: ws
-  port: 443
-  server: cdn.9889888.xyz
-  sni: t1s1.rittbo.kdns.fr
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: tianshu13.pages.dev
-  name: 🇺🇸 US-18
-  network: ws
-  port: 443
-  server: 172.64.147.137
-  sni: tianshu13.pages.dev
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -128,7 +82,7 @@ proxies:
   cipher: auto
   fp: chrome
   host: lzwnb.ccwu.cc
-  name: 🇺🇸 US-23
+  name: 🇺🇸 US-22
   network: ws
   port: 8443
   server: play.mc.js.cool
@@ -139,36 +93,28 @@ proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-01
   - 🇭🇰 HK-01
-  - 🇺🇸 US-04
+  - 🇺🇸 US-01
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇺🇸 US-09
-  - 🇺🇸 US-12
+  - 🇺🇸 US-07
   - 🌍 Node-03
-  - 🇺🇸 US-17
-  - 🇺🇸 US-18
   - 🌍 Node-04
   - 🇳🇱 NL-01
-  - 🇺🇸 US-23
+  - 🇺🇸 US-22
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-01
   - 🇭🇰 HK-01
-  - 🇺🇸 US-04
+  - 🇺🇸 US-01
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇺🇸 US-09
-  - 🇺🇸 US-12
+  - 🇺🇸 US-07
   - 🌍 Node-03
-  - 🇺🇸 US-17
-  - 🇺🇸 US-18
   - 🌍 Node-04
   - 🇳🇱 NL-01
-  - 🇺🇸 US-23
+  - 🇺🇸 US-22
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
