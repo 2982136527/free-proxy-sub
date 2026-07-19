@@ -7,36 +7,125 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  host: v4.hdacd.com
-  name: 🇺🇸 US-01
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
+  fp: chrome
+  host: 40t1.wxgqlfx.vip
+  name: 🇺🇸 US-07
+  network: ws
+  port: 443
+  server: 172.64.53.253
+  sni: 40t1.wxgqlfx.vip
+  type: vless
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
 - alterId: 0
   cipher: auto
-  host: v9.hdacd.com
-  name: 🇭🇰 HK-01
-  network: tcp
-  port: 30809
-  server: v9.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-10
+  network: ws
+  port: 443
+  server: 108.162.195.58
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-12
+  network: ws
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-13
+  network: ws
+  port: 443
+  server: 172.64.229.1
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-19
+  network: ws
+  port: 443
+  server: cf.tencentapp.cn
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  host: late-mountain-6801.355.workers.dev
+  name: 🌍 Node-01
+  network: ws
+  port: 8880
+  server: cf3.466688.xyz
+  type: vless
+  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: cfoo-146.pages.dev
+  name: 🇺🇸 US-23
+  network: ws
+  port: 443
+  server: cf3.466688.xyz
+  sni: cfoo-146.pages.dev
+  type: vless
+  uuid: b08562b0-dbc0-47d1-860d-9435133b25c9
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 🌍 Node-02
+  port: 8443
+  server: love.ns.cloudflare.com
+  sni: vamosargentina.dpdns.org
+  type: vless
+  uuid: '%40V2ConfigPro'
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: shrill-fog-67af.235-e6a.workers.dev
+  name: 🇺🇸 US-24
+  network: ws
+  port: 8880
+  server: cf7.466688.xyz
+  type: vless
+  uuid: 7111212b-6bc3-459a-85b4-3b13038a19f8
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-01
-  - 🇭🇰 HK-01
+  - 🇺🇸 US-07
+  - 🇺🇸 US-10
+  - 🇺🇸 US-12
+  - 🇺🇸 US-13
+  - 🇺🇸 US-19
+  - 🌍 Node-01
+  - 🇺🇸 US-23
+  - 🌍 Node-02
+  - 🇺🇸 US-24
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-01
-  - 🇭🇰 HK-01
+  - 🇺🇸 US-07
+  - 🇺🇸 US-10
+  - 🇺🇸 US-12
+  - 🇺🇸 US-13
+  - 🇺🇸 US-19
+  - 🌍 Node-01
+  - 🇺🇸 US-23
+  - 🌍 Node-02
+  - 🇺🇸 US-24
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
