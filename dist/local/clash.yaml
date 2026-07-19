@@ -5,38 +5,76 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: VMess-aaaa.wxx.gay:443
-  network: ws
+- name: 荷兰 002
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
-  server: aaaa.wxx.gay
-  tls: true
-  type: vmess
-  uuid: 8237ec34-143a-11ee-8019-000017022008
-  ws-path: /look
-- alterId: 0
-  cipher: auto
-  name: VMess-159.223.94.156:80
-  network: ws
-  port: 80
-  server: 159.223.94.156
-  type: vmess
-  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-  ws-path: /anti13.zingfast.vn
+  server: 188.164.248.122
+  skip-cert-verify: true
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
+- name: 法国 001
+  password: MITIVPN
+  port: 443
+  server: 94.140.0.100
+  sni: 95r.ir
+  type: trojan
+  udp: true
+- name: 英国 001
+  password: MITIVPN
+  port: 443
+  server: 164.38.155.135
+  sni: 95r.ir
+  type: trojan
+  udp: true
+- name: 美国 010
+  password: Mitivpn
+  port: 443
+  server: iranpoems.ir
+  sni: www.gamingdll.ir
+  type: trojan
+  udp: true
+- name: 荷兰 001
+  password: MiTiVPN
+  port: 443
+  server: 45.131.4.118
+  sni: 95r.ir
+  type: trojan
+  udp: true
+- name: 英国 002
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.138
+  type: trojan
+  udp: true
+- name: 美国 011
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  sni: www.creationlong.org
+  type: trojan
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
   - 🔰 自动选择
   - ♻️ 自动测速
-  - VMess-aaaa.wxx.gay:443
-  - VMess-159.223.94.156:80
+  - 荷兰 002
+  - 法国 001
+  - 英国 001
+  - 美国 010
+  - 荷兰 001
+  - 英国 002
+  - 美国 011
   type: select
 - interval: 300
   name: 🔰 自动选择
   proxies: &id001
-  - VMess-aaaa.wxx.gay:443
-  - VMess-159.223.94.156:80
+  - 荷兰 002
+  - 法国 001
+  - 英国 001
+  - 美国 010
+  - 荷兰 001
+  - 英国 002
+  - 美国 011
   type: url-test
   url: https://www.gstatic.com/generate_204
 - interval: 300
