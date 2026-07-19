@@ -7,6 +7,16 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  host: v4.hdacd.com
+  name: 🇺🇸 US-01
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
   host: v9.hdacd.com
   name: 🇭🇰 HK-01
   network: tcp
@@ -17,35 +27,28 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  host: v4.hdacd.com
-  name: 🇺🇸 US-10
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- name: 🇳🇱 NL-02
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  skip-cert-verify: true
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
+  encryption: none
+  host: late-mountain-6801.355.workers.dev
+  name: 🇺🇸 US-06
+  network: ws
+  port: 8880
+  server: cf1.466688.xyz
+  type: vless
+  uuid: 9be3bb59-c281-4fee-ae3d-7cf6c4b47eb4
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🇺🇸 US-01
   - 🇭🇰 HK-01
-  - 🇺🇸 US-10
-  - 🇳🇱 NL-02
+  - 🇺🇸 US-06
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
+  - 🇺🇸 US-01
   - 🇭🇰 HK-01
-  - 🇺🇸 US-10
-  - 🇳🇱 NL-02
+  - 🇺🇸 US-06
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
