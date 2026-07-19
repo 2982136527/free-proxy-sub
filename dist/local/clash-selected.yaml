@@ -4,15 +4,68 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-01
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  host: v9.hdacd.com
+  name: 🇭🇰 HK-01
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-02
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  host: v4.hdacd.com
+  name: 🇺🇸 US-06
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: 🇳🇱 NL-01
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  skip-cert-verify: true
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🌍 Node-01
+  - 🇭🇰 HK-01
+  - 🌍 Node-02
+  - 🇺🇸 US-06
+  - 🇳🇱 NL-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies: []
+  proxies:
+  - 🌍 Node-01
+  - 🇭🇰 HK-01
+  - 🌍 Node-02
+  - 🇺🇸 US-06
+  - 🇳🇱 NL-01
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
