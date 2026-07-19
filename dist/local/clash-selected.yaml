@@ -7,9 +7,19 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  host: v24.hdacd.com
+  name: 🇺🇸 US-04
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
   fp: random
   host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-03
+  name: 🇺🇸 US-05
   network: ws
   port: 8443
   server: 162.159.38.2
@@ -28,41 +38,21 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  host: v24.hdacd.com
-  name: 🇺🇸 US-05
+  host: v4.hdacd.com
+  name: 🇺🇸 US-08
   network: tcp
-  port: 30824
-  server: v24.hdacd.com
+  port: 30804
+  server: v4.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
 - alterId: 0
   cipher: auto
   host: v29.hdacd.com
-  name: 🇺🇸 US-08
+  name: 🇺🇸 US-09
   network: tcp
   port: 30829
   server: v29.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v9.hdacd.com
-  name: 🇭🇰 HK-01
-  network: tcp
-  port: 30809
-  server: v9.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v4.hdacd.com
-  name: 🇺🇸 US-09
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
@@ -84,6 +74,17 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  fp: chrome
+  host: lzwnb.ccwu.cc
+  name: 🇺🇸 US-18
+  network: ws
+  port: 8443
+  server: play.mc.js.cool
+  sni: lzwnb.ccwu.cc
+  type: vless
+  uuid: 4f6aa10d-9332-4933-8dc8-78c9a42f6082
+- alterId: 0
+  cipher: auto
   host: t1s1.rittbo.kdns.fr
   name: 🌍 Node-01
   network: ws
@@ -96,27 +97,27 @@ proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-03
-  - 🇩🇪 DE-01
+  - 🇺🇸 US-04
   - 🇺🇸 US-05
+  - 🇩🇪 DE-01
   - 🇺🇸 US-08
-  - 🇭🇰 HK-01
   - 🇺🇸 US-09
   - 🇯🇵 JP-01
   - 🇳🇱 NL-01
+  - 🇺🇸 US-18
   - 🌍 Node-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-03
-  - 🇩🇪 DE-01
+  - 🇺🇸 US-04
   - 🇺🇸 US-05
+  - 🇩🇪 DE-01
   - 🇺🇸 US-08
-  - 🇭🇰 HK-01
   - 🇺🇸 US-09
   - 🇯🇵 JP-01
   - 🇳🇱 NL-01
+  - 🇺🇸 US-18
   - 🌍 Node-01
   type: url-test
   url: https://www.gstatic.com/generate_204
