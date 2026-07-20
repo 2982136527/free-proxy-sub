@@ -4,26 +4,15 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies:
-- alterId: 0
-  cipher: auto
-  host: new.106-79e.workers.dev
-  name: 🌍 Node-01
-  network: ws
-  port: 8880
-  server: 162.159.46.0
-  type: vless
-  uuid: b19b768d-bc57-4d03-9bea-61129ed5fef9
+proxies: []
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🌍 Node-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies:
-  - 🌍 Node-01
+  proxies: []
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
