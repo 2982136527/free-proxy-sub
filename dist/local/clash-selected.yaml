@@ -7,84 +7,107 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  host: v9.hdacd.com
+  encryption: none
+  fp: chrome
+  host: nl1.cloudbench.app
+  name: 🇳🇱 NL-01
+  network: ws
+  port: 443
+  server: 172.64.151.120
+  sni: nl1.cloudbench.app
+  type: vless
+  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+- name: 🇺🇸 US-01
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: soft-shadow-1e33.xicav73335.workers.dev
+  name: 🇳🇱 NL-02
+  network: ws
+  port: 80
+  server: 103.133.1.160
+  type: vless
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+- alterId: 0
+  cipher: auto
+  fp: chrome
   name: 🇭🇰 HK-01
-  network: tcp
-  port: 30809
-  server: v9.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
+  network: grpc
+  port: 36796
+  server: t1.feiyue706.com
+  sni: t1.feiyue706.com
+  type: vless
+  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
 - alterId: 0
   cipher: auto
-  host: v8.hdacd.com
-  name: 🇺🇸 US-01
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
+  encryption: none
+  fp: firefox
+  name: 🇳🇱 NL-03
+  network: grpc
+  port: 443
+  server: 95.85.228.34
+  sni: 1vga81kaw013f-topology-gslb-yccdn.ru
+  type: vless
+  uuid: 8f0560ec-ba22-4431-a6a7-318dc59d5233
 - alterId: 0
   cipher: auto
-  host: v6.hdacd.com
-  name: 🇯🇵 JP-01
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v4.hdacd.com
-  name: 🇺🇸 US-08
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v36.hdacd.com
+  fp: qq
   name: 🇬🇧 GB-01
   network: tcp
-  port: 30836
-  server: v36.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
+  port: 443
+  server: 77.110.113.188
+  sni: www.samsung.com
+  type: vless
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
 - alterId: 0
   cipher: auto
-  host: v33.hdacd.com
-  name: 🇩🇪 DE-01
-  network: tcp
-  port: 30833
-  server: v33.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
+  fp: qq
+  name: 🇬🇧 GB-02
+  network: grpc
+  port: 8443
+  server: uk.riotvpn.eu
+  sni: avatars.mds.yandex.net
+  type: vless
+  uuid: f885cecc-a6ea-4e9b-87da-c7dc4b745348
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: arshia.lezzatArshia.ir
+  name: 🇬🇧 GB-03
+  network: httpupgrade
+  port: 2086
+  server: digitalocean.com
+  type: vless
+  uuid: b08f7f87-fda7-4674-8e40-82fdcc09672a
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇭🇰 HK-01
+  - 🇳🇱 NL-01
   - 🇺🇸 US-01
-  - 🇯🇵 JP-01
-  - 🇺🇸 US-08
+  - 🇳🇱 NL-02
+  - 🇭🇰 HK-01
+  - 🇳🇱 NL-03
   - 🇬🇧 GB-01
-  - 🇩🇪 DE-01
+  - 🇬🇧 GB-02
+  - 🇬🇧 GB-03
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇭🇰 HK-01
+  - 🇳🇱 NL-01
   - 🇺🇸 US-01
-  - 🇯🇵 JP-01
-  - 🇺🇸 US-08
+  - 🇳🇱 NL-02
+  - 🇭🇰 HK-01
+  - 🇳🇱 NL-03
   - 🇬🇧 GB-01
-  - 🇩🇪 DE-01
+  - 🇬🇧 GB-02
+  - 🇬🇧 GB-03
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
