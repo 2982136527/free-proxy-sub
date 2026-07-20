@@ -7,64 +7,6 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  host: v9.hdacd.com
-  name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  network: tcp
-  port: 30809
-  server: v9.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v24.hdacd.com
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  network: tcp
-  port: 30824
-  server: v24.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v33.hdacd.com
-  name: 🇨🇳_CN_中国->🇩🇪_DE_德国
-  network: tcp
-  port: 30833
-  server: v33.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v6.hdacd.com
-  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: t1s1.rittbo.kdns.fr
-  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
-  network: ws
-  port: 443
-  server: 198.41.223.238
-  sni: t1s1.rittbo.kdns.fr
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-- name: 荷兰 002
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-- alterId: 0
-  cipher: auto
   encryption: none
   fp: chrome
   host: nl1.cloudbench.app
@@ -75,40 +17,22 @@ proxies:
   sni: nl1.cloudbench.app
   type: vless
   uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: t1s1.rittbo.kdns.fr
-  name: '%E7%BE%8E%E5%9B%BD+CloudFlare'
-  network: ws
-  port: 2083
-  server: 162.159.21.206
-  sni: t1s1.rittbo.kdns.fr
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: t1s1.rittbo.kdns.fr
-  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
-  network: ws
+- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2001'
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
-  server: yx.cloudflare.182682.xyz
-  sni: t1s1.rittbo.kdns.fr
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
 - alterId: 0
   cipher: auto
-  encryption: none
-  host: autumn-base-0eb9.116-d25.workers.dev
-  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_3'
+  fp: chrome
+  host: soft-shadow-1e33.xicav73335.workers.dev
+  name: '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2002'
   network: ws
-  port: 8880
-  server: cf3.466688.xyz
+  port: 80
+  server: 103.133.1.160
   type: vless
-  uuid: 5659b42c-636f-4563-ac41-87d565d0dd1e
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -121,56 +45,6 @@ proxies:
   uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: arshia.lezzatArshia.ir
-  name: '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2003'
-  network: httpupgrade
-  port: 2086
-  server: digitalocean.com
-  type: vless
-  uuid: b08f7f87-fda7-4674-8e40-82fdcc09672a
-- alterId: 0
-  cipher: auto
-  encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  name: '%E4%BC%8A%E6%9C%97+V2CROSS.COM'
-  network: tcp
-  port: 8443
-  server: 31.56.146.93
-  sni: tradingview.com
-  type: vless
-  uuid: ff3e10a8-2a5c-4792-a14e-20fd11b1bed9
-- alterId: 0
-  cipher: auto
-  host: guanwang.awsno.com
-  name: 🇺🇸_US_美国
-  network: tcp
-  port: 443
-  server: guanwang.awsno.com
-  tls: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  ws-path: /
-- name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_4'
-  password: humanity
-  port: 443
-  server: 104.26.6.159
-  sni: www.creationlong.org
-  type: trojan
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  name: '%E4%BF%84%E7%BD%97%E6%96%AF+V2CROSS.COM'
-  network: tcp
-  port: 49148
-  server: sub.mydailystory.xyz
-  sni: www.yahoo.com
-  type: vless
-  uuid: a3a8ba59-ce22-4a4d-9907-5c20fc623ed6
-- alterId: 0
-  cipher: auto
   encryption: none
   fp: firefox
   name: '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2001'
@@ -180,29 +54,6 @@ proxies:
   sni: 1vga81kaw013f-topology-gslb-yccdn.ru
   type: vless
   uuid: 8f0560ec-ba22-4431-a6a7-318dc59d5233
-- cipher: aes-256-cfb
-  name: SS-63.177.252.44:443
-  password: amazonskr05
-  port: 443
-  server: 63.177.252.44
-  type: ss
-- name: 美国 010
-  password: Mitivpn
-  port: 443
-  server: iranpoems.ir
-  sni: www.gamingdll.ir
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: VMess-aaaa.wxx.gay:443
-  network: ws
-  port: 443
-  server: aaaa.wxx.gay
-  tls: true
-  type: vmess
-  uuid: 8237ec34-143a-11ee-8019-000017022008
-  ws-path: /look
 - alterId: 0
   cipher: auto
   fp: qq
@@ -215,52 +66,6 @@ proxies:
   uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
 - alterId: 0
   cipher: auto
-  name: 香港|@ripaojiedian
-  network: tcp
-  port: 30807
-  server: v10.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 444
-  network: ws
-  port: 443
-  server: 4cdn.njkrpl.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp24.cc.cd
-  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_5'
-  network: ws
-  port: 2083
-  server: 172.66.3.80
-  sni: vp24.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-- alterId: 0
-  cipher: auto
-  name: VMess-159.223.94.156:80
-  network: ws
-  port: 80
-  server: 159.223.94.156
-  type: vmess
-  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-  ws-path: /anti13.zingfast.vn
-- name: 荷兰 001
-  password: MiTiVPN
-  port: 443
-  server: 45.131.4.118
-  sni: 95r.ir
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
   fp: qq
   name: '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2001'
   network: grpc
@@ -271,149 +76,39 @@ proxies:
   uuid: f885cecc-a6ea-4e9b-87da-c7dc4b745348
 - alterId: 0
   cipher: auto
-  encryption: none
-  host: vl.dalazhi.cloudns.biz
-  name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_6'
-  network: ws
-  port: 80
-  server: 104.16.27.134
-  type: vless
-  uuid: df301b32-1152-4526-9a63-beedd93d3156
-- cipher: chacha20-ietf-poly1305
-  name: '%F0%9F%87%AE%F0%9F%87%B3%20%E5%8D%B0%E5%BA%A6%20V2CROSS.COM'
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.80
-  type: ss
-- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%E5%8D%8E%E7%9B%9B%E9%A1%BFCogent%E9%80%9A%E4%BF%A1%E5%85%AC%E5%8F%B8'
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
-  port: 443
-  server: 38.54.64.247
-  sni: 38.54.64.247
-  type: trojan
-- alterId: 0
-  cipher: auto
   fp: chrome
-  host: soft-shadow-1e33.xicav73335.workers.dev
-  name: '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2002'
-  network: ws
-  port: 80
-  server: 103.133.1.160
+  host: arshia.lezzatArshia.ir
+  name: '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2003'
+  network: httpupgrade
+  port: 2086
+  server: digitalocean.com
   type: vless
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-- cipher: chacha20-ietf-poly1305
-  name: '%E5%8D%B0%E5%BA%A6+V2CROSS.COM'
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.71
-  type: ss
-- name: 美国 011
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  sni: www.creationlong.org
-  type: trojan
-- name: 法国 001
-  password: MITIVPN
-  port: 443
-  server: 94.140.0.100
-  sni: 95r.ir
-  type: trojan
-  udp: true
-- name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_7'
-  password: humanity
-  port: 443
-  server: 104.20.6.134
-  sni: www.multiplydose.com
-  type: trojan
-- name: 英国 001
-  password: MITIVPN
-  port: 443
-  server: 164.38.155.135
-  sni: 95r.ir
-  type: trojan
-  udp: true
+  uuid: b08f7f87-fda7-4674-8e40-82fdcc09672a
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
   - 🔰 自动选择
   - ♻️ 自动测速
-  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
-  - 荷兰 002
   - '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2006'
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare'
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_3'
-  - '%F0%9F%87%AD%F0%9F%87%B0%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%A6%99%E6%B8%AF%2001'
-  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2003'
-  - '%E4%BC%8A%E6%9C%97+V2CROSS.COM'
-  - 🇺🇸_US_美国
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_4'
-  - '%E4%BF%84%E7%BD%97%E6%96%AF+V2CROSS.COM'
-  - '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2001'
-  - SS-63.177.252.44:443
-  - 美国 010
-  - VMess-aaaa.wxx.gay:443
-  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2002'
-  - 香港|@ripaojiedian
-  - 美国 444
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_5'
-  - VMess-159.223.94.156:80
-  - 荷兰 001
-  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2001'
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_6'
-  - '%F0%9F%87%AE%F0%9F%87%B3%20%E5%8D%B0%E5%BA%A6%20V2CROSS.COM'
-  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%E5%8D%8E%E7%9B%9B%E9%A1%BFCogent%E9%80%9A%E4%BF%A1%E5%85%AC%E5%8F%B8'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2001'
   - '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2002'
-  - '%E5%8D%B0%E5%BA%A6+V2CROSS.COM'
-  - 美国 011
-  - 法国 001
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_7'
-  - 英国 001
+  - '%F0%9F%87%AD%F0%9F%87%B0%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%A6%99%E6%B8%AF%2001'
+  - '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2001'
+  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2002'
+  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2001'
+  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2003'
   type: select
 - interval: 300
   name: 🔰 自动选择
   proxies: &id001
-  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
-  - 荷兰 002
   - '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2006'
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare'
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_2'
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_3'
-  - '%F0%9F%87%AD%F0%9F%87%B0%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%A6%99%E6%B8%AF%2001'
-  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2003'
-  - '%E4%BC%8A%E6%9C%97+V2CROSS.COM'
-  - 🇺🇸_US_美国
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_4'
-  - '%E4%BF%84%E7%BD%97%E6%96%AF+V2CROSS.COM'
-  - '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2001'
-  - SS-63.177.252.44:443
-  - 美国 010
-  - VMess-aaaa.wxx.gay:443
-  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2002'
-  - 香港|@ripaojiedian
-  - 美国 444
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_5'
-  - VMess-159.223.94.156:80
-  - 荷兰 001
-  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2001'
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_6'
-  - '%F0%9F%87%AE%F0%9F%87%B3%20%E5%8D%B0%E5%BA%A6%20V2CROSS.COM'
-  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%E5%8D%8E%E7%9B%9B%E9%A1%BFCogent%E9%80%9A%E4%BF%A1%E5%85%AC%E5%8F%B8'
+  - '%F0%9F%87%BA%F0%9F%87%B8%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E7%BE%8E%E5%9B%BD%2001'
   - '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2002'
-  - '%E5%8D%B0%E5%BA%A6+V2CROSS.COM'
-  - 美国 011
-  - 法国 001
-  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9_7'
-  - 英国 001
+  - '%F0%9F%87%AD%F0%9F%87%B0%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E9%A6%99%E6%B8%AF%2001'
+  - '%F0%9F%87%B3%F0%9F%87%B1%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8D%B7%E5%85%B0%2001'
+  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2002'
+  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2001'
+  - '%F0%9F%87%AC%F0%9F%87%A7%20%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%3Adafei.de%20%E8%8B%B1%E5%9B%BD%2003'
   type: url-test
   url: https://www.gstatic.com/generate_204
 - interval: 300
