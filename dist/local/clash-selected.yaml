@@ -18,26 +18,40 @@ proxies:
   uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
 - alterId: 0
   cipher: auto
-  host: s5gydl.936.us.ci
-  name: 🌍 Node-01
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-04
   network: ws
-  port: 443
-  server: 188.253.118.174
-  sni: s5gydl.936.us.ci
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
   type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: maoyibai.ccwu.cc
+  name: 🇭🇰 HK-02
+  network: ws
+  port: 2053
+  server: cf7.466688.xyz
+  sni: maoyibai.ccwu.cc
+  type: vless
+  uuid: 68081c3e-77c2-4d22-81d5-cccedb7ca37b
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🇭🇰 HK-01
-  - 🌍 Node-01
+  - 🇺🇸 US-04
+  - 🇭🇰 HK-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🇭🇰 HK-01
-  - 🌍 Node-01
+  - 🇺🇸 US-04
+  - 🇭🇰 HK-02
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
