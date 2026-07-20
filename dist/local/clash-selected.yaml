@@ -7,31 +7,11 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  host: v6.hdacd.com
-  name: 🇯🇵 JP-01
+  host: v9.hdacd.com
+  name: 🇭🇰 HK-01
   network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v33.hdacd.com
-  name: 🇩🇪 DE-01
-  network: tcp
-  port: 30833
-  server: v33.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v36.hdacd.com
-  name: 🇬🇧 GB-01
-  network: tcp
-  port: 30836
-  server: v36.hdacd.com
+  port: 30809
+  server: v9.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
@@ -47,11 +27,11 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  host: v9.hdacd.com
-  name: 🇭🇰 HK-01
+  host: v6.hdacd.com
+  name: 🇯🇵 JP-01
   network: tcp
-  port: 30809
-  server: v9.hdacd.com
+  port: 30806
+  server: v6.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
@@ -65,34 +45,46 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
-- name: 🇳🇱 NL-01
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
+- alterId: 0
+  cipher: auto
+  host: v36.hdacd.com
+  name: 🇬🇧 GB-01
+  network: tcp
+  port: 30836
+  server: v36.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v33.hdacd.com
+  name: 🇩🇪 DE-01
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇯🇵 JP-01
-  - 🇩🇪 DE-01
-  - 🇬🇧 GB-01
-  - 🇺🇸 US-01
   - 🇭🇰 HK-01
+  - 🇺🇸 US-01
+  - 🇯🇵 JP-01
   - 🇺🇸 US-08
-  - 🇳🇱 NL-01
+  - 🇬🇧 GB-01
+  - 🇩🇪 DE-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇯🇵 JP-01
-  - 🇩🇪 DE-01
-  - 🇬🇧 GB-01
-  - 🇺🇸 US-01
   - 🇭🇰 HK-01
+  - 🇺🇸 US-01
+  - 🇯🇵 JP-01
   - 🇺🇸 US-08
-  - 🇳🇱 NL-01
+  - 🇬🇧 GB-01
+  - 🇩🇪 DE-01
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
