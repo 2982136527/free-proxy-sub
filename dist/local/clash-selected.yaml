@@ -7,23 +7,143 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 HK-01
-  network: tcp
-  port: 30807
-  server: v10.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
+  encryption: none
+  host: t1s1.rittbo.kdns.fr
+  name: 🇺🇸 US-01
+  network: ws
+  port: 443
+  server: 104.18.43.174
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: summer-bonus-aa63.52-c03.workers.dev
+  name: 🇺🇸 US-02
+  network: ws
+  port: 8880
+  server: cf8.466688.xyz
+  type: vless
+  uuid: 00ff7e5f-9b6f-4401-aab9-4d044660411f
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: summer-snow-c151.320-3ef.workers.dev
+  name: 🇺🇸 US-03
+  network: ws
+  port: 8880
+  server: cf3.466688.xyz
+  type: vless
+  uuid: 9b14cdbe-bcfe-4178-a674-3ad88a7c6f6a
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: t1s1.rittbo.kdns.fr
+  name: 🇺🇸 US-04
+  network: ws
+  port: 443
+  server: www.cnae.top
+  sni: t1s1.rittbo.kdns.fr
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: vms.lifetime07.workers.dev
+  name: 🌍 Node-01
+  network: ws
+  port: 8880
+  server: 89.116.46.50
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp33.cc.cd
+  name: 🇺🇸 US-05
+  network: ws
+  port: 2096
+  server: 198.41.209.7
+  sni: vp33.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: vp40.cc.cd
+  name: 🇺🇸 US-06
+  network: ws
+  port: 8443
+  server: 104.17.110.135
+  sni: vp40.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇳 IN-01
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  port: 28061
+  server: 103.111.114.80
+  type: ss
+- name: 🇺🇸 US-07
+  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+  port: 443
+  server: 38.54.64.247
+  sni: 38.54.64.247
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇳 IN-02
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  port: 28061
+  server: 103.111.114.82
+  type: ss
+- name: 🇺🇸 US-08
+  password: humanity
+  port: 443
+  server: 104.16.72.2
+  sni: www.calmlunch.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: vms.lifetime36.workers.dev
+  name: 🇺🇸 US-09
+  network: ws
+  port: 8880
+  server: 192.0.63.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇭🇰 HK-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🇺🇸 US-03
+  - 🇺🇸 US-04
+  - 🌍 Node-01
+  - 🇺🇸 US-05
+  - 🇺🇸 US-06
+  - 🇮🇳 IN-01
+  - 🇺🇸 US-07
+  - 🇮🇳 IN-02
+  - 🇺🇸 US-08
+  - 🇺🇸 US-09
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇭🇰 HK-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🇺🇸 US-03
+  - 🇺🇸 US-04
+  - 🌍 Node-01
+  - 🇺🇸 US-05
+  - 🇺🇸 US-06
+  - 🇮🇳 IN-01
+  - 🇺🇸 US-07
+  - 🇮🇳 IN-02
+  - 🇺🇸 US-08
+  - 🇺🇸 US-09
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
