@@ -7,37 +7,24 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  host: v6.hdacd.com
-  name: 🇯🇵 JP-01
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp40.cc.cd
-  name: 🇺🇸 US-22
+  host: s5gydl.936.us.ci
+  name: 🌍 Node-01
   network: ws
-  port: 2053
-  server: 104.18.33.139
-  sni: vp40.cc.cd
+  port: 443
+  server: 188.253.118.174
+  sni: s5gydl.936.us.ci
   type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇯🇵 JP-01
-  - 🇺🇸 US-22
+  - 🌍 Node-01
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇯🇵 JP-01
-  - 🇺🇸 US-22
+  - 🌍 Node-01
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
