@@ -7,6 +7,34 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  host: v24.hdacd.com
+  name: 🇺🇸 US-01
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v6.hdacd.com
+  name: 🇯🇵 JP-01
+  network: tcp
+  port: 30806
+  server: v6.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-01
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
   fp: chrome
   host: s5gydl.936.us.ci
   name: 🇭🇰 HK-01
@@ -16,26 +44,49 @@ proxies:
   sni: s5gydl.936.us.ci
   type: vless
   uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+- alterId: 0
+  cipher: auto
+  host: v33.hdacd.com
+  name: 🇩🇪 DE-01
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - cipher: aes-256-gcm
-  name: 🌍 Node-01
+  name: 🌍 Node-02
   password: 95c3d114-5370-3e54-832a-5a5acc492b9b
   port: 20028
   server: s.n.y.5.8.z.4.e.d.ar01-ae5.entry.v51124-5.qpon
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-02
+  host: v9.hdacd.com
+  name: 🇭🇰 HK-02
   network: tcp
-  port: 30845
-  server: v45.hdacd.com
+  port: 30809
+  server: v9.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - cipher: aes-256-gcm
   name: 🌍 Node-03
   password: 95c3d114-5370-3e54-832a-5a5acc492b9b
   port: 1416
   server: n.j.y.y.h.z.g.e.d.hk06-ae5.entry.v51124-5.qpon
   type: ss
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-04
+  network: ws
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
   name: 🌍 Node-04
@@ -47,46 +98,88 @@ proxies:
   uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: maoyibai.ccwu.cc
-  name: 🇭🇰 HK-02
+  host: vod.ensf.top
+  name: 🌍 Node-05
   network: ws
-  port: 2053
-  server: cf7.466688.xyz
-  sni: maoyibai.ccwu.cc
+  port: 443
+  server: 162.159.38.119
+  sni: vod.ensf.top
   type: vless
-  uuid: 68081c3e-77c2-4d22-81d5-cccedb7ca37b
+  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-05
+  fp: chrome
+  host: cf.cfvip.lol
+  name: 🇺🇸 US-11
+  network: ws
+  port: 443
+  server: 172.64.155.209
+  sni: cf.cfvip.lol
+  type: vless
+  uuid: 93f0761d-4393-4b43-a523-e812fa0b7e83
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-06
   network: tcp
   port: 10043
   server: family.bucket.x9.kfc-520.com
   skip-cert-verify: true
   type: vmess
   uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+- name: 🇺🇸 US-15
+  password: VPNCUSTOMIZE
+  port: 443
+  server: 162.159.38.183
+  sni: ww.offers.de5.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: summer-bonus-aa63.52-c03.workers.dev
+  name: 🇺🇸 US-17
+  network: ws
+  port: 8880
+  server: cf3.466688.xyz
+  type: vless
+  uuid: 00ff7e5f-9b6f-4401-aab9-4d044660411f
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇭🇰 HK-01
+  - 🇺🇸 US-01
+  - 🇯🇵 JP-01
   - 🌍 Node-01
+  - 🇭🇰 HK-01
+  - 🇩🇪 DE-01
   - 🌍 Node-02
-  - 🌍 Node-03
-  - 🌍 Node-04
   - 🇭🇰 HK-02
+  - 🌍 Node-03
+  - 🇺🇸 US-04
+  - 🌍 Node-04
   - 🌍 Node-05
+  - 🇺🇸 US-11
+  - 🌍 Node-06
+  - 🇺🇸 US-15
+  - 🇺🇸 US-17
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇭🇰 HK-01
+  - 🇺🇸 US-01
+  - 🇯🇵 JP-01
   - 🌍 Node-01
+  - 🇭🇰 HK-01
+  - 🇩🇪 DE-01
   - 🌍 Node-02
-  - 🌍 Node-03
-  - 🌍 Node-04
   - 🇭🇰 HK-02
+  - 🌍 Node-03
+  - 🇺🇸 US-04
+  - 🌍 Node-04
   - 🌍 Node-05
+  - 🇺🇸 US-11
+  - 🌍 Node-06
+  - 🇺🇸 US-15
+  - 🇺🇸 US-17
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
