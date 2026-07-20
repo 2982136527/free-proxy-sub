@@ -4,41 +4,15 @@ ipv6: false
 log-level: warning
 mode: Rule
 port: 7890
-proxies:
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: s5gydl.936.us.ci
-  name: 🇭🇰 HK-01
-  network: ws
-  port: 2053
-  server: 23.133.52.10
-  sni: s5gydl.936.us.ci
-  type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-- alterId: 0
-  cipher: auto
-  fp: random
-  host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-14
-  network: ws
-  port: 8443
-  server: 162.159.38.2
-  sni: cf11.evan00.dpdns.org
-  type: vless
-  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+proxies: []
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-14
   type: select
 - interval: 180
   name: ♻️ 自动选择
-  proxies:
-  - 🇭🇰 HK-01
-  - 🇺🇸 US-14
+  proxies: []
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
