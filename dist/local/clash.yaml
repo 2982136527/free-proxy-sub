@@ -7,85 +7,74 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  host: v9.hdacd.com
-  name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  network: tcp
-  port: 30809
-  server: v9.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v33.hdacd.com
-  name: 🇨🇳_CN_中国->🇩🇪_DE_德国
-  network: tcp
-  port: 30833
-  server: v33.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v6.hdacd.com
-  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: 4cdn.njkrpl.com
-  name: 🇺🇸_US_美国->🇫🇷_FR_法国
+  name: 美国 AOL美国在线公司
   network: ws
-  port: 443
-  server: 4cdn.njkrpl.com
-  tls: true
+  port: 12899
+  server: gtm1.ktmwan.net
   type: vmess
-  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+- name: '%E9%A6%99%E6%B8%AF+%E7%94%B5%E8%AE%AF%E7%9B%88%E7%A7%91%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8'
+  password: OccIqeORGQwiNkwS
+  port: 19128
+  server: jpbgp.netvigor.cc
+  sni: yazhou10.dynu.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  host: baidu.com
+  name: 美国 AOL美国在线公司_2
+  network: ws
+  port: 12898
+  server: gtm1.ktmwan.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
   ws-path: /
 - alterId: 0
   cipher: auto
-  host: guanwang.awsno.com
-  name: 🇺🇸_US_美国
-  network: tcp
+  encryption: none
+  fp: chrome
+  host: s5gydl.936.us.ci
+  name: '%E7%BE%8E%E5%9B%BD+%E7%93%A6%E5%B0%94%E5%B8%95%E7%B4%A2%E5%A4%A7%E5%AD%A6'
+  network: ws
+  port: 2053
+  server: 152.228.134.80
+  sni: s5gydl.936.us.ci
+  type: vless
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+- name: '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
+  password: humanity
   port: 443
-  server: guanwang.awsno.com
-  tls: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  ws-path: /
-- cipher: aes-256-cfb
-  name: SS-63.177.252.44:443
-  password: amazonskr05
-  port: 443
-  server: 63.177.252.44
-  type: ss
+  server: 104.26.6.159
+  sni: www.creationlong.org
+  type: trojan
 - alterId: 0
   cipher: auto
-  host: v10.hdacd.com
-  name: 🇭🇰 香港|@ripaojiedian
+  host: windows64.net
+  name: 英国 V2CROSS.COM
   network: tcp
-  port: 30807
-  server: v10.hdacd.com
+  port: 2078
+  server: 93.180.134.52
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- name: '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
+  uuid: 1c18da66-a912-40af-b90d-787574efe6d3
+  ws-path: /?ed=1024
+- name: '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM'
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
-  server: 185.137.157.149
-  sni: 185.137.157.149
+  server: 185.137.157.138
   type: trojan
-- name: '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_2'
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.135
-  sni: 185.137.157.135
-  type: trojan
-- name: '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20V2CROSS.COM'
+- alterId: 0
+  cipher: auto
+  encryption: none
+  flow: xtls-rprx-vision
+  fp: chrome
+  name: '%E4%BB%A5%E8%89%B2%E5%88%97+V2CROSS.COM'
+  network: tcp
+  port: 20443
+  server: 37.142.205.77
+  sni: ://microsoft.com
+  type: vless
+  uuid: 808a0627-05e5-47b3-8d27-edd65020ef09
+- name: '%E7%BE%8E%E5%9B%BD+V2CROSS.COM'
   password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
   port: 443
   server: 149.104.104.58
@@ -96,30 +85,28 @@ proxy-groups:
   proxies:
   - 🔰 自动选择
   - ♻️ 自动测速
-  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇺🇸_US_美国->🇫🇷_FR_法国
-  - 🇺🇸_US_美国
-  - SS-63.177.252.44:443
-  - 🇭🇰 香港|@ripaojiedian
-  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
-  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_2'
-  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20V2CROSS.COM'
+  - 美国 AOL美国在线公司
+  - '%E9%A6%99%E6%B8%AF+%E7%94%B5%E8%AE%AF%E7%9B%88%E7%A7%91%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8'
+  - 美国 AOL美国在线公司_2
+  - '%E7%BE%8E%E5%9B%BD+%E7%93%A6%E5%B0%94%E5%B8%95%E7%B4%A2%E5%A4%A7%E5%AD%A6'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
+  - 英国 V2CROSS.COM
+  - '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM'
+  - '%E4%BB%A5%E8%89%B2%E5%88%97+V2CROSS.COM'
+  - '%E7%BE%8E%E5%9B%BD+V2CROSS.COM'
   type: select
 - interval: 300
   name: 🔰 自动选择
   proxies: &id001
-  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇺🇸_US_美国->🇫🇷_FR_法国
-  - 🇺🇸_US_美国
-  - SS-63.177.252.44:443
-  - 🇭🇰 香港|@ripaojiedian
-  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM'
-  - '%F0%9F%87%B7%F0%9F%87%B4%20%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%20V2CROSS.COM_2'
-  - '%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20V2CROSS.COM'
+  - 美国 AOL美国在线公司
+  - '%E9%A6%99%E6%B8%AF+%E7%94%B5%E8%AE%AF%E7%9B%88%E7%A7%91%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8'
+  - 美国 AOL美国在线公司_2
+  - '%E7%BE%8E%E5%9B%BD+%E7%93%A6%E5%B0%94%E5%B8%95%E7%B4%A2%E5%A4%A7%E5%AD%A6'
+  - '%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9'
+  - 英国 V2CROSS.COM
+  - '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+V2CROSS.COM'
+  - '%E4%BB%A5%E8%89%B2%E5%88%97+V2CROSS.COM'
+  - '%E7%BE%8E%E5%9B%BD+V2CROSS.COM'
   type: url-test
   url: https://www.gstatic.com/generate_204
 - interval: 300
