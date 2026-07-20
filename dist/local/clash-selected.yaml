@@ -1,1 +1,354 @@
-proxies: []
+allow-lan: false
+external-controller: 127.0.0.1:9090
+ipv6: false
+log-level: warning
+mode: Rule
+port: 7890
+proxies:
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: s5gydl.936.us.ci
+  name: 🇭🇰 HK-01
+  network: ws
+  port: 2053
+  server: 23.133.52.10
+  sni: s5gydl.936.us.ci
+  type: vless
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+- alterId: 0
+  cipher: auto
+  host: v6.hdacd.com
+  name: 🇯🇵 JP-01
+  network: tcp
+  port: 30806
+  server: v6.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v9.hdacd.com
+  name: 🇭🇰 HK-02
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v33.hdacd.com
+  name: 🇩🇪 DE-01
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: 🇺🇸 US-01
+  password: VPNCUSTOMIZE
+  port: 443
+  server: 162.159.38.183
+  sni: ww.offers.de5.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  fp: random
+  host: cf11.evan00.dpdns.org
+  name: 🇺🇸 US-02
+  network: ws
+  port: 8443
+  server: 162.159.38.2
+  sni: cf11.evan00.dpdns.org
+  type: vless
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-01
+  network: tcp
+  port: 10050
+  server: family.bucket.x9.kfc-520.com
+  type: vmess
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+- alterId: 0
+  cipher: auto
+  host: v24.hdacd.com
+  name: 🇺🇸 US-03
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- name: 🇺🇸 US-04
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇨🇦 CA-01
+  network: tcp
+  port: 10043
+  server: family.bucket.x9.kfc-520.com
+  type: vmess
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: cf.cfvip.lol
+  name: 🇺🇸 US-05
+  network: ws
+  port: 443
+  server: 172.64.155.209
+  sni: cf.cfvip.lol
+  type: vless
+  uuid: 93f0761d-4393-4b43-a523-e812fa0b7e83
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: summer-bonus-aa63.52-c03.workers.dev
+  name: 🇺🇸 US-06
+  network: ws
+  port: 8880
+  server: cf3.466688.xyz
+  type: vless
+  uuid: 00ff7e5f-9b6f-4401-aab9-4d044660411f
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: lzwnb.ccwu.cc
+  name: 🇺🇸 US-07
+  network: ws
+  port: 8443
+  server: play.mc.js.cool
+  sni: lzwnb.ccwu.cc
+  type: vless
+  uuid: 4f6aa10d-9332-4933-8dc8-78c9a42f6082
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: maoyibai.ccwu.cc
+  name: 🇭🇰 HK-03
+  network: ws
+  port: 2053
+  server: cf7.466688.xyz
+  sni: maoyibai.ccwu.cc
+  type: vless
+  uuid: 68081c3e-77c2-4d22-81d5-cccedb7ca37b
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: r.mediashoppp.sbs
+  name: 🇺🇸 US-08
+  network: ws
+  port: 443
+  server: 104.20.6.134
+  sni: r.meDiASHOPPp.sbS
+  type: vless
+  uuid: 2088ef0d-4d2c-43b3-874b-b6a03531c81b
+- alterId: 0
+  cipher: auto
+  host: guanwang.awsno.com
+  name: 🇺🇸 US-09
+  network: tcp
+  port: 443
+  server: guanwang.awsno.com
+  tls: true
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: hamshahriesfahan.com
+  name: 🇩🇪 DE-02
+  network: ws
+  port: 443
+  server: 140.248.180.30
+  sni: speedtest.net
+  type: vless
+  uuid: 86fdb625-1a7f-4784-99a6-a96b3a80fc6d
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: randomized
+  host: zyzzzoao.xn--fiqv8j.eu.org
+  name: 🇺🇸 US-10
+  network: ws
+  port: 443
+  server: cf.877771.xyz
+  sni: zyzzzoao.xn--fiqv8j.eu.org
+  type: vless
+  uuid: fe273991-0514-4a16-8ec4-b15ae861c000
+- alterId: 0
+  cipher: auto
+  encryption: mlkem768x25519plus.native.0rtt.sA1qB8b6IwkNTwEubO-TQ53GEyjpAgNchOnSww07e1I
+  flow: xtls-rprx-vision
+  fp: chrome
+  host: www.icloud.com
+  name: 🇩🇪 DE-03
+  network: http
+  port: 24504
+  server: service.vipdatanetwork.com
+  type: vless
+  uuid: 55349a9f-03b4-46ff-a08b-f6b5f40bb9d5
+- alterId: 0
+  cipher: auto
+  encryption: mlkem768x25519plus.native.0rtt.sA1qB8b6IwkNTwEubO-TQ53GEyjpAgNchOnSww07e1I
+  flow: xtls-rprx-vision
+  fp: chrome
+  host: www.icloud.com
+  name: 🇫🇮 FI-01
+  network: http
+  port: 24504
+  server: content.vipdatanetwork.com
+  type: vless
+  uuid: 55349a9f-03b4-46ff-a08b-f6b5f40bb9d5
+- alterId: 0
+  cipher: auto
+  host: v10.hdacd.com
+  name: 🇭🇰 HK-04
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  fp: qq
+  name: 🇬🇧 GB-01
+  network: grpc
+  port: 8443
+  server: uk.riotvpn.eu
+  sni: avatars.mds.yandex.net
+  type: vless
+  uuid: f885cecc-a6ea-4e9b-87da-c7dc4b745348
+- name: 🌍 Node-02
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.149
+  type: trojan
+- name: 🌍 Node-03
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.140
+  sni: 185.137.157.140
+  type: trojan
+- name: 🇺🇸 US-11
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  port: 443
+  server: 149.104.104.58
+  sni: 149.104.104.58
+  type: trojan
+- name: 🇺🇸 US-12
+  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+  port: 443
+  server: 38.54.64.247
+  sni: 38.54.64.247
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇳 IN-01
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  port: 28061
+  server: 103.111.114.80
+  type: ss
+- name: 🌍 Node-04
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.142
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇳 IN-02
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  port: 28061
+  server: 103.111.114.71
+  type: ss
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: round-haze-8783.294.workers.dev
+  name: 🇩🇪 DE-04
+  network: ws
+  port: 80
+  server: 91.206.71.8
+  type: vless
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+proxy-groups:
+- name: 🇺🇳 精选节点
+  proxies:
+  - ♻️ 自动选择
+  - 🇭🇰 HK-01
+  - 🇯🇵 JP-01
+  - 🇭🇰 HK-02
+  - 🇩🇪 DE-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🌍 Node-01
+  - 🇺🇸 US-03
+  - 🇺🇸 US-04
+  - 🇨🇦 CA-01
+  - 🇺🇸 US-05
+  - 🇺🇸 US-06
+  - 🇺🇸 US-07
+  - 🇭🇰 HK-03
+  - 🇺🇸 US-08
+  - 🇺🇸 US-09
+  - 🇩🇪 DE-02
+  - 🇺🇸 US-10
+  - 🇩🇪 DE-03
+  - 🇫🇮 FI-01
+  - 🇭🇰 HK-04
+  - 🇬🇧 GB-01
+  - 🌍 Node-02
+  - 🌍 Node-03
+  - 🇺🇸 US-11
+  - 🇺🇸 US-12
+  - 🇮🇳 IN-01
+  - 🌍 Node-04
+  - 🇮🇳 IN-02
+  - 🇩🇪 DE-04
+  type: select
+- interval: 180
+  name: ♻️ 自动选择
+  proxies:
+  - 🇭🇰 HK-01
+  - 🇯🇵 JP-01
+  - 🇭🇰 HK-02
+  - 🇩🇪 DE-01
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🌍 Node-01
+  - 🇺🇸 US-03
+  - 🇺🇸 US-04
+  - 🇨🇦 CA-01
+  - 🇺🇸 US-05
+  - 🇺🇸 US-06
+  - 🇺🇸 US-07
+  - 🇭🇰 HK-03
+  - 🇺🇸 US-08
+  - 🇺🇸 US-09
+  - 🇩🇪 DE-02
+  - 🇺🇸 US-10
+  - 🇩🇪 DE-03
+  - 🇫🇮 FI-01
+  - 🇭🇰 HK-04
+  - 🇬🇧 GB-01
+  - 🌍 Node-02
+  - 🌍 Node-03
+  - 🇺🇸 US-11
+  - 🇺🇸 US-12
+  - 🇮🇳 IN-01
+  - 🌍 Node-04
+  - 🇮🇳 IN-02
+  - 🇩🇪 DE-04
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+rules:
+- MATCH,🇺🇳 精选节点
+socks-port: 7891
