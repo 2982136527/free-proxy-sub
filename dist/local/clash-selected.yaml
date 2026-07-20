@@ -7,11 +7,31 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  host: v33.hdacd.com
+  name: 🇩🇪 DE-01
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
   host: v6.hdacd.com
   name: 🇯🇵 JP-01
   network: tcp
   port: 30806
   server: v6.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v24.hdacd.com
+  name: 🇺🇸 US-01
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
@@ -27,62 +47,15 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  host: v33.hdacd.com
-  name: 🇩🇪 DE-01
+  host: guanwang.awsno.com
+  name: 🇺🇸 US-02
   network: tcp
-  port: 30833
-  server: v33.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v24.hdacd.com
-  name: 🇺🇸 US-01
-  network: tcp
-  port: 30824
-  server: v24.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- name: 🇺🇸 US-02
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: nl1.cloudbench.app
-  name: 🇳🇱 NL-01
-  network: ws
-  port: 443
-  server: 172.64.151.120
-  sni: nl1.cloudbench.app
-  type: vless
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  name: 🇭🇰 HK-02
-  network: grpc
-  port: 36796
-  server: t1.feiyue706.com
-  sni: t1.feiyue706.com
-  type: vless
-  uuid: 154ac9d9-eab5-3672-b832-81016ba68d55
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: arshia.lezzatArshia.ir
-  name: 🇬🇧 GB-01
-  network: httpupgrade
-  port: 2086
-  server: digitalocean.com
-  type: vless
-  uuid: b08f7f87-fda7-4674-8e40-82fdcc09672a
+  server: guanwang.awsno.com
+  tls: true
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  ws-path: /
 - cipher: aes-256-cfb
   name: 🌍 Node-01
   password: amazonskr05
@@ -91,39 +64,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  host: guanwang.awsno.com
-  name: 🇺🇸 US-03
-  network: tcp
-  port: 443
-  server: guanwang.awsno.com
-  tls: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-02
-  network: ws
-  port: 443
-  server: aaaa.wxx.gay
-  tls: true
-  type: vmess
-  uuid: 8237ec34-143a-11ee-8019-000017022008
-  ws-path: /look
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: firefox
-  name: 🇳🇱 NL-02
-  network: grpc
-  port: 443
-  server: 95.85.228.34
-  sni: 1vga81kaw013f-topology-gslb-yccdn.ru
-  type: vless
-  uuid: 8f0560ec-ba22-4431-a6a7-318dc59d5233
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK-03
+  name: 🇭🇰 HK-02
   network: tcp
   port: 30807
   server: v10.hdacd.com
@@ -132,18 +73,35 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: soft-shadow-1e33.xicav73335.workers.dev
-  name: 🇳🇱 NL-03
+  name: 🌍 Node-02
   network: ws
   port: 80
-  server: 103.133.1.160
-  type: vless
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  server: 159.223.94.156
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-path: /anti13.zingfast.vn
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇳 IN-01
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  port: 28061
+  server: 103.111.114.80
+  type: ss
+- name: 🇺🇸 US-03
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  sni: www.calmlunch.com
+  type: trojan
+- name: 🇺🇸 US-04
+  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+  port: 443
+  server: 38.54.64.247
+  sni: 38.54.64.247
+  type: trojan
 - alterId: 0
   cipher: auto
   host: 4cdn.njkrpl.com
-  name: 🇺🇸 US-04
+  name: 🇺🇸 US-05
   network: ws
   port: 443
   server: 4cdn.njkrpl.com
@@ -153,97 +111,55 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  fp: qq
-  name: 🇬🇧 GB-02
-  network: tcp
+  name: 🌍 Node-03
+  network: ws
   port: 443
-  server: 77.110.113.188
-  sni: www.samsung.com
-  type: vless
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-- alterId: 0
-  cipher: auto
-  fp: qq
-  name: 🇬🇧 GB-03
-  network: grpc
-  port: 8443
-  server: uk.riotvpn.eu
-  sni: avatars.mds.yandex.net
-  type: vless
-  uuid: f885cecc-a6ea-4e9b-87da-c7dc4b745348
-- name: 🇺🇸 US-05
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
-  port: 443
-  server: 38.54.64.247
-  sni: 38.54.64.247
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 IN-01
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.71
-  type: ss
-- name: 🇺🇸 US-06
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  sni: www.calmlunch.com
-  type: trojan
+  server: aaaa.wxx.gay
+  tls: true
+  type: vmess
+  uuid: 8237ec34-143a-11ee-8019-000017022008
+  ws-path: /look
 - cipher: chacha20-ietf-poly1305
   name: 🇮🇳 IN-02
   password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
   port: 28061
-  server: 103.111.114.80
+  server: 103.111.114.71
   type: ss
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇯🇵 JP-01
-  - 🇭🇰 HK-01
   - 🇩🇪 DE-01
+  - 🇯🇵 JP-01
   - 🇺🇸 US-01
+  - 🇭🇰 HK-01
   - 🇺🇸 US-02
-  - 🇳🇱 NL-01
-  - 🇭🇰 HK-02
-  - 🇬🇧 GB-01
   - 🌍 Node-01
-  - 🇺🇸 US-03
+  - 🇭🇰 HK-02
   - 🌍 Node-02
-  - 🇳🇱 NL-02
-  - 🇭🇰 HK-03
-  - 🇳🇱 NL-03
-  - 🇺🇸 US-04
-  - 🇬🇧 GB-02
-  - 🇬🇧 GB-03
-  - 🇺🇸 US-05
   - 🇮🇳 IN-01
-  - 🇺🇸 US-06
+  - 🇺🇸 US-03
+  - 🇺🇸 US-04
+  - 🇺🇸 US-05
+  - 🌍 Node-03
   - 🇮🇳 IN-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇯🇵 JP-01
-  - 🇭🇰 HK-01
   - 🇩🇪 DE-01
+  - 🇯🇵 JP-01
   - 🇺🇸 US-01
+  - 🇭🇰 HK-01
   - 🇺🇸 US-02
-  - 🇳🇱 NL-01
-  - 🇭🇰 HK-02
-  - 🇬🇧 GB-01
   - 🌍 Node-01
-  - 🇺🇸 US-03
+  - 🇭🇰 HK-02
   - 🌍 Node-02
-  - 🇳🇱 NL-02
-  - 🇭🇰 HK-03
-  - 🇳🇱 NL-03
-  - 🇺🇸 US-04
-  - 🇬🇧 GB-02
-  - 🇬🇧 GB-03
-  - 🇺🇸 US-05
   - 🇮🇳 IN-01
-  - 🇺🇸 US-06
+  - 🇺🇸 US-03
+  - 🇺🇸 US-04
+  - 🇺🇸 US-05
+  - 🌍 Node-03
   - 🇮🇳 IN-02
   type: url-test
   url: https://www.gstatic.com/generate_204
