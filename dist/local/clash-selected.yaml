@@ -5,35 +5,130 @@ log-level: warning
 mode: Rule
 port: 7890
 proxies:
-- name: 🇺🇸 US-09
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: s5gydl.936.us.ci
+  name: 🇭🇰 HK-01
+  network: ws
+  port: 2053
+  server: 23.133.52.10
+  sni: s5gydl.936.us.ci
+  type: vless
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+- alterId: 0
+  cipher: auto
+  host: s5gydl.936.us.ci
+  name: 🌍 Node-01
+  network: ws
+  port: 443
+  server: 91.110.209.73
+  sni: s5gydl.936.us.ci
+  type: vless
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+- cipher: aes-256-gcm
+  name: 🌍 Node-02
+  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
+  port: 20068
+  server: 1.n.c.5.h.z.q.e.d.fr01-ae5.entry.v51124-5.qpon
+  type: ss
+- alterId: 0
+  cipher: auto
+  host: s5gydl.936.us.ci
+  name: 🌍 Node-03
+  network: ws
+  port: 443
+  server: 91.110.209.83
+  sni: s5gydl.936.us.ci
+  type: vless
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+- cipher: aes-256-gcm
+  name: 🌍 Node-04
+  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
+  port: 1815
+  server: n.n.6.y.h.5.g.e.d.hk05-ae5.entry.v51124-5.qpon
+  type: ss
+- alterId: 0
+  cipher: auto
+  host: s5gydl.936.us.ci
+  name: 🌍 Node-05
+  network: ws
+  port: 443
+  server: 23.249.17.25
+  sni: s5gydl.936.us.ci
+  type: vless
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: maoyibai.ccwu.cc
+  name: 🇭🇰 HK-02
+  network: ws
+  port: 2053
+  server: cf7.466688.xyz
+  sni: maoyibai.ccwu.cc
+  type: vless
+  uuid: 68081c3e-77c2-4d22-81d5-cccedb7ca37b
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-06
+  network: tcp
+  port: 10050
+  server: family.bucket.x9.kfc-520.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-07
+  network: tcp
+  port: 10043
+  server: family.bucket.x9.kfc-520.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+- name: 🇺🇸 US-17
   password: VPNCUSTOMIZE
   port: 443
   server: 162.159.38.183
   sni: ww.offers.de5.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: vp22.cc.cd
-  name: 🇺🇸 US-13
-  network: ws
-  port: 2053
-  server: 108.162.198.99
-  sni: vp22.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+- cipher: aes-128-gcm
+  name: 🌍 Node-08
+  password: b3c48614-0f61-43cc-8e89-5f6b216c47a2
+  port: 40000
+  server: permission_level_02.unclemanco.com
+  type: ss
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-09
-  - 🇺🇸 US-13
+  - 🇭🇰 HK-01
+  - 🌍 Node-01
+  - 🌍 Node-02
+  - 🌍 Node-03
+  - 🌍 Node-04
+  - 🌍 Node-05
+  - 🇭🇰 HK-02
+  - 🌍 Node-06
+  - 🌍 Node-07
+  - 🇺🇸 US-17
+  - 🌍 Node-08
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-09
-  - 🇺🇸 US-13
+  - 🇭🇰 HK-01
+  - 🌍 Node-01
+  - 🌍 Node-02
+  - 🌍 Node-03
+  - 🌍 Node-04
+  - 🌍 Node-05
+  - 🇭🇰 HK-02
+  - 🌍 Node-06
+  - 🌍 Node-07
+  - 🇺🇸 US-17
+  - 🌍 Node-08
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
