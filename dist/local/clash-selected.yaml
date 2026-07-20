@@ -18,19 +18,37 @@ proxies:
   uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
 - alterId: 0
   cipher: auto
-  host: v33.hdacd.com
-  name: 🇩🇪 DE-01
+  host: v6.hdacd.com
+  name: 🇯🇵 JP-02
   network: tcp
-  port: 30833
-  server: v33.hdacd.com
+  port: 30806
+  server: v6.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-path: /
 - alterId: 0
   cipher: auto
+  name: 🌍 Node-01
+  network: tcp
+  port: 10043
+  server: family.bucket.x9.kfc-520.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-02
+  network: tcp
+  port: 10050
+  server: family.bucket.x9.kfc-520.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+- alterId: 0
+  cipher: auto
   fp: random
   host: cf11.evan00.dpdns.org
-  name: 🇺🇸 US-10
+  name: 🇺🇸 US-16
   network: ws
   port: 8443
   server: 162.159.38.2
@@ -39,31 +57,34 @@ proxies:
   uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: vp40.cc.cd
-  name: 🇺🇸 US-14
-  network: ws
-  port: 2053
-  server: 104.18.33.139
-  sni: vp40.cc.cd
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  host: v33.hdacd.com
+  name: 🇩🇪 DE-01
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
   - 🇭🇰 HK-01
+  - 🇯🇵 JP-02
+  - 🌍 Node-01
+  - 🌍 Node-02
+  - 🇺🇸 US-16
   - 🇩🇪 DE-01
-  - 🇺🇸 US-10
-  - 🇺🇸 US-14
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
   - 🇭🇰 HK-01
+  - 🇯🇵 JP-02
+  - 🌍 Node-01
+  - 🌍 Node-02
+  - 🇺🇸 US-16
   - 🇩🇪 DE-01
-  - 🇺🇸 US-10
-  - 🇺🇸 US-14
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
