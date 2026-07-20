@@ -7,6 +7,46 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  host: v36.hdacd.com
+  name: 🇬🇧 GB-01
+  network: tcp
+  port: 30836
+  server: v36.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v4.hdacd.com
+  name: 🇺🇸 US-01
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v6.hdacd.com
+  name: 🇯🇵 JP-01
+  network: tcp
+  port: 30806
+  server: v6.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v8.hdacd.com
+  name: 🇺🇸 US-04
+  network: tcp
+  port: 30808
+  server: v8.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
   host: v9.hdacd.com
   name: 🇭🇰 HK-01
   network: tcp
@@ -27,46 +67,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  host: v6.hdacd.com
-  name: 🇯🇵 JP-01
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v36.hdacd.com
-  name: 🇬🇧 GB-01
-  network: tcp
-  port: 30836
-  server: v36.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v4.hdacd.com
-  name: 🇺🇸 US-05
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  host: v8.hdacd.com
-  name: 🇺🇸 US-06
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 0
-  cipher: auto
   host: new.106-79e.workers.dev
   name: 🌍 Node-01
   network: ws
@@ -74,62 +74,28 @@ proxies:
   server: 162.159.46.0
   type: vless
   uuid: b19b768d-bc57-4d03-9bea-61129ed5fef9
-- alterId: 0
-  cipher: auto
-  encryption: none
-  host: download.pusytroller.gq
-  name: 🇺🇸 US-17
-  network: ws
-  port: 2095
-  server: 104.18.42.163
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-- name: 🇳🇱 NL-01
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-- alterId: 0
-  cipher: auto
-  encryption: none
-  fp: chrome
-  host: nl1.cloudbench.app
-  name: 🇳🇱 NL-02
-  network: ws
-  port: 443
-  server: 172.64.151.120
-  sni: nl1.cloudbench.app
-  type: vless
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🇬🇧 GB-01
+  - 🇺🇸 US-01
+  - 🇯🇵 JP-01
+  - 🇺🇸 US-04
   - 🇭🇰 HK-01
   - 🇩🇪 DE-01
-  - 🇯🇵 JP-01
-  - 🇬🇧 GB-01
-  - 🇺🇸 US-05
-  - 🇺🇸 US-06
   - 🌍 Node-01
-  - 🇺🇸 US-17
-  - 🇳🇱 NL-01
-  - 🇳🇱 NL-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
+  - 🇬🇧 GB-01
+  - 🇺🇸 US-01
+  - 🇯🇵 JP-01
+  - 🇺🇸 US-04
   - 🇭🇰 HK-01
   - 🇩🇪 DE-01
-  - 🇯🇵 JP-01
-  - 🇬🇧 GB-01
-  - 🇺🇸 US-05
-  - 🇺🇸 US-06
   - 🌍 Node-01
-  - 🇺🇸 US-17
-  - 🇳🇱 NL-01
-  - 🇳🇱 NL-02
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
