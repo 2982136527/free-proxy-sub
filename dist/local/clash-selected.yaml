@@ -7,37 +7,100 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  name: 🇺🇸 US-01
+  network: ws
+  port: 12899
+  server: gtm1.ktmwan.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+- alterId: 0
+  cipher: auto
+  host: baidu.com
+  name: 🇺🇸 US-02
+  network: ws
+  port: 12898
+  server: gtm1.ktmwan.net
+  type: vmess
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
+  ws-path: /
+- name: 🇺🇸 US-03
+  password: humanity
+  port: 443
+  server: 104.26.6.159
+  sni: www.creationlong.org
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK-01
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  encryption: none
   fp: chrome
   host: s5gydl.936.us.ci
-  name: 🇭🇰 HK-01
+  name: 🇺🇸 US-04
   network: ws
   port: 2053
-  server: 23.133.52.10
+  server: 152.228.134.80
   sni: s5gydl.936.us.ci
   type: vless
   uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
 - alterId: 0
   cipher: auto
-  host: s5gydl.936.us.ci
+  host: windows64.net
+  name: 🇬🇧 GB-01
+  network: tcp
+  port: 2078
+  server: 93.180.134.52
+  type: vmess
+  uuid: 1c18da66-a912-40af-b90d-787574efe6d3
+  ws-path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  encryption: none
+  flow: xtls-rprx-vision
+  fp: chrome
   name: 🌍 Node-01
-  network: ws
-  port: 443
-  server: 188.253.118.174
-  sni: s5gydl.936.us.ci
+  network: tcp
+  port: 20443
+  server: 37.142.205.77
+  sni: ://microsoft.com
   type: vless
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  uuid: 808a0627-05e5-47b3-8d27-edd65020ef09
+- name: 🌍 Node-02
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.138
+  type: trojan
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🇺🇸 US-03
   - 🇭🇰 HK-01
+  - 🇺🇸 US-04
+  - 🇬🇧 GB-01
   - 🌍 Node-01
+  - 🌍 Node-02
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
+  - 🇺🇸 US-03
   - 🇭🇰 HK-01
+  - 🇺🇸 US-04
+  - 🇬🇧 GB-01
   - 🌍 Node-01
+  - 🌍 Node-02
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
