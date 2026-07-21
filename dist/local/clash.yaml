@@ -33,11 +33,12 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  host: v35.hdacd.com
-  name: 🇨🇳_CN_中国->🇫🇷_FR_法国
+  name: 中国 007
   network: tcp
   port: 30835
   server: v35.hdacd.com
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
@@ -6287,11 +6288,12 @@ proxies:
   ws-path: linkvws
 - alterId: 0
   cipher: auto
-  host: windows64.net
-  name: 🇬🇧 GB英国(mibei77.com 米贝节点分享)
+  name: 土耳其 001
   network: tcp
   port: 2078
   server: 93.180.134.52
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 1c18da66-a912-40af-b90d-787574efe6d3
 - alterId: 0
@@ -6836,6 +6838,12 @@ proxies:
   type: vmess
   uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda
   ws-path: /go
+- cipher: aes-256-gcm
+  name: 🇩🇪DE-193.108.117.75-6116
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 193.108.117.75
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🇻🇳VN-103.166.183.226-0381
@@ -7947,6 +7955,16 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  name: 🏁RELAY-188.114.97.111-6184
+  network: ws
+  port: 443
+  server: 188.114.97.111
+  tls: true
+  type: vmess
+  uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
+  ws-path: /chcara
+- alterId: 0
+  cipher: auto
   name: 🏁RELAY-103.21.244.142-4958
   network: ws
   port: 8443
@@ -8318,6 +8336,12 @@ proxies:
   type: vmess
   uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e
   ws-path: /
+- cipher: aes-128-cfb
+  name: 🇺🇸US-156.146.38.163-6093
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.163
+  type: ss
 - alterId: 0
   cipher: auto
   host: yellow-paper-029c.yvonna.workers.dev
@@ -8398,6 +8422,12 @@ proxies:
   server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   type: hysteria2
+- cipher: aes-256-gcm
+  name: 🇫🇷FR-195.154.200.150-6304
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 195.154.200.150
+  type: ss
 - alterId: 0
   cipher: auto
   host: ahsorathiyaa.fly.dev
@@ -8725,7 +8755,7 @@ proxy-groups:
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇨🇳_CN_中国->🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇫🇷_FR_法国
+  - 中国 007
   - 🇸🇬SG-202.79.172.53-2544
   - 🇭🇰HK-47.239.189.182-0483
   - 🇨🇳CN-112.91.92.193-3097
@@ -9322,7 +9352,7 @@ proxy-groups:
   - 🏁RELAY-188.114.99.10-3389
   - 🏁RELAY-104.21.95.16-1518
   - 🏁RELAY-172.67.182.187-1818
-  - 🇬🇧 GB英国(mibei77.com 米贝节点分享)
+  - 土耳其 001
   - 🇫🇷FR-57.128.189.211-1414
   - 🏁RELAY-172.67.156.210-1434
   - 🏁RELAY-172.67.75.144-1681
@@ -9374,6 +9404,7 @@ proxy-groups:
   - 🇻🇳VN-103.56.160.184-0444
   - 🇺🇸US-69.84.182.16-1705
   - 🇬🇧GB-46.175.135.9-1984
+  - 🇩🇪DE-193.108.117.75-6116
   - 🇻🇳VN-103.166.183.226-0381
   - 🇮🇷IR-185.143.232.253-0616
   - 🇯🇵JP-43.165.172.213-1952
@@ -9484,6 +9515,7 @@ proxy-groups:
   - '%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD'
   - 🏁RELAY-162.159.153.13-2764
   - 🇺🇸US-172.237.129.236-2298
+  - 🏁RELAY-188.114.97.111-6184
   - 🏁RELAY-103.21.244.142-4958
   - 🇫🇷FR-162.19.192.89-2017
   - 🇺🇸US-172.237.129.108-2297
@@ -9521,6 +9553,7 @@ proxy-groups:
   - 🇺🇸US-216.221.214.50-1701
   - 🇺🇸US-38.48.227.231-1634
   - 🇦🇺AU-103.224.212.211-1834
+  - 🇺🇸US-156.146.38.163-6093
   - 🏁RELAY-185.135.9.247-1441
   - 🇺🇸US-13.248.169.48-0859
   - 🇺🇸US-76.223.54.146-0842
@@ -9529,6 +9562,7 @@ proxy-groups:
   - 🏁RELAY-45.95.241.251-2770
   - 🏁RELAY-103.21.244.95-2765
   - '%F0%9F%87%AD%F0%9F%87%B0%20HK'
+  - 🇫🇷FR-195.154.200.150-6304
   - 🇺🇸US-66.241.124.93-1725
   - 🏁RELAY-203.30.191.8-2741
   - 🇸🇬SG-159.223.94.156-5843
@@ -9568,7 +9602,7 @@ proxy-groups:
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇨🇳_CN_中国->🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇫🇷_FR_法国
+  - 中国 007
   - 🇸🇬SG-202.79.172.53-2544
   - 🇭🇰HK-47.239.189.182-0483
   - 🇨🇳CN-112.91.92.193-3097
