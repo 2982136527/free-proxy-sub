@@ -7,6 +7,32 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  host: v4.hdacd.com
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  host: v6.hdacd.com
+  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  network: tcp
+  port: 30806
+  server: v6.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇬🇧_GB_英国
+  network: tcp
+  port: 30836
+  server: v36.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
   name: 中国 007
   network: tcp
   port: 30835
@@ -100,6 +126,14 @@ proxies:
   type: vmess
   uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  network: tcp
+  port: 30808
+  server: v8.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   host: hoot.ml
@@ -515,6 +549,14 @@ proxies:
   ws-path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
   host: cf.scpnb.top
   name: 🏁RELAY-172.64.145.202-1386
   network: ws
@@ -546,6 +588,15 @@ proxies:
   type: vmess
   uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
   ws-path: /
+- alterId: 0
+  cipher: auto
+  host: v33.hdacd.com
+  name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   host: fullaccesstojapannetsubnode1.azurewebsites.net
@@ -1272,6 +1323,16 @@ proxies:
   type: vmess
   uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
   ws-path: /5QNROSRV
+- alterId: 0
+  cipher: auto
+  host: m.cnmjin.net
+  name: 🇫🇷FR-162.19.192.89-1990
+  network: ws
+  port: 16618
+  server: m.cnmjin.net
+  type: vmess
+  uuid: 4907a8e9-79c6-4690-a68b-2dfb971861f4
+  ws-path: /
 - alterId: 0
   cipher: auto
   host: a25.arisping-ir.click
@@ -3178,6 +3239,17 @@ proxies:
   ws-path: /linkws
 - alterId: 0
   cipher: auto
+  host: linde06.indiavideo.sbs
+  name: 🏁RELAY-172.67.161.77-1973
+  network: ws
+  port: 443
+  server: 172.67.161.77
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-path: /linkws
+- alterId: 0
+  cipher: auto
   host: 162.19.224.175
   name: 🇫🇷FR-162.19.224.175-1269
   network: ws
@@ -3351,6 +3423,17 @@ proxies:
   server: 157.90.20.18
   type: vmess
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
+- alterId: 0
+  cipher: auto
+  host: loveourlive.com
+  name: 🇺🇸US-179.255.112.220-1991
+  network: ws
+  port: 443
+  server: loveourlive.com
+  tls: true
+  type: vmess
+  uuid: 183AFF7A-001B-4C5E-A754-FE1506BF33A2
+  ws-path: /ws
 - alterId: 0
   cipher: auto
   host: ip11.freegradely.xyz
@@ -3960,6 +4043,17 @@ proxies:
   ws-path: /vmess
 - alterId: 0
   cipher: auto
+  host: v2fly.samrt.website
+  name: 🏁RELAY-188.114.97.110-1985
+  network: ws
+  port: 443
+  server: 188.114.97.110
+  tls: true
+  type: vmess
+  uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
+  ws-path: /chcar
+- alterId: 0
+  cipher: auto
   host: meroiy.icu
   name: 🏁RELAY-172.67.152.214-0926
   network: ws
@@ -4030,6 +4124,17 @@ proxies:
   type: vmess
   uuid: 0145bfef-aa53-416f-90d4-8634295dab57
   ws-path: /live
+- alterId: 0
+  cipher: auto
+  host: glweidf.sbs
+  name: 🏁RELAY-104.21.15.212-1971
+  network: ws
+  port: 443
+  server: 104.21.15.212
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-path: /
 - alterId: 0
   cipher: auto
   host: 38.72img.xyz
@@ -4444,6 +4549,17 @@ proxies:
   ws-path: /y475
 - alterId: 0
   cipher: auto
+  host: linde06.indiavideo.sbs
+  name: 🏁RELAY-104.21.15.36-1972
+  network: ws
+  port: 443
+  server: 104.21.15.36
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-path: /linkws
+- alterId: 0
+  cipher: auto
   host: jp01.scpnb.top
   name: 🏁RELAY-172.67.215.74-0216
   network: ws
@@ -4561,6 +4677,17 @@ proxies:
   type: vmess
   uuid: 4993f14e-5f9b-4249-dc43-99f4fdea84be
   ws-path: /
+- alterId: 0
+  cipher: auto
+  host: obdii.cfd
+  name: 🏁RELAY-172.67.175.56-1975
+  network: ws
+  port: 443
+  server: 172.67.175.56
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-path: /linkws
 - alterId: 0
   cipher: auto
   host: xui.mycf.ml
@@ -5056,6 +5183,17 @@ proxies:
   ws-path: /linkws
 - alterId: 0
   cipher: auto
+  host: glweidf.sbs
+  name: 🏁RELAY-172.67.207.26-1970
+  network: ws
+  port: 443
+  server: 172.67.207.26
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-path: /
+- alterId: 0
+  cipher: auto
   host: vip2323.cfd
   name: 🏁RELAY-104.26.9.202-1008
   network: ws
@@ -5119,6 +5257,12 @@ proxies:
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /linkvws
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-147.90.234.133-0245
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
+  type: ss
 - alterId: 0
   cipher: auto
   host: vip2323.cfd
@@ -5389,6 +5533,16 @@ proxies:
   ws-path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 🏁RELAY-172.67.132.15-9334
+  network: ws
+  port: 443
+  server: 172.67.132.15
+  tls: true
+  type: vmess
+  uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
+  ws-path: /ray
+- alterId: 0
+  cipher: auto
   host: odelia.autos
   name: 🏁RELAY-188.114.97.18-1827
   network: ws
@@ -5594,6 +5748,17 @@ proxies:
   ws-path: /dT9s3HqgZeD3eApzDAfhOHq
 - alterId: 0
   cipher: auto
+  host: haxus3.janechiu.icu
+  name: 🇬🇧GB-46.175.135.9-1983
+  network: ws
+  port: 443
+  server: haxus3.janechiu.icu
+  tls: true
+  type: vmess
+  uuid: 0df258cb-a376-4b8e-a378-a556a4658aeb
+  ws-path: /
+- alterId: 0
+  cipher: auto
   host: www.93271626.xyz
   name: 🇱🇹LT-85.206.168.71-1052
   network: ws
@@ -5625,6 +5790,28 @@ proxies:
   ws-path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
+  host: gwdef.sbs
+  name: 🏁RELAY-172.67.174.42-1976
+  network: ws
+  port: 443
+  server: 172.67.174.42
+  tls: true
+  type: vmess
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  ws-path: /linkws
+- alterId: 0
+  cipher: auto
+  host: hms02.fxiaomi.sbs
+  name: 🏁RELAY-104.21.83.108-1978
+  network: ws
+  port: 443
+  server: 104.21.83.108
+  tls: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-path: /link
+- alterId: 0
+  cipher: auto
   host: nat.998808.xyz
   name: 🏁RELAY-172.67.77.95-1229
   network: ws
@@ -5634,6 +5821,16 @@ proxies:
   type: vmess
   uuid: 1bff15f1-a71d-4f07-b8bf-9471708eff8b
   ws-path: /fthe4gsefgtdu
+- alterId: 0
+  cipher: auto
+  host: ip1.1789034.xyz
+  name: 🏁RELAY-162.159.140.93-1999
+  network: ws
+  port: 2086
+  server: 162.159.140.93
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
   host: 58892877706648357761980405045364.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
@@ -5700,6 +5897,17 @@ proxies:
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-path: /
+- alterId: 0
+  cipher: auto
+  host: sg2.jupiterv2ray.xyz
+  name: 🏁RELAY-172.67.73.39-2006
+  network: ws
+  port: 443
+  server: status.qiscus.com
+  tls: true
+  type: vmess
+  uuid: 283e8955-4a4a-41ca-ac61-3eabf3077a95
+  ws-path: /v2ray
 - alterId: 0
   cipher: auto
   host: ip1.1789034.xyz
@@ -5939,6 +6147,16 @@ proxies:
   ws-path: linkvws
 - alterId: 0
   cipher: auto
+  host: server26.beheshtbaneh.com
+  name: 🏁RELAY-104.21.82.183-1969
+  network: ws
+  port: 8880
+  server: 104.21.82.183
+  type: vmess
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  ws-path: /
+- alterId: 0
+  cipher: auto
   host: sg03.d9ab-22af-fc39ef1d39a0.cfd
   name: 🏁RELAY-104.21.14.186-1671
   network: ws
@@ -5958,6 +6176,17 @@ proxies:
   type: vmess
   uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
   ws-path: /
+- alterId: 0
+  cipher: auto
+  host: us02.gogogoo.cyou
+  name: 🇬🇧GB-46.175.135.9-1989
+  network: ws
+  port: 443
+  server: us02.gogogoo.cyou
+  tls: true
+  type: vmess
+  uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda
+  ws-path: /go
 - alterId: 0
   cipher: auto
   host: 103.75.185.221
@@ -6164,6 +6393,27 @@ proxies:
   ws-path: /vmess
 - alterId: 0
   cipher: auto
+  name: VMess-aaaa.wxx.gay:443
+  network: ws
+  port: 443
+  server: aaaa.wxx.gay
+  tls: true
+  type: vmess
+  uuid: 8237ec34-143a-11ee-8019-000017022008
+  ws-path: /look
+- alterId: 0
+  cipher: auto
+  host: afrhms16v.bestxray.buzz
+  name: 🏁RELAY-104.21.83.208-1974
+  network: ws
+  port: 443
+  server: 104.21.83.208
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-path: /linkws
+- alterId: 0
+  cipher: auto
   name: 美国 416
   network: ws
   port: 443
@@ -6205,6 +6455,17 @@ proxies:
   type: vmess
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-path: /
+- alterId: 0
+  cipher: auto
+  host: us03.gogogoo.cyou
+  name: 🇬🇧GB-46.175.135.9-1984
+  network: ws
+  port: 443
+  server: us03.gogogoo.cyou
+  tls: true
+  type: vmess
+  uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda
+  ws-path: /go
 - alterId: 0
   cipher: auto
   host: 9.ir.cdn.mypings.ir
@@ -6343,6 +6604,14 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  name: 香港|@ripaojiedian
+  network: tcp
+  port: 30807
+  server: v10.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
   host: kr-arm2.018999.xyz
   name: 🇰🇷KR-146.56.47.1-1303
   network: ws
@@ -6417,6 +6686,12 @@ proxies:
   type: vmess
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇳IN-103.111.114.82-0217
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  port: 28061
+  server: 103.111.114.82
+  type: ss
 - alterId: 0
   cipher: auto
   host: obdii.cfd
@@ -6428,6 +6703,16 @@ proxies:
   type: vmess
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-path: /
+- alterId: 0
+  cipher: auto
+  host: square-snowflake-486a.beshir-beisel.workers.dev
+  name: 🏁RELAY-104.16.60.8-1997
+  network: ws
+  port: 8880
+  server: 104.16.60.8
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-path: /linde06.indiavideo.sbs/linkws
 - alterId: 0
   cipher: auto
   host: sazgar.serveirc.com
@@ -6524,6 +6809,12 @@ proxies:
   type: vmess
   uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇳IN-103.111.114.71-0218
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  port: 28061
+  server: 103.111.114.71
+  type: ss
 - alterId: 0
   cipher: auto
   host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
@@ -6695,6 +6986,17 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  host: v2fly.samrt.website
+  name: 🏁RELAY-104.19.3.17-1986
+  network: ws
+  port: 443
+  server: 104.19.3.17
+  tls: true
+  type: vmess
+  uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
+  ws-path: /chcar
+- alterId: 0
+  cipher: auto
   host: yellow-paper-029c.yvonna.workers.dev
   name: 🏁RELAY-45.142.120.190-1445
   network: ws
@@ -6732,6 +7034,17 @@ proxies:
   server: 141.101.114.114
   type: vmess
   uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: 2cdn.njkrpl.com
+  name: 🏁RELAY-104.19.230.21-0200
+  network: ws
+  port: 443
+  server: 2cdn.njkrpl.com
+  tls: true
+  type: vmess
+  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -6787,6 +7100,38 @@ proxies:
   ws-path: /1c5854ba-1b44-11ee-a146-8213fd3be4b9
 - alterId: 0
   cipher: auto
+  host: nt-haze-7dad.rogap16875.workers.dev
+  name: 🏁RELAY-185.146.173.129-1980
+  network: ws
+  port: 443
+  server: 185.146.173.129
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
+  host: ab-test-frosty-flower-e7fb.tariroc864.workers.dev
+  name: 🏁RELAY-185.148.104.118-1977
+  network: ws
+  port: 443
+  server: 185.148.104.118
+  tls: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: mysan2.jaquay22.workers.dev
+  name: 🏁RELAY-104.18.25.92-1979
+  network: ws
+  port: 2052
+  server: 104.18.25.92
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-path: /
+- alterId: 0
+  cipher: auto
   host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
   name: 🇺🇸US-192.0.54.172-1688
   network: ws
@@ -6807,6 +7152,66 @@ proxies:
   type: vmess
   uuid: fa5b55cd-cafc-4de0-a4c8-722e02a9f58e
   ws-path: /linkws/hms03.dongfeng.cfd
+- insecure: '1'
+  name: '%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD'
+  obfs: salamander
+  obfs-password: eNM%2FNfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo%3D
+  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+  port: 443
+  server: ff2.yuntong.click
+  sni: ff2.yuntong.click
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  host: planb.mojcn.com
+  name: 🇫🇷FR-162.19.192.89-2017
+  network: ws
+  port: 16618
+  server: planb.mojcn.com
+  type: vmess
+  uuid: 2ed5919d-9a69-4c79-90af-e21915182aa1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: sg1-v2ray.sshkit.org
+  name: 🏁RELAY-104.18.24.139-2007
+  network: ws
+  port: 80
+  server: 104.18.24.139
+  type: vmess
+  uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+  ws-path: /sshkit/5206194863/62c7702a0ea8b/
+- alterId: 0
+  cipher: auto
+  host: onea.flha.ru
+  name: 🏁RELAY-104.19.45.178-2003
+  network: ws
+  port: 2095
+  server: 104.19.45.178
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: us3e-mmnnfr9dop0.v2freevpn.com
+  name: 🏁RELAY-104.16.67.38-2001
+  network: ws
+  port: 443
+  server: 104.16.67.38
+  tls: true
+  type: vmess
+  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: icy-butterfly-4100.email-0kn8d.workers.dev
+  name: 🏁RELAY-104.16.68.38-1998
+  network: ws
+  port: 8080
+  server: 104.16.68.38
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-path: /glweidf.sbs/linkws
 - alterId: 0
   cipher: auto
   host: kampong.org
@@ -6905,6 +7310,12 @@ proxies:
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   ws-path: /rbqqvws
+- name: '%F0%9F%87%AD%F0%9F%87%B0%20HK'
+  password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
+  port: 443
+  server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
+  sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
+  type: hysteria2
 - alterId: 0
   cipher: auto
   host: ahsorathiyaa.fly.dev
@@ -6916,6 +7327,15 @@ proxies:
   type: vmess
   uuid: de04add9-5c68-8bab-950c-08cd5320df18
   ws-path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬SG-159.223.94.156-5843
+  network: ws
+  port: 80
+  server: 159.223.94.156
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-path: /anti13.zingfast.vn
 - alterId: 0
   cipher: auto
   name: 🇸🇬SG-139.99.61.154-3312
@@ -6948,6 +7368,28 @@ proxies:
   ws-path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
+  host: guil.tk
+  name: 🏁RELAY-104.16.199.1-2015
+  network: ws
+  port: 443
+  server: 104.16.199.1
+  tls: true
+  type: vmess
+  uuid: c83d9439-9392-4c26-a10c-a223b2e8768d
+  ws-path: /pngvws
+- alterId: 0
+  cipher: auto
+  host: marzban-node-production-mr58pge.up.railway.app
+  name: 美国_072105070
+  network: ws
+  port: 443
+  server: marzban-node-production-mr58pge.up.railway.app
+  sni: marzban-node-production-mr58pge.up.railway.app
+  type: vless
+  uuid: 1e667d3b-1557-44cc-9bcb-4d3c0c5b3b55
+  ws-path: '%2Fvlessfp%3Dios'
+- alterId: 0
+  cipher: auto
   host: 4gvpn.akamaized.net
   name: 🇸🇬SG-157.245.152.136-1893
   network: ws
@@ -6967,6 +7409,25 @@ proxies:
   type: vmess
   uuid: f5c137d1-ca89-42c0-b604-db39aef60a73
   ws-path: /
+- alterId: 0
+  cipher: auto
+  host: pan1.global.ssl.fastly.net
+  name: 美国_0721054401
+  network: ws
+  port: 443
+  server: 199.232.249.110
+  sni: ssl.fastly.com
+  type: vless
+  uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
+  ws-path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?edfp=chrome
+- alterId: 0
+  cipher: auto
+  name: 印度_072105092
+  port: 443
+  server: 199.232.22.39
+  type: vless
+  uuid: 0%2561%25659%256591%2565-bf8c-44%25654-b9c2-%25617%25653%25616c3%2561335
+  ws-path: '%2F%54ELEGR%41M_N%55F%69L%54ER%2C%54ELEGR%41M_N%55F%69L%54ER%2C%54ELEGR%41M_N%55F%69L%54ER%2C%54ELEGR%41M_N%55F%69L%54ER%2C%54ELEGR%41M_N%55F%69L%54ER%2C%54ELEGR%41M_N%55F%69L%54ER%2C%54ELEGR%41M_N%55F%69L%54ER%3Fed'
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -7023,6 +7484,28 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: CZ_speednode_0002
+  port: 443
+  server: 95.85.227.25
+  sni: pol1.hatvpn.org
+  type: vless
+  uuid: e3e90161-fe65-443a-a3a4-e0e3a73704ca
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: pan21.global.ssl.fastly.net
+  name: 美国+V2CROSS.COM
+  network: ws
+  port: 443
+  server: 167.82.77.173
+  sni: ssl.fastly.com
+  type: vless
+  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
+  ws-path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
+- alterId: 0
+  cipher: auto
   fp: chrome
   name: 🇭🇰 机场推荐:dafei.de 香港 01
   network: grpc
@@ -7046,6 +7529,9 @@ proxy-groups:
   proxies:
   - 🔰 自动选择
   - ♻️ 自动测速
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇬🇧_GB_英国
   - 中国 007
   - 🇭🇰HK-47.239.189.182-0483
   - 🏁RELAY-162.159.36.5-1957
@@ -7055,6 +7541,7 @@ proxy-groups:
   - 🇨🇳CN-221.204.41.88-0564
   - 🇰🇷KR-104.37.215.83-1071
   - 🇯🇵JP-47.245.42.92-1402
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - 🏁RELAY-172.64.156.14-1924
   - 中国 018
   - 中国 017
@@ -7095,9 +7582,11 @@ proxy-groups:
   - 🏁RELAY-172.64.147.252-1940
   - 🏁RELAY-172.64.146.66-0968
   - 🏁RELAY-104.18.37.18-0975
+  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
   - 🏁RELAY-172.64.145.202-1386
   - 🏁RELAY-104.21.227.134-0765
   - 🏁RELAY-172.64.144.82-1403
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
   - 🇯🇵JP-40.74.100.129-0401
   - 🇰🇷KR-52.231.200.179-1294
   - 🇭🇰HK-46.20.109.113-1617
@@ -7167,6 +7656,7 @@ proxy-groups:
   - 🏁RELAY-141.101.114.111-1139
   - 🏁RELAY-23.227.38.20-1177
   - 🏁RELAY-190.93.245.3-4976
+  - 🇫🇷FR-162.19.192.89-1990
   - 🏁RELAY-104.16.7.70-1036
   - 🏁RELAY-104.19.3.12-0649
   - 🏁RELAY-23.227.38.27-1208
@@ -7346,6 +7836,7 @@ proxy-groups:
   - 🏁RELAY-104.21.1.32-1630
   - 🏁RELAY-188.114.97.4-1503
   - 🇺🇸US-103.224.182.215-0982
+  - 🏁RELAY-172.67.161.77-1973
   - 🇫🇷FR-162.19.224.175-1269
   - 🏁RELAY-104.18.22.19-1011
   - 🏁RELAY-104.24.0.11-0940
@@ -7363,6 +7854,7 @@ proxy-groups:
   - 🏁RELAY-104.20.19.18-1009
   - 🇨🇿CZ-46.8.8.220-1271
   - 🇩🇪DE-157.90.20.18-1334
+  - 🇺🇸US-179.255.112.220-1991
   - 🏁RELAY-104.19.21.63-0825
   - 🏁RELAY-104.20.28.74-0832
   - 🇨🇿CZ-46.8.9.220-0912
@@ -7421,6 +7913,7 @@ proxy-groups:
   - 🏁RELAY-188.114.96.42-1735
   - 🇩🇪DE-157.90.33.73-1904
   - 🏁RELAY-172.67.132.209-1002
+  - 🏁RELAY-188.114.97.110-1985
   - 🏁RELAY-172.67.152.214-0926
   - 🇭🇰HK-112.120.47.181-1384
   - 🇺🇸US-103.224.182.211-1584
@@ -7428,6 +7921,7 @@ proxy-groups:
   - 🏁RELAY-172.66.213.38-1005
   - 🇮🇷IR-185.143.233.114-5691
   - 🏁RELAY-172.67.178.55-1347
+  - 🏁RELAY-104.21.15.212-1971
   - 🏁RELAY-172.67.183.35-1144
   - 🏁RELAY-188.114.99.134-1487
   - 🏁RELAY-172.67.181.241-1497
@@ -7467,6 +7961,7 @@ proxy-groups:
   - 🏁RELAY-188.114.97.1-0869
   - 🏁RELAY-162.159.138.179-8311
   - 🏁RELAY-104.25.52.187-2437
+  - 🏁RELAY-104.21.15.36-1972
   - 🏁RELAY-172.67.215.74-0216
   - 🏁RELAY-104.21.5.219-1433
   - 🇧🇪BE-37.120.236.251-1814
@@ -7478,6 +7973,7 @@ proxy-groups:
   - 🏁RELAY-172.67.215.250-1306
   - 🏁RELAY-104.21.18.161-1822
   - 🇫🇷FR-87.106.9.34-1429
+  - 🏁RELAY-172.67.175.56-1975
   - 🏁RELAY-172.67.142.81-1351
   - 🇪🇸ES-37.120.142.250-1048
   - 🏁RELAY-172.67.168.34-0917
@@ -7524,12 +8020,14 @@ proxy-groups:
   - 🏁RELAY-104.26.13.140-0836
   - 🇨🇦CA-104.247.81.99-0920
   - 🏁RELAY-172.67.170.11-1489
+  - 🏁RELAY-172.67.207.26-1970
   - 🏁RELAY-104.26.9.202-1008
   - 🏁RELAY-172.67.153.119-1509
   - 🏁RELAY-188.114.97.210-1491
   - 🇨🇦CA-104.247.81.99-0929
   - 🇩🇪DE-157.90.33.74-1903
   - 🇨🇦CA-104.247.81.99-0985
+  - 🇺🇸US-147.90.234.133-0245
   - 🇨🇦CA-104.247.81.99-1025
   - 🏁RELAY-104.24.45.91-1841
   - 🇨🇿CZ-46.8.8.225-0886
@@ -7555,6 +8053,7 @@ proxy-groups:
   - 🇨🇿CZ-46.8.8.220-0880
   - 🏁RELAY-172.67.131.108-0970
   - 🏁RELAY-172.67.179.151-0957
+  - 🏁RELAY-172.67.132.15-9334
   - 🏁RELAY-188.114.97.18-1827
   - 🏁RELAY-104.21.91.112-1343
   - 🏁RELAY-172.67.206.124-1824
@@ -7574,16 +8073,21 @@ proxy-groups:
   - 🏁RELAY-172.67.155.82-0949
   - 🏁RELAY-172.67.170.13-8213
   - 🏁RELAY-104.21.12.87-8695
+  - 🇬🇧GB-46.175.135.9-1983
   - 🇱🇹LT-85.206.168.71-1052
   - 🏁RELAY-172.67.75.172-0833
   - 🏁RELAY-172.67.71.187-0835
+  - 🏁RELAY-172.67.174.42-1976
+  - 🏁RELAY-104.21.83.108-1978
   - 🏁RELAY-172.67.77.95-1229
+  - 🏁RELAY-162.159.140.93-1999
   - 🏁RELAY-104.26.15.148-0653
   - 🏁RELAY-172.67.196.16-1001
   - 🇨🇦CA-104.247.81.99-1020
   - 🏁RELAY-172.67.152.200-0987
   - 🏁RELAY-172.67.175.148-1310
   - 🇩🇪DE-23.158.56.227-1937
+  - 🏁RELAY-172.67.73.39-2006
   - 🏁RELAY-162.159.140.33-0634
   - 🏁RELAY-104.26.12.72-0646
   - 🏁RELAY-188.114.99.10-3389
@@ -7606,8 +8110,10 @@ proxy-groups:
   - 🇬🇧GB-46.175.135.9-0581
   - 🏁RELAY-104.21.93.182-8816
   - 🏁RELAY-172.67.182.187-1817
+  - 🏁RELAY-104.21.82.183-1969
   - 🏁RELAY-104.21.14.186-1671
   - 🏁RELAY-172.67.161.104-0211
+  - 🇬🇧GB-46.175.135.9-1989
   - 🇻🇳VN-103.75.185.221-0889
   - 🇫🇷FR-193.160.130.245-1589
   - 🏁RELAY-188.114.96.5-1488
@@ -7627,10 +8133,13 @@ proxy-groups:
   - 🏁RELAY-172.66.154.167-5695
   - 🏁RELAY-104.21.68.244-1676
   - 🇮🇷IR-194.50.216.61-0967
+  - VMess-aaaa.wxx.gay:443
+  - 🏁RELAY-104.21.83.208-1974
   - 美国 416
   - 🇩🇪DE-91.195.240.12-0479
   - 🇩🇪DE-64.190.63.222-1183
   - 🇺🇸US-69.84.182.16-1705
+  - 🇬🇧GB-46.175.135.9-1984
   - 🇮🇷IR-185.143.232.253-0616
   - 🇯🇵JP-43.165.172.213-1952
   - 🇷🇺RU-93.93.89.118-1734
@@ -7644,6 +8153,7 @@ proxy-groups:
   - 🇺🇸US-104.168.54.205-0382
   - 🇮🇷IR-178.239.145.37-1938
   - 🇰🇬KG-185.48.136.150-1804
+  - 香港|@ripaojiedian
   - 🇰🇷KR-146.56.47.1-1303
   - 🇰🇿KZ-217.76.64.195-1745
   - 德国 004
@@ -7651,7 +8161,9 @@ proxy-groups:
   - 🏁RELAY-162.159.142.9-1272
   - 🏁RELAY-104.18.222.139-8289
   - 🏁RELAY-45.149.12.84-1472
+  - 🇮🇳IN-103.111.114.82-0217
   - 🏁RELAY-45.149.12.56-1454
+  - 🏁RELAY-104.16.60.8-1997
   - 🇺🇿UZ-37.110.209.228-1741
   - 🏁RELAY-154.83.2.90-1465
   - 🇧🇷BR-172.233.19.143-1624
@@ -7661,6 +8173,7 @@ proxy-groups:
   - 🇮🇷IR-87.107.108.235-0652
   - 🏁RELAY-162.159.252.210-1525
   - 🏁RELAY-104.18.62.204-1639
+  - 🇮🇳IN-103.111.114.71-0218
   - 🇺🇸US-216.24.57.57-1706
   - 伊朗 003
   - 🇮🇳IN-152.67.190.105-1690
@@ -7677,17 +8190,28 @@ proxy-groups:
   - 🏁RELAY-185.146.173.158-1468
   - 🏁RELAY-104.16.68.38-1733
   - 🏁RELAY-185.135.9.19-1461
+  - 🏁RELAY-104.19.3.17-1986
   - 🏁RELAY-45.142.120.190-1445
   - 🏁RELAY-104.17.213.57-1460
   - 🏁RELAY-104.31.16.3-9660
   - 🏁RELAY-141.101.114.114-1506
+  - 🏁RELAY-104.19.230.21-0200
   - 🏁RELAY-104.17.171.34-1750
   - 🏁RELAY-104.16.61.8-8572
   - 🏁RELAY-104.18.28.214-1524
   - 🏁RELAY-45.149.12.79-1457
   - 🏁RELAY-66.81.247.49-1723
+  - 🏁RELAY-185.146.173.129-1980
+  - 🏁RELAY-185.148.104.118-1977
+  - 🏁RELAY-104.18.25.92-1979
   - 🇺🇸US-192.0.54.172-1688
   - 🏁RELAY-172.65.211.209-1680
+  - '%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD'
+  - 🇫🇷FR-162.19.192.89-2017
+  - 🏁RELAY-104.18.24.139-2007
+  - 🏁RELAY-104.19.45.178-2003
+  - 🏁RELAY-104.16.67.38-2001
+  - 🏁RELAY-104.16.68.38-1998
   - 🇺🇸US-3.33.251.168-8056
   - 🇺🇸US-216.221.214.50-1701
   - 🇺🇸US-38.48.227.231-1634
@@ -7697,23 +8221,34 @@ proxy-groups:
   - 🇺🇸US-76.223.54.146-0842
   - 🇺🇸US-13.248.169.48-1124
   - 🏁RELAY-104.21.6.201-1449
+  - '%F0%9F%87%AD%F0%9F%87%B0%20HK'
   - 🇺🇸US-66.241.124.93-1725
+  - 🇸🇬SG-159.223.94.156-5843
   - 🇸🇬SG-139.99.61.154-3312
   - 🏁RELAY-104.16.60.8-1500
   - 🇰🇿KZ-194.76.18.113-1697
+  - 🏁RELAY-104.16.199.1-2015
+  - 美国_072105070
   - 🇸🇬SG-157.245.152.136-1893
   - 🇲🇳MN-180.149.90.66-1758
+  - 美国_0721054401
+  - 印度_072105092
   - CF中转_07210512953
   - 未知_072105956
   - 🇹🇭TH-119.59.98.39-1062
   - 美国 407
   - 未知_072105921
+  - CZ_speednode_0002
+  - 美国+V2CROSS.COM
   - 🇭🇰 机场推荐:dafei.de 香港 01
   - 🇬🇧 机场推荐:dafei.de 英国 01
   type: select
 - interval: 300
   name: 🔰 自动选择
   proxies: &id001
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇬🇧_GB_英国
   - 中国 007
   - 🇭🇰HK-47.239.189.182-0483
   - 🏁RELAY-162.159.36.5-1957
@@ -7723,6 +8258,7 @@ proxy-groups:
   - 🇨🇳CN-221.204.41.88-0564
   - 🇰🇷KR-104.37.215.83-1071
   - 🇯🇵JP-47.245.42.92-1402
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - 🏁RELAY-172.64.156.14-1924
   - 中国 018
   - 中国 017
@@ -7760,10 +8296,6 @@ proxy-groups:
   - 🏁RELAY-104.18.41.190-1427
   - 🏁RELAY-104.18.40.152-0728
   - 🏁RELAY-172.64.146.28-1911
-  - 🏁RELAY-172.64.147.252-1940
-  - 🏁RELAY-172.64.146.66-0968
-  - 🏁RELAY-104.18.37.18-0975
-  - 🏁RELAY-172.64.145.202-1386
   type: url-test
   url: https://www.gstatic.com/generate_204
 - interval: 300
