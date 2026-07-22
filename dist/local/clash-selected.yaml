@@ -16,6 +16,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
+  host: v6.hdacd.com
   name: 🇯🇵 JP-01
   network: tcp
   port: 30806
@@ -33,10 +34,10 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: 🇸🇬 SG-01
-  network: tcp
+  name: 🇫🇷 FR-01
   port: 30835
   server: v35.hdacd.com
+  skip-cert-verify: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
@@ -305,7 +306,7 @@ proxy-groups:
   - 🇺🇸 US-01
   - 🇯🇵 JP-01
   - 🇬🇧 GB-01
-  - 🇸🇬 SG-01
+  - 🇫🇷 FR-01
   - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
@@ -339,7 +340,7 @@ proxy-groups:
   - 🇺🇸 US-01
   - 🇯🇵 JP-01
   - 🇬🇧 GB-01
-  - 🇸🇬 SG-01
+  - 🇫🇷 FR-01
   - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
