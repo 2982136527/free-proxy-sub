@@ -17,9 +17,9 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  network: tcp
   port: 30806
   server: v6.hdacd.com
-  skip-cert-verify: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
@@ -34,9 +34,9 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇸🇬_SG_新加坡->🇫🇷_FR_法国
+  network: tcp
   port: 30835
   server: v35.hdacd.com
-  skip-cert-verify: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
@@ -625,9 +625,9 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  network: tcp
   port: 30809
   server: v9.hdacd.com
-  skip-cert-verify: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
@@ -664,11 +664,10 @@ proxies:
   uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
   ws-path: /
 - alterId: 0
-  cipher: none
+  cipher: auto
   name: 🇨🇳_CN_中国->🇩🇪_DE_德国
   port: 30833
   server: v33.hdacd.com
-  skip-cert-verify: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
@@ -10112,13 +10111,13 @@ proxies:
   type: vmess
   uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
   ws-path: /blue
-- name: 🇩🇪_DE_德国
+- insecure: '1'
+  name: '%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD'
   obfs: salamander
-  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
+  obfs-password: eNM%2FNfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo%3D
   password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
   port: 443
   server: ff2.yuntong.click
-  skip-cert-verify: true
   sni: ff2.yuntong.click
   type: hysteria2
 - alterId: 0
@@ -10896,6 +10895,19 @@ proxies:
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   ws-path: /rbqqvws
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: Freealireza2.nscl.ir
+  name: CF中转_07220010484
+  network: ws
+  port: 443
+  server: 104.16.122.177
+  sni: Freealireza2.nscl.ir
+  type: vless
+  uuid: 40fde68e-da2e-4e6f-ae4c-2d7422a6a172
+  ws-path: /Kose-nanat-decoder
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-104.31.16.28-9660
@@ -11917,10 +11929,20 @@ proxies:
   uuid: '@mi6vpn'
 - alterId: 0
   cipher: auto
+  fp: chrome
+  name: CF中转_07220010460
+  network: xhttp
+  port: 443
+  server: 104.16.71.215
+  sni: ir-cdn-dl-09.khorostime.ir
+  type: vless
+  uuid: 0573d263-6eb9-4846-a614-393da413ae6c
+- alterId: 0
+  cipher: auto
   name: 🇺🇸_US_美国
+  network: tcp
   port: 443
   server: guanwang.awsno.com
-  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
@@ -11969,6 +11991,18 @@ proxies:
   ws-path: '%2FeyJqdW5rIjoiRlpGZjNZYno0IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D'
 - alterId: 0
   cipher: auto
+  encryption: none
+  host: 3.newbi.dpdns.org
+  name: CF中转_07220010457
+  network: ws
+  port: 8443
+  server: 104.17.150.104
+  sni: 3.newbi.dpdns.org
+  type: vless
+  uuid: b9b58eae-e594-4033-92d0-c0dc3c62fc27
+  ws-path: /vlessws
+- alterId: 0
+  cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
   name: CZ_speednode_0002
@@ -11990,9 +12024,9 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇯🇵_JP_日本->🇺🇸_US_美国
+  network: tcp
   port: 30824
   server: v24.hdacd.com
-  skip-cert-verify: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
@@ -12031,6 +12065,18 @@ proxies:
   type: vless
   uuid: 3b5e5f1b-dff2-4c4e-b348-124cf7cd64aa
   ws-path: /3b5e5f1b-dff2-4c4e-b348-124cf7cd64aa-vlessfp=chrome
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: nl.vpnhi.ru
+  name: CF中转_07220010453
+  network: ws
+  port: 443
+  server: 172.67.213.69
+  sni: nl.vpnhi.ru
+  type: vless
+  uuid: ea8d14d4-ca12-4cd1-bcad-f0fa72f6eadc
+  ws-path: /vpnws
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -12377,6 +12423,17 @@ proxies:
   uuid: 39b25b94-3b44-0037-94bf-98456f1b38a3
 - alterId: 0
   cipher: auto
+  host: snippet.danfeng.com.cfd
+  name: CF中转_07220010434
+  network: ws
+  port: 443
+  server: 162.159.39.19
+  sni: snippet.danfeng.com.cfd
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-path: /danfengfp=random
+- alterId: 0
+  cipher: auto
   host: kalami-eew.pages.dev
   name: CF中转_0722003792
   network: ws
@@ -12524,6 +12581,18 @@ proxies:
   type: vless
   uuid: 098fd515-29de-4d74-b77d-d8ab878a7e2c
   ws-path: '%2Fresgdws'
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: sni.111000.v6.army
+  name: CF中转_0722009935
+  network: ws
+  port: 443
+  server: 104.17.111.43
+  sni: sni.111000.v6.army
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-path: /?https://t.me/wangcai2🇨🇳=
 - alterId: 0
   cipher: auto
   host: cdn-n5.roxi.cc
@@ -12781,6 +12850,19 @@ proxies:
 - alterId: 0
   cipher: auto
   encryption: none
+  fp: chrome
+  host: madig.qzz.io
+  name: CF中转_0722009932
+  network: ws
+  port: 443
+  server: 104.19.105.108
+  sni: madig.qzz.io
+  type: vless
+  uuid: ada060be-163b-4804-8cb7-0fe9937db6de
+  ws-path: /t/my/3/p/ws/e8c2f6a14b79?ed=2047
+- alterId: 0
+  cipher: auto
+  encryption: none
   host: chrger.pizwe.org
   name: CF中转_0722006568
   network: xhttp
@@ -12941,6 +13023,19 @@ proxies:
   server: 188.114.97.230
   type: vless
   uuid: f75566a5-4744-4806-ac2e-ccaefe1b1080
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: ghahve.nikanix.lol
+  name: CF中转_07220010019
+  network: ws
+  port: 443
+  server: 172.64.159.52
+  sni: ghahve.nikanix.lol
+  type: vless
+  uuid: 7d67ebcd-9b3a-4c9c-9fe0-77de26e2ffda
+  ws-path: /ray
 - alterId: 0
   cipher: auto
   fp: random
@@ -13770,6 +13865,17 @@ proxies:
   ws-path: /afjhk1
 - alterId: 0
   cipher: auto
+  host: bb2233.xfan1986.dpdns.org
+  name: CF中转_07220010061
+  network: ws
+  port: 2087
+  server: 104.21.80.85
+  sni: bb2233.XFAn1986.dPdNs.ORg
+  type: vless
+  uuid: 5629eadf-ae86-4030-ab63-bd349c6c26fc
+  ws-path: /nmw9vzQOOB8esgbz/YnBiLnlvdXNlZi5pc2VnYXJvLmNvbQ==fp=random
+- alterId: 0
+  cipher: auto
   encryption: none
   fp: random
   name: CF中转_0722007442
@@ -13915,6 +14021,19 @@ proxies:
   ws-path: '%2F%3Ftelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2B%2540wangcai2%3D'
 - alterId: 0
   cipher: auto
+  encryption: none
+  fp: chrome
+  host: sell.sigikala.site
+  name: CF中转_0722009926
+  network: ws
+  port: 2053
+  server: 104.17.121.9
+  sni: sell.sigikala.site
+  type: vless
+  uuid: Vpn_Shield
+  ws-path: /
+- alterId: 0
+  cipher: auto
   host: prwgrammer.com
   name: CF中转_07220013571
   network: ws
@@ -14055,6 +14174,18 @@ proxies:
   server: 188.114.96.223
   type: vless
   uuid: 024ee20d-57dc-46f2-84bf-e1eab037d37f
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: afrcloud22.mmv.kr
+  name: CF中转_07220010007
+  network: ws
+  port: 443
+  server: 104.21.95.114
+  sni: afrcloud22.mmv.kr
+  type: vless
+  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  ws-path: '%2F185.186.245.40%3A81'
 - alterId: 0
   cipher: auto
   host: wu.090881.xyz
@@ -14340,6 +14471,19 @@ proxies:
   ws-path: /?ed=2048fp=chromesecurity=tls
 - alterId: 0
   cipher: auto
+  encryption: none
+  fp: chrome
+  host: ez-97b75a.ubetsjvz7.workers.dev
+  name: CF中转_07220010209
+  network: ws
+  port: 443
+  server: 190.93.246.54
+  sni: ez-97b75a.ubetsjvz7.workers.dev
+  type: vless
+  uuid: b3fbf377-2344-4b7e-a06b-bf4e767374b2
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   fp: random
   host: 007.xingfu.qzz.io
   name: CF中转_0722003166
@@ -14429,6 +14573,16 @@ proxies:
   ws-path: /help/jumping
 - alterId: 0
   cipher: auto
+  host: xn--cz8h.pages.dev
+  name: CF中转_07220010200
+  network: ws
+  port: 443
+  server: 172.64.152.27
+  type: vless
+  uuid: 6fb65356-788e-4118-8280-148ec6eca18a
+  ws-path: '%2Fpyip'
+- alterId: 0
+  cipher: auto
   encryption: none
   host: ir1.airpanel.top
   name: CF中转_0722005784
@@ -14454,6 +14608,19 @@ proxies:
   ws-path: /path
 - alterId: 0
   cipher: auto
+  encryption: none
+  fp: chrome
+  host: s3.alivpn.qzz.io
+  name: CF中转_07220010053
+  network: xhttp
+  port: 8443
+  server: 188.114.97.149
+  sni: s3.alivpn.qzz.io
+  type: vless
+  uuid: 9cfe1a11-9093-4706-9b3b-3ee0bab6b53b
+  ws-path: /take
+- alterId: 0
+  cipher: auto
   fp: chrome
   host: mail.qbo.qzz.io
   name: CF中转_0722003192
@@ -14464,6 +14631,19 @@ proxies:
   type: vless
   uuid: 1c0e84d7-34ad-4242-9b4b-ea81f973e0aa
   ws-path: '%2Farchive-stream'
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: edt2.cray.mom
+  name: CF中转_07220010115
+  network: ws
+  port: 2053
+  server: 172.64.228.226
+  sni: edt2.cray.mom
+  type: vless
+  uuid: b0437161-402e-483d-8462-65215b245b07
+  ws-path: /
 - alterId: 0
   cipher: auto
   encryption: none
@@ -14533,6 +14713,17 @@ proxies:
   uuid: 2bab4dfb-8bd2-4844-bfdb-48a019ca27c7
 - alterId: 0
   cipher: auto
+  host: filemanager.thestayler.ir
+  name: CF中转_07220010410
+  network: ws
+  port: 2096
+  server: 104.17.231.69
+  sni: FiLEMAnageR.thESTaYleR.iR
+  type: vless
+  uuid: af47392c-2a72-44da-bab4-545a3bce4958
+  ws-path: /e12JtBu9rVXrhCqysecurity=tls
+- alterId: 0
+  cipher: auto
   fp: chrome
   name: CF中转_0722004022
   network: xhttp
@@ -14540,6 +14731,18 @@ proxies:
   server: 104.24.168.54
   type: vless
   uuid: 54a83fbb-c966-4bb2-bed6-a808b2fc3913
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: w1.sylar8.eu.org
+  name: CF中转_07220010177
+  network: ws
+  port: 443
+  server: 172.67.174.190
+  sni: w1.sylar8.eu.org
+  type: vless
+  uuid: 29f8ad12-ea84-431b-bf32-9d3fb5cf2aa2
+  ws-path: '%2F%3Fed'
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -15026,6 +15229,18 @@ proxies:
 - alterId: 0
   cipher: auto
   encryption: none
+  host: sni.latonyamadeline.ndjp.net
+  name: CF中转_07220010009
+  network: ws
+  port: 443
+  server: 172.64.158.90
+  sni: sni.latonyamadeline.ndjp.net
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-path: '%2F%3Fhttps%253A%252F%252Ft.me%252Fwangcai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3%3D'
+- alterId: 0
+  cipher: auto
+  encryption: none
   fp: chrome
   host: kalam.mrconfigur.site
   name: CF中转_0722008135
@@ -15148,6 +15363,16 @@ proxies:
   type: vless
   uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
   ws-path: '%2F57ba2ab1'
+- alterId: 0
+  cipher: auto
+  name: 美国 1350
+  network: xhttp
+  port: 2053
+  server: 104.18.152.231
+  servername: bulghari.appleseraj.ir
+  tls: true
+  type: vless
+  uuid: fa937ff5-89cc-49a4-9bf9-da2b7285070d
 - alterId: 0
   cipher: auto
   fp: random
@@ -15452,6 +15677,18 @@ proxies:
   ws-path: '%2Fjsdrzrws'
 - alterId: 0
   cipher: auto
+  encryption: none
+  host: crm.lotussec.com
+  name: CF中转_07220010162
+  network: ws
+  port: 443
+  server: 172.64.155.188
+  sni: crm.lotussec.com
+  type: vless
+  uuid: 17540a16-a0dd-5694-7e1e-14e281ccc032
+  ws-path: '%2F%40JavidnamanIran%2FJavid-SHAH-KingRezaPahlavi%2F'
+- alterId: 0
+  cipher: auto
   host: gbyz.asia
   name: CF中转_0722005740
   network: ws
@@ -15473,6 +15710,18 @@ proxies:
   type: vless
   uuid: ac7f6b25-895e-4b73-ad49-51ca3d130cca
   ws-path: /
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: sni.jpmj.dev
+  name: CF中转_07220010172
+  network: ws
+  port: 2096
+  server: 172.64.149.54
+  sni: sni.jpmj.dev
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-path: /?ed%3D2560
 - alterId: 0
   cipher: auto
   encryption: none
@@ -15595,6 +15844,18 @@ proxies:
   type: vless
   uuid: 153bbad3-26c8-4690-beae-676c77e73b52
   ws-path: /DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs?ed=20
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: etxl1.parhamm1.ir
+  name: CF中转_07220010001
+  network: ws
+  port: 443
+  server: 104.21.81.165
+  sni: etxl1.parhamm1.ir
+  type: vless
+  uuid: 51f05327-38ce-454f-920c-3980827b6240
+  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   host: dd4973b2.lfree.cn.mt
@@ -16078,6 +16339,18 @@ proxies:
   type: vless
   uuid: 6461860a-d367-4d47-8e82-7d8e1047a152
   ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: snip.zrfme.site
+  name: CF中转_07220010100
+  network: ws
+  port: 443
+  server: 198.41.223.179
+  sni: snip.zrfme.site
+  type: vless
+  uuid: 4d6fa520-b8c1-4811-93f6-a91fd6f87b59
+  ws-path: '%2Fzrf%3Fed%3D2560'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -16623,6 +16896,19 @@ proxies:
   cipher: auto
   encryption: none
   fp: chrome
+  host: ratatouille.adaspoloandco.com
+  name: CF中转_07220010161
+  network: ws
+  port: 8443
+  server: 198.41.208.99
+  sni: ratatouille.adaspoloandco.com
+  type: vless
+  uuid: be5851ff-9af5-45ea-b874-a0a035714114
+  ws-path: /admin.php
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
   host: s3.alivpn.qzz.io
   name: CF中转_07220012901
   network: xhttp
@@ -16789,6 +17075,19 @@ proxies:
 - alterId: 0
   cipher: auto
   encryption: none
+  fp: chrome
+  host: nimhubnet4.nvclud.ir.
+  name: CF中转_07220010232
+  network: ws
+  port: 443
+  server: 104.24.58.104
+  sni: nimhubnet4.nvclud.ir.
+  type: vless
+  uuid: 2187354d-0ffe-428a-9977-13c43e8620ec
+  ws-path: '%2F%3Fed%3D2095'
+- alterId: 0
+  cipher: auto
+  encryption: none
   name: CF中转_0722003146
   port: 2053
   server: 104.17.74.206
@@ -16891,6 +17190,16 @@ proxies:
   type: vless
   uuid: 2cd53a7b-050d-4120-941d-c1c4bfa9406d
   ws-path: /Telegram@SoonTeam,Telegram@SoonTeam,Telegram@SoonTeam,Telegram@SoonTeam,Telegram@SoonTeam
+- alterId: 0
+  cipher: auto
+  host: r.icy.de5.net
+  name: CF中转_07220010251
+  network: ws
+  port: 443
+  server: 104.19.58.74
+  type: vless
+  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   host: vip.yaml7.ggff.net
@@ -17273,6 +17582,18 @@ proxies:
   ws-path: /DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs?ed=443
 - alterId: 0
   cipher: auto
+  fp: random
+  host: snippet.danfeng.gv.uy
+  name: CF中转_07220010099
+  network: ws
+  port: 2053
+  server: 104.16.90.31
+  sni: snippet.danfeng.gv.uy
+  type: vless
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-path: '%2Fdanfeng'
+- alterId: 0
+  cipher: auto
   host: cdn-n4.roxi.cc
   name: CF中转_0722002731
   network: ws
@@ -17306,6 +17627,19 @@ proxies:
   type: vless
   uuid: 1a43f37d-7792-41e6-aa47-ebb1923f5dde
   ws-path: /cftest
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: edt2.cray.mom
+  name: CF中转_07220010218
+  network: ws
+  port: 2053
+  server: 162.159.152.0
+  sni: edt2.cray.mom
+  type: vless
+  uuid: b0437161-402e-483d-8462-65215b245b07
+  ws-path: /
 - alterId: 0
   cipher: auto
   encryption: none
@@ -17353,6 +17687,16 @@ proxies:
   type: vless
   uuid: 3f58cc47-94f6-40d3-8797-1ce66cb0555e
   ws-path: /
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: CF中转_07220010352
+  network: xhttp
+  port: 443
+  server: 141.101.120.129
+  sni: mnb.dearhossein-taktaz.ir
+  type: vless
+  uuid: 90065690-1ddd-4cc3-ab8b-b7866b69ad97
 - alterId: 0
   cipher: auto
   host: 1111.asdfghqwer02.dpdns.org
@@ -18057,6 +18401,19 @@ proxies:
   uuid: 4c41d237-630a-4d02-8ec0-c3b775190ee5
 - alterId: 0
   cipher: auto
+  encryption: none
+  fp: chrome
+  host: kambogh.com
+  name: CF中转_07220010076
+  network: xhttp
+  port: 8443
+  server: 104.27.119.148
+  sni: kambogh.com
+  type: vless
+  uuid: 44aac6e4-ecd0-44a7-be8d-757ebd83515a
+  ws-path: '%2FStream'
+- alterId: 0
+  cipher: auto
   host: aier.eu.cc
   name: CF中转_0722002161
   network: ws
@@ -18302,6 +18659,18 @@ proxies:
   type: vless
   uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
   ws-path: '%2Fws%3Fed'
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: crm.lotussec.com
+  name: CF中转_07220010356
+  network: ws
+  port: 443
+  server: 172.67.182.100
+  sni: crm.lotussec.com
+  type: vless
+  uuid: 17540a16-a0dd-5694-7e1e-14e281ccc032
+  ws-path: '%2F%40JavidnamanIran%2FJavid-SHAH-KingRezaPahlavi%2F'
 - alterId: 0
   cipher: auto
   host: kalami-eew.pages.dev
@@ -18676,6 +19045,19 @@ proxies:
   cipher: auto
   encryption: none
   fp: chrome
+  host: jet.servicejethx.ir
+  name: CF中转_07220012657
+  network: ws
+  port: 2096
+  server: 162.159.46.30
+  sni: jet.servicejethx.ir
+  type: vless
+  uuid: a96164eb-16fc-4a47-93d0-3a69916a36a8
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
   host: meh.dorostify.com
   name: CF中转_0722006338
   network: ws
@@ -18883,6 +19265,41 @@ proxies:
   cipher: auto
   encryption: none
   fp: chrome
+  host: d2wiyfbwnyf.danfeng.gv.uy
+  name: CF中转_07220010131
+  network: ws
+  port: 2053
+  server: 172.67.150.131
+  sni: d2wiyfbwnyf.danfeng.gv.uy
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-path: /danfeng?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 美国 1345
+  network: ws
+  port: 8443
+  server: 104.16.72.162
+  servername: srv37.hamiibar.com
+  tls: true
+  type: vless
+  uuid: f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: racknerd.henso.wiki
+  name: CF中转_07220010152
+  network: ws
+  port: 443
+  server: 162.159.46.222
+  sni: racknerd.henso.wiki
+  type: vless
+  uuid: 9fb8b6a8-5094-42e3-a949-26bc63551345
+  ws-path: '%2F9fb8b6a8-5094-42e3-a949-26bc63551345-vless'
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
   host: sw.reata.ir
   name: CF中转_0722008319
   network: ws
@@ -19045,6 +19462,19 @@ proxies:
   type: vless
   uuid: e5f8a9f6-f164-479b-b3b5-b90f213c7145
   ws-path: /
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: shop.cafebazar.qzz.io
+  name: CF中转_07220010361
+  network: ws
+  port: 443
+  server: 162.159.229.19
+  sni: ShoP.cAfEbAzAr.qZz.iO
+  type: vless
+  uuid: e42eb18a-6620-49b2-a578-820da4adcee8
+  ws-path: /eyJqdW5rIjoibVFQM2VXMTZaOVQiLCJwcm90b2NvSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
 - alterId: 0
   cipher: auto
   host: us1-us1.aiopen.sbs
@@ -19381,6 +19811,16 @@ proxies:
   ws-path: /@MrNexTV2RAY
 - alterId: 0
   cipher: auto
+  host: kalami-eew.pages.dev
+  name: CF中转_0722009978
+  network: ws
+  port: 443
+  server: 104.19.62.79
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   host: aier.eu.cc
   name: CF中转_0722007530
   network: ws
@@ -19475,6 +19915,17 @@ proxies:
   type: vless
   uuid: 30980fc4-8789-42df-80d1-0c8e5cd26881
   ws-path: '%2Fvpnhu'
+- alterId: 0
+  cipher: auto
+  host: r.icy.de5.net
+  name: CF中转_0722009963
+  network: ws
+  port: 443
+  server: 162.159.24.111
+  sni: r.icy.de5.net
+  type: vless
+  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+  ws-path: /?ed=2560security=tls
 - alterId: 0
   cipher: auto
   host: kalami-eew.pages.dev
@@ -19723,6 +20174,19 @@ proxies:
 - alterId: 0
   cipher: auto
   encryption: none
+  fp: chrome
+  host: fractaldivine.feqhstore.ir
+  name: CF中转_07220010118
+  network: httpupgrade
+  port: 2083
+  server: 104.18.12.238
+  sni: fractaldivine.feqhstore.ir
+  type: vless
+  uuid: 881f7b40-3b04-483d-a478-53b94f2196db
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  encryption: none
   host: snip.zrf.ndjp.net
   name: CF中转_07220012143
   network: ws
@@ -19823,6 +20287,16 @@ proxies:
   type: vless
   uuid: 10bde67f-98a1-4390-a043-f3da88a4da88
   ws-path: /10040
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: CF中转_07220010025
+  network: xhttp
+  port: 2083
+  server: 104.17.122.116
+  sni: Pll.cdnpros.ir
+  type: vless
+  uuid: dc632d02-cc34-4dac-8f78-43f88b1b9de3
 - alterId: 0
   cipher: auto
   host: s-d-f-r-t.918918.shop
@@ -19987,6 +20461,19 @@ proxies:
   type: vless
   uuid: 22cf9e1d-81bd-4340-ad54-b567b417d89c
   ws-path: /
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: cd.rxteamonbtop.qzz.io
+  name: CF中转_07220010297
+  network: ws
+  port: 2096
+  server: 198.41.216.128
+  sni: cD.rXtEaMoNbToP.qZz.iO
+  type: vless
+  uuid: e42eb18a-6620-49b2-a578-820da4adcee8
+  ws-path: /eyJqdW5rIjoia09KQkRyT1VnUDVHIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -20282,6 +20769,18 @@ proxies:
   type: vless
   uuid: 201d509f-c5be-4d05-85a1-9744ae1a1b7f
   ws-path: /lsDH2qujZ0YMHphrPaZGOjsL
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  host: sertraline.adaspoloandco.com
+  name: CF中转_07220012828
+  network: ws
+  port: 443
+  server: 104.27.66.214
+  sni: sertraline.adaspoloandco.com
+  type: vless
+  uuid: 10a6b923-e349-4594-92bb-d81a6245aaec
+  ws-path: '%2Fdownload.php'
 - alterId: 0
   cipher: auto
   host: aier.eu.cc
@@ -21657,7 +22156,7 @@ proxy-groups:
   - 🏁RELAY-172.67.185.133-2568
   - 🏁RELAY-104.21.39.36-9728
   - 🏁RELAY-154.92.9.121-9465
-  - 🇩🇪_DE_德国
+  - '%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD'
   - 🏁RELAY-154.92.9.132-9464
   - 🏁RELAY-154.92.9.133-9463
   - 🏁RELAY-162.159.153.13-2748
@@ -21736,6 +22235,7 @@ proxy-groups:
   - 🏁RELAY-104.31.16.53-9619
   - 🇺🇸US-13.248.169.48-1115
   - 🏁RELAY-104.21.6.201-1440
+  - CF中转_07220010484
   - 🏁RELAY-104.31.16.28-9660
   - 🏁RELAY-104.31.16.65-9612
   - 🏁RELAY-172.67.122.127-9329
@@ -21838,18 +22338,21 @@ proxy-groups:
   - CF中转_0722005812
   - CF中转_0722005164
   - 美国 407
+  - CF中转_07220010460
   - 🇺🇸_US_美国
   - 🇸🇪SE-37.19.222.213-9011
   - 未知_072200973
   - 🇸🇪SE-37.19.222.214-9010
   - CF中转_0722009819
   - CF中转_0722008750
+  - CF中转_07220010457
   - CZ_speednode_0002
   - CF中转_0722009808
   - 🇯🇵_JP_日本->🇺🇸_US_美国
   - CF中转_0722009291
   - CF中转_07220013677
   - CF中转_0722008021
+  - CF中转_07220010453
   - CF中转_0722009523
   - 美国 1148
   - CF中转_0722008742
@@ -21881,6 +22384,7 @@ proxy-groups:
   - CF中转_0722007591
   - CF中转_0722009386
   - 俄罗斯联邦_072200559
+  - CF中转_07220010434
   - CF中转_0722003792
   - 美国_072200159
   - CF中转_0722006848
@@ -21894,6 +22398,7 @@ proxy-groups:
   - CF中转_0722003672
   - CF中转_0722009340
   - CF中转_0722009380
+  - CF中转_0722009935
   - CF中转_0722006845
   - 美国 1275
   - CF中转_0722007779
@@ -21916,6 +22421,7 @@ proxy-groups:
   - CF中转_0722009828
   - CF中转_0722008193
   - CF中转_0722009942
+  - CF中转_0722009932
   - CF中转_0722006568
   - CF中转_0722009784
   - CF中转_0722006074
@@ -21931,6 +22437,7 @@ proxy-groups:
   - CF中转_0722005773
   - CF中转_0722009374
   - CF中转_07220013674
+  - CF中转_07220010019
   - CF中转_0722005982
   - 美国 1287
   - CF中转_0722008176
@@ -22004,6 +22511,7 @@ proxy-groups:
   - CF中转_0722004456
   - CF中转_0722006097
   - CF中转_0722006104
+  - CF中转_07220010061
   - CF中转_0722007442
   - CF中转_0722008938
   - CF中转_0722003888
@@ -22017,6 +22525,7 @@ proxy-groups:
   - CF中转_0722009520
   - CF中转_0722005701
   - CF中转_0722007225
+  - CF中转_0722009926
   - CF中转_07220013571
   - CF中转_0722006257
   - CF中转_0722009687
@@ -22030,6 +22539,7 @@ proxy-groups:
   - CF中转_0722006465
   - CF中转_0722005335
   - CF中转_0722006089
+  - CF中转_07220010007
   - CF中转_0722006592
   - CF中转_0722007006
   - CF中转_0722004560
@@ -22054,6 +22564,7 @@ proxy-groups:
   - CF中转_0722009759
   - CF中转_0722008978
   - CF中转_0722002310
+  - CF中转_07220010209
   - CF中转_0722003166
   - CF中转_0722008040
   - CF中转_0722008036
@@ -22061,16 +22572,21 @@ proxy-groups:
   - CF中转_0722006903
   - CF中转_0722008300
   - CF中转_0722008886
+  - CF中转_07220010200
   - CF中转_0722005784
   - CF中转_0722006424
+  - CF中转_07220010053
   - CF中转_0722003192
+  - CF中转_07220010115
   - CF中转_0722006820
   - CF中转_0722007974
   - CF中转_0722008684
   - CF中转_0722004070
   - CF中转_0722009779
   - CF中转_0722002749
+  - CF中转_07220010410
   - CF中转_0722004022
+  - CF中转_07220010177
   - CF中转_0722007608
   - CF中转_0722005741
   - CF中转_0722006048
@@ -22113,6 +22629,7 @@ proxy-groups:
   - CF中转_0722003278
   - CF中转_0722009251
   - CF中转_0722003523
+  - CF中转_07220010009
   - CF中转_0722008135
   - 巴西 039
   - CF中转_0722005475
@@ -22124,6 +22641,7 @@ proxy-groups:
   - CF中转_0722003392
   - CF中转_07220013436
   - CF中转_0722005783
+  - 美国 1350
   - CF中转_07220013529
   - CF中转_0722008382
   - CF中转_0722004666
@@ -22150,8 +22668,10 @@ proxy-groups:
   - CF中转_0722006002
   - CF中转_0722006522
   - CF中转_072200750
+  - CF中转_07220010162
   - CF中转_0722005740
   - CF中转_0722008326
+  - CF中转_07220010172
   - CF中转_0722008566
   - CF中转_0722004675
   - CF中转_0722006990
@@ -22162,6 +22682,7 @@ proxy-groups:
   - CF中转_0722003327
   - 美国 1286
   - CF中转_0722009818
+  - CF中转_07220010001
   - CF中转_0722005759
   - CF中转_0722004546
   - CF中转_0722004791
@@ -22204,6 +22725,7 @@ proxy-groups:
   - CF中转_0722006114
   - CF中转_0722006068
   - CF中转_0722003885
+  - CF中转_07220010100
   - CF中转_0722008693
   - CF中转_07220010704
   - CF中转_0722001900
@@ -22251,6 +22773,7 @@ proxy-groups:
   - CF中转_0722003846
   - CF中转_0722005892
   - CF中转_07220013593
+  - CF中转_07220010161
   - CF中转_07220012901
   - CF中转_0722007826
   - CF中转_0722009891
@@ -22266,6 +22789,7 @@ proxy-groups:
   - CF中转_0722008609
   - CF中转_0722005861
   - CF中转_0722009231
+  - CF中转_07220010232
   - CF中转_0722003146
   - CF中转_0722003117
   - CF中转_0722008007
@@ -22276,6 +22800,7 @@ proxy-groups:
   - CF中转_0722007794
   - CF中转_0722003621
   - CF中转_072200858
+  - CF中转_07220010251
   - CF中转_0722009430
   - CF中转_0722002469
   - CF中转_0722008475
@@ -22309,13 +22834,16 @@ proxy-groups:
   - CF中转_0722007354
   - CF中转_0722006168
   - CF中转_0722004652
+  - CF中转_07220010099
   - CF中转_0722002731
   - CF中转_0722002045
   - CF中转_0722006917
+  - CF中转_07220010218
   - CF中转_0722006397
   - CF中转_0722008434
   - CF中转_07220013735
   - CF中转_0722004160
+  - CF中转_07220010352
   - CF中转_0722009593
   - CF中转_0722006976
   - CF中转_0722008153
@@ -22379,6 +22907,7 @@ proxy-groups:
   - CF中转_0722005703
   - CF中转_0722009383
   - CF中转_0722002044
+  - CF中转_07220010076
   - CF中转_0722002161
   - CF中转_07220013741
   - CF中转_0722007025
@@ -22401,6 +22930,7 @@ proxy-groups:
   - CF中转_0722003998
   - CF中转_0722002587
   - CF中转_0722004625
+  - CF中转_07220010356
   - CF中转_0722009683
   - CF中转_0722009043
   - CF中转_0722008640
@@ -22433,6 +22963,7 @@ proxy-groups:
   - CF中转_07220011455
   - CF中转_0722004690
   - CF中转_0722002317
+  - CF中转_07220012657
   - CF中转_0722006338
   - CF中转_07220011877
   - CF中转_0722007094
@@ -22451,6 +22982,9 @@ proxy-groups:
   - CF中转_0722004452
   - CF中转_0722009696
   - CF中转_0722005309
+  - CF中转_07220010131
+  - 美国 1345
+  - CF中转_07220010152
   - CF中转_0722008319
   - CF中转_0722008110
   - CF中转_0722008073
@@ -22465,6 +22999,7 @@ proxy-groups:
   - CF中转_0722007303
   - CF中转_0722006966
   - CF中转_0722003352
+  - CF中转_07220010361
   - CF中转_072200761
   - CF中转_0722009192
   - CF中转_0722006894
@@ -22495,6 +23030,7 @@ proxy-groups:
   - CF中转_0722003002
   - 美国 1137
   - CF中转_0722003791
+  - CF中转_0722009978
   - CF中转_0722007530
   - CF中转_0722005039
   - CF中转_0722009182
@@ -22504,6 +23040,7 @@ proxy-groups:
   - CF中转_0722003305
   - CF中转_0722009583
   - CF中转_0722009156
+  - CF中转_0722009963
   - CF中转_0722002011
   - CF中转_0722004989
   - CF中转_0722009196
@@ -22525,6 +23062,7 @@ proxy-groups:
   - CF中转_0722004793
   - CF中转_0722003576
   - CF中转_0722003889
+  - CF中转_07220010118
   - CF中转_07220012143
   - CF中转_0722002160
   - CF中转_0722008603
@@ -22534,6 +23072,7 @@ proxy-groups:
   - CF中转_0722002554
   - CF中转_0722003789
   - CF中转_0722008174
+  - CF中转_07220010025
   - CF中转_0722001792
   - CF中转_0722007266
   - CF中转_0722001648
@@ -22548,6 +23087,7 @@ proxy-groups:
   - CF中转_0722008054
   - CF中转_0722007542
   - CF中转_0722003972
+  - CF中转_07220010297
   - CF中转_0722005534
   - CF中转_0722004302
   - CF中转_0722006427
@@ -22574,6 +23114,7 @@ proxy-groups:
   - CF中转_0722004948
   - CF中转_0722008571
   - CF中转_0722009736
+  - CF中转_07220012828
   - CF中转_0722002267
   - CF中转_07220011488
   - CF中转_0722009671
