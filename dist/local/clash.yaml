@@ -35,9 +35,9 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇨🇳_CN_中国->🇫🇷_FR_法国
+  network: tcp
   port: 30835
   server: v35.hdacd.com
-  skip-cert-verify: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
@@ -626,9 +626,9 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  network: tcp
   port: 30809
   server: v9.hdacd.com
-  skip-cert-verify: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
@@ -8591,10 +8591,9 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 🇭🇰_HK_中国香港_1
+  name: 🇭🇰_HK_中国香港
   port: 30807
   server: v10.hdacd.com
-  skip-cert-verify: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
@@ -10114,13 +10113,13 @@ proxies:
   type: vmess
   uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
   ws-path: /blue
-- name: 🇩🇪_DE_德国_2
+- insecure: '1'
+  name: '%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD'
   obfs: salamander
-  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
+  obfs-password: eNM%2FNfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo%3D
   password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
   port: 443
   server: ff2.yuntong.click
-  skip-cert-verify: true
   sni: ff2.yuntong.click
   type: hysteria2
 - alterId: 0
@@ -11928,6 +11927,17 @@ proxies:
   ws-path: '%2F%2540Marisa_kristi'
 - alterId: 0
   cipher: auto
+  host: snippet.danfeng.rr.kg
+  name: 日本_072205253
+  network: ws
+  port: 14673
+  server: 172.104.110.10
+  sni: snippet.danfeng.rr.kg
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-path: /danfengsecurity=tls
+- alterId: 0
+  cipher: auto
   encryption: none
   flow: xtls-rprx-vision
   fp: chrome
@@ -12480,10 +12490,10 @@ proxies:
   uuid: 0573d263-6eb9-4846-a614-393da413ae6c
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_1
+  name: 🇺🇸_US_美国
+  network: tcp
   port: 443
   server: guanwang.awsno.com
-  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
@@ -12555,6 +12565,16 @@ proxies:
   type: vless
   uuid: b24484be-a335-472c-8dff-060ccd2b8f3b
   ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: 日本_072205246
+  port: 443
+  server: 57.183.23.103
+  sni: cdnjs.cloudflare.com
+  type: vless
+  uuid: 45aa07ae-46b1-4441-8961-7b50a35e4dcc
 - alterId: 0
   cipher: auto
   host: 1111.asdfghqwer02.dpdns.org
@@ -12690,6 +12710,14 @@ proxies:
   type: vless
   uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
   ws-path: /fp=chrome
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443-udp443
+  name: 日本_072205247
+  port: 443
+  server: 167.179.119.113
+  type: vless
+  uuid: 45aa07ae-46b1-4441-8961-7b50a35e4dcc
 - alterId: 0
   cipher: auto
   host: xfxl35a.node-edge.gfw.hidns.co
@@ -13140,6 +13168,16 @@ proxies:
   uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
 - alterId: 0
   cipher: auto
+  host: snippet.danfeng.rr.kg
+  name: 日本_072205329
+  network: ws
+  port: 74
+  server: 172.104.122.66
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-path: '%2Fdanfeng'
+- alterId: 0
+  cipher: auto
   name: 德国_072205604
   network: grpc
   port: 8082
@@ -13469,6 +13507,16 @@ proxies:
   uuid: 2d108394-56db-4523-a8ae-bd7ba6de10cc
 - alterId: 0
   cipher: auto
+  host: 2026.hhhhh.eu.org
+  name: 日本_072205236
+  network: ws
+  port: 21953
+  server: 158.101.76.55
+  type: vless
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  ws-path: /158.101.76.55:21953security=tls
+- alterId: 0
+  cipher: auto
   name: 印度尼西亚_072205089
   network: tcp
   port: 8443
@@ -13669,6 +13717,16 @@ proxies:
   server: 89.163.154.212
   type: vless
   uuid: f6808c62-cfe0-438c-aae6-44fe6ef51e47
+- alterId: 0
+  cipher: auto
+  host: sni.jpmj.dev
+  name: 日本_072205234
+  network: ws
+  port: 29876
+  server: 141.147.183.49
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-path: /?ed=2560
 - alterId: 0
   cipher: auto
   encryption: none
@@ -13908,6 +13966,18 @@ proxies:
   uuid: eece4171-e025-40a3-9027-e395036ff99d
 - alterId: 0
   cipher: auto
+  fp: chrome
+  host: 43.160.220.164
+  name: 新加坡_072205533
+  network: ws
+  port: 666
+  server: 43.160.220.164
+  sni: 43.160.220.164
+  type: vless
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-path: '%2Fproxy'
+- alterId: 0
+  cipher: auto
   encryption: none
   fp: chrome
   host: sspr.bearnetwork.ir
@@ -13929,6 +13999,17 @@ proxies:
   sni: api-maps.yandex.ru
   type: vless
   uuid: ca8e25a2-52ac-4c38-9db5-f93a62c307ae
+- alterId: 0
+  cipher: auto
+  host: guslef2w8oz12wv.ymj.xx.kg
+  name: 日本_072205233
+  network: ws
+  port: 28480
+  server: 45.149.156.40
+  sni: guslef2w8oz12wv.ymj.xx.kg
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-path: /@Marisa_kristifp=chromesecurity=tls
 - alterId: 0
   cipher: auto
   name: 印度尼西亚_072205142
@@ -14099,6 +14180,19 @@ proxies:
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: 43.164.191.236
+  name: 新加坡_072205552
+  network: ws
+  port: 666
+  server: 43.164.191.236
+  sni: 43.164.191.236
+  type: vless
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-path: '%2Fproxy'
 - alterId: 0
   cipher: auto
   name: 美国 1270
@@ -14576,6 +14670,17 @@ proxies:
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  host: ov186.ochmaybrooooo.online
+  name: 新加坡_072205560
+  network: ws
+  port: 443
+  server: 27.50.48.17
+  sni: ov186.ochmaybrooooo.online
+  type: vless
+  uuid: 0b872eaf-74f5-4b58-ab4f-0ef1f46fc63e
+  ws-path: '%2F%3FTelegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3'
 - alterId: 0
   cipher: auto
   fp: firefox
@@ -15217,6 +15322,28 @@ proxies:
   server: 45.140.204.49
   type: vless
   uuid: fc833984-8a5e-4825-a333-c5eb248aeee2
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: snippet.danfeng.rr.kg
+  name: 日本_072205306
+  network: ws
+  port: 6443
+  server: 45.32.49.72
+  sni: snippet.danfeng.rr.kg
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-path: '%2Fdanfeng'
+- alterId: 0
+  cipher: auto
+  host: gogo.wknm.qzz.io
+  name: 新加坡_072205491
+  network: ws
+  port: 443
+  server: 54.151.249.183
+  type: vless
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   host: xfxl35a.node-edge.gfw.hidns.co
@@ -15987,6 +16114,26 @@ proxies:
   ws-path: /?ed=2048
 - alterId: 0
   cipher: auto
+  flow: xtls-rprx-vision
+  fp: ios
+  name: 新加坡_072205549
+  port: 2000
+  server: 1-sg.ap.ku-ke.cc
+  sni: fonts.gstatic.com
+  type: vless
+  uuid: 680c97a6-141d-49a8-9407-a6dc71deae04
+- alterId: 0
+  cipher: auto
+  host: gogo.vks.qzz.io
+  name: 新加坡_072205490
+  network: ws
+  port: 443
+  server: 3.1.187.169
+  type: vless
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   encryption: none
   fp: chrome
   host: ssj.new-persian-song.ir
@@ -16285,6 +16432,16 @@ proxies:
   type: vless
   uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
   ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  fp: chrome
+  name: 日本_072205038
+  network: xhttp
+  port: 443
+  server: 151.101.108.0
+  sni: global.fastly.com
+  type: vless
+  uuid: fe58f3ee-0bbf-4a2a-9b3e-4bb4d3030769
 - alterId: 0
   cipher: auto
   encryption: none
@@ -16739,6 +16896,16 @@ proxies:
   ws-path: '%2Frepository'
 - alterId: 0
   cipher: auto
+  host: sni.jpmj.dev
+  name: 新加坡_072205470
+  network: ws
+  port: 443
+  server: 27.50.48.238
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   encryption: none
   fp: chrome
   host: wallweb.hydradllvip.info
@@ -17183,6 +17350,17 @@ proxies:
   type: vless
   uuid: 75fde681-ec64-4654-86fa-30732e8e179c
   ws-path: '%2Fassets'
+- alterId: 0
+  cipher: auto
+  name: 日本 033
+  network: ws
+  port: 443
+  server: 151.101.109.223
+  servername: pan1.global.ssl.fastly.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: c8541f02-4efd-401d-beb7-dc017b12ee94
 - alterId: 0
   cipher: auto
   encryption: none
@@ -17648,6 +17826,16 @@ proxies:
   ws-path: /Telegram@Azarakhsh_Proxy/=?ed=2560
 - alterId: 0
   cipher: auto
+  name: 新加坡_072205502
+  network: ws
+  port: 666
+  server: 43.164.0.59
+  sni: 43.164.0.59
+  type: vless
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-path: '%2Fproxy'
+- alterId: 0
+  cipher: auto
   encryption: none
   host: snippet.danfeng.rr.kg
   name: 新加坡_072205321
@@ -17704,6 +17892,19 @@ proxies:
   uuid: 67b1317d-905c-42d8-abf3-dd1301c62316
 - alterId: 0
   cipher: auto
+  encryption: none
+  fp: firefox
+  host: Wordpress.Mihan.cOm
+  name: 日本_072205515
+  network: ws
+  port: 443
+  server: 151.101.110.219
+  sni: Global.Fastly.CoM.
+  type: vless
+  uuid: 56cf06b0-3a04-4a77-b66a-0c7864c89be3
+  ws-path: '%2Fwp-admin.php%3Fed%3D2052'
+- alterId: 0
+  cipher: auto
   host: work.evany.de5.net
   name: 🇸🇬SG_8|3.7MB/s
   network: ws
@@ -17734,6 +17935,14 @@ proxies:
   type: vless
   uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
   ws-path: /proxyip=ProxyIP.DE.owg.dpdns.orgsecurity=tls
+- alterId: 0
+  cipher: auto
+  encryption: none
+  name: 新加坡_072205557
+  port: 443
+  server: 134.209.96.223
+  type: vless
+  uuid: 904704c1-b571-47e5-e57f-a3b97017f4b9
 - alterId: 0
   cipher: auto
   host: kalami-eew.pages.dev
@@ -18698,6 +18907,17 @@ proxies:
   uuid: b3595294-85ed-41a0-bf24-2906c7dc9197
 - alterId: 0
   cipher: auto
+  host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  name: 'B - 🇸🇬 SG 18 TG: @nodpai'
+  network: ws
+  port: 33940
+  server: 140.238.33.0
+  sni: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-path: /@Marisa_kristifp=chromesecurity=tls
+- alterId: 0
+  cipher: auto
   host: sni.111000.dynv6.net
   name: 德国_072205461
   network: ws
@@ -18827,6 +19047,16 @@ proxies:
   type: vless
   uuid: bdf97c06-ae1f-47e9-b47a-9d9ff47b5820
   ws-path: /
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision
+  fp: chrome
+  name: 新加坡_072205550
+  port: 2003
+  server: 1-sg.ap.ku-ke.cc
+  sni: fonts.gstatic.com
+  type: vless
+  uuid: 680c97a6-141d-49a8-9407-a6dc71deae04
 - alterId: 0
   cipher: auto
   encryption: none
@@ -20419,6 +20649,18 @@ proxies:
 - alterId: 0
   cipher: auto
   encryption: none
+  host: vless3.datatestvless.click
+  name: 日本_072205188
+  network: ws
+  port: 4399
+  server: 139.162.83.106
+  sni: vless3.datatestvless.click
+  type: vless
+  uuid: aa7f42cc-616f-4550-9a87-4b85bb409121
+  ws-path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  encryption: none
   host: zh.hollowspot.ir
   name: 塞舌尔_072205318
   network: ws
@@ -21336,6 +21578,19 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
+  encryption: none
+  fp: chrome
+  host: ovh13.global.ssl.fastly.net
+  name: 日本_072205220
+  network: xhttp
+  port: 443
+  server: 151.101.109.57
+  sni: 127.0.0.1
+  type: vless
+  uuid: 43997da9-3c70-447f-8c76-d5a57b6e8134
+  ws-path: /
+- alterId: 0
+  cipher: auto
   host: cd.rxteamonbtop.qzz.io
   name: CF中转_0722051539
   network: ws
@@ -21741,6 +21996,16 @@ proxies:
   type: vless
   uuid: 00000000-0000-4000-8000-000000000000
   ws-path: '%2F%2540Marisa_kristi'
+- alterId: 0
+  cipher: auto
+  host: q40ivxuck.danfeng.qzz.io
+  name: 日本_072205226
+  network: ws
+  port: 449
+  server: 172.237.30.89
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-path: /danfengsecurity=tls
 - alterId: 0
   cipher: auto
   fp: random
@@ -22880,6 +23145,16 @@ proxies:
   uuid: eece4171-e025-40a3-9027-e395036ff99d
 - alterId: 0
   cipher: auto
+  host: xfxl35a.node-edge.gfw.hidns.co
+  name: 新加坡_072205466
+  network: ws
+  port: 443
+  server: 188.166.251.234
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-path: '%2Fdanfeng'
+- alterId: 0
+  cipher: auto
   host: mug.support.gfw.hidns.co
   name: 德国_072205559
   network: ws
@@ -23418,6 +23693,18 @@ proxies:
   type: vless
   uuid: a6dd00f2-de2a-4c3c-bc0a-0e9818e95dde
   ws-path: '%2FTel-'
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: snippet.danfeng.rr.kg
+  name: 新西兰_072205015
+  network: ws
+  port: 443
+  server: 114.129.43.42
+  sni: snippet.danfeng.rr.kg
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-path: '%2Fdanfeng'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -24158,6 +24445,16 @@ proxies:
   ws-path: '%2Fws'
 - alterId: 0
   cipher: auto
+  host: sni.jpmj.dev
+  name: 新西兰_072205017
+  network: ws
+  port: 443
+  server: 114.129.43.238
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   encryption: none
   fp: chrome
   host: shop.cafebazar.qzz.io
@@ -24498,6 +24795,18 @@ proxies:
   ws-path: /danfeng-2cm3?ed=2560fp=firefox
 - alterId: 0
   cipher: auto
+  encryption: none
+  host: apexbhao1.qzz.io
+  name: 新西兰_072205012
+  network: ws
+  port: 443
+  server: 202.37.33.80
+  sni: apexbhao1.qzz.io
+  type: vless
+  uuid: 0f1b6d8d-3f8c-4713-b32d-c94947083485
+  ws-path: /43.218.77.16
+- alterId: 0
+  cipher: auto
   host: r8wez3psbuhgs6lgju.sate.qzz.io
   name: 德国_072205280
   network: ws
@@ -24542,6 +24851,16 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
+  host: psp09.data.chinav.eu.org
+  name: 新加坡_072205483
+  network: ws
+  port: 443
+  server: 188.166.214.16
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-path: '%2Fdanfeng'
+- alterId: 0
+  cipher: auto
   encryption: none
   host: dashboard.app-browser.org
   name: CF中转_0722054863
@@ -24552,6 +24871,18 @@ proxies:
   type: vless
   uuid: c495405a-41d7-429e-b999-94136197b211
   ws-path: /J5aLQOY1R9ONWYCM
+- alterId: 0
+  cipher: auto
+  encryption: none
+  host: snippet.fgfw.loc.cc
+  name: 日本_072205255
+  network: ws
+  port: 74
+  server: 172.104.113.18
+  sni: snippet.fgfw.loc.cc
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-path: '%2Fdanfeng%3Fed%3D2560'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -24866,6 +25197,16 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
+  host: xfxl35a.node-edge.gfw.hidns.co
+  name: 新加坡_072205472
+  network: ws
+  port: 443
+  server: 157.245.198.117
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-path: '%2Fdanfeng'
+- alterId: 0
+  cipher: auto
   encryption: none
   fp: chrome
   host: kingwillbeback.nivoxa.ir
@@ -25044,6 +25385,18 @@ proxies:
   type: vless
   uuid: 26524cce-d514-4014-a426-365fb266a14d
   ws-path: '%2Fdanfeng'
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  host: wgl.cdn-c.gfw.qzz.io
+  name: 新加坡_072205540
+  network: ws
+  port: 443
+  server: 134.209.103.4
+  sni: wgl.cdn-c.gfw.qzz.io
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-path: '%2Fdanfeng-jh5qzt-fk3fns-mqcd-34e34dzl'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -26465,6 +26818,16 @@ proxies:
   type: vless
   uuid: 70332c0f-907f-46cc-bd9b-8e459a571bee
   ws-path: /?ed=80
+- alterId: 0
+  cipher: auto
+  host: 2026.hhhhh.eu.org
+  name: 日本_072205296
+  network: ws
+  port: 16090
+  server: 210.156.180.102
+  type: vless
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  ws-path: '%2F210.156.180.102%253A16090'
 - alterId: 0
   cipher: auto
   host: kalami-eew.pages.dev
@@ -28374,6 +28737,18 @@ proxies:
   ws-path: /x
 - alterId: 0
   cipher: auto
+  fp: chrome
+  host: wa2.mhrnet.com
+  name: 新西兰_072205002
+  network: ws
+  port: 443
+  server: 114.129.43.130
+  sni: wa2.mhrnet.com
+  type: vless
+  uuid: 3ea0a12e-162e-45b8-b03b-c490d6105091
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   host: marz111.ariagsm.site
   name: CF中转_0722056804
   network: ws
@@ -29668,6 +30043,16 @@ proxies:
   type: vless
   uuid: 4a73fddb-e8c2-45fe-ad2c-e5bde13e51a6
   ws-path: /pLmdwS3fSrE9WwdgE3LdG2
+- alterId: 0
+  cipher: auto
+  host: gogo9.kmj.qzz.io
+  name: 新加坡_072205486
+  network: ws
+  port: 443
+  server: 139.180.159.58
+  type: vless
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -31511,6 +31896,32 @@ proxies:
   ws-path: '%2Fapp%2Fhk2'
 - alterId: 0
   cipher: auto
+  encryption: none
+  fp: firefox
+  host: fiterchinakoooon.sudonetwork.com
+  name: 新加坡_072205521
+  network: ws
+  port: 2096
+  server: cdn9.sudonetwork.com
+  sni: fiterchinakoooon.sudonetwork.com
+  type: vless
+  uuid: b2c5c367-4530-4ee4-92e7-6ac0d2a97980
+  ws-path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: nesfeshzksab.global.ssl.fastly.neT.
+  name: 日本_072205219
+  network: ws
+  port: 443
+  server: 151.101.108.223
+  sni: speedtest.net
+  type: vless
+  uuid: 4e5ae820-fc9b-476a-bcf6-a4aba49709af
+  ws-path: /wp-admin.php?ed=2052
+- alterId: 0
+  cipher: auto
   fp: chrome
   host: srv75.perfectbulk.info
   name: CF中转_0722053056
@@ -31853,6 +32264,16 @@ proxies:
   type: vless
   uuid: e046b6d4-f01b-42d1-b7d4-12b40f47d5e7
   ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  host: xfxl35a.node-edge.gfw.hidns.co
+  name: 新加坡_072205473
+  network: ws
+  port: 443
+  server: 174.138.24.13
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-path: '%2Fdanfeng'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -33308,6 +33729,16 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
+  host: snippet.fgfw.ye.gs
+  name: 日本_072205286
+  network: ws
+  port: 2053
+  server: 103.75.118.144
+  type: vless
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-path: '%2Fdanfeng'
+- alterId: 0
+  cipher: auto
   fp: chrome
   host: caci.lezzatflow.ir
   name: CF中转_0722053199
@@ -33784,6 +34215,16 @@ proxies:
   type: vless
   uuid: e5f8a9f6-f164-479b-b3b5-b90f213c7145
   ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision
+  fp: chrome
+  name: 新加坡_072205548
+  port: 2001
+  server: 1-sg.ap.ku-ke.cc
+  sni: fonts.gstatic.com
+  type: vless
+  uuid: 680c97a6-141d-49a8-9407-a6dc71deae04
 - alterId: 0
   cipher: auto
   encryption: none
@@ -34781,7 +35222,7 @@ proxy-groups:
   - 🇺🇸US-104.168.54.205-0371
   - 🇮🇷IR-89.44.242.28-1929
   - 🇰🇬KG-185.48.136.150-1795
-  - 🇭🇰_HK_中国香港_1
+  - 🇭🇰_HK_中国香港
   - 🇺🇸US-192.96.204.250-5534
   - 🇹🇷TR-45.94.169.142-8958
   - 🇰🇷KR-146.56.47.1-1294
@@ -34936,7 +35377,7 @@ proxy-groups:
   - 🏁RELAY-172.67.185.133-2568
   - 🏁RELAY-104.21.39.36-9728
   - 🏁RELAY-154.92.9.121-9465
-  - 🇩🇪_DE_德国_2
+  - '%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD'
   - 🏁RELAY-154.92.9.132-9464
   - 🏁RELAY-154.92.9.133-9463
   - 🏁RELAY-162.159.153.13-2748
@@ -35117,6 +35558,7 @@ proxy-groups:
   - CF中转_0722052291
   - CF中转_0722051628
   - 新加坡_072205416
+  - 日本_072205253
   - 印度尼西亚_072205163
   - CF中转_07220511851
   - 塞舌尔_072205113
@@ -35167,7 +35609,7 @@ proxy-groups:
   - CF中转_0722058641
   - 美国 407
   - CF中转_072205908
-  - 🇺🇸_US_美国_1
+  - 🇺🇸_US_美国
   - 🇸🇪SE-37.19.222.213-9011
   - 未知_072205965
   - CF中转_0722053243
@@ -35175,6 +35617,7 @@ proxy-groups:
   - 新加坡_072205408
   - 巴西_072205019
   - CF中转_0722054198
+  - 日本_072205246
   - CF中转_07220513626
   - CF中转_07220513517
   - CF中转_07220512451
@@ -35187,6 +35630,7 @@ proxy-groups:
   - CF中转_0722054446
   - CF中转_07220511649
   - CF中转_07220513495
+  - 日本_072205247
   - 新加坡_072205422
   - 印度尼西亚_072205154
   - 俄罗斯联邦_072205159
@@ -35227,6 +35671,7 @@ proxy-groups:
   - 俄罗斯联邦_072205153
   - CF中转_0722054275
   - 美国 1238
+  - 日本_072205329
   - 德国_072205604
   - CF中转_07220513032
   - 上海市+电信
@@ -35259,6 +35704,7 @@ proxy-groups:
   - CF中转_07220511250
   - 俄罗斯联邦_072205459
   - 德国_072205834
+  - 日本_072205236
   - 印度尼西亚_072205089
   - CF中转_0722052906
   - 🇸🇬SG_7|4.4MB/s
@@ -35279,6 +35725,7 @@ proxy-groups:
   - 新加坡_072205392
   - CF中转_072205879
   - 德国_072205600
+  - 日本_072205234
   - 印度尼西亚_072205143
   - 印度尼西亚_072205138
   - 奥地利_072205228
@@ -35301,8 +35748,10 @@ proxy-groups:
   - 德国_072205387
   - 美国_072205732
   - 印度尼西亚_072205137
+  - 新加坡_072205533
   - CF中转_072205687
   - 俄罗斯联邦_072205512
+  - 日本_072205233
   - 印度尼西亚_072205142
   - 俄罗斯联邦_072205140
   - 俄罗斯联邦_072205070
@@ -35319,6 +35768,7 @@ proxy-groups:
   - 俄罗斯联邦_072205505
   - 新加坡_072205102
   - 保加利亚_072205031
+  - 新加坡_072205552
   - 美国 1270
   - 塞舌尔_072205290
   - 俄罗斯联邦_072205410
@@ -35363,6 +35813,7 @@ proxy-groups:
   - 俄罗斯联邦_072205222
   - 哈萨克斯坦_072205076
   - 新加坡_072205101
+  - 新加坡_072205560
   - 伊朗_072205063
   - 俄罗斯联邦_072205504
   - 保加利亚_072205030
@@ -35421,6 +35872,8 @@ proxy-groups:
   - CF中转_0722055143
   - 印度尼西亚_072205057
   - 以色列_072205005
+  - 日本_072205306
+  - 新加坡_072205491
   - 德国_072205577
   - 俄罗斯联邦_072205407
   - CF中转_07220511826
@@ -35491,6 +35944,8 @@ proxy-groups:
   - 伊朗_072205031
   - CF中转_0722059277
   - 俄罗斯联邦_072205386
+  - 新加坡_072205549
+  - 新加坡_072205490
   - CF中转_0722055100
   - 德国_072205285
   - 印度尼西亚_072205076
@@ -35518,6 +35973,7 @@ proxy-groups:
   - 奥地利_072205040
   - CF中转_07220510105
   - 新加坡_072205489
+  - 日本_072205038
   - 塞舌尔_072205247
   - CF中转_07220513588
   - 俄罗斯联邦_072205236
@@ -35559,6 +36015,7 @@ proxy-groups:
   - 俄罗斯联邦_072205471
   - CF中转_0722058689
   - 俄罗斯联邦_072205491
+  - 新加坡_072205470
   - 俄罗斯联邦_072205351
   - 摩尔多瓦_072205004
   - CF中转_0722054356
@@ -35598,6 +36055,7 @@ proxy-groups:
   - 俄罗斯联邦_072205464
   - 德国_072205655
   - CF中转_0722054704
+  - 日本 033
   - CF中转_0722054998
   - 德国_072205095
   - 俄罗斯联邦_072205136
@@ -35639,14 +36097,17 @@ proxy-groups:
   - CF中转_07220512785
   - CF中转_0722056054
   - CF中转_0722051052
+  - 新加坡_072205502
   - 新加坡_072205321
   - 俄罗斯联邦_072205404
   - 德国_072205294
   - 拉脱维亚_072205017
   - 印度尼西亚_072205055
+  - 日本_072205515
   - 🇸🇬SG_8|3.7MB/s
   - 奥地利_072205036
   - CF中转_0722058279
+  - 新加坡_072205557
   - CF中转_07220510883
   - 俄罗斯联邦_072205414
   - 德国_072205745
@@ -35734,6 +36195,7 @@ proxy-groups:
   - CF中转_0722053944
   - 土耳其_072205046
   - 德国_072205166
+  - 'B - 🇸🇬 SG 18 TG: @nodpai'
   - 德国_072205461
   - 德国_072205758
   - CF中转_0722056090
@@ -35746,6 +36208,7 @@ proxy-groups:
   - 俄罗斯联邦_072205132
   - CF中转_07220510097
   - 塞舌尔_072205336
+  - 新加坡_072205550
   - CF中转_0722051468
   - 塞舌尔_072205482
   - 拉脱维亚_072205016
@@ -35885,6 +36348,7 @@ proxy-groups:
   - 保加利亚_072205019
   - CF中转_07220512115
   - 印度尼西亚_072205059
+  - 日本_072205188
   - 塞舌尔_072205318
   - 塞舌尔_072205294
   - 哈萨克斯坦_072205012
@@ -35966,6 +36430,7 @@ proxy-groups:
   - CF中转_0722059646
   - 俄罗斯联邦_072205248
   - CF中转_0722052540
+  - 日本_072205220
   - CF中转_0722051539
   - 美国 1354
   - 俄罗斯联邦_072205514
@@ -36002,6 +36467,7 @@ proxy-groups:
   - 俄罗斯联邦_072205395
   - 德国_072205321
   - 德国_072205567
+  - 日本_072205226
   - 德国_072205380
   - CF中转_0722053469
   - 哈萨克斯坦_072205071
@@ -36103,6 +36569,7 @@ proxy-groups:
   - 德国_072205875
   - 'A - 🇸🇬 SG 07 TG: @nodpai'
   - 印度尼西亚_072205015
+  - 新加坡_072205466
   - 德国_072205559
   - CF中转_0722051288
   - CF中转_07220512820
@@ -36151,6 +36618,7 @@ proxy-groups:
   - CF中转_07220513002
   - CF中转_0722054299
   - CF中转_0722056836
+  - 新西兰_072205015
   - CF中转_072205411
   - CF中转_07220511774
   - CF中转_0722052501
@@ -36217,6 +36685,7 @@ proxy-groups:
   - 俄罗斯联邦_072205228
   - CF中转_0722053124
   - CF中转_07220512955
+  - 新西兰_072205017
   - CF中转_0722056000
   - CF中转_0722059121
   - 塞舌尔_072205226
@@ -36246,11 +36715,14 @@ proxy-groups:
   - CF中转_07220510059
   - CF中转_0722055806
   - 德国_072205268
+  - 新西兰_072205012
   - 德国_072205280
   - CF中转_072205580
   - 新加坡_072205245
   - CF中转_0722059275
+  - 新加坡_072205483
   - CF中转_0722054863
+  - 日本_072205255
   - CF中转_07220511984
   - CF中转_072205591
   - CF中转_07220512248
@@ -36278,6 +36750,7 @@ proxy-groups:
   - 新加坡_072205330
   - 美国 1286
   - CF中转_0722051439
+  - 新加坡_072205472
   - CF中转_07220513625
   - 印度尼西亚_072205014
   - CF中转_072205403
@@ -36294,6 +36767,7 @@ proxy-groups:
   - 德国_072205337
   - 俄罗斯联邦_072205389
   - 亚美尼亚_072205023
+  - 新加坡_072205540
   - 卢森堡_072205011
   - 伊朗_072205054
   - 德国_072205757
@@ -36419,6 +36893,7 @@ proxy-groups:
   - 乌克兰_072205013
   - 新加坡_072205356
   - 塞舌尔_072205225
+  - 日本_072205296
   - CF中转_07220511445
   - CF中转_0722056769
   - CF中转_0722052829
@@ -36588,6 +37063,7 @@ proxy-groups:
   - CF中转_0722059853
   - 俄罗斯联邦_072205376
   - 乌克兰_072205012
+  - 新西兰_072205002
   - CF中转_0722056804
   - CF中转_0722056031
   - CF中转_072205854
@@ -36704,6 +37180,7 @@ proxy-groups:
   - CF中转_0722059234
   - 德国_072205297
   - CF中转_07220513147
+  - 新加坡_072205486
   - CF中转_0722055270
   - CF中转_0722054669
   - CF中转_0722053510
@@ -36867,6 +37344,8 @@ proxy-groups:
   - CF中转_0722059672
   - CF中转_07220512937
   - CF中转_0722052778
+  - 新加坡_072205521
+  - 日本_072205219
   - CF中转_0722053056
   - 卢森堡_072205014
   - CF中转_07220510431
@@ -36899,6 +37378,7 @@ proxy-groups:
   - CF中转_0722055756
   - CF中转_07220512423
   - CF中转_0722055952
+  - 新加坡_072205473
   - CF中转_0722056859
   - CF中转_07220513503
   - 美国 1288
@@ -37024,6 +37504,7 @@ proxy-groups:
   - CF中转_0722056113
   - CF中转_0722054015
   - CF中转_0722058060
+  - 日本_072205286
   - CF中转_0722053199
   - 美国 1175
   - CF中转_0722052111
@@ -37066,6 +37547,7 @@ proxy-groups:
   - CF中转_0722058217
   - CF中转_07220511084
   - CF中转_0722056853
+  - 新加坡_072205548
   - CF中转_0722059033
   - CF中转_0722058106
   - 新加坡_072205325
