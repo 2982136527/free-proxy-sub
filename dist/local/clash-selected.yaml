@@ -7,29 +7,19 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  host: v4.hdacd.com
-  name: 🇺🇸 US-01
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  host: v6.hdacd.com
-  name: 🇯🇵 JP-01
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
   host: v36.hdacd.com
   name: 🇬🇧 GB-01
   network: tcp
   port: 30836
   server: v36.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK-01
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
@@ -71,18 +61,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
-  name: 🌍 Node-05
-  network: ws
-  port: 80
-  server: saas.sin.fan
-  type: vmess
-  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
-  ws-path: /
-- alterId: 0
-  cipher: auto
   host: www.19289243.xyz
-  name: 🌍 Node-06
+  name: 🌍 Node-05
   network: ws
   port: 30000
   server: 104.37.215.83
@@ -90,6 +70,16 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-path: /path/191019072927
+- alterId: 0
+  cipher: auto
+  host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+  name: 🌍 Node-06
+  network: ws
+  port: 80
+  server: saas.sin.fan
+  type: vmess
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+  ws-path: /
 - alterId: 0
   cipher: auto
   host: www.31733109.xyz
@@ -129,24 +119,14 @@ proxies:
   ws-path: /download
 - alterId: 0
   cipher: auto
-  host: v8.hdacd.com
-  name: 🇺🇸 US-02
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  host: hoot.ml
+  host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
   name: 🌍 Node-11
   network: ws
-  port: 2083
-  server: 172.64.156.14
-  tls: true
+  port: 80
+  server: cf.877774.xyz
   type: vmess
-  uuid: 18ac29c1-273b-4068-c40b-742d51409595
-  ws-path: /kdws
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+  ws-path: /
 - alterId: 0
   cipher: auto
   host: worker-late28ygwuhw.motonob768.workers.dev
@@ -306,13 +286,32 @@ proxies:
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
   ws-path: /dongtaiwang.com
+- alterId: 0
+  cipher: auto
+  host: planb.mojcn.com
+  name: 🌍 Node-27
+  network: ws
+  port: 16618
+  server: planb.mojcn.com
+  type: vmess
+  uuid: 2ed5919d-9a69-4c79-90af-e21915182aa1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  host: m.cnmjin.net
+  name: 🌍 Node-28
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-path: /
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
-  - 🇺🇸 US-01
-  - 🇯🇵 JP-01
   - 🇬🇧 GB-01
+  - 🇭🇰 HK-01
   - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
@@ -323,7 +322,6 @@ proxy-groups:
   - 🌍 Node-08
   - 🌍 Node-09
   - 🌍 Node-10
-  - 🇺🇸 US-02
   - 🌍 Node-11
   - 🌍 Node-12
   - 🌍 Node-13
@@ -340,13 +338,14 @@ proxy-groups:
   - 🌍 Node-24
   - 🌍 Node-25
   - 🌍 Node-26
+  - 🌍 Node-27
+  - 🌍 Node-28
   type: select
 - interval: 180
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US-01
-  - 🇯🇵 JP-01
   - 🇬🇧 GB-01
+  - 🇭🇰 HK-01
   - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
@@ -357,7 +356,6 @@ proxy-groups:
   - 🌍 Node-08
   - 🌍 Node-09
   - 🌍 Node-10
-  - 🇺🇸 US-02
   - 🌍 Node-11
   - 🌍 Node-12
   - 🌍 Node-13
@@ -374,6 +372,8 @@ proxy-groups:
   - 🌍 Node-24
   - 🌍 Node-25
   - 🌍 Node-26
+  - 🌍 Node-27
+  - 🌍 Node-28
   type: url-test
   url: https://www.gstatic.com/generate_204
 rules:
