@@ -7,6 +7,15 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
+  name: 🌍 Node-01
+  network: ws
+  port: 80
+  server: 124.222.189.225
+  type: vmess
+  uuid: a8c9ad5b-1f58-4234-b5fe-a895bee9a047
+  ws-path: /
+- alterId: 0
+  cipher: auto
   host: v36.hdacd.com
   name: 🇬🇧 GB-01
   network: tcp
@@ -22,16 +31,6 @@ proxies:
   server: v9.hdacd.com
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 🌍 Node-01
-  network: ws
-  port: 443
-  server: 202.79.172.53
-  tls: true
-  type: vmess
-  uuid: 30216206-14b7-40e7-995d-61c1219ba584
-  ws-path: /path/220128071100
 - alterId: 0
   cipher: auto
   host: scw.cloudflare.quest
@@ -53,16 +52,10 @@ proxies:
   type: vmess
   uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
   ws-path: /
-- cipher: aes-256-gcm
-  name: 🌍 Node-04
-  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
-  port: 20028
-  server: s.n.y.5.8.z.4.e.d.ar01-ae5.entry.v51124-5.qpon
-  type: ss
 - alterId: 0
   cipher: auto
   host: www.19289243.xyz
-  name: 🌍 Node-05
+  name: 🌍 Node-04
   network: ws
   port: 30000
   server: 104.37.215.83
@@ -73,7 +66,7 @@ proxies:
 - alterId: 0
   cipher: auto
   host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
-  name: 🌍 Node-06
+  name: 🌍 Node-05
   network: ws
   port: 80
   server: saas.sin.fan
@@ -83,7 +76,7 @@ proxies:
 - alterId: 0
   cipher: auto
   host: www.31733109.xyz
-  name: 🌍 Node-07
+  name: 🌍 Node-06
   network: ws
   port: 443
   server: 104.37.215.102
@@ -94,23 +87,17 @@ proxies:
 - alterId: 0
   cipher: auto
   host: ee.oppo.quest
-  name: 🌍 Node-08
+  name: 🌍 Node-07
   network: ws
   port: 80
   server: ee.oppo.quest
   type: vmess
   uuid: f9247df4-02d5-4b31-acc5-4022652c5953
   ws-path: /
-- cipher: aes-256-gcm
-  name: 🌍 Node-09
-  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
-  port: 1416
-  server: n.j.y.y.h.z.g.e.d.hk06-ae5.entry.v51124-5.qpon
-  type: ss
 - alterId: 0
   cipher: auto
   host: download.windowsupdate.com
-  name: 🌍 Node-10
+  name: 🌍 Node-08
   network: ws
   port: 14954
   server: 91.200.242.187
@@ -120,7 +107,7 @@ proxies:
 - alterId: 0
   cipher: auto
   host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
-  name: 🌍 Node-11
+  name: 🌍 Node-09
   network: ws
   port: 80
   server: cf.877774.xyz
@@ -129,8 +116,18 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  name: 🌍 Node-10
+  network: ws
+  port: 443
+  server: 172.64.153.155
+  tls: true
+  type: vmess
+  uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
+  ws-path: /dongtaiwang.com
+- alterId: 0
+  cipher: auto
   host: worker-late28ygwuhw.motonob768.workers.dev
-  name: 🌍 Node-12
+  name: 🌍 Node-11
   network: ws
   port: 443
   server: 173.245.58.11
@@ -141,7 +138,7 @@ proxies:
 - alterId: 0
   cipher: auto
   host: 1.1.1.5
-  name: 🌍 Node-13
+  name: 🌍 Node-12
   network: ws
   port: 443
   server: 1.1.1.5
@@ -152,7 +149,7 @@ proxies:
 - alterId: 0
   cipher: auto
   host: marco-visibility-tops-estimate.trycloudflare.com
-  name: 🌍 Node-14
+  name: 🌍 Node-13
   network: ws
   port: 8443
   server: 172.64.146.102
@@ -163,7 +160,7 @@ proxies:
 - alterId: 0
   cipher: auto
   host: clash6.ssr-free.xyz
-  name: 🌍 Node-15
+  name: 🌍 Node-14
   network: ws
   port: 443
   server: 172.64.154.150
@@ -174,7 +171,7 @@ proxies:
 - alterId: 0
   cipher: auto
   host: lg4.zhujicn2.com
-  name: 🌍 Node-16
+  name: 🌍 Node-15
   network: ws
   port: 443
   server: 172.64.155.200
@@ -185,7 +182,7 @@ proxies:
 - alterId: 0
   cipher: auto
   host: lg3.zhujicn2.com
-  name: 🌍 Node-17
+  name: 🌍 Node-16
   network: ws
   port: 443
   server: 172.64.144.100
@@ -196,7 +193,7 @@ proxies:
 - alterId: 0
   cipher: auto
   host: hms19.best-tizi.top
-  name: 🌍 Node-18
+  name: 🌍 Node-17
   network: ws
   port: 443
   server: 162.159.8.120
@@ -207,7 +204,7 @@ proxies:
 - alterId: 0
   cipher: auto
   host: testgroup2.091.se
-  name: 🌍 Node-19
+  name: 🌍 Node-18
   network: ws
   port: 443
   server: 172.64.147.71
@@ -217,7 +214,7 @@ proxies:
   ws-path: /xxX2
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-20
+  name: 🌍 Node-19
   network: ws
   port: 443
   server: 172.64.154.155
@@ -225,6 +222,12 @@ proxies:
   type: vmess
   uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
   ws-path: /dongtaiwang.com
+- cipher: aes-256-gcm
+  name: 🌍 Node-20
+  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
+  port: 1416
+  server: n.j.y.y.h.z.g.e.d.hk06-ae5.entry.v51124-5.qpon
+  type: ss
 - alterId: 0
   cipher: auto
   host: arsurf.arkarain-co.workERs.DEV
@@ -310,9 +313,9 @@ proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
   - ♻️ 自动选择
+  - 🌍 Node-01
   - 🇬🇧 GB-01
   - 🇭🇰 HK-01
-  - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
   - 🌍 Node-04
@@ -344,9 +347,9 @@ proxy-groups:
 - interval: 180
   name: ♻️ 自动选择
   proxies:
+  - 🌍 Node-01
   - 🇬🇧 GB-01
   - 🇭🇰 HK-01
-  - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
   - 🌍 Node-04
