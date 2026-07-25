@@ -180,19 +180,8 @@ proxies:
   ws-path: /kellie.makeup/linkvws
 - alterId: 0
   cipher: auto
-  host: hms19.best-tizi.top
-  name: 🌍 Node-16
-  network: ws
-  port: 443
-  server: 162.159.8.120
-  tls: true
-  type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  ws-path: /
-- alterId: 0
-  cipher: auto
   host: lg3.zhujicn2.com
-  name: 🌍 Node-17
+  name: 🌍 Node-16
   network: ws
   port: 443
   server: 172.64.144.100
@@ -202,7 +191,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-18
+  name: 🌍 Node-17
   network: ws
   port: 443
   server: 172.64.154.102
@@ -212,7 +201,7 @@ proxies:
   ws-path: /dongtaiwang.com
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-19
+  name: 🌍 Node-18
   network: ws
   port: 443
   server: 172.64.154.222
@@ -222,7 +211,7 @@ proxies:
   ws-path: /ray
 - alterId: 0
   cipher: auto
-  name: 🌍 Node-20
+  name: 🌍 Node-19
   network: ws
   port: 2053
   server: 172.64.152.23
@@ -231,11 +220,20 @@ proxies:
   uuid: 8b23a6c9-0ca6-4134-83f2-39d42da0d648
   ws-path: /
 - cipher: aes-256-gcm
-  name: 🌍 Node-21
+  name: 🌍 Node-20
   password: 95c3d114-5370-3e54-832a-5a5acc492b9b
   port: 1416
   server: n.j.y.y.h.z.g.e.d.hk06-ae5.entry.v51124-5.qpon
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🌍 Node-21
+  network: grpc
+  port: 2087
+  server: 173.245.58.11
+  tls: true
+  type: vmess
+  uuid: 08ec6a06-8c15-4069-a781-8c725a30b7e7
 - alterId: 0
   cipher: auto
   name: 🌍 Node-22
@@ -299,14 +297,15 @@ proxies:
   ws-path: /Acdtms4zfx
 - alterId: 0
   cipher: auto
+  host: sgal.dagrate.eu.org
   name: 🌍 Node-28
   network: ws
   port: 443
-  server: 172.64.153.150
+  server: cf.090227.xyz
   tls: true
   type: vmess
-  uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
-  ws-path: /dongtaiwang.com
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-path: /
 proxy-groups:
 - name: 🇺🇳 精选节点
   proxies:
