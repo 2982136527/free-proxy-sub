@@ -6417,6 +6417,12 @@ proxies:
   server: 167.235.136.155
   type: vmess
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
+- cipher: aes-256-gcm
+  name: 🇺🇸US-167.88.62.68-7037
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 167.88.62.68
+  type: ss
 - alterId: 0
   cipher: auto
   host: ophelia.mom
@@ -6615,6 +6621,12 @@ proxies:
   type: vmess
   uuid: 114f5786-a8a0-446a-a32f-446893480560
   ws-path: /27353486f3a1d4f/
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.68.135.123-6855
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 38.68.135.123
+  type: ss
 - alterId: 0
   cipher: auto
   host: us80-3.sanfen001.pics
@@ -6801,6 +6813,12 @@ proxies:
   type: vmess
   uuid: 824c58b1-65ba-4680-a609-663a000dbb92
   ws-path: /wss13889
+- cipher: aes-256-gcm
+  name: 🇺🇸US-142.202.48.52-6663
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 142.202.48.52
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🇫🇮FI-65.21.240.108-1399
@@ -7286,12 +7304,6 @@ proxies:
   type: vmess
   uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
   ws-path: /hgcefomn
-- cipher: aes-256-gcm
-  name: 🇺🇸US-167.88.62.68-7037
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 167.88.62.68
-  type: ss
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-172.67.201.14-2916
@@ -7555,12 +7567,6 @@ proxies:
   type: vmess
   uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d
   ws-path: /11201
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.68.135.123-6855
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 38.68.135.123
-  type: ss
 - alterId: 0
   cipher: auto
   host: linja05.hwcar.sbs
@@ -7708,6 +7714,12 @@ proxies:
   tls: true
   type: vmess
   uuid: ae91113b-915f-4a56-b998-e52d8a12da39
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇷FR-161.97.68.139-7027
+  password: 94dvoW0TdKRq
+  port: 443
+  server: 161.97.68.139
+  type: ss
 - alterId: 0
   cipher: auto
   host: free-godlikeanyone.koyeb.app
@@ -7759,12 +7771,6 @@ proxies:
   type: vmess
   uuid: c13277ce-cda6-4d01-cedc-1e3605a0eb72
   ws-path: /12796
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR-161.97.68.139-7027
-  password: 94dvoW0TdKRq
-  port: 443
-  server: 161.97.68.139
-  type: ss
 - cipher: aes-256-cfb
   name: 🇫🇷FR-162.19.59.160-8599
   password: asdKkaskJKfnsa
@@ -7945,6 +7951,12 @@ proxies:
   type: vmess
   uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
   ws-path: /blue
+- cipher: aes-256-gcm
+  name: 🇳🇱NL-172.99.188.71-7019
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 172.99.188.71
+  type: ss
 - alterId: 0
   cipher: auto
   host: www.93271626.xyz
@@ -8111,12 +8123,6 @@ proxies:
   type: vmess
   uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
   ws-path: /i99LgvSaslbsPLLQQ7j6Z
-- cipher: aes-256-gcm
-  name: 🇬🇧GB-172.99.190.149-7106
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 172.99.190.149
-  type: ss
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-23.227.38.100-2746
@@ -8148,12 +8154,6 @@ proxies:
   type: vmess
   uuid: 4ce21a11-44fe-4814-a639-4b7caf501031
   ws-path: /
-- cipher: aes-256-gcm
-  name: 🇳🇱NL-172.99.188.71-7019
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 172.99.188.71
-  type: ss
 - alterId: 0
   cipher: auto
   host: free-russian01-cdn.xiaohouzi.club
@@ -12946,7 +12946,7 @@ proxies:
   ws-path: /sshkit/Ertusg86/635014638c264/
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 机场推荐:dafei.de 美国 21
+  name: 🇨🇳_CN_中国->🇸🇬_SG_新加坡
   network: tcp
   port: 30845
   server: v45.hdacd.com
@@ -25989,17 +25989,16 @@ proxies:
   ws-path: '%2Fdanfeng'
 - alterId: 0
   cipher: auto
+  encryption: none
   flow: xtls-rprx-vision
-  fp: qq
-  host: bestrecipes-online.site
-  name: 美国_0725043536
+  fp: chrome
+  name: 🇺🇸 机场推荐:dafei.de 美国 29
   network: tcp
   port: 443
   server: plll3.protectedline.site
   sni: bestrecipes-online.site
   type: vless
   uuid: df2b6103-3323-4ed4-8417-bfa80bc66848
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision
@@ -30993,8 +30992,10 @@ proxies:
   ws-path: '%2FlFFuDv2fgYSedn2lPLZvN%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night'
 - alterId: 0
   cipher: auto
+  encryption: none
   fp: chrome
-  name: 🇩🇪_DE_德国
+  name: 🇩🇪 机场推荐:dafei.de 德国 02
+  network: tcp
   port: 33786
   server: fz.tempfast.ir
   sni: icloud.com
@@ -31794,15 +31795,13 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision
   fp: qq
-  host: bestrecipes-online.site
-  name: 新西兰_072504024
+  name: 🇵🇱 机场推荐:dafei.de 波兰 01
   network: tcp
   port: 443
   server: pl.protectedline.site
   sni: bestrecipes-online.site
   type: vless
   uuid: df2b6103-3323-4ed4-8417-bfa80bc66848
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -36018,16 +36017,14 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: x4g-production-ee29.up.railway.app
-  name: 🇺🇸 机场推荐:dafei.de 美国 22
+  name: 美国 1145
   network: ws
   port: 443
   server: 69.46.46.87
-  sni: x4g-production-ee29.up.railway.app
+  servername: x4g-production-0727.up.railway.app
+  tls: true
   type: vless
-  uuid: f411d02a-fff5-86a4-9f02-cfd75fa76d41
-  ws-path: '%2Fws%2Ff411d02a-fff5-86a4-9f02-cfd75fa76d41'
+  uuid: 9ccf51b3-b602-b2b8-d761-632d4abedc95
 - alterId: 0
   cipher: auto
   host: kalami-eew.pages.dev
@@ -37351,9 +37348,11 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
+  encryption: none
   flow: xtls-rprx-vision
-  fp: firefox
-  name: 🇸🇪_SE_瑞典
+  fp: chrome
+  name: 🇸🇪 机场推荐:dafei.de 瑞典 01
+  network: tcp
   port: 443
   server: 176.125.241.103
   sni: 3cx.com
@@ -40026,17 +40025,16 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
+  encryption: none
   flow: xtls-rprx-vision
-  fp: qq
-  host: bestrecipes-online.site
-  name: 英国_072504560
+  fp: chrome
+  name: 🇵🇱 机场推荐:dafei.de 波兰 02
   network: tcp
   port: 443
   server: pll.protectedline.site
   sni: bestrecipes-online.site
   type: vless
   uuid: df2b6103-3323-4ed4-8417-bfa80bc66848
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -53940,14 +53938,17 @@ proxies:
   ws-path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
-  name: 美国 1101
+  encryption: none
+  fp: chrome
+  host: x4g-production-b354.up.railway.app
+  name: 🇺🇸 机场推荐:dafei.de 美国 28
   network: ws
   port: 443
   server: 69.46.46.92
-  servername: x4g-production-b354.up.railway.app
-  tls: true
+  sni: x4g-production-b354.up.railway.app
   type: vless
   uuid: 76d150ba-5417-98d6-6b26-764cab9a0456
+  ws-path: '%2Fws%2F76d150ba-5417-98d6-6b26-764cab9a0456'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -66109,6 +66110,7 @@ proxy-groups:
   - 🏁RELAY-162.159.135.42-3500
   - 🇺🇸US-172.239.193.198-1957
   - 🇩🇪DE-167.235.136.155-1398
+  - 🇺🇸US-167.88.62.68-7037
   - 🏁RELAY-188.114.96.58-1884
   - 🏁RELAY-172.67.168.111-0921
   - 🏁RELAY-172.67.74.2-0596
@@ -66128,6 +66130,7 @@ proxy-groups:
   - 🇨🇦CA-104.247.81.99-1047
   - 🇫🇮FI-95.216.186.191-0858
   - 🇨🇿CZ-46.8.9.220-1311
+  - 🇺🇸US-38.68.135.123-6855
   - 🏁RELAY-172.67.215.250-1368
   - 🇦🇺AU-119.252.190.115-1113
   - 🇫🇷FR-57.128.189.211-1474
@@ -66146,6 +66149,7 @@ proxy-groups:
   - 🇺🇸US-172.111.38.233-1661
   - 🏁RELAY-203.30.188.120-3511
   - 🏁RELAY-172.67.183.5-8531
+  - 🇺🇸US-142.202.48.52-6663
   - 🇫🇮FI-65.21.240.108-1399
   - 🇮🇹IT-217.138.197.171-1127
   - 🇨🇿CZ-46.8.8.220-0949
@@ -66192,7 +66196,6 @@ proxy-groups:
   - 🇩🇪DE-132.145.232.171-1495
   - 🏁RELAY-104.26.1.221-1740
   - 🏁RELAY-172.67.194.234-8518
-  - 🇺🇸US-167.88.62.68-7037
   - 🏁RELAY-172.67.201.14-2916
   - 🇺🇸US-167.88.63.44-7200
   - 🏁RELAY-104.21.42.243-1506
@@ -66220,7 +66223,6 @@ proxy-groups:
   - 🇧🇪BE-37.120.236.252-1129
   - 🇩🇪DE-94.130.25.155-1397
   - 🏁RELAY-172.67.81.238-8489
-  - 🇺🇸US-38.68.135.123-6855
   - 🏁RELAY-172.67.220.83-1555
   - 🏁RELAY-104.21.2.202-1968
   - 🏁RELAY-162.159.133.130-8627
@@ -66236,12 +66238,12 @@ proxy-groups:
   - 🏁RELAY-104.21.90.210-1349
   - 🏁RELAY-172.67.128.37-8546
   - 🇫🇷FR-57.128.174.124-1094
+  - 🇫🇷FR-161.97.68.139-7027
   - 🏁RELAY-104.20.31.27-2021
   - 🇺🇸US-47.253.60.200-8171
   - 🏁RELAY-104.21.75.246-1005
   - 🏁RELAY-172.67.212.68-8511
   - 🏁RELAY-203.23.106.157-8376
-  - 🇫🇷FR-161.97.68.139-7027
   - 🇫🇷FR-162.19.59.160-8599
   - 🇻🇳VN-103.166.183.226-0357
   - 🇰🇬KG-185.48.136.150-1862
@@ -66261,6 +66263,7 @@ proxy-groups:
   - 🏁RELAY-104.31.16.50-8841
   - 🇻🇳VN-103.56.160.184-0420
   - 🏁RELAY-154.92.9.96-8642
+  - 🇳🇱NL-172.99.188.71-7019
   - 🇱🇹LT-85.206.168.71-1114
   - 🏁RELAY-173.245.49.111-2205
   - 🇺🇸US-13.248.169.48-5542
@@ -66278,11 +66281,9 @@ proxy-groups:
   - 🏁RELAY-104.19.208.207-8958
   - 🇫🇷FR-23.162.152.177-1744
   - 🏁RELAY-104.31.16.35-8856
-  - 🇬🇧GB-172.99.190.149-7106
   - 🏁RELAY-23.227.38.100-2746
   - 🇷🇺RU-37.220.161.249-1900
   - 🇺🇸US-13.248.169.48-1186
-  - 🇳🇱NL-172.99.188.71-7019
   - 🇺🇸US-76.223.54.146-1310
   - 🇺🇸US-13.248.169.48-0922
   - 🇱🇺LU-23.109.136.74-1134
@@ -66765,7 +66766,7 @@ proxy-groups:
   - 英国_0725041337
   - 🇩🇪DE-63.180.180.176-2346
   - 🇸🇬SG-15.235.147.186-0418
-  - 🇺🇸 机场推荐:dafei.de 美国 21
+  - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
   - 荷兰_072504438
   - 俄罗斯联邦_072504042
   - 荷兰_072504146
@@ -67938,7 +67939,7 @@ proxy-groups:
   - 印度尼西亚_072504008
   - CF中转_0725049723
   - 德国_072504440
-  - 美国_0725043536
+  - 🇺🇸 机场推荐:dafei.de 美国 29
   - 俄罗斯联邦_072504092
   - 未知_072504631
   - 荷兰_072504700
@@ -68388,7 +68389,7 @@ proxy-groups:
   - 美国_0725044411
   - 美国_072504619
   - CF中转_0725047151
-  - 🇩🇪_DE_德国
+  - 🇩🇪 机场推荐:dafei.de 德国 02
   - CF中转_0725042757
   - 未知_0725045289
   - 奥地利_072504037
@@ -68462,7 +68463,7 @@ proxy-groups:
   - 马来西亚_072504232
   - 未知_072504977
   - 美国_0725043553
-  - 新西兰_072504024
+  - 🇵🇱 机场推荐:dafei.de 波兰 01
   - 未知_072504849
   - CF中转_072504775
   - 德国_072504353
@@ -68844,7 +68845,7 @@ proxy-groups:
   - 未知_0725044726
   - 未知_072504934
   - 未知_0725045561
-  - 🇺🇸 机场推荐:dafei.de 美国 22
+  - 美国 1145
   - CF中转_07250414185
   - 英国_072504420
   - 荷兰_072504216
@@ -68962,7 +68963,7 @@ proxy-groups:
   - 俄罗斯联邦_072504317
   - 美国 1264
   - CF中转_0725046369
-  - 🇸🇪_SE_瑞典
+  - 🇸🇪 机场推荐:dafei.de 瑞典 01
   - 波兰_072504050
   - CF中转_07250412507
   - 塞舌尔_072504223
@@ -69199,7 +69200,7 @@ proxy-groups:
   - 未知_0725045460
   - CF中转_07250413516
   - CF中转_0725043974
-  - 英国_072504560
+  - 🇵🇱 机场推荐:dafei.de 波兰 02
   - 英国_0725041125
   - 奥地利_072504027
   - CF中转_07250411281
@@ -70435,7 +70436,7 @@ proxy-groups:
   - CF中转_0725042990
   - 日本_072504534
   - 阿联酋_072504076
-  - 美国 1101
+  - 🇺🇸 机场推荐:dafei.de 美国 28
   - 美国_072504454
   - 智利_072504006
   - CF中转_0725046801
