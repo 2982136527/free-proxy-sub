@@ -5586,12 +5586,6 @@ proxies:
   type: vmess
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-path: /linkws
-- cipher: aes-256-gcm
-  name: 🇨🇦CA-134.195.196.200-0040
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 134.195.196.200
-  type: ss
 - alterId: 0
   cipher: auto
   host: ip1.1789034.xyz
@@ -10351,13 +10345,13 @@ proxies:
   port: 28061
   server: 103.111.114.82
   type: ss
-- insecure: '1'
-  name: '%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD'
+- name: 🇩🇪_DE_德国_2
   obfs: salamander
-  obfs-password: eNM%2FNfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo%3D
+  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
   password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
   port: 443
   server: ff2.yuntong.click
+  skip-cert-verify: true
   sni: ff2.yuntong.click
   type: hysteria2
 - alterId: 0
@@ -11965,15 +11959,6 @@ proxies:
   ws-path: /@MarzShekan?ed=2560
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 US美国(mibei77.com 米贝节点分享)
-  network: ws
-  port: 55009
-  server: 2001:bc8:32d7:225::3
-  type: vmess
-  uuid: cd80d0a4-a8ef-4492-b956-da82a6cecaf9
-  ws-path: /0zNW56sF
-- alterId: 0
-  cipher: auto
   name: 🏁RELAY-172.64.156.232-2271
   network: ws
   port: 8443
@@ -12011,6 +11996,17 @@ proxies:
   type: vmess
   uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0
   ws-path: /telegram-id-@privatevpns
+- alterId: 0
+  cipher: auto
+  host: 99806388192980142300309475767578.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+  name: 🏁RELAY-104.21.70.68-0659
+  network: ws
+  port: 80
+  server: 104.21.70.68
+  tls: true
+  type: vmess
+  uuid: 6149b865-0d3c-4472-bf9c-3c61bfafa61a
+  ws-path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-103.21.244.249-2210
@@ -12436,6 +12432,12 @@ proxies:
   type: vless
   uuid: 6a8ffc4d-10db-4fbf-8add-a97a5a243dd0
   ws-path: '%2F%3Fed%3D2560'
+- cipher: aes-256-gcm
+  name: 🇨🇦CA-134.195.196.200-0040
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 134.195.196.200
+  type: ss
 - alterId: 0
   cipher: auto
   encryption: none
@@ -12448,6 +12450,15 @@ proxies:
   sni: www.vk.com
   type: vless
   uuid: 6c39e663-e33c-4ca9-ae89-f5396a697853
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+  network: ws
+  port: 55009
+  server: 2001:bc8:32d7:225::3
+  type: vmess
+  uuid: cd80d0a4-a8ef-4492-b956-da82a6cecaf9
+  ws-path: /0zNW56sF
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-104.17.164.68-8980
@@ -12838,6 +12849,12 @@ proxies:
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-path: '%2F%253Fed%253D2560%2526https%253A%2F%2Ft.me%2FWangCai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3'
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-63.180.180.176-2346
+  password: amazonskr05
+  port: 443
+  server: 63.180.180.176
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🇸🇬SG-139.99.61.154-3414
@@ -13178,6 +13195,16 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
+  name: 🇹🇷_TR_土耳其
+  network: ws
+  port: 443
+  server: irangavi.dearhossein-taktaz.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: a62974fc-92df-4b10-b638-10953f501ea2
+- alterId: 0
+  cipher: auto
   fp: firefox
   name: 英国_072504180
   network: grpc
@@ -13467,27 +13494,6 @@ proxies:
   ws-path: '%2Fdanfeng'
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: firefox
-  name: 爱尔兰_072400043
-  port: 228
-  server: 78.17.76.241
-  sni: fenochka.xanka.best
-  type: vless
-  uuid: b6613a9b-0a5b-4453-b982-700a5dc57e71
-- alterId: 0
-  cipher: auto
-  host: 99806388192980142300309475767578.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
-  name: 🏁RELAY-104.21.70.68-0659
-  network: ws
-  port: 80
-  server: 104.21.70.68
-  tls: true
-  type: vmess
-  uuid: 6149b865-0d3c-4472-bf9c-3c61bfafa61a
-  ws-path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
-- alterId: 0
-  cipher: auto
   host: h1.nzjlerhb.icu
   name: CF中转_0725049759
   network: ws
@@ -13610,16 +13616,6 @@ proxies:
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: edge
-  name: 俄罗斯联邦_072504028
-  port: 443
-  server: 92.223.109.89
-  sni: ads.x5.ru
-  type: vless
-  uuid: c436d7dc-170d-40bf-b2b8-6cf468db5e65
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision
@@ -14015,19 +14011,6 @@ proxies:
   ws-path: '%2Fdanfeng'
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision
-  fp: chrome
-  host: s0.awsstatic.com
-  name: 未知_0725045638
-  network: tcp
-  port: 48329
-  server: autochi.papstore.xyz
-  sni: s0.awsstatic.com
-  type: vless
-  uuid: e7d317bd-9124-4eb0-ae76-4d3b8dc54e92
-  ws-path: '%2F'
-- alterId: 0
-  cipher: auto
   encryption: none
   flow: xtls-rprx-vision
   fp: firefox
@@ -14038,18 +14021,6 @@ proxies:
   sni: fast2.screw.page
   type: vless
   uuid: 8e62a80b-83ee-4eb8-9852-e8f8c7a6c4fa
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: marzban-node-production-bfc7.up.railway.app
-  name: 🇺🇸 机场推荐:dafei.de 美国 12
-  network: ws
-  port: 443
-  server: marzban-node-production-bfc7.up.railway.app
-  sni: marzban-node-production-bfc7.up.railway.app
-  type: vless
-  uuid: c17e687e-8f46-4ef2-8c95-633144e23798
-  ws-path: '%2Fvless'
 - alterId: 0
   cipher: auto
   name: 美国 1096
@@ -14190,16 +14161,6 @@ proxies:
   ws-path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: chrome
-  name: 美国_0725041938
-  port: 26681
-  server: simidakr.papstore.xyz
-  sni: www.sibuya.co.kr
-  type: vless
-  uuid: e7d317bd-9124-4eb0-ae76-4d3b8dc54e92
-- alterId: 0
-  cipher: auto
   encryption: none
   name: 俄罗斯联邦_072205444
   port: 443
@@ -14331,18 +14292,6 @@ proxies:
   ws-path: '%2FeyJqdW5rIjoiWGNSZEtoWDJVNnkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119%3Fed%3D2560'
 - alterId: 0
   cipher: auto
-  encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  name: 英国属地曼岛_072504001
-  network: tcp
-  port: 443
-  server: 81.27.109.58
-  sni: stackoverflow.com
-  type: vless
-  uuid: 5ce0a88d-f859-476c-89d2-84d884719ce0
-- alterId: 0
-  cipher: auto
   flow: xtls-rprx-vision
   fp: firefox
   host: www.wikihow.com
@@ -14391,14 +14340,15 @@ proxies:
   uuid: 6179ce37-97b2-4ac7-9591-b4b2bfaca09d
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: firefox
-  name: 香港_072504104
+  host: 3x-ui-production-b1e9.up.railway.app
+  name: 美国_0725044036
+  network: ws
   port: 443
-  server: 45.196.201.88
-  sni: storage.yandex.net
+  server: 3x-ui-production-b1e9.up.railway.app
+  sni: 3x-ui-production-b1e9.up.railway.app
   type: vless
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  uuid: 4f4a70e3-678e-46fb-ace6-59a5bc12e97b
+  ws-path: /in1fp=chrome
 - alterId: 0
   cipher: auto
   encryption: none
@@ -14435,12 +14385,12 @@ proxies:
   ws-path: '%2F%253Fed%253D2560%2526https%253A%2F%2Ft.me%2FWangCai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3'
 - alterId: 0
   cipher: auto
-  fp: firefox
   name: 🇷🇺_RU_俄罗斯
-  network: tcp
   port: 443
   server: 45.155.52.231
-  sni: ru2.skydrgn-online.online
+  servername: ru2.skydrgn-online.online
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
 - alterId: 0
@@ -14537,14 +14487,14 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
-  name: 美国 117
-  network: tcp
-  port: 42542
-  server: i.no.oath.movieypung11.ir
-  skip-cert-verify: true
-  tls: true
+  host: bgroup.node4.v.nodelist-airport.com
+  name: 🇭🇰HK-18.166.57.40-0657
+  network: ws
+  port: 43313
+  server: bgroup.node4.v.nodelist-airport.com
   type: vmess
-  uuid: e012dd19-9440-47e3-9f9e-f6a338e58f3c
+  uuid: 95433298-f181-4c3d-87e4-f7ee4800a39d
+  ws-path: /
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -14635,6 +14585,16 @@ proxies:
   type: vless
   uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
   ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  name: 美国 117
+  network: tcp
+  port: 42542
+  server: i.no.oath.movieypung11.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e012dd19-9440-47e3-9f9e-f6a338e58f3c
 - alterId: 0
   cipher: auto
   encryption: none
@@ -14816,6 +14776,18 @@ proxies:
   uuid: 8e62a80b-83ee-4eb8-9852-e8f8c7a6c4fa
 - alterId: 0
   cipher: auto
+  fp: chrome
+  host: marzban-node-production-bfc7.up.railway.app
+  name: 🇺🇸 机场推荐:dafei.de 美国 12
+  network: ws
+  port: 443
+  server: marzban-node-production-bfc7.up.railway.app
+  sni: marzban-node-production-bfc7.up.railway.app
+  type: vless
+  uuid: c17e687e-8f46-4ef2-8c95-633144e23798
+  ws-path: '%2Fvless'
+- alterId: 0
+  cipher: auto
   host: sni.111000.v6.rocks
   name: 英国_0725041322
   network: ws
@@ -14890,14 +14862,17 @@ proxies:
   ws-path: /danfengfp=chrome
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
+  flow: xtls-rprx-vision
   fp: chrome
-  name: 英国_072504047
-  port: 4888
-  server: 31.76.119.201
-  sni: pingless.com
+  host: s0.awsstatic.com
+  name: 未知_0725045638
+  network: tcp
+  port: 48329
+  server: autochi.papstore.xyz
+  sni: s0.awsstatic.com
   type: vless
-  uuid: af288d94-dd26-46cb-ad3d-5fe644e97e2f
+  uuid: e7d317bd-9124-4eb0-ae76-4d3b8dc54e92
+  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -15552,13 +15527,13 @@ proxies:
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision-udp443
-  fp: qq
-  name: 爱尔兰_072305039
-  port: 443
-  server: pl04.myxasecure.space
-  sni: pl04.myxasecure.space
+  fp: chrome
+  name: 美国_0725041938
+  port: 26681
+  server: simidakr.papstore.xyz
+  sni: www.sibuya.co.kr
   type: vless
-  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+  uuid: e7d317bd-9124-4eb0-ae76-4d3b8dc54e92
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -15571,17 +15546,6 @@ proxies:
   type: vless
   uuid: 060a8fe8-7175-4ded-94a5-d9808bc645b6
   ws-path: '%2F%3FTELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI%3Fed%3D512'
-- alterId: 0
-  cipher: auto
-  host: 3x-ui-production-b1e9.up.railway.app
-  name: 美国_0725044036
-  network: ws
-  port: 443
-  server: 3x-ui-production-b1e9.up.railway.app
-  sni: 3x-ui-production-b1e9.up.railway.app
-  type: vless
-  uuid: 4f4a70e3-678e-46fb-ace6-59a5bc12e97b
-  ws-path: /in1fp=chrome
 - alterId: 0
   cipher: auto
   encryption: none
@@ -15625,6 +15589,16 @@ proxies:
   sni: storage.yandex.net
   type: vless
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+- alterId: 0
+  cipher: auto
+  name: 美国 1038
+  network: xhttp
+  port: 443
+  server: 151.101.34.144
+  servername: global.fastly.com
+  tls: true
+  type: vless
+  uuid: 3065a2bc-f2c1-4339-8ef9-7428e0cd988c
 - alterId: 0
   cipher: auto
   encryption: mlkem768x25519plus.native.0rtt.0eiQ39M8sEtDg7kcMLAeT1mSgGHsYgyCyiAKpNHQhmA
@@ -15823,6 +15797,16 @@ proxies:
   uuid: 27c7c783-371f-46d6-9441-f66bb9b160fd
 - alterId: 0
   cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: edge
+  name: 俄罗斯联邦_072504028
+  port: 443
+  server: 92.223.109.89
+  sni: ads.x5.ru
+  type: vless
+  uuid: c436d7dc-170d-40bf-b2b8-6cf468db5e65
+- alterId: 0
+  cipher: auto
   encryption: none
   fp: chrome
   name: 伊朗_072504050
@@ -15932,6 +15916,16 @@ proxies:
   sni: storage.yandex.net
   type: vless
   uuid: eece4171-e025-40a3-9027-e395036ff99d
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: 新加坡_072504046
+  port: 29571
+  server: tuno.papstore.xyz
+  sni: www.smu.edu.sg
+  type: vless
+  uuid: 70289a41-983c-43bf-8331-c2c8cfb1ffa0
 - alterId: 0
   cipher: auto
   encryption: none
@@ -16287,16 +16281,6 @@ proxies:
   ws-path: '%2F%3Fed%3D2560'
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: chrome
-  name: 新加坡_072504046
-  port: 29571
-  server: tuno.papstore.xyz
-  sni: www.smu.edu.sg
-  type: vless
-  uuid: 70289a41-983c-43bf-8331-c2c8cfb1ffa0
-- alterId: 0
-  cipher: auto
   flow: xtls-rprx-vision
   fp: firefox
   name: 印度尼西亚_072504052
@@ -16580,13 +16564,15 @@ proxies:
   ws-path: '%2FTelegram-Xv2ry2-7%3Fed%3D1080'
 - alterId: 0
   cipher: auto
-  fp: firefox
-  name: 阿联酋_072305018
+  host: x4g-production-7c06.up.railway.app
+  name: 美国_0725043987
+  network: ws
   port: 443
-  server: free-exp.kyras.pw
-  sni: free-exp.kyras.pw
+  server: x4g-production-7c06.up.railway.app
+  sni: x4g-production-7c06.up.railway.app
   type: vless
-  uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+  uuid: 22470158-224c-f031-ee03-3f0826454a0f
+  ws-path: /ws/22470158-224c-f031-ee03-3f0826454a0ffp=chrome
 - alterId: 0
   cipher: auto
   encryption: none
@@ -16675,6 +16661,16 @@ proxies:
   type: vless
   uuid: 8714dc5b-f3a8-4d48-8bd1-9180ebf3640a
   ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  name: 美国 1009
+  network: xhttp
+  port: 443
+  server: 199.232.77.215
+  servername: global.fastly.com
+  tls: true
+  type: vless
+  uuid: 142c10ed-ddfd-4b89-9b6c-2effbdd48466
 - alterId: 0
   cipher: auto
   encryption: none
@@ -17486,17 +17482,14 @@ proxies:
   uuid: 838de912-398a-4c0e-9228-0fd44b0d1f8b
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision
+  flow: xtls-rprx-vision-udp443
   fp: firefox
-  host: tur02.myxasecure.space
-  name: 俄罗斯联邦_072504551
-  network: tcp
+  name: 🇷🇺RU_3|2.4MB/s
   port: 443
   server: tur02.myxasecure.space
   sni: tur02.myxasecure.space
   type: vless
   uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   name: 德国_072504647
@@ -18280,18 +18273,6 @@ proxies:
   ws-path: /danfengfp=chrome
 - alterId: 0
   cipher: auto
-  encryption: none
-  flow: xtls-rprx-vision
-  fp: chrome
-  name: 阿塞拜疆_072504002
-  network: tcp
-  port: 443
-  server: 31.171.120.144
-  sni: serviceconfig.talos.cisco.com
-  type: vless
-  uuid: 805d1e66-a1fd-430f-9b2c-cb7c493a41dd
-- alterId: 0
-  cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: firefox
   name: 菲律宾_072504012
@@ -18417,11 +18398,12 @@ proxies:
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision
-  fp: firefox
   name: 🇱🇹_LT_立陶宛
   port: 443
   server: 45.81.254.101
-  sni: travel.catanduanes.ru
+  servername: travel.catanduanes.ru
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: c01c2da7-6977-4b53-a493-cda17fa61b4f
 - alterId: 0
@@ -18994,10 +18976,8 @@ proxies:
   uuid: 9480871a-3843-441c-9b83-aa8c5c96b209
 - alterId: 0
   cipher: auto
-  encryption: none
   fp: chrome
-  name: 荷兰_072504339
-  network: tcp
+  name: 🇳🇱NL_1|2.5MB/s
   port: 43780
   server: 89.34.230.77
   sni: ourworldindata.org
@@ -19480,17 +19460,6 @@ proxies:
   type: vless
   uuid: 26524cce-d514-4014-a426-365fb266a14d
   ws-path: '%2Fdanfeng'
-- alterId: 0
-  cipher: auto
-  host: x4g-production-7c06.up.railway.app
-  name: 美国_0725043987
-  network: ws
-  port: 443
-  server: x4g-production-7c06.up.railway.app
-  sni: x4g-production-7c06.up.railway.app
-  type: vless
-  uuid: 22470158-224c-f031-ee03-3f0826454a0f
-  ws-path: /ws/22470158-224c-f031-ee03-3f0826454a0ffp=chrome
 - alterId: 0
   cipher: auto
   encryption: none
@@ -21162,6 +21131,17 @@ proxies:
   type: vless
   uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
   ws-path: '%2Fdanfeng'
+- alterId: 0
+  cipher: auto
+  host: ge.hivaphone.ir
+  name: 美国_072504667
+  network: ws
+  port: 443
+  server: 132.243.245.92
+  sni: ge.hivaphone.ir
+  type: vless
+  uuid: 440f7616-3b04-4245-a6fa-5d2430fbd4a3
+  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   host: cf.hulume.ccwu.cc
@@ -24254,17 +24234,6 @@ proxies:
   ws-path: '%2F%3FTelegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3'
 - alterId: 0
   cipher: auto
-  host: mms-static-edio-e.oppocdn.sbs
-  name: 未知_0725045289
-  network: ws
-  port: 443
-  server: cos-cdn-a.alicdn.win
-  sni: mms-static-bklowz-e.oppocdn.sbs
-  type: vless
-  uuid: aa626cbf-abce-4369-9ad3-c6886312c4fb
-  ws-path: /newlogin/login.dofp=safari
-- alterId: 0
-  cipher: auto
   host: e43zyc.cdn-edge-jp.fgfw.qzz.io
   name: 荷兰_072504731
   network: ws
@@ -25127,6 +25096,17 @@ proxies:
   uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
 - alterId: 0
   cipher: auto
+  host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  name: 'A - 🇸🇬 SG 05 TG: @nodpai'
+  network: ws
+  port: 56271
+  server: 146.56.106.51
+  sni: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-path: /@Marisa_kristifp=chrome
+- alterId: 0
+  cipher: auto
   encryption: none
   host: sni.111000.v6.rocks
   name: 英国_072504487
@@ -25555,6 +25535,17 @@ proxies:
 - alterId: 0
   cipher: auto
   encryption: none
+  host: heydonya.up.railway.app
+  name: 美国_0725044983
+  network: ws
+  port: 443
+  server: heydonya.up.railway.app
+  type: vless
+  uuid: 5b8b7c22-6ab2-4917-9a9d-95405f90350e
+  ws-path: /ws
+- alterId: 0
+  cipher: auto
+  encryption: none
   flow: xtls-rprx-vision
   fp: firefox
   name: 菲律宾_072504079
@@ -25895,6 +25886,18 @@ proxies:
   type: vless
   uuid: 26524cce-d514-4014-a426-365fb266a14d
   ws-path: /danfengsecurity=tls
+- alterId: 0
+  cipher: auto
+  encryption: none
+  flow: xtls-rprx-vision
+  fp: chrome
+  name: 阿塞拜疆_072504002
+  network: tcp
+  port: 443
+  server: 31.171.120.144
+  sni: serviceconfig.talos.cisco.com
+  type: vless
+  uuid: 805d1e66-a1fd-430f-9b2c-cb7c493a41dd
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision
@@ -26553,17 +26556,14 @@ proxies:
   ws-path: '%2Fhome'
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision
+  flow: xtls-rprx-vision-udp443
   fp: firefox
-  host: vl10.myxasecure.space
-  name: 美国_0725044652
-  network: tcp
+  name: 🇷🇺RU_1|3.1MB/s
   port: 443
   server: vl10.myxasecure.space
   sni: vl10.myxasecure.space
   type: vless
   uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -29593,6 +29593,18 @@ proxies:
   ws-path: '%2Fsnippets'
 - alterId: 0
   cipher: auto
+  fp: chrome
+  host: ftp.skylinknet.ir
+  name: CF中转_07250412265
+  network: ws
+  port: 8443
+  server: 104.18.155.141
+  sni: ftp.skylinknet.ir
+  type: vless
+  uuid: 09fe8808-70d0-46ce-8a59-69c55ac70476
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   host: qyi.fqjd663.ggff.net
   name: 未知_0725041022
   network: ws
@@ -30139,7 +30151,7 @@ proxies:
 - alterId: 0
   cipher: auto
   fp: chrome
-  name: 荷兰_072504056
+  name: 🇳🇱NL_2|1.8MB/s
   port: 43780
   server: us3.boboly.ir
   sni: ourworldindata.org
@@ -30952,6 +30964,17 @@ proxies:
   ws-path: /tools
 - alterId: 0
   cipher: auto
+  host: mms-static-edio-e.oppocdn.sbs
+  name: 未知_0725045289
+  network: ws
+  port: 443
+  server: cos-cdn-a.alicdn.win
+  sni: mms-static-bklowz-e.oppocdn.sbs
+  type: vless
+  uuid: aa626cbf-abce-4369-9ad3-c6886312c4fb
+  ws-path: /newlogin/login.dofp=safari
+- alterId: 0
+  cipher: auto
   host: crm.lotussec.com
   name: 奥地利_072504037
   network: ws
@@ -30996,11 +31019,12 @@ proxies:
   ws-path: /10040
 - alterId: 0
   cipher: auto
-  encryption: none
   name: 🇺🇸_US_美国_2
   network: ws
   port: 8443
   server: ad-005.zen2bswa.info
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
 - alterId: 0
@@ -32038,6 +32062,15 @@ proxies:
   type: vless
   uuid: d5a73943-1966-4d2f-acf2-2dfa506525e2
   ws-path: /uploader.php
+- alterId: 0
+  cipher: auto
+  encryption: none
+  name: 未知_0725045297
+  network: ws
+  port: 8443
+  server: ad-013.zen2bswa.info
+  type: vless
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
 - alterId: 0
   cipher: auto
   fp: random
@@ -33907,6 +33940,18 @@ proxies:
   uuid: da4f61d1-8ca2-4bbf-a79a-1dfff04073e6
 - alterId: 0
   cipher: auto
+  fp: chrome
+  host: ftp.skylinknet.ir
+  name: CF中转_07250412289
+  network: ws
+  port: 8443
+  server: 172.67.225.147
+  sni: ftp.skylinknet.ir
+  type: vless
+  uuid: 09fe8808-70d0-46ce-8a59-69c55ac70476
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   host: sni.111000.dynv6.net
   name: 德国_072504508
   network: ws
@@ -35257,17 +35302,6 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
-  host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-  name: 'A - 🇸🇬 SG 05 TG: @nodpai'
-  network: ws
-  port: 56271
-  server: 146.56.106.51
-  sni: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-path: /@Marisa_kristifp=chrome
-- alterId: 0
-  cipher: auto
   encryption: none
   host: 0078021172ba0fd1.rainzone.ir
   name: 未知_0725042965
@@ -35961,16 +35995,14 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: x4g-production-ee29.up.railway.app
-  name: 🇺🇸 机场推荐:dafei.de 美国 22
+  name: 美国 1145
   network: ws
   port: 443
   server: 69.46.46.87
-  sni: x4g-production-ee29.up.railway.app
+  servername: x4g-production-0727.up.railway.app
+  tls: true
   type: vless
-  uuid: f411d02a-fff5-86a4-9f02-cfd75fa76d41
-  ws-path: '%2Fws%2Ff411d02a-fff5-86a4-9f02-cfd75fa76d41'
+  uuid: 9ccf51b3-b602-b2b8-d761-632d4abedc95
 - alterId: 0
   cipher: auto
   host: kalami-eew.pages.dev
@@ -37295,11 +37327,12 @@ proxies:
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision
-  fp: firefox
   name: 🇸🇪_SE_瑞典
   port: 443
   server: 176.125.241.103
-  sni: 3cx.com
+  servername: 3cx.com
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: c01c2da7-6977-4b53-a493-cda17fa61b4f
 - alterId: 0
@@ -37678,6 +37711,17 @@ proxies:
   type: vless
   uuid: 6461860a-d367-4d47-8e82-7d8e1047a152
   ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  name: 'A - 🇸🇬 SG 02 TG: @nodpai'
+  network: ws
+  port: 10460
+  server: 45.76.191.197
+  sni: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-path: /@Marisa_kristifp=chrome
 - alterId: 0
   cipher: auto
   name: 德国_072504640
@@ -38432,17 +38476,6 @@ proxies:
 - alterId: 0
   cipher: auto
   encryption: none
-  host: heydonya.up.railway.app
-  name: 美国_0725044983
-  network: ws
-  port: 443
-  server: heydonya.up.railway.app
-  type: vless
-  uuid: 5b8b7c22-6ab2-4917-9a9d-95405f90350e
-  ws-path: /ws
-- alterId: 0
-  cipher: auto
-  encryption: none
   fp: firefox
   host: s734.csgfw.top
   name: 美国_072504754
@@ -38795,6 +38828,18 @@ proxies:
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-path: '%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3'
+- alterId: 0
+  cipher: auto
+  encryption: none
+  flow: xtls-rprx-vision
+  fp: chrome
+  name: 英国属地曼岛_072504001
+  network: tcp
+  port: 443
+  server: 81.27.109.58
+  sni: stackoverflow.com
+  type: vless
+  uuid: 5ce0a88d-f859-476c-89d2-84d884719ce0
 - alterId: 0
   cipher: auto
   host: q40ivxuck.danfeng.qzz.io
@@ -39446,18 +39491,6 @@ proxies:
   sni: cdn6-49.yahoo.com
   type: vless
   uuid: 9480871a-3843-441c-9b83-aa8c5c96b209
-- alterId: 0
-  cipher: auto
-  fp: chrome
-  host: ftp.skylinknet.ir
-  name: CF中转_07250412265
-  network: ws
-  port: 8443
-  server: 104.18.155.141
-  sni: ftp.skylinknet.ir
-  type: vless
-  uuid: 09fe8808-70d0-46ce-8a59-69c55ac70476
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -40505,17 +40538,6 @@ proxies:
   ws-path: '%2Fdanfeng'
 - alterId: 0
   cipher: auto
-  host: ge.hivaphone.ir
-  name: 美国_072504667
-  network: ws
-  port: 443
-  server: 132.243.245.92
-  sni: ge.hivaphone.ir
-  type: vless
-  uuid: 440f7616-3b04-4245-a6fa-5d2430fbd4a3
-  ws-path: '%2F'
-- alterId: 0
-  cipher: auto
   encryption: none
   host: H7-83W.pAgeS.deV
   name: CF中转_0725043881
@@ -41387,16 +41409,6 @@ proxies:
   ws-path: '%2Fdanfeng%3Fed%3D2560'
 - alterId: 0
   cipher: auto
-  name: 美国 1009
-  network: xhttp
-  port: 443
-  server: 199.232.77.215
-  servername: global.fastly.com
-  tls: true
-  type: vless
-  uuid: 142c10ed-ddfd-4b89-9b6c-2effbdd48466
-- alterId: 0
-  cipher: auto
   fp: chrome
   name: 美国_0725045581
   port: 443
@@ -42093,16 +42105,6 @@ proxies:
   type: vless
   uuid: f06cfdae-269e-44db-9196-4148d7af6812
   ws-path: /Secure
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443
-  fp: qq
-  name: 🇷🇺RU_1|1.8MB/s
-  port: 443
-  server: ru-185.monkeyisland.xyz
-  sni: max.ru
-  type: vless
-  uuid: 37c08b33-a273-4b66-a114-48abceb037a4
 - alterId: 0
   cipher: auto
   encryption: none
@@ -43298,6 +43300,17 @@ proxies:
   type: vless
   uuid: 1a0509ce-31e5-c439-40d8-c8050000000c
   ws-path: '%2Fv2box'
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  name: 巴西_072504065
+  network: grpc
+  port: 8443
+  server: gr1.snowdnvpno4.com
+  sni: addons.mozilla.org
+  type: vless
+  uuid: d85c77a0-28b6-4e1c-9664-c446dc74dcb3
 - alterId: 0
   cipher: auto
   encryption: none
@@ -45458,18 +45471,6 @@ proxies:
   ws-path: /security=tls
 - alterId: 0
   cipher: auto
-  fp: chrome
-  host: ftp.skylinknet.ir
-  name: CF中转_07250412289
-  network: ws
-  port: 8443
-  server: 172.67.225.147
-  sni: ftp.skylinknet.ir
-  type: vless
-  uuid: 09fe8808-70d0-46ce-8a59-69c55ac70476
-  ws-path: '%2F'
-- alterId: 0
-  cipher: auto
   host: tristandeng.cc.cd
   name: CF中转_0725047413
   network: ws
@@ -46294,17 +46295,6 @@ proxies:
   uuid: b24484be-a335-472c-8dff-060ccd2b8f3b
 - alterId: 0
   cipher: auto
-  host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-  name: 'A - 🇸🇬 SG 02 TG: @nodpai'
-  network: ws
-  port: 10460
-  server: 45.76.191.197
-  sni: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-path: /@Marisa_kristifp=chrome
-- alterId: 0
-  cipher: auto
   encryption: none
   host: snippet.danfeng.rr.kg
   name: 美国_0725041516
@@ -46549,16 +46539,6 @@ proxies:
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- alterId: 0
-  cipher: auto
-  name: 美国 1038
-  network: xhttp
-  port: 443
-  server: 151.101.34.144
-  servername: global.fastly.com
-  tls: true
-  type: vless
-  uuid: 3065a2bc-f2c1-4339-8ef9-7428e0cd988c
 - alterId: 0
   cipher: auto
   host: babayaga-6i7.pages.dev
@@ -48311,12 +48291,12 @@ proxies:
 - alterId: 0
   cipher: auto
   fp: chrome
-  name: 未知_072504990
+  name: 🇩🇪DE_1|2.7MB/s
   port: 2083
   server: securitytrails.com
-  sni: log.beforenext.dpdns.org
+  sni: cpn.moniablue.dpdns.org
   type: vless
-  uuid: 58be4691-5430-417a-96e3-02736d151490
+  uuid: 957360f2-2ec4-4638-8cf3-fffc6cc57aa1
 - alterId: 0
   cipher: auto
   host: kalami-eew.pages.dev
@@ -51065,15 +51045,6 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
-  name: 美国_0725041060
-  network: xhttp
-  port: 2087
-  server: 170.114.45.21
-  sni: ch-de.sdcards.ir
-  type: vless
-  uuid: 9d6104a5-fc6d-4fe6-95b7-80d8f699e09d
-- alterId: 0
-  cipher: auto
   host: ggj.core-node-01.gfw.hidns.co
   name: 德国_072504659
   network: ws
@@ -51606,17 +51577,14 @@ proxies:
   ws-path: /in1
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision
+  flow: xtls-rprx-vision-udp443
   fp: chrome
-  host: site.rumedia-cdn.com
-  name: 英国_072504220
-  network: tcp
+  name: 🇦🇪AE_1|2.5MB/s
   port: 443
   server: 31.56.188.87
   sni: site.rumedia-cdn.com
   type: vless
   uuid: 0c74ec62-91b3-4dbf-bf2f-d824e09980f0
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -54984,6 +54952,16 @@ proxies:
   type: vless
   uuid: c135158e-5869-4397-8116-6695ca18cd48
   ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443-udp443-udp443
+  fp: chrome
+  name: 'B - 🇺🇸 US 44 TG: @nodpai'
+  port: 443
+  server: s881.ccgfw.top
+  sni: s881.ccgfw.top
+  type: vless
+  uuid: 7402e534-54dc-34cc-ac5b-c85ac6e236fd
 - alterId: 0
   cipher: auto
   host: sni.111000.dynv6.net
@@ -58604,17 +58582,15 @@ proxies:
   ws-path: /danfeng-2cm3?ed=2560fp=firefox
 - alterId: 0
   cipher: auto
-  encryption: none
-  fp: chrome
   host: x4g-production-7fd2.up.railway.app
-  name: 美国_0725045607
+  name: 🇺🇸US_2|3.3MB/s
   network: ws
   port: 443
   server: 69.46.46.4
   sni: x4g-production-7fd2.up.railway.app
   type: vless
   uuid: 7ff2bfab-a513-9348-bb77-23931a1e58b3
-  ws-path: /ws/7ff2bfab-a513-9348-bb77-23931a1e58b3
+  ws-path: /ws/7ff2bfab-a513-9348-bb77-23931a1e58b3fp=chrome
 - alterId: 0
   cipher: auto
   encryption: none
@@ -58822,16 +58798,6 @@ proxies:
   type: vless
   uuid: 47022b4b-bbad-4bb4-a004-87c2d7538a28
   ws-path: /Telegram@SoonTeam
-- alterId: 0
-  cipher: auto
-  flow: xtls-rprx-vision-udp443-udp443-udp443
-  fp: chrome
-  name: 'B - 🇺🇸 US 44 TG: @nodpai'
-  port: 443
-  server: s881.ccgfw.top
-  sni: s881.ccgfw.top
-  type: vless
-  uuid: 7402e534-54dc-34cc-ac5b-c85ac6e236fd
 - alterId: 0
   cipher: auto
   encryption: none
@@ -65994,7 +65960,6 @@ proxy-groups:
   - 🏁RELAY-172.67.86.190-8487
   - 🏁RELAY-162.159.245.122-8612
   - 🏁RELAY-172.67.175.56-2032
-  - 🇨🇦CA-134.195.196.200-0040
   - 🏁RELAY-104.26.5.60-0897
   - 🏁RELAY-172.66.132.196-1910
   - 🏁RELAY-104.21.23.231-0902
@@ -66475,7 +66440,7 @@ proxy-groups:
   - 🏁RELAY-172.67.115.249-2202
   - CF中转_0725047030
   - 🇮🇳IN-103.111.114.82-0226
-  - '%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD'
+  - 🇩🇪_DE_德国_2
   - 🏁RELAY-104.31.16.58-8836
   - CF中转_07250410571
   - CF中转_0725048664
@@ -66634,11 +66599,11 @@ proxy-groups:
   - 英国_0725041351
   - CF中转_0725049413
   - CF中转_0725041200
-  - 🇺🇸 US美国(mibei77.com 米贝节点分享)
   - 🏁RELAY-172.64.156.232-2271
   - 🏁RELAY-104.24.1.69-8920
   - 🏁RELAY-172.67.205.70-2297
   - 🇩🇪DE-162.55.62.193-4114
+  - 🏁RELAY-104.21.70.68-0659
   - 🏁RELAY-103.21.244.249-2210
   - 🏁RELAY-103.21.244.127-2203
   - 🏁RELAY-173.245.49.55-2216
@@ -66680,7 +66645,9 @@ proxy-groups:
   - 美国_072504645
   - CF中转_07250411946
   - CF中转_0725045732
+  - 🇨🇦CA-134.195.196.200-0040
   - 俄罗斯联邦_072504403
+  - 🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
   - 🏁RELAY-104.17.164.68-8980
   - CF中转_0725042353
   - 🇩🇪 机场推荐:dafei.de 德国 16
@@ -66718,6 +66685,7 @@ proxy-groups:
   - 美国_0725043294
   - CF中转_07250411140
   - 英国_0725041337
+  - 🇩🇪DE-63.180.180.176-2346
   - 🇸🇬SG-139.99.61.154-3414
   - 🇺🇸 机场推荐:dafei.de 美国 21
   - 荷兰_072504438
@@ -66749,6 +66717,7 @@ proxy-groups:
   - 🏁RELAY-104.21.32.108-0665
   - CF中转_07250410500
   - CF中转_07250412677
+  - 🇹🇷_TR_土耳其
   - 英国_072504180
   - CF中转_0725045223
   - CF中转_0725048996
@@ -66777,8 +66746,6 @@ proxy-groups:
   - 美国_0721002814
   - 英国_072504445
   - 香港_072504166
-  - 爱尔兰_072400043
-  - 🏁RELAY-104.21.70.68-0659
   - CF中转_0725049759
   - 美国_0725042154
   - 俄罗斯联邦_072504400
@@ -66790,7 +66757,6 @@ proxy-groups:
   - 美国 059
   - CF中转_0725043279
   - 立陶宛_072504085
-  - 俄罗斯联邦_072504028
   - 伊朗_072504063
   - 🇬🇧GB_2|1.5MB/s
   - CF中转_0725041164
@@ -66826,9 +66792,7 @@ proxy-groups:
   - CF中转_0725045396
   - 荷兰_072504892
   - 美国_0725042155
-  - 未知_0725045638
   - 俄罗斯联邦_072504395
-  - 🇺🇸 机场推荐:dafei.de 美国 12
   - 美国 1096
   - 🇭🇰HK-18.163.105.248-2387
   - 美国_072504143
@@ -66842,7 +66806,6 @@ proxy-groups:
   - 巴西_072504075
   - CF中转_0725047276
   - 美国_0725045315
-  - 美国_0725041938
   - 俄罗斯联邦_072205444
   - 荷兰_072504120
   - 英国_0725041316
@@ -66855,12 +66818,11 @@ proxy-groups:
   - 未知_0725044252
   - 🇫🇷FR-162.19.192.89-0581
   - CF中转_07250411226
-  - 英国属地曼岛_072504001
   - 英国_0722051330
   - CF中转_0725042294
   - CF中转_0725043233
   - 南非_072504020
-  - 香港_072504104
+  - 美国_0725044036
   - 俄罗斯联邦_072504399
   - 🇷🇺 机场推荐:dafei.de 俄罗斯 02
   - 英国_0725041328
@@ -66873,7 +66835,7 @@ proxy-groups:
   - CF中转_07250413835
   - 香港_072504174
   - CF中转_0725045239
-  - 美国 117
+  - 🇭🇰HK-18.166.57.40-0657
   - 俄罗斯联邦_072504482
   - 印度尼西亚_072504058
   - 美国_0725041770
@@ -66882,6 +66844,7 @@ proxy-groups:
   - 俄罗斯联邦_072504016
   - 英国_072504469
   - 塞浦路斯_072504069
+  - 美国 117
   - 美国_0725041793
   - 印度尼西亚_072504057
   - CF中转_0725048749
@@ -66898,6 +66861,7 @@ proxy-groups:
   - 加拿大_072504120
   - CF中转_0725043722
   - 俄罗斯联邦_072504396
+  - 🇺🇸 机场推荐:dafei.de 美国 12
   - 英国_0725041322
   - 美国_0725041962
   - 荷兰_072504618
@@ -66905,7 +66869,7 @@ proxy-groups:
   - 印度尼西亚_072504056
   - 美国_0725042541
   - 香港_072504160
-  - 英国_072504047
+  - 未知_0725045638
   - 美国_0725044818
   - CF中转_0725047124
   - CF中转_0725047871
@@ -66964,13 +66928,13 @@ proxy-groups:
   - 英国_072504100
   - 荷兰_072504429
   - 英国_0725041137
-  - 爱尔兰_072305039
+  - 美国_0725041938
   - CF中转_07250413475
-  - 美国_0725044036
   - 荷兰_072504616
   - 俄罗斯联邦_072504486
   - 美国_0725042277
   - 菲律宾_072504025
+  - 美国 1038
   - 德国_072504974
   - 美国_0725042826
   - 哈萨克斯坦_072504025
@@ -66989,6 +66953,7 @@ proxy-groups:
   - 美国_0725042520
   - 印度尼西亚_072504038
   - 美国_0725042129
+  - 俄罗斯联邦_072504028
   - 伊朗_072504050
   - 西班牙_072504052
   - 美国_0725043532
@@ -66999,6 +66964,7 @@ proxy-groups:
   - 伊朗_072504045
   - 美国_0725041187
   - 印度尼西亚_072504053
+  - 新加坡_072504046
   - 德国_072504899
   - 新加坡_072504120
   - CF中转_07250411841
@@ -67031,7 +66997,6 @@ proxy-groups:
   - 美国_0725042816
   - 荷兰_072504057
   - CF中转_0725043395
-  - 新加坡_072504046
   - 印度尼西亚_072504052
   - 菲律宾_072504033
   - 西班牙_072504051
@@ -67058,7 +67023,7 @@ proxy-groups:
   - 俄罗斯联邦_072504417
   - 以色列_072504007
   - 美国_0725041904
-  - 阿联酋_072305018
+  - 美国_0725043987
   - 英国_072504579
   - 立陶宛_072205068
   - 阿联酋_072504131
@@ -67067,6 +67032,7 @@ proxy-groups:
   - 俄罗斯联邦_072504437
   - CF中转_0725045645
   - 美国_0725042825
+  - 美国 1009
   - 法国_072504121
   - 印度尼西亚_072504036
   - 保加利亚_072504032
@@ -67140,7 +67106,7 @@ proxy-groups:
   - 美国_0725043528
   - 法国_072504120
   - 波兰_072305043
-  - 俄罗斯联邦_072504551
+  - 🇷🇺RU_3|2.4MB/s
   - 德国_072504647
   - 美国_0725041900
   - 菲律宾_072504140
@@ -67214,7 +67180,6 @@ proxy-groups:
   - 美国_0725044434
   - 英国_072504250
   - CF中转_0725046215
-  - 阿塞拜疆_072504002
   - 菲律宾_072504012
   - 荷兰_072504678
   - 美国_0725042822
@@ -67278,7 +67243,7 @@ proxy-groups:
   - 俄罗斯联邦_072504086
   - 菲律宾_072504068
   - 美国_072504746
-  - 荷兰_072504339
+  - 🇳🇱NL_1|2.5MB/s
   - 荷兰_072504890
   - 日本_072504298
   - 美国_0725045447
@@ -67322,7 +67287,6 @@ proxy-groups:
   - 美国_0725044081
   - 英国_072504267
   - 美国_072504673
-  - 美国_0725043987
   - 美国_0725041291
   - 美国_0725042118
   - 英国_0725041030
@@ -67472,6 +67436,7 @@ proxy-groups:
   - 俄罗斯联邦_072504112
   - 英国_0725041271
   - 美国_0725042468
+  - 美国_072504667
   - 未知_0725043450
   - 德国_072504912
   - 法国_072504145
@@ -67746,7 +67711,6 @@ proxy-groups:
   - 🇳🇱 机场推荐:dafei.de 荷兰 02
   - 荷兰_072504904
   - 哈萨克斯坦_072504076
-  - 未知_0725045289
   - 荷兰_072504731
   - 菲律宾_072504028
   - 法国_072504130
@@ -67825,6 +67789,7 @@ proxy-groups:
   - 英国_072504972
   - 法国_072504149
   - 未知_0725041316
+  - 'A - 🇸🇬 SG 05 TG: @nodpai'
   - 英国_072504487
   - 菲律宾_072504006
   - 新加坡_072504124
@@ -67862,6 +67827,7 @@ proxy-groups:
   - 英国_072504639
   - 未知_072504728
   - CF中转_07250412522
+  - 美国_0725044983
   - 菲律宾_072504079
   - 美国_072504777
   - CF中转_0725049541
@@ -67892,6 +67858,7 @@ proxy-groups:
   - 美国_0725044123
   - 荷兰_072504723
   - 荷兰_072504727
+  - 阿塞拜疆_072504002
   - 美国_0725041092
   - 印度尼西亚_072504008
   - CF中转_0725049723
@@ -67951,7 +67918,7 @@ proxy-groups:
   - 荷兰_072504630
   - 立陶宛_072504054
   - 美国_0725045406
-  - 美国_0725044652
+  - 🇷🇺RU_1|3.1MB/s
   - 加拿大_072504049
   - 荷兰_0725041004
   - 韩国_072504109
@@ -68224,6 +68191,7 @@ proxy-groups:
   - 美国_0725041549
   - 荷兰_072504691
   - 香港_072504113
+  - CF中转_07250412265
   - 未知_0725041022
   - 美国_0725043794
   - 未知_0725045160
@@ -68273,7 +68241,7 @@ proxy-groups:
   - 荷兰_072504620
   - 未知_072504892
   - 英国_0725041298
-  - 荷兰_072504056
+  - 🇳🇱NL_2|1.8MB/s
   - 俄罗斯联邦_072504464
   - CF中转_07250411540
   - 美国_0725045093
@@ -68347,6 +68315,7 @@ proxy-groups:
   - CF中转_0725047151
   - 德国_072504963
   - CF中转_0725042757
+  - 未知_0725045289
   - 奥地利_072504037
   - 🇳🇱NL_5|2.4MB/s
   - 英国_0725041422
@@ -68448,6 +68417,7 @@ proxy-groups:
   - 美国 1066
   - 波兰_072504065
   - 立陶宛_072504061
+  - 未知_0725045297
   - 美国_0725043887
   - 美国_0725044965
   - 未知_072504272
@@ -68613,6 +68583,7 @@ proxy-groups:
   - 英国_072504854
   - 未知_0725041261
   - 香港_072504216
+  - CF中转_07250412289
   - 德国_072504508
   - 美国_0725041532
   - 未知_072504697
@@ -68737,7 +68708,6 @@ proxy-groups:
   - 英国_072504736
   - CF中转_0725049536
   - 未知_0725043066
-  - 'A - 🇸🇬 SG 05 TG: @nodpai'
   - 未知_0725042965
   - 未知_0725043472
   - 未知_072504764
@@ -68801,7 +68771,7 @@ proxy-groups:
   - 未知_0725044726
   - 未知_072504934
   - 未知_0725045561
-  - 🇺🇸 机场推荐:dafei.de 美国 22
+  - 美国 1145
   - CF中转_07250414185
   - 英国_072504420
   - 荷兰_072504216
@@ -68953,6 +68923,7 @@ proxy-groups:
   - 美国_0725043431
   - 未知_0725044901
   - CF中转_0725048015
+  - 'A - 🇸🇬 SG 02 TG: @nodpai'
   - 德国_072504640
   - 德国_072504191
   - 捷克_072504022
@@ -69021,7 +68992,6 @@ proxy-groups:
   - 荷兰_072504718
   - 新加坡_072504614
   - 塞舌尔_072504504
-  - 美国_0725044983
   - 美国_072504754
   - 美国_072504449
   - 美国_072504229
@@ -69054,6 +69024,7 @@ proxy-groups:
   - 新加坡_072504123
   - 美国_0725045490
   - 荷兰_072504868
+  - 英国属地曼岛_072504001
   - 荷兰_072504827
   - 瑞典_072504165
   - 德国_072504435
@@ -69111,7 +69082,6 @@ proxy-groups:
   - 美国_0725043829
   - CF中转_0725043025
   - 美国_072504854
-  - CF中转_07250412265
   - 美国_0725044873
   - 美国_0725043873
   - 美国_0725043057
@@ -69204,7 +69174,6 @@ proxy-groups:
   - CF中转_0725045494
   - 瑞士_072504053
   - 俄罗斯联邦_072504198
-  - 美国_072504667
   - CF中转_0725043881
   - 美国_0725045442
   - 未知_0725043034
@@ -69282,7 +69251,6 @@ proxy-groups:
   - 新加坡_072504557
   - 未知_0725044103
   - 德国_072504500
-  - 美国 1009
   - 美国_0725045581
   - 未知_0725043713
   - 未知_0725045379
@@ -69346,7 +69314,6 @@ proxy-groups:
   - 罗马尼亚_072504091
   - 美国_0725042666
   - 美国_0725041412
-  - 🇷🇺RU_1|1.8MB/s
   - 俄罗斯联邦_072504336
   - 菲律宾_072504131
   - 美国_072504678
@@ -69453,6 +69420,7 @@ proxy-groups:
   - 未知_0725044235
   - 美国_072504441
   - 未知_0725044720
+  - 巴西_072504065
   - 英国_072504928
   - 美国 1180
   - 未知_0725041045
@@ -69642,7 +69610,6 @@ proxy-groups:
   - 未知_0725043296
   - CF中转_0725041317
   - 未知_0725045048
-  - CF中转_07250412289
   - CF中转_0725047413
   - 未知_0725043195
   - CF中转_07250412583
@@ -69716,7 +69683,6 @@ proxy-groups:
   - 罗马尼亚_072504077
   - 英国_072504464
   - 未知_0725043682
-  - 'A - 🇸🇬 SG 02 TG: @nodpai'
   - 美国_0725041516
   - 德国_072504671
   - 德国_072504511
@@ -69739,7 +69705,6 @@ proxy-groups:
   - CF中转_0725046499
   - CF中转_0725049872
   - 美国_0725043773
-  - 美国 1038
   - 斯洛文尼亚_072504037
   - 未知_072504715
   - 英国_0725041249
@@ -69897,7 +69862,7 @@ proxy-groups:
   - 韩国_072504069
   - CF中转_0725045894
   - 菲律宾_072504128
-  - 未知_072504990
+  - 🇩🇪DE_1|2.7MB/s
   - CF中转_0725048388
   - 美国_072504346
   - 澳大利亚_072504039
@@ -70140,7 +70105,6 @@ proxy-groups:
   - 印度尼西亚_072500061
   - 俄罗斯联邦_072504240
   - CF中转_0725047748
-  - 美国_0725041060
   - 德国_072504659
   - CF中转_07250410367
   - 英国_072504700
@@ -70188,7 +70152,7 @@ proxy-groups:
   - 未知_072504577
   - 印度尼西亚_072500103
   - 美国_0725044321
-  - 英国_072504220
+  - 🇦🇪AE_1|2.5MB/s
   - 马来西亚_072504311
   - CF中转_0725049099
   - 塞舌尔_072504126
@@ -70489,6 +70453,7 @@ proxy-groups:
   - 澳大利亚_072504060
   - CF中转_0725048857
   - 未知_0725042908
+  - 'B - 🇺🇸 US 44 TG: @nodpai'
   - 美国_0725041441
   - 德国_072504658
   - CF中转_07250413743
@@ -70808,7 +70773,7 @@ proxy-groups:
   - 美国_0725043896
   - 荷兰_072504341
   - 德国_072504324
-  - 美国_0725045607
+  - 🇺🇸US_2|3.3MB/s
   - CF中转_0725044131
   - 俄罗斯联邦_072504199
   - CF中转_07250413588
@@ -70827,7 +70792,6 @@ proxy-groups:
   - 卢森堡_072504053
   - CF中转_07250413307
   - CF中转_0725045356
-  - 'B - 🇺🇸 US 44 TG: @nodpai'
   - 德国_072504755
   - 美国_0725042303
   - CF中转_07250414111
