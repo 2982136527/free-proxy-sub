@@ -12777,6 +12777,16 @@ proxies:
   uuid: 1e7e0537-c23d-43c2-afd5-4d7753831278
 - alterId: 0
   cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: edge
+  name: 🇬🇧GB_6|2.0MB/s
+  port: 443
+  server: 140.233.160.24
+  sni: ya.ru
+  type: vless
+  uuid: da7685a7-15ef-41e4-a0d9-009bb4be7220
+- alterId: 0
+  cipher: auto
   host: 4gvpn.akamaized.net
   name: 🇸🇬SG-157.245.152.136-1951
   network: ws
@@ -13095,6 +13105,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 🇺🇸US_7|3.0MB/s
+  network: ws
+  port: 443
+  server: x4g-production-3768.up.railway.app
+  type: vless
+  uuid: 30a33ff0-a10f-41d2-54e3-707ef1095fb7
+  ws-path: /ws/30a33ff0-a10f-41d2-54e3-707ef1095fb7fp=chrome
+- alterId: 0
+  cipher: auto
   encryption: none
   flow: xtls-rprx-vision
   fp: chrome
@@ -13396,6 +13415,16 @@ proxies:
   type: vless
   uuid: dc2fec90-ec84-42dc-b5d4-d6371818b4d9
   ws-path: /?ed
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: firefox
+  name: 🇩🇪DE_5|2.4MB/s
+  port: 2053
+  server: ee-t3.vinnypuxtomoon.today
+  sni: ee-t3.vinnypuxtomoon.today
+  type: vless
+  uuid: f7024ef7-dd35-4fe8-a18d-4186a0ae910c
 - alterId: 0
   cipher: auto
   name: CF中转_07250411985
@@ -14132,6 +14161,16 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: 🇷🇺RU_2|2.3MB/s
+  port: 443
+  server: 37.139.43.57
+  sni: eh.vk.com
+  type: vless
+  uuid: ceeba701-bb9f-4f2c-8142-677d27a2acb1
+- alterId: 0
+  cipher: auto
   encryption: none
   host: m1.mwu.de5.net
   name: CF中转_0725047276
@@ -14285,6 +14324,16 @@ proxies:
   type: vless
   uuid: 52f94104-7a84-4342-8bcd-96969eb46cbe
   ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: firefox
+  name: 🇮🇹IT_1|1.5MB/s
+  port: 443
+  server: it02.myxasecure.space
+  sni: it02.myxasecure.space
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
 - alterId: 0
   cipher: auto
   encryption: none
@@ -14453,6 +14502,15 @@ proxies:
   uuid: eece4171-e025-40a3-9027-e395036ff99d
 - alterId: 0
   cipher: auto
+  fp: safari
+  name: 🇩🇪DE_2|2.1MB/s
+  port: 5039
+  server: 5.75.196.139
+  sni: www.yahoo.com
+  type: vless
+  uuid: b6749f13-cd63-4bc4-b165-5d120b7a1ff4
+- alterId: 0
+  cipher: auto
   encryption: none
   host: sni.latonyamadeline.ndjp.net
   name: 美国_0725041770
@@ -14540,6 +14598,16 @@ proxies:
   sni: storage.yandex.net
   type: vless
   uuid: eece4171-e025-40a3-9027-e395036ff99d
+- alterId: 0
+  cipher: auto
+  fp: firefox
+  name: 🇩🇪DE_4|2.4MB/s
+  network: grpc
+  port: 7444
+  server: ee-t3.vinnypuxtomoon.today
+  sni: ee-t3.vinnypuxtomoon.today
+  type: vless
+  uuid: f7024ef7-dd35-4fe8-a18d-4186a0ae910c
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -14948,6 +15016,16 @@ proxies:
   type: vless
   uuid: 109c13c0-5ef7-47a3-b278-3d47a35136e5
   ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  flow: xtls-rprx-vision-udp443
+  fp: firefox
+  name: 🇺🇸US_1|2.5MB/s
+  port: 443
+  server: 150.241.103.47
+  sni: ads.x5.ru
+  type: vless
+  uuid: e5afa6a0-a4a6-44e3-a3e0-e05b0c67cd02
 - alterId: 0
   cipher: auto
   encryption: none
@@ -15512,6 +15590,15 @@ proxies:
   tls: true
   type: vless
   uuid: 3065a2bc-f2c1-4339-8ef9-7428e0cd988c
+- alterId: 0
+  cipher: auto
+  fp: edge
+  name: 🇬🇧GB_3|2.1MB/s
+  port: 443
+  server: 188.72.103.3
+  sni: cherry.benzogangmoney.space
+  type: vless
+  uuid: bd09b12f-c1f8-4bd3-b183-9b0fe1a3cdc1
 - alterId: 0
   cipher: auto
   encryption: mlkem768x25519plus.native.0rtt.0eiQ39M8sEtDg7kcMLAeT1mSgGHsYgyCyiAKpNHQhmA
@@ -17876,17 +17963,15 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  encryption: none
-  fp: chrome
   host: levikoconfig.levikogjgfdd.ir
-  name: 未知_0725045191
+  name: 🇯🇵JP_1|2.5MB/s
   network: ws
   port: 2096
   server: one-for-all.levikogjgfdd.ir
   sni: levikoconfig.levikogjgfdd.ir
   type: vless
   uuid: 50414e45-4c5f-5a45-5553-6f51879c0594
-  ws-path: /
+  ws-path: /fp=chrome
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision
@@ -20358,7 +20443,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: firefox
-  name: 俄罗斯联邦_072504011
+  name: 🇺🇸US_2|1.8MB/s
   port: 443
   server: usa02.myxasecure.space
   sni: usa02.myxasecure.space
@@ -26528,7 +26613,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: firefox
-  name: 🇷🇺RU_1|3.1MB/s
+  name: 🇷🇺RU_1|2.1MB/s
   port: 443
   server: vl10.myxasecure.space
   sni: vl10.myxasecure.space
@@ -42972,12 +43057,12 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: firefox
-  name: 俄罗斯联邦_072504439
+  name: 🇷🇺RU_3|2.6MB/s
   port: 443
   server: pro-ru-bridge.emrata.top
   sni: pro-ru-bridge.emrata.top
   type: vless
-  uuid: 01bd15c8-835f-0001-a730-770a0fa505f6
+  uuid: 5c375098-b366-490d-9a1f-8f77e239c07d
 - alterId: 0
   cipher: auto
   encryption: none
@@ -45703,17 +45788,14 @@ proxies:
   ws-path: /proxyip=sjc.o00o.ooo
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision
+  flow: xtls-rprx-vision-udp443
   fp: chrome
-  host: www.mozilla.org
-  name: 英国_072504997
-  network: tcp
+  name: 🇬🇧GB_2|1.6MB/s
   port: 443
   server: 2.26.90.105
   sni: www.mozilla.org
   type: vless
   uuid: e5afa6a0-a4a6-44e3-a3e0-e05b0c67cd02
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -47912,16 +47994,15 @@ proxies:
   ws-path: '%2F%3FTelegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3'
 - alterId: 0
   cipher: auto
-  fp: chrome
   host: vp58.cc.cd
-  name: 法国_072504407
+  name: 🇬🇧GB_4|3.5MB/s
   network: ws
   port: 443
   server: 57.128.177.198
   sni: vp58.cc.cd
   type: vless
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  ws-path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3+%40VPNine1'
+  ws-path: /Telegram🇨🇳 @VPNine1fp=chrome
 - alterId: 0
   cipher: auto
   encryption: none
@@ -66657,6 +66738,7 @@ proxy-groups:
   - 🏁RELAY-172.64.229.124-8567
   - 英国_0725041339
   - 荷兰_072504465
+  - 🇬🇧GB_6|2.0MB/s
   - 🇸🇬SG-157.245.152.136-1951
   - 英国_0725041342
   - CF中转_0725045501
@@ -66688,6 +66770,7 @@ proxy-groups:
   - 美国_0725045147
   - 立陶宛_072504100
   - 🇺🇸US-34.207.112.128-3198
+  - 🇺🇸US_7|3.0MB/s
   - 俄罗斯联邦_072504404
   - 美国_0725045132
   - 香港_072504392
@@ -66717,6 +66800,7 @@ proxy-groups:
   - 美国_0725042202
   - 俄罗斯联邦_072504039
   - CF中转_0725047959
+  - 🇩🇪DE_5|2.4MB/s
   - CF中转_07250411985
   - CF中转_0725043087
   - CF中转_0725048859
@@ -66783,6 +66867,7 @@ proxy-groups:
   - 美国_0725042131
   - 美国_0725041641
   - 巴西_072504075
+  - 🇷🇺RU_2|2.3MB/s
   - CF中转_0725047276
   - 美国_0725045315
   - 俄罗斯联邦_072205444
@@ -66797,6 +66882,7 @@ proxy-groups:
   - 英国_0722051330
   - CF中转_0725042294
   - CF中转_0725043233
+  - 🇮🇹IT_1|1.5MB/s
   - 南非_072504020
   - 美国_0725044036
   - 俄罗斯联邦_072504399
@@ -66812,6 +66898,7 @@ proxy-groups:
   - 🇭🇰HK-18.166.57.40-0657
   - 俄罗斯联邦_072504482
   - 印度尼西亚_072504058
+  - 🇩🇪DE_2|2.1MB/s
   - 美国_0725041770
   - 美国_0725041786
   - 加拿大_072504114
@@ -66820,6 +66907,7 @@ proxy-groups:
   - 美国 117
   - 美国_0725041793
   - 印度尼西亚_072504057
+  - 🇩🇪DE_4|2.4MB/s
   - CF中转_0725048749
   - 🇺🇸 机场推荐:dafei.de 美国 27
   - 菲律宾_072504118
@@ -66856,6 +66944,7 @@ proxy-groups:
   - 香港_072504285
   - 立陶宛_072504090
   - 美国_0725043535
+  - 🇺🇸US_1|2.5MB/s
   - 伊朗_072504051
   - CF中转_0725041522
   - 土耳其_072504077
@@ -66907,6 +66996,7 @@ proxy-groups:
   - 俄罗斯联邦_072504486
   - 菲律宾_072504025
   - 美国 1038
+  - 🇬🇧GB_3|2.1MB/s
   - 德国_072504974
   - 哈萨克斯坦_072504025
   - 立陶宛_072504074
@@ -67123,7 +67213,7 @@ proxy-groups:
   - 香港_072504088
   - 美国_072504566
   - CF中转_07250411374
-  - 未知_0725045191
+  - 🇯🇵JP_1|2.5MB/s
   - 香港_072504290
   - 美国_0725042823
   - 美国_0725041812
@@ -67346,7 +67436,7 @@ proxy-groups:
   - 瑞典_072504189
   - 日本 032
   - 韩国_072504085
-  - 俄罗斯联邦_072504011
+  - 🇺🇸US_2|1.8MB/s
   - 美国_072504443
   - 塞舌尔_072504521
   - 荷兰_072504547
@@ -67894,7 +67984,7 @@ proxy-groups:
   - 荷兰_072504630
   - 立陶宛_072504054
   - 美国_0725045406
-  - 🇷🇺RU_1|3.1MB/s
+  - 🇷🇺RU_1|2.1MB/s
   - 加拿大_072504049
   - 荷兰_0725041004
   - 韩国_072504109
@@ -69369,7 +69459,7 @@ proxy-groups:
   - 美国_0725044693
   - 美国_0725042620
   - 德国_072504364
-  - 俄罗斯联邦_072504439
+  - 🇷🇺RU_3|2.6MB/s
   - CF中转_0725048878
   - 德国_072504047
   - CF中转_0725047527
@@ -69610,7 +69700,7 @@ proxy-groups:
   - CF中转_0725043335
   - 美国_0725043474
   - CF中转_0725045717
-  - 英国_072504997
+  - 🇬🇧GB_2|1.6MB/s
   - 未知_0725044096
   - 法国_072504070
   - CF中转_07250413865
@@ -69807,7 +69897,7 @@ proxy-groups:
   - 法国_072504384
   - 荷兰_072504998
   - 美国_0725041376
-  - 法国_072504407
+  - 🇬🇧GB_4|3.5MB/s
   - 未知_0725044739
   - 美国_0725043606
   - 俄罗斯联邦_072504454
