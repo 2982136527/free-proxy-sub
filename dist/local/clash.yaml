@@ -10357,13 +10357,13 @@ proxies:
   port: 28061
   server: 103.111.114.82
   type: ss
-- insecure: '1'
-  name: '%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD'
+- name: 🇩🇪_DE_德国_2
   obfs: salamander
-  obfs-password: eNM%2FNfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo%3D
+  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
   password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
   port: 443
   server: ff2.yuntong.click
+  skip-cert-verify: true
   sni: ff2.yuntong.click
   type: hysteria2
 - alterId: 0
@@ -10461,16 +10461,6 @@ proxies:
   type: vmess
   uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
   ws-path: /anti13.zingfast.vn
-- alterId: 0
-  cipher: auto
-  host: kalami-eew.pages.dev
-  name: 马来西亚_072500729
-  network: ws
-  port: 8443
-  server: 8.39.125.253
-  type: vless
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-172.64.82.215-8561
@@ -11876,16 +11866,6 @@ proxies:
   ws-path: '%2Fws%2F8e2191ec-535c-cebf-0a5e-a89b1f1a75b4'
 - alterId: 0
   cipher: auto
-  host: kalami-eew.pages.dev
-  name: 马来西亚_072500724
-  network: ws
-  port: 2053
-  server: 8.39.125.248
-  type: vless
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  ws-path: '%2F'
-- alterId: 0
-  cipher: auto
   fp: chrome
   host: GErao.mobiletanaz.coM
   name: CF中转_07250014163
@@ -12982,12 +12962,12 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
-  fp: firefox
   name: 🇷🇺_RU_俄罗斯
-  network: tcp
   port: 443
   server: 45.155.52.231
-  sni: ru2.skydrgn-online.online
+  servername: ru2.skydrgn-online.online
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
 - alterId: 0
@@ -13123,7 +13103,7 @@ proxies:
   type: vless
   uuid: aebe6f93-7d22-4e36-90c3-67e1ed3c4b12
 - cipher: aes-256-cfb
-  name: 🇺🇸 机场推荐:dafei.de 美国 24
+  name: 🇺🇸US-34.207.112.128-3198
   password: amazonskr05
   port: 443
   server: 34.207.112.128
@@ -18460,11 +18440,12 @@ proxies:
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision
-  fp: firefox
   name: 🇱🇹_LT_立陶宛
   port: 443
   server: 45.81.254.101
-  sni: travel.catanduanes.ru
+  servername: travel.catanduanes.ru
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: c01c2da7-6977-4b53-a493-cda17fa61b4f
 - alterId: 0
@@ -28584,6 +28565,16 @@ proxies:
   ws-path: '%2Fws%2F3d533755-f2ac-6bbe-bf88-fbce6841aa15'
 - alterId: 0
   cipher: auto
+  host: kalami-eew.pages.dev
+  name: 马来西亚_072500737
+  network: ws
+  port: 2096
+  server: 8.39.125.40
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   encryption: none
   host: snippet.danfeng.rr.kg
   name: 哈萨克斯坦_072500038
@@ -29586,6 +29577,16 @@ proxies:
   ws-path: /eyJqdW5rIjoicEpabmUwUG1hZXVXY2xydSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
 - alterId: 0
   cipher: auto
+  host: kalami-eew.pages.dev
+  name: 马来西亚_072500485
+  network: ws
+  port: 443
+  server: 8.35.211.139
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   encryption: none
   flow: xtls-rprx-vision
   fp: chrome
@@ -30335,16 +30336,6 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
-  host: kalami-eew.pages.dev
-  name: 马来西亚_072500632
-  network: ws
-  port: 8443
-  server: 8.39.125.116
-  type: vless
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  ws-path: '%2F'
-- alterId: 0
-  cipher: auto
   name: CF中转_0725009596
   network: tcp
   port: 443
@@ -30959,11 +30950,12 @@ proxies:
   ws-path: /10040
 - alterId: 0
   cipher: auto
-  encryption: none
   name: 🇺🇸_US_美国_2
   network: ws
   port: 8443
   server: ad-005.zen2bswa.info
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
 - alterId: 0
@@ -32095,16 +32087,6 @@ proxies:
   type: vless
   uuid: 5a4ea216-9597-4df7-a119-02949a3b6b82
   ws-path: '%2FTs7kIzm7a8mYEOrQCXl1'
-- alterId: 0
-  cipher: auto
-  host: kalami-eew.pages.dev
-  name: 马来西亚_072500598
-  network: ws
-  port: 2096
-  server: 8.35.211.61
-  type: vless
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   host: marzban-node-production-9e04.up.railway.app
@@ -33638,6 +33620,16 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
+  host: kalami-eew.pages.dev
+  name: 马来西亚_072500513
+  network: ws
+  port: 443
+  server: 8.35.211.181
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   fp: chrome
   host: us2.wxgqlfx.icu
   name: 德国_072500783
@@ -34879,6 +34871,16 @@ proxies:
 - alterId: 0
   cipher: auto
   host: kalami-eew.pages.dev
+  name: 马来西亚_072500544
+  network: ws
+  port: 443
+  server: 8.35.211.219
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  host: kalami-eew.pages.dev
   name: CF中转_0725006337
   network: ws
   port: 443
@@ -35032,16 +35034,6 @@ proxies:
   sni: ns1.my-miner.info
   type: vless
   uuid: fc963b1f-ad85-4b73-93e3-0a5a0ec461da
-- alterId: 0
-  cipher: auto
-  host: kalami-eew.pages.dev
-  name: 马来西亚_072500631
-  network: ws
-  port: 2053
-  server: 8.39.125.114
-  type: vless
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   host: snippet.danfeng.casacam.net
@@ -37212,11 +37204,12 @@ proxies:
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision
-  fp: firefox
   name: 🇸🇪_SE_瑞典
   port: 443
   server: 176.125.241.103
-  sni: 3cx.com
+  servername: 3cx.com
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: c01c2da7-6977-4b53-a493-cda17fa61b4f
 - alterId: 0
@@ -38419,16 +38412,6 @@ proxies:
   sni: v5-dy-e.ixigua.com
   type: vless
   uuid: 29db9d7a-2ce0-4d54-9c96-669fedc63f44
-- alterId: 0
-  cipher: auto
-  host: kalami-eew.pages.dev
-  name: 马来西亚_072500557
-  network: ws
-  port: 8443
-  server: 8.35.211.241
-  type: vless
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -40288,11 +40271,12 @@ proxies:
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision
-  fp: firefox
-  name: 🇩🇪_DE_德国
+  name: 🇩🇪_DE_德国_4
   port: 443
   server: 5.83.129.253
-  sni: flash.try-me.store
+  servername: flash.try-me.store
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
 - alterId: 0
@@ -47148,16 +47132,6 @@ proxies:
   sni: ads.cardds.store
   type: vless
   uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
-- alterId: 0
-  cipher: auto
-  host: kalami-eew.pages.dev
-  name: 马来西亚_072500543
-  network: ws
-  port: 2053
-  server: 8.35.211.219
-  type: vless
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -54183,16 +54157,6 @@ proxies:
   ws-path: /api/v2/check_update
 - alterId: 0
   cipher: auto
-  host: kalami-eew.pages.dev
-  name: 马来西亚_072500545
-  network: ws
-  port: 2087
-  server: 8.35.211.220
-  type: vless
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  ws-path: '%2F'
-- alterId: 0
-  cipher: auto
   host: gbyz.asia
   name: CF中转_0725002649
   network: ws
@@ -54821,6 +54785,16 @@ proxies:
   server: www.collinsdictionary.com
   type: vless
   uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  host: kalami-eew.pages.dev
+  name: 马来西亚_072500605
+  network: ws
+  port: 443
+  server: 8.35.211.76
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
@@ -55563,16 +55537,6 @@ proxies:
   type: vless
   uuid: 7244ae96-c980-4b74-b790-a8b507e45da0
   ws-path: /720f09dba195249b423f771661162528/workers/services/view/Avaal/production/settings
-- alterId: 0
-  cipher: auto
-  host: kalami-eew.pages.dev
-  name: 马来西亚_072500475
-  network: ws
-  port: 2083
-  server: 8.35.211.122
-  type: vless
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   fp: chrome
@@ -57591,6 +57555,16 @@ proxies:
   ws-path: '%2Fws%2F2514cdd1-b798-4d5e-9722-21484d19a20e'
 - alterId: 0
   cipher: auto
+  host: kalami-eew.pages.dev
+  name: 马来西亚_072500627
+  network: ws
+  port: 2083
+  server: 8.39.125.109
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   fp: chrome
   host: cloudflare.vhub.pro
   name: 🇩🇪 机场推荐:dafei.de 德国 10
@@ -58806,6 +58780,16 @@ proxies:
   ws-path: '%2Fdownload.php'
 - alterId: 0
   cipher: auto
+  host: kalami-eew.pages.dev
+  name: 马来西亚_072500492
+  network: ws
+  port: 443
+  server: 8.35.211.151
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   encryption: none
   host: m1.mwu.de5.net
   name: CF中转_07250013796
@@ -59530,16 +59514,6 @@ proxies:
   ws-path: /afjhk1
 - alterId: 0
   cipher: auto
-  host: kalami-eew.pages.dev
-  name: 马来西亚_072500563
-  network: ws
-  port: 2096
-  server: 8.35.211.248
-  type: vless
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  ws-path: '%2F'
-- alterId: 0
-  cipher: auto
   encryption: none
   fp: chrome
   host: Dnlu2.iranucshop.ir
@@ -59773,6 +59747,16 @@ proxies:
   ws-path: /@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/
 - alterId: 0
   cipher: auto
+  host: kalami-eew.pages.dev
+  name: 马来西亚_072500498
+  network: ws
+  port: 443
+  server: 8.35.211.163
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   fp: chrome
   name: CF中转_07250010194
   network: xhttp
@@ -59880,16 +59864,6 @@ proxies:
   server: 141.101.120.127
   type: vless
   uuid: e5f8a9f6-f164-479b-b3b5-b90f213c7145
-  ws-path: '%2F'
-- alterId: 0
-  cipher: auto
-  host: kalami-eew.pages.dev
-  name: 马来西亚_072500559
-  network: ws
-  port: 2096
-  server: 8.35.211.242
-  type: vless
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
@@ -60528,6 +60502,16 @@ proxies:
   sni: apple.com
   type: vless
   uuid: 8714dc5b-f3a8-4d48-8bd1-9180ebf3640a
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  host: kalami-eew.pages.dev
+  name: 马来西亚_072500503
+  network: ws
+  port: 8443
+  server: 8.35.211.167
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
@@ -61776,6 +61760,16 @@ proxies:
 - alterId: 0
   cipher: auto
   host: kalami-eew.pages.dev
+  name: 马来西亚_072500564
+  network: ws
+  port: 2083
+  server: 8.35.211.24
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
+  host: kalami-eew.pages.dev
   name: CF中转_0725003986
   network: ws
   port: 8443
@@ -61959,16 +61953,6 @@ proxies:
   network: ws
   port: 2083
   server: 104.19.34.37
-  type: vless
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  ws-path: '%2F'
-- alterId: 0
-  cipher: auto
-  host: kalami-eew.pages.dev
-  name: 马来西亚_072500635
-  network: ws
-  port: 2087
-  server: 8.39.125.122
   type: vless
   uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
   ws-path: '%2F'
@@ -62440,16 +62424,6 @@ proxies:
   type: vless
   uuid: 4d6fa520-b8c1-4811-93f6-a91fd6f87b59
   ws-path: '%2Fzrf%3Fed%3D2560'
-- alterId: 0
-  cipher: auto
-  host: kalami-eew.pages.dev
-  name: 马来西亚_072500492
-  network: ws
-  port: 443
-  server: 8.35.211.151
-  type: vless
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   encryption: mlkem768x25519plus.native.0rtt.1hJeTE4CpxnaxcPwjHmMoa43uSOQGZu1EKP_9aeBU2Y
@@ -66392,7 +66366,7 @@ proxy-groups:
   - 🏁RELAY-172.67.115.249-2202
   - CF中转_0725003013
   - 🇮🇳IN-103.111.114.82-0226
-  - '%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD'
+  - 🇩🇪_DE_德国_2
   - 🏁RELAY-104.31.16.58-8836
   - CF中转_0725006554
   - CF中转_0725004647
@@ -66402,7 +66376,6 @@ proxy-groups:
   - 美国_072500856
   - 🏁RELAY-172.64.88.109-8559
   - 🇸🇬SG-159.223.94.156-5945
-  - 马来西亚_072500729
   - 🏁RELAY-172.64.82.215-8561
   - 🇫🇷FR-152.228.191.232-7833
   - 🇨🇦CA-137.184.164.233-7829
@@ -66542,7 +66515,6 @@ proxy-groups:
   - 🏁RELAY-104.16.108.100-8992
   - 🇺🇸US_11|2.5MB/s
   - 美国_072500562
-  - 马来西亚_072500724
   - CF中转_07250014163
   - 英国_072500923
   - 🇸🇬SG-146.190.82.241-2700
@@ -66660,7 +66632,7 @@ proxy-groups:
   - 美国_0725002931
   - 美国_072500564
   - 立陶宛_072500100
-  - 🇺🇸 机场推荐:dafei.de 美国 24
+  - 🇺🇸US-34.207.112.128-3198
   - 俄罗斯联邦_072500406
   - 美国_072500559
   - 香港_072500385
@@ -68052,6 +68024,7 @@ proxy-groups:
   - 美国_0725004882
   - 荷兰_072500952
   - 🇺🇸 机场推荐:dafei.de 美国 26
+  - 马来西亚_072500737
   - 哈萨克斯坦_072500038
   - 英国_072500433
   - 法国_072500244
@@ -68142,6 +68115,7 @@ proxy-groups:
   - 未知_0725001825
   - 美国_0725004356
   - 未知_0725005588
+  - 马来西亚_072500485
   - 美国_072500401
   - 德国_072500431
   - 白俄罗斯_072500002
@@ -68210,7 +68184,6 @@ proxy-groups:
   - CF中转_0725006989
   - 法国_072500256
   - CF中转_0725008028
-  - 马来西亚_072500632
   - CF中转_0725009596
   - CF中转_0725007907
   - 美国_0725004275
@@ -68371,7 +68344,6 @@ proxy-groups:
   - 法国_072500150
   - 未知_072500524
   - 荷兰_072500331
-  - 马来西亚_072500598
   - 美国_072500238
   - 立陶宛_072500135
   - CF中转_0725001280
@@ -68507,6 +68479,7 @@ proxy-groups:
   - CF中转_0725001718
   - 美国_0725001578
   - 美国_0725003897
+  - 马来西亚_072500513
   - 德国_072500783
   - 菲律宾_072500119
   - 美国_0725003109
@@ -68621,6 +68594,7 @@ proxy-groups:
   - 美国_0725005598
   - 加拿大_072500155
   - 美国_0725001006
+  - 马来西亚_072500544
   - CF中转_0725006337
   - 土耳其_072500045
   - CF中转_07250010468
@@ -68635,7 +68609,6 @@ proxy-groups:
   - 荷兰_072500603
   - 法国_072500208
   - 未知_0725004910
-  - 马来西亚_072500631
   - 德国_072500422
   - 荷兰_072500321
   - 俄罗斯联邦_072500303
@@ -68939,7 +68912,6 @@ proxy-groups:
   - CF中转_0725001659
   - 美国_0725002763
   - 智利_072500005
-  - 马来西亚_072500557
   - CF中转_07250010847
   - 未知_0725005539
   - 美国_0725004268
@@ -69103,7 +69075,7 @@ proxy-groups:
   - 美国_072500917
   - 爱尔兰_072410067
   - CF中转_07250010933
-  - 🇩🇪_DE_德国
+  - 🇩🇪_DE_德国_4
   - 美国_0725001850
   - 美国_0725002787
   - CF中转_0725005200
@@ -69711,7 +69683,6 @@ proxy-groups:
   - 英国_072500593
   - 法国_072500251
   - 德国_072500048
-  - 马来西亚_072500543
   - 美国_0725004555
   - 未知_0722052834
   - 美国_0725004901
@@ -70336,7 +70307,6 @@ proxy-groups:
   - 美国_0725002933
   - 美国_0725002965
   - 未知_072500534
-  - 马来西亚_072500545
   - CF中转_0725002649
   - 德国_072500812
   - 美国_0725004527
@@ -70393,6 +70363,7 @@ proxy-groups:
   - CF中转_07250012142
   - 美国_0725003114
   - 未知_0725002266
+  - 马来西亚_072500605
   - 美国_072500645
   - 立陶宛_072500129
   - CF中转_07250010172
@@ -70458,7 +70429,6 @@ proxy-groups:
   - 德国_072200936
   - CF中转_07250012490
   - 未知_072500715
-  - 马来西亚_072500475
   - CF中转_072500973
   - 荷兰_072500910
   - CF中转_07250012282
@@ -70639,6 +70609,7 @@ proxy-groups:
   - CF中转_072500759
   - CF中转_0725006302
   - 美国_0725003961
+  - 马来西亚_072500627
   - 🇩🇪 机场推荐:dafei.de 德国 10
   - CF中转_0725007606
   - CF中转_07250013470
@@ -70745,6 +70716,7 @@ proxy-groups:
   - 美国_0725003000
   - CF中转_0725009803
   - CF中转_0725007239
+  - 马来西亚_072500492
   - CF中转_07250013796
   - CF中转_07250010359
   - CF中转_07250011334
@@ -70808,7 +70780,6 @@ proxy-groups:
   - 俄罗斯联邦_072500229
   - CF中转_0725002507
   - CF中转_0725004851
-  - 马来西亚_072500563
   - CF中转_0725005040
   - CF中转_0725006818
   - 美国_072500383
@@ -70830,6 +70801,7 @@ proxy-groups:
   - 美国_0725002499
   - CF中转_0725002770
   - CF中转_072500713
+  - 马来西亚_072500498
   - CF中转_07250010194
   - CF中转_0725001707
   - 美国_0725001509
@@ -70840,7 +70812,6 @@ proxy-groups:
   - 德国_072500790
   - CF中转_07250012446
   - CF中转_0725007604
-  - 马来西亚_072500559
   - CF中转_0725003608
   - CF中转_07250012217
   - 新加坡_072500411
@@ -70898,6 +70869,7 @@ proxy-groups:
   - 新加坡_072500168
   - CF中转_0725002079
   - 香港_072500090
+  - 马来西亚_072500503
   - 美国_0725005034
   - 摩尔多瓦_072500006
   - CF中转_07250013947
@@ -71009,6 +70981,7 @@ proxy-groups:
   - 美国_0725003152
   - CF中转_0725001341
   - 美国_0725002221
+  - 马来西亚_072500564
   - CF中转_0725003986
   - CF中转_0725002481
   - 美国_0725005379
@@ -71026,7 +70999,6 @@ proxy-groups:
   - 美国_0725005214
   - CF中转_0725006953
   - CF中转_0725007278
-  - 马来西亚_072500635
   - CF中转_07250010160
   - CF中转_0725002647
   - CF中转_0725005317
@@ -71069,7 +71041,6 @@ proxy-groups:
   - 荷兰_072500915
   - CF中转_0725009736
   - CF中转_0725005066
-  - 马来西亚_072500492
   - 德国_072500755
   - CF中转_0725004492
   - CF中转_0725001606
