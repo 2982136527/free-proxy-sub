@@ -6622,6 +6622,12 @@ proxies:
   uuid: 114f5786-a8a0-446a-a32f-446893480560
   ws-path: /27353486f3a1d4f/
 - cipher: aes-256-gcm
+  name: 🇺🇸US-167.88.63.44-7200
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 167.88.63.44
+  type: ss
+- cipher: aes-256-gcm
   name: 🇺🇸US-38.68.135.123-6855
   password: pKEW8JPByTVTLtM
   port: 443
@@ -7314,12 +7320,6 @@ proxies:
   type: vmess
   uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
   ws-path: /AUIKN8AU
-- cipher: aes-256-gcm
-  name: 🇺🇸US-167.88.63.44-7200
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 167.88.63.44
-  type: ss
 - alterId: 0
   cipher: auto
   host: sgfqkqmltcy.site
@@ -66130,6 +66130,7 @@ proxy-groups:
   - 🇨🇦CA-104.247.81.99-1047
   - 🇫🇮FI-95.216.186.191-0858
   - 🇨🇿CZ-46.8.9.220-1311
+  - 🇺🇸US-167.88.63.44-7200
   - 🇺🇸US-38.68.135.123-6855
   - 🏁RELAY-172.67.215.250-1368
   - 🇦🇺AU-119.252.190.115-1113
@@ -66197,7 +66198,6 @@ proxy-groups:
   - 🏁RELAY-104.26.1.221-1740
   - 🏁RELAY-172.67.194.234-8518
   - 🏁RELAY-172.67.201.14-2916
-  - 🇺🇸US-167.88.63.44-7200
   - 🏁RELAY-104.21.42.243-1506
   - 🇷🇺RU-31.172.67.43-8258
   - 🏁RELAY-172.67.152.200-1049
