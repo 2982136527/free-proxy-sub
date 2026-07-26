@@ -13537,7 +13537,7 @@ proxies:
   flow: none
   fp: random
   host: lk.thenuka.online
-  name: 美国_072604704
+  name: 🇸🇬 机场推荐:dafei.de 新加坡 01
   network: ws
   port: 2096
   server: 141.193.213.20
@@ -14113,15 +14113,13 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision
   fp: firefox
-  host: max.ru
-  name: 巴西_072604077
+  name: 🇭🇰 机场推荐:dafei.de 香港 01
   network: tcp
   port: 443
   server: 201.51.12.199
   sni: max.ru
   type: vless
   uuid: f3a8da6e-9557-43e3-b8d6-44350d0dc6f7
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision-udp443
@@ -14359,15 +14357,15 @@ proxies:
   ws-path: '%2F%253Fed%253D2560%2526https%253A%2F%2Ft.me%2FWangCai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3'
 - alterId: 0
   cipher: auto
-  fp: firefox
   name: 🇷🇺_RU_俄罗斯
-  network: tcp
   port: 443
   server: 45.155.52.231
-  sni: ru2.skydrgn-online.online
+  servername: ru2.skydrgn-online.online
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-- name: '%E8%8B%B1%E5%9B%BD_072604032'
+- name: '%F0%9F%8E%8065%40oneclickvpnkeys'
   password: 68b4b16e-2759-47a4-8a69-33118edf5ce6
   port: 443
   server: 5.180.97.78
@@ -14427,7 +14425,7 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 95433298-f181-4c3d-87e4-f7ee4800a39d
-- name: '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A_072604005'
+- name: '%F0%9F%8E%8061%40oneclickvpnkeys'
   password: uj7XGZGUqRlmdpk6rysyZMN333RWsxTFj0hBIMaFV-NUCd5r
   port: 443
   server: ro.h2corp.org
@@ -14436,11 +14434,12 @@ proxies:
 - alterId: 0
   cipher: auto
   flow: xtls-rprx-vision
-  fp: chrome
-  name: 俄罗斯联邦_072604004
+  name: 🇷🇺_RU_俄罗斯_1
   port: 443
   server: 188.225.46.217
-  sni: api-maps.yandex.ru
+  servername: api-maps.yandex.ru
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
 - alterId: 0
@@ -14457,8 +14456,10 @@ proxies:
   uuid: eece4171-e025-40a3-9027-e395036ff99d
 - alterId: 0
   cipher: auto
-  fp: safari
-  name: 德国_072604026
+  encryption: none
+  fp: chrome
+  name: 🇩🇪 机场推荐:dafei.de 德国 07
+  network: tcp
   port: 5039
   server: 5.75.196.139
   sni: www.yahoo.com
@@ -14940,15 +14941,13 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision
   fp: firefox
-  host: ger05.myxasecure.space
-  name: 土耳其_072604076
+  name: 🇹🇷 机场推荐:dafei.de 土耳其 01
   network: tcp
   port: 443
   server: ger05.myxasecure.space
   sni: ger05.myxasecure.space
   type: vless
   uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -15319,10 +15318,11 @@ proxies:
   sni: cloudflare.com
   type: vless
   uuid: 8bc63720-5ec8-45b5-b6a6-9a21ffb490e8
-- name: '%E5%BE%B7%E5%9B%BD_072604010'
+- name: 🇩🇪_DE_德国
   password: 1hOIVDVBG2hdKtJwOV2aUEFTDaFArCSH9-HrcOnps8yqQZeq
   port: 443
   server: prodfr.h2corp.org
+  skip-cert-verify: true
   sni: prodfr.h2corp.org
   type: hysteria2
 - alterId: 0
@@ -15960,7 +15960,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 中国_072604012
+  name: NL_speednode_0026
   port: 443
   server: 45.131.212.15
   sni: de.sellflow.org
@@ -16186,7 +16186,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 爱尔兰_072604007
+  name: IE_speednode_0010
   port: 443
   server: pl05.myxasecure.space
   sni: pl05.myxasecure.space
@@ -16491,7 +16491,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 中国_072604011
+  name: NL_speednode_0025
   port: 443
   server: 45.131.212.23
   sni: de.sellflow.org
@@ -16898,7 +16898,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 爱尔兰_072604006
+  name: IE_speednode_0009
   port: 443
   server: pl07.myxasecure.space
   sni: pl07.myxasecure.space
@@ -17709,7 +17709,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 英国_072604035
+  name: GB_speednode_0005
   port: 443
   server: fl11.myxasecure.space
   sni: fl11.myxasecure.space
@@ -17834,7 +17834,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 俄罗斯联邦_072604016
+  name: RU_speednode_0112
   port: 443
   server: 213.171.25.248
   sni: external-api.mediabilling.kinopoisk.ru
@@ -18276,7 +18276,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 中国_072604009
+  name: NL_speednode_0023
   port: 443
   server: 45.131.212.24
   sni: de.sellflow.org
@@ -19345,7 +19345,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 丹麦_072604004
+  name: DK_speednode_0004
   port: 443
   server: 159.195.33.82
   sni: de.sellflow.org
@@ -19630,16 +19630,14 @@ proxies:
   uuid: ed838389-e7e0-0001-8a1b-040f06d0ba88
 - alterId: 0
   cipher: auto
-  encryption: none
-  flow: xtls-rprx-vision
+  flow: xtls-rprx-vision-udp443
   fp: firefox
-  name: 韩国_072604025
-  network: tcp
+  name: KR_speednode_0013
   port: 443
   server: 154.193.55.183
   sni: storage.yandex.net
   type: vless
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
 - alterId: 0
   cipher: auto
   host: us.mohammadaz2.shop
@@ -19791,7 +19789,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 俄罗斯联邦_072604017
+  name: RU_speednode_0113
   port: 443
   server: 62.152.59.193
   sni: max.ru
@@ -19948,7 +19946,7 @@ proxies:
 - alterId: 0
   cipher: auto
   host: ad-020.pixel9xdmq.info
-  name: 未知_072604129
+  name: 🇫🇷FR_1|2.1MB/s
   network: ws
   port: 8443
   server: ad-020.pixel9xdmq.info
@@ -20103,7 +20101,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 中国_072604008
+  name: NL_speednode_0022
   port: 443
   server: 45.131.212.7
   sni: de.sellflow.org
@@ -20452,9 +20450,10 @@ proxies:
   ws-path: /@Marisa_kristifp=chromesecurity=tls
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
+  flow: xtls-rprx-vision
   fp: firefox
-  name: 俄罗斯联邦_072604020
+  name: 🇺🇸 机场推荐:dafei.de 美国 32
+  network: tcp
   port: 443
   server: usa02.myxasecure.space
   sni: usa02.myxasecure.space
@@ -21966,7 +21965,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 中国_072604007
+  name: NL_speednode_0021
   port: 443
   server: 45.131.212.13
   sni: de.sellflow.org
@@ -23546,16 +23545,17 @@ proxies:
   ws-path: /ws?ed=2560
 - alterId: 0
   cipher: auto
+  encryption: none
   fp: chrome
   host: l-j-pjj-MiTiVPN---MiTiVPN-o.App-Cloud.ir
-  name: CF中转_072604509
+  name: 🇺🇸 机场推荐:dafei.de 美国 33
   network: ws
   port: 443
   server: 104.18.39.123
-  sni: l-j-pjj-MiTiVPN---MiTiVPN-o.App-Cloud.ir
+  sni: ldggej--MiTiVPN---MiTiVPN-o.App-Cloud.ir
   type: vless
   uuid: c19735a7-ff97-a112-3f07-60e500f7719b
-  ws-path: '%2F---'
+  ws-path: '%2F---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN%3Ddes'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -23730,7 +23730,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 中国_072604005
+  name: NL_speednode_0019
   port: 443
   server: 45.131.212.9
   sni: de.sellflow.org
@@ -24985,7 +24985,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 中国_072604006
+  name: NL_speednode_0020
   port: 443
   server: 45.131.212.17
   sni: de.sellflow.org
@@ -26574,9 +26574,10 @@ proxies:
   ws-path: '%2Fhome'
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
+  flow: xtls-rprx-vision
   fp: firefox
-  name: 美国_0726043840
+  name: 🇷🇺 机场推荐:dafei.de 俄罗斯 01
+  network: tcp
   port: 443
   server: vl10.myxasecure.space
   sni: vl10.myxasecure.space
@@ -26827,7 +26828,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 俄罗斯联邦_072604015
+  name: RU_speednode_0110
   port: 443
   server: 91.224.87.181
   sni: sellflow.org
@@ -26990,7 +26991,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 中国_072604002
+  name: NL_speednode_0016
   port: 443
   server: 45.131.212.21
   sni: de.sellflow.org
@@ -27805,16 +27806,16 @@ proxies:
 - alterId: 0
   cipher: auto
   encryption: none
-  fp: random
-  host: b577c283.sfree.cn.mt
-  name: 新加坡_072604301
+  fp: chrome
+  host: 2.r.y.a.j.7.c.z.d.z.8.f.f.r.us.art-us.kdns.fr
+  name: 🇸🇬 机场推荐:dafei.de 新加坡 03
   network: ws
   port: 8080
   server: 20.191.143.151
-  sni: b577c283.sfree.cn.mt
+  sni: 2.r.y.a.j.7.c.z.d.z.8.f.f.r.us.art-us.kdns.fr
   type: vless
-  uuid: 69c4f82f-ad75-a1be-51ef-8e8af76452f8
-  ws-path: '%2Fsocks5%3D4b2c7676%3A6f0f4cbba5bb%4038.111.30.111%3A26433'
+  uuid: 57d68ec3-6cc5-10e9-2bca-5ba3994aa783
+  ws-path: '%2Fglasspanel%2F0038ba35_0_1bdabe931208%2F'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -30838,15 +30839,16 @@ proxies:
   uuid: 93c8e54b-aa84-4593-a2f7-ffb19960c923
 - alterId: 0
   cipher: auto
-  host: v.z.1.0.m.p.f.v.h.p.o.1.z.1.us.art-us.kdns.fr
-  name: 未知_072604518
+  fp: chrome
+  host: l.m.j.u.w.9.y.i.m.y.s.8.p.y.us.art-us.kdns.fr
+  name: 🇺🇸 机场推荐:dafei.de 美国 26
   network: ws
   port: 443
   server: cf.3666888.xyz
-  sni: v.z.1.0.m.p.f.v.h.p.o.1.z.1.us.art-us.kdns.fr
+  sni: l.m.j.u.w.9.y.i.m.y.s.8.p.y.us.art-us.kdns.fr
   type: vless
-  uuid: 152b1711-c74a-d177-ca11-efa3dc143145
-  ws-path: '%2F'
+  uuid: 57d68ec3-6cc5-10e9-2bca-5ba3994aa783
+  ws-path: '%2Fglasspanel%2F0038ba35_0_1bdabe931208%2F'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -30907,7 +30909,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 俄罗斯联邦_072604014
+  name: RU_speednode_0109
   port: 443
   server: 91.224.87.98
   sni: sellflow.org
@@ -30950,7 +30952,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 中国_072604013
+  name: NL_speednode_0027
   port: 443
   server: 45.131.212.12
   sni: de.sellflow.org
@@ -31042,11 +31044,12 @@ proxies:
   ws-path: /10040
 - alterId: 0
   cipher: auto
-  encryption: none
-  name: 未知_072604104
+  name: 🇺🇸_US_美国_2
   network: ws
   port: 8443
   server: ad-005.zen2bswa.info
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
 - alterId: 0
@@ -33042,6 +33045,19 @@ proxies:
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-path: '%2F%253Fed%253D2560%2526https%253A%2F%2Ft.me%2FWangCai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3'
+- alterId: 0
+  cipher: auto
+  encryption: none
+  fp: chrome
+  host: kalami-eew.pages.dev
+  name: CF中转_0726045163
+  network: ws
+  port: 2083
+  server: 104.19.50.190
+  sni: kalami-eew.pages.dev
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -35948,7 +35964,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: firefox
-  name: 英国_072604036
+  name: GB_speednode_0007
   port: 443
   server: 46.247.42.198
   sni: auctiondetective.kz
@@ -37230,9 +37246,11 @@ proxies:
   uuid: fa937ff5-89cc-49a4-9bf9-da2b7285070d
 - alterId: 0
   cipher: auto
+  encryption: none
   flow: xtls-rprx-vision
-  fp: firefox
-  name: 俄罗斯联邦_072604019
+  fp: chrome
+  name: 🇸🇪 机场推荐:dafei.de 瑞典 01
+  network: tcp
   port: 443
   server: 176.125.241.103
   sni: 3cx.com
@@ -37966,7 +37984,7 @@ proxies:
   encryption: none
   flow: xtls-rprx-vision
   fp: chrome
-  name: 比利时_072604079
+  name: 🇳🇱 机场推荐:dafei.de 荷兰 05
   network: tcp
   port: 8443
   server: 146.103.103.78
@@ -40300,7 +40318,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 中国_072604015
+  name: NL_speednode_0030
   port: 443
   server: 45.131.212.19
   sni: de.sellflow.org
@@ -45115,6 +45133,16 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  host: aier.eu.cc
+  name: CF中转_0726044480
+  network: ws
+  port: 2087
+  server: 172.67.73.81
+  type: vless
+  uuid: 6461860a-d367-4d47-8e82-7d8e1047a152
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   fp: chrome
   name: CF中转_0726043404
   network: xhttp
@@ -45862,9 +45890,11 @@ proxies:
   ws-path: /LiL?ed=2560
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision-udp443
+  encryption: none
+  flow: xtls-rprx-vision
   fp: chrome
-  name: 英国_072604045
+  name: 🇬🇧 机场推荐:dafei.de 英国 01
+  network: tcp
   port: 443
   server: 2.26.90.105
   sni: www.mozilla.org
@@ -46278,7 +46308,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 中国_072604003
+  name: NL_speednode_0017
   port: 443
   server: 45.131.212.22
   sni: de.sellflow.org
@@ -46676,7 +46706,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 中国_072604010
+  name: NL_speednode_0024
   port: 443
   server: 45.131.212.10
   sni: de.sellflow.org
@@ -47205,17 +47235,14 @@ proxies:
   ws-path: '%2Fdanfeng'
 - alterId: 0
   cipher: auto
-  flow: xtls-rprx-vision
-  fp: firefox
-  host: sellflow.org
-  name: 中国_072604021
-  network: tcp
+  flow: xtls-rprx-vision-udp443
+  fp: chrome
+  name: NL_speednode_0029
   port: 443
   server: 45.131.212.18
-  sni: sellflow.org
+  sni: de.sellflow.org
   type: vless
-  uuid: 1bf44cb7-f947-441c-abb5-242c47e78292
-  ws-path: '%2F'
+  uuid: 0108c657-a9bd-4c99-9179-74050cf78889
 - alterId: 0
   cipher: auto
   host: kalami-eew.pages.dev
@@ -48671,6 +48698,16 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  fp: chrome
+  name: CF中转_0726043984
+  network: xhttp
+  port: 8443
+  server: 198.41.209.145
+  sni: sa.sorixset.ir
+  type: vless
+  uuid: b3abfae4-1a95-4c78-afd0-6adc9e560a82
+- alterId: 0
+  cipher: auto
   encryption: none
   fp: chrome
   host: sni.111000.dynv6.net
@@ -49953,6 +49990,16 @@ proxies:
   sni: fin.lordcd1.ir
   type: vless
   uuid: 38c81d66-bbf6-42aa-a293-7599126dfeab
+- alterId: 0
+  cipher: auto
+  host: kalami-eew.pages.dev
+  name: CF中转_0726044214
+  network: ws
+  port: 2083
+  server: 172.64.147.70
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   host: chinam.sylu.net
@@ -52853,16 +52900,17 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
+  encryption: none
   fp: chrome
   host: l-j-yv-MiTiVPN---MiTiVPN-o.App-Cloud.ir
-  name: CF中转_072604510
+  name: 🇺🇸 机场推荐:dafei.de 美国 49
   network: ws
   port: 443
   server: 104.21.58.74
-  sni: l-j-yv-MiTiVPN---MiTiVPN-o.App-Cloud.ir
+  sni: l-jo--hhMiTiVPN---MiTiVPN-o.App-Cloud.ir
   type: vless
   uuid: c19735a7-ff97-a112-3f07-60e500f7719b
-  ws-path: '%2F---'
+  ws-path: '%2F---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN---%40MiTiVPN%3Duss'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -53319,6 +53367,16 @@ proxies:
   type: vless
   uuid: 358ca5cf-5406-493d-b872-a344988b2e11
   ws-path: /?ed=80
+- alterId: 0
+  cipher: auto
+  host: edt2-lgy.pages.dev
+  name: CF中转_0726044104
+  network: ws
+  port: 443
+  server: 173.245.58.20
+  type: vless
+  uuid: 8007e155-622e-4c9d-8a6e-67f49b4678f4
+  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   host: cocobaby.pages.dev
@@ -54941,6 +54999,16 @@ proxies:
   type: vless
   uuid: e42eb18a-6620-49b2-a578-820da4adcee8
   ws-path: /eyJqdW5rIjoia09KQkRyT1VnUDVHIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+- alterId: 0
+  cipher: auto
+  host: xn--cz8h.pages.dev
+  name: CF中转_0726046443
+  network: ws
+  port: 443
+  server: 104.19.50.46
+  type: vless
+  uuid: 6fb65356-788e-4118-8280-148ec6eca18a
+  ws-path: '%2Fpyip'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -57174,6 +57242,18 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
+  fp: chrome
+  host: vp43.cc.cd
+  name: CF中转_0726044542
+  network: ws
+  port: 8443
+  server: 173.245.59.110
+  sni: vp43.cc.cd
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   encryption: none
   fp: chrome
   host: gift.marzshekan.com.tr
@@ -57867,7 +57947,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 瑞典_072604007
+  name: SE_speednode_0114
   port: 443
   server: swe05.myxasecure.space
   sni: swe05.myxasecure.space
@@ -59068,9 +59148,10 @@ proxies:
   ws-path: /danfeng-2cm3?ed=2560fp=firefox
 - alterId: 0
   cipher: auto
+  encryption: none
   fp: chrome
   host: x4g-production-7fd2.up.railway.app
-  name: 美国_072604102
+  name: 🇺🇸 机场推荐:dafei.de 美国 55
   network: ws
   port: 443
   server: 69.46.46.4
@@ -59452,6 +59533,16 @@ proxies:
   sni: vless.hubp.de
   type: vless
   uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb
+- alterId: 0
+  cipher: auto
+  host: kalami-eew.pages.dev
+  name: CF中转_0726044761
+  network: ws
+  port: 2096
+  server: 198.41.223.90
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -61216,6 +61307,16 @@ proxies:
   ws-path: '%2F'
 - alterId: 0
   cipher: auto
+  host: kalami-eew.pages.dev
+  name: CF中转_0726046163
+  network: ws
+  port: 8443
+  server: 104.19.46.179
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
+- alterId: 0
+  cipher: auto
   encryption: none
   fp: chrome
   host: nab.velizor.ir
@@ -62607,7 +62708,7 @@ proxies:
   cipher: auto
   flow: xtls-rprx-vision-udp443
   fp: chrome
-  name: 俄罗斯联邦_072604013
+  name: RU_speednode_0111
   port: 443
   server: ger03.myxasecure.space
   sni: ger03.myxasecure.space
@@ -63698,16 +63799,14 @@ proxies:
   ws-path: '%2Fdanfeng'
 - alterId: 0
   cipher: auto
-  fp: firefox
-  host: login.yahoo.com
-  name: 德国_072604981
+  fp: chrome
+  name: 🇷🇴 机场推荐:dafei.de 罗马尼亚 65
   network: tcp
   port: 22002
   server: bg.sv.temas-bor.ir
   sni: login.yahoo.com
   type: vless
-  uuid: 46445435-11cd-47e8-87dc-1acc159fc360
-  ws-path: '%2F'
+  uuid: ed984f53-b003-4940-b6b2-db22362801e7
 - alterId: 0
   cipher: auto
   encryption: none
@@ -64963,6 +65062,16 @@ proxies:
   sni: auth.figmafound.org
   type: vless
   uuid: c3494c65-8cd8-4ce4-9618-11b2b4cfeeef
+- alterId: 0
+  cipher: auto
+  host: kalami-eew.pages.dev
+  name: CF中转_0726043576
+  network: ws
+  port: 443
+  server: 104.19.59.83
+  type: vless
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  ws-path: '%2F'
 - alterId: 0
   cipher: auto
   encryption: none
@@ -68007,7 +68116,7 @@ proxy-groups:
   - 美国_072604938
   - 德国_072604557
   - 美国_0726045083
-  - 美国_072604704
+  - 🇸🇬 机场推荐:dafei.de 新加坡 01
   - 立陶宛_072604086
   - 伊朗_072604060
   - 阿联酋_072604020
@@ -68060,7 +68169,7 @@ proxy-groups:
   - 美国_0726042483
   - 美国_0726043973
   - 美国_0726044474
-  - 巴西_072604077
+  - 🇭🇰 机场推荐:dafei.de 香港 01
   - 俄罗斯联邦_072604022
   - 澳大利亚_072604144
   - 美国_0726043174
@@ -68084,16 +68193,16 @@ proxy-groups:
   - 🇷🇺 机场推荐:dafei.de 俄罗斯 02
   - 英国_072604436
   - 🇷🇺_RU_俄罗斯
-  - '%E8%8B%B1%E5%9B%BD_072604032'
+  - '%F0%9F%8E%8065%40oneclickvpnkeys'
   - 美国_0726045426
   - CF中转_0726048723
   - CF中转_07260411911
   - 香港_072604179
   - 美国 118
-  - '%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A_072604005'
-  - 俄罗斯联邦_072604004
+  - '%F0%9F%8E%8061%40oneclickvpnkeys'
+  - 🇷🇺_RU_俄罗斯_1
   - 印度尼西亚_072604058
-  - 德国_072604026
+  - 🇩🇪 机场推荐:dafei.de 德国 07
   - 美国_0726044642
   - 美国_0726044663
   - 加拿大_072604115
@@ -68136,7 +68245,7 @@ proxy-groups:
   - 美国_072604590
   - 芬兰_072604007
   - 伊朗_072604048
-  - 土耳其_072604076
+  - 🇹🇷 机场推荐:dafei.de 土耳其 01
   - 美国_0726044789
   - 俄罗斯联邦_072604167
   - 英国_072604377
@@ -68170,7 +68279,7 @@ proxy-groups:
   - 菲律宾_072604111
   - 英国_072604650
   - 丹麦_072604030
-  - '%E5%BE%B7%E5%9B%BD_072604010'
+  - 🇩🇪_DE_德国
   - 伊朗_072604043
   - CF中转_0726045330
   - 印度尼西亚_072604054
@@ -68229,7 +68338,7 @@ proxy-groups:
   - CF中转_0726046417
   - 美国_072604584
   - 德国_072604647
-  - 中国_072604012
+  - NL_speednode_0026
   - 拉脱维亚_072604017
   - 菲律宾_072604054
   - 印度尼西亚_072604037
@@ -68250,7 +68359,7 @@ proxy-groups:
   - CF中转_0726049129
   - 荷兰_072604908
   - 俄罗斯联邦_072604484
-  - 爱尔兰_072604007
+  - IE_speednode_0010
   - 菲律宾_072604109
   - 菲律宾_072604083
   - 俄罗斯联邦_072205451
@@ -68278,7 +68387,7 @@ proxy-groups:
   - 法国_072604123
   - 印度尼西亚_072604036
   - 保加利亚_072604033
-  - 中国_072604011
+  - NL_speednode_0025
   - 菲律宾_072604074
   - 美国_072604833
   - 🇨🇭CH_1|2.0MB/s
@@ -68315,7 +68424,7 @@ proxy-groups:
   - 西班牙_072604050
   - 英国_072604434
   - 菲律宾_072604093
-  - 爱尔兰_072604006
+  - IE_speednode_0009
   - 荷兰_072604907
   - 印度_072604002
   - 美国_0726042751
@@ -68390,7 +68499,7 @@ proxy-groups:
   - 🇸🇪SE_1|2.7MB/s
   - 塞舌尔_072604063
   - 荷兰_072604906
-  - 英国_072604035
+  - GB_speednode_0005
   - 英国_072604215
   - 美国_072604502
   - 荷兰_072604784
@@ -68401,7 +68510,7 @@ proxy-groups:
   - 荷兰_072604145
   - 伊朗_072604044
   - 英国_072604118
-  - 俄罗斯联邦_072604016
+  - RU_speednode_0112
   - 香港_072604093
   - 美国_0726043578
   - CF中转_0726041059
@@ -68441,7 +68550,7 @@ proxy-groups:
   - 德国_072604970
   - CF中转_0726044984
   - 德国_072604124
-  - 中国_072604009
+  - NL_speednode_0023
   - 菲律宾_072604010
   - 荷兰_072604875
   - 美国_0726043780
@@ -68537,7 +68646,7 @@ proxy-groups:
   - 立陶宛_072604158
   - 法国_072604127
   - 德国_072504905
-  - 丹麦_072604004
+  - DK_speednode_0004
   - 美国_072604154
   - 荷兰_072604911
   - 美国_0726041504
@@ -68563,7 +68672,7 @@ proxy-groups:
   - 英国_0726041163
   - 荷兰_072604938
   - 英国_072604694
-  - 韩国_072604025
+  - KR_speednode_0013
   - 未知_072523999
   - 未知_0726042954
   - 美国_072604561
@@ -68577,7 +68686,7 @@ proxy-groups:
   - 西班牙_072604049
   - 荷兰_072604809
   - 菲律宾_072604008
-  - 俄罗斯联邦_072604017
+  - RU_speednode_0113
   - 美国_0726042561
   - 新加坡_072604116
   - 美国_0726044480
@@ -68591,7 +68700,7 @@ proxy-groups:
   - 未知_0726044189
   - CF中转_0726044060
   - 菲律宾_072604090
-  - 未知_072604129
+  - 🇫🇷FR_1|2.1MB/s
   - 荷兰_072604175
   - 美国_072604326
   - 美国_072604950
@@ -68605,7 +68714,7 @@ proxy-groups:
   - 香港_072604100
   - 法国_072604120
   - 美国_072604936
-  - 中国_072604008
+  - NL_speednode_0022
   - 英国_0726041300
   - 芬兰_072523027
   - 德国_072604643
@@ -68636,7 +68745,7 @@ proxy-groups:
   - 瑞典_072604187
   - 英国_072604028
   - 韩国_072604084
-  - 俄罗斯联邦_072604020
+  - 🇺🇸 机场推荐:dafei.de 美国 32
   - 美国_0726041894
   - 塞舌尔_072604521
   - 荷兰_072604744
@@ -68770,7 +68879,7 @@ proxy-groups:
   - 法国_072604274
   - 美国_0726041767
   - 荷兰_072604234
-  - 中国_072604007
+  - NL_speednode_0021
   - CF中转_0726045755
   - 阿联酋_072604113
   - 香港_072604099
@@ -68909,7 +69018,7 @@ proxy-groups:
   - 法国_072604146
   - 美国_0726044002
   - 立陶宛_072604139
-  - CF中转_072604509
+  - 🇺🇸 机场推荐:dafei.de 美国 33
   - 菲律宾_072604113
   - 英国_072604986
   - 美国_0726041808
@@ -68925,7 +69034,7 @@ proxy-groups:
   - 加拿大_072604140
   - 未知_0726045348
   - 波黑_072604005
-  - 中国_072604005
+  - NL_speednode_0019
   - 土耳其_072604033
   - 美国_0726042016
   - 荷兰_072604746
@@ -69038,7 +69147,7 @@ proxy-groups:
   - 美国_0726045320
   - 德国_072604621
   - 新加坡_072604132
-  - 中国_072604006
+  - NL_speednode_0020
   - 法国_072604131
   - 新加坡_072604569
   - 法国_072604130
@@ -69178,7 +69287,7 @@ proxy-groups:
   - 荷兰_072604827
   - 立陶宛_072604055
   - 美国_0726043304
-  - 美国_0726043840
+  - 🇷🇺 机场推荐:dafei.de 俄罗斯 01
   - 加拿大_072604050
   - 荷兰_072604265
   - 韩国_072604108
@@ -69201,7 +69310,7 @@ proxy-groups:
   - 美国_0726044437
   - 俄罗斯联邦_072604369
   - 德国_072604591
-  - 俄罗斯联邦_072604015
+  - RU_speednode_0110
   - 美国_0726042131
   - CF中转_0726045089
   - 未知_0726042721
@@ -69216,7 +69325,7 @@ proxy-groups:
   - 美国_0726041403
   - 美国_0726044460
   - 塞舌尔_072604094
-  - 中国_072604002
+  - NL_speednode_0016
   - 台湾_072604011
   - 美国_0726045323
   - 阿联酋_072604115
@@ -69290,7 +69399,7 @@ proxy-groups:
   - CF中转_07260411418
   - 塞舌尔_072604328
   - 美国_072604816
-  - 新加坡_072604301
+  - 🇸🇬 机场推荐:dafei.de 新加坡 03
   - 美国_0726042622
   - 菲律宾_072604096
   - 菲律宾_072604063
@@ -69562,17 +69671,17 @@ proxy-groups:
   - 德国_072604418
   - 美国_0726045134
   - 德国_072604755
-  - 未知_072604518
+  - 🇺🇸 机场推荐:dafei.de 美国 26
   - CF中转_0726047586
   - 阿联酋_072604103
   - 美国_072604208
   - 英国_072604665
   - 美国_0726041503
-  - 俄罗斯联邦_072604014
+  - RU_speednode_0109
   - 英国_072604656
   - 日本_072604046
   - 美国_072604882
-  - 中国_072604013
+  - NL_speednode_0027
   - 美国_0726041867
   - 美国_0726043648
   - CF中转_07260410167
@@ -69580,7 +69689,7 @@ proxy-groups:
   - 奥地利_072604038
   - 英国_072604545
   - 英国_0726041104
-  - 未知_072604104
+  - 🇺🇸_US_美国_2
   - 菲律宾_072604102
   - 意大利_072604037
   - 伊朗_072604049
@@ -69761,6 +69870,7 @@ proxy-groups:
   - 法国_072604315
   - 意大利_072604009
   - 英国_072604403
+  - CF中转_0726045163
   - 俄罗斯联邦_072604135
   - 德国_072604639
   - 俄罗斯联邦_072604164
@@ -70023,7 +70133,7 @@ proxy-groups:
   - 荷兰_072604205
   - 奥地利_072604181
   - 荷兰_072604030
-  - 英国_072604036
+  - GB_speednode_0007
   - 新加坡_072604139
   - 美国_0726045256
   - 英国_072604356
@@ -70139,7 +70249,7 @@ proxy-groups:
   - 未知_0726043541
   - 俄罗斯联邦_072604323
   - CF中转_072604548
-  - 俄罗斯联邦_072604019
+  - 🇸🇪 机场推荐:dafei.de 瑞典 01
   - 波兰_072604048
   - CF中转_0726042496
   - 塞舌尔_072604223
@@ -70204,7 +70314,7 @@ proxy-groups:
   - 俄罗斯联邦_072604131
   - 德国_072604341
   - 美国_0726042786
-  - 比利时_072604079
+  - 🇳🇱 机场推荐:dafei.de 荷兰 05
   - 未知_0726044785
   - 美国_0726042640
   - 德国_072604052
@@ -70412,7 +70522,7 @@ proxy-groups:
   - 德国_072604721
   - 美国_0726042322
   - 美国_0726042965
-  - 中国_072604015
+  - NL_speednode_0030
   - 英国_072604653
   - 美国_072604874
   - CF中转_0726046310
@@ -70839,6 +70949,7 @@ proxy-groups:
   - 美国_0726041026
   - CF中转_0726043706
   - CF中转_0726046302
+  - CF中转_0726044480
   - CF中转_0726043404
   - 未知_0726042424
   - 美国_0726042208
@@ -70906,7 +71017,7 @@ proxy-groups:
   - CF中转_0726043022
   - CF中转_07260413370
   - CF中转_0726044009
-  - 英国_072604045
+  - 🇬🇧 机场推荐:dafei.de 英国 01
   - 未知_0726043762
   - 法国_072604072
   - 美国_0726043223
@@ -70943,7 +71054,7 @@ proxy-groups:
   - 罗马尼亚_072604079
   - 英国_072604874
   - 未知_072604762
-  - 中国_072604003
+  - NL_speednode_0017
   - 巴西_072604070
   - 美国_0726044306
   - 德国_072604669
@@ -70979,7 +71090,7 @@ proxy-groups:
   - CF中转_072604944
   - 未知_072604560
   - CF中转_0726042276
-  - 中国_072604010
+  - NL_speednode_0024
   - 德国_072604340
   - 美国_0726043898
   - 荷兰_072604889
@@ -71025,7 +71136,7 @@ proxy-groups:
   - CF中转_0726047819
   - 未知_0722052834
   - 美国_0726041840
-  - 中国_072604021
+  - NL_speednode_0029
   - CF中转_0726042637
   - CF中转_0726044076
   - CF中转_0726046376
@@ -71156,6 +71267,7 @@ proxy-groups:
   - CF中转_0726043072
   - 芬兰_072604090
   - 美国_0726041816
+  - CF中转_0726043984
   - CF中转_0726047314
   - CF中转_07260411754
   - 美国_072604928
@@ -71269,6 +71381,7 @@ proxy-groups:
   - 美国_072604993
   - 德国_072604207
   - 未知_0726043744
+  - CF中转_0726044214
   - 德国_072604436
   - CF中转_0726045726
   - 美国_072604589
@@ -71524,7 +71637,7 @@ proxy-groups:
   - 澳大利亚_072604093
   - 美国_072604887
   - 波兰_072604086
-  - CF中转_072604510
+  - 🇺🇸 机场推荐:dafei.de 美国 49
   - 未知_0726045228
   - 美国 1183
   - 美国_0726045486
@@ -71565,6 +71678,7 @@ proxy-groups:
   - CF中转_0726042865
   - CF中转_0726045852
   - 塞舌尔_072604203
+  - CF中转_0726044104
   - CF中转_0726045995
   - CF中转_07260413128
   - CF中转_0726047923
@@ -71709,6 +71823,7 @@ proxy-groups:
   - 美国_0726041196
   - CF中转_0726043669
   - CF中转_07260411204
+  - CF中转_0726046443
   - 美国_0726041288
   - 英国_072604666
   - CF中转_0726043290
@@ -71905,6 +72020,7 @@ proxy-groups:
   - 美国_0726041847
   - CF中转_0726043615
   - CF中转_0726046709
+  - CF中转_0726044542
   - CF中转_0726048259
   - 芬兰_072604055
   - CF中转_0726047409
@@ -71966,7 +72082,7 @@ proxy-groups:
   - CF中转_07260410698
   - 美国_0726041910
   - 美国_0726041238
-  - 瑞典_072604007
+  - SE_speednode_0114
   - 丹麦_072604018
   - 新西兰_072604003
   - 美国_0726042707
@@ -72073,7 +72189,7 @@ proxy-groups:
   - 美国_0726043968
   - 印度尼西亚_072604010
   - 德国_072604322
-  - 美国_072604102
+  - 🇺🇸 机场推荐:dafei.de 美国 55
   - CF中转_0726048693
   - 俄罗斯联邦_072604205
   - CF中转_0726043927
@@ -72108,6 +72224,7 @@ proxy-groups:
   - 美国_072604265
   - 南非_072604012
   - CF中转_0726047365
+  - CF中转_0726044761
   - 西班牙_072604055
   - 美国_0726043404
   - CF中转_0726044148
@@ -72265,6 +72382,7 @@ proxy-groups:
   - CF中转_0726047894
   - 新加坡_072604170
   - 马来西亚_072604501
+  - CF中转_0726046163
   - CF中转_0726047678
   - 美国_0726042052
   - 摩尔多瓦_072604006
@@ -72389,7 +72507,7 @@ proxy-groups:
   - 美国_0726045091
   - 美国_0726044215
   - 马来西亚_072604562
-  - 俄罗斯联邦_072604013
+  - RU_speednode_0111
   - CF中转_07260411216
   - CF中转_0726048391
   - 美国_0726045067
@@ -72485,7 +72603,7 @@ proxy-groups:
   - CF中转_072604716
   - CF中转_0726045323
   - 美国_0726042184
-  - 德国_072604981
+  - 🇷🇴 机场推荐:dafei.de 罗马尼亚 65
   - 斯洛文尼亚_072604010
   - CF中转_0726045278
   - 美国_0726043092
@@ -72597,6 +72715,7 @@ proxy-groups:
   - 美国_0726044079
   - CF中转_07260412517
   - 澳大利亚_072604048
+  - CF中转_0726043576
   - CF中转_0726045683
   - 德国_072604746
   - 美国_0726042463
