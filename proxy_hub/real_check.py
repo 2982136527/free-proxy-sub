@@ -154,8 +154,57 @@ def _write_config(conf: dict, cfg_path: Path):
     cfg_path.write_text(yaml.safe_dump(conf, allow_unicode=True), encoding="utf-8")
 
 
+def _error_line(err: str) -> str:
+    """取最能说明问题的那一行（mihomo 最后一行只是笼统的 test failed）。"""
+    lines = [l for l in err.strip().splitlines() if l.strip()]
+    for l in reversed(lines):
+        if "level=error" in l or "proxy " in l:
+            return l
+    return lines[-1] if lines else ""
+
+
+def _bisect_prune(runner: dict, conf: dict, tmpdir: str, cfg_path: Path,
+                  budget: int = 40) -> bool:
+    """报错无法定位到具体节点时，二分找出并剔除坏节点。"""
+    tests = [0]
+
+    def passes(subset: List[dict]) -> bool:
+        if tests[0] >= budget:
+            raise RuntimeError("bisect budget exhausted")
+        tests[0] += 1
+        conf["proxies"] = subset
+        _write_config(conf, cfg_path)
+        return _config_test(runner, tmpdir, cfg_path)[0]
+
+    def keep(subset: List[dict]) -> List[dict]:
+        if not subset or passes(subset):
+            return subset
+        if len(subset) == 1:
+            logger.info("二分剔除节点 %s (%s)",
+                        subset[0].get("name"), subset[0].get("type"))
+            return []
+        mid = len(subset) // 2
+        return keep(subset[:mid]) + keep(subset[mid:])
+
+    original = list(conf["proxies"])
+    try:
+        kept = keep(original)
+    except RuntimeError:
+        logger.warning("二分剔除超出预算，跳过真实验证")
+        conf["proxies"] = original
+        return False
+    conf["proxies"] = kept
+    if not kept:
+        return False
+    _write_config(conf, cfg_path)
+    ok, err = _config_test(runner, tmpdir, cfg_path)
+    if not ok:
+        logger.warning("二分剔除后配置仍不可用: %s", _error_line(err)[:300])
+    return ok
+
+
 def _drop_rejected_nodes(runner: dict, conf: dict, tmpdir: str, cfg_path: Path,
-                         max_drop: int = 40) -> bool:
+                         max_drop: int = 60) -> bool:
     """逐个剔除 mihomo 拒绝的节点，直到整份配置通过。
 
     单个畸形节点会让 mihomo 拒绝整份配置、进而让真实验证整体失效，
@@ -165,18 +214,19 @@ def _drop_rejected_nodes(runner: dict, conf: dict, tmpdir: str, cfg_path: Path,
         ok, err = _config_test(runner, tmpdir, cfg_path)
         if ok:
             return True
-        last = err.splitlines()[-1] if err else ""
-        m = _BAD_PROXY_RE.search(last)
-        if not m:
-            logger.warning("mihomo 配置校验失败且无法定位节点: %s", last[:300])
-            return False
-        idx = int(m.group(1))
+        line = _error_line(err)
+        # mihomo 把 "proxy N: ..." 打在 level=error 行，最后一行只有 test failed
+        matches = _BAD_PROXY_RE.findall(err)
+        if not matches:
+            logger.info("配置校验失败且无法定位节点，改用二分剔除: %s", line[:200])
+            return _bisect_prune(runner, conf, tmpdir, cfg_path)
+        idx = int(matches[-1])
         if not (0 <= idx < len(conf["proxies"])):
-            logger.warning("mihomo 报告的节点下标越界: %s", last[:300])
-            return False
+            logger.info("节点下标越界，改用二分剔除: %s", line[:200])
+            return _bisect_prune(runner, conf, tmpdir, cfg_path)
         bad = conf["proxies"].pop(idx)
         logger.info("剔除 mihomo 拒绝的节点 %s (%s): %s",
-                    bad.get("name"), bad.get("type"), last[-120:])
+                    bad.get("name"), bad.get("type"), line[-140:])
         if not conf["proxies"]:
             return False
         _write_config(conf, cfg_path)
