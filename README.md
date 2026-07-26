@@ -10,7 +10,7 @@
 
 | 类型 | 原始链接 | 镜像加速 |
 |------|---------|----------|
-| 全量节点 (200) | `https://2982136527.github.io/free-proxy-sub/clash.yaml` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/clash.yaml` |
+| 全量节点 | `https://2982136527.github.io/free-proxy-sub/clash.yaml` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/clash.yaml` |
 | 精选节点 (30) | `https://2982136527.github.io/free-proxy-sub/clash-selected.yaml` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/clash-selected.yaml` |
 | **本地全量** (本地验证) | `https://2982136527.github.io/free-proxy-sub/local/clash.yaml` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/local/clash.yaml` |
 | **本地精选** (本地验证) | `https://2982136527.github.io/free-proxy-sub/local/clash-selected.yaml` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/local/clash-selected.yaml` |
@@ -19,12 +19,12 @@
 
 | 类型 | 原始链接 | 镜像加速 |
 |------|---------|----------|
-| 全量节点 (200) | `https://2982136527.github.io/free-proxy-sub/sub.b64` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/sub.b64` |
+| 全量节点 | `https://2982136527.github.io/free-proxy-sub/sub.b64` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/sub.b64` |
 | 精选节点 (30) | `https://2982136527.github.io/free-proxy-sub/sub-selected.b64` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/sub-selected.b64` |
 | **本地全量** (本地验证) | `https://2982136527.github.io/free-proxy-sub/local/sub.b64` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/local/sub.b64` |
 | **本地精选** (本地验证) | `https://2982136527.github.io/free-proxy-sub/local/sub-selected.b64` | `https://gh-proxy.com/https://raw.githubusercontent.com/2982136527/free-proxy-sub/main/dist/local/sub-selected.b64` |
 
-### 纯文本（调试用）### 纯文本（调试用）
+### 纯文本（调试用）
 
 | | 地址 |
 |------|------|
@@ -47,17 +47,22 @@
 ## 工作原理
 
 ```
-GitHub 搜索 → 发现订阅源 → 解析节点 → TCP 连通性验证 → 生成多格式订阅
-     ↑                                                         │
-     └────────── 定时循环 ──────────────────────────────────────┘
+GitHub 搜索 → 发现订阅源 → 解析节点 → TCP 粗筛 → mihomo 真实验证 → 生成多格式订阅
+     ↑                                  (端口开放)   (真实 HTTP 经节点)        │
+     └────────── 定时循环 ──────────────────────────────────────────────────┘
 ```
+
+验证分两级：TCP ping 只能证明端口开放（假节点也能通过），所以再启动一个独立
+mihomo 实例，经由每个节点向 `gstatic.com/generate_204` 发起真实请求，只有协议
+层真正可用的节点才会进入订阅。找不到 mihomo（本地二进制或 Docker）时退回
+TCP-only 结果。
 
 ## 工作流定时
 
 | 工作流 | 定时 | 做什么 |
 |--------|------|--------|
-| `update.yml` (全量更新) | **每 6 小时** | 搜 GitHub → 解析 → TCP 验证 → 清理 → 生成全量+精选 → 提交+部署 |
-| `quick-validate.yml` (精选刷新) | **每 1 小时** | 内置源解析 → TCP 快速验证 → 刷新精选节点 → 部署 |
+| `update.yml` (全量更新) | **每 6 小时** (:15) | 搜 GitHub → 解析 → TCP 粗筛 → mihomo 真实验证 → 清理 → 生成全量+精选 → 提交+部署 |
+| `quick-validate.yml` (精选刷新) | **每 1 小时** (:30) | 内置源解析 → 验证 → 刷新订阅 → 提交+部署 |
 | `sync-local.sh` (本地同步) | **每 ~7 分钟** | 板端验证 → Mac 拉取 → 推送到仓库 `dist/local/` → GitHub Pages 发布 |
 
 ## 快速部署
@@ -68,9 +73,9 @@ GitHub 搜索 → 发现订阅源 → 解析节点 → TCP 连通性验证 → �
 
 仓库 → Settings → Pages → **GitHub Actions**
 
-### 3. 等待首次运行
+### 3. 首次运行
 
-首次运行会自动触发。也可以手动触发：Actions → **Full Update** → Run workflow
+手动触发一次：Actions → **Full Update** → Run workflow（之后每 6 小时自动运行）
 
 ## 本地运行
 
@@ -100,12 +105,15 @@ github:
     - "v2ray config"
 
 validator:
-  concurrency: 50           # 并发 TCP 验证数
-  connect_timeout: 5        # 连接超时（秒）
+  concurrency: 200          # 并发 TCP 验证数
+  connect_timeout: 4        # 连接超时（秒）
   max_dead_count: 3         # 连续 3 次死亡后删除
+  max_batch: 0              # 每轮验证节点上限，0 = 全部
+  real_check: true          # mihomo 协议级真实验证
+  real_check_max: 3000      # 真实验证候选上限（按 TCP 延迟取前 N）
 
 subscription:
-  max_proxies: 200          # 全量订阅最大节点数
+  max_proxies: 0            # 全量订阅最大节点数，0 = 不限
   selected_count: 30        # 精选节点数
 ```
 
@@ -128,11 +136,13 @@ Clash YAML · Base64 (v2rayN/Shadowrocket) · SIP008 JSON · 纯文本每行一�
 ├── proxy_hub/
 │   ├── crawler.py            # GitHub 爬虫
 │   ├── parser.py             # 代理格式解析
-│   ├── validator.py          # TCP 连通性验证
+│   ├── validator.py          # TCP 连通性粗筛
+│   ├── real_check.py         # mihomo 协议级真实验证
 │   ├── uri_gen.py            # 通用 URI 生成 (ss:///vmess://)
 │   ├── subscription.py       # Clash YAML 生成
 │   ├── server.py             # FastAPI 本地服务器
 │   └── main.py               # 工作流编排
+├── tests/                    # 单元测试 (python -m unittest discover tests)
 └── dist/                     # 生成的订阅文件
 ```
 
