@@ -20,11 +20,18 @@ crawler:
 
 validator:
   interval_minutes: 30
-  concurrency: 50
-  connect_timeout: 5
+  concurrency: 200          # TCP 粗筛并发
+  connect_timeout: 4
   max_dead_count: 3
+  max_batch: 0              # 每轮 TCP 验证节点数上限，0 = 全部待验证
+  recheck_minutes: 30       # 存活节点复查间隔
+  real_check: true          # 用 mihomo 做协议级真实验证（找不到 mihomo 时自动跳过）
+  real_check_max: 3000      # 真实验证的候选上限（按 TCP 延迟取前 N）
+  real_concurrency: 64
+  real_timeout_ms: 5000
+  real_url: "https://www.gstatic.com/generate_204"
 
 subscription:
-  max_proxies: 0
+  max_proxies: 0            # 全量订阅节点数上限，0 = 不限
   selected_count: 30
   name: "FreeProxyHub"

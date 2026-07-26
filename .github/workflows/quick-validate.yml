@@ -2,11 +2,11 @@ name: Quick Validate (精选更新)
 
 on:
   schedule:
-    - cron: '0 * * * *'       # 每 1 小时（精选节点保持最新）
+    - cron: '30 * * * *'      # 每 1 小时（错开整点，避免与 Full Update 排队）
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -25,6 +25,23 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
 
+      - name: Restore proxy DB cache
+        uses: actions/cache/restore@v4
+        with:
+          path: data/
+          key: proxy-db-quick-${{ github.run_id }}
+          restore-keys: |
+            proxy-db-
+
+      - name: Install mihomo (protocol-level validation)
+        run: |
+          set -e
+          TAG=$(curl -fsSL -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | jq -r .tag_name)
+          curl -fsSL -o mihomo.gz "https://github.com/MetaCubeX/mihomo/releases/download/${TAG}/mihomo-linux-amd64-${TAG}.gz"
+          gunzip mihomo.gz && chmod +x mihomo
+          echo "MIHOMO_BIN=$PWD/mihomo" >> "$GITHUB_ENV"
+        continue-on-error: true
+
       - name: Quick validate (no crawl) + generate all files
         run: python cli.py --validate-only
         env:
@@ -33,6 +50,19 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
+
+      - name: Commit subscription files (raw 镜像链接依赖仓库内容)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: quick refresh [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 10
+          done
+          exit 1
 
   deploy:
     needs: validate
