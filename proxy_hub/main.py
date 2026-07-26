@@ -56,16 +56,26 @@ async def run_cycle(config: Optional[dict] = None,
             st.mark_source_err(src["url"], str(e))
     logger.info("解析完成: 新增/更新 %d 个节点", parsed_total)
 
-    # 3) 验证
+    # 3) TCP 粗筛
     logger.info("开始 TCP 连通性验证 …")
     try:
         alive = await run_validation(cfg, st)
-        logger.info("验证完成: %d 个存活", alive)
+        logger.info("TCP 验证完成: %d 个存活", alive)
     except Exception as e:
         logger.error("验证失败: %s", e)
         alive = 0
 
-    # 4) 清理
+    # 4) 真实可用性复核（经 mihomo 发起真实请求）
+    real_alive = None
+    try:
+        from .real_check import apply_real_check
+        real_alive = await apply_real_check(cfg, st)
+        if real_alive is not None:
+            logger.info("真实验证完成: %d 个可用", real_alive)
+    except Exception as e:
+        logger.error("真实验证失败（保留 TCP 结果）: %s", e)
+
+    # 5) 清理
     max_dead = cfg.get("validator", {}).get("max_dead_count", 3)
     st.cleanup_dead(max_dead)
 
@@ -77,6 +87,7 @@ async def run_cycle(config: Optional[dict] = None,
         "crawl": crawl_result,
         "parsed": parsed_total,
         "alive": alive,
+        "real_alive": real_alive,
         "stats": stats,
     }
 

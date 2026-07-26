@@ -4,6 +4,7 @@ import argparse
 import base64
 import json
 import logging
+import os
 from pathlib import Path
 
 from proxy_hub.config import load as load_config
@@ -82,7 +83,12 @@ def main():
         json.dump(result, f, ensure_ascii=False, indent=2)
 
     stats = result.get("stats", {})
-    print(f"✅ 完成: 总计 {stats.get('total',0)} 个节点, 存活 {stats.get('alive',0)} 个")
+    real = result.get("real_alive")
+    checker = "mihomo 真实验证" if real is not None else "仅 TCP 粗筛（未找到 mihomo）"
+    print(f"✅ 完成: 总计 {stats.get('total',0)} 个节点, 存活 {stats.get('alive',0)} 个 [{checker}]")
+    if real is None and os.environ.get("GITHUB_ACTIONS"):
+        # CI 里 mihomo 缺席意味着发布的是未经协议验证的节点，必须显眼
+        print("::warning::mihomo real check unavailable — published nodes are TCP-verified only")
 
     if stats.get("alive", 0) == 0:
         print("⚠️  没有存活节点，订阅文件为空")

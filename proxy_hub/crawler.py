@@ -34,7 +34,6 @@ BUILTIN_SOURCES = [
     "https://raw.githubusercontent.com/freebaProxy/freebaProxy/main/freeproxy.txt",
     "https://raw.githubusercontent.com/adiwzx/freenode/main/adisub.txt",
     "https://raw.githubusercontent.com/ssrsub/ssr/master/ssr",
-    "https://raw.githubusercontent.com/ripaojiedian/freenode/main/",
     "https://raw.githubusercontent.com/ermaozi01/free_clash_node/main/subscription/clash.yml",
     "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml",
     "https://raw.githubusercontent.com/openRunner/clash-freenode/main/clashnode.yml",
@@ -76,7 +75,7 @@ async def crawl_github(config: dict, storage: Storage) -> dict:
         "Accept": "application/vnd.github.v3+json",
     }
     if token:
-        headers["Authorization"] = f"token {token}"
+        headers["Authorization"] = f"Bearer {token}"
 
     # 1) 种子内置源（快、不出错）
     seeded = await seed_builtin_sources(storage)

@@ -9,7 +9,7 @@ import uvicorn
 
 from proxy_hub.config import load as load_config
 from proxy_hub.storage import Storage
-from proxy_hub.main import run_cycle
+from proxy_hub.main import run_cycle_sync
 
 logging.basicConfig(
     level=logging.INFO,
@@ -35,17 +35,20 @@ def scheduler_loop(cfg: dict, storage: Storage):
         if now - last_crawl >= crawl_interval:
             logger.info("=== 开始爬取周期 ===")
             try:
-                result = run_cycle(cfg, storage)
+                result = run_cycle_sync(cfg, storage)
                 logger.info("爬取结果: %s", result)
             except Exception as e:
                 logger.error("周期异常: %s", e)
             last_crawl = now
+            last_validate = now  # 完整周期已包含验证
 
-        if now - last_validate >= validate_interval and now - last_crawl < 60:
-            # 仅在非爬取周期做快速验证
+        elif now - last_validate >= validate_interval:
             from proxy_hub.validator import run_validation_sync
-            alive = run_validation_sync(cfg, storage)
-            logger.info("快速验证: %d 个存活", alive)
+            try:
+                alive = run_validation_sync(cfg, storage)
+                logger.info("快速验证: %d 个存活", alive)
+            except Exception as e:
+                logger.error("快速验证异常: %s", e)
             last_validate = now
 
         time.sleep(30)
