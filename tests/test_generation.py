@@ -139,10 +139,21 @@ class TestReviewRegressions(unittest.TestCase):
         self.assertIsNotNone(_proxy_to_clash(p2))
 
     def test_malformed_reality_sid_skipped(self):
-        p = parse_vless(
-            f"vless://{UUID}@1.2.3.4:443?security=reality"
-            "&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=zzzz#bad-sid")
+        pbk = "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+        for sid in ("zzzz", "abc", "a" * 18):  # 非 hex / 奇数长度 / 超长
+            p = parse_vless(
+                f"vless://{UUID}@1.2.3.4:443?security=reality&pbk={pbk}&sid={sid}#bad")
+            self.assertIsNone(_proxy_to_clash(p), f"sid={sid} 应被跳过")
+        p_ok = parse_vless(
+            f"vless://{UUID}@1.2.3.4:443?security=reality&pbk={pbk}&sid=ab12#ok")
+        self.assertIsNotNone(_proxy_to_clash(p_ok))
+
+    def test_hy2_obfs_without_password_skipped(self):
+        # mihomo: "missing obfs password" 会让整份配置被拒
+        p = parse_hysteria2("hy2://pw@1.2.3.4:443?obfs=salamander#n")
         self.assertIsNone(_proxy_to_clash(p))
+        p_ok = parse_hysteria2("hy2://pw@1.2.3.4:443?obfs=salamander&obfs-password=x#n")
+        self.assertIsNotNone(_proxy_to_clash(p_ok))
 
     def test_hy2_ports_sanitized(self):
         p = parse_hysteria2("hy2://pw@1.2.3.4:443?mport=443;8443#n")

@@ -163,7 +163,9 @@ def _valid_reality(pbk: str, sid: str) -> bool:
         return False
     if len(raw) != 32:
         return False
-    if sid and (len(sid) > 16 or not re.fullmatch(r"[0-9a-fA-F]+", sid)):
+    # short-id 按十六进制字节解码，必须是偶数长度的 hex 且不超过 8 字节
+    if sid and (len(sid) > 16 or len(sid) % 2
+                or not re.fullmatch(r"[0-9a-fA-F]+", sid)):
         return False
     return True
 
@@ -294,11 +296,11 @@ def _proxy_to_clash(p: dict) -> Optional[dict]:
         base["password"] = password
         obfs = str(extra.get("obfs", "") or "")
         if obfs:
-            if obfs != "salamander":
+            # obfs 缺密码时 mihomo 会拒绝整份配置；节点本身也必然连不上
+            if obfs != "salamander" or not extra.get("obfs_password"):
                 return None
             base["obfs"] = obfs
-            if extra.get("obfs_password"):
-                base["obfs-password"] = str(extra["obfs_password"])
+            base["obfs-password"] = str(extra["obfs_password"])
         if extra.get("sni"):
             base["sni"] = str(extra["sni"])
         if extra.get("skip_cert_verify"):
