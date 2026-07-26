@@ -15,6 +15,7 @@ mihomo 来源（按优先级）：
 import asyncio
 import logging
 import os
+import re
 import shutil
 import socket
 import subprocess
@@ -75,7 +76,22 @@ def _build_config(proxies: List[dict], controller: str) -> Optional[dict]:
     }
 
 
-async def _wait_controller(base: str, timeout: float = 30.0) -> bool:
+def _tail_log(log_path: Path, container: Optional[str], lines: int = 6) -> str:
+    """取 mihomo 的最后几行输出，用于诊断启动失败。"""
+    text = ""
+    try:
+        if container:
+            r = subprocess.run(["docker", "logs", "--tail", str(lines), container],
+                               capture_output=True, text=True, timeout=15)
+            text = r.stdout + r.stderr
+        elif log_path.exists():
+            text = log_path.read_text(errors="ignore")
+    except Exception:
+        pass
+    return " | ".join(text.strip().splitlines()[-lines:])[:400] or "(无输出)"
+
+
+async def _wait_controller(base: str, timeout: float = 60.0) -> bool:
     async with aiohttp.ClientSession() as sess:
         deadline = asyncio.get_event_loop().time() + timeout
         while asyncio.get_event_loop().time() < deadline:
@@ -117,6 +133,57 @@ async def _delay_test(base: str, names: List[str], *, url: str,
     return results
 
 
+_BAD_PROXY_RE = re.compile(r"proxy (\d+):")
+
+
+def _config_test(runner: dict, tmpdir: str, cfg_path: Path) -> tuple[bool, str]:
+    """跑 mihomo -t 校验配置，返回 (是否通过, 错误文本)。"""
+    if runner["mode"] == "bin":
+        cmd = [runner["bin"], "-d", tmpdir, "-f", str(cfg_path), "-t"]
+    else:
+        cmd = ["docker", "run", "--rm", "-v", f"{tmpdir}:/root/.config/mihomo",
+               "metacubex/mihomo:latest", "-t"]
+    try:
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
+    except Exception as e:
+        return False, str(e)
+    return r.returncode == 0, (r.stdout + r.stderr).strip()
+
+
+def _write_config(conf: dict, cfg_path: Path):
+    cfg_path.write_text(yaml.safe_dump(conf, allow_unicode=True), encoding="utf-8")
+
+
+def _drop_rejected_nodes(runner: dict, conf: dict, tmpdir: str, cfg_path: Path,
+                         max_drop: int = 40) -> bool:
+    """逐个剔除 mihomo 拒绝的节点，直到整份配置通过。
+
+    单个畸形节点会让 mihomo 拒绝整份配置、进而让真实验证整体失效，
+    所以这里必须先把它们摘掉。返回配置最终是否可用。
+    """
+    for _ in range(max_drop):
+        ok, err = _config_test(runner, tmpdir, cfg_path)
+        if ok:
+            return True
+        last = err.splitlines()[-1] if err else ""
+        m = _BAD_PROXY_RE.search(last)
+        if not m:
+            logger.warning("mihomo 配置校验失败且无法定位节点: %s", last[:300])
+            return False
+        idx = int(m.group(1))
+        if not (0 <= idx < len(conf["proxies"])):
+            logger.warning("mihomo 报告的节点下标越界: %s", last[:300])
+            return False
+        bad = conf["proxies"].pop(idx)
+        logger.info("剔除 mihomo 拒绝的节点 %s (%s): %s",
+                    bad.get("name"), bad.get("type"), last[-120:])
+        if not conf["proxies"]:
+            return False
+        _write_config(conf, cfg_path)
+    logger.warning("剔除 %d 个节点后配置仍不可用，跳过真实验证", max_drop)
+    return False
+
+
 async def real_check(proxies: List[dict], config: dict | None = None) -> Optional[Dict[int, float]]:
     """对代理列表做真实连通性验证。
 
@@ -139,15 +206,20 @@ async def real_check(proxies: List[dict], config: dict | None = None) -> Optiona
         return {}
     tmpdir = tempfile.mkdtemp(prefix="mihomo-check-")
     cfg_path = Path(tmpdir) / "config.yaml"
-    cfg_path.write_text(yaml.safe_dump(conf, allow_unicode=True), encoding="utf-8")
+    _write_config(conf, cfg_path)
 
     proc = None
     container = None
+    log_path = Path(tmpdir) / "mihomo.log"
     try:
+        if not _drop_rejected_nodes(runner, conf, tmpdir, cfg_path):
+            return None
+
         if runner["mode"] == "bin":
-            proc = subprocess.Popen(
-                [runner["bin"], "-d", tmpdir, "-f", str(cfg_path)],
-                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            with open(log_path, "wb") as logf:
+                proc = subprocess.Popen(
+                    [runner["bin"], "-d", tmpdir, "-f", str(cfg_path)],
+                    stdout=logf, stderr=subprocess.STDOUT)
         else:
             container = f"mihomo-check-{uuid_mod.uuid4().hex[:8]}"
             subprocess.run(
@@ -159,7 +231,8 @@ async def real_check(proxies: List[dict], config: dict | None = None) -> Optiona
 
         base = f"http://127.0.0.1:{port}"
         if not await _wait_controller(base):
-            logger.warning("mihomo controller 未就绪，跳过真实验证")
+            logger.warning("mihomo controller 未就绪，跳过真实验证: %s",
+                           _tail_log(log_path, container))
             return None
 
         names = [n["name"] for n in conf["proxies"]]

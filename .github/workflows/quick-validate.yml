@@ -43,7 +43,7 @@ jobs:
         continue-on-error: true
 
       - name: Quick validate (no crawl) + generate all files
-        run: python cli.py --validate-only
+        run: python cli.py --validate-only --require-real-check
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

@@ -26,6 +26,8 @@ def main():
     parser.add_argument("--output-dir", default="dist", help="输出目录 (默认 dist)")
     parser.add_argument("--validate-only", action="store_true",
                         help="仅验证+生成，跳过 GitHub 搜索")
+    parser.add_argument("--require-real-check", action="store_true",
+                        help="mihomo 真实验证不可用时不写订阅文件（保留上一版），退出码 1")
     args = parser.parse_args()
 
     cfg = load_config(args.config)
@@ -41,6 +43,14 @@ def main():
         result = run_cycle_sync(cfg, storage, skip_crawl=True)
     else:
         result = run_cycle_sync(cfg, storage, skip_crawl=False)
+
+    # 真实验证缺席时写出的是未经协议验证的节点，会覆盖上一轮验证过的好数据
+    if args.require_real_check and result.get("real_alive") is None:
+        print("❌ mihomo 真实验证不可用，保留上一版订阅文件不覆盖")
+        if os.environ.get("GITHUB_ACTIONS"):
+            print("::error::mihomo real check unavailable — refusing to publish "
+                  "TCP-only nodes over previously verified ones")
+        return 1
 
     # ── 获取存活节点 ──────────────────────────────────
     all_alive = storage.get_alive_proxies(limit=max_p)
@@ -92,7 +102,8 @@ def main():
 
     if stats.get("alive", 0) == 0:
         print("⚠️  没有存活节点，订阅文件为空")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

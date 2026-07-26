@@ -49,7 +49,7 @@ jobs:
         continue-on-error: true
 
       - name: Full crawl + validate + generate
-        run: python cli.py
+        run: python cli.py --require-real-check
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
