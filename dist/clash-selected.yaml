@@ -8,72 +8,57 @@ external-controller: 127.0.0.1:9090
 proxies:
 - name: 🌍 Node-01
   type: ss
-  server: 156.146.38.169
-  port: 443
-  udp: true
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🌍 Node-02
-  type: ss
-  server: 156.146.38.168
-  port: 443
-  udp: true
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🌍 Node-03
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  udp: true
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🌍 Node-04
-  type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🌍 Node-05
-  type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  cipher: auto
-  alterId: 0
-- name: 🌍 Node-06
-  type: ss
-  server: 37.19.198.243
-  port: 443
-  udp: true
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🌍 Node-07
-  type: ss
   server: 138.199.42.68
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🌍 Node-08
-  type: ss
-  server: 34.207.112.128
+- name: 🌍 Node-02
+  type: vless
+  server: 172.67.202.17
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nmslfangbinxing.pusytroller.gq
+- name: 🌍 Node-03
+  type: vless
+  server: 208.103.161.5
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🌍 Node-09
-  type: trojan
-  server: 64.94.95.114
-  port: 57142
-  password: kkzh2prsyr2ik47as615
-  sni: static.rutube.ru
-  skip-cert-verify: true
+  uuid: d042a74a-c305-4eec-a89f-39a348022c92
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+  tls: true
+  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
   client-fingerprint: chrome
-- name: 🌍 Node-10
-  type: ss
-  server: 34.207.235.215
+- name: 🌍 Node-04
+  type: vless
+  server: 104.24.68.193
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🌍 Node-11
+  uuid: ed0e05af-49ab-4ea8-a39c-634855811b03
+  network: ws
+  ws-opts:
+    path: ws
+    headers:
+      Host: wild-grass-1917.tmpduardoolfsonerluke15.workers.dev
+  tls: true
+  servername: wild-grass-1917.tmpduardoolfsonerluke15.workers.dev
+  skip-cert-verify: true
+- name: 🌍 Node-05
+  type: vless
+  server: 172.64.145.202
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
+- name: 🌍 Node-06
   type: vless
   server: 172.67.137.154
   port: 443
@@ -87,84 +72,159 @@ proxies:
   tls: true
   servername: tiny-leaf-f59f.my-lla-s-a-njo-s-e.workers.dev
   client-fingerprint: chrome
-- name: 🌍 Node-12
-  type: trojan
-  server: 148.72.168.35
-  port: 58615
-  password: bIsrw94HH7zmhmvmGskKIb4HbmOZdcCR
-  sni: 148.72.168.35
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🌍 Node-13
-  type: trojan
-  server: 64.94.95.115
-  port: 57142
-  password: kkzh2prsyr2ik47as615
-  sni: static.rutube.ru
-  skip-cert-verify: true
-  client-fingerprint: chrome
+- name: 🌍 Node-07
+  type: vless
+  server: 198.23.238.35
+  port: 443
+  uuid: 70f8d74a-7938-4f21-9293-2c437a939247
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: M4KRLRGcJGhJScjCv3JinHE0Da9s79Ku7GlVFSNsTVY
+    short-id: a61500e1
+  client-fingerprint: firefox
+- name: 🌍 Node-08
+  type: vless
+  server: 104.18.38.47
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
+- name: 🌍 Node-09
+  type: vless
+  server: 162.159.36.5
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
 - name: 🇺🇸 US-01
-  type: trojan
-  server: 64.94.95.118
-  port: 57142
-  password: kkzh2prsyr2ik47as615
-  sni: 64.94.95.118
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🌍 Node-14
+  type: vless
+  server: 104.18.42.163
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: download.pusytroller.gq
+- name: 🌍 Node-10
+  type: vless
+  server: 104.16.72.41
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckfangbinxing.pusytroller.gq
+- name: 🌍 Node-11
   type: ss
-  server: 108.181.57.93
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: RSo52SbxW40r
+  server: 54.197.30.38
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🌍 Node-12
+  type: ss
+  server: 54.167.54.100
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🌍 Node-13
+  type: vless
+  server: 172.64.144.82
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
+- name: 🌍 Node-14
+  type: vless
+  server: 8.47.69.0
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
 - name: 🌍 Node-15
   type: ss
-  server: 37.19.198.244
+  server: 156.146.38.167
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🌍 Node-16
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  cipher: auto
-  alterId: 0
+  type: vless
+  server: 172.64.146.153
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
 - name: 🌍 Node-17
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   cipher: auto
   alterId: 0
 - name: 🌍 Node-18
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  cipher: auto
-  alterId: 0
+  type: trojan
+  server: 148.72.168.35
+  port: 58615
+  password: bIsrw94HH7zmhmvmGskKIb4HbmOZdcCR
+  skip-cert-verify: true
 - name: 🌍 Node-19
   type: ss
-  server: 173.244.56.6
+  server: 198.98.53.130
   port: 443
-  udp: true
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: chacha20-ietf-poly1305
+  password: eDfN7SODQceIOmIAbtJJtK
 - name: 🌍 Node-20
-  type: ss
-  server: 173.244.56.9
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: vless
+  server: nmslfangbinxing.pusytroller.gq
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nmslfangbinxing.pusytroller.gq
+- name: 🇺🇸 US-02
+  type: vless
+  server: 45.41.204.232
+  port: 25565
+  udp: true
+  uuid: 9d1f3ed0-7426-4100-ac06-21ec1f01c51b
+  flow: xtls-rprx-vision
+  tls: true
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  reality-opts:
+    public-key: vSD7OjQzz4Bl1a-Q9LljpZrccUdLGdaVMWCLgkJht10
+    short-id: d8acb17fe3c9e4f2
+  client-fingerprint: chrome
 - name: 🌍 Node-21
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  cipher: auto
-  alterId: 0
+  type: vless
+  server: 104.18.185.26
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
 - name: 🌍 Node-22
   type: ss
   server: 37.19.198.236
@@ -173,78 +233,51 @@ proxies:
   password: shadowsocks
 - name: 🌍 Node-23
   type: vless
-  server: 104.24.68.193
-  port: 443
-  uuid: ed0e05af-49ab-4ea8-a39c-634855811b03
-  network: ws
-  ws-opts:
-    path: ws
-    headers:
-      Host: wild-grass-1917.tmpduardoolfsonerluke15.workers.dev
-  tls: true
-  servername: wild-grass-1917.tmpduardoolfsonerluke15.workers.dev
-  skip-cert-verify: true
-- name: 🌍 Node-24
-  type: vless
-  server: 208.103.161.5
-  port: 443
-  uuid: d042a74a-c305-4eec-a89f-39a348022c92
+  server: 172.67.161.104
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
-  tls: true
-  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
-  client-fingerprint: chrome
-- name: 🌍 Node-25
-  type: vless
-  server: free.server6peekconfig.workers.dev
+      Host: fangbinxingnmsl.pusytroller.gq
+- name: 🌍 Node-24
+  type: ss
+  server: 156.146.38.169
   port: 443
-  uuid: d195909a-eff4-489d-a261-955b904894cb
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoieUhYMWhoZEVEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
-    headers:
-      Host: free.server6peekconfig.workers.dev
-  tls: true
-  servername: fREE.sERVer6PeeKCOnFIG.wOrkErs.dEv
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
+  udp: true
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🌍 Node-25
+  type: ss
+  server: 156.146.38.170
+  port: 443
+  udp: true
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🌍 Node-26
   type: ss
-  server: 198.98.53.130
+  server: 156.146.38.168
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-- name: 🌍 Node-27
-  type: vless
-  server: 69.48.201.136
-  port: 30016
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  network: ws
-  ws-opts:
-    path: /usserver
-    headers:
-      Host: uspanel.unixzone.us
-- name: 🇺🇸 US-02
-  type: ss
-  server: 216.105.168.19
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: Yq42Vx56a2SghCnLtOyOCF
+  udp: true
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇺🇸 US-03
   type: vless
-  server: 47.253.226.114
+  server: s2318.okgfw.top
   port: 443
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  udp: true
+  uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3
   flow: xtls-rprx-vision
   tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-  client-fingerprint: chrome
+  servername: u695099ub023e5f3s2316.gogocs.xyz
+  skip-cert-verify: true
+- name: 🌍 Node-27
+  type: ss
+  server: 37.19.198.160
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
 proxy-groups:
 - name: 🇺🇳 精选节点
   type: select
@@ -259,11 +292,11 @@ proxy-groups:
   - 🌍 Node-07
   - 🌍 Node-08
   - 🌍 Node-09
+  - 🇺🇸 US-01
   - 🌍 Node-10
   - 🌍 Node-11
   - 🌍 Node-12
   - 🌍 Node-13
-  - 🇺🇸 US-01
   - 🌍 Node-14
   - 🌍 Node-15
   - 🌍 Node-16
@@ -271,15 +304,15 @@ proxy-groups:
   - 🌍 Node-18
   - 🌍 Node-19
   - 🌍 Node-20
+  - 🇺🇸 US-02
   - 🌍 Node-21
   - 🌍 Node-22
   - 🌍 Node-23
   - 🌍 Node-24
   - 🌍 Node-25
   - 🌍 Node-26
-  - 🌍 Node-27
-  - 🇺🇸 US-02
   - 🇺🇸 US-03
+  - 🌍 Node-27
 - name: ♻️ 自动选择
   type: url-test
   proxies:
@@ -292,11 +325,11 @@ proxy-groups:
   - 🌍 Node-07
   - 🌍 Node-08
   - 🌍 Node-09
+  - 🇺🇸 US-01
   - 🌍 Node-10
   - 🌍 Node-11
   - 🌍 Node-12
   - 🌍 Node-13
-  - 🇺🇸 US-01
   - 🌍 Node-14
   - 🌍 Node-15
   - 🌍 Node-16
@@ -304,15 +337,15 @@ proxy-groups:
   - 🌍 Node-18
   - 🌍 Node-19
   - 🌍 Node-20
+  - 🇺🇸 US-02
   - 🌍 Node-21
   - 🌍 Node-22
   - 🌍 Node-23
   - 🌍 Node-24
   - 🌍 Node-25
   - 🌍 Node-26
-  - 🌍 Node-27
-  - 🇺🇸 US-02
   - 🇺🇸 US-03
+  - 🌍 Node-27
   url: https://www.gstatic.com/generate_204
   interval: 180
 rules:
