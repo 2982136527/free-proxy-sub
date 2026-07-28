@@ -13,6 +13,12 @@ proxies:
   password: 28d38ce6-7c79-4e9d-9175-2186da5be395
   sni: addons.mozilla.org
   skip-cert-verify: true
+- name: 🌍 Node-01
+  type: hysteria2
+  server: 155.248.209.237
+  port: 33333
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  sni: hy2.123266.xyz
 - name: 🇺🇸 US-02
   type: hysteria2
   server: 159.65.79.184
@@ -20,14 +26,7 @@ proxies:
   password: 28d38ce6-7c79-4e9d-9175-2186da5be395
   sni: addons.mozilla.org
   skip-cert-verify: true
-- name: 🇺🇸 US-03
-  type: vmess
-  server: 107.175.62.101
-  port: 27774
-  uuid: 60cace32-fdf2-4491-ff30-f1efe025b3f0
-  cipher: auto
-  alterId: 0
-- name: 🌍 Node-01
+- name: 🌍 Node-02
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -35,62 +34,13 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   cipher: auto
   alterId: 0
-- name: 🌍 Node-02
+- name: 🌍 Node-03
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   cipher: auto
   alterId: 0
-- name: 🇬🇧 GB-01
-  type: trojan
-  server: 91.193.58.139
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇸🇪 SE-01
-  type: vless
-  server: www.shopify.com
-  port: 8880
-  uuid: ce977d82-824b-4209-87f1-0719f78d6a2e
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: royal-mode-cf74.210-62d.workers.dev
-- name: 🌍 Node-03
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  cipher: auto
-  alterId: 0
-- name: 🇨🇦 CA-01
-  type: ss
-  server: 108.181.118.10
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: G5p6ww4o67HB
-- name: 🇬🇧 GB-02
-  type: trojan
-  server: 91.193.58.228
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
 - name: 🌍 Node-04
   type: vmess
   server: 82.198.246.250
@@ -99,10 +49,30 @@ proxies:
   cipher: auto
   alterId: 0
 - name: 🌍 Node-05
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  cipher: auto
+  alterId: 0
+- name: 🌍 Node-06
   type: vless
-  server: 162.159.43.28
+  server: 162.159.0.3
   port: 443
   udp: true
+  uuid: dd321f25-8f90-4e7c-a1fa-01883a8988a7
+  network: ws
+  ws-opts:
+    path: /pyip=proxyip.cmliussss.netfp=random
+    headers:
+      Host: soucuovls.pages.dev
+  tls: true
+  servername: soucuovls.pages.dev
+  client-fingerprint: chrome
+- name: 🇺🇸 US-03
+  type: vless
+  server: 108.162.198.165
+  port: 8443
   uuid: 29ca503d-e6b8-4509-b666-48133f450857
   network: ws
   ws-opts:
@@ -112,59 +82,19 @@ proxies:
   tls: true
   servername: learn00.evany.de5.net
   client-fingerprint: random
-- name: 🌍 Node-06
-  type: vless
-  server: 172.64.146.59
-  port: 2087
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  network: ws
-  ws-opts:
-    path: /fdip=tw.william.us.ci!txt?ed=2560
-    headers:
-      Host: learn00.evany.de5.net
-  tls: true
-  servername: learn00.evany.de5.net
-  client-fingerprint: random
 - name: 🌍 Node-07
-  type: trojan
-  server: 194.59.5.27
-  port: 443
+  type: ss
+  server: 108.181.0.177
+  port: 8388
   udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇬🇧 GB-03
-  type: trojan
-  server: 91.193.58.232
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇬🇧 GB-04
-  type: trojan
-  server: 91.193.58.62
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
 - name: 🌍 Node-08
+  type: vless
+  server: 182.16.61.2
+  port: 45647
+  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
+- name: 🌍 Node-09
   type: vless
   server: 162.159.17.128
   port: 443
@@ -177,51 +107,28 @@ proxies:
   tls: true
   servername: learn00.evany.de5.net
   client-fingerprint: random
-- name: 🌍 Node-09
-  type: vless
-  server: 162.159.16.63
-  port: 443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  network: ws
-  ws-opts:
-    path: /fdip=tw.william.us.ci!txt?ed=2560fp=random
-    headers:
-      Host: learn00.evany.de5.net
-  tls: true
-  servername: learn00.evany.de5.net
-  client-fingerprint: chrome
 - name: 🌍 Node-10
-  type: vless
-  server: 162.159.36.117
-  port: 2087
-  udp: true
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  cipher: auto
+  alterId: 0
+- name: 🇺🇸 US-04
+  type: vmess
+  server: 154.17.238.183
+  port: 8880
+  uuid: b7479b73-8cea-4a82-97e8-bacf9bd86605
+  cipher: auto
+  alterId: 0
   network: ws
   ws-opts:
-    path: /fdip=tw.william.us.ci!txt
+    path: b7479b73-8cea-4a82-97e8-bacf9bd86605-vm
     headers:
-      Host: learn00.evany.de5.net
-  tls: true
-  servername: learn00.evany.de5.net
-  skip-cert-verify: true
-  client-fingerprint: random
-- name: 🇺🇸 US-04
-  type: hysteria2
-  server: us.xfj123.top
-  port: 8881
-  password: 4684baa8-c839-47eb-aac3-0b8ed45c20e5
-  sni: us.xfj123.top
-  skip-cert-verify: true
-- name: 🌍 Node-11
-  type: ss
-  server: 108.181.0.177
-  port: 8388
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: G5p6ww4o67HB
-- name: 🇺🇸 US-05
+      Host: www.bing.com
+- name: 🇬🇧 GB-01
   type: trojan
-  server: 72.167.25.27
+  server: 91.193.58.14
   port: 443
   udp: true
   password: '521314'
@@ -232,9 +139,89 @@ proxies:
       Host: hhtj.hhllfly.kdns.fr
   sni: hhtj.hhllfly.kdns.fr
   skip-cert-verify: true
+- name: 🇺🇸 US-05
+  type: vless
+  server: 162.159.33.118
+  port: 443
+  udp: true
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txtfp=random
+    headers:
+      Host: learn00.evany.de5.net
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: chrome
+- name: 🌍 Node-11
+  type: vless
+  server: 162.159.0.8
+  port: 443
+  udp: true
+  uuid: dd321f25-8f90-4e7c-a1fa-01883a8988a7
+  network: ws
+  ws-opts:
+    path: /pyip=proxyip.cmliussss.net
+    headers:
+      Host: soucuovls.pages.dev
+  tls: true
+  servername: soucuovls.pages.dev
+  client-fingerprint: random
 - name: 🇺🇸 US-06
   type: trojan
-  server: 104.129.167.27
+  server: 14.102.228.27
+  port: 443
+  udp: true
+  password: '521314'
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+  sni: hhtj.hhllfly.kdns.fr
+  skip-cert-verify: true
+- name: 🌍 Node-12
+  type: vless
+  server: 104.18.38.78
+  port: 2087
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt
+    headers:
+      Host: learn00.evany.de5.net
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
+- name: 🌍 Node-13
+  type: vless
+  server: 172.64.145.0
+  port: 443
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt?ed=2560
+    headers:
+      Host: learn00.evany.de5.net
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
+- name: 🌍 Node-14
+  type: vless
+  server: 172.64.146.59
+  port: 2087
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt?ed=2560
+    headers:
+      Host: learn00.evany.de5.net
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
+- name: 🇩🇪 DE-01
+  type: trojan
+  server: 45.80.111.27
   port: 443
   udp: true
   password: '521314'
@@ -247,7 +234,18 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇺 RU-01
   type: trojan
-  server: 92.53.190.27
+  server: 192.65.217.27
+  port: 443
+  password: '521314'
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+  sni: hhtj.hhllfly.kdns.fr
+- name: 🌍 Node-15
+  type: trojan
+  server: 104.234.239.27
   port: 443
   password: '521314'
   network: ws
@@ -256,9 +254,9 @@ proxies:
     headers:
       Host: hhtj.hhllfly.kdns.fr
   sni: hhtj.hhllfly.kdns.fr
-- name: 🇬🇧 GB-05
+- name: 🇬🇧 GB-02
   type: trojan
-  server: 91.193.58.113
+  server: 91.193.58.179
   port: 443
   udp: true
   password: '521314'
@@ -269,59 +267,51 @@ proxies:
       Host: hhtj.hhllfly.kdns.fr
   sni: hhtj.hhllfly.kdns.fr
   skip-cert-verify: true
-- name: 🇬🇧 GB-06
-  type: trojan
-  server: 91.193.58.103
+- name: 🌍 Node-16
+  type: vmess
+  server: 165.140.216.141
   port: 443
   udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇸🇪 SE-02
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  cipher: auto
+  alterId: 0
+- name: 🌍 Node-17
   type: vless
-  server: 104.17.28.89
-  port: 443
-  uuid: 1078d418-b4e0-4668-9018-dc90c2042d61
+  server: www.wto.org
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: workspace.evan00.dpdns.org
-  tls: true
-  servername: workspace.evan00.dpdns.org
-  client-fingerprint: random
-- name: 🇺🇸 US-07
-  type: vmess
-  server: 154.21.83.77
-  port: 8880
-  uuid: 04bccfa1-a6a8-4ace-991f-454624a8766f
-  cipher: auto
-  alterId: 0
+      Host: fuckingfangbinxing.pusytroller.cf
+- name: 🇳🇱 NL-01
+  type: trojan
+  server: 5.10.245.27
+  port: 443
+  udp: true
+  password: '521314'
   network: ws
   ws-opts:
-    path: 04bccfa1-a6a8-4ace-991f-454624a8766f-vm
+    path: /pyip=Telegram-WangCai2🇨🇳
     headers:
-      Host: www.bing.com
-- name: 🇺🇸 US-08
-  type: vless
-  server: 154.17.238.183
-  port: 64414
-  uuid: b7479b73-8cea-4a82-97e8-bacf9bd86605
-  flow: xtls-rprx-vision
-  tls: true
-  servername: apple.com
-  reality-opts:
-    public-key: p-Cb-NIHfAxgTQAR4tbLk-MwadOmd4o_cXT1qx250VE
-    short-id: b0528dc6
-  client-fingerprint: chrome
-- name: 🇬🇧 GB-07
+      Host: hhtj.hhllfly.kdns.fr
+  sni: hhtj.hhllfly.kdns.fr
+  skip-cert-verify: true
+- name: 🇷🇺 RU-02
   type: trojan
-  server: 91.193.58.14
+  server: 185.193.31.27
+  port: 443
+  password: '521314'
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+  sni: hhtj.hhllfly.kdns.fr
+- name: 🇺🇸 US-07
+  type: trojan
+  server: 170.114.45.27
   port: 443
   udp: true
   password: '521314'
@@ -338,68 +328,68 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
   - 🌍 Node-01
+  - 🇺🇸 US-02
   - 🌍 Node-02
-  - 🇬🇧 GB-01
-  - 🇸🇪 SE-01
   - 🌍 Node-03
-  - 🇨🇦 CA-01
-  - 🇬🇧 GB-02
   - 🌍 Node-04
   - 🌍 Node-05
   - 🌍 Node-06
+  - 🇺🇸 US-03
   - 🌍 Node-07
-  - 🇬🇧 GB-03
-  - 🇬🇧 GB-04
   - 🌍 Node-08
   - 🌍 Node-09
   - 🌍 Node-10
   - 🇺🇸 US-04
-  - 🌍 Node-11
+  - 🇬🇧 GB-01
   - 🇺🇸 US-05
+  - 🌍 Node-11
   - 🇺🇸 US-06
+  - 🌍 Node-12
+  - 🌍 Node-13
+  - 🌍 Node-14
+  - 🇩🇪 DE-01
   - 🇷🇺 RU-01
-  - 🇬🇧 GB-05
-  - 🇬🇧 GB-06
-  - 🇸🇪 SE-02
+  - 🌍 Node-15
+  - 🇬🇧 GB-02
+  - 🌍 Node-16
+  - 🌍 Node-17
+  - 🇳🇱 NL-01
+  - 🇷🇺 RU-02
   - 🇺🇸 US-07
-  - 🇺🇸 US-08
-  - 🇬🇧 GB-07
 - name: ♻️ 自动选择
   type: url-test
   proxies:
   - 🇺🇸 US-01
-  - 🇺🇸 US-02
-  - 🇺🇸 US-03
   - 🌍 Node-01
+  - 🇺🇸 US-02
   - 🌍 Node-02
-  - 🇬🇧 GB-01
-  - 🇸🇪 SE-01
   - 🌍 Node-03
-  - 🇨🇦 CA-01
-  - 🇬🇧 GB-02
   - 🌍 Node-04
   - 🌍 Node-05
   - 🌍 Node-06
+  - 🇺🇸 US-03
   - 🌍 Node-07
-  - 🇬🇧 GB-03
-  - 🇬🇧 GB-04
   - 🌍 Node-08
   - 🌍 Node-09
   - 🌍 Node-10
   - 🇺🇸 US-04
-  - 🌍 Node-11
+  - 🇬🇧 GB-01
   - 🇺🇸 US-05
+  - 🌍 Node-11
   - 🇺🇸 US-06
+  - 🌍 Node-12
+  - 🌍 Node-13
+  - 🌍 Node-14
+  - 🇩🇪 DE-01
   - 🇷🇺 RU-01
-  - 🇬🇧 GB-05
-  - 🇬🇧 GB-06
-  - 🇸🇪 SE-02
+  - 🌍 Node-15
+  - 🇬🇧 GB-02
+  - 🌍 Node-16
+  - 🌍 Node-17
+  - 🇳🇱 NL-01
+  - 🇷🇺 RU-02
   - 🇺🇸 US-07
-  - 🇺🇸 US-08
-  - 🇬🇧 GB-07
   url: https://www.gstatic.com/generate_204
   interval: 180
 rules:
