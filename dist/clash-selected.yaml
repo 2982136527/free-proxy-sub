@@ -8,13 +8,32 @@ external-controller: 127.0.0.1:9090
 proxies:
 - name: 🌍 Node-01
   type: ss
-  server: 34.207.235.215
+  server: 138.199.42.68
+  port: 8080
+  udp: true
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🌍 Node-02
+  type: vless
+  server: 67.220.73.204
+  port: 18662
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  client-fingerprint: chrome
+- name: 🌍 Node-03
+  type: ss
+  server: 54.167.54.100
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🌍 Node-02
+- name: 🌍 Node-04
   type: ss
-  server: 54.197.30.38
+  server: 34.207.112.128
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
@@ -25,36 +44,60 @@ proxies:
   uuid: 2a13e0a4-04a5-4be5-90c9-a18b6da4664e
   cipher: auto
   alterId: 0
-- name: 🌍 Node-03
+- name: 🌍 Node-05
+  type: trojan
+  server: 148.72.168.35
+  port: 58615
+  password: bIsrw94HH7zmhmvmGskKIb4HbmOZdcCR
+  sni: 148.72.168.35
+  skip-cert-verify: true
+- name: 🌍 Node-06
   type: ss
   server: 54.226.105.188
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🌍 Node-04
+- name: 🌍 Node-07
   type: ss
-  server: 34.207.112.128
+  server: 100.58.124.178
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇬🇧 GB-01
-  type: trojan
-  server: 91.193.58.41
+- name: 🌍 Node-08
+  type: ss
+  server: 37.19.198.160
   port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🌍 Node-05
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🌍 Node-09
+  type: ss
+  server: 156.146.38.168
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🌍 Node-10
+  type: ss
+  server: 198.98.53.130
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: eDfN7SODQceIOmIAbtJJtK
+- name: 🌍 Node-11
+  type: ss
+  server: 37.19.198.236
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🌍 Node-12
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  cipher: auto
+  alterId: 0
+- name: 🌍 Node-13
   type: vless
   server: 47.253.226.114
   port: 443
-  udp: true
   uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
   flow: xtls-rprx-vision
   tls: true
@@ -62,41 +105,73 @@ proxies:
   reality-opts:
     public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
   client-fingerprint: chrome
-- name: 🇳🇱 NL-01
-  type: trojan
-  server: 194.152.44.27
+- name: 🌍 Node-14
+  type: ss
+  server: 156.146.38.167
   port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇸🇬 SG-01
-  type: trojan
-  server: 92.243.75.27
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🌍 Node-06
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🌍 Node-15
   type: ss
   server: 37.19.198.243
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
+- name: 🌍 Node-16
+  type: ss
+  server: 37.19.198.244
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🌍 Node-17
+  type: ss
+  server: 54.197.30.38
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🌍 Node-18
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  cipher: auto
+  alterId: 0
+- name: 🌍 Node-19
+  type: vless
+  server: 173.245.58.217
+  port: 8443
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt
+    headers:
+      Host: learn00.evany.de5.net
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
+- name: 🇬🇧 GB-01
+  type: trojan
+  server: 91.193.58.237
+  port: 443
+  udp: true
+  password: '521314'
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+  sni: hhtj.hhllfly.kdns.fr
+  skip-cert-verify: true
+- name: 🌍 Node-20
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  cipher: auto
+  alterId: 0
 - name: 🇷🇺 RU-01
   type: trojan
-  server: 114.129.43.27
+  server: 45.131.6.27
   port: 443
   password: '521314'
   network: ws
@@ -107,9 +182,30 @@ proxies:
   sni: hhtj.hhllfly.kdns.fr
 - name: 🇷🇺 RU-02
   type: trojan
-  server: 185.148.107.27
+  server: 45.12.30.27
   port: 443
-  udp: true
+  password: '521314'
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+  sni: hhtj.hhllfly.kdns.fr
+- name: 🇷🇺 RU-03
+  type: trojan
+  server: 108.165.152.27
+  port: 443
+  password: '521314'
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+  sni: hhtj.hhllfly.kdns.fr
+- name: 🇷🇺 RU-04
+  type: trojan
+  server: 89.116.180.27
+  port: 443
   password: '521314'
   network: ws
   ws-opts:
@@ -117,10 +213,36 @@ proxies:
     headers:
       Host: hhtj.hhllfly.kdns.fr
   sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇷🇺 RU-03
+- name: 🌍 Node-21
+  type: vless
+  server: 172.64.154.5
+  port: 8443
+  udp: true
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt
+    headers:
+      Host: learn00.evany.de5.net
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
+- name: 🌍 Node-22
+  type: vless
+  server: 104.18.37.191
+  port: 2087
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt?ed=2560
+    headers:
+      Host: learn00.evany.de5.net
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
+- name: 🇷🇺 RU-05
   type: trojan
-  server: 155.46.213.27
+  server: 185.135.9.27
   port: 443
   password: '521314'
   network: ws
@@ -131,189 +253,7 @@ proxies:
   sni: hhtj.hhllfly.kdns.fr
 - name: 🇬🇧 GB-02
   type: trojan
-  server: 91.193.58.145
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🌍 Node-07
-  type: ss
-  server: 37.19.198.244
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🌍 Node-08
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇷🇺 RU-04
-  type: trojan
-  server: 92.60.74.27
-  port: 443
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-- name: 🇷🇺 RU-05
-  type: trojan
-  server: 45.80.111.27
-  port: 443
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-- name: 🇷🇺 RU-06
-  type: trojan
-  server: 188.244.122.27
-  port: 443
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-- name: 🇬🇧 GB-03
-  type: trojan
-  server: 194.36.55.27
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇬🇧 GB-04
-  type: trojan
-  server: 91.193.58.228
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇬🇧 GB-05
-  type: trojan
-  server: 91.193.58.94
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇷🇺 RU-07
-  type: trojan
-  server: 45.205.0.27
-  port: 443
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-- name: 🇷🇺 RU-08
-  type: trojan
-  server: 193.9.49.27
-  port: 443
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-- name: 🇷🇺 RU-09
-  type: trojan
-  server: 45.194.53.27
-  port: 443
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-- name: 🌍 Node-09
-  type: trojan
-  server: 45.130.125.27
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇺🇸 US-02
-  type: trojan
-  server: 199.34.228.27
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇬🇧 GB-06
-  type: trojan
-  server: 91.193.58.192
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇬🇧 GB-07
-  type: trojan
-  server: 91.193.58.55
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇬🇧 GB-08
-  type: trojan
-  server: 91.193.58.152
+  server: 91.193.58.53
   port: 443
   udp: true
   password: '521314'
@@ -331,67 +271,67 @@ proxy-groups:
   - ♻️ 自动选择
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇺🇸 US-01
   - 🌍 Node-03
   - 🌍 Node-04
-  - 🇬🇧 GB-01
+  - 🇺🇸 US-01
   - 🌍 Node-05
-  - 🇳🇱 NL-01
-  - 🇸🇬 SG-01
   - 🌍 Node-06
+  - 🌍 Node-07
+  - 🌍 Node-08
+  - 🌍 Node-09
+  - 🌍 Node-10
+  - 🌍 Node-11
+  - 🌍 Node-12
+  - 🌍 Node-13
+  - 🌍 Node-14
+  - 🌍 Node-15
+  - 🌍 Node-16
+  - 🌍 Node-17
+  - 🌍 Node-18
+  - 🌍 Node-19
+  - 🇬🇧 GB-01
+  - 🌍 Node-20
   - 🇷🇺 RU-01
   - 🇷🇺 RU-02
   - 🇷🇺 RU-03
-  - 🇬🇧 GB-02
-  - 🌍 Node-07
-  - 🌍 Node-08
   - 🇷🇺 RU-04
+  - 🌍 Node-21
+  - 🌍 Node-22
   - 🇷🇺 RU-05
-  - 🇷🇺 RU-06
-  - 🇬🇧 GB-03
-  - 🇬🇧 GB-04
-  - 🇬🇧 GB-05
-  - 🇷🇺 RU-07
-  - 🇷🇺 RU-08
-  - 🇷🇺 RU-09
-  - 🌍 Node-09
-  - 🇺🇸 US-02
-  - 🇬🇧 GB-06
-  - 🇬🇧 GB-07
-  - 🇬🇧 GB-08
+  - 🇬🇧 GB-02
 - name: ♻️ 自动选择
   type: url-test
   proxies:
   - 🌍 Node-01
   - 🌍 Node-02
-  - 🇺🇸 US-01
   - 🌍 Node-03
   - 🌍 Node-04
-  - 🇬🇧 GB-01
+  - 🇺🇸 US-01
   - 🌍 Node-05
-  - 🇳🇱 NL-01
-  - 🇸🇬 SG-01
   - 🌍 Node-06
+  - 🌍 Node-07
+  - 🌍 Node-08
+  - 🌍 Node-09
+  - 🌍 Node-10
+  - 🌍 Node-11
+  - 🌍 Node-12
+  - 🌍 Node-13
+  - 🌍 Node-14
+  - 🌍 Node-15
+  - 🌍 Node-16
+  - 🌍 Node-17
+  - 🌍 Node-18
+  - 🌍 Node-19
+  - 🇬🇧 GB-01
+  - 🌍 Node-20
   - 🇷🇺 RU-01
   - 🇷🇺 RU-02
   - 🇷🇺 RU-03
-  - 🇬🇧 GB-02
-  - 🌍 Node-07
-  - 🌍 Node-08
   - 🇷🇺 RU-04
+  - 🌍 Node-21
+  - 🌍 Node-22
   - 🇷🇺 RU-05
-  - 🇷🇺 RU-06
-  - 🇬🇧 GB-03
-  - 🇬🇧 GB-04
-  - 🇬🇧 GB-05
-  - 🇷🇺 RU-07
-  - 🇷🇺 RU-08
-  - 🇷🇺 RU-09
-  - 🌍 Node-09
-  - 🇺🇸 US-02
-  - 🇬🇧 GB-06
-  - 🇬🇧 GB-07
-  - 🇬🇧 GB-08
+  - 🇬🇧 GB-02
   url: https://www.gstatic.com/generate_204
   interval: 180
 rules:
