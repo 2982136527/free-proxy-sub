@@ -7,338 +7,241 @@ ipv6: false
 external-controller: 127.0.0.1:9090
 proxies:
 - name: 🌍 Node-01
-  type: hysteria2
-  server: 155.248.209.237
-  port: 33333
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  sni: hy2.123266.xyz
+  type: ss
+  server: 156.146.38.168
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🌍 Node-02
+  type: ss
+  server: 156.146.38.170
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🌍 Node-03
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🌍 Node-04
+  type: ss
+  server: 156.146.38.167
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🌍 Node-05
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  cipher: auto
+  alterId: 0
+- name: 🌍 Node-06
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  cipher: auto
+  alterId: 0
+- name: 🌍 Node-07
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  cipher: auto
+  alterId: 0
+- name: 🌍 Node-08
+  type: trojan
+  server: 64.94.95.114
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+  sni: static.rutube.ru
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🌍 Node-09
+  type: trojan
+  server: 64.94.95.117
+  port: 57142
+  udp: true
+  password: kkzh2prsyr2ik47as615
+  sni: static.rutube.ru
+  skip-cert-verify: true
+  client-fingerprint: chrome
 - name: 🇺🇸 US-01
+  type: vless
+  server: 154.19.184.40
+  port: 52535
+  uuid: a1ac8747-4fd7-486b-b099-19fbb45610be
+- name: 🌍 Node-10
+  type: trojan
+  server: 64.94.95.118
+  port: 57142
+  udp: true
+  password: kkzh2prsyr2ik47as615
+  skip-cert-verify: true
+- name: 🌍 Node-11
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  cipher: auto
+  alterId: 0
+- name: 🌍 Node-12
+  type: ss
+  server: 185.236.200.210
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: XF0klw7870vXn3uQIxe19Q
+- name: 🌍 Node-13
+  type: ss
+  server: 156.146.38.195
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: XF0klw7870vXn3uQIxe19Q
+- name: 🌍 Node-14
+  type: trojan
+  server: 64.94.95.115
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+  sni: static.rutube.ru
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🌍 Node-15
+  type: ss
+  server: 108.181.0.177
+  port: 8388
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
+- name: 🇺🇸 US-02
   type: hysteria2
   server: 159.65.79.184
   port: 443
   password: 28d38ce6-7c79-4e9d-9175-2186da5be395
   sni: addons.mozilla.org
   skip-cert-verify: true
-- name: 🌍 Node-02
+- name: 🌍 Node-16
   type: hysteria2
   server: 159.65.79.184
   port: 20000
   password: 28d38ce6-7c79-4e9d-9175-2186da5be395
   sni: addons.mozilla.org
   skip-cert-verify: true
-- name: 🌍 Node-03
-  type: vless
-  server: marzban-node-production-43c6.up.railway.app
-  port: 443
-  uuid: 0298d0d5-4a7e-490e-b99e-bd67408c9385
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: marzban-node-production-43c6.up.railway.app
-  tls: true
-  servername: marzban-node-production-43c6.up.railway.app
-  alpn:
-  - h2
-  client-fingerprint: chrome
-- name: 🌍 Node-04
-  type: vless
-  server: ansooyefilter88.up.railway.app
-  port: 443
-  uuid: a219d501-b239-24e0-352a-553180e0de84
-  network: ws
-  ws-opts:
-    path: /ws/a219d501-b239-24e0-352a-553180e0de84
-    headers:
-      Host: ansooyefilter88.up.railway.app
-  tls: true
-  servername: ansooyefilter88.up.railway.app
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-- name: 🌍 Node-05
-  type: vless
-  server: tmesubgift.up.railway.app
-  port: 443
-  uuid: 0ac6ad68-45cb-cd9e-459b-446568d15f69
-  network: ws
-  ws-opts:
-    path: /ws/0ac6ad68-45cb-cd9e-459b-446568d15f69
-    headers:
-      Host: tmesubgift.up.railway.app
-  tls: true
-  servername: tmesubgift.up.railway.app
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-- name: 🌍 Node-06
-  type: vless
-  server: z-e-u-s-panel-ogpqo9.z-e-u-s-7mdylr.workers.dev
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-b49a1b60af30
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/50414e45
-    headers:
-      Host: z-e-u-s-panel-ogpqo9.z-e-u-s-7mdylr.workers.dev
-  tls: true
-  servername: z-e-u-s-panel-ogpqo9.z-e-u-s-7mdylr.workers.dev
-  client-fingerprint: chrome
-- name: 🌍 Node-07
-  type: vmess
-  server: 172.64.82.215
-  port: 2095
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: /hgcefomn
-- name: 🌍 Node-08
-  type: vmess
-  server: 172.67.158.147
-  port: 2095
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: /hgcefomn
-- name: 🌍 Node-09
-  type: vless
-  server: 104.27.66.214
-  port: 8443
-  uuid: f798a2c4-c51b-409d-b349-ca8455b36796
-  network: ws
-  ws-opts:
-    path: /download.php
-    headers:
-      Host: chopin.adaspoloandco.com
-  tls: true
-  servername: chopin.adaspoloandco.com
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-- name: 🌍 Node-10
-  type: vless
-  server: diligent-laughter-production-f70e.up.railway.app
-  port: 443
-  uuid: 5670900d-db88-4815-ac82-1f56337271f0
-  network: ws
-  ws-opts:
-    path: /in1
-    headers:
-      Host: diligent-laughter-production-f70e.up.railway.app
-  tls: true
-  servername: diligent-laughter-production-f70e.up.railway.app
-  client-fingerprint: chrome
-- name: 🌍 Node-11
-  type: vmess
-  server: 162.159.240.102
-  port: 2095
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: /hgcefomn
-- name: 🌍 Node-12
-  type: vmess
-  server: 172.64.229.116
-  port: 8880
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: /XQ2WCa29jfDMGBcbnQ
-- name: 🌍 Node-13
-  type: trojan
-  server: cf.130209.xyz
-  port: 2053
-  udp: true
-  password: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  network: ws
-  ws-opts:
-    path: /api/v2/check_update
-    headers:
-      Host: v4.ipsb.us.ci
-  sni: v4.ipsb.us.ci
-- name: 🌍 Node-14
-  type: vmess
-  server: 154.92.9.115
-  port: 80
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: /blue
-- name: 🌍 Node-15
-  type: vmess
-  server: 154.92.9.231
-  port: 80
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: /blue
-- name: 🌍 Node-16
-  type: vmess
-  server: 426hk.fans8.xyz
-  port: 443
-  uuid: 93bdaed5-13c5-3927-93d7-a6877c5ac8d2
-  cipher: auto
-  alterId: 2
-  network: ws
-  ws-opts:
-    path: /ray
-    headers:
-      Host: 426hk.fans8.xyz
-  tls: true
-  servername: 426hk.fans8.xyz
 - name: 🌍 Node-17
-  type: vmess
-  server: 104.24.189.34
-  port: 443
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: /wss13889
-  tls: true
+  type: ss
+  server: 108.181.118.10
+  port: 8388
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
 - name: 🌍 Node-18
-  type: vmess
-  server: 104.27.1.129
-  port: 443
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: /wss13889
-  tls: true
-- name: 🌍 Node-19
-  type: vmess
-  server: 104.18.14.229
-  port: 443
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: /wss51068
-  tls: true
-- name: 🌍 Node-20
-  type: vmess
-  server: 104.17.69.9
-  port: 443
-  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: /speedtest
-  tls: true
-- name: 🌍 Node-21
   type: vless
-  server: ez-abcc2c.igunsjgjnfgn.workers.dev
-  port: 2096
-  uuid: 50414e45-4c5f-5a45-5553-9b0ee99e36dd
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/50414e45
-    headers:
-      Host: ez-abcc2c.igunsjgjnfgn.workers.dev
+  server: 15.204.97.216
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
   tls: true
-  servername: ez-abcc2c.igunsjgjnfgn.workers.dev
-- name: 🇩🇪 DE-01
-  type: trojan
-  server: hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: de.catxstar.com
-  skip-cert-verify: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   client-fingerprint: chrome
+- name: 🌍 Node-19
+  type: hysteria2
+  server: 155.248.209.237
+  port: 33333
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  sni: hy2.123266.xyz
+- name: 🌍 Node-20
+  type: vless
+  server: 15.204.97.214
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🌍 Node-21
+  type: ss
+  server: 198.98.53.130
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: eDfN7SODQceIOmIAbtJJtK
 - name: 🌍 Node-22
   type: vless
-  server: codecanyon.net
-  port: 8880
-  udp: true
-  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: odd-darkness-57ce.334-a29.workers.dev
-- name: 🌍 Node-23
-  type: trojan
-  server: oxnet-v1.pxxl.run
-  port: 443
-  udp: true
-  password: 18126aaff3f6bdc7270728754fc4478b
-  sni: oxnet-v1.pxxl.run
-- name: 🌍 Node-24
-  type: trojan
-  server: app-538961.user-y0o4gm.workers.dev
-  port: 443
-  password: 0b5fa773-6f37-4134-87d4-0c349742b6f6
-  network: ws
-  ws-opts:
-    path: /cmh
-  sni: app-538961.user-y0o4gm.workers.dev
-  client-fingerprint: chrome
-- name: 🌍 Node-25
-  type: vless
-  server: www.speedtest.net
-  port: 2096
-  uuid: 0c90175d-41df-4a62-c663-67b8652371c4
-  network: ws
-  ws-opts:
-    path: /@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN--@LOCKEY_VPN
-    headers:
-      Host: nginx.tehranspeedtestdncheckerinternetchecker.ir
+  server: 15.204.97.198
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
   tls: true
-  servername: nginx.tehranspeedtestdncheckerinternetchecker.ir
-  alpn:
-  - http/1.1
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🌍 Node-23
+  type: vless
+  server: 15.204.97.206
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🌍 Node-24
+  type: ss
+  server: 54.197.30.38
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🌍 Node-25
+  type: ss
+  server: 34.207.235.215
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 US-03
+  type: vless
+  server: 154.21.83.77
+  port: 27071
+  uuid: 04bccfa1-a6a8-4ace-991f-454624a8766f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: apple.com
+  reality-opts:
+    public-key: SAs3uQL5KmOZf8xmZPx5p-O1YbvbLO8od8GWhaE_V08
+    short-id: abe0823d
   client-fingerprint: chrome
 - name: 🌍 Node-26
   type: vless
-  server: 69.46.46.2
-  port: 443
-  uuid: d407e42e-6b35-2992-5e63-edcf5e05fa91
-  network: ws
-  ws-opts:
-    path: /ws/d407e42e-6b35-2992-5e63-edcf5e05fa91fp=chrome
-    headers:
-      Host: rvg-production-0b99.up.railway.app
+  server: 15.204.97.197
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
   tls: true
-  servername: rvg-production-0b99.up.railway.app
-  alpn:
-  - http/1.1
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
 - name: 🌍 Node-27
-  type: trojan
-  server: jp-h1.sshub.xyz
-  port: 443
-  password: 61605c66-6d41-4b9d-a496-b9898f3f95d0
-- name: 🌍 Node-28
   type: vless
-  server: 69.46.46.1
-  port: 443
-  uuid: 085350bf-3af2-a06b-3006-9d7ea314475e
-  network: ws
-  ws-opts:
-    path: /ws/085350bf-3af2-a06b-3006-9d7ea314475e
-    headers:
-      Host: rvg-production-2066.up.railway.app
+  server: 15.204.97.195
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
   tls: true
-  servername: rvg-production-2066.up.railway.app
-  alpn:
-  - http/1.1
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   client-fingerprint: chrome
 proxy-groups:
 - name: 🇺🇳 精选节点
@@ -346,7 +249,6 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🌍 Node-01
-  - 🇺🇸 US-01
   - 🌍 Node-02
   - 🌍 Node-03
   - 🌍 Node-04
@@ -355,31 +257,31 @@ proxy-groups:
   - 🌍 Node-07
   - 🌍 Node-08
   - 🌍 Node-09
+  - 🇺🇸 US-01
   - 🌍 Node-10
   - 🌍 Node-11
   - 🌍 Node-12
   - 🌍 Node-13
   - 🌍 Node-14
   - 🌍 Node-15
+  - 🇺🇸 US-02
   - 🌍 Node-16
   - 🌍 Node-17
   - 🌍 Node-18
   - 🌍 Node-19
   - 🌍 Node-20
   - 🌍 Node-21
-  - 🇩🇪 DE-01
   - 🌍 Node-22
   - 🌍 Node-23
   - 🌍 Node-24
   - 🌍 Node-25
+  - 🇺🇸 US-03
   - 🌍 Node-26
   - 🌍 Node-27
-  - 🌍 Node-28
 - name: ♻️ 自动选择
   type: url-test
   proxies:
   - 🌍 Node-01
-  - 🇺🇸 US-01
   - 🌍 Node-02
   - 🌍 Node-03
   - 🌍 Node-04
@@ -388,26 +290,27 @@ proxy-groups:
   - 🌍 Node-07
   - 🌍 Node-08
   - 🌍 Node-09
+  - 🇺🇸 US-01
   - 🌍 Node-10
   - 🌍 Node-11
   - 🌍 Node-12
   - 🌍 Node-13
   - 🌍 Node-14
   - 🌍 Node-15
+  - 🇺🇸 US-02
   - 🌍 Node-16
   - 🌍 Node-17
   - 🌍 Node-18
   - 🌍 Node-19
   - 🌍 Node-20
   - 🌍 Node-21
-  - 🇩🇪 DE-01
   - 🌍 Node-22
   - 🌍 Node-23
   - 🌍 Node-24
   - 🌍 Node-25
+  - 🇺🇸 US-03
   - 🌍 Node-26
   - 🌍 Node-27
-  - 🌍 Node-28
   url: https://www.gstatic.com/generate_204
   interval: 180
 rules:
