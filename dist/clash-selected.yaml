@@ -7,193 +7,210 @@ ipv6: false
 external-controller: 127.0.0.1:9090
 proxies:
 - name: 🌍 Node-01
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  udp: true
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
+  type: ss
+  server: 54.197.30.38
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🌍 Node-02
   type: ss
-  server: 173.244.56.6
+  server: 54.167.54.100
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🌍 Node-03
+  type: ss
+  server: 34.207.235.215
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🌍 Node-04
+  type: ss
+  server: 100.58.124.178
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🌍 Node-05
+  type: ss
+  server: 34.207.112.128
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🌍 Node-06
+  type: ss
+  server: 54.226.105.188
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 US-01
+  type: vmess
+  server: 47.253.229.174
+  port: 50219
+  uuid: 2a13e0a4-04a5-4be5-90c9-a18b6da4664e
+  cipher: auto
+  alterId: 0
+- name: 🌍 Node-07
+  type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  client-fingerprint: chrome
+- name: 🌍 Node-08
+  type: ss
+  server: 37.19.198.160
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🌍 Node-03
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  cipher: auto
-  alterId: 0
-- name: 🇺🇸 US-01
-  type: vmess
-  server: 154.17.238.183
-  port: 8880
-  uuid: b7479b73-8cea-4a82-97e8-bacf9bd86605
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: b7479b73-8cea-4a82-97e8-bacf9bd86605-vm
-    headers:
-      Host: www.bing.com
-- name: 🌍 Node-04
-  type: ss
-  server: 108.181.0.177
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: G5p6ww4o67HB
-- name: 🌍 Node-05
-  type: ss
-  server: 185.236.200.210
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: XF0klw7870vXn3uQIxe19Q
-- name: 🌍 Node-06
-  type: vless
-  server: 154.17.238.183
-  port: 64414
-  uuid: b7479b73-8cea-4a82-97e8-bacf9bd86605
-  flow: xtls-rprx-vision
-  tls: true
-  servername: apple.com
-  reality-opts:
-    public-key: p-Cb-NIHfAxgTQAR4tbLk-MwadOmd4o_cXT1qx250VE
-    short-id: b0528dc6
-  client-fingerprint: chrome
-- name: 🌍 Node-07
-  type: vless
-  server: 154.19.184.40
-  port: 52535
-  uuid: a1ac8747-4fd7-486b-b099-19fbb45610be
-- name: 🌍 Node-08
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  cipher: auto
-  alterId: 0
 - name: 🌍 Node-09
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  cipher: auto
-  alterId: 0
+  type: ss
+  server: 37.19.198.236
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🌍 Node-10
   type: ss
-  server: 173.244.56.9
+  server: 37.19.198.243
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🌍 Node-11
   type: vless
-  server: 154.64.228.51
-  port: 44194
-  uuid: 3857c126-6475-4dd7-d219-2e1d8fd43684
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 Node-12
-  type: vless
-  server: us5-r.link-t7.com
-  port: 10242
-  uuid: 65ED2A4D-E1DB-4310-AB85-65C711BA873A
-  network: grpc
-  grpc-opts:
-    grpc-service-name: movie
-  tls: true
-  servername: s0.awsstatic.com
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  client-fingerprint: chrome
-- name: 🌍 Node-13
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  cipher: auto
-  alterId: 0
-- name: 🌍 Node-14
-  type: vless
-  server: 167.17.68.205
+  server: 162.159.43.28
   port: 443
   udp: true
-  uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs
-    short-id: 250b5976473a
-  client-fingerprint: chrome
-- name: 🌍 Node-15
-  type: vmess
-  server: 154.21.83.77
-  port: 8880
-  uuid: 04bccfa1-a6a8-4ace-991f-454624a8766f
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: 04bccfa1-a6a8-4ace-991f-454624a8766f-vm
-    headers:
-      Host: www.bing.com
-- name: 🌍 Node-16
-  type: ss
-  server: 108.181.118.10
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: G5p6ww4o67HB
-- name: 🌍 Node-17
-  type: vmess
-  server: 154.64.228.51
-  port: 7739
-  uuid: 63d54df4-02eb-413e-beba-95e27bee760f
-  cipher: auto
-  alterId: 0
-  network: ws
-  ws-opts:
-    path: /arki
-- name: 🌍 Node-18
-  type: vless
-  server: 108.162.192.161
-  port: 443
   uuid: 29ca503d-e6b8-4509-b666-48133f450857
   network: ws
   ws-opts:
-    path: /fdip=tw.william.us.ci!txt?ed=2560
+    path: /fdip=tw.william.us.ci!txt
     headers:
       Host: learn00.evany.de5.net
   tls: true
   servername: learn00.evany.de5.net
   client-fingerprint: random
+- name: 🌍 Node-12
+  type: vless
+  server: deepl.com
+  port: 8880
+  uuid: 6d73dc1e-1627-4b16-b471-53e63aa16c78
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: sweet-truth-ccdb.134-7e9.workers.dev
+- name: 🌍 Node-13
+  type: vless
+  server: 002.inc-electrocell-001-002.workers.dev
+  port: 443
+  uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
+    headers:
+      Host: 002.inc-electrocell-001-002.workers.dev
+  tls: true
+  servername: 002.Inc-ElectROcElL-001-002.WoRKERS.DEV
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+- name: 🇺🇸 US-02
+  type: vless
+  server: 162.159.6.235
+  port: 443
+  udp: true
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt
+    headers:
+      Host: learn00.evany.de5.net
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
+- name: 🌍 Node-14
+  type: ss
+  server: 37.19.198.244
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 US-03
+  type: vless
+  server: icook.hk
+  port: 443
+  udp: true
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt
+    headers:
+      Host: learn00.evany.de5.net
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
+- name: 🌍 Node-15
+  type: trojan
+  server: vless.herogoing.top
+  port: 443
+  password: bpb-trojan
+  network: ws
+  ws-opts:
+    path: /tr?ed=2560
+  sni: vless.herogoing.top
+  client-fingerprint: chrome
+- name: 🌍 Node-16
+  type: vless
+  server: 162.159.38.78
+  port: 443
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txtfp=random
+    headers:
+      Host: learn00.evany.de5.net
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: chrome
+- name: 🌍 Node-17
+  type: vless
+  server: 162.159.7.178
+  port: 443
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt
+    headers:
+      Host: learn00.evany.de5.net
+  tls: true
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
+- name: 🌍 Node-18
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  cipher: auto
+  alterId: 0
 - name: 🌍 Node-19
   type: vless
-  server: us2-r.link-t7.com
-  port: 10239
-  udp: true
-  uuid: 6BA21C4F-87EA-43D9-B0C9-BCD40900DAF8
-  network: grpc
-  grpc-opts:
-    grpc-service-name: movie
+  server: 162.159.44.191
+  port: 443
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt
+    headers:
+      Host: learn00.evany.de5.net
   tls: true
-  servername: s0.awsstatic.com
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  client-fingerprint: chrome
+  servername: learn00.evany.de5.net
+  client-fingerprint: random
 - name: 🌍 Node-20
   type: vless
-  server: 172.64.52.97
-  port: 443
+  server: 162.159.6.103
+  port: 2053
   uuid: 29ca503d-e6b8-4509-b666-48133f450857
   network: ws
   ws-opts:
@@ -205,21 +222,56 @@ proxies:
   client-fingerprint: random
 - name: 🌍 Node-21
   type: vless
-  server: 172.64.146.59
-  port: 2087
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  server: 104.18.241.114
+  port: 2095
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
   network: ws
   ws-opts:
-    path: /fdip=tw.william.us.ci!txt?ed=2560
+    path: /l25hqs0onbig
     headers:
-      Host: learn00.evany.de5.net
-  tls: true
-  servername: learn00.evany.de5.net
-  client-fingerprint: random
+      Host: index.arcane509.workers.dev
 - name: 🌍 Node-22
   type: vless
-  server: 162.159.45.24
-  port: 8443
+  server: 172.67.185.178
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  tls: true
+  servername: hhlfy.twiladaphne.ndjp.net
+  client-fingerprint: chrome
+- name: 🌍 Node-23
+  type: vless
+  server: ezaccess1-x4g-ezaccess1-c619.up.railway.app
+  port: 443
+  uuid: 5a832c52-da28-b23c-ba24-d8a900e3982e
+  network: ws
+  ws-opts:
+    path: /ws/5a832c52-da28-b23c-ba24-d8a900e3982e
+    headers:
+      Host: ezaccess1-x4g-ezaccess1-c619.up.railway.app
+  tls: true
+  servername: ezaccess1-x4g-ezaccess1-c619.up.railway.app
+  alpn:
+  - http/1.1
+  client-fingerprint: ios
+- name: 🇷🇺 RU-01
+  type: vless
+  server: 104.16.239.191
+  port: 8880
+  uuid: 7a2df38b-2d8b-486b-9b43-641c81e11f40
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: shiny-mud-d9fa.466.workers.dev
+- name: 🌍 Node-24
+  type: vless
+  server: 108.162.198.58
+  port: 443
   uuid: 29ca503d-e6b8-4509-b666-48133f450857
   network: ws
   ws-opts:
@@ -229,93 +281,30 @@ proxies:
   tls: true
   servername: learn00.evany.de5.net
   client-fingerprint: random
-- name: 🇬🇧 GB-01
-  type: trojan
-  server: 185.193.28.27
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇷🇺 RU-01
-  type: trojan
-  server: 103.169.142.27
-  port: 443
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-- name: 🇹🇷 TR-01
-  type: trojan
-  server: 91.206.71.27
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
-- name: 🇷🇺 RU-02
-  type: trojan
-  server: 199.34.228.27
-  port: 443
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-- name: 🌍 Node-23
+- name: 🌍 Node-25
   type: vless
-  server: 172.67.149.60
-  port: 443
-  uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
+  server: 209.94.90.4
+  port: 80
+  uuid: 58c1b245-2ea0-40b9-b512-bd2bbe3cbe3f
   network: ws
   ws-opts:
-    path: /id-tksi?ed=2048
+    path: /pyip=Telegram🇨🇳 @WangCai2
     headers:
-      Host: support.zoom.us.yxls.eu.cc
-  tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  client-fingerprint: chrome
-- name: 🌍 Node-24
+      Host: solitary-mountain-996f.223-38e.workers.dev
+- name: 🇺🇸 US-04
   type: vless
-  server: 172.64.146.142
+  server: 162.159.39.247
   port: 8443
+  udp: true
   uuid: 29ca503d-e6b8-4509-b666-48133f450857
   network: ws
   ws-opts:
-    path: /fdip=tw.william.us.ci!txt
+    path: /fdip=tw.william.us.ci!txtfp=random
     headers:
       Host: learn00.evany.de5.net
   tls: true
   servername: learn00.evany.de5.net
-  client-fingerprint: random
-- name: 🇺🇸 US-02
-  type: trojan
-  server: 159.242.242.27
-  port: 443
-  udp: true
-  password: '521314'
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-  sni: hhtj.hhllfly.kdns.fr
-  skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: 🇺🇳 精选节点
   type: select
@@ -324,10 +313,10 @@ proxy-groups:
   - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
-  - 🇺🇸 US-01
   - 🌍 Node-04
   - 🌍 Node-05
   - 🌍 Node-06
+  - 🇺🇸 US-01
   - 🌍 Node-07
   - 🌍 Node-08
   - 🌍 Node-09
@@ -335,7 +324,9 @@ proxy-groups:
   - 🌍 Node-11
   - 🌍 Node-12
   - 🌍 Node-13
+  - 🇺🇸 US-02
   - 🌍 Node-14
+  - 🇺🇸 US-03
   - 🌍 Node-15
   - 🌍 Node-16
   - 🌍 Node-17
@@ -344,23 +335,21 @@ proxy-groups:
   - 🌍 Node-20
   - 🌍 Node-21
   - 🌍 Node-22
-  - 🇬🇧 GB-01
-  - 🇷🇺 RU-01
-  - 🇹🇷 TR-01
-  - 🇷🇺 RU-02
   - 🌍 Node-23
+  - 🇷🇺 RU-01
   - 🌍 Node-24
-  - 🇺🇸 US-02
+  - 🌍 Node-25
+  - 🇺🇸 US-04
 - name: ♻️ 自动选择
   type: url-test
   proxies:
   - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
-  - 🇺🇸 US-01
   - 🌍 Node-04
   - 🌍 Node-05
   - 🌍 Node-06
+  - 🇺🇸 US-01
   - 🌍 Node-07
   - 🌍 Node-08
   - 🌍 Node-09
@@ -368,7 +357,9 @@ proxy-groups:
   - 🌍 Node-11
   - 🌍 Node-12
   - 🌍 Node-13
+  - 🇺🇸 US-02
   - 🌍 Node-14
+  - 🇺🇸 US-03
   - 🌍 Node-15
   - 🌍 Node-16
   - 🌍 Node-17
@@ -377,13 +368,11 @@ proxy-groups:
   - 🌍 Node-20
   - 🌍 Node-21
   - 🌍 Node-22
-  - 🇬🇧 GB-01
-  - 🇷🇺 RU-01
-  - 🇹🇷 TR-01
-  - 🇷🇺 RU-02
   - 🌍 Node-23
+  - 🇷🇺 RU-01
   - 🌍 Node-24
-  - 🇺🇸 US-02
+  - 🌍 Node-25
+  - 🇺🇸 US-04
   url: https://www.gstatic.com/generate_204
   interval: 180
 rules:
