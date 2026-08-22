@@ -6,298 +6,32 @@ log-level: warning
 ipv6: false
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🌍 Node-01
-  type: trojan
-  server: 104.26.6.112
-  port: 443
-  password: blue2024
-  sni: tb.promote.icu
-- name: 🌍 Node-02
+- name: 🇺🇸 US-01
   type: vless
-  server: 104.17.121.3
-  port: 443
-  uuid: f0750b15-37dd-44e4-803a-c62d3237f2fa
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiUHFXRURhd1hFZyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
-    headers:
-      Host: 1017.bagsell-1017.workers.dev
-  tls: true
-  servername: 1017.bagsell-1017.workers.dev
-  client-fingerprint: chrome
-- name: 🌍 Node-03
-  type: vless
-  server: 104.17.90.38
-  port: 80
-  uuid: dd53235d-06c2-4120-9278-b93ddc969d0d
-  network: ws
-  ws-opts:
-    path: /secure-vpn/
-    headers:
-      Host: ppp.19bot.ir
-- name: 🌍 Node-04
-  type: vless
-  server: 172.64.229.220
-  port: 2096
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  network: ws
-  ws-opts:
-    path: /socks5=gogo:gogo@185.184.70.120:50088
-    headers:
-      Host: gogo.kmj.qzz.io
-  tls: true
-  servername: gogo.kmj.qzz.io
-  client-fingerprint: chrome
-- name: 🌍 Node-05
-  type: vless
-  server: 190.93.246.166
-  port: 80
-  uuid: 435bda4c-fe5e-42c9-a3ad-15334943b38a
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us3.rtacg.com
-- name: 🌍 Node-06
-  type: vless
-  server: 104.21.1.102
-  port: 2095
-  uuid: e382220d-7ecb-4063-89f3-fd5a4d46ee87
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiYmMxRGZIeDNQIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==
-    headers:
-      Host: newbp.amiralinorozjam.workers.dev
-- name: 🌍 Node-07
-  type: vless
-  server: 104.17.139.37
-  port: 2087
-  uuid: 7f50ec42-4673-41e2-94be-ae6253909def
-  network: ws
-  ws-opts:
-    path: /?ed=2048fp=chromesecurity=tls
-    headers:
-      Host: joey.freen1.de5.net
-- name: 🌍 Node-08
-  type: trojan
-  server: 154.197.75.32
-  port: 443
-  password: blue2024
-  network: ws
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: tb.promote.icu
-  sni: b.promote.icu
-- name: 🌍 Node-09
-  type: vless
-  server: 172.66.47.109
-  port: 2096
-  uuid: 0fdc0235-0055-4203-a66f-f29e7e663d10
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: tnetplus3.pages.dev
-  tls: true
-  servername: tnetplus3.pages.dev
-  client-fingerprint: random
-- name: 🌍 Node-10
-  type: vless
-  server: 104.21.24.164
-  port: 443
-  uuid: 98950131-7300-4b69-8fcf-3d707798c5fa
-  network: ws
-  ws-opts:
-    path: /vl/VYbjwc0cGbpKoFHInh?ed=2560
-    headers:
-      Host: micro-svc-2337e0.amiralihsp27.workers.dev
-  tls: true
-  servername: miCRo-SvC-2337e0.AmiraLIHsp27.wORKers.dEV
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-- name: 🌍 Node-11
-  type: vless
-  server: 172.67.159.3
-  port: 443
-  uuid: af563223-7402-4ecd-bbf9-10f7410753fa
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ld.242311.xyz
-  tls: true
-  servername: ld.242311.xyz
-  client-fingerprint: chrome
-- name: 🌍 Node-12
-  type: vless
-  server: 104.21.73.31
-  port: 8443
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-005.novayjr9g.info
-  tls: true
-  servername: ad-005.novayjr9g.info
-  client-fingerprint: chrome
-- name: 🌍 Node-13
-  type: vless
-  server: 104.19.53.23
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  ws-opts:
-    path: /
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  client-fingerprint: chrome
-- name: 🌍 Node-14
-  type: vless
-  server: 172.66.40.99
-  port: 8080
-  uuid: 69a6c712-278b-47a7-a4af-1bebb72dae20
-  network: ws
-  ws-opts:
-    path: /-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6?ed=2048
-    headers:
-      Host: t.lightningg.ip-ddns.com
-- name: 🌍 Node-15
-  type: vless
-  server: 109.176.239.251
-  port: 8880
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-    headers:
-      Host: cf.d3z.net
-- name: 🌍 Node-16
-  type: vless
-  server: 89.116.161.251
-  port: 8880
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cf.d3z.net
-- name: 🌍 Node-17
-  type: vless
-  server: 89.117.112.251
-  port: 8880
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳
-    headers:
-      Host: cf.d3z.net
-- name: 🌍 Node-18
-  type: vless
-  server: 188.42.88.253
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /Free-VPN-CF-Geo-Project/HK?ed=2560
-    headers:
-      Host: joss.jak.biz.id
-- name: 🌍 Node-19
-  type: vless
-  server: 151.101.37.124
-  port: 443
-  uuid: 5150600b-d270-4be8-8d78-c5784d3c093b
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sv33traiersdmifdsne.ai
-  tls: true
-  servername: dialacoke.com
-- name: 🌍 Node-20
-  type: vless
-  server: 45.131.5.132
-  port: 80
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  network: ws
-  ws-opts:
-    path: Telegram@WangCai2/?ed=2560
-    headers:
-      Host: 301.pooriam.ir
-- name: 🌍 Node-21
-  type: trojan
-  server: 104.16.127.23
-  port: 443
-  password: uV8u9Q41e2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: DieGo.DIEgoMAraDOnA.iR.
-  sni: DieGo.DIEgoMAraDOnA.iR.
-- name: 🌍 Node-22
-  type: trojan
-  server: 104.18.67.16
-  port: 443
-  password: Aimer
-  sni: epccu.ambercc.filegear-sg.me
-- name: 🌍 Node-23
-  type: trojan
-  server: 104.16.119.133
+  server: 104.21.5.253
   port: 2083
-  password: '91658'
-  network: ws
-  ws-opts:
-    path: /tr0RtaRiwLL9Y1bKDC/dHMuaHBjLnR3?ed=2560
-    headers:
-      Host: mywebpan.114514660.xyz
-  sni: mywEBpAN.114514660.XyZ
-  alpn:
-  - http/1.1
-  client-fingerprint: random
-- name: 🌍 Node-24
-  type: trojan
-  server: 104.21.7.241
-  port: 443
-  password: your_password
-  network: ws
-  ws-opts:
-    path: /f1rocket
-    headers:
-      Host: aws-ch-zurich-1.f1cflineb.com
-  sni: aws-ch-zurich-1.f1cflineb.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🌍 Node-25
-  type: trojan
-  server: 104.17.147.8
-  port: 443
-  password: 4aec4e7f8cf8454ea4613659822e1a61
+  uuid: 73b6dbd5-a27a-4c76-9ad1-42a82380dddb
   network: ws
   ws-opts:
     path: /
-  sni: jobscareerforstudent.com
-- name: 🌍 Node-26
-  type: vless
-  server: marzban-node-production-96f4.up.railway.app
-  port: 443
-  uuid: 0b0b76ef-4d54-4263-be1f-f40a9ff2bbcc
+  tls: true
+  servername: ed.ariesver.online
+- name: 🇺🇸 US-02
+  type: vmess
+  server: 104.21.224.157
+  port: 80
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  cipher: auto
+  alterId: 0
   network: ws
   ws-opts:
-    path: /vless
+    path: /?ed=2048&Telegram🇨🇳
     headers:
-      Host: marzban-node-production-96f4.up.railway.app
-  tls: true
-  servername: marzban-node-production-96f4.up.railway.app
-  alpn:
-  - h2
-  client-fingerprint: ios
-- name: 🌍 Node-27
+      Host: a.prapt1.ir
+- name: 🌍 Node-01
   type: vless
-  server: 198.41.223.58
-  port: 443
+  server: 108.162.198.104
+  port: 2053
   uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
   network: ws
   ws-opts:
@@ -306,41 +40,328 @@ proxies:
       Host: kalami-eew.pages.dev
   tls: true
   servername: kalami-eew.pages.dev
-- name: 🌍 Node-28
+- name: 🌍 Node-02
   type: vless
-  server: 172.64.53.24
+  server: 104.18.34.251
   port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   network: ws
   ws-opts:
-    path: /%3Fed
+    path: /Telegram-@V2ray_Alpha/?ed=2560
     headers:
-      Host: powered-by-surena.configfarsi695fce27aa549.workers.dev
+      Host: b458ab02.CAa-cHANel-woRkEr-PaGE-FRee-jHUIhNUJhPhjkl-NiHGkjn.paGEs.dev
   tls: true
-  servername: powered-by-surena.configfarsi695fce27aa549.workers.dev
-- name: 🌍 Node-29
-  type: trojan
-  server: 104.17.108.1
+  servername: B458aB02.cAa-CHANEL-WORKER-pAge-fREE-jhUiHnuJhpHJKL-nIHGKjn.PAges.Dev
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: random
+- name: 🌍 Node-03
+  type: vmess
+  server: 195.85.59.170
   port: 443
-  password: B7X8C5rOaZ
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  cipher: auto
+  alterId: 0
+  network: ws
+  ws-opts:
+    path: /afrhms16v.bestxray.buzz/linkws
+    headers:
+      Host: 1c11-muddy-rice-1c11.vetanex501.workers.dev
+  tls: true
+  servername: 1c11-muddy-rice-1c11.vetanex501.workers.dev
+- name: 🌍 Node-04
+  type: vmess
+  server: 172.67.229.33
+  port: 2086
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  cipher: auto
+  alterId: 0
+  network: ws
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+    headers:
+      Host: ca6.tehme100.fun
+- name: 🌍 Node-05
+  type: vmess
+  server: 104.21.69.44
+  port: 8443
+  uuid: 2f2a7a62-3a15-41c4-98c3-ba062e291d24
+  cipher: auto
+  alterId: 0
+  network: grpc
+  grpc-opts:
+    grpc-service-name: VPNHOMES
+  tls: true
+  servername: fragment2.karop.homes
+- name: 🌍 Node-06
+  type: trojan
+  server: 172.67.188.24
+  port: 443
+  password: your_password
+  network: ws
+  ws-opts:
+    path: /f1rocket
+    headers:
+      Host: aws-uk-london-1.f1cflineb.com
+  sni: aws-uk-london-1.f1cflineb.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🌍 Node-07
+  type: trojan
+  server: 104.16.189.90
+  port: 443
+  password: NISHIKUITAN222
+- name: 🌍 Node-08
+  type: vless
+  server: 104.21.40.208
+  port: 443
+  uuid: 245bb424-b186-4738-8f42-bdbde719d4c9
+  network: ws
+  ws-opts:
+    path: /nova-geo-psiphon-dk
+    headers:
+      Host: pinalo13.zenvorix.ir
+  tls: true
+  servername: pinalo13.zenvorix.ir
+  alpn:
+  - h2
+  client-fingerprint: chrome
+- name: 🌍 Node-09
+  type: vmess
+  server: 104.21.221.109
+  port: 80
+  udp: true
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  cipher: auto
+  alterId: 0
+  network: ws
+  ws-opts:
+    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+    headers:
+      Host: a.prapt1.ir
+- name: 🌍 Node-10
+  type: vmess
+  server: 104.21.10.205
+  port: 2087
+  udp: true
+  uuid: 13fc87d3-43c6-4cc1-9ab9-523d9707a113
+  cipher: auto
+  alterId: 0
+  network: ws
+  ws-opts:
+    path: /ows
+    headers:
+      Host: api.cdn-tgju.org
+  tls: true
+  servername: api.cdn-tgju.org
+- name: 🌍 Node-11
+  type: vmess
+  server: 104.21.232.44
+  port: 80
+  udp: true
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  cipher: auto
+  alterId: 0
+  network: ws
+  ws-opts:
+    path: /?ed=2048&Telegram🇨🇳
+    headers:
+      Host: a.prapt4.ir
+- name: 🌍 Node-12
+  type: vless
+  server: 104.16.92.229
+  port: 2095
+  uuid: 7fb36fbe-59b5-42a8-a804-ea4fa07c6df8
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
-      Host: a1.aananas.ir
-  sni: a1.aananas.ir
-  client-fingerprint: firefox
-- name: 🌍 Node-30
+      Host: dASHbOArd.AzErSTARTups.org.
+- name: 🌍 Node-13
+  type: vless
+  server: 162.159.34.60
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: 🌍 Node-14
+  type: vless
+  server: 104.26.10.138
+  port: 8080
+  uuid: 658a5fce-391b-46ed-bac2-0af9772ec953
+  network: ws
+  ws-opts:
+    path: /FIRELINKVPNNN
+    headers:
+      Host: sbp.unironically.ir
+- name: 🌍 Node-15
+  type: vless
+  server: 108.162.198.201
+  port: 8443
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kalami-eew.pages.dev
+  tls: true
+  servername: kalami-eew.pages.dev
+- name: 🌍 Node-16
+  type: vless
+  server: 172.67.134.159
+  port: 2083
+  uuid: 97a07e4c-14a0-4fb5-ba65-7fd7dbec9d8d
+  network: ws
+  ws-opts:
+    path: /vless-ws/?ed=2048
+    headers:
+      Host: bia-to-selincselincselincselincselinc.icxqmszn.workers.dev
+  tls: true
+  servername: bia-to-selincselincselincselincselinc.icxqmszn.workers.dev
+  alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+- name: 🌍 Node-17
   type: trojan
-  server: 104.19.152.44
+  server: 172.64.145.69
   port: 443
-  password: blue2024
-  sni: td.promote.icu
+  password: Aimer
+  sni: epmf.ambercc.filegear-sg.me
+- name: 🌍 Node-18
+  type: vless
+  server: 172.67.67.182
+  port: 2083
+  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kv.074167.xyz
+  tls: true
+  servername: kv.074167.xyz
+  skip-cert-verify: true
+  client-fingerprint: random
+- name: 🌍 Node-19
+  type: trojan
+  server: 162.159.194.69
+  port: 443
+  password: c024672d-0509-322e-8792-1b54cb82e1ac
+  sni: blog4.2220aa.xyz
+- name: 🌍 Node-20
+  type: http
+  server: 104.218.199.17
+  port: 16062
+- name: 🇺🇸 US-03
+  type: vless
+  server: 188.114.97.110
+  port: 2087
+  udp: true
+  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
+  network: ws
+  ws-opts:
+    path: /proxyip=179.255.104.87,179.255.116.198,179.255.101.56,142.248.218.6,142.248.218.4,45.76.79.239,179.255.152.163,208.68.180.240
+    headers:
+      Host: wzknb.pages.dev
+  tls: true
+  servername: wzknb.pages.dev
+  client-fingerprint: chrome
+- name: 🌍 Node-21
+  type: vmess
+  server: 104.17.148.22
+  port: 80
+  uuid: 6149b865-0d3c-4472-bf9c-3c61bfafa61a
+  cipher: auto
+  alterId: 0
+  network: ws
+  ws-opts:
+    path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
+    headers:
+      Host: 99806388192980142300309475767578.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+- name: 🌍 Node-22
+  type: vless
+  server: 45.142.120.30
+  port: 8880
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime08.workers.dev
+- name: 🌍 Node-23
+  type: vmess
+  server: 104.19.45.13
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  cipher: auto
+  alterId: 0
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip2.1457230.xyz
+- name: 🌍 Node-24
+  type: trojan
+  server: 45.130.125.160
+  port: 443
+  udp: true
+  password: humanity
+  network: ws
+  ws-opts:
+    path: /assignment
+  sni: www.ignitelimit.com
+  client-fingerprint: chrome
+- name: 🌍 Node-25
+  type: vmess
+  server: 172.64.229.223
+  port: 8880
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  cipher: auto
+  alterId: 0
+  network: ws
+  ws-opts:
+    path: /GdtYWlsLmNvbSJ9LCJjb3V
+- name: 🌍 Node-26
+  type: vless
+  server: 104.21.47.38
+  port: 443
+  uuid: 7d7d00cb-53a3-4cb4-bef7-3b2d431b1107
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiRlpGZjNZYno0IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==
+    headers:
+      Host: telegram.proxie1-tel.workers.dev
+  tls: true
+  servername: tElEgRAm.proXIE1-tel.WORKers.deV
+  skip-cert-verify: true
+  alpn:
+  - http/1.1
+- name: 🌍 Node-27
+  type: vmess
+  server: 198.41.208.172
+  port: 443
+  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  cipher: auto
+  alterId: 0
+  network: ws
+  ws-opts:
+    path: /shirker
+    headers:
+      Host: sg-gcore-2.sharecentre.online
+  tls: true
+  servername: sg-gcore-2.sharecentre.online
 proxy-groups:
 - name: 🇺🇳 精选节点
   type: select
   proxies:
   - ♻️ 自动选择
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
   - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
@@ -361,6 +382,7 @@ proxy-groups:
   - 🌍 Node-18
   - 🌍 Node-19
   - 🌍 Node-20
+  - 🇺🇸 US-03
   - 🌍 Node-21
   - 🌍 Node-22
   - 🌍 Node-23
@@ -368,12 +390,11 @@ proxy-groups:
   - 🌍 Node-25
   - 🌍 Node-26
   - 🌍 Node-27
-  - 🌍 Node-28
-  - 🌍 Node-29
-  - 🌍 Node-30
 - name: ♻️ 自动选择
   type: url-test
   proxies:
+  - 🇺🇸 US-01
+  - 🇺🇸 US-02
   - 🌍 Node-01
   - 🌍 Node-02
   - 🌍 Node-03
@@ -394,6 +415,7 @@ proxy-groups:
   - 🌍 Node-18
   - 🌍 Node-19
   - 🌍 Node-20
+  - 🇺🇸 US-03
   - 🌍 Node-21
   - 🌍 Node-22
   - 🌍 Node-23
@@ -401,9 +423,6 @@ proxy-groups:
   - 🌍 Node-25
   - 🌍 Node-26
   - 🌍 Node-27
-  - 🌍 Node-28
-  - 🌍 Node-29
-  - 🌍 Node-30
   url: https://www.gstatic.com/generate_204
   interval: 180
 rules:
